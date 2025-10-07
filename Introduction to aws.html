@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title> Amazon Web Services (AWS)</title>
+</head>
+<body class="body">
+
+   
+    
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> AWS Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> AWS Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-aws" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">AWS Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="awsRoadmaps.html" target="_blank"><b class="b12">AWS Roadmap</b></a>
+        <ul>
+            
+        <a href="Introduction to aws.html">Introduction to AWS</a>
+            <li><a href="overview of aws.html">Overview of AWS</a></li>
+            <li><a href="Global Infrastructure.html">Global Infrastructure</a></li>
+            <li><a href="Key Services and Use Cases.html">Key Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>AWS Foundations</h3>
+        <a href="AWS Foundations.html">AWS Foundations</a>
+        <ul>
+            <li><a href="AWS Management Console.html">AWS Management Console</a></li>
+            <li><a href="AWS CLI.html">AWS CLI</a></li>
+            <li><a href="IAM (Identity and Access Management).html">IAM (Identity and Access Management)</a></li>
+            <li><a href="AWS Billing and Pricing.html">AWS Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core AWS Services</h3>
+        <a href="Core AWS Services.html">Core AWS Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services.html">Compute Services</a>
+                <ul>
+                    <li><a href="EC2 (Elastic Compute Cloud).html">EC2 (Elastic Compute Cloud)</a></li>
+                    <li><a href="Lambda.html">Lambda</a></li>
+                    <li><a href="ECS (Elastic Container Service) .html">ECS (Elastic Container Service)</a></li>
+                    <li><a href="EKS (Elastic Kubernetes Service).html">EKS (Elastic Kubernetes Service)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services.html">Storage Services</a>
+                <ul>
+                    <li><a href="S3 (Simple Storage Service).html">S3 (Simple Storage Service)</a></li>
+                    <li><a href="EBS (Elastic Block Store).html">EBS (Elastic Block Store)</a></li>
+                    <li><a href="EFS (Elastic File System).html">EFS (Elastic File System)</a></li>
+                    <li><a href="Glacier.html">Glacier</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services.html">Database Services</a>
+                <ul>
+                    <li><a href="RDS (Relational Database Service).html">RDS (Relational Database Service)</a></li>
+                    <li><a href="DynamoDB.html">DynamoDB</a></li>
+                    <li><a href="Redshift.html">Redshift</a></li>
+                    <li><a href="Aurora.html">Aurora</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud).html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Route 53.html">Route 53</a></li>
+                    <li><a href="CloudFront.html">CloudFront</a></li>
+                    <li><a href="Direct Connect.html">Direct Connect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced AWS Services</h3>
+        <a href="Advanced AWS Services.html">Advanced AWS Services</a>
+        <ul>
+            <li>
+                <a href="Machine Learning Services.html">Machine Learning Services</a>
+                <ul>
+                    <li><a href="SageMaker .html">SageMaker</a></li>
+                    <li><a href="Rekognition.html">Rekognition</a></li>
+                    <li><a href="Comprehend.html">Comprehend</a></li>
+                    <li><a href="Lex.html">Lex</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services.html">Analytics Services</a>
+                <ul>
+                    <li><a href="Athena.html">Athena</a></li>
+                    <li><a href="EMR (Elastic MapReduce).html">EMR (Elastic MapReduce)</a></li>
+                    <li><a href="Kinesis.html">Kinesis</a></li>
+                    <li><a href="QuickSight.html">QuickSight</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services.html">Security Services</a>
+                <ul>
+                    <li><a href="Shield.html">Shield</a></li>
+                    <li><a href="WAF (Web Application Firewall) .html">WAF (Web Application Firewall)</a></li>
+                    <li><a href="GuardDuty.html">GuardDuty</a></li>
+                    <li><a href="Macie.html">Macie</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on AWS</h3>
+        <a href="DevOps on AWS.html">DevOps on AWS</a>
+        <ul>
+            <li><a href="Infrastructure as Code (IaC) .html">Infrastructure as Code (IaC)</a></li>
+            <li>
+                <a href="CI-CD Pipeline.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="CodeCommit.html">CodeCommit</a></li>
+                    <li><a href="CodeBuild.html">CodeBuild</a></li>
+                    <li><a href="CodeDeploy.html">CodeDeploy</a></li>
+                    <li><a href="CodePipeline.html">CodePipeline</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="CloudWatch.html">CloudWatch</a></li>
+                    <li><a href="CloudTrail.html">CloudTrail</a></li>
+                    <li><a href="X-Ray.html">X-Ray</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="AWS Migration Hub.html">AWS Migration Hub</a></li>
+            <li><a href="Server Migration Service.html">Server Migration Service</a></li>
+            <li><a href="Database Migration Service.html">Database Migration Service</a></li>
+            <li><a href="Snowball.html">Snowball</a></li>
+        </ul>
+    </div>
+    
+    
+
+   
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "AWS_interviews.html";
+}
+function goprojects() {
+    window.location.href = "AWS_projeets.html";
+}
+function golabs() {
+    window.location.href = "AWS_labs.html";
+}
+function goquizpro() {
+    window.location.href = "AWS_quiz.html";
+}
+</script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-aws" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">AWS Tutorial</h2>
+<div class="div1">  Amazon Web Services (AWS)</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>What is AWS?</h2>
+<p>
+    Amazon Web Services (AWS) is a comprehensive cloud computing platform provided by Amazon. It includes a variety of Internet-based services such as data storage, computational power, databases, machine learning services, and analytics software. Consequently, businesses are able to efficiently expand without incurring costs associated with physical machines.
+            
+            </p>
+            <div id="languageSelector" style="margin-top: 20px; display: none;">
+                <label for="language">Select Language:</label>
+                <select id="language" onchange="changeVideo()">
+                    <option value="english">English</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+    
+            <!-- YouTube video embed (Hidden initially) -->
+            <div id="videoContainer" style="display: none; margin-top: 20px;">
+                <iframe id="youtubeVideo" width="560" height="315" src="" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+            <h2> Why Use AWS?</h2>
+            
+           <ul>
+<li><strong>Scalability: </strong>You can easily increase or decrease resources depending on how much they are being demanded; hence guaranteeing performance at optimum levels and also cost efficiency.</li>
+<li><strong> Cost-Effective:</strong> There are no upfront charges or long-term commitments since one only pays for what he/she uses.</li>
+    <li><strong> Flexibility:</strong> Programing structures, OSs and DBs exist in order to meet the differing requirements.</li>
+        <li><strong>Security:</strong> There is good protection for files and software using AWS’s security mechanism.</li>
+            <li><strong>Global Reach:</strong>  It is possible to access AWS structured services from various global nations which reduces rendering time as well as improves the possibility of service delivery.
+                </li></ul>
+            
+            <h2>Key AWS Services</h2>
+            
+            <h3>Compute Services</h3>
+            
+            <ul>
+                <li><strong>EC2 (Elastic Compute Cloud):</strong> virtual servers that run your apps and handle workloads. These virtual servers are very configurable and scalable.</li>
+                  <li><strong>Lambda:</strong>Serverless computing that enables you to respond to events by running code without managing servers useful for applications that need automatic scaling.</li>
+            </ul>
+
+            <h3>Storage Services</h3>
+            <ul>
+                <li><strong>S3 (Simple Storage Service): </strong> A scalable cloud storage answer for any amount of data with durability, which offers easy data retrieval.</li>
+                <li><strong>EBS (Elastic Block Store):</strong> block-level storage volumes for use with EC2 instances. EBS volumes are high-performance and can be dynamically attached to EC2 instances</li></ul>
+
+            <h3>Database Services</h3>
+            <ul>
+                <li><strong>RDS (Relational Database Service): </strong> To manage relational databases like MySQL or PostgreSQL or Oracle. RDS takes care of all routine database tasks including backup and patching.</li>
+                    <li><strong>DynamoDB:</strong>This is a fully managed NoSQL database service that provides fast as well as predictable performance combined with seamless scalability. </li>
+                    </ul>
+
+            <h3>Networking Services</h3>
+            <ul>
+                <li><strong>VPC (Virtual Private Cloud):</strong>It establishes isolated networks within the AWS cloud, permitting you to determine the network configuration, security, and resources. </li>
+                    <li><strong>Route 53:</strong>It is a scalable and highly available Domain Name System (DNS) online platform which routes end-user requests to the internet.</li>
+                    </ul>
+
+            <h2>Learning Resources</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">AWS Official Website</a></li>
+                    <li><a href="https://aws.amazon.com/getting-started/" target="_blank" rel="noopener noreferrer">AWS Getting Started</a></li>
+                    <li><a href="https://docs.aws.amazon.com/" target="_blank" rel="noopener noreferrer">AWS Documentation</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Amazon Web Services (AWS) provides a broad and versatile set of cloud computing services that cater to a wide range of needs. Its scalability, cost-effectiveness, flexibility, security, and global reach make it a preferred choice for businesses looking to leverage cloud technology. With key services in compute, storage, databases, and networking, AWS enables organizations to build, deploy, and manage applications efficiently and effectively.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div></div>
+    </div>
+    <script>
+        // Define YouTube video links for each language
+        const videos = {
+            english: 'https://www.youtube.com/embed/gv4m1fjuthU',  // Add the actual English video link here
+            telugu: 'https://www.youtube.com/embed/GqLBzmFytOk?si=S4tfoAVjLBT_O6zc',  // Replace with actual Telugu video link
+            hindi: 'https://www.youtube.com/embed/BSGcQi2WNPg?si=hoPXw-5Qv4-NDDlp'  // Replace with actual Hindi video link
+        };
+    
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+    
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+    
+        function goHome() {
+            window.location.href = "index.html";
+        }
+    
+        function goPrevious() {
+            window.location.href = "awsRoadmaps.html";
+        }
+    
+        function goNext() {
+            window.location.href = "overview of aws.html";
+        }
+    
+        // Function to display video and language selector
+        function govideo() {
+            // Show the language selector
+            document.getElementById('languageSelector').style.display = 'block';
+            
+            // Show the video container
+            document.getElementById('videoContainer').style.display = 'block';
+            
+            // Scroll to the video container
+            window.scrollTo(0, document.getElementById('videoContainer').offsetTop);
+            
+            // Set default video (English)
+            changeVideo();
+        }
+    
+        // Function to change video based on selected language
+        function changeVideo() {
+            const selectedLanguage = document.getElementById('language').value;
+            const videoUrl = videos[selectedLanguage];
+            
+            // Change the video source
+            document.getElementById('youtubeVideo').src = videoUrl;
+        }
+    </script>
+   
+   
+</body>
+</html>

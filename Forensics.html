@@ -1,0 +1,490 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> Cyber Security</title>
+ 
+     
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Cyber Security
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to Cyber Security</h3>
+        <a href="Introduction to Cyber Security.html">Introduction to Cyber Security</a>
+        <ul>
+            <li><a href="What is Cyber Security.html">What is Cyber Security?</a></li>
+            <li><a href="History of Cyber Security.html">History of Cyber Security</a></li>
+            <li><a href="Importance of Cyber Security.html">Importance of Cyber Security</a></li>
+            <li>
+                <a href="Types of Cyber Threats.html">Types of Cyber Threats</a>
+                <ul>
+                    <li><a href="Malware.html">Malware</a></li>
+                    <li><a href="Phishing.html">Phishing</a></li>
+                    <li><a href="Ransomware.html">Ransomware</a></li>
+                    <li><a href="Social Engineering.html">Social Engineering</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Network Security</h3>
+        <a href="Network Security.html">Network Security</a>
+        <ul>
+            <li><a href="Introduction to Networks.html">Introduction to Networks</a></li>
+            <li><a href="Network Protocols.html">Network Protocols</a></li>
+            <li><a href="Firewalls.html">Firewalls</a></li>
+            <li><a href="Intrusion Detection Systems (IDS).html">Intrusion Detection Systems (IDS)</a></li>
+            <li><a href="Virtual Private Networks (VPN).html">Virtual Private Networks (VPN)</a></li>
+        </ul>
+    
+        <h3>Cryptography</h3>
+        <a href="Cryptography.html">Cryptography</a>
+        <ul>
+            <li><a href="Introduction to Cryptography.html">Introduction to Cryptography</a></li>
+            <li><a href="Symmetric Encryption.html">Symmetric Encryption</a></li>
+            <li><a href="Asymmetric Encryption.html">Asymmetric Encryption</a></li>
+            <li><a href="Hash Functions.html">Hash Functions</a></li>
+            <li><a href="Digital Signatures.html">Digital Signatures</a></li>
+            <li><a href="Public Key Infrastructure (PKI).html">Public Key Infrastructure (PKI)</a></li>
+        </ul>
+    
+        <h3>Application Security</h3>
+        <a href="Application Security.html">Application Security</a>
+        <ul>
+            <li><a href="Secure Coding Practices.html">Secure Coding Practices</a></li>
+            <li><a href="Web Application Security.html">Web Application Security</a></li>
+            <li><a href="Mobile Application Security.html">Mobile Application Security</a></li>
+            <li><a href="Database Security.html">Database Security</a></li>
+            <li><a href="Security Testing.html">Security Testing</a></li>
+        </ul>
+    
+        <h3>Endpoint Security</h3>
+        <a href="Endpoint Security.html">Endpoint Security</a>
+        <ul>
+            <li><a href="Antivirus and Anti-Malware.html">Antivirus and Anti-Malware</a></li>
+            <li><a href="Endpoint Detection and Response (EDR).html">Endpoint Detection and Response (EDR)</a></li>
+            <li><a href="Patch Management.html">Patch Management</a></li>
+            <li><a href="Device Encryption.html">Device Encryption</a></li>
+            <li><a href="Mobile Device Security.html">Mobile Device Security</a></li>
+        </ul>
+    
+        <h3>Incident Response and Management</h3>
+        <a href="Incident Response and Management.html">Incident Response and Management</a>
+        <ul>
+            <li><a href="Incident Response Planning.html">Incident Response Planning</a></li>
+            <li><a href="Incident Detection and Analysis.html">Incident Detection and Analysis</a></li>
+            <li><a href="Containment, Eradication, and Recovery.html">Containment, Eradication, and Recovery</a></li>
+            <li><a href="Post-Incident Activities.html">Post-Incident Activities</a></li>
+            <li><a href="Forensics.html">Forensics</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics Cyber Security.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Penetration Testing.html">Penetration Testing</a></li>
+            <li><a href="Ethical Hacking.html">Ethical Hacking</a></li>
+            <li><a href="Cyber Threat Intelligence.html">Cyber Threat Intelligence</a></li>
+            <li><a href="Cloud Security.html">Cloud Security</a></li>
+            <li><a href="IoT Security.html">IoT Security</a></li>
+            <li><a href="AI in Cyber Security.html">AI in Cyber Security</a></li>
+        </ul>
+    </div>
+   
+    
+    
+
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Post-Incident Activities.html";
+    }
+    function goNext() {
+        window.location.href = "Advanced Topics Cyber Security.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Forensics </div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>What is Forensics ?</h2>
+        <p><strong>Forensics</strong> refers to the process of collecting, preserving, analyzing, and presenting digital evidence in a manner that is legally admissible. In the context of incident response, forensics involves investigating security incidents to determine how they occurred, what was affected, and who was responsible. Digital forensics is crucial for understanding the scope and impact of an incident, as well as for gathering evidence that may be used in legal proceedings or regulatory investigations.</p>
+
+        <h2>Importance of Forensics in Incident Response</h2>
+        <ul>
+            <li><strong>Evidence Collection</strong>: Forensics provides a systematic approach to collecting digital evidence that can be used to understand the incident and support legal or regulatory actions.</li>
+            <li><strong>Incident Understanding</strong>: By analyzing the evidence, forensic investigations help in understanding the nature and scope of the incident, including how attackers gained access, what actions were taken, and what data was affected.</li>
+            <li><strong>Impact Assessment</strong>: Forensics helps assess the impact of the incident on systems, data, and operations, providing valuable information for damage control and recovery efforts.</li>
+            <li><strong>Legal and Regulatory Compliance</strong>: Proper forensic procedures ensure that evidence is handled in a legally compliant manner, supporting any potential legal or regulatory actions that may follow the incident.</li>
+            <li><strong>Prevention and Improvement</strong>: Findings from forensic investigations can lead to enhanced security measures, improved incident response procedures, and better overall security posture.</li>
+        </ul>
+
+        <h2>Key Components of Digital Forensics</h2>
+        <ul>
+            <li><strong>Evidence Collection</strong>: The process of gathering digital evidence from various sources, such as computers, servers, mobile devices, and network logs. This must be done carefully to avoid altering or corrupting the evidence.</li>
+            <li><strong>Evidence Preservation</strong>: Ensuring that collected evidence is preserved in its original state to maintain its integrity. This includes creating forensic copies (images) of devices and securely storing the evidence.</li>
+            <li><strong>Evidence Analysis</strong>: The process of examining the collected evidence to uncover relevant information. This involves identifying, extracting, and interpreting data to understand the incident and its impact.</li>
+            <li><strong>Documentation</strong>: Recording all actions taken during the forensic investigation, including evidence collection, analysis methods, and findings. This documentation is crucial for maintaining a chain of custody and supporting legal proceedings.</li>
+            <li><strong>Reporting</strong>: Preparing detailed reports on the findings of the forensic investigation. This includes summarizing the evidence, explaining the analysis, and providing recommendations for remediation and improvement.</li>
+            <li><strong>Presentation</strong>: Presenting the findings of the forensic investigation to stakeholders, legal teams, or regulatory bodies. This may involve explaining complex technical details in a clear and understandable manner.</li>
+        </ul>
+
+        <h2>Best Practices for Digital Forensics</h2>
+        <ul>
+            <li><strong>Follow Legal and Ethical Guidelines</strong>: Adhere to legal and ethical standards for collecting and handling digital evidence. Ensure that all actions are conducted in a manner that respects privacy and complies with relevant laws.</li>
+            <li><strong>Use Reliable Forensic Tools</strong>: Employ industry-standard forensic tools and techniques to ensure the accuracy and reliability of the evidence collection and analysis process.</li>
+            <li><strong>Maintain Chain of Custody</strong>: Document every step of the evidence handling process to maintain a clear chain of custody. This is crucial for ensuring that evidence is admissible in legal proceedings.</li>
+            <li><strong>Preserve Evidence Integrity</strong>: Use write-blockers and other methods to prevent any changes to the original evidence during collection and analysis. Create and work with forensic copies rather than the original data.</li>
+            <li><strong>Document Everything</strong>: Keep detailed records of all forensic activities, including evidence collection, analysis procedures, and findings. This documentation is essential for validation and reporting.</li>
+            <li><strong>Communicate Clearly</strong>: Prepare clear and comprehensive reports on the forensic investigation, and present findings in a way that is understandable to non-technical stakeholders.</li>
+            <li><strong>Stay Updated</strong>: Continuously update knowledge and skills in digital forensics to keep up with evolving technologies, threats, and forensic methodologies.</li>
+        </ul>
+
+        <h2>Examples of Forensic Tools and Solutions</h2>
+        <ul>
+            <li><strong>EnCase</strong>: A widely used digital forensic tool for collecting, analyzing, and reporting on digital evidence from various sources. [More Information](https://www.opentext.com/products-and-solutions/products/opentext-encase-forensic)</li>
+            <li><strong>FTK Imager</strong>: A forensic imaging tool that allows for the creation of forensic images and analysis of digital evidence. [More Information](https://accessdata.com/products-services/accessdata-ftk-imager)</li>
+            <li><strong>Autopsy</strong>: An open-source digital forensics platform that provides a graphical interface for analyzing and investigating digital evidence. [More Information](https://www.autopsy.com/)</li>
+            <li><strong>The Sleuth Kit (TSK)</strong>: A collection of command-line tools and a library for digital forensic analysis, used for examining file systems and disk images. [More Information](https://www.sleuthkit.org/)</li>
+            <li><strong>X1 Social Discovery</strong>: A tool for collecting and analyzing social media and online content as part of a digital forensic investigation. [More Information](https://www.x1.com/products/social-discovery/)</li>
+        </ul>
+
+        <div class="resources">
+            <h2>Additional Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Explore digital forensics courses on platforms like <a href="https://www.udemy.com/" target="_blank">Udemy</a> and <a href="https://www.coursera.org/" target="_blank">Coursera</a> for in-depth training.</li>
+                <li><strong>Books and Guides</strong>: Read "Computer Forensics: Principles and Practices" by Linda Volonino and C. Brad Wright for a comprehensive guide to digital forensics.</li>
+                <li><strong>Interactive Tools</strong>: Use demo tools and resources from vendors like <a href="https://www.opentext.com/" target="_blank">OpenText</a> and <a href="https://accessdata.com/" target="_blank">AccessData</a> for hands-on experience with forensic solutions.</li>
+                <li><strong>Cyber Security News</strong>: Stay updated with the latest trends and developments in digital forensics through sources like <a href="https://www.bbc.com/news/technology" target="_blank">BBC Technology</a> and <a href="https://www.thehackernews.com/" target="_blank">The Hacker News</a>.</li>
+                <li><strong>Professional Organizations</strong>: Join organizations such as <a href="https://www.htcia.org/" target="_blank">HTCIA</a> (High Technology Crime Investigation Association) and <a href="https://www.isc2.org/" target="_blank">(ISC)²</a> for additional resources and networking opportunities in digital forensics.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Digital forensics plays a critical role in incident response by providing a structured approach to collecting, preserving, analyzing, and presenting digital evidence. This process helps organizations understand security incidents, assess their impact, and support legal or regulatory actions. By following best practices and utilizing appropriate tools and resources, organizations can conduct effective forensic investigations, enhance their security posture, and improve their overall incident response capabilities.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

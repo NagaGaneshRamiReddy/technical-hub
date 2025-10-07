@@ -1,0 +1,489 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Aptitude</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Aptitude
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Weighted Average.html";
+    }
+    function goNext() {
+        window.location.href = "Speed and Velocity.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Time, Speed, and Distance</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  
+            <h2>Introduction to Time, Speed, and Distance</h2>
+            <p>Time, speed, and distance are fundamental concepts in physics and everyday life. Understanding these concepts helps in solving problems related to movement, travel, and rates of change. This guide explains how to calculate time, speed, and distance, and why these concepts are important.</p>
+
+            <h2>What is Speed?</h2>
+            <p>Speed is the rate at which an object covers distance. It is a measure of how quickly an object moves and is typically expressed in units such as meters per second (m/s) or kilometers per hour (km/h).</p>
+
+            <div class="formula">
+                <strong>Formula to Calculate Speed:</strong><br>
+                Speed (S) = Distance (D) / Time (T)
+            </div>
+
+            <p><strong>Distance (D):</strong> The total length of the path traveled.<br>
+            <strong>Time (T):</strong> The total time taken to travel the distance.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                If a car travels 150 kilometers in 3 hours, to calculate the speed:
+                <br><br>
+                Speed = 150 km / 3 h = 50 km/h<br>
+                Therefore, the speed of the car is 50 km/h.
+            </div>
+
+            <h2>What is Distance?</h2>
+            <p>Distance is the total length of the path traveled by an object. It is the measure of how far an object has moved from its starting point to its ending point.</p>
+
+            <div class="formula">
+                <strong>Formula to Calculate Distance:</strong><br>
+                Distance (D) = Speed (S) × Time (T)
+            </div>
+
+            <p><strong>Speed (S):</strong> The rate at which the object is moving.<br>
+            <strong>Time (T):</strong> The duration of the movement.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                If a cyclist is traveling at a speed of 20 km/h for 4 hours, to calculate the distance:
+                <br><br>
+                Distance = 20 km/h × 4 h = 80 km<br>
+                Therefore, the distance traveled by the cyclist is 80 kilometers.
+            </div>
+
+            <h2>What is Time?</h2>
+            <p>Time is the duration for which an object is in motion or the time it takes to travel a certain distance. It helps in understanding how long it takes to cover a given distance at a specific speed.</p>
+
+            <div class="formula">
+                <strong>Formula to Calculate Time:</strong><br>
+                Time (T) = Distance (D) / Speed (S)
+            </div>
+
+            <p><strong>Distance (D):</strong> The total length of the path traveled.<br>
+            <strong>Speed (S):</strong> The rate at which the object is moving.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                If a train travels 180 kilometers at a speed of 60 km/h, to calculate the time taken:
+                <br><br>
+                Time = 180 km / 60 km/h = 3 hours<br>
+                Therefore, the time taken for the journey is 3 hours.
+            </div>
+
+            <h2>How to Solve Problems Involving Time, Speed, and Distance</h2>
+            <ul>
+                <li><strong>Identify the Given Information:</strong> Determine which values are provided (time, speed, or distance).</li>
+                <li><strong>Choose the Appropriate Formula:</strong> Use the relevant formula based on the values you have and the quantity you need to find.</li>
+                <li><strong>Substitute the Values:</strong> Plug the given values into the formula and solve for the unknown quantity.</li>
+                <li><strong>Check Your Units:</strong> Ensure that units are consistent and correctly converted if needed.</li>
+            </ul>
+
+            <h2>Real-Life Example</h2>
+            <p>Imagine you are planning a road trip:</p>
+
+            <div class="example">
+                <strong>Scenario:</strong><br>
+                You plan to drive 240 kilometers at a constant speed of 80 km/h. To determine how long the trip will take:
+                <br><br>
+                Time = 240 km / 80 km/h = 3 hours<br>
+                Therefore, the trip will take 3 hours.
+            </div>
+
+            <h2>Practice Tests</h2>
+            <div class="resources">
+                <p>Test your understanding of time, speed, and distance with these free practice resources:</p>
+                <ul>
+                   
+                    <li><a href="https://www.ixl.com/math/4th-grade/speed-time-distance" target="_blank">IXL: Speed, Time, and Distance Practice</a></li>
+                    <li><a href="https://www.khanacademy.org/math/arithmetic/arith-review-rate-time-distance" target="_blank">Khan Academy: Speed, Time, and Distance Tutorial</a></li>
+                    <li><a href="https://www.cuemath.com/learn/math-speed-distance-time/" target="_blank">Cuemath: Speed, Distance, and Time Practice</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Time, speed, and distance are interconnected concepts essential for solving problems related to movement and travel. By understanding how to calculate and apply these measures, you can analyze travel scenarios, plan journeys, and make informed decisions about time and distance.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  </div>
+    </div>
+</body>
+</html>

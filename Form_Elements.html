@@ -1,0 +1,367 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>HTML</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> HTML Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+
+
+    
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-html5"  style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">HTML Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        
+        <a href="HTML Roadmaps.html" target="_blank"><b class="b12">HTML Roadmap</b></a>
+        <ul> <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+        
+             <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+            <li><a href="What_is_HTML.html" target="_blank">What is HTML?</a></li>
+            <li><a href="HTML_Installation.html" target="_blank">Installation</a></li>
+            <li><a href="First_HTML_Page.html" target="_blank">First HTML Page</a></li>
+        </ul>
+    
+        <h3>HTML Basics</h3>
+        <a href="HTML_Basics.html" target="_blank">HTML Basics</a>
+        <ul>
+            <li><a href="HTML_Tags.html" target="_blank">HTML Tags</a></li>
+            <li><a href="HTML_Attributes.html" target="_blank">HTML Attributes</a></li>
+            <li><a href="HTML_Elements.html" target="_blank">HTML Elements</a></li>
+        </ul>
+    
+        <h3>HTML Text Formatting</h3>
+        <a href="HTML_Text_Formatting.html" target="_blank">HTML Text Formatting</a>
+        <ul>
+            <li><a href="Headings.html" target="_blank">Headings</a></li>
+            <li><a href="Paragraphs.html" target="_blank">Paragraphs</a></li>
+            <li><a href="Text_Styles.html" target="_blank">Text Styles</a></li>
+        </ul>
+    
+        <h3>HTML Lists</h3>
+        <a href="HTML_Lists.html" target="_blank">HTML Lists</a>
+        <ul>
+            <li><a href="Ordered_Lists.html" target="_blank">Ordered Lists</a></li>
+            <li><a href="Unordered_Lists.html" target="_blank">Unordered Lists</a></li>
+            <li><a href="Nested_Lists.html" target="_blank">Nested Lists</a></li>
+        </ul>
+    
+        <h3>HTML Forms</h3>
+        <a href="HTML_Forms.html" target="_blank">HTML Forms</a>
+        <ul>
+            <li><a href="Form_Elements.html" target="_blank">Form Elements</a></li>
+            <li><a href="Form_Validation.html" target="_blank">Form Validation</a></li>
+            <li><a href="Input_Types.html" target="_blank">Input Types</a></li>
+        </ul>
+    
+        <h3>HTML Media</h3>
+        <a href="HTML_Media.html" target="_blank">HTML Media</a>
+        <ul>
+            <li><a href="Images.html" target="_blank">Images</a></li>
+            <li><a href="Audio.html" target="_blank">Audio</a></li>
+            <li><a href="Video.html" target="_blank">Video</a></li>
+        </ul>
+    
+        <h3>HTML Tables</h3>
+        <a href="HTML_Tables.html" target="_blank">HTML Tables</a>
+        <ul>
+            <li><a href="Basic_Tables.html" target="_blank">Basic Tables</a></li>
+            <li><a href="Table_Headers.html" target="_blank">Table Headers</a></li>
+            <li><a href="Table_Spanning.html" target="_blank">Table Spanning</a></li>
+        </ul>
+    
+        <h3>HTML Semantics</h3>
+        <a href="HTML_Semantics.html" target="_blank">HTML Semantics</a>
+        <ul>
+            <li><a href="Div_vs_Semantic_Tags.html" target="_blank">Div vs Semantic Tags</a></li>
+            <li><a href="Semantic_Elements.html" target="_blank">Semantic Elements</a></li>
+        </ul>
+    </div>
+    
+    
+    
+  
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "HTML_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "HTML_quize.html";
+}
+function goproject() {
+    window.location.href = "HTML_projects.html";
+}
+function gocomp() {
+    window.location.href = "html_compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "HTML_Forms.html";
+    }
+    function goNext() {
+        window.location.href = "Form_Validation.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-html5" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">HTML Tutorial</h2>
+<div class="div1">HTML Form Elements</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Understanding HTML Form Elements</h2>
+<p>HTML provides various form elements to gather input from users. These elements are essential for building interactive and dynamic web applications.</p>
+
+<h2>Text Input</h2>
+<p>Text input fields allow users to enter single-line text data:</p>
+
+<div class="example">
+    <pre><code>&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name" placeholder="Enter your name"&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+</div>
+
+<h2>Password Input</h2>
+<p>Password fields mask the input, hiding the text as it's entered:</p>
+
+<div class="example">
+    <pre><code>&lt;label for="password"&gt;Password:&lt;/label&gt;
+&lt;input type="password" id="password" name="password" placeholder="Enter your password"&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+</div>
+
+<h2>Email Input</h2>
+<p>Email input ensures that the user enters a valid email format:</p>
+
+<div class="example">
+    <pre><code>&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email" placeholder="Enter your email"&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+</div>
+
+<h2>Number Input</h2>
+<p>Number input fields accept only numeric values:</p>
+
+<div class="example">
+    <pre><code>&lt;label for="age"&gt;Age:&lt;/label&gt;
+&lt;input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age"&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age">
+</div>
+
+<h2>Radio Buttons</h2>
+<p>Radio buttons allow users to select one option from a set:</p>
+
+<div class="example">
+    <pre><code>&lt;label&gt;Gender:&lt;/label&gt;
+&lt;input type="radio" id="male" name="gender" value="male"&gt; &lt;label for="male"&gt;Male&lt;/label&gt;
+&lt;input type="radio" id="female" name="gender" value="female"&gt; &lt;label for="female"&gt;Female&lt;/label&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+</div>
+
+<h2>Checkboxes</h2>
+<p>Checkboxes allow users to select multiple options:</p>
+
+<div class="example">
+    <pre><code>&lt;label&gt;Interests:&lt;/label&gt;
+&lt;input type="checkbox" id="sports" name="interest" value="sports"&gt; &lt;label for="sports"&gt;Sports&lt;/label&gt;
+&lt;input type="checkbox" id="music" name="interest" value="music"&gt; &lt;label for="music"&gt;Music&lt;/label&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <label>Interests:</label>
+    <input type="checkbox" id="sports" name="interest" value="sports"> <label for="sports">Sports</label>
+    <input type="checkbox" id="music" name="interest" value="music"> <label for="music">Music</label>
+</div>
+
+<h2>Dropdown Menu (Select)</h2>
+<p>A dropdown menu lets users choose one option from a list:</p>
+
+<div class="example">
+    <pre><code>&lt;label for="country"&gt;Country:&lt;/label&gt;
+&lt;select id="country" name="country"&gt;
+    &lt;option value="us"&gt;United States&lt;/option&gt;
+    &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+    &lt;option value="ca"&gt;Canada&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">Canada</option>
+    </select>
+</div>
+
+<h2>Text Area</h2>
+<p>A text area allows users to enter multi-line text:</p>
+
+<div class="example">
+    <pre><code>&lt;label for="comments"&gt;Comments:&lt;/label&gt;
+&lt;textarea id="comments" name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+</div>
+
+<h2>Submit Button</h2>
+<p>The submit button submits the form data:</p>
+
+<div class="example">
+    <pre><code>&lt;input type="submit" value="Submit"&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <input type="submit" value="Submit">
+</div>
+
+<h2>Resources</h2>
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">MDN Web Docs: HTML Input Element</a></li>
+        <li><a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">W3Schools: HTML Form Elements</a></li>
+        <li><a href="https://www.w3.org/TR/html401/interact/forms.html" target="_blank">W3C: HTML 4 Forms Specification</a></li>
+    </ul>
+</div>
+
+<h2>Summary</h2>
+<p>HTML form elements are critical for collecting user input. They include text fields, radio buttons, checkboxes, dropdowns, and more. These elements allow you to create interactive forms that capture and submit data efficiently.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+</body>
+</html>

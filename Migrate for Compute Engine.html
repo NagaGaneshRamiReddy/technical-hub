@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Google Cloud Course</title>
+    
+    
+</head>
+<body class="body">
+
+  
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> GCP Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> GCP Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            
+            
+            <i class="fab fa-google" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> GCP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="Google cloudRoadmaps.html" target="_blank"><b class="b12">GCP Roadmap</b></a>
+    
+        <ul><a href="Introduction to Google Cloud.html">Introduction to Google Cloud</a>
+            <li><a href="Overview of Google Cloud.html">Overview of Google Cloud</a></li>
+            <li><a href="Global Infrastructure Google Cloud.html">Global Infrastructure</a></li>
+            <li><a href="Core Services and Use Cases Google Cloud.html">Core Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>Google Cloud Foundations</h3>
+        <a href="Google Cloud Foundations.html">Google Cloud Foundations</a>
+        <ul>
+            <li><a href="Google Cloud Console.html">Google Cloud Console</a></li>
+            <li><a href="Cloud Shell and Cloud SDK.html">Cloud Shell and Cloud SDK</a></li>
+            <li><a href="Identity and Access Management (IAM).html">Identity and Access Management (IAM)</a></li>
+            <li><a href="Billing and Pricing in Google Cloud.html">Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core Google Cloud Services</h3>
+        <a href="Core Google Cloud Services.html">Core Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services Google cloud.html">Compute Services</a>
+                <ul>
+                    <li><a href="Compute Engine.html">Compute Engine</a></li>
+                    <li><a href="App Engine.html">App Engine</a></li>
+                    <li><a href="Kubernetes Engine (GKE).html">Kubernetes Engine (GKE)</a></li>
+                    <li><a href="Cloud Functions.html">Cloud Functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services in Google cloud.html">Storage Services</a>
+                <ul>
+                    <li><a href="Cloud Storage.html">Cloud Storage</a></li>
+                    <li><a href="Persistent Disk.html">Persistent Disk</a></li>
+                    <li><a href="Filestore.html">Filestore</a></li>
+                    <li><a href="Cloud SQL.html">Cloud SQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services in Google cloud.html">Database Services</a>
+                <ul>
+                    <li><a href="Cloud Firestore.html">Cloud Firestore</a></li>
+                    <li><a href="Bigtable.html">Bigtable</a></li>
+                    <li><a href="Cloud Spanner.html">Cloud Spanner</a></li>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services Google Cloud.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud) google cloud.html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Cloud Load Balancing.html">Cloud Load Balancing</a></li>
+                    <li><a href="Cloud CDN.html">Cloud CDN</a></li>
+                    <li><a href="Cloud Interconnect.html">Cloud Interconnect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Google Cloud Services</h3>
+        <a href="Advanced Google Cloud Services.html">Advanced Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="AI and Machine Learning Google Cloud.html">AI and Machine Learning</a>
+                <ul>
+                    <li><a href="AI Platform.html">AI Platform</a></li>
+                    <li><a href="AutoML.html">AutoML</a></li>
+                    <li><a href="Vision AI.html">Vision AI</a></li>
+                    <li><a href="Dialogflow.html">Dialogflow</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services Google.html">Analytics Services</a>
+                <ul>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                    <li><a href="Dataflow.html">Dataflow</a></li>
+                    <li><a href="pub sub.html">Pub/Sub</a></li>
+                    <li><a href="Dataproc.html">Dataproc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services Google.html">Security Services</a>
+                <ul>
+                    <li><a href="Cloud IAM.html">Cloud IAM</a></li>
+                    <li><a href="Cloud Armor.html">Cloud Armor</a></li>
+                    <li><a href="Security Command Center.html">Security Command Center</a></li>
+                    <li><a href="Cloud Key Management Service (KMS).html">Cloud Key Management Service (KMS)</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on Google Cloud</h3>
+        <a href="DevOps on Google Cloud.html">DevOps on Google Cloud</a>
+        <ul>
+            <li>
+                <a href="Infrastructure as Code (IaC) Google.html">Infrastructure as Code (IaC)</a>
+                <ul>
+                    <li><a href="Deployment Manager.html">Deployment Manager</a></li>
+                    <li><a href="Terraform on Google Cloud.html">Terraform on Google Cloud</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="CI-CD Pipeline google.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Cloud Build.html">Cloud Build</a></li>
+                    <li><a href="Container Registry.html">Container Registry</a></li>
+                    <li><a href="Artifact Registry.html">Artifact Registry</a></li>
+                    <li><a href="Cloud Source Repositories.html">Cloud Source Repositories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Google.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Cloud Monitoring.html">Cloud Monitoring</a></li>
+                    <li><a href="Cloud Logging.html">Cloud Logging</a></li>
+                    <li><a href="Cloud Trace.html">Cloud Trace</a></li>
+                    <li><a href="Cloud Debugger.html">Cloud Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer Google.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="Migrate for Compute Engine.html">Migrate for Compute Engine</a></li>
+            <li><a href="Database Migration Service Google.html">Database Migration Service</a></li>
+            <li><a href="Transfer Appliance.html">Transfer Appliance</a></li>
+            <li><a href="Storage Transfer Service.html">Storage Transfer Service</a></li>
+        </ul>
+    
+    </div>
+    
+   
+   
+   
+    
+
+    
+    
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "GCP_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "GCP_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "GCP_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "GCP_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "Migration and Transfer Google.html";
+    }
+    function goNext() {
+        window.location.href = "Database Migration Service Google.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-google" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">GCP Tutorial</h2>
+<div class="div1">Migrate for Compute Engine </div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Introduction</h2>
+        <p>Migrate for Compute Engine is a powerful tool provided by Google Cloud to assist in migrating virtual machines (VMs) from on-premises environments or other cloud providers to Google Compute Engine. It streamlines the migration process, enabling organizations to move their workloads with minimal disruption.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Automated Migration:</strong> Automates the migration of VMs, reducing manual intervention and minimizing errors.</li>
+            <li><strong>Support for Various OS:</strong> Supports a wide range of operating systems, including Windows and Linux distributions.</li>
+            <li><strong>Minimal Downtime:</strong> Uses continuous replication to ensure minimal downtime during the migration process.</li>
+            <li><strong>Compatibility:</strong> Compatible with existing VM configurations, including disk types and network settings.</li>
+            <li><strong>Monitoring and Reporting:</strong> Provides detailed monitoring and reporting to track the progress and status of migrations.</li>
+        </ul>
+
+        <h2>How It Works</h2>
+        <ol>
+            <li><strong>Assessment:</strong> Evaluate your current VM environment to identify the VMs that need to be migrated.</li>
+            <li><strong>Preparation:</strong> Prepare your Google Cloud environment by configuring the necessary resources, such as networks and storage.</li>
+            <li><strong>Migration:</strong> Use Migrate for Compute Engine to initiate the migration process. The tool will handle the replication of VMs to Google Compute Engine.</li>
+            <li><strong>Testing:</strong> Test the migrated VMs to ensure they function correctly in the Google Cloud environment.</li>
+            <li><strong>Cutover:</strong> Complete the migration by cutting over to the Google Cloud environment and decommissioning the old VMs.</li>
+        </ol>
+
+        <h2>Benefits</h2>
+        <ul>
+            <li><strong>Simplified Migration:</strong> Reduces complexity and effort involved in moving VMs to Google Cloud.</li>
+            <li><strong>Reduced Downtime:</strong> Minimizes downtime and disruption to business operations.</li>
+            <li><strong>Scalability:</strong> Allows you to scale your VMs according to your needs in Google Cloud.</li>
+            <li><strong>Cost Efficiency:</strong> Helps optimize your cloud resources and reduce costs by leveraging Google Cloud’s pricing model.</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <ol>
+            <li><a href="https://cloud.google.com/migrate/compute-engine">Visit the Migrate for Compute Engine Documentation</a> - Start by reviewing the official documentation to understand the prerequisites and process.</li>
+            <li><a href="https://cloud.google.com/solutions/migrate-to-google-cloud">Explore Migration Solutions</a> - Learn more about various migration solutions and best practices.</li>
+            <li><a href="https://cloud.google.com/training">Google Cloud Training</a> - Access free courses and hands-on labs to gain practical experience.</li>
+        </ol>
+
+        <h2>Summary</h2>
+        <p>Migrate for Compute Engine is an essential tool for organizations looking to move their virtual machines to Google Cloud. By automating and streamlining the migration process, it helps ensure minimal downtime and disruption while providing support for a wide range of operating systems and VM configurations.</p>
+
+        <h2>Conclusion</h2>
+        <p>Utilizing Migrate for Compute Engine allows organizations to efficiently transition their VM workloads to Google Cloud, taking advantage of the scalability, reliability, and cost-efficiency offered by Google Compute Engine. By following the recommended steps and leveraging available resources, you can achieve a successful migration with minimal effort.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>  </div>
+</body>
+</html>

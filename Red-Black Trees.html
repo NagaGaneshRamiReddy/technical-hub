@@ -1,0 +1,876 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+    function goPrevious() {
+        window.location.href = "AVL Trees.html";
+    }
+    function goNext() {
+        window.location.href = "Heaps.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1"> Red-Black Tree </div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>A Red-Black Tree is a type of self-balancing binary search tree. Each node in the tree has an extra bit for color, which can be either red or black. This color information helps maintain balance during insertions and deletions, ensuring that the tree remains approximately balanced and that all operations such as insertion, deletion, and lookup can be performed in O(log n) time.</p>
+       
+
+        
+    <style>
+        .container {
+            margin: 20px;
+            text-align: center;
+        }
+        .tree-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 100%;
+            position: relative;
+            border: 2px dashed #2bff00;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .tree {
+            position: relative;
+            width: auto;
+            height: 100%;
+        }
+        .node {
+            position: absolute;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #ffffff;
+            transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.5s ease;
+            opacity: 0;
+        }
+        .node.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .node.red {
+            background-color: #ff0000;
+        }
+        .node.black {
+            background-color: #000000;
+        }
+        .node:hover {
+            transform: scale(1.2);
+            background-color: #ffcccc;
+        }
+        .line {
+            position: absolute;
+            background-color: #22ff00;
+            width: 2px;
+            transform-origin: 0 0;
+            transition: width 0.5s ease, transform 0.5s ease;
+        }
+        button, input[type="number"], select {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button {
+            background-color: #09ff00;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #cc0000;
+        }
+        input[type="number"], select {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Red-Black Tree Visualization</h1>
+        <div class="tree-container">
+            <div class="tree" id="tree"></div>
+        </div>
+        <button onclick="addNode()">Add Node</button>
+        <input type="number" id="nodeValue" placeholder="Enter value to add">
+    </div>
+    <script>
+        class RedBlackNode {
+            constructor(value, color = 'red') {
+                this.value = value;
+                this.color = color;
+                this.left = null;
+                this.right = null;
+                this.parent = null;
+            }
+        }
+
+        class RedBlackTree {
+            constructor() {
+                this.root = null;
+            }
+
+            // Utility function to get the color of a node
+            getColor(node) {
+                return node ? node.color : 'black'; // Default color is black
+            }
+
+            // Utility function to set the color of a node
+            setColor(node, color) {
+                if (node) {
+                    node.color = color;
+                }
+            }
+
+            // Insert a node into the Red-Black tree
+            insert(value) {
+                let newNode = new RedBlackNode(value, 'red');
+                if (this.root === null) {
+                    this.root = newNode;
+                    this.setColor(this.root, 'black');
+                } else {
+                    this._insert(this.root, newNode);
+                    this._balance(newNode);
+                }
+            }
+
+            // Recursive insert function
+            _insert(root, node) {
+                if (node.value < root.value) {
+                    if (root.left === null) {
+                        root.left = node;
+                        node.parent = root;
+                    } else {
+                        this._insert(root.left, node);
+                    }
+                } else {
+                    if (root.right === null) {
+                        root.right = node;
+                        node.parent = root;
+                    } else {
+                        this._insert(root.right, node);
+                    }
+                }
+            }
+
+            // Balance the tree after insertion
+            _balance(node) {
+                while (node !== this.root && this.getColor(node.parent) === 'red') {
+                    if (node.parent === node.parent.parent.left) {
+                        let uncle = node.parent.parent.right;
+                        if (this.getColor(uncle) === 'red') {
+                            this.setColor(node.parent, 'black');
+                            this.setColor(uncle, 'black');
+                            this.setColor(node.parent.parent, 'red');
+                            node = node.parent.parent;
+                        } else {
+                            if (node === node.parent.right) {
+                                node = node.parent;
+                                this._leftRotate(node);
+                            }
+                            this.setColor(node.parent, 'black');
+                            this.setColor(node.parent.parent, 'red');
+                            this._rightRotate(node.parent.parent);
+                        }
+                    } else {
+                        let uncle = node.parent.parent.left;
+                        if (this.getColor(uncle) === 'red') {
+                            this.setColor(node.parent, 'black');
+                            this.setColor(uncle, 'black');
+                            this.setColor(node.parent.parent, 'red');
+                            node = node.parent.parent;
+                        } else {
+                            if (node === node.parent.left) {
+                                node = node.parent;
+                                this._rightRotate(node);
+                            }
+                            this.setColor(node.parent, 'black');
+                            this.setColor(node.parent.parent, 'red');
+                            this._leftRotate(node.parent.parent);
+                        }
+                    }
+                }
+                this.setColor(this.root, 'black');
+            }
+
+            // Left rotate utility
+            _leftRotate(x) {
+                let y = x.right;
+                x.right = y.left;
+                if (y.left !== null) y.left.parent = x;
+                y.parent = x.parent;
+                if (x.parent === null) this.root = y;
+                else if (x === x.parent.left) x.parent.left = y;
+                else x.parent.right = y;
+                y.left = x;
+                x.parent = y;
+            }
+
+            // Right rotate utility
+            _rightRotate(y) {
+                let x = y.left;
+                y.left = x.right;
+                if (x.right !== null) x.right.parent = y;
+                x.parent = y.parent;
+                if (y.parent === null) this.root = x;
+                else if (y === y.parent.right) y.parent.right = x;
+                else y.parent.left = x;
+                x.right = y;
+                y.parent = x;
+            }
+
+            // Function to create the Red-Black tree visual
+            createTreeVisual(container) {
+                container.innerHTML = '';
+                if (this.root) {
+                    this._createBinaryTree(this.root, container, container.clientWidth / 2, 50, 100);
+                }
+            }
+
+            // Recursive function to create tree visual
+            _createBinaryTree(node, container, x, y, nodeDistance) {
+                if (!node) return;
+                const nodeElement = createNode(node.value, x, y, node.color);
+                container.appendChild(nodeElement);
+
+                if (node.left) {
+                    const leftX = x - nodeDistance / 2;
+                    const newY = y + 80;
+                    container.appendChild(drawLine(x + 20, y + 40, leftX + 20, newY));
+                    this._createBinaryTree(node.left, container, leftX, newY, nodeDistance / 2);
+                }
+
+                if (node.right) {
+                    const rightX = x + nodeDistance / 2;
+                    const newY = y + 80;
+                    container.appendChild(drawLine(x + 20, y + 40, rightX + 20, newY));
+                    this._createBinaryTree(node.right, container, rightX, newY, nodeDistance / 2);
+                }
+            }
+        }
+
+        const redBlackTree = new RedBlackTree();
+
+        function addNode() {
+            const valueInput = document.getElementById('nodeValue');
+            const newValue = parseInt(valueInput.value, 10);
+            if (!isNaN(newValue)) {
+                redBlackTree.insert(newValue);
+                redBlackTree.createTreeVisual(treeContainer);
+            }
+        }
+
+        function createNode(value, x, y, color) {
+            const node = document.createElement('div');
+            node.className = 'node ' + color;
+            node.textContent = value;
+            node.style.left = `${x}px`;
+            node.style.top = `${y}px`;
+            setTimeout(() => node.classList.add('show'), 10);
+            return node;
+        }
+
+        function drawLine(x1, y1, x2, y2) {
+            const line = document.createElement('div');
+            line.className = 'line';
+            const length = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+            const angle = Math.atan2(y2 - y1, x2 - x1) * (180 / Math.PI);
+            line.style.width = '0';
+            line.style.height = '2px';
+            line.style.transform = `rotate(${angle}deg)`;
+            line.style.left = `${x1}px`;
+            line.style.top = `${y1}px`;
+            setTimeout(() => line.style.width = `${length}px`, 10);
+            return line;
+        }
+
+        const treeContainer = document.getElementById('tree');
+        updateTree = () => redBlackTree.createTreeVisual(treeContainer);
+
+        // Initial render
+        updateTree();
+    </script>
+
+
+        
+        <h2>Properties of Red-Black Trees</h2>
+        <ul>
+            <li><strong>Node Color:</strong> Each node is either red or black.</li>
+            <li><strong>Root Property:</strong> The root is always black.</li>
+            <li><strong>Red Property:</strong> Red nodes cannot have red children (i.e., no two red nodes can be adjacent).</li>
+            <li><strong>Black Property:</strong> Every path from a node to its descendant NULL nodes must have the same number of black nodes.</li>
+            <li><strong>Leaf Property:</strong> NULL nodes (or leaves) are black.</li>
+        </ul>
+
+        <h2>Basic Operations</h2>
+        <ul>
+            <li><strong>Insertion:</strong> Adding a node while maintaining the Red-Black properties. This may require recoloring and rotations to restore balance.</li>
+            <li><strong>Deletion:</strong> Removing a node while maintaining the Red-Black properties. Similar to insertion, this may involve recoloring and rotations.</li>
+            <li><strong>Search:</strong> Finding a node with a specific value. The balanced nature of the tree ensures efficient searches.</li>
+            <li><strong>Traversal:</strong> Visiting nodes in a specific order such as in-order, pre-order, and post-order.</li>
+        </ul>
+
+        <h2>Implementation Examples</h2>
+
+        <h3>1. Red-Black Tree in C++</h3>
+        <pre>
+<code>
+#include &lt;iostream&gt>
+#include &lt;algorithm&gt>
+
+enum Color {RED, BLACK};
+
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
+    Node* parent;
+    Color color;
+    Node(int value) : data(value), left(nullptr), right(nullptr), parent(nullptr), color(RED) {}
+};
+
+class RedBlackTree {
+    Node* root;
+    Node* TNULL;
+
+    void preOrderHelper(Node* node) {
+        if (node != TNULL) {
+            std::cout &lt;&lt; node->data &lt;&lt; " ";
+            preOrderHelper(node->left);
+            preOrderHelper(node->right);
+        }
+    }
+
+    void balanceInsert(Node* k) {
+        Node* u;
+        while (k->parent->color == RED) {
+            if (k->parent == k->parent->parent->right) {
+                u = k->parent->parent->left;
+                if (u->color == RED) {
+                    k->parent->color = BLACK;
+                    u->color = BLACK;
+                    k->parent->parent->color = RED;
+                    k = k->parent->parent;
+                } else {
+                    if (k == k->parent->left) {
+                        k = k->parent;
+                        rightRotate(k);
+                    }
+                    k->parent->color = BLACK;
+                    k->parent->parent->color = RED;
+                    leftRotate(k->parent->parent);
+                }
+            } else {
+                u = k->parent->parent->right;
+                if (u->color == RED) {
+                    k->parent->color = BLACK;
+                    u->color = BLACK;
+                    k->parent->parent->color = RED;
+                    k = k->parent->parent;
+                } else {
+                    if (k == k->parent->right) {
+                        k = k->parent;
+                        leftRotate(k);
+                    }
+                    k->parent->color = BLACK;
+                    k->parent->parent->color = RED;
+                    rightRotate(k->parent->parent);
+                }
+            }
+            if (k == root) break;
+        }
+        root->color = BLACK;
+    }
+
+    void leftRotate(Node* x) {
+        Node* y = x->right;
+        x->right = y->left;
+        if (y->left != TNULL) y->left->parent = x;
+        y->parent = x->parent;
+        if (x->parent == nullptr) root = y;
+        else if (x == x->parent->left) x->parent->left = y;
+        else x->parent->right = y;
+        y->left = x;
+        x->parent = y;
+    }
+
+    void rightRotate(Node* x) {
+        Node* y = x->left;
+        x->left = y->right;
+        if (y->right != TNULL) y->right->parent = x;
+        y->parent = x->parent;
+        if (x->parent == nullptr) root = y;
+        else if (x == x->parent->right) x->parent->right = y;
+        else x->parent->left = y;
+        y->right = x;
+        x->parent = y;
+    }
+
+public:
+    RedBlackTree() {
+        TNULL = new Node(0);
+        TNULL->color = BLACK;
+        root = TNULL;
+    }
+
+    void insert(int key) {
+        Node* node = new Node(key);
+        node->parent = nullptr;
+        node->data = key;
+        node->left = TNULL;
+        node->right = TNULL;
+        node->color = RED;
+
+        Node* y = nullptr;
+        Node* x = root;
+
+        while (x != TNULL) {
+            y = x;
+            if (node->data < x->data) x = x->left;
+            else x = x->right;
+        }
+
+        node->parent = y;
+        if (y == nullptr) root = node;
+        else if (node->data < y->data) y->left = node;
+        else y->right = node;
+
+        if (node->parent == nullptr) {
+            node->color = BLACK;
+            return;
+        }
+
+        if (node->parent->parent == nullptr) return;
+
+        balanceInsert(node);
+    }
+
+    void preOrder() {
+        preOrderHelper(this->root);
+    }
+};
+
+int main() {
+    RedBlackTree bst;
+    bst.insert(10);
+    bst.insert(20);
+    bst.insert(30);
+    bst.insert(15);
+    bst.preOrder();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h3>2. Red-Black Tree in Python</h3>
+        <pre>
+<code>
+class Node:
+    def __init__(self, value):
+        self.data = value
+        self.left = None
+        self.right = None
+        self.parent = None
+        self.color = 'RED'
+
+class RedBlackTree:
+    def __init__(self):
+        self.TNULL = Node(0)
+        self.TNULL.color = 'BLACK'
+        self.root = self.TNULL
+
+    def pre_order_helper(self, node):
+        if node != self.TNULL:
+            print(node.data, end=" ")
+            self.pre_order_helper(node.left)
+            self.pre_order_helper(node.right)
+
+    def balance_insert(self, k):
+        while k.parent.color == 'RED':
+            if k.parent == k.parent.parent.right:
+                u = k.parent.parent.left
+                if u.color == 'RED':
+                    k.parent.color = 'BLACK'
+                    u.color = 'BLACK'
+                    k.parent.parent.color = 'RED'
+                    k = k.parent.parent
+                else:
+                    if k == k.parent.left:
+                        k = k.parent
+                        self.right_rotate(k)
+                    k.parent.color = 'BLACK'
+                    k.parent.parent.color = 'RED'
+                    self.left_rotate(k.parent.parent)
+            else:
+                u = k.parent.parent.right
+                if u.color == 'RED':
+                    k.parent.color = 'BLACK'
+                    u.color = 'BLACK'
+                    k.parent.parent.color = 'RED'
+                    k = k.parent.parent
+                else:
+                    if k == k.parent.right:
+                        k = k.parent
+                        self.left_rotate(k)
+                    k.parent.color = 'BLACK'
+                    k.parent.parent.color = 'RED'
+                    self.right_rotate(k.parent.parent)
+            if k == self.root:
+                break
+        self.root.color = 'BLACK'
+
+    def left_rotate(self, x):
+        y = x.right
+        x.right = y.left
+        if y.left != self.TNULL:
+            y.left.parent = x
+        y.parent = x.parent
+        if x.parent == None:
+            self.root = y
+        elif x == x.parent.left:
+            x.parent.left = y
+        else:
+            x.parent.right = y
+        y.left = x
+        x.parent = y
+
+    def right_rotate(self, x):
+        y = x.left
+        x.left = y.right
+        if y.right != self.TNULL:
+            y.right.parent = x
+        y.parent = x.parent
+        if x.parent == None:
+            self.root = y
+        elif x == x.parent.right:
+            x.parent.right = y
+        else:
+            x.parent.left = y
+        y.right = x
+        x.parent = y
+
+    def insert(self, key):
+        node = Node(key)
+        node.parent = None
+        node.data = key
+        node.left = self.TNULL
+        node.right = self.TNULL
+        node.color = 'RED'
+
+        y = None
+        x = self.root
+
+        while x != self.TNULL:
+            y = x
+            if node.data < x.data:
+                x = x.left
+            else:
+                x = x.right
+
+        node.parent = y
+        if y == None:
+            self.root = node
+        elif node.data < y.data:
+            y.left = node
+        else:
+            y.right = node
+
+        if node.parent == None:
+            node.color = 'BLACK'
+            return
+
+        if node.parent.parent == None:
+            return
+
+        self.balance_insert(node)
+
+    def pre_order(self):
+        self.pre_order_helper(self.root)
+
+# Example usage
+rbt = RedBlackTree()
+rbt.insert(10)
+rbt.insert(20)
+rbt.insert(30)
+rbt.insert(15)
+rbt.pre_order()
+</code>
+        </pre>
+
+       
+        
+
+        <h2>Summary</h2>
+        <p>Red-Black Trees are an essential type of self-balancing binary search tree with strict balancing properties that ensure efficient performance for insertions, deletions, and lookups. By understanding Red-Black Trees and their balancing mechanisms, one can effectively handle a wide range of computational problems requiring balanced data management.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>  </div>
+</body>
+</html>

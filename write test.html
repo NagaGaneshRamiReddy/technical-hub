@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Writing Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+            height: 100vh;
+            margin: 0;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #topic-container {
+            margin-bottom: 20px;
+            font-size: 18px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        #topic {
+            background-color: #f0f8ff; /* Light blue background for the topic */
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #timer {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        .h2 {
+            color: green;
+            font-size: 30px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            color: red;
+            padding: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Writing Test
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="test-section">
+            <h2 class="h2">Your Writing Test</h2>
+            <div id="topic-container">
+                <label for="topic">Topic:</label>
+                <span id="topic">Loading...</span>
+            </div>
+            <textarea id="essay" rows="10" placeholder="Write your essay here..."></textarea>
+            <button id="submit-btn">Submit</button>
+            <div id="result" class="hidden">
+                <h3 class="h2">Test Result</h3>
+                <p id="score"></p>
+                <p id="ai-detection"></p>
+            </div>
+            <p id="timer">Time remaining: 10:00</p>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const topics = [
+                'The importance of education in personal development.',
+                'How technology is changing the way we communicate.',
+                'The impact of climate change on global agriculture.',
+                'The role of social media in modern society.',
+                'Why exercise is crucial for maintaining good health.'
+            ];
+        
+            const keywords = {
+                'The importance of education in personal development.': ['education', 'personal development', 'learning'],
+                'How technology is changing the way we communicate.': ['technology', 'communication', 'digital'],
+                'The impact of climate change on global agriculture.': ['climate change', 'agriculture', 'global warming'],
+                'The role of social media in modern society.': ['social media', 'society', 'online'],
+                'Why exercise is crucial for maintaining good health.': ['exercise', 'health', 'fitness']
+            };
+        
+            const topicElement = document.getElementById('topic');
+            const essayElement = document.getElementById('essay');
+            const resultElement = document.getElementById('result');
+            const scoreElement = document.getElementById('score');
+            const aiDetectionElement = document.getElementById('ai-detection');
+            const submitButton = document.getElementById('submit-btn');
+            const timerElement = document.getElementById('timer');
+        
+            let timer;
+            let timeRemaining = 600; // 10 minutes in seconds
+        
+            function getRandomTopic() {
+                const randomIndex = Math.floor(Math.random() * topics.length);
+                return topics[randomIndex];
+            }
+        
+            function highlightKeywords(topic) {
+                const topicKeywords = keywords[topic] || [];
+                let highlightedText = topic;
+                topicKeywords.forEach(keyword => {
+                    const regex = new RegExp(`\\b(${keyword})\\b`, 'gi');
+                    highlightedText = highlightedText.replace(regex, `<span class="highlight">${keyword}</span>`);
+                });
+                return highlightedText;
+            }
+
+            function displayTopic() {
+                const topic = getRandomTopic();
+                topicElement.innerHTML = highlightKeywords(topic);
+                return topic;
+            }
+        
+            function calculateScore(essay, topic) {
+                const words = essay.toLowerCase().split(/\s+/);
+                const topicKeywords = keywords[topic] || [];
+                const keywordCount = topicKeywords.reduce((count, keyword) => {
+                    return count + words.filter(word => word.includes(keyword)).length;
+                }, 0);
+                return Math.min((keywordCount / topicKeywords.length) * 100, 100); // Ensure score doesn't exceed 100
+            }
+        
+            async function detectAIContent(text) {
+                // Simulated AI detection response for demonstration
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        resolve(Math.random() < 0.5); // Randomly return true or false
+                    }, 1000);
+                });
+            }
+        
+            function updateTimer() {
+                const minutes = Math.floor(timeRemaining / 60);
+                const seconds = timeRemaining % 60;
+                timerElement.textContent = `Time remaining: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                
+                if (timeRemaining <= 0) {
+                    clearInterval(timer);
+                    submitTest();
+                }
+                
+                timeRemaining--;
+            }
+        
+            function startTimer() {
+                timer = setInterval(updateTimer, 1000);
+            }
+        
+            async function submitTest() {
+                const topic = topicElement.textContent;
+                const essay = essayElement.value;
+        
+                if (!essay.trim()) {
+                    alert('Please write an essay before submitting.');
+                    return;
+                }
+        
+                const isAIContent = await detectAIContent(essay);
+        
+                if (isAIContent) {
+                    aiDetectionElement.textContent = 'This content appears to be generated by AI.';
+                    aiDetectionElement.style.color = 'red';
+                    scoreElement.textContent = '';
+                } else {
+                    aiDetectionElement.textContent = '';
+                    const score = calculateScore(essay, topic);
+                    scoreElement.textContent = `Your score: ${score.toFixed(2)}%`;
+                }
+        
+                resultElement.classList.remove('hidden');
+                submitButton.disabled = true; // Disable the submit button after test is auto-submitted
+            }
+        
+            submitButton.addEventListener('click', submitTest);
+        
+            displayTopic();
+            startTimer();
+        });
+    </script>
+</body>
+</html>

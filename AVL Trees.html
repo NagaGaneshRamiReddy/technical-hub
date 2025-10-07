@@ -1,0 +1,810 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Binary Search Trees.html";
+    }
+    function goNext() {
+        window.location.href = "Red-Black Trees.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1">AVL Tree</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>An AVL Tree is a self-balancing binary search tree where the difference between the heights of the left and right subtrees of any node is at most one. This balance property ensures that the tree remains approximately balanced, allowing for efficient operations such as insertion, deletion, and lookup, all with a time complexity of O(log n).</p>
+        
+        
+            <style>
+                .container {
+                    margin: 20px;
+                    text-align: center;
+                }
+                .tree-container {
+                    display: flex;
+                    justify-content: center; /* Center the tree horizontally */
+                    align-items: center;
+                    height: 400px;
+                    width: 100%;
+                    position: relative;
+                    border: 2px dashed #4CAF50;
+                    background-color: #fff;
+                    overflow: hidden; /* Hide overflow for better visualization */
+                }
+                .tree {
+                    position: relative;
+                    width: auto; /* Allow the tree to take its natural width */
+                    height: 100%;
+                }
+                .node {
+                    position: absolute;
+                    background-color: #4CAF50;
+                    color: white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: bold;
+                    border: 2px solid #ffffff;
+                    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.5s ease;
+                    opacity: 0;
+                }
+                .node.show {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                .node:hover {
+                    transform: scale(1.2);
+                    background-color: #e7f0ff;
+                }
+                .node.highlight {
+                    background-color: #ffcc00; /* Highlight color */
+                    transform: scale(1.5); /* Enlarge node */
+                }
+                .line {
+                    position: absolute;
+                    background-color: #4CAF50;
+                    width: 2px;
+                    transform-origin: 0 0;
+                    transition: width 0.5s ease, transform 0.5s ease;
+                }
+                .description {
+                    background-color: #ffffff;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin: 20px auto;
+                    max-width: 800px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+                }
+                .description h2 {
+                    font-size: 24px;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+                .description p {
+                    font-size: 18px;
+                    color: #555;
+                    line-height: 1.6;
+                }
+                .description ul {
+                    list-style-type: disc;
+                    padding-left: 20px;
+                }
+                .description li {
+                    margin-bottom: 10px;
+                }
+                @media (max-width: 600px) {
+                    .description {
+                        padding: 15px;
+                    }
+                    .description h2 {
+                        font-size: 20px;
+                    }
+                    .description p {
+                        font-size: 16px;
+                    }
+                }
+                button, input[type="number"], select {
+                    padding: 10px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    margin: 5px;
+                }
+                button {
+                    background-color: #00ff08;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+                button:hover {
+                    background-color: #0056b3;
+                }
+                input[type="number"], select {
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>AVL Tree Visualization</h1>
+                <div class="tree-container">
+                    <div class="tree" id="tree"></div>
+                </div>
+                <button onclick="addNode()">Add Node</button>
+                <input type="number" id="nodeValue" placeholder="Enter value to add">
+                <div class="description">
+                    <p><strong>AVL Tree Explanation:</strong></p>
+                    <p>An AVL tree is a self-balancing binary search tree where the difference in heights between left and right subtrees of any node is at most 1.</p>
+                    <ul>
+                        <li><strong>Insertion:</strong> Inserts a new node and performs rotations to maintain balance.</li>
+                        <li><strong>Rotations:</strong> Adjust the tree to ensure it remains balanced after insertions.</li>
+                        <li><strong>Balance Factor:</strong> Height difference between left and right subtrees of a node.</li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                class AVLNode {
+                    constructor(value) {
+                        this.value = value;
+                        this.left = null;
+                        this.right = null;
+                        this.height = 1;
+                    }
+                }
+        
+                class AVLTree {
+                    constructor() {
+                        this.root = null;
+                    }
+        
+                    // Utility function to get the height of a node
+                    getHeight(node) {
+                        return node ? node.height : 0;
+                    }
+        
+                    // Utility function to get the balance factor of a node
+                    getBalance(node) {
+                        return node ? this.getHeight(node.left) - this.getHeight(node.right) : 0;
+                    }
+        
+                    // Right rotate utility
+                    rightRotate(y) {
+                        const x = y.left;
+                        const T2 = x.right;
+        
+                        // Perform rotation
+                        x.right = y;
+                        y.left = T2;
+        
+                        // Update heights
+                        y.height = Math.max(this.getHeight(y.left), this.getHeight(y.right)) + 1;
+                        x.height = Math.max(this.getHeight(x.left), this.getHeight(x.right)) + 1;
+        
+                        // Return new root
+                        return x;
+                    }
+        
+                    // Left rotate utility
+                    leftRotate(x) {
+                        const y = x.right;
+                        const T2 = y.left;
+        
+                        // Perform rotation
+                        y.left = x;
+                        x.right = T2;
+        
+                        // Update heights
+                        x.height = Math.max(this.getHeight(x.left), this.getHeight(x.right)) + 1;
+                        y.height = Math.max(this.getHeight(y.left), this.getHeight(y.right)) + 1;
+        
+                        // Return new root
+                        return y;
+                    }
+        
+                    // Insert a node into the AVL tree
+                    insert(value) {
+                        this.root = this._insert(this.root, value);
+                    }
+        
+                    // Recursive insert function
+                    _insert(node, value) {
+                        if (!node) return new AVLNode(value);
+        
+                        if (value < node.value) {
+                            node.left = this._insert(node.left, value);
+                        } else if (value > node.value) {
+                            node.right = this._insert(node.right, value);
+                        } else {
+                            return node; // Duplicates are not allowed
+                        }
+        
+                        // Update height of this ancestor node
+                        node.height = Math.max(this.getHeight(node.left), this.getHeight(node.right)) + 1;
+        
+                        // Get the balance factor
+                        const balance = this.getBalance(node);
+        
+                        // If this node becomes unbalanced, then there are 4 cases
+        
+                        // Left Left Case
+                        if (balance > 1 && value < node.left.value) {
+                            return this.rightRotate(node);
+                        }
+        
+                        // Right Right Case
+                        if (balance < -1 && value > node.right.value) {
+                            return this.leftRotate(node);
+                        }
+        
+                        // Left Right Case
+                        if (balance > 1 && value > node.left.value) {
+                            node.left = this.leftRotate(node.left);
+                            return this.rightRotate(node);
+                        }
+        
+                        // Right Left Case
+                        if (balance < -1 && value < node.right.value) {
+                            node.right = this.rightRotate(node.right);
+                            return this.leftRotate(node);
+                        }
+        
+                        // Return the (unchanged) node pointer
+                        return node;
+                    }
+        
+                    // Function to create the AVL tree visual
+                    createTreeVisual(container) {
+                        container.innerHTML = '';
+                        if (this.root) {
+                            this._createBinaryTree(this.root, container, container.clientWidth / 2, 50, 100);
+                        }
+                    }
+        
+                    // Recursive function to create tree visual
+                    _createBinaryTree(node, container, x, y, nodeDistance) {
+                        if (!node) return;
+                        const nodeElement = createNode(node.value, x, y);
+                        container.appendChild(nodeElement);
+        
+                        if (node.left) {
+                            const leftX = x - nodeDistance / 2;
+                            const newY = y + 80;
+                            container.appendChild(drawLine(x + 20, y + 40, leftX + 20, newY));
+                            this._createBinaryTree(node.left, container, leftX, newY, nodeDistance / 2);
+                        }
+        
+                        if (node.right) {
+                            const rightX = x + nodeDistance / 2;
+                            const newY = y + 80;
+                            container.appendChild(drawLine(x + 20, y + 40, rightX + 20, newY));
+                            this._createBinaryTree(node.right, container, rightX, newY, nodeDistance / 2);
+                        }
+                    }
+                }
+        
+                const avlTree = new AVLTree();
+                let nodeCounter = 1;
+        
+                function addNode() {
+                    const valueInput = document.getElementById('nodeValue');
+                    const newValue = parseInt(valueInput.value, 10) || nodeCounter++;
+                    avlTree.insert(newValue);
+                    avlTree.createTreeVisual(treeContainer);
+                }
+        
+                function createNode(value, x, y) {
+                    const node = document.createElement('div');
+                    node.className = 'node';
+                    node.textContent = value;
+                    node.style.left = `${x}px`;
+                    node.style.top = `${y}px`;
+                    setTimeout(() => node.classList.add('show'), 10);
+                    return node;
+                }
+        
+                function drawLine(x1, y1, x2, y2) {
+                    const line = document.createElement('div');
+                    line.className = 'line';
+                    const length = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+                    const angle = Math.atan2(y2 - y1, x2 - x1) * (180 / Math.PI);
+                    line.style.width = '0';
+                    line.style.height = '2px';
+                    line.style.transform = `rotate(${angle}deg)`;
+                    line.style.left = `${x1}px`;
+                    line.style.top = `${y1}px`;
+                    setTimeout(() => line.style.width = `${length}px`, 10);
+                    return line;
+                }
+        
+                const treeContainer = document.getElementById('tree');
+                updateTree = () => avlTree.createTreeVisual(treeContainer);
+        
+                // Initial render
+                updateTree();
+            </script>
+        
+        
+        <h2>Properties of AVL Trees</h2>
+        <ul>
+            <li><strong>Balance Factor:</strong> For any node, the difference in height between its left and right subtrees (called the balance factor) is between -1 and 1.</li>
+            <li><strong>Rotation:</strong> To maintain balance after insertions or deletions, rotations (left, right, left-right, and right-left) are used.</li>
+        </ul>
+
+        <h2>Basic Operations</h2>
+        <ul>
+            <li><strong>Insertion:</strong> Adding a node while maintaining the AVL property. This may require rotations to restore balance.</li>
+            <li><strong>Deletion:</strong> Removing a node while maintaining the AVL property. Similar to insertion, rotations may be needed.</li>
+            <li><strong>Search:</strong> Finding a node with a specific value, which is efficient due to the balanced nature of the tree.</li>
+            <li><strong>Traversal:</strong> Visiting nodes in a specific order, such as in-order, pre-order, and post-order.</li>
+        </ul>
+
+        <h2>Implementation Examples</h2>
+
+        <h3>1. AVL Tree in C++</h3>
+        <pre>
+<code>
+#include &lt;iostream&gt>
+#include &lt;algorithm&gt>
+
+class TreeNode {
+public:
+    int data;
+    TreeNode* left;
+    TreeNode* right;
+    int height;
+    TreeNode(int value) : data(value), left(nullptr), right(nullptr), height(1) {}
+};
+
+class AVLTree {
+    TreeNode* root;
+
+    int height(TreeNode* node) {
+        return node ? node->height : 0;
+    }
+
+    int balanceFactor(TreeNode* node) {
+        return node ? height(node->left) - height(node->right) : 0;
+    }
+
+    TreeNode* rightRotate(TreeNode* y) {
+        TreeNode* x = y->left;
+        TreeNode* T2 = x->right;
+        x->right = y;
+        y->left = T2;
+        y->height = std::max(height(y->left), height(y->right)) + 1;
+        x->height = std::max(height(x->left), height(x->right)) + 1;
+        return x;
+    }
+
+    TreeNode* leftRotate(TreeNode* x) {
+        TreeNode* y = x->right;
+        TreeNode* T2 = y->left;
+        y->left = x;
+        x->right = T2;
+        x->height = std::max(height(x->left), height(x->right)) + 1;
+        y->height = std::max(height(y->left), height(y->right)) + 1;
+        return y;
+    }
+
+    TreeNode* insert(TreeNode* node, int value) {
+        if (!node) return new TreeNode(value);
+        if (value < node->data) node->left = insert(node->left, value);
+        else if (value > node->data) node->right = insert(node->right, value);
+        else return node;
+
+        node->height = std::max(height(node->left), height(node->right)) + 1;
+
+        int balance = balanceFactor(node);
+        if (balance > 1 && value < node->left->data) return rightRotate(node);
+        if (balance < -1 && value > node->right->data) return leftRotate(node);
+        if (balance > 1 && value > node->left->data) {
+            node->left = leftRotate(node->left);
+            return rightRotate(node);
+        }
+        if (balance < -1 && value < node->right->data) {
+            node->right = rightRotate(node->right);
+            return leftRotate(node);
+        }
+        return node;
+    }
+
+    void inorder(TreeNode* node) {
+        if (node) {
+            inorder(node->left);
+            std::cout &lt;&lt; node->data &lt;&lt; " ";
+            inorder(node->right);
+        }
+    }
+
+public:
+    AVLTree() : root(nullptr) {}
+
+    void insert(int value) {
+        root = insert(root, value);
+    }
+
+    void inorder() {
+        inorder(root);
+        std::cout &lt;&lt; std::endl;
+    }
+};
+
+int main() {
+    AVLTree tree;
+    tree.insert(10);
+    tree.insert(20);
+    tree.insert(5);
+    tree.insert(3);
+    tree.insert(8);
+    tree.inorder();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h3>2. AVL Tree in Python</h3>
+        <pre>
+<code>
+class TreeNode:
+    def __init__(self, value):
+        self.data = value
+        self.left = None
+        self.right = None
+        self.height = 1
+
+class AVLTree:
+    def __init__(self):
+        self.root = None
+
+    def height(self, node):
+        return node.height if node else 0
+
+    def balance_factor(self, node):
+        return self.height(node.left) - self.height(node.right) if node else 0
+
+    def right_rotate(self, y):
+        x = y.left
+        T2 = x.right
+        x.right = y
+        y.left = T2
+        y.height = max(self.height(y.left), self.height(y.right)) + 1
+        x.height = max(self.height(x.left), self.height(x.right)) + 1
+        return x
+
+    def left_rotate(self, x):
+        y = x.right
+        T2 = y.left
+        y.left = x
+        x.right = T2
+        x.height = max(self.height(x.left), self.height(x.right)) + 1
+        y.height = max(self.height(y.left), self.height(y.right)) + 1
+        return y
+
+    def insert(self, value):
+        self.root = self._insert(self.root, value)
+
+    def _insert(self, node, value):
+        if not node:
+            return TreeNode(value)
+        if value < node.data:
+            node.left = self._insert(node.left, value)
+        elif value > node.data:
+            node.right = self._insert(node.right, value)
+        else:
+            return node
+
+        node.height = max(self.height(node.left), self.height(node.right)) + 1
+
+        balance = self.balance_factor(node)
+        if balance > 1 and value < node.left.data:
+            return self.right_rotate(node)
+        if balance < -1 and value > node.right.data:
+            return self.left_rotate(node)
+        if balance > 1 and value > node.left.data:
+            node.left = self.left_rotate(node.left)
+            return self.right_rotate(node)
+        if balance < -1 and value < node.right.data:
+            node.right = self.right_rotate(node.right)
+            return self.left_rotate(node)
+        return node
+
+    def inorder(self, node):
+        if node:
+            self.inorder(node.left)
+            print(node.data, end=" ")
+            self.inorder(node.right)
+
+    def display(self):
+        self.inorder(self.root)
+        print()
+
+# Example usage
+avl_tree = AVLTree()
+avl_tree.insert(10)
+avl_tree.insert(20)
+avl_tree.insert(5)
+avl_tree.insert(3)
+avl_tree.insert(8)
+avl_tree.display()
+</code>
+        </pre>
+
+        <h2>Free Resources to Learn More</h2>
+        <ul>
+            <li><a href="https://www.geeksforgeeks.org/avl-tree-set-1-insertion/" target="_blank">GeeksforGeeks AVL Tree Tutorial</a> - Comprehensive guide on AVL trees, including insertion and rotation operations.</li>
+            <li><a href="https://www.coursera.org/learn/data-structures" target="_blank">Coursera Data Structures Course</a> - In-depth course covering AVL trees and other advanced data structures.</li>
+            <li><a href="https://www.khanacademy.org/computing/computer-science/algorithms" target="_blank">Khan Academy Algorithms</a> - Interactive lessons and exercises on AVL trees.</li>
+            <li><a href="https://freecodecamp.org/learn/data-structures-and-algorithms/" target="_blank">FreeCodeCamp Data Structures and Algorithms</a> - Hands-on tutorials and challenges on AVL trees.</li>
+        </ul>
+
+        <h2>Summary</h2>
+        <p>AVL Trees are a type of self-balancing binary search tree that maintain their balance through rotations. This ensures efficient operations for searching, insertion, and deletion. Understanding AVL trees and their balance properties is crucial for solving complex computational problems that require efficient data management.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>  </div>
+</body>
+</html>

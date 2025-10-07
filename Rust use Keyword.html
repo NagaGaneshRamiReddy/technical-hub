@@ -1,0 +1,353 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Rust Proagramming Language</title>
+   
+   
+   
+    <head>
+    
+        <body class="body">
+ 
+            <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+            
+                <div id="main" class="main">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                
+                    <button class="openbtn homebtn" onclick="goHome()">
+                        &#8962; Home
+                    </button>
+                    <button class="openbtn compbtn" onclick="gocomp()">
+                        <i class="fas fa-code"></i> Rust Compiler
+                    </button>
+                    <button class="openbtn videobtn" onclick="govideo()">
+                        <i class="fas fa-video"></i> Video
+                    </button>
+                    <button class="openbtn labs" onclick="goprojects()">
+                   
+                        <i class="fas fa-folder-open"></i> Projects
+                    </button>
+                    <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                        <i class="fas fa-user-tie"></i> Interview Preparation
+                    </button>
+                    <button class="openbtn quizbtn" onclick="goquizpro()">
+                        <i class="fas fa-question-circle"></i> Rust Quiz
+                    </button>
+                </div></div>
+            </header>
+            
+            
+            
+            
+            
+            
+          
+          
+              
+               
+              
+        
+              
+             <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+                  
+                    
+                     
+        
+                </div>
+            </header>
+            <br><br><br>
+            
+            <div id="mySidebar" class="sidebar">
+                <!-- Top Box with Icon and Title -->
+                <div class="top-box">
+                  
+                    <i class="fab fa-rust" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+                    <h2 class="jk">Rust Tutorial</h2>
+                </div>
+            
+                <!-- Close button and sidebar content -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Rust.html" target="_blank"><b class="b12">Rust Roadmap</b></a>   
+        <ul>
+            <a href="Introduction to Rust.html">Introduction to Rust</a>
+            <li><a href="What is Rust.html">What is Rust?</a></li>
+            <li><a href="Rust Features.html">Rust Features</a></li>
+            <li><a href="Rust Installation.html">Rust Installation</a></li>
+            <li><a href="First Rust Program.html">First Rust Program</a></li>
+            <li>
+               <h3> Control Statements</h3>
+                <ul>
+                    <li><a href="Rust if-else.html">Rust if-else</a></li>
+                    <li><a href="Rust if in a let.html">Rust if in a let</a></li>
+                    <li><a href="Rust Loop.html">Rust Loop</a></li>
+                    <li><a href="Rust While Loop.html">Rust While Loop</a></li>
+                    <li><a href="Rust For Loop.html">Rust For Loop</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Ownership</h3>
+                <ul>
+                    <li><a href="What is Ownership.html">What is Ownership?</a></li>
+                    <li><a href="Rust References & Borrowing.html">References & Borrowing</a></li>
+                    <li><a href="Rust Slices.html">Slices</a></li>
+                    <li><a href="Rust Structs.html">Structs</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Enums</h3>
+                <ul>
+                    <li><a href="What is enum.html">What is Enum?</a></li>
+                    <li><a href="Match Operator.html">Match Operator</a></li>
+                    <li><a href="If Let Operator.html">If Let Operator</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Modules</h3>
+                <ul>
+                    <li><a href="Rust Filesystem.html">Filesystem</a></li>
+                    <li><a href="Controlling visibility with pub.html">Controlling Visibility with pub</a></li>
+                    <li><a href="Rust use Keyword.html">use Keyword</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Collections</h3>
+                <ul>
+                    <li><a href="Rust Vectors.html">Vectors</a></li>
+                    <li><a href="Rust Strings.html">Strings</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Error Handling</h3>
+                <ul>
+                    <li><a href="Unrecoverable Errors.html">Unrecoverable Errors</a></li>
+                    <li><a href="Recoverable Errors.html">Recoverable Errors</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Generics & Traits</h3>
+                <ul>
+                    <li><a href="Rust Generics.html">Generics</a></li>
+                    <li><a href="Rust Traits.html">Traits</a></li>
+                    <li><a href="Rust Lifetime.html">Lifetime</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Smart Pointers</h3>
+                <ul>
+                    <li><a href="Smart Pointers.html">Smart Pointers</a></li>
+                    <li><a href="Rust Box.html">Box&lt;T&gt;</a></li>
+                    <li><a href="Rust Deref Trait.html">Deref Trait</a></li>
+                    <li><a href="Rust Drop Trait.html">Drop Trait</a></li>
+                    <li><a href="Rust Rc(T).html">Rc&lt;T&gt;</a></li>
+                    <li><a href="Rust RefCell(T).html">RefCell&lt;T&gt;</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Rust_interviews.html";
+}
+function goprojects() {
+    window.location.href = "Rust_projects.html";
+}
+function goquizpro() {
+    window.location.href = "Rust_quize.html";
+}
+function gocomp() {
+    window.location.href = "Rust Compiler.html";
+}
+   
+    function goPrevious() {
+        window.location.href = "Controlling visibility with pub.html";
+    }
+    function goNext() {
+        window.location.href = "Rust Collections.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content"> <div class="top-box1">
+            <i class="fab fa-rust" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+            <h2 class="jk">Rust Tutorial</h2><div class="div1">The use Keyword in Rust</div></div>
+
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+        
+        <h2>Understanding the use Keyword</h2>
+        <p>The <code>use</code> keyword in Rust is utilized to bring paths into scope, making it easier to reference modules, structs, enums, and functions without needing to specify their full paths repeatedly. This helps improve code readability and reduces verbosity.</p>
+        
+        <h2>Basic Usage of the use Keyword</h2>
+        <p>Here’s a simple example demonstrating how to use the <code>use</code> keyword:</p>
+        
+        <div class="example">
+            <pre><code>mod my_module {
+            pub fn greet() {
+                println!("Hello from my_module!");
+            }
+        }
+        
+        use my_module::greet;
+        
+        fn main() {
+            greet(); // No need to use my_module::greet
+        }</code></pre>
+        </div>
+        
+        <h2>Bringing Multiple Items into Scope</h2>
+        <p>You can also bring multiple items into scope at once:</p>
+        
+        <div class="example">
+            <pre><code>mod shapes {
+            pub struct Circle;
+            pub struct Square;
+        
+            pub fn draw_circle() {
+                println!("Drawing a circle!");
+            }
+        
+            pub fn draw_square() {
+                println!("Drawing a square!");
+            }
+        }
+        
+        use shapes::{draw_circle, draw_square};
+        
+        fn main() {
+            draw_circle();
+            draw_square();
+        }</code></pre>
+        </div>
+        
+        <h2>Nested Paths with the use Keyword</h2>
+        <p>The <code>use</code> keyword can also simplify nested paths:</p>
+        
+        <div class="example">
+            <pre><code>mod outer {
+            pub mod inner {
+                pub fn inner_function() {
+                    println!("This is an inner function!");
+                }
+            }
+        }
+        
+        use outer::inner::inner_function;
+        
+        fn main() {
+            inner_function(); // Directly call the inner function
+        }</code></pre>
+        </div>
+        
+        <h2>Renaming Imports</h2>
+        <p>If two items have the same name or you want to provide a clearer name, you can rename imports using the <code>as</code> keyword:</p>
+        
+        <div class="example">
+            <pre><code>mod my_module {
+            pub fn function() {
+                println!("Function from my_module!");
+            }
+        }
+        
+        mod another_module {
+            pub fn function() {
+                println!("Function from another_module!");
+            }
+        }
+        
+        use my_module::function as my_function;
+        use another_module::function as another_function;
+        
+        fn main() {
+            my_function();
+            another_function();
+        }</code></pre>
+        </div>
+        
+        <h2>Using the use Keyword with Traits</h2>
+        <p>The <code>use</code> keyword can also be used to bring traits into scope, allowing you to call their methods directly:</p>
+        
+        <div class="example">
+            <pre><code>trait Greet {
+            fn greet(&self);
+        }
+        
+        impl Greet for String {
+            fn greet(&self) {
+                println!("Hello, {}!", self);
+            }
+        }
+        
+        use Greet;
+        
+        fn main() {
+            let name = String::from("Rust");
+            name.greet(); // Calls the greet method from the Greet trait
+        }</code></pre>
+        </div>
+        
+        
+        
+        <div class="resources">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://doc.rust-lang.org/book/ch07-02-modules.html#bringing-paths-into-scope-with-the-use-keyword" target="_blank">The Rust Programming Language: use Keyword</a></li>
+                <li><a href="https://doc.rust-lang.org/reference/items/use-declarations.html" target="_blank">Rust Reference: use Declarations</a></li>
+                <li><a href="https://doc.rust-lang.org/rust-by-example/trait/use.html" target="_blank">Rust by Example: Using Traits</a></li>
+            </ul>
+        </div>
+        <h2>Summary</h2>
+        <p>The <code>use</code> keyword is an essential feature in Rust for managing paths and improving code clarity. By allowing you to bring items into scope, it simplifies referencing modules, functions, and traits, making your code more concise and readable.</p>
+        
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+        

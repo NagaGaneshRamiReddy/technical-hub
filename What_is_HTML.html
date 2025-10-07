@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>HTML</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> HTML Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+
+
+    
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-html5"  style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">HTML Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        
+        <a href="HTML Roadmaps.html" target="_blank"><b class="b12">HTML Roadmap</b></a>
+        <ul> <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+        
+             <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+            <li><a href="What_is_HTML.html" target="_blank">What is HTML?</a></li>
+            <li><a href="HTML_Installation.html" target="_blank">Installation</a></li>
+            <li><a href="First_HTML_Page.html" target="_blank">First HTML Page</a></li>
+        </ul>
+    
+        <h3>HTML Basics</h3>
+        <a href="HTML_Basics.html" target="_blank">HTML Basics</a>
+        <ul>
+            <li><a href="HTML_Tags.html" target="_blank">HTML Tags</a></li>
+            <li><a href="HTML_Attributes.html" target="_blank">HTML Attributes</a></li>
+            <li><a href="HTML_Elements.html" target="_blank">HTML Elements</a></li>
+        </ul>
+    
+        <h3>HTML Text Formatting</h3>
+        <a href="HTML_Text_Formatting.html" target="_blank">HTML Text Formatting</a>
+        <ul>
+            <li><a href="Headings.html" target="_blank">Headings</a></li>
+            <li><a href="Paragraphs.html" target="_blank">Paragraphs</a></li>
+            <li><a href="Text_Styles.html" target="_blank">Text Styles</a></li>
+        </ul>
+    
+        <h3>HTML Lists</h3>
+        <a href="HTML_Lists.html" target="_blank">HTML Lists</a>
+        <ul>
+            <li><a href="Ordered_Lists.html" target="_blank">Ordered Lists</a></li>
+            <li><a href="Unordered_Lists.html" target="_blank">Unordered Lists</a></li>
+            <li><a href="Nested_Lists.html" target="_blank">Nested Lists</a></li>
+        </ul>
+    
+        <h3>HTML Forms</h3>
+        <a href="HTML_Forms.html" target="_blank">HTML Forms</a>
+        <ul>
+            <li><a href="Form_Elements.html" target="_blank">Form Elements</a></li>
+            <li><a href="Form_Validation.html" target="_blank">Form Validation</a></li>
+            <li><a href="Input_Types.html" target="_blank">Input Types</a></li>
+        </ul>
+    
+        <h3>HTML Media</h3>
+        <a href="HTML_Media.html" target="_blank">HTML Media</a>
+        <ul>
+            <li><a href="Images.html" target="_blank">Images</a></li>
+            <li><a href="Audio.html" target="_blank">Audio</a></li>
+            <li><a href="Video.html" target="_blank">Video</a></li>
+        </ul>
+    
+        <h3>HTML Tables</h3>
+        <a href="HTML_Tables.html" target="_blank">HTML Tables</a>
+        <ul>
+            <li><a href="Basic_Tables.html" target="_blank">Basic Tables</a></li>
+            <li><a href="Table_Headers.html" target="_blank">Table Headers</a></li>
+            <li><a href="Table_Spanning.html" target="_blank">Table Spanning</a></li>
+        </ul>
+    
+        <h3>HTML Semantics</h3>
+        <a href="HTML_Semantics.html" target="_blank">HTML Semantics</a>
+        <ul>
+            <li><a href="Div_vs_Semantic_Tags.html" target="_blank">Div vs Semantic Tags</a></li>
+            <li><a href="Semantic_Elements.html" target="_blank">Semantic Elements</a></li>
+        </ul>
+    </div>
+    
+    
+    
+  
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "HTML_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "HTML_quize.html";
+}
+function goproject() {
+    window.location.href = "HTML_projects.html";
+}
+function gocomp() {
+    window.location.href = "html_compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Introduction_to_HTML.html";
+    }
+    function goNext() {
+        window.location.href = "HTML_Installation.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+
+            <div class="top-box1">
+                <i class="fab fa-html5" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">HTML Tutorial</h2>
+            <div class="div1">What is HTML?</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Introduction to HTML</h2>
+<p>HTML stands for Hypertext Markup Language. It is the standard markup language used to create web pages. HTML elements form the building blocks of all websites, allowing you to structure content, define elements, and create links.</p>
+<div id="languageSelector" style="margin-top: 20px; display: none;">
+    <label for="language">Select Language:</label>
+    <select id="language" onchange="changeVideo()">
+        <option value="english">English</option>
+        <option value="telugu">Telugu</option>
+        <option value="hindi">Hindi</option>
+    </select>
+</div>
+
+
+<div id="videoContainer" style="display: none; margin-top: 20px;">
+    <iframe id="youtubeVideo" width="560" height="315" src="" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+    </div>
+    <script>
+
+        const videos = {
+            english: 'https://www.youtube.com/embed/W-6OY9eI3hk?si=sHhRb4Dpp7KebaTi',  
+            
+            telugu: 'https://www.youtube.com/embed/',  
+            
+            hindi: 'https://www.youtube.com/embed/'  
+            
+        };
+    
+    
+        function govideo() {
+            
+            document.getElementById('languageSelector').style.display = 'block';
+            
+    
+            document.getElementById('videoContainer').style.display = 'block';
+            
+    
+            window.scrollTo(0, document.getElementById('videoContainer').offsetTop);
+            
+
+            changeVideo();
+        }
+    
+        
+        function changeVideo() {
+            const selectedLanguage = document.getElementById('language').value;
+            const videoUrl = videos[selectedLanguage];
+            
+    
+            document.getElementById('youtubeVideo').src = videoUrl;
+        }
+    </script>
+<h2>Purpose of HTML</h2>
+<ul>
+    <li><strong>Structure:</strong> HTML provides the basic structure of a web page, which can be enhanced with CSS and JavaScript.</li>
+    <li><strong>Content Organization:</strong> It helps organize content into headings, paragraphs, lists, links, images, and other elements.</li>
+    <li><strong>Hyperlinks:</strong> HTML allows the creation of hyperlinks, enabling navigation between web pages.</li>
+</ul>
+
+<h2>Basic HTML Document Structure</h2>
+<p>A typical HTML document has a specific structure that includes several key elements:</p>
+
+<div class="example">
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is a simple HTML document.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+<h3>Explanation of Key Elements:</h3>
+<ul>
+    <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type and version of HTML.</li>
+    <li><code>&lt;html&gt;</code>: The root element of an HTML page.</li>
+    <li><code>&lt;head&gt;</code>: Contains meta-information about the HTML document, such as the title and character set.</li>
+    <li><code>&lt;body&gt;</code>: Contains the content of the document, such as headings, paragraphs, images, etc.</li>
+</ul>
+
+<h2>HTML Elements</h2>
+<p>HTML is composed of various elements, which are represented by tags. Each element can have attributes that provide additional information.</p>
+
+<div class="example">
+    <pre><code>&lt;p class="intro"&gt;This is an introductory paragraph.&lt;/p&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <p class="intro">This is an introductory paragraph.</p>
+</div>
+
+<h2>Resources</h2>
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools: HTML Tutorial</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs: HTML</a></li>
+        <li><a href="https://html.spec.whatwg.org/multipage/" target="_blank">WHATWG: HTML Living Standard</a></li>
+    </ul>
+</div>
+
+<h2>Summary</h2>
+<p>HTML is the foundation of web development. Understanding its structure and purpose is essential for creating well-organized web pages. As you learn more about HTML, you'll be able to create richer and more interactive websites.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+</body>
+</html>

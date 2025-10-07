@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>Reading Test</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+    background-size: 400% 400%;
+    animation: waterFlow 10s ease infinite;
+    height: 100vh;
+    margin: 0;
+  }
+
+  @keyframes waterFlow {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+
+  header {
+    background: #065c05;
+    color: #f9f9f9;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+  }
+
+  nav ul {
+    list-style: none;
+    font-size: 20px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-left: 15px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #4CAF50;
+  }
+
+  main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  #paragraph-container {
+    margin-bottom: 20px;
+  }
+
+  #paragraph {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 16px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    animation: loadParagraph 1s ease;
+  }
+
+  @keyframes loadParagraph {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  #paragraph span.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    color: red;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+  }
+
+  textarea:focus {
+    border-color: #4CAF50;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #audio-controls {
+    margin-top: 20px;
+  }
+
+  #result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  #result.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #score {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .h2 {
+    color: black;
+    font-size: 30px;
+    animation: slideIn 1.2s ease;
+  }
+
+  @keyframes slideIn {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(0); }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="h1">
+        <i class="fas fa-tree"></i>
+        Reading Test
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="test-section">
+      <h2 class="h2">Your Reading Test</h2>
+      <div id="paragraph-container">
+        <p id="paragraph">Loading...</p>
+      </div>
+      <form id="answers-form">
+        <div class="form-group">
+          <label class="h2" for="answer">Your Answer:</label>
+          <textarea id="answer" rows="4" placeholder="Type your answer here..."></textarea>
+        </div>
+        <button id="submit-btn" type="button">Submit Answer</button>
+      </form>
+      <div id="audio-controls">
+        <button id="record-btn" type="button">Start Recording</button>
+        <button id="stop-btn" type="button" class="hidden">Stop Recording</button>
+        <button id="play-btn" type="button" class="hidden">Play Recording</button>
+      </div>
+      <div id="result" class="hidden">
+        <h3>Test Result</h3>
+        <p id="score"></p>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const paragraphElement = document.getElementById('paragraph');
+      const recordButton = document.getElementById('record-btn');
+      const stopButton = document.getElementById('stop-btn');
+      const playButton = document.getElementById('play-btn');
+      const resultElement = document.getElementById('result');
+      const scoreElement = document.getElementById('score');
+      const submitButton = document.getElementById('submit-btn');
+      const answerTextarea = document.getElementById('answer');
+      let mediaRecorder;
+      let audioChunks = [];
+      let audioBlob;
+      let audioUrl;
+
+      const paragraphs = [
+        "In recent years, the impact of technology on education has been profound. With the rise of digital tools and online resources, the way students learn and teachers instruct has transformed dramatically. Technology in the classroom can range from interactive whiteboards to virtual reality experiences, all of which enhance the learning environment. Online platforms such as educational websites and e-learning courses provide students with access to a wealth of knowledge beyond traditional textbooks. This shift towards technology-driven education has made learning more engaging and accessible, but it also presents challenges such as ensuring equitable access for all students and integrating new tools effectively into the curriculum. As technology continues to evolve, its role in education will likely grow, further changing how educational content is delivered and consumed.",
+        "Climate change has emerged as one of the most pressing issues of our time. It refers to long-term changes in temperature, precipitation, and other climate patterns on Earth. The primary cause of climate change is human activities, such as burning fossil fuels, deforestation, and industrial processes, which increase the concentration of greenhouse gases in the atmosphere. These gases trap heat, leading to global warming and resulting in a range of environmental impacts including rising sea levels, more frequent and severe weather events, and disruptions to ecosystems. Addressing climate change requires global cooperation to reduce emissions, adapt to changes, and transition to sustainable energy sources. It is a complex challenge that necessitates concerted efforts from individuals, communities, and governments worldwide.",
+        "Adopting a healthy lifestyle is crucial for maintaining overall well-being and preventing chronic diseases. Key components of a healthy lifestyle include a balanced diet, regular physical activity, adequate sleep, and stress management. Consuming a variety of nutrient-dense foods helps ensure that the body receives essential vitamins and minerals needed for optimal function. Engaging in regular exercise strengthens the cardiovascular system, boosts mood, and supports weight management. Proper sleep allows the body to recover and maintain cognitive function, while effective stress management techniques, such as mindfulness or yoga, contribute to mental and emotional health. By integrating these practices into daily life, individuals can enhance their quality of life and reduce the risk of health issues."
+      ];
+
+      let currentParagraph = '';
+
+      // Function to select a random paragraph
+      function getRandomParagraph() {
+        const randomIndex = Math.floor(Math.random() * paragraphs.length);
+        return paragraphs[randomIndex];
+      }
+
+      // Highlight specific keywords in the paragraph
+      function highlightKeywords(paragraph) {
+        const keywords = ['technology', 'education', 'climate change', 'healthy lifestyle', 'global warming'];
+        let highlightedText = paragraph;
+        keywords.forEach(keyword => {
+          const regex = new RegExp(`\\b(${keyword})\\b`, 'gi');
+          highlightedText = highlightedText.replace(regex, `<span class="highlight">${keyword}</span>`);
+        });
+        return highlightedText;
+      }
+
+      // Display a random paragraph with highlighted keywords
+      function displayParagraph() {
+        currentParagraph = getRandomParagraph();
+        paragraphElement.innerHTML = highlightKeywords(currentParagraph);
+      }
+
+      // Function to start recording
+      async function startRecording() {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.ondataavailable = event => {
+          audioChunks.push(event.data);
+        };
+        mediaRecorder.onstop = () => {
+          audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+          audioUrl = URL.createObjectURL(audioBlob);
+          playButton.classList.remove('hidden');
+          audioChunks = [];
+        };
+        mediaRecorder.start();
+        recordButton.classList.add('hidden');
+        stopButton.classList.remove('hidden');
+      }
+
+      // Function to stop recording
+      function stopRecording() {
+        mediaRecorder.stop();
+        recordButton.classList.remove('hidden');
+        stopButton.classList.add('hidden');
+      }
+
+      // Function to play the recorded audio
+      function playRecording() {
+        const audio = new Audio(audioUrl);
+        audio.play();
+      }
+
+      // Function to evaluate the user's answer
+      function evaluateAnswer() {
+        const userAnswer = answerTextarea.value.trim().toLowerCase();
+        let score = 0;
+
+        // Basic example scoring - this can be replaced with a more advanced evaluation
+        if (userAnswer.includes('technology') || userAnswer.includes('education')) {
+          score += 1;
+        }
+        if (userAnswer.includes('climate change') || userAnswer.includes('global warming')) {
+          score += 1;
+        }
+        if (userAnswer.includes('healthy lifestyle') || userAnswer.includes('well-being')) {
+          score += 1;
+        }
+
+        return score;
+      }
+
+      // Function to show the result
+      function showResult() {
+        const score = evaluateAnswer();
+        scoreElement.textContent = `Your score is ${score} out of 100.`;
+        resultElement.classList.add('show');
+      }
+
+      // Event listeners for recording controls
+      recordButton.addEventListener('click', startRecording);
+      stopButton.addEventListener('click', stopRecording);
+      playButton.addEventListener('click', playRecording);
+
+      // Event listener for the submit button
+      submitButton.addEventListener('click', showResult);
+
+      // Initialize the paragraph when the page loads
+      displayParagraph();
+    });
+  </script>
+</body>
+</html>

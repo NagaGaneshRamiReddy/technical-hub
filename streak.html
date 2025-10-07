@@ -1,0 +1,322 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streak Board</title>
+</head>
+<body>
+<style>
+
+
+    
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      
+      }
+    .animated-text {
+      font-size: 80px;
+      font-weight: bolder;
+      color: rgb(230, 189, 58); 
+      animation: bounce 00s ease-in-out infinite;
+    }
+    body {
+    background-color: rgba(0, 1, 0, 0.999); 
+    background-image: linear-gradient(to bottom right,rgb(0, 0, 0),#09c4fc); 
+    
+    
+  }
+  .container-51{
+  display: flex;
+  column-gap: 50px;
+
+}
+  .box-57{
+  width:207px;
+  height: 215px;
+  background-color: white;
+  margin-left: 80px;
+  border: 5px solid rgb(9, 235, 21);
+border-radius: 5px;
+}
+h3{
+  font-size: 45px;
+  color: rgb(233, 241, 233);
+  margin: 10px;
+}
+.h2{
+  font-size: 20px;
+  color: green;
+}
+.pic{
+  width:207px;
+background-color: rgb(241, 241, 240);
+}
+
+</style>
+    <header><br>
+  <div class="animated-text">Tree-Learners</div>
+
+  </header>
+    
+
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search for a course..." oninput="showSuggestions()">
+        <button onclick="searchCourse()" class="search-button">Search</button>
+        <div id="suggestionsContainer" class="suggestions-container"></div>
+    </div>
+
+
+    <script>
+        //search options list
+        const courses = [
+            { name: "Aptitude", url: "file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/Aptitude1.html" },
+            { name: "Logical Reasoning", url: "file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/logicalreasoning.html" },
+            { name: "Verbal Ability", url: "file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/verbalability.html" },
+            { name: "Interview Questions", url: "file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/interviews.html" },
+            { name: "Job Updates", url: "file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/jobupdate.html" },
+            { name: "Data Structure and Algorithms", url: "dsaRoadmaps.html" },
+            { name: "C Programming Language", url: "croadmap.html" },
+            { name: "C++ Programming Language", url: "c++Roadmaps.html" },
+            { name: "Java Programming Language", url: "javaRoadmaps.html" },
+            { name: "R Programming Language", url: "file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/R.html" },
+            { name: "Structured Query Language", url: "SQLRoadmaps.html" },
+            { name: "Python Programming Language", url: "pyhtonRoadmaps.html" },
+            { name: "HTML", url: "htmlRoadmaps.html" },
+            { name: "CSS", url: "file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/css.html" },
+            { name: "JavaScript", url: "file:///C:/Users/ramir/OneDrive/Desktop/interview%20perparation/javascript%20course.html" },
+            { name: "Artificial Intelligence", url: "AI roadmap.html" },
+            { name: "Machine Learning", url: "mlRoadmaps.html" },
+            { name: "Cyber Security", url: "cyber securityRoadmaps.html" },
+            { name: "Data Science", url: "data scienceRoadmaps.html" },
+            { name: "UI/UX Design", url: "Ui UXRoadmaps.html" },
+            { name: "Prompt Engineering", url: "prompt engineeringRoadmaps.html" },
+            { name: "AWS", url: "awsRoadmaps.html" },
+            { name: "Azure", url: "azureRoadmaps.html" },
+            { name: "Cloud Computing", url: "#" },
+            { name: "Google Cloud", url: "Google cloudRoadmaps.html" },
+            { name: "Salesforce", url: "salesforeRoadmaps.html" }
+        ];
+
+        // Function to show suggestions
+        function showSuggestions() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const suggestionsContainer = document.getElementById('suggestionsContainer');
+            suggestionsContainer.innerHTML = '';
+
+            if (input) {
+                const suggestions = courses.filter(course => course.name.toLowerCase().includes(input));
+                suggestions.forEach(course => {
+                    const div = document.createElement('div');
+                    div.className = 'suggestion';
+                    div.textContent = course.name;
+                    div.onclick = () => {
+                        document.getElementById('searchInput').value = course.name;
+                        searchCourse();
+                    };
+                    suggestionsContainer.appendChild(div);
+                });
+            }
+        }
+
+        // Function to handle search functionality
+        function searchCourse() {
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
+            const course = courses.find(c => c.name.toLowerCase() === query);
+            if (course) {
+                window.location.href = course.url;
+            } else {
+                alert("Course not found. Please try again.");
+            }
+        }
+
+        // Close suggestions container if clicked outside
+        document.addEventListener('click', function(e) {
+            if (!document.querySelector('.search-container').contains(e.target)) {
+                document.getElementById('suggestionsContainer').innerHTML = '';
+            }
+        });
+    </script>
+<!--course list -->
+
+
+<br><br><br>
+    <div class="container-51">
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Aptitude">
+            <h3 class="h2"><b>Aptitude</b></h3>
+            <a href="file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/Aptitude1.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Logical Reasoning">
+            <h3 class="h2"><b>Logical Reasoning</b></h3>
+            <a href="file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/logicalreasoning.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Verbal Ability">
+            <h3 class="h2"><b>Verbal Ability</b></h3>
+            <a href="file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/verbalability.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+    </div>
+    <br><br><br>
+
+    <!-- Interview Prep and Job Updates -->
+    <div class="container-51">
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Interview Questions">
+            <h3 class="h2"><b>Interview Questions</b></h3>
+            <a href="file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/interviews.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Job Updates">
+            <h3 class="h2"><b>Job Updates</b></h3>
+            <a href="file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/jobupdate.html" class="btn1"><b>Updating</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Data Structure and Algorithms">
+            <h3 class="h2"><b>Data Structure and Algorithms</b></h3>
+            <a href="dsaRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+    </div>
+
+    <br><br><br>
+    
+    <!-- Programming Languages -->
+    <h1 class="h3"><b>Programming Languages</b></h1>
+    <div class="container-51">
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="C Programming Language">
+            <h3 class="h2"><b>C Programming Language</b></h3>
+            <a href="croadmap.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="C++ Programming Language">
+            <h3 class="h2"><b>C++ Programming Language</b></h3>
+            <a href="c++Roadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Java Programming Language">
+            <h3 class="h2"><b>Java Programming Language</b></h3>
+            <a href="javaRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+    </div>
+    <br><br><br>
+    <!-- Additional Programming Languages -->
+    <div class="container-51">
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="R Programming Language">
+            <h3 class="h2"><b>R Programming Language</b></h3>
+            <a href="file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/R.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Structured Query Language">
+            <h3 class="h2"><b>Structured Query Language</b></h3>
+            <a href="SQLRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Python Programming Language">
+            <h3 class="h2"><b>Python Programming Language</b></h3>
+            <a href="pyhtonRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+    </div>
+    <br><br><br>
+
+    <!-- Web Technologies -->
+    <div class="container-51">
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="HTML">
+            <h3 class="h2"><b>HTML</b></h3>
+            <a href="htmlRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="CSS">
+            <h3 class="h2"><b>CSS</b></h3>
+            <a href="file:///C:/Users/ramir/OneDrive/Desktop/interviews%20perparation/css.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="JavaScript">
+            <h3 class="h2"><b>JavaScript</b></h3>
+            <a href="file:///C:/Users/ramir/OneDrive/Desktop/interview%20perparation/javascript%20course.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+    </div>
+    <br><br><br>
+    <!-- In-Demand Courses -->
+    <h1 class="h3">In-Demand Courses</h1>
+    <div class="container-51">
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Artificial Intelligence">
+            <h3 class="h2"><b>Artificial Intelligence</b></h3>
+            <a href="AI roadmap.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Machine Learning">
+            <h3 class="h2"><b>Machine Learning</b></h3>
+            <a href="mlRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Cyber Security">
+            <h3 class="h2"><b>Cyber Security</b></h3>
+            <a href="cyber securityRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container-51">
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Data Science">
+            <h3 class="h2"><b>Data Science</b></h3>
+            <a href="data scienceRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="UI/UX Design">
+            <h3 class="h2"><b>UI/UX Design</b></h3>
+            <a href="Ui UXRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Prompt Engineering">
+            <h3 class="h2"><b>Prompt Engineering</b></h3>
+            <a href="prompt engineeringRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+    </div>
+    <br><br><br>
+
+    <!-- Cloud Technologies -->
+    <h1 class="h3">Cloud Technologies</h1>
+    <div class="container-51">
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="AWS">
+            <h3 class="h2"><b>AWS</b></h3>
+            <a href="awsRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Azure">
+            <h3 class="h2"><b>Azure</b></h3>
+            <a href="azureRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Cloud Computing">
+            <h3 class="h2"><b>Cloud Computing</b></h3>
+            <a href="#" class="btn1"><b>Start Learning</b></a>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container-51">
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Google Cloud">
+            <h3 class="h2"><b>Google Cloud</b></h3>
+            <a href="Google cloudRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+        <div class="box-57">
+            <img class="pic" src="path_to_image" alt="Salesforce">
+            <h3 class="h2"><b>Salesforce</b></h3>
+            <a href="salesforeRoadmaps.html" class="btn1"><b>Start Learning</b></a>
+        </div>
+    </div>
+    <br><br><br>
+</body>
+</html>

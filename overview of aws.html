@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title> Amazon Web Services (AWS)</title>
+</head>
+<body class="body">
+
+   
+    
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> AWS Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> AWS Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-aws" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">AWS Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="awsRoadmaps.html" target="_blank"><b class="b12">AWS Roadmap</b></a>
+        <ul>
+            
+        <a href="Introduction to aws.html">Introduction to AWS</a>
+            <li><a href="overview of aws.html">Overview of AWS</a></li>
+            <li><a href="Global Infrastructure.html">Global Infrastructure</a></li>
+            <li><a href="Key Services and Use Cases.html">Key Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>AWS Foundations</h3>
+        <a href="AWS Foundations.html">AWS Foundations</a>
+        <ul>
+            <li><a href="AWS Management Console.html">AWS Management Console</a></li>
+            <li><a href="AWS CLI.html">AWS CLI</a></li>
+            <li><a href="IAM (Identity and Access Management).html">IAM (Identity and Access Management)</a></li>
+            <li><a href="AWS Billing and Pricing.html">AWS Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core AWS Services</h3>
+        <a href="Core AWS Services.html">Core AWS Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services.html">Compute Services</a>
+                <ul>
+                    <li><a href="EC2 (Elastic Compute Cloud).html">EC2 (Elastic Compute Cloud)</a></li>
+                    <li><a href="Lambda.html">Lambda</a></li>
+                    <li><a href="ECS (Elastic Container Service) .html">ECS (Elastic Container Service)</a></li>
+                    <li><a href="EKS (Elastic Kubernetes Service).html">EKS (Elastic Kubernetes Service)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services.html">Storage Services</a>
+                <ul>
+                    <li><a href="S3 (Simple Storage Service).html">S3 (Simple Storage Service)</a></li>
+                    <li><a href="EBS (Elastic Block Store).html">EBS (Elastic Block Store)</a></li>
+                    <li><a href="EFS (Elastic File System).html">EFS (Elastic File System)</a></li>
+                    <li><a href="Glacier.html">Glacier</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services.html">Database Services</a>
+                <ul>
+                    <li><a href="RDS (Relational Database Service).html">RDS (Relational Database Service)</a></li>
+                    <li><a href="DynamoDB.html">DynamoDB</a></li>
+                    <li><a href="Redshift.html">Redshift</a></li>
+                    <li><a href="Aurora.html">Aurora</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud).html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Route 53.html">Route 53</a></li>
+                    <li><a href="CloudFront.html">CloudFront</a></li>
+                    <li><a href="Direct Connect.html">Direct Connect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced AWS Services</h3>
+        <a href="Advanced AWS Services.html">Advanced AWS Services</a>
+        <ul>
+            <li>
+                <a href="Machine Learning Services.html">Machine Learning Services</a>
+                <ul>
+                    <li><a href="SageMaker .html">SageMaker</a></li>
+                    <li><a href="Rekognition.html">Rekognition</a></li>
+                    <li><a href="Comprehend.html">Comprehend</a></li>
+                    <li><a href="Lex.html">Lex</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services.html">Analytics Services</a>
+                <ul>
+                    <li><a href="Athena.html">Athena</a></li>
+                    <li><a href="EMR (Elastic MapReduce).html">EMR (Elastic MapReduce)</a></li>
+                    <li><a href="Kinesis.html">Kinesis</a></li>
+                    <li><a href="QuickSight.html">QuickSight</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services.html">Security Services</a>
+                <ul>
+                    <li><a href="Shield.html">Shield</a></li>
+                    <li><a href="WAF (Web Application Firewall) .html">WAF (Web Application Firewall)</a></li>
+                    <li><a href="GuardDuty.html">GuardDuty</a></li>
+                    <li><a href="Macie.html">Macie</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on AWS</h3>
+        <a href="DevOps on AWS.html">DevOps on AWS</a>
+        <ul>
+            <li><a href="Infrastructure as Code (IaC) .html">Infrastructure as Code (IaC)</a></li>
+            <li>
+                <a href="CI-CD Pipeline.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="CodeCommit.html">CodeCommit</a></li>
+                    <li><a href="CodeBuild.html">CodeBuild</a></li>
+                    <li><a href="CodeDeploy.html">CodeDeploy</a></li>
+                    <li><a href="CodePipeline.html">CodePipeline</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="CloudWatch.html">CloudWatch</a></li>
+                    <li><a href="CloudTrail.html">CloudTrail</a></li>
+                    <li><a href="X-Ray.html">X-Ray</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="AWS Migration Hub.html">AWS Migration Hub</a></li>
+            <li><a href="Server Migration Service.html">Server Migration Service</a></li>
+            <li><a href="Database Migration Service.html">Database Migration Service</a></li>
+            <li><a href="Snowball.html">Snowball</a></li>
+        </ul>
+    </div>
+    
+    
+
+   
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "AWS_interviews.html";
+}
+function goprojects() {
+    window.location.href = "AWS_projeets.html";
+}
+function golabs() {
+    window.location.href = "AWS_labs.html";
+}
+function goquizpro() {
+    window.location.href = "AWS_quiz.html";
+}
+    function goPrevious() {
+        window.location.href = "Introduction to aws.html";
+    }
+    function goNext() {
+        window.location.href = "Global Infrastructure.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-aws" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">AWS Tutorial</h2>
+<div class="div1">Overview AWS</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>What’s AWS?</h2>
+            <p><strong>Amazon Web Services (AWS)</strong> is like having a supercharged computer in the cloud. Instead of buying and maintaining your own physical servers, you use AWS to access powerful computing resources, storage, and more over the internet. This makes it easier to run and manage your apps and services without the hassle of physical equipment.</p>
+
+            <h2>Why AWS is Awesome</h2>
+            <ul>
+                <li><strong>Scalability</strong>:
+                    <ul>
+                        <li><strong>Elasticity</strong>: Need more power or storage? AWS lets you adjust your resources quickly. So, if your site gets a lot of visitors, you can easily scale up.</li>
+                        <li><strong>Auto-scaling</strong>: AWS can automatically add or remove resources based on your needs, so you don’t have to do it manually.</li>
+                    </ul>
+                </li>
+                <li><strong>Cost-Effective</strong>:
+                    <ul>
+                        <li><strong>Pay-As-You-Go</strong>: You only pay for what you use. No big upfront costs for hardware—just what you need when you need it.</li>
+                        <li><strong>Free Tier</strong>: AWS has a free tier that lets you try out their services without spending money, which is great for getting started.</li>
+                    </ul>
+                </li>
+                <li><strong>Flexibility</strong>:
+                    <ul>
+                        <li><strong>Choice of Tools</strong>: You can use various programming languages, operating systems, and databases. AWS supports a wide range of technologies, so you can pick what suits you best.</li>
+                        <li><strong>Customizable</strong>: AWS services can be tailored to meet your specific needs and preferences.</li>
+                    </ul>
+                </li>
+                <li><strong>Security</strong>:
+                    <ul>
+                        <li><strong>Strong Security</strong>: AWS provides solid security with features like encryption, firewalls, and identity management to keep your data safe.</li>
+                        <li><strong>Compliance</strong>: AWS meets industry standards and regulations to ensure your data is protected.</li>
+                    </ul>
+                </li>
+                <li><strong>Global Reach</strong>:
+                    <ul>
+                        <li><strong>Worldwide Data Centers</strong>: AWS has data centers around the world, which means you can place your services closer to your users for better performance.</li>
+                        <li><strong>High Availability</strong>: AWS’s global infrastructure ensures your applications stay up and running even if one data center experiences issues.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Core AWS Services</h2>
+            <ul>
+                <li><strong>Compute Services</strong>:
+                    <ul>
+                        <li><strong>EC2 (Elastic Compute Cloud)</strong>: Virtual servers that you can customize based on your needs. Perfect for running your applications.</li>
+                        <li><strong>Lambda</strong>: Allows you to run code in response to events without managing servers. Ideal for building serverless applications.</li>
+                    </ul>
+                </li>
+                <li><strong>Storage Services</strong>:
+                    <ul>
+                        <li><strong>S3 (Simple Storage Service)</strong>: A scalable storage solution for everything from documents to backups. Store and access as much data as you need.</li>
+                        <li><strong>EBS (Elastic Block Store)</strong>: Provides block-level storage for EC2 instances, similar to having a hard drive in the cloud.</li>
+                    </ul>
+                </li>
+                <li><strong>Database Services</strong>:
+                    <ul>
+                        <li><strong>RDS (Relational Database Service)</strong>: Managed databases like MySQL and PostgreSQL, where AWS handles backups, updates, and scaling for you.</li>
+                        <li><strong>DynamoDB</strong>: A NoSQL database service designed for high performance and scalability.</li>
+                    </ul>
+                </li>
+                <li><strong>Networking Services</strong>:
+                    <ul>
+                        <li><strong>VPC (Virtual Private Cloud)</strong>: Create isolated networks within AWS to keep your resources secure and separate.</li>
+                        <li><strong>Route 53</strong>: Manages DNS and domain names to direct users to your services.</li>
+                    </ul>
+                </li>
+                <li><strong>Management and Monitoring</strong>:
+                    <ul>
+                        <li><strong>CloudWatch</strong>: Monitors your AWS resources and applications, giving you metrics, logs, and alerts to keep track of performance.</li>
+                        <li><strong>CloudFormation</strong>: Automates setting up and managing AWS resources using templates.</li>
+                    </ul>
+                </li>
+                <li><strong>Security Services</strong>:
+                    <ul>
+                        <li><strong>IAM (Identity and Access Management)</strong>: Controls who can access your AWS resources and what they can do with them.</li>
+                        <li><strong>KMS (Key Management Service)</strong>: Manages encryption keys to keep your data secure.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>How to Get Started with AWS</h2>
+            <ul>
+                <li><strong>Create an AWS Account</strong>: Sign up on the AWS website to start using their services.</li>
+                <li><strong>Explore the Free Tier</strong>: Use the free tier to try out AWS without spending any money.</li>
+                <li><strong>Use the Management Console</strong>: This web-based tool lets you manage your AWS services easily.</li>
+                <li><strong>Learn and Experiment</strong>: Check out AWS’s documentation, tutorials, and training materials to get up to speed.</li>
+            </ul>
+
+            <div class="example">
+            <h2>Example Use Case</h2>
+            <p>Here’s a quick example of how you might use AWS to host a website:</p>
+            <ul>
+                <li><strong>Register a Domain</strong>: Use Route 53 to get a domain name for your site.</li>
+                <li><strong>Deploy Your Website</strong>: Use EC2 to run your web server.</li>
+                <li><strong>Store Files</strong>: Save your site’s files in S3.</li>
+                <li><strong>Manage Data</strong>: Use RDS for your database needs.</li>
+                <li><strong>Secure and Manage Traffic</strong>: Use VPC for security and Route 53 for managing user traffic.</li>
+            </ul>
+            </div>
+            <h2>Summary</h2>
+            <p>AWS offers a flexible and powerful cloud platform that can handle all kinds of applications and workloads. With its easy-to-understand pricing, global infrastructure, and extensive services, AWS helps you build and run your projects smoothly without the need for physical hardware.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div> </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('prev-button').onclick = () => {
+                window.location.href = 'Introduction to aws.html';
+            };
+            document.getElementById('next-button').onclick = () => {
+                window.location.href = 'Global Infrastructure.html';
+            };
+        });
+    </script>
+</body>
+</html>

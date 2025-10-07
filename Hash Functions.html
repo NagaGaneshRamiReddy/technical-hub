@@ -1,0 +1,480 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> Cyber Security</title>
+ 
+     
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Cyber Security
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to Cyber Security</h3>
+        <a href="Introduction to Cyber Security.html">Introduction to Cyber Security</a>
+        <ul>
+            <li><a href="What is Cyber Security.html">What is Cyber Security?</a></li>
+            <li><a href="History of Cyber Security.html">History of Cyber Security</a></li>
+            <li><a href="Importance of Cyber Security.html">Importance of Cyber Security</a></li>
+            <li>
+                <a href="Types of Cyber Threats.html">Types of Cyber Threats</a>
+                <ul>
+                    <li><a href="Malware.html">Malware</a></li>
+                    <li><a href="Phishing.html">Phishing</a></li>
+                    <li><a href="Ransomware.html">Ransomware</a></li>
+                    <li><a href="Social Engineering.html">Social Engineering</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Network Security</h3>
+        <a href="Network Security.html">Network Security</a>
+        <ul>
+            <li><a href="Introduction to Networks.html">Introduction to Networks</a></li>
+            <li><a href="Network Protocols.html">Network Protocols</a></li>
+            <li><a href="Firewalls.html">Firewalls</a></li>
+            <li><a href="Intrusion Detection Systems (IDS).html">Intrusion Detection Systems (IDS)</a></li>
+            <li><a href="Virtual Private Networks (VPN).html">Virtual Private Networks (VPN)</a></li>
+        </ul>
+    
+        <h3>Cryptography</h3>
+        <a href="Cryptography.html">Cryptography</a>
+        <ul>
+            <li><a href="Introduction to Cryptography.html">Introduction to Cryptography</a></li>
+            <li><a href="Symmetric Encryption.html">Symmetric Encryption</a></li>
+            <li><a href="Asymmetric Encryption.html">Asymmetric Encryption</a></li>
+            <li><a href="Hash Functions.html">Hash Functions</a></li>
+            <li><a href="Digital Signatures.html">Digital Signatures</a></li>
+            <li><a href="Public Key Infrastructure (PKI).html">Public Key Infrastructure (PKI)</a></li>
+        </ul>
+    
+        <h3>Application Security</h3>
+        <a href="Application Security.html">Application Security</a>
+        <ul>
+            <li><a href="Secure Coding Practices.html">Secure Coding Practices</a></li>
+            <li><a href="Web Application Security.html">Web Application Security</a></li>
+            <li><a href="Mobile Application Security.html">Mobile Application Security</a></li>
+            <li><a href="Database Security.html">Database Security</a></li>
+            <li><a href="Security Testing.html">Security Testing</a></li>
+        </ul>
+    
+        <h3>Endpoint Security</h3>
+        <a href="Endpoint Security.html">Endpoint Security</a>
+        <ul>
+            <li><a href="Antivirus and Anti-Malware.html">Antivirus and Anti-Malware</a></li>
+            <li><a href="Endpoint Detection and Response (EDR).html">Endpoint Detection and Response (EDR)</a></li>
+            <li><a href="Patch Management.html">Patch Management</a></li>
+            <li><a href="Device Encryption.html">Device Encryption</a></li>
+            <li><a href="Mobile Device Security.html">Mobile Device Security</a></li>
+        </ul>
+    
+        <h3>Incident Response and Management</h3>
+        <a href="Incident Response and Management.html">Incident Response and Management</a>
+        <ul>
+            <li><a href="Incident Response Planning.html">Incident Response Planning</a></li>
+            <li><a href="Incident Detection and Analysis.html">Incident Detection and Analysis</a></li>
+            <li><a href="Containment, Eradication, and Recovery.html">Containment, Eradication, and Recovery</a></li>
+            <li><a href="Post-Incident Activities.html">Post-Incident Activities</a></li>
+            <li><a href="Forensics.html">Forensics</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics Cyber Security.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Penetration Testing.html">Penetration Testing</a></li>
+            <li><a href="Ethical Hacking.html">Ethical Hacking</a></li>
+            <li><a href="Cyber Threat Intelligence.html">Cyber Threat Intelligence</a></li>
+            <li><a href="Cloud Security.html">Cloud Security</a></li>
+            <li><a href="IoT Security.html">IoT Security</a></li>
+            <li><a href="AI in Cyber Security.html">AI in Cyber Security</a></li>
+        </ul>
+    </div>
+   
+    
+    
+
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Asymmetric Encryption.html";
+    }
+    function goNext() {
+        window.location.href = "Digital Signatures.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Hash Function </div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>What is a Hash Function ?</h2>
+        <p>A hash function is a cryptographic algorithm that takes an input (or 'message') and returns a fixed-size string of bytes. The output, known as the hash value or hash code, is typically a short and unique representation of the input data. Hash functions are used to ensure data integrity, generate unique identifiers, and support various security mechanisms.</p>
+
+        <h2>How Hash Functions Work</h2>
+        <ol>
+            <li><strong>Input Processing</strong>: The hash function takes an input message of arbitrary length and processes it.</li>
+            <li><strong>Transformation</strong>: The hash function applies a series of mathematical operations to the input, resulting in a fixed-size hash value. These operations are designed to be irreversible, meaning the original input cannot be easily reconstructed from the hash value.</li>
+            <li><strong>Output Generation</strong>: The output is a fixed-size hash value, regardless of the input size. This hash value is a unique representation of the input data and can be used for verification purposes.</li>
+        </ol>
+
+        <h2>Examples of Hash Functions</h2>
+        <ul>
+            <li><strong>MD5 (Message Digest Algorithm 5)</strong>: Produces a 128-bit hash value, commonly represented as a 32-character hexadecimal number. Although MD5 was widely used in the past, it is now considered insecure due to vulnerabilities that allow for hash collisions.</li>
+            <li><strong>SHA-1 (Secure Hash Algorithm 1)</strong>: Generates a 160-bit hash value, usually represented as a 40-character hexadecimal number. SHA-1 is more secure than MD5 but is still susceptible to collisions and is being phased out in favor of more secure algorithms.</li>
+            <li><strong>SHA-256 (Secure Hash Algorithm 256-bit)</strong>: Part of the SHA-2 family, SHA-256 produces a 256-bit hash value, represented as a 64-character hexadecimal number. It provides a higher level of security and is widely used in cryptographic applications.</li>
+            <li><strong>SHA-3 (Secure Hash Algorithm 3)</strong>: The latest member of the Secure Hash Algorithm family, SHA-3 offers improved security features and flexibility. It is designed to be resistant to various attack vectors and provides hash values of different lengths.</li>
+        </ul>
+
+        <h2>Importance of Hash Functions</h2>
+        <ul>
+            <li><strong>Data Integrity</strong>: Hash functions are used to verify that data has not been altered or tampered with. By comparing hash values before and after data transmission or storage, you can confirm that the data remains intact.</li>
+            <li><strong>Digital Signatures</strong>: Hash functions are integral to creating digital signatures. A hash of the data is signed with a private key, and the recipient uses the public key to verify the signature and ensure data integrity.</li>
+            <li><strong>Password Hashing</strong>: Hash functions are used to securely store passwords. Instead of saving plain text passwords, systems store hashed versions of passwords, enhancing security by protecting password data even if the storage is compromised.</li>
+            <li><strong>Efficient Data Retrieval</strong>: Hash functions are used in hash tables for efficient data retrieval. By mapping data to a fixed-size hash value, hash tables provide quick access to stored information.</li>
+        </ul>
+
+        <h2>Challenges of Hash Functions</h2>
+        <ul>
+            <li><strong>Collision Resistance</strong>: A good hash function should resist collisions, where two different inputs produce the same hash value. While modern hash functions are designed to minimize collisions, no hash function is completely collision-free.</li>
+            <li><strong>Pre-image Resistance</strong>: The hash function should be difficult to reverse, meaning it should be computationally infeasible to derive the original input from its hash value.</li>
+        </ul>
+
+        <div class="resources">
+            <h2>Additional Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Learn more about hash functions through courses available on <a href="https://www.udemy.com/" target="_blank">Udemy</a> and <a href="https://www.coursera.org/" target="_blank">Coursera</a>.</li>
+                <li><strong>Books and Articles</strong>: Refer to books like "Cryptography and Network Security" by William Stallings for detailed information on hash functions and their applications.</li>
+                <li><strong>Interactive Tools</strong>: Use online tools on websites such as <a href="https://www.md5hashgenerator.com/" target="_blank">MD5 Hash Generator</a> and <a href="https://www.sha256-online.com/" target="_blank">SHA-256 Online</a> to practice generating and verifying hash values.</li>
+                <li><strong>Cyber Security News</strong>: Stay updated with the latest developments in hash functions and cryptography through news sources like <a href="https://www.bbc.com/news/technology" target="_blank">BBC Technology</a> and <a href="https://www.thehackernews.com/" target="_blank">The Hacker News</a>.</li>
+                <li><strong>Professional Organizations</strong>: Join organizations such as <a href="https://www.isc2.org/" target="_blank">(ISC)²</a> and <a href="https://www.sans.org/" target="_blank">SANS Institute</a> for additional resources and certifications related to cryptography and hash functions.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Hash functions are essential tools in cryptography that provide data integrity, secure password storage, and efficient data retrieval. By generating unique and fixed-size hash values from input data, hash functions help ensure the security and integrity of information. Understanding hash functions is crucial for implementing effective security measures in various applications.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

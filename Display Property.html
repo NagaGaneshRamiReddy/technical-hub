@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>CSS Roadmap</title>
+    
+    
+    
+</head>
+<body class="body">
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> CSS Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> CSS Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+  
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+
+
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-css3-alt" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">CSS Tutorial</h2>
+        </div>
+    
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="CSS Roadmaps.html" target="_blank"><b class="b12">CSS Roadmap</b></a>
+        <ul>
+            <a href="Introduction to CSS.html">Introduction to CSS</a>
+        
+            <li><a href="What is CSS.html">What is CSS?</a></li>
+            <li><a href="CSS Syntax.html">CSS Syntax</a></li>
+            <li><a href="How to Add CSS.html">How to Add CSS</a></li>
+        </ul>
+    
+        <h3>Selectors in CSS</h3>
+        <a href="Selectors in CSS.html">Selectors in CSS</a>
+        <ul>
+            <li><a href="Basic Selectors.html">Basic Selectors</a></li>
+            <li><a href="Combinators.html">Combinators</a></li>
+            <li>
+                <a href="Pseudo Classes.html">Pseudo Classes</a>
+                <ul>
+                    <li><a href="Hover Focus Active.html">:hover, :focus, :active</a></li>
+                    <li><a href="Nth-child.html">:nth-child</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Box Model in CSS</h3>
+        <a href="Box Model in CSS.html">Box Model in CSS</a>
+        <ul>
+            <li><a href="Content Padding Border.html">Content, Padding, Border</a></li>
+            <li><a href="Margin.html">Margin</a></li>
+            <li><a href="Box Sizing.html">Box Sizing</a></li>
+        </ul>
+    
+        <h3>CSS Layout</h3>
+        <a href="CSS Layout.html">CSS Layout</a>
+        <ul>
+            <li><a href="Display Property.html">Display Property</a></li>
+            <li><a href="Positioning.html">Positioning</a></li>
+            <li><a href="Float Clearfix.html">Float & Clearfix</a></li>
+            <li><a href="Flexbox.html">Flexbox</a></li>
+            <li><a href="CSS Grid.html">CSS Grid</a></li>
+        </ul>
+    
+        <h3>Typography in CSS</h3>
+        <a href="Typography in CSS.html">Typography in CSS</a>
+        <ul>
+            <li><a href="Font Properties.html">Font Properties</a></li>
+            <li><a href="Text Alignment.html">Text Alignment</a></li>
+            <li><a href="Line Height and Spacing.html">Line Height & Spacing</a></li>
+        </ul>
+    
+        <h3>CSS Colors</h3>
+        <a href="CSS Colors.html">CSS Colors</a>
+        <ul>
+            <li><a href="Color Naming Systems.html">Color Naming Systems</a></li>
+            <li><a href="Background Colors.html">Background Colors</a></li>
+            <li><a href="Gradients.html">Gradients</a></li>
+        </ul>
+    
+        <h3>CSS Animations</h3>
+        <a href="CSS Animations.html">CSS Animations</a>
+        <ul>
+            <li><a href="Transitions.html">Transitions</a></li>
+            <li><a href="Keyframes.html">Keyframes</a></li>
+            <li><a href="Animation Timing Functions.html">Animation Timing Functions</a></li>
+        </ul>
+    
+        <h3>Responsive Design</h3>
+        <a href="Responsive Design.html">Responsive Design</a>
+        <ul>
+            <li><a href="Media Queries.html">Media Queries</a></li>
+            <li><a href="Responsive Units.html">Responsive Units</a></li>
+            <li><a href="Viewport Meta Tag.html">Viewport Meta Tag</a></li>
+        </ul>
+    </div>
+    
+    
+        
+    
+        
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "CSS_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "CSS_quiz.html";
+    }
+    function goproject() {
+        window.location.href = "CSS_projects.html";
+    }
+    function gocomp() {
+        window.location.href = "CSS Compiler.html";
+    }
+        function goPrevious() {
+            window.location.href = "CSS Layout.html";
+        }
+        function goNext() {
+            window.location.href ="Positioning.html";
+        }
+            </script>
+            <div class="container-1">
+            <div class="content"><div class="top-box1">
+                <i class="fab fa-css3-alt" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">CSS Tutorial</h2>
+                <div class="div1">CSS Display Property</div></div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+    <h2>1. Block</h2>
+    <p>The block value makes the element take up the full width available and starts on a new line. Block elements respect width and height properties.</p>
+    <div class="container">
+        <div class="box block">Block Element 1</div>
+        <div class="box block">Block Element 2</div>
+    </div>
+
+    <h2>2. Inline</h2>
+    <p>The inline value makes the element take up only as much width as necessary and does not start on a new line. Inline elements do not respect width and height properties.</p>
+    <div class="container">
+        <div class="box inline">Inline Element 1</div>
+        <div class="box inline">Inline Element 2</div>
+    </div>
+    <style>
+        .box {
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .block {
+            display: block;
+            background-color: #00796b;
+        }
+        .inline {
+            display: inline;
+            background-color: #004d40;
+        }
+        .inline-block {
+            display: inline-block;
+            background-color: #00796b;
+        }
+        .none {
+            display: none;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+    </style>
+    <h2>3. Inline-Block</h2>
+    <p>The inline-block value combines features of both block and inline elements. It allows the element to sit next to other inline elements but respects width and height properties.</p>
+    <div class="container">
+        <div class="box inline-block">Inline-Block Element 1</div>
+        <div class="box inline-block">Inline-Block Element 2</div>
+    </div>
+
+    <h2>4. None</h2>
+    <p>The none value hides the element, and it does not take up any space in the layout.</p>
+    <div class="container">
+        <div class="box none">This element is hidden</div>
+        <div class="box block">Visible Element</div>
+    </div>
+
+    <h2>Code Example</h2>
+    <pre><code>
+/* Block */
+.block {
+    display: block;
+}
+
+/* Inline */
+.inline {
+    display: inline;
+}
+
+/* Inline-Block */
+.inline-block {
+    display: inline-block;
+}
+
+/* None */
+.none {
+    display: none;
+}
+    </code></pre>
+    <div class="resources">
+    <h2>Useful Links</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">MDN: CSS display Property</a></li>
+        <li><a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank">W3Schools: CSS Display and Visibility</a></li>
+    </ul>
+</div>
+    <h2>Summary</h2>
+    <p>The display property is fundamental for controlling the layout of elements on a web page. Understanding the differences between block, inline, inline-block, and none is crucial for effective CSS styling.</p>
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+</body>
+</html>

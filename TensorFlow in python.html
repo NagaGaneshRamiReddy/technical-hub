@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Python Language Roadmap</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> Python Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Python Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function goproject() {
+    window.location.href = "python_Projects.html";
+}
+function gointerviewpro() {
+    window.location.href = "python_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Python_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+  
+
+        </script>
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-python" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">Python Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="pythonRoadmps.html" target="_blank"><b class="b12">python Roadmap</b></a>
+        <ul>
+             <a href="Introduction to Python.html">Introduction to Python</a>
+            <li><a href="History of Python.html">History of Python</a></li>
+            <li><a href="Setting up Python Environment.html">Setting up Python Environment</a></li>
+            <li><a href="Hello World Program python.html">Hello World Program</a></li>
+        </ul>
+        
+        <h3>Basic Python Syntax</h3>
+        <a href="Basic Python Syntax.html">Basic Python Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types python.html">Variables and Data Types</a></li>
+            <li><a href="Operators in python.html">Operators</a></li>
+            <li><a href="Control Statements in python.html">Control Statements</a></li>
+            <ul>
+                <li><a href="if-else statements in Python.html">If-else Statements</a></li>
+                <li><a href="Elif Statement in python.html">Elif Statement</a></li>
+                <li><a href="Loops in python.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop in python.html">For Loop</a></li>
+                    <li><a href="While Loop in python.html">While Loop</a></li>
+                    <li><a href="Break and Continue python.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+        
+        <h3>Strings</h3>
+        <a href="Strings in python.html">Strings</a>
+        <ul>
+            <li><a href="String Basics in python.html">String Basics</a></li>
+            <li><a href="String Operations in python.html">String Operations</a></li>
+            <li><a href="String Formatting in python.html">String Formatting</a></li>
+        </ul>
+        
+        <h3>Arrays</h3>
+        <a href="Arrays in python.html">Arrays</a>
+        <ul>
+            <li><a href="List Basics in python.html">List Basics</a></li>
+            <li><a href="Array Operations in python.html">Array Operations</a></li>
+            <li><a href="List Comprehensions in python.html">List Comprehensions</a></li>
+        </ul>
+        
+        
+        
+        <h3>Functions in Python</h3>
+        <a href="Functions in Python.html">Functions in Python</a>
+        <ul>
+            <li><a href="Function Basics in python.html">Function Basics</a></li>
+            <li><a href="Function Arguments in python.html">Function Arguments</a></li>
+            <li><a href="Lambda Functions in python.html">Lambda Functions</a></li>
+            <li><a href="Recursion in python.html">Recursion</a></li>
+            <li><a href="Built-in Functions in python.html">Built-in Functions</a></li>
+        </ul>
+        
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming in python.html">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects in python.html">Classes and Objects</a></li>
+            <li><a href="Constructors in python.html">Constructors</a></li>
+            <li><a href="Inheritance in python.html">Inheritance</a></li>
+            <li><a href="Polymorphism in python.html">Polymorphism</a></li>
+            <li><a href="Abstraction in python.html">Abstraction</a></li>
+            <li><a href="Encapsulation in python.html">Encapsulation</a></li>
+            <li><a href="Magic Methods in python.html">Magic Methods</a></li>
+            <li><a href="Static Methods.html">Class and Static Methods</a></li>
+        </ul>
+        
+        <h3>Advanced Python Concepts</h3>
+        <a href="Advanced Python Concepts in python.html">Advanced Python Concepts</a>
+        <ul>
+            <li><a href="Exception Handling in python.html">Exception Handling</a></li>
+            <li><a href="File I-O in python.html">File I/O</a></li>
+            <li><a href="Modules and Packages in python.html">Modules and Packages</a></li>
+            <li><a href="Decorators in python.html">Decorators</a></li>
+            <li><a href="Generators in python.html">Generators</a></li>
+            <li><a href="Comprehensions in python.html">Comprehensions</a></li>
+            <li><a href="Context Managers in python.html">Context Managers</a></li>
+            <li><a href="Regular Expressions in python.html">Regular Expressions</a></li>
+        </ul>
+        
+        <h3>Data Handling and Libraries</h3>
+        <a href="Data Handling and Libraries.html">Data Handling and Libraries</a>
+        <ul>
+            <li><a href="NumPy in python.html">NumPy</a></li>
+            <li><a href="Pandas in python.html">Pandas</a></li>
+            <li><a href="Matplotlib in python.html">Matplotlib</a></li>
+            <li><a href="Seaborn in python.html">Seaborn</a></li>
+            <li><a href="Scikit-learn in python.html">Scikit-learn</a></li>
+            <li><a href="TensorFlow in python.html">TensorFlow</a></li>
+        </ul>
+        
+        <h3>Web Development</h3>
+        <a href="Web Development in python.html">Web Development</a>
+        <ul>
+            <li><a href="Flask in python.html">Flask</a></li>
+            <li><a href="Django in python.html">Django</a></li>
+            <li><a href="FastAPI in python.html">FastAPI</a></li>
+        </ul>
+        
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics in python.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Asyncio in python.html">Asyncio</a></li>
+            <li><a href="Multithreading and Multiprocessing in python.html">Multithreading and Multiprocessing</a></li>
+            <li><a href="Web Scraping with BeautifulSoup in python.html">Web Scraping with BeautifulSoup</a></li>
+            <li><a href="APIs and RESTful Services in python.html">APIs and RESTful Services</a></li>
+            <li><a href="Data Science with Python.html">Data Science with Python</a></li>
+            <li><a href="Machine Learning with Python.html">Machine Learning with Python</a></li>
+            <li><a href="Deep Learning with Python.html">Deep Learning with Python</a></li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    <script>
+        
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "python_interviews.html";
+}
+function gocomp() {
+    window.location.href = "Python Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Scikit-learn in python.html";
+    }
+    function goNext() {
+        window.location.href = "Web Development in python.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-python" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">Python Tutorial</h2>
+<div class="div1">TensorFlow in Python</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>What is TensorFlow ?</h2>
+        <p><strong>TensorFlow</strong> is an open-source machine learning library developed by Google for creating and training neural networks. It provides a comprehensive ecosystem for developing and deploying machine learning models, including support for deep learning, numerical computation, and artificial intelligence. TensorFlow is designed to be flexible and scalable, allowing for deployment on various platforms, from mobile devices to large-scale distributed systems.</p>
+
+        <h2>Key Features of TensorFlow</h2>
+        <ul>
+            <li><strong>Flexible Architecture:</strong> TensorFlow allows you to deploy computations across different platforms, including CPUs, GPUs, and TPUs.</li>
+            <li><strong>High-Level APIs:</strong> TensorFlow provides high-level APIs like Keras, which simplify the process of building and training models.</li>
+            <li><strong>Automatic Differentiation:</strong> TensorFlow’s automatic differentiation feature simplifies the process of computing gradients for optimization algorithms.</li>
+            <li><strong>Robust Ecosystem:</strong> TensorFlow includes tools and libraries for various aspects of machine learning, including TensorBoard for visualization and TensorFlow Lite for mobile and edge deployment.</li>
+        </ul>
+
+        <h2>Basics of TensorFlow</h2>
+        <p>To start using TensorFlow, you need to install it and import it into your Python script:</p>
+        <pre><code>pip install tensorflow
+import tensorflow as tf
+</code></pre>
+
+        <h3>Creating a Simple TensorFlow Model</h3>
+        <p>Here’s an example of creating and training a simple neural network using TensorFlow and Keras:</p>
+        <pre><code># Import TensorFlow and Keras
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.datasets import mnist
+
+# Load and preprocess the data
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+
+# Build the model
+model = Sequential([
+    Dense(128, activation='relu', input_shape=(784,)),
+    Dense(64, activation='relu'),
+    Dense(10, activation='softmax')
+])
+
+# Compile the model
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+# Train the model
+model.fit(x_train, y_train, epochs=5, validation_data=(x_test, y_test))
+</code></pre>
+
+        <h3>Evaluating the Model</h3>
+        <p>After training the model, you can evaluate its performance on the test set:</p>
+        <pre><code# Evaluate the model
+loss, accuracy = model.evaluate(x_test, y_test)
+print(f"Test accuracy: {accuracy:.2f}")
+</code></pre>
+
+        <h2>Common TensorFlow Functions and Techniques</h2>
+        <h3>Custom Layers and Models</h3>
+        <pre><code># Example of a custom layer
+class MyLayer(tf.keras.layers.Layer):
+    def __init__(self):
+        super(MyLayer, self).__init__()
+    
+    def call(self, inputs):
+        return inputs * 2
+
+# Build a model with the custom layer
+model = Sequential([
+    MyLayer(input_shape=(784,)),
+    Dense(10, activation='softmax')
+])
+</code></pre>
+
+        <h3>Transfer Learning</h3>
+         Example of using a pre-trained model <pre><code>
+base_model = tf.keras.applications.MobileNetV2(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+model = tf.keras.Sequential([
+    base_model,
+    Dense(10, activation='softmax')
+)]
+</code></pre>
+
+       
+
+
+        <h2>Summary</h2>
+        <p>TensorFlow is a powerful tool for building and deploying machine learning and deep learning models. With its flexible architecture, high-level APIs, and extensive ecosystem, TensorFlow supports a wide range of machine learning tasks and applications. Mastering TensorFlow can significantly enhance your ability to work with complex data and build sophisticated models.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

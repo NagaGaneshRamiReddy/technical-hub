@@ -1,0 +1,491 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> Cyber Security</title>
+ 
+     
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Cyber Security
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to Cyber Security</h3>
+        <a href="Introduction to Cyber Security.html">Introduction to Cyber Security</a>
+        <ul>
+            <li><a href="What is Cyber Security.html">What is Cyber Security?</a></li>
+            <li><a href="History of Cyber Security.html">History of Cyber Security</a></li>
+            <li><a href="Importance of Cyber Security.html">Importance of Cyber Security</a></li>
+            <li>
+                <a href="Types of Cyber Threats.html">Types of Cyber Threats</a>
+                <ul>
+                    <li><a href="Malware.html">Malware</a></li>
+                    <li><a href="Phishing.html">Phishing</a></li>
+                    <li><a href="Ransomware.html">Ransomware</a></li>
+                    <li><a href="Social Engineering.html">Social Engineering</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Network Security</h3>
+        <a href="Network Security.html">Network Security</a>
+        <ul>
+            <li><a href="Introduction to Networks.html">Introduction to Networks</a></li>
+            <li><a href="Network Protocols.html">Network Protocols</a></li>
+            <li><a href="Firewalls.html">Firewalls</a></li>
+            <li><a href="Intrusion Detection Systems (IDS).html">Intrusion Detection Systems (IDS)</a></li>
+            <li><a href="Virtual Private Networks (VPN).html">Virtual Private Networks (VPN)</a></li>
+        </ul>
+    
+        <h3>Cryptography</h3>
+        <a href="Cryptography.html">Cryptography</a>
+        <ul>
+            <li><a href="Introduction to Cryptography.html">Introduction to Cryptography</a></li>
+            <li><a href="Symmetric Encryption.html">Symmetric Encryption</a></li>
+            <li><a href="Asymmetric Encryption.html">Asymmetric Encryption</a></li>
+            <li><a href="Hash Functions.html">Hash Functions</a></li>
+            <li><a href="Digital Signatures.html">Digital Signatures</a></li>
+            <li><a href="Public Key Infrastructure (PKI).html">Public Key Infrastructure (PKI)</a></li>
+        </ul>
+    
+        <h3>Application Security</h3>
+        <a href="Application Security.html">Application Security</a>
+        <ul>
+            <li><a href="Secure Coding Practices.html">Secure Coding Practices</a></li>
+            <li><a href="Web Application Security.html">Web Application Security</a></li>
+            <li><a href="Mobile Application Security.html">Mobile Application Security</a></li>
+            <li><a href="Database Security.html">Database Security</a></li>
+            <li><a href="Security Testing.html">Security Testing</a></li>
+        </ul>
+    
+        <h3>Endpoint Security</h3>
+        <a href="Endpoint Security.html">Endpoint Security</a>
+        <ul>
+            <li><a href="Antivirus and Anti-Malware.html">Antivirus and Anti-Malware</a></li>
+            <li><a href="Endpoint Detection and Response (EDR).html">Endpoint Detection and Response (EDR)</a></li>
+            <li><a href="Patch Management.html">Patch Management</a></li>
+            <li><a href="Device Encryption.html">Device Encryption</a></li>
+            <li><a href="Mobile Device Security.html">Mobile Device Security</a></li>
+        </ul>
+    
+        <h3>Incident Response and Management</h3>
+        <a href="Incident Response and Management.html">Incident Response and Management</a>
+        <ul>
+            <li><a href="Incident Response Planning.html">Incident Response Planning</a></li>
+            <li><a href="Incident Detection and Analysis.html">Incident Detection and Analysis</a></li>
+            <li><a href="Containment, Eradication, and Recovery.html">Containment, Eradication, and Recovery</a></li>
+            <li><a href="Post-Incident Activities.html">Post-Incident Activities</a></li>
+            <li><a href="Forensics.html">Forensics</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics Cyber Security.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Penetration Testing.html">Penetration Testing</a></li>
+            <li><a href="Ethical Hacking.html">Ethical Hacking</a></li>
+            <li><a href="Cyber Threat Intelligence.html">Cyber Threat Intelligence</a></li>
+            <li><a href="Cloud Security.html">Cloud Security</a></li>
+            <li><a href="IoT Security.html">IoT Security</a></li>
+            <li><a href="AI in Cyber Security.html">AI in Cyber Security</a></li>
+        </ul>
+    </div>
+   
+    
+    
+
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Importance of Cyber Security.html";
+    }
+    function goNext() {
+        window.location.href = "Malware.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Types of Cyber Security</div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>Introduction to Cyber Threats</h2>
+        <p>Cyber threats are malicious activities aimed at compromising digital information, systems, or networks. Understanding different types of cyber threats helps individuals and organizations implement effective security measures to protect against these risks. This overview covers the various types of cyber threats and provides examples to illustrate their impact.</p>
+
+        <h2>Common Types of Cyber Threats</h2>
+        <ul>
+            <li><strong>Malware</strong>: Malicious software designed to harm or exploit devices. Examples include:
+                <ul>
+                    <li><strong>Viruses</strong>: Programs that replicate and spread by inserting copies of themselves into other programs or files. Example: The <a href="https://en.wikipedia.org/wiki/ILOVEYOU" target="_blank">ILOVEYOU</a> virus caused widespread damage in 2000.</li>
+                    <li><strong>Worms</strong>: Standalone malware that replicates and spreads across networks. Example: The <a href="https://en.wikipedia.org/wiki/Blaster_(computer_worm)" target="_blank">Blaster Worm</a> exploited vulnerabilities in Microsoft Windows in 2003.</li>
+                    <li><strong>Ransomware</strong>: Encrypts files and demands a ransom for decryption. Example: The <a href="https://www.cnbc.com/2021/05/10/colonial-pipeline-ransomware-attack-what-we-know.html" target="_blank">Colonial Pipeline attack</a> in 2021 disrupted fuel supply chains.</li>
+                </ul>
+            </li>
+            <li><strong>Phishing</strong>: Fraudulent attempts to obtain sensitive information by pretending to be a trustworthy entity. Examples include:
+                <ul>
+                    <li><strong>Email Phishing</strong>: Fake emails that appear to come from legitimate sources, asking for personal information. Example: The <a href="https://www.techradar.com/news/email-phishing" target="_blank">Yahoo! Mail phishing</a> scam tricked users into revealing login credentials.</li>
+                    <li><strong>Spear Phishing</strong>: Targeted attacks aimed at specific individuals or organizations. Example: The <a href="https://www.wired.com/story/2019-china-twitter-facebook-trolls/" target="_blank">2019 China Twitter attack</a> targeted prominent individuals.</li>
+                </ul>
+            </li>
+            <li><strong>Denial of Service (DoS) Attacks</strong>: Disrupt services by overwhelming systems with traffic. Examples include:
+                <ul>
+                    <li><strong>Distributed Denial of Service (DDoS)</strong>: Uses multiple systems to flood a network. Example: The <a href="https://www.cnn.com/2017/09/15/tech/dns-ddos-attack/index.html" target="_blank">Dyn DNS attack</a> in 2016 disrupted major websites like Twitter and Netflix.</li>
+                </ul>
+            </li>
+            <li><strong>Man-in-the-Middle (MitM) Attacks</strong>: Intercept and alter communication between two parties. Examples include:
+                <ul>
+                    <li><strong>Session Hijacking</strong>: Stealing a user's session cookie to gain unauthorized access. Example: An attacker intercepts a user’s login session to access their accounts.</li>
+                </ul>
+            </li>
+            <li><strong>Social Engineering</strong>: Manipulating individuals into divulging confidential information. Examples include:
+                <ul>
+                    <li><strong>Pretexting</strong>: Creating a fabricated scenario to obtain information. Example: A scammer pretends to be a bank representative to extract personal details.</li>
+                </ul>
+            </li>
+            <li><strong>SQL Injection</strong>: Exploiting vulnerabilities in web applications to execute malicious SQL queries. Example: The <a href="https://en.wikipedia.org/wiki/Heartland_Payment_Systems" target="_blank">Heartland Payment Systems breach</a> involved SQL injection to access payment data.</li>
+        </ul>
+
+        <h2>Real-World Examples of Cyber Threats</h2>
+        <ul>
+            <li><strong>Equifax Data Breach (2017)</strong>: Hackers exploited a vulnerability to access sensitive personal information of 147 million people. This breach highlighted the severe consequences of security weaknesses in handling personal data.</li>
+            <li><strong>WannaCry Ransomware Attack (2017)</strong>: A global ransomware attack that affected over 200,000 computers in 150 countries, encrypting files and demanding ransom payments in Bitcoin. This incident demonstrated the widespread impact of ransomware and the importance of timely software updates.</li>
+            <li><strong>SolarWinds Hack (2020)</strong>: An advanced persistent threat (APT) that compromised SolarWinds software, affecting multiple government and private organizations. This attack underscored the need for robust supply chain security and advanced threat detection.</li>
+        </ul>
+
+        <div class="resources">
+            <h2>Additional Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Explore courses on Cyber Security and threat types. Platforms like <a href="https://www.udemy.com/" target="_blank">Udemy</a> and <a href="https://www.cybrary.it/" target="_blank">Cybrary</a> offer relevant courses.</li>
+                <li><strong>Books and Articles</strong>: Read books such as "Cyber Security and Cyber Warfare" and articles from sources like <a href="https://www.infosecurity-magazine.com/" target="_blank">Infosecurity Magazine</a> to stay updated on cyber threats.</li>
+                <li><strong>Interactive Tools</strong>: Use platforms like <a href="https://www.hackthebox.com/" target="_blank">Hack The Box</a> to practice identifying and mitigating cyber threats through hands-on experiences.</li>
+                <li><strong>Cyber Threat News</strong>: Stay informed about the latest cyber threats and trends with news sources like <a href="https://www.theverge.com/tech" target="_blank">The Verge</a> and <a href="https://www.zdnet.com/security/" target="_blank">ZDNet Security</a>.</li>
+                <li><strong>Professional Organizations</strong>: Join groups such as <a href="https://www.isaca.org/" target="_blank">ISACA</a> and <a href="https://www.sans.org/" target="_blank">SANS Institute</a> for networking and resources related to Cyber Security threats.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Understanding different types of cyber threats is crucial for implementing effective security measures. From malware and phishing to advanced persistent threats, awareness of these risks helps in developing strategies to protect digital assets and information. Staying informed and adopting best practices are essential steps in defending against cyber threats.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

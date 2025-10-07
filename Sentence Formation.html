@@ -1,0 +1,438 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Verbal Reasoning</title>
+    
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+            Verbal Reasoning
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <h3 class="h3"> Verbal Reasoning</h3>
+        
+        <a href="Spotting Errors.html">Spotting Errors</a>
+               
+<a href="Antonyms.html">Antonyms</a>
+              
+<a href="Synonyms.html">Synonyms</a>
+                
+<a href="Spellings.html">Spellings</a>
+                
+<a href="Selecting Words.html">Selecting Words</a>
+               
+<a href="Sentence Formation.html">Sentence Formation</a>
+                
+<a href="Ordering of Sentences.html">Ordering of Words</a>
+                
+<a href="Sentence Correction.html">Sentence Correction</a>
+                
+<a href="Ordering of Sentences.html">Ordering of Sentences</a>
+                
+<a href="Paragraph Formation.html">Paragraph Formation</a>
+               
+<a href="Closet Test.html">Closet Test</a>
+               
+<a href="Comprehension.html">Comprehension</a>
+                
+<a href="One Word Substitutes.html">One Word Substitutes</a>
+              
+<a href="Idioms and Phrases.html">Idioms and Phrases</a>
+               
+<a href="Change of Voice.html">Change of Voice</a>
+                
+<a href="Change of Speech.html">Change of Speech</a>
+               
+<a href="Verbal Analogies.html">Verbal Analogies</a>
+                
+<a href="Articles.html">Articles</a>
+                
+<a href="Prepositions.html">Prepositions</a>
+                
+<a href="Adjectives.html">Adjectives</a>
+              
+
+    </div>
+   
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+    
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+    
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+    
+       
+        function goHome() {
+    window.location.href = "index.html";
+    }
+    function goPrevious() {
+        window.location.href = "Selecting Words.html";
+    }
+    function goNext() {
+        window.location.href = "Ordering of Words.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Sentence Formation</div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>Understanding Sentence Formation</h2>
+            <p><strong>Sentence Formation</strong> is the process of creating coherent and grammatically correct sentences. Effective sentence formation is essential for clear and impactful communication in both written and spoken language.</p>
+
+            <h3>Key Concepts</h3>
+
+            <h4>1. Sentence Structure</h4>
+            <p>The basic structure of a sentence includes a <strong>subject</strong>, a <strong>predicate</strong>, and often an <strong>object</strong>. For example: "The cat (subject) sat on the mat (predicate + object)." Understanding sentence structure helps in forming sentences that are both grammatically correct and meaningful.</p>
+
+            <h4>2. Types of Sentences</h4>
+            <p>Sentences can be categorized into different types based on their function:</p>
+            <ul>
+                <li><strong>Declarative</strong>: Makes a statement. E.g., "The sun rises in the east."</li>
+                <li><strong>Interrogative</strong>: Asks a question. E.g., "What time does the sun rise?"</li>
+                <li><strong>Imperative</strong>: Gives a command or request. E.g., "Please close the door."</li>
+                <li><strong>Exclamatory</strong>: Expresses strong emotion. E.g., "What a beautiful sunrise!"</li>
+            </ul>
+
+            <h4>3. Sentence Components</h4>
+            <p>Important components to consider in sentence formation include:</p>
+            <ul>
+                <li><strong>Subject</strong>: The person, place, thing, or idea the sentence is about.</li>
+                <li><strong>Predicate</strong>: The part of the sentence that tells what the subject does or is.</li>
+                <li><strong>Object</strong>: The part of the sentence that receives the action of the verb.</li>
+                <li><strong>Modifiers</strong>: Words or phrases that provide additional details about other sentence components.</li>
+            </ul>
+
+            <h3>Examples</h3>
+            <div class="example">
+                <strong>Example 1:</strong><br>
+                <p>Sentence: "She writes a letter."<br>
+                Analysis: "She" is the subject, "writes" is the predicate, and "a letter" is the object.</p>
+
+                <strong>Example 2:</strong><br>
+                <p>Sentence: "The quick brown fox jumps over the lazy dog."<br>
+                Analysis: "The quick brown fox" is the subject, "jumps" is the predicate, and "over the lazy dog" is the object with a prepositional phrase providing more detail.</p>
+
+                <strong>Example 3:</strong><br>
+                <p>Sentence: "Could you please help me with this task?"<br>
+                Analysis: This is an interrogative sentence asking for help. "You" is the implied subject, "help" is the verb, and "me with this task" is the object with additional details.</p>
+            </div>
+
+            <h3>Common Pitfalls</h3>
+
+            <h4>1. Run-on Sentences</h4>
+            <p><strong>Run-on sentences</strong> occur when two or more independent clauses are improperly connected. Proper punctuation and conjunctions are needed to correct run-on sentences.</p>
+
+            <h4>2. Sentence Fragments</h4>
+            <p><strong>Sentence fragments</strong> are incomplete sentences that lack either a subject or a predicate. Ensure each sentence has both components to form a complete thought.</p>
+
+            <h4>3. Incorrect Word Order</h4>
+            <p><strong>Incorrect word order</strong> can lead to confusion. Make sure the subject, predicate, and object are in the correct sequence according to standard grammatical rules.</p>
+
+            <h3>Practice Resources</h3>
+            <div class="resources">
+                <p>Improve your sentence formation skills with these practice resources:</p>
+                <ul>
+                    <li><a href="https://www.grammarly.com/blog/sentence-structure/" target="_blank">Grammarly: Sentence Structure</a></li>
+                    <li><a href="https://www.englishgrammar.org/sentence-structure/" target="_blank">EnglishGrammar.org: Sentence Structure</a></li>
+                    <li><a href="https://www.khanacademy.org/ela/cc-2nd-reading-vocab/x1f91a39:cc2ndreadingvocab/x1f91a39:cc2ndreadingvocab/v/sentence-structure" target="_blank">Khan Academy: Sentence Structure</a></li>
+                </ul>
+            </div>
+
+            <h3>Summary</h3>
+            <p>Effective sentence formation involves understanding and applying sentence structure, types, and components. By avoiding common pitfalls and practicing regularly, you can enhance your ability to construct clear and effective sentences.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div> </div>
+    </div>
+</body>
+</html>

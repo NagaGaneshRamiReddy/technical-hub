@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>C Language Roadmap</title>
+    
+    
+</head>
+<body class="body">
+
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> C Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "C_interviews.html";
+}
+function goquizpro() {
+window.location.href = "C_quiz.html";
+}
+function gocomp() {
+window.location.href = "Java Compiler.html";
+}
+
+function goproject() {
+window.location.href = "C_project.html";
+}
+
+
+
+    </script>
+  
+  
+   
+  
+
+
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+        
+   
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box"><br><br>
+            <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0d80fb;"></i><br>
+            <h2 class="jk"> Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="Croadmap.html" target="_blank"><b class="b12">C Roadmap</b></a>
+        <ul>
+            <li> <a href="Introduction to C.html">Introduction to C</a></li>
+            <li><a href="History of C.html">History of C</a></li>
+            <li><a href="Setting up C Environment.html">Setting up C Environment</a></li>
+            <li><a href="Hello World Program C.html">Hello World Program</a></li>
+        </ul>
+
+        <h3>Basic C Syntax</h3>
+        <a href="Basic C Syntax.html">Basic C Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types C.html">Variables and Data Types</a></li>
+            <li><a href="Operators C.html">Operators</a></li>
+            <li><a href="Control Statements C.html">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements C.html">If-else Statements</a></li>
+                <li><a href="Switch Statement C.html">Switch Statement</a></li>
+                <li><a href="Loops C.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop C.html">For Loop</a></li>
+                    <li><a href="While Loop C.html">While Loop</a></li>
+                    <li><a href="Do-While Loop C.html">Do-While Loop</a></li>
+                    <li><a href="Break and Continue C.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+
+       
+        
+
+        <h3>Arrays in C</h3>
+        <a href="Arrays in C.html">Arrays in C</a>
+        <ul>
+            <li><a href="One-Dimensional Arrays C.html">One-Dimensional Arrays</a></li>
+            <li><a href="Two-Dimensional Arrays C.html">Two-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays C.html">Multi-Dimensional Arrays</a></li>
+            <li><a href="Arrays and Functions C.html">Arrays and Functions</a></li>
+        </ul>
+
+        <h3>Strings in C</h3>
+        <a href="Strings in C.html">Strings in C</a>
+        <ul>
+            <li><a href="String Basics c.html">String Basics</a></li>
+            <li><a href="String Functions C.html">String Functions</a></li>
+            <li><a href="String Manipulation C.html">String Manipulation</a></li>
+        </ul>
+        <h3>Pointers in C</h3>
+        <a href="Pointers in C.html">Pointers in C</a>
+        <ul>
+            <li><a href="Pointer Basics C.html">Pointer Basics</a></li>
+            <li><a href="Pointer Arithmetic C.html">Pointer Arithmetic</a></li>
+            <li><a href="Pointers and Arrays C.html">Pointers and Arrays</a></li>
+            <li><a href="Pointers and Functions C.html">Pointers and Functions</a></li>
+            <li><a href="Pointers and Structures C.html">Pointers and Structures</a></li>
+        </ul>
+        <h3>Functions in C</h3>
+        <a href="Function C.html">Functions in C</a>
+        <ul>
+            <li><a href="Function Basics C.html">Function Basics</a></li>
+            <li><a href="Function Arguments C.html">Function Arguments</a></li>
+            <li><a href="Recursion C.html">Recursion</a></li>
+            <li><a href="Library Functions C.html">Library Functions</a></li>
+        </ul>
+
+        <h3>Structures and Unions</h3>
+        <a href="Structures and Unions C.html">Structures and Unions</a>
+        <ul>
+            <li><a href="Defining Structures C.html">Defining Structures</a></li>
+            <li><a href="Accessing Structure Members C.html">Accessing Structure Members</a></li>
+            <li><a href="Nested structures.html">Nested Structures</a></li>
+            <li><a href="Unions C.html">Unions</a></li>
+        </ul>
+
+        <h3>File Handling in C</h3>
+        <a href="File Handling in C.html">File Handling in C</a>
+        <ul>
+            <li><a href="File Operations C.html">File Operations</a></li>
+            <li><a href="File Pointers C.html">File Pointers</a></li>
+            <li><a href="Reading and Writing Files C.html">Reading and Writing Files</a></li>
+            <li><a href="Binary Files C.html">Binary Files</a></li>
+        </ul>
+
+        <h3>Dynamic Memory Allocation</h3>
+        <a href="Dynamic Memory Allocation C.html">Dynamic Memory Allocation</a>
+        <ul>
+            <li><a href="malloc, calloc, realloc, free C.html">malloc, calloc, realloc, free</a></li>
+            <li><a href="Memory Leaks C.html">Memory Leaks</a></li>
+            <li><a href="Memory Management Techniques C.html">Memory Management Techniques</a></li>
+        </ul>
+
+        <h3>Advanced C Concepts</h3>
+        <a href="Advanced C Concepts.html">Advanced C Concepts</a>
+        <ul>
+            <li><a href="Preprocessor Directives C.html">Preprocessor Directives</a></li>
+            <li><a href="Bitwise Operators C.html">Bitwise Operators</a></li>
+            <li><a href="Command Line Arguments C.html">Command Line Arguments</a></li>
+            <li><a href="Error Handling C.html">Error Handling</a></li>
+            <li><a href="C programming Test.html">Course Test</a></li>
+        </ul>
+    </div>
+
+ 
+       
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "c_interviews.html";
+}
+function goquiz() {
+    window.location.href = "c_quiz.html";
+}
+function gocomp() {
+    window.location.href = "C Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Memory Management Techniques C.html";
+    }
+    function goNext() {
+        window.location.href = "Preprocessor Directives C.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                
+                <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0dfb49;"></i><br>
+                <h2 class="jk"> Tutorial</h2>
+<div class="div1">Advanced C programming concepts</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>Advanced C programming concepts dive deeper into the language's features, offering greater control and flexibility. This page explores some of these advanced topics, including pointers, memory management, bitwise operations, and more.</p>
+
+        <h2>1. Pointers and Dynamic Memory Management</h2>
+        <p>Pointers are a fundamental aspect of C that allow for direct memory access and manipulation. Understanding pointers and dynamic memory management is crucial for advanced C programming.</p>
+
+        <h3>Pointer Arithmetic</h3>
+        <p>Pointer arithmetic allows you to perform arithmetic operations on pointers. For example, you can increment a pointer to move to the next element in an array:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int arr[3] = {10, 20, 30};
+    int *ptr = arr;
+
+    printf("%d\n", *(ptr + 1)); // Output: 20
+    return 0;
+}
+</code></pre>
+
+        <h3>Dynamic Memory Management</h3>
+        <p>Dynamic memory management in C involves allocating and freeing memory at runtime using functions like <code>malloc</code>, <code>calloc</code>, <code>realloc</code>, and <code>free</code>. Proper management prevents memory leaks and fragmentation.</p>
+        <pre><code>#include &lt;stdlib.h&gt;
+
+int main() {
+    int *ptr = (int *)malloc(sizeof(int) * 5);
+    if (ptr == NULL) {
+        return 1; // Allocation failed
+    }
+    
+    // Use the memory
+    free(ptr); // Free the memory
+    return 0;
+}
+</code></pre>
+
+        <h2>2. Bitwise Operations</h2>
+        <p>Bitwise operations perform operations on the binary representations of numbers. They are useful for tasks such as low-level programming, data compression, and encryption.</p>
+
+        <h3>Bitwise Operators</h3>
+        <ul>
+            <li><code>&</code> (Bitwise AND)</li>
+            <li><code>|</code> (Bitwise OR)</li>
+            <li><code>^</code> (Bitwise XOR)</li>
+            <li><code>&lt;&lt;</code> (Left Shift)</li>
+            <li><code>&gt;&gt;</code> (Right Shift)</li>
+        </ul>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5;   // 0101 in binary
+    int b = 3;   // 0011 in binary
+    int result;
+
+    result = a & b; // Bitwise AND
+    printf("a & b = %d\n", result); // Output: 1
+
+    result = a | b; // Bitwise OR
+    printf("a | b = %d\n", result); // Output: 7
+
+    result = a ^ b; // Bitwise XOR
+    printf("a ^ b = %d\n", result); // Output: 6
+
+    result = a &lt;&lt; 1; // Left Shift
+    printf("a &lt;&lt; 1 = %d\n", result); // Output: 10
+
+    result = a &gt;&gt; 1; // Right Shift
+    printf("a &gt;&gt; 1 = %d\n", result); // Output: 2
+
+    return 0;
+}
+</code></pre>
+
+        <h2>3. Function Pointers</h2>
+        <p>Function pointers allow you to store addresses of functions and call them indirectly. This is useful for implementing callbacks, event handlers, and function tables.</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+void greet() {
+    printf("Hello, World!\n");
+}
+
+int main() {
+    void (*func_ptr)() = greet;
+    func_ptr(); // Call the function via pointer
+    return 0;
+}
+</code></pre>
+
+        <h2>4. Preprocessor Directives</h2>
+        <p>Preprocessor directives are instructions for the C preprocessor, which runs before compilation. They handle tasks such as including header files and defining macros.</p>
+
+        <h3>Common Preprocessor Directives</h3>
+        <ul>
+            <li><code>#define</code> - Defines macros</li>
+            <li><code>#include</code> - Includes header files</li>
+            <li><code>#ifdef</code>, <code>#ifndef</code> - Conditional compilation</li>
+        </ul>
+        <pre><code>#include &lt;stdio.h&gt;
+
+#define PI 3.14159
+
+int main() {
+    printf("Value of PI: %f\n", PI);
+    return 0;
+}
+</code></pre>
+
+        <h2>5. Inline Functions</h2>
+        <p>Inline functions are functions that are expanded in line rather than being called. This can improve performance by eliminating the overhead of function calls.</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+inline int square(int x) {
+    return x * x;
+}
+
+int main() {
+    int result = square(5);
+    printf("Square of 5: %d\n", result);
+    return 0;
+}
+</code></pre>
+
+        <h2>6. Variadic Functions</h2>
+        <p>Variadic functions can accept a variable number of arguments. This is useful for functions like <code>printf</code> that need to handle varying numbers of parameters.</p>
+        <pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdarg.h&gt;
+
+void print_numbers(int count, ...) {
+    va_list args;
+    va_start(args, count);
+
+    for (int i = 0; i &lt; count; i++) {
+        int num = va_arg(args, int);
+        printf("%d ", num);
+    }
+    printf("\n");
+    
+    va_end(args);
+}
+
+int main() {
+    print_numbers(3, 1, 2, 3);
+    return 0;
+}
+</code></pre>
+
+        <h2>Summary</h2>
+        <p>Advanced C programming concepts provide deeper control over system resources and more efficient code. By mastering pointers, bitwise operations, function pointers, preprocessor directives, inline functions, and variadic functions, you can enhance your C programming skills and tackle more complex problems.</p>
+
+        <h2>Free Resources for Learning C</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://www.learn-c.org/">Learn-C.org</a> - An interactive tutorial for learning C programming from the basics.</li>
+                <li><a href="https://www.cprogramming.com/tutorial/c-tutorial.html">CProgramming.com</a> - Comprehensive tutorials and resources for learning C programming.</li>
+                <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">Codecademy</a> - Offers a C++ course which includes C programming concepts. Some content is free.</li>
+                <li><a href="https://www.geeksforgeeks.org/c-programming-language/">GeeksforGeeks</a> - Tutorials and problems to help you practice C programming.</li>
+                <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-c">HackerRank</a> - Coding challenges and exercises in C to test and improve your skills.</li>
+                <li><a href="https://www.tutorialspoint.com/c_programming/index.htm">TutorialsPoint</a> - Detailed guide on C programming with examples and exercises.</li>
+            </ul>
+        </div>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+    </div>
+</body>
+</html>

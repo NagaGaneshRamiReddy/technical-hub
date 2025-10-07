@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>CSS Roadmap</title>
+    
+    
+    
+</head>
+<body class="body">
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> CSS Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> CSS Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+  
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+
+
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-css3-alt" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">CSS Tutorial</h2>
+        </div>
+    
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="CSS Roadmaps.html" target="_blank"><b class="b12">CSS Roadmap</b></a>
+        <ul>
+            <a href="Introduction to CSS.html">Introduction to CSS</a>
+        
+            <li><a href="What is CSS.html">What is CSS?</a></li>
+            <li><a href="CSS Syntax.html">CSS Syntax</a></li>
+            <li><a href="How to Add CSS.html">How to Add CSS</a></li>
+        </ul>
+    
+        <h3>Selectors in CSS</h3>
+        <a href="Selectors in CSS.html">Selectors in CSS</a>
+        <ul>
+            <li><a href="Basic Selectors.html">Basic Selectors</a></li>
+            <li><a href="Combinators.html">Combinators</a></li>
+            <li>
+                <a href="Pseudo Classes.html">Pseudo Classes</a>
+                <ul>
+                    <li><a href="Hover Focus Active.html">:hover, :focus, :active</a></li>
+                    <li><a href="Nth-child.html">:nth-child</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Box Model in CSS</h3>
+        <a href="Box Model in CSS.html">Box Model in CSS</a>
+        <ul>
+            <li><a href="Content Padding Border.html">Content, Padding, Border</a></li>
+            <li><a href="Margin.html">Margin</a></li>
+            <li><a href="Box Sizing.html">Box Sizing</a></li>
+        </ul>
+    
+        <h3>CSS Layout</h3>
+        <a href="CSS Layout.html">CSS Layout</a>
+        <ul>
+            <li><a href="Display Property.html">Display Property</a></li>
+            <li><a href="Positioning.html">Positioning</a></li>
+            <li><a href="Float Clearfix.html">Float & Clearfix</a></li>
+            <li><a href="Flexbox.html">Flexbox</a></li>
+            <li><a href="CSS Grid.html">CSS Grid</a></li>
+        </ul>
+    
+        <h3>Typography in CSS</h3>
+        <a href="Typography in CSS.html">Typography in CSS</a>
+        <ul>
+            <li><a href="Font Properties.html">Font Properties</a></li>
+            <li><a href="Text Alignment.html">Text Alignment</a></li>
+            <li><a href="Line Height and Spacing.html">Line Height & Spacing</a></li>
+        </ul>
+    
+        <h3>CSS Colors</h3>
+        <a href="CSS Colors.html">CSS Colors</a>
+        <ul>
+            <li><a href="Color Naming Systems.html">Color Naming Systems</a></li>
+            <li><a href="Background Colors.html">Background Colors</a></li>
+            <li><a href="Gradients.html">Gradients</a></li>
+        </ul>
+    
+        <h3>CSS Animations</h3>
+        <a href="CSS Animations.html">CSS Animations</a>
+        <ul>
+            <li><a href="Transitions.html">Transitions</a></li>
+            <li><a href="Keyframes.html">Keyframes</a></li>
+            <li><a href="Animation Timing Functions.html">Animation Timing Functions</a></li>
+        </ul>
+    
+        <h3>Responsive Design</h3>
+        <a href="Responsive Design.html">Responsive Design</a>
+        <ul>
+            <li><a href="Media Queries.html">Media Queries</a></li>
+            <li><a href="Responsive Units.html">Responsive Units</a></li>
+            <li><a href="Viewport Meta Tag.html">Viewport Meta Tag</a></li>
+        </ul>
+    </div>
+    
+    
+        
+    
+        
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "CSS_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "CSS_quiz.html";
+    }
+    function goproject() {
+        window.location.href = "CSS_projects.html";
+    }
+    function gocomp() {
+        window.location.href = "CSS Compiler.html";
+    }
+    function goPrevious() {
+        window.location.href = "CSS Grid.html";
+    }
+    function goNext() {
+        window.location.href ="Font Properties.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-css3-alt" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">CSS Tutorial</h2>
+    <div class="div1">Typography in CSS</div></div>
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+    <h2>What is Typography in CSS?</h2>
+    <p><strong>Typography</strong> in CSS refers to the style and appearance of text on a web page. It involves controlling the font, size, weight, style, line height, and other text-related properties to ensure that text is readable and visually appealing.</p>
+    <style>
+        .font-family {
+            font-family: 'Arial', sans-serif;
+        }
+        .font-weight {
+            font-weight: 700; /* Bold */
+        }
+        .font-style {
+            font-style: italic;
+        }
+        .text-transform {
+            text-transform: uppercase;
+        }
+        .letter-spacing {
+            letter-spacing: 2px;
+        }
+        .text-align {
+            text-align: center;
+        }
+    </style>
+    <h2>Key Typography Properties</h2>
+
+    <h3>1. Font Family</h3>
+    <p>The <code>font-family</code> property specifies the typeface for text. You can set it to a specific font or a generic family like <code>serif</code> or <code>sans-serif</code>.</p>
+    <pre><code>
+/* Set font family */
+p {
+    font-family: 'Arial', sans-serif;
+}
+    </code></pre>
+
+    <h3>2. Font Size</h3>
+    <p>The <code>font-size</code> property controls the size of the text. It can be set in various units such as pixels (<code>px</code>), ems (<code>em</code>), or percentages (<code>%</code>).</p>
+    <pre><code>
+/* Set font size */
+h1 {
+    font-size: 36px;
+}
+    </code></pre>
+
+    <h3>3. Font Weight</h3>
+    <p>The <code>font-weight</code> property adjusts the thickness of the text. Common values are <code>normal</code>, <code>bold</code>, and numerical values from 100 to 900.</p>
+    <pre><code>
+/* Set font weight */
+strong {
+    font-weight: 700;
+}
+    </code></pre>
+
+    <h3>4. Font Style</h3>
+    <p>The <code>font-style</code> property allows you to set the style of the text to <code>normal</code>, <code>italic</code>, or <code>oblique</code>.</p>
+    <pre><code>
+/* Set font style */
+em {
+    font-style: italic;
+}
+    </code></pre>
+
+    <h3>5. Text Transform</h3>
+    <p>The <code>text-transform</code> property controls the capitalization of text. You can set it to <code>uppercase</code>, <code>lowercase</code>, or <code>capitalize</code>.</p>
+    <pre><code>
+/* Transform text to uppercase */
+.uppercase {
+    text-transform: uppercase;
+}
+    </code></pre>
+
+    <h3>6. Letter Spacing</h3>
+    <p>The <code>letter-spacing</code> property adjusts the space between characters in a text. You can set it in units like pixels or ems.</p>
+    <pre><code>
+/* Set letter spacing */
+h2 {
+    letter-spacing: 2px;
+}
+    </code></pre>
+
+    <h3>7. Text Align</h3>
+    <p>The <code>text-align</code> property sets the horizontal alignment of text. Possible values are <code>left</code>, <code>right</code>, <code>center</code>, and <code>justify</code>.</p>
+    <pre><code>
+/* Center-align text */
+.center-text {
+    text-align: center;
+}
+    </code></pre>
+    <div class="resources">
+    <h2>Example Styles</h2>
+    <p class="font-family">This paragraph uses the Arial font-family.</p>
+    <p class="font-weight">This text is bold due to the font-weight property.</p>
+    <p class="font-style">This text is italic due to the font-style property.</p>
+    <p class="text-transform">This text is transformed to uppercase using text-transform.</p>
+    <p class="letter-spacing">This text has increased letter spacing.</p>
+    <p class="text-align">This text is center-aligned.</p>
+</div>
+    <div class="resources">
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/css/css_text.asp" target="_blank">W3Schools: CSS Text</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Text" target="_blank">MDN: Text Properties</a></li>
+            <li><a href="https://css-tricks.com/almanac/properties/t/text-transform/" target="_blank">CSS-Tricks: Text Transform</a></li>
+        </ul>
+    </div>
+
+    <h2>Summary</h2>
+    <p>Typography in CSS is crucial for designing readable and visually pleasing web pages. By mastering various text properties, you can control how text appears on your site, improving both aesthetics and user experience.</p>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+</body>
+</html>

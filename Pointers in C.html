@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>C Language Roadmap</title>
+    
+    
+</head>
+<body class="body">
+
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> C Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "C_interviews.html";
+}
+function goquizpro() {
+window.location.href = "C_quiz.html";
+}
+function gocomp() {
+window.location.href = "Java Compiler.html";
+}
+
+function goproject() {
+window.location.href = "C_project.html";
+}
+
+
+
+    </script>
+  
+  
+   
+  
+
+
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+        
+   
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box"><br><br>
+            <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0d80fb;"></i><br>
+            <h2 class="jk"> Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="Croadmap.html" target="_blank"><b class="b12">C Roadmap</b></a>
+        <ul>
+            <li> <a href="Introduction to C.html">Introduction to C</a></li>
+            <li><a href="History of C.html">History of C</a></li>
+            <li><a href="Setting up C Environment.html">Setting up C Environment</a></li>
+            <li><a href="Hello World Program C.html">Hello World Program</a></li>
+        </ul>
+
+        <h3>Basic C Syntax</h3>
+        <a href="Basic C Syntax.html">Basic C Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types C.html">Variables and Data Types</a></li>
+            <li><a href="Operators C.html">Operators</a></li>
+            <li><a href="Control Statements C.html">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements C.html">If-else Statements</a></li>
+                <li><a href="Switch Statement C.html">Switch Statement</a></li>
+                <li><a href="Loops C.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop C.html">For Loop</a></li>
+                    <li><a href="While Loop C.html">While Loop</a></li>
+                    <li><a href="Do-While Loop C.html">Do-While Loop</a></li>
+                    <li><a href="Break and Continue C.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+
+       
+        
+
+        <h3>Arrays in C</h3>
+        <a href="Arrays in C.html">Arrays in C</a>
+        <ul>
+            <li><a href="One-Dimensional Arrays C.html">One-Dimensional Arrays</a></li>
+            <li><a href="Two-Dimensional Arrays C.html">Two-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays C.html">Multi-Dimensional Arrays</a></li>
+            <li><a href="Arrays and Functions C.html">Arrays and Functions</a></li>
+        </ul>
+
+        <h3>Strings in C</h3>
+        <a href="Strings in C.html">Strings in C</a>
+        <ul>
+            <li><a href="String Basics c.html">String Basics</a></li>
+            <li><a href="String Functions C.html">String Functions</a></li>
+            <li><a href="String Manipulation C.html">String Manipulation</a></li>
+        </ul>
+        <h3>Pointers in C</h3>
+        <a href="Pointers in C.html">Pointers in C</a>
+        <ul>
+            <li><a href="Pointer Basics C.html">Pointer Basics</a></li>
+            <li><a href="Pointer Arithmetic C.html">Pointer Arithmetic</a></li>
+            <li><a href="Pointers and Arrays C.html">Pointers and Arrays</a></li>
+            <li><a href="Pointers and Functions C.html">Pointers and Functions</a></li>
+            <li><a href="Pointers and Structures C.html">Pointers and Structures</a></li>
+        </ul>
+        <h3>Functions in C</h3>
+        <a href="Function C.html">Functions in C</a>
+        <ul>
+            <li><a href="Function Basics C.html">Function Basics</a></li>
+            <li><a href="Function Arguments C.html">Function Arguments</a></li>
+            <li><a href="Recursion C.html">Recursion</a></li>
+            <li><a href="Library Functions C.html">Library Functions</a></li>
+        </ul>
+
+        <h3>Structures and Unions</h3>
+        <a href="Structures and Unions C.html">Structures and Unions</a>
+        <ul>
+            <li><a href="Defining Structures C.html">Defining Structures</a></li>
+            <li><a href="Accessing Structure Members C.html">Accessing Structure Members</a></li>
+            <li><a href="Nested structures.html">Nested Structures</a></li>
+            <li><a href="Unions C.html">Unions</a></li>
+        </ul>
+
+        <h3>File Handling in C</h3>
+        <a href="File Handling in C.html">File Handling in C</a>
+        <ul>
+            <li><a href="File Operations C.html">File Operations</a></li>
+            <li><a href="File Pointers C.html">File Pointers</a></li>
+            <li><a href="Reading and Writing Files C.html">Reading and Writing Files</a></li>
+            <li><a href="Binary Files C.html">Binary Files</a></li>
+        </ul>
+
+        <h3>Dynamic Memory Allocation</h3>
+        <a href="Dynamic Memory Allocation C.html">Dynamic Memory Allocation</a>
+        <ul>
+            <li><a href="malloc, calloc, realloc, free C.html">malloc, calloc, realloc, free</a></li>
+            <li><a href="Memory Leaks C.html">Memory Leaks</a></li>
+            <li><a href="Memory Management Techniques C.html">Memory Management Techniques</a></li>
+        </ul>
+
+        <h3>Advanced C Concepts</h3>
+        <a href="Advanced C Concepts.html">Advanced C Concepts</a>
+        <ul>
+            <li><a href="Preprocessor Directives C.html">Preprocessor Directives</a></li>
+            <li><a href="Bitwise Operators C.html">Bitwise Operators</a></li>
+            <li><a href="Command Line Arguments C.html">Command Line Arguments</a></li>
+            <li><a href="Error Handling C.html">Error Handling</a></li>
+            <li><a href="C programming Test.html">Course Test</a></li>
+        </ul>
+    </div>
+
+ 
+       
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "c_interviews.html";
+}
+function goquiz() {
+    window.location.href = "c_quiz.html";
+}
+function gocomp() {
+    window.location.href = "C Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "String Manipulation C.html";
+    }
+    function goNext() {
+        window.location.href = "Pointer Basics C.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                
+                <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0dfb49;"></i><br>
+                <h2 class="jk"> Tutorial</h2>
+<div class="div1">Pointer in C</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>In C programming, a pointer is a variable that stores the memory address of another variable. Pointers are a powerful feature in C, allowing for efficient array manipulation, dynamic memory allocation, and function argument passing. Understanding pointers is crucial for mastering C programming.</p>
+      
+        
+          
+          
+        
+        <h2>1. Basics of Pointers</h2>
+        <p>Here’s a basic overview of pointers:</p>
+        <ul>
+            <li><strong>Pointer Declaration:</strong> To declare a pointer, specify the type of data it will point to, followed by an asterisk (<code>*</code>) before the pointer name.</li>
+            <li><strong>Pointer Initialization:</strong> Initialize a pointer by assigning it the address of a variable using the address-of operator (<code>&</code>).</li>
+            <li><strong>Dereferencing:</strong> Access the value stored at the address the pointer is pointing to using the dereference operator (<code>*</code>).</li>
+        </ul>
+
+        <h3>Example</h3>
+        <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num = 10;
+    int *ptr = &num; // Pointer initialization
+
+    printf("Value of num: %d\n", num);
+    printf("Value of ptr: %p\n", (void *)ptr);
+    printf("Value pointed to by ptr: %d\n", *ptr);
+
+    return 0;
+}
+        </code></pre>
+        <p>This example demonstrates how to declare, initialize, and use a pointer.</p>
+
+        <h2>2. Pointer Arithmetic</h2>
+        <p>Pointer arithmetic allows you to navigate through memory addresses. The common operations are:</p>
+        <ul>
+            <li><strong>Increment (<code>++</code>):</strong> Move to the next memory address of the data type.</li>
+            <li><strong>Decrement (<code>--</code>):</strong> Move to the previous memory address of the data type.</li>
+            <li><strong>Add (<code>+</code>) and Subtract (<code>-</code>):</strong> Move multiple memory addresses forward or backward.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <pre><code>
+#include &lt;stdio.h&gt>
+
+int main() {
+    int arr[] = {10, 20, 30};
+    int *ptr = arr; // Points to the first element of arr
+
+    printf("Value at ptr: %d\n", *ptr);   // Output: 10
+    ptr++;
+    printf("Value at ptr after increment: %d\n", *ptr); // Output: 20
+
+    return 0;
+}
+        </code></pre>
+        <p>This example shows how pointer arithmetic can be used to navigate through an array.</p>
+
+        <h2>3. Pointers and Arrays</h2>
+        <p>Arrays and pointers are closely related in C. The name of an array is essentially a pointer to its first element. Here’s how pointers can be used with arrays:</p>
+
+        <h3>Example</h3>
+        <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int arr[] = {10, 20, 30};
+    int *ptr = arr; // Equivalent to &arr[0]
+
+    for (int i = 0; i < 3; i++) {
+        printf("Element %d: %d\n", i, *(ptr + i)); // Access array elements using pointer arithmetic
+    }
+
+    return 0;
+}
+        </code></pre>
+        <p>This example demonstrates accessing array elements using pointers.</p>
+
+        <h2>4. Dynamic Memory Allocation</h2>
+        <p>Pointers are used for dynamic memory management. Functions from <code>&lt;stdlib.h&gt;</code> such as <code>malloc</code>, <code>calloc</code>, and <code>free</code> are commonly used:</p>
+        <ul>
+            <li><strong><code>malloc</code>:</strong> Allocates a specified number of bytes and returns a pointer to the allocated memory.</li>
+            <li><strong><code>calloc</code>:</strong> Allocates memory for an array of elements, initializing the memory to zero.</li>
+            <li><strong><code>free</code>:</strong> Frees previously allocated memory.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    int *arr = (int *)malloc(3 * sizeof(int)); // Allocate memory for an array of 3 integers
+
+    if (arr == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+
+    arr[0] = 10;
+    arr[1] = 20;
+    arr[2] = 30;
+
+    for (int i = 0; i < 3; i++) {
+        printf("Element %d: %d\n", i, arr[i]);
+    }
+
+    free(arr); // Free the allocated memory
+
+    return 0;
+}
+        </code></pre>
+        <p>This example demonstrates dynamic memory allocation and deallocation using pointers.</p>
+
+        <h2>5. Function Pointers</h2>
+        <p>Function pointers are used to point to functions. They are useful for implementing callback functions and for creating flexible code.</p>
+
+        <h3>Example</h3>
+        <pre><code>
+#include &lt;stdio.h&gt;
+
+void printMessage() {
+    printf("Hello, World!\n");
+}
+
+int main() {
+    void (*funcPtr)() = printMessage; // Declare a function pointer and assign it
+
+    funcPtr(); // Call the function using the pointer
+
+    return 0;
+}
+        </code></pre>
+        <p>This example shows how to declare and use a function pointer.</p>
+
+        <h2>6. Common Pitfalls</h2>
+        <p>When working with pointers, be cautious of the following common issues:</p>
+        <ul>
+            <li><strong>Dereferencing NULL Pointers:</strong> Accessing a memory location through a NULL pointer can lead to undefined behavior.</li>
+            <li><strong>Memory Leaks:</strong> Failing to free dynamically allocated memory can cause memory leaks.</li>
+            <li><strong>Uninitialized Pointers:</strong> Using pointers that have not been initialized can lead to unpredictable results.</li>
+        </ul>
+
+        <h2>Additional Resources</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://www.learn-c.org/">Learn-C.org</a> - Free interactive C programming tutorial.</li>
+                <li><a href="https://www.cprogramming.com/tutorial/c-tutorial.html">C Programming Tutorial</a> - Comprehensive tutorial on C programming.</li>
+                <li><a href="https://www.geeksforgeeks.org/c-programming-language/">GeeksforGeeks C Programming</a> - Tutorials and examples on C programming.</li>
+                <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">Codecademy C++ Course</a> - Online course to learn C++ (similar concepts apply to C).</li>
+            </ul>
+        </div>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+    </div>
+</body>
+</html>

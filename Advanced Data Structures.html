@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+    function goPrevious() {
+        window.location.href = "Priority Queue.html";
+    }
+    function goNext() {
+        window.location.href = "Trees.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1">Advanced data structures</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>Advanced data structures are more sophisticated structures that support complex operations more efficiently than basic data structures. They are crucial for optimizing performance in various applications, especially when dealing with large datasets or requiring specific operations. Examples include balanced trees, hash tables, heaps, and advanced graph structures.</p>
+
+        <h2>1. AVL Trees</h2>
+        <p>An AVL Tree is a self-balancing binary search tree where the difference between heights of left and right subtrees cannot be more than one. This balance ensures O(log n) time complexity for insertions, deletions, and lookups.</p>
+
+        <h3>Implementation Examples</h3>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+
+class AVLNode {
+public:
+    int key;
+    AVLNode* left;
+    AVLNode* right;
+    int height;
+    AVLNode(int k) : key(k), left(nullptr), right(nullptr), height(1) {}
+};
+
+class AVLTree {
+    AVLNode* root;
+
+    int height(AVLNode* node) {
+        return node ? node->height : 0;
+    }
+
+    int getBalance(AVLNode* node) {
+        return node ? height(node->left) - height(node->right) : 0;
+    }
+
+    AVLNode* rightRotate(AVLNode* y) {
+        AVLNode* x = y->left;
+        AVLNode* T2 = x->right;
+        x->right = y;
+        y->left = T2;
+        y->height = 1 + std::max(height(y->left), height(y->right));
+        x->height = 1 + std::max(height(x->left), height(x->right));
+        return x;
+    }
+
+    AVLNode* leftRotate(AVLNode* x) {
+        AVLNode* y = x->right;
+        AVLNode* T2 = y->left;
+        y->left = x;
+        x->right = T2;
+        x->height = 1 + std::max(height(x->left), height(x->right));
+        y->height = 1 + std::max(height(y->left), height(y->right));
+        return y;
+    }
+
+    AVLNode* insert(AVLNode* node, int key) {
+        if (!node) return new AVLNode(key);
+        if (key < node->key) node->left = insert(node->left, key);
+        else if (key > node->key) node->right = insert(node->right, key);
+        else return node;
+
+        node->height = 1 + std::max(height(node->left), height(node->right));
+
+        int balance = getBalance(node);
+        if (balance > 1 && key < node->left->key) return rightRotate(node);
+        if (balance < -1 && key > node->right->key) return leftRotate(node);
+        if (balance > 1 && key > node->left->key) {
+            node->left = leftRotate(node->left);
+            return rightRotate(node);
+        }
+        if (balance < -1 && key < node->right->key) {
+            node->right = rightRotate(node->right);
+            return leftRotate(node);
+        }
+        return node;
+    }
+
+    void inorder(AVLNode* root) {
+        if (root) {
+            inorder(root->left);
+            std::cout &lt;&lt; root->key &lt;&lt; " ";
+            inorder(root->right);
+        }
+    }
+
+public:
+    AVLTree() : root(nullptr) {}
+
+    void insert(int key) {
+        root = insert(root, key);
+    }
+
+    void inorder() {
+        inorder(root);
+        std::cout &lt;&lt; std::endl;
+    }
+};
+
+int main() {
+    AVLTree tree;
+    tree.insert(10);
+    tree.insert(20);
+    tree.insert(30);
+    tree.inorder();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class AVLNode:
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+        self.right = None
+        self.height = 1
+
+class AVLTree:
+    def __init__(self):
+        self.root = None
+
+    def height(self, node):
+        return node.height if node else 0
+
+    def getBalance(self, node):
+        return self.height(node.left) - self.height(node.right) if node else 0
+
+    def rightRotate(self, y):
+        x = y.left
+        T2 = x.right
+        x.right = y
+        y.left = T2
+        y.height = 1 + max(self.height(y.left), self.height(y.right))
+        x.height = 1 + max(self.height(x.left), self.height(x.right))
+        return x
+
+    def leftRotate(self, x):
+        y = x.right
+        T2 = y.left
+        y.left = x
+        x.right = T2
+        x.height = 1 + max(self.height(x.left), self.height(x.right))
+        y.height = 1 + max(self.height(y.left), self.height(y.right))
+        return y
+
+    def insert(self, node, key):
+        if not node:
+            return AVLNode(key)
+        if key < node.key:
+            node.left = self.insert(node.left, key)
+        elif key > node.key:
+            node.right = self.insert(node.right, key)
+        else:
+            return node
+
+        node.height = 1 + max(self.height(node.left), self.height(node.right))
+        balance = self.getBalance(node)
+
+        if balance > 1 and key < node.left.key:
+            return self.rightRotate(node)
+        if balance < -1 and key > node.right.key:
+            return self.leftRotate(node)
+        if balance > 1 and key > node.left.key:
+            node.left = self.leftRotate(node.left)
+            return self.rightRotate(node)
+        if balance < -1 and key < node.right.key:
+            node.right = self.rightRotate(node.right)
+            return self.leftRotate(node)
+        return node
+
+    def inorder(self, node):
+        if node:
+            self.inorder(node.left)
+            print(node.key, end=" ")
+            self.inorder(node.right)
+
+    def display(self):
+        self.inorder(self.root)
+        print()
+
+# Example usage
+tree = AVLTree()
+tree.root = tree.insert(tree.root, 10)
+tree.root = tree.insert(tree.root, 20)
+tree.root = tree.insert(tree.root, 30)
+tree.display()
+</code>
+        </pre>
+
+        <h2>2. B-Trees</h2>
+        <p>A B-Tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. B-Trees are commonly used in databases and file systems.</p>
+
+        <h3>Implementation Examples</h3>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt<vector&gt;
+#include &lt<climits&gt;
+
+class BTreeNode {
+public:
+    std::vector<int> keys;
+    std::vector<BTreeNode*> children;
+    bool leaf;
+    int t;
+
+    BTreeNode(int _t, bool _leaf) : t(_t), leaf(_leaf) {
+        keys.resize(2 * t - 1);
+        children.resize(2 * t);
+    }
+
+    void traverse() {
+        int i = 0;
+        for (i = 0; i < keys.size(); i++) {
+            if (!leaf) children[i]->traverse();
+            std::cout &lt;&lt; keys[i] &lt;&lt; " ";
+        }
+        if (!leaf) children[i]->traverse();
+    }
+};
+
+class BTree {
+    BTreeNode* root;
+    int t;
+
+public:
+    BTree(int _t) : t(_t) {
+        root = new BTreeNode(t, true);
+    }
+
+    void traverse() {
+        root->traverse();
+    }
+};
+
+int main() {
+    BTree b(3);
+    b.traverse();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class BTreeNode:
+    def __init__(self, t, leaf=False):
+        self.t = t
+        self.leaf = leaf
+        self.keys = []
+        self.children = []
+
+class BTree:
+    def __init__(self, t):
+        self.root = BTreeNode(t, True)
+        self.t = t
+
+    def traverse(self, node):
+        if node:
+            for i in range(len(node.keys)):
+                if not node.leaf:
+                    self.traverse(node.children[i])
+                print(node.keys[i], end=" ")
+            if not node.leaf:
+                self.traverse(node.children[len(node.keys)])
+
+    def display(self):
+        self.traverse(self.root)
+        print()
+
+# Example usage
+b = BTree(3)
+b.display()
+</code>
+        </pre>
+
+        <h2>3. Trie</h2>
+        <p>A Trie, or prefix tree, is a special type of tree used to store associative data structures. It is used primarily for searching strings and is efficient in handling prefix-based queries.</p>
+
+        <h3>Implementation Examples</h3>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt<unordered_map&gt;
+
+class TrieNode {
+public:
+    std::unordered_map<char, TrieNode*> children;
+    bool endOfWord;
+
+    TrieNode() : endOfWord(false) {}
+};
+
+class Trie {
+    TrieNode* root;
+
+public:
+    Trie() {
+        root = new TrieNode();
+    }
+
+    void insert(std::string word) {
+        TrieNode* node = root;
+        for (char c : word) {
+            if (node->children.find(c) == node->children.end()) {
+                node->children[c] = new TrieNode();
+            }
+            node = node->children[c];
+        }
+        node->endOfWord = true;
+    }
+
+    bool search(std::string word) {
+        TrieNode* node = root;
+        for (char c : word) {
+            if (node->children.find(c) == node->children.end()) {
+                return false;
+            }
+            node = node->children[c];
+        }
+        return node->endOfWord;
+    }
+};
+
+int main() {
+    Trie trie;
+    trie.insert("hello");
+    std::cout &lt;&lt; trie.search("hello") &lt;&lt; std::endl;
+    std::cout &lt;&lt; trie.search("world") &lt;&lt; std::endl;
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.end_of_word = False
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word):
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+        node.end_of_word = True
+
+    def search(self, word):
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                return False
+            node = node.children[char]
+        return node.end_of_word
+
+# Example usage
+trie = Trie()
+trie.insert("hello")
+print(trie.search("hello"))
+print(trie.search("world"))
+</code>
+        </pre>
+
+        
+        
+
+        <h2>Summary</h2>
+        <p>Advanced data structures such as AVL Trees, B-Trees, and Tries enhance the efficiency of data operations in complex scenarios. They support efficient searching, insertion, and deletion operations, making them essential for performance optimization in various applications. Understanding these structures and their implementations is crucial for advanced problem-solving and algorithm design.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>   </div>
+</body>
+</html>

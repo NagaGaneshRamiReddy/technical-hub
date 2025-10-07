@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore advanced topics in FastAPI, including background tasks, custom exception handling, dependency injection, and integrating with databases.">
+    <title>Advanced FastAPI Topics</title>
+    <link rel="stylesheet" href="aws.css">
+</head>
+<body>
+    <header>
+        <h1 class="h1">Advanced FastAPI Topics</h1>
+    </header>
+
+    <div class="container">
+        <h2>Advanced Features in FastAPI</h2>
+        <p>FastAPI provides powerful tools and features that help you build sophisticated applications. Here, we cover some advanced topics such as background tasks, custom exception handling, dependency injection, and database integration.</p>
+
+        <h2>Background Tasks</h2>
+        <p>FastAPI supports background tasks to handle long-running operations that don't need to be completed immediately. You can use the `BackgroundTasks` class to manage these tasks:</p>
+        <pre><code># main.py
+from fastapi import FastAPI, BackgroundTasks
+
+app = FastAPI()
+
+def write_log(message: str):
+    with open("log.txt", mode="a") as log:
+        log.write(message + "\n")
+
+@app.post("/send-notification/")
+def send_notification(background_tasks: BackgroundTasks, email: str):
+    background_tasks.add_task(write_log, f"Email sent to {email}")
+    return {"message": "Notification sent in the background"}
+</code></pre>
+
+        <h2>Custom Exception Handling</h2>
+        <p>You can define custom exceptions and handlers in FastAPI to manage errors and responses more effectively:</p>
+        <pre><code># main.py
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import JSONResponse
+
+app = FastAPI()
+
+class CustomException(Exception):
+    def __init__(self, name: str):
+        self.name = name
+
+@app.exception_handler(CustomException)
+async def custom_exception_handler(request, exc: CustomException):
+    return JSONResponse(
+        status_code=418,
+        content={"message": f"Custom error: {exc.name}"},
+    )
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int):
+    if item_id == 42:
+        raise CustomException(name="Item 42 is not available")
+    return {"item_id": item_id}
+</code></pre>
+
+        <h2>Dependency Injection</h2>
+        <p>FastAPI’s dependency injection system allows you to manage complex dependencies in a clean and modular way. You can use it to inject reusable components into your endpoints:</p>
+        <pre><code># main.py
+from fastapi import FastAPI, Depends
+
+app = FastAPI()
+
+class User:
+    def __init__(self, username: str):
+        self.username = username
+
+def get_current_user(username: str = "default_user"):
+    return User(username=username)
+
+@app.get("/users/me")
+def read_user(user: User = Depends(get_current_user)):
+    return {"username": user.username}
+</code></pre>
+
+        <h2>Database Integration</h2>
+        <p>Integrating FastAPI with databases is straightforward. You can use SQLAlchemy or Tortoise ORM for database operations. Here’s an example with SQLAlchemy:</p>
+        <pre><code># main.py
+from fastapi import FastAPI, Depends
+from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, Session
+
+DATABASE_URL = "sqlite:///./test.db"
+
+engine = create_engine(DATABASE_URL)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+Base = declarative_base()
+
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, index=True)
+
+Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+@app.post("/users/")
+def create_user(name: str, db: Session = Depends(get_db)):
+    db_user = User(name=name)
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
+    return db_user
+</code></pre>
+
+        <h2>Security and Authentication</h2>
+        <p>FastAPI provides support for handling security and authentication, including OAuth2 and JWT tokens. Here’s a basic example of using OAuth2 with password flow:</p>
+        <pre><code># main.py
+from fastapi import FastAPI, Depends, HTTPException
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+
+app = FastAPI()
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
+def fake_hash_password(password: str):
+    return "fakehashed" + password
+
+@app.post("/token")
+async def login(form_data: OAuth2PasswordRequestForm = Depends()):
+    if form_data.username == "johndoe" and fake_hash_password(form_data.password) == "fakehashedsecret":
+        return {"access_token": form_data.username, "token_type": "bearer"}
+    raise HTTPException(status_code=401, detail="Incorrect username or password")
+
+@app.get("/users/me")
+async def read_users_me(token: str = Depends(oauth2_scheme)):
+    return {"token": token}
+</code></pre>
+
+        <h2>Common FastAPI Commands</h2>
+        <ul>
+            <li><strong>uvicorn main:app --reload:</strong> Run the FastAPI application with auto-reload enabled.</li>
+            <li><strong>pip install fastapi:</strong> Install FastAPI.</li>
+            <li><strong>pip install uvicorn:</strong> Install Uvicorn for serving FastAPI applications.</li>
+            <li><strong>pip install sqlalchemy:</strong> Install SQLAlchemy for database integration.</li>
+        </ul>
+
+        <h2>Resources for Learning More</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://fastapi.tiangolo.com/">FastAPI Official Documentation</a> - Comprehensive guide and documentation for FastAPI.</li>
+                <li><a href="https://github.com/tiangolo/fastapi">FastAPI GitHub Repository</a> - Source code and project repository for FastAPI.</li>
+                <li><a href="https://www.udemy.com/topic/fastapi/">Udemy - FastAPI Courses</a> - Online courses for learning FastAPI.</li>
+                <li><a href="https://www.youtube.com/results?search_query=fastapi">YouTube - FastAPI Tutorials</a> - Video tutorials and walkthroughs for FastAPI.</li>
+                <li><a href="https://realpython.com/fastapi-python-web-apis/">Real Python - FastAPI Tutorial</a> - Detailed tutorial on building APIs with FastAPI.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>FastAPI is a powerful and modern framework for building APIs with Python. Its advanced features, such as background tasks, custom exception handling, dependency injection, and database integration, enable developers to create high-performance, scalable applications. By mastering these advanced topics, you can leverage FastAPI’s full potential to build robust and efficient web services.</p>
+    </div>
+</body>
+</html>

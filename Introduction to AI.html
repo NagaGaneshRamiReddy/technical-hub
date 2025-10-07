@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>AI Course Roadmap</title>
+   
+    
+
+
+</head>
+<body class="body">
+
+
+
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-brain"style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">AI Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        
+        <ul><a href="Introduction to AI.html">Introduction to AI</a>
+            <li><a href="History of AI.html">History of AI</a></li>
+            <li><a href="AI vs. Machine Learning vs. Deep Learning.html">AI vs. Machine Learning vs. Deep Learning</a></li>
+            <li><a href="Applications of AI.html">Applications of AI</a></li>
+            <li>
+                <a href="Basic Concepts.html">Basic Concepts</a>
+                <ul>
+                    <li><a href="Supervised Learning.html">Supervised Learning</a></li>
+                    <li><a href="Unsupervised Learning.html">Unsupervised Learning</a></li>
+                    <li><a href="Reinforcement Learning.html">Reinforcement Learning</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Mathematics for AI</h3>
+        <a href="Mathematics for AI.html">Mathematics for AI</a>
+        <ul>
+            <li><a href="Linear Algebra.html">Linear Algebra</a></li>
+            <li><a href="Calculus.html">Calculus</a></li>
+            <li><a href="Probability and Statistics.html">Probability and Statistics</a></li>
+            <li><a href="Optimization.html">Optimization</a></li>
+        </ul>
+    
+        <h3>Machine Learning</h3>
+        <a href="Machine Learning.html">Machine Learning</a>
+        <ul>
+            <li><a href="Regression.html">Regression</a></li>
+            <li><a href="Classification al.html">Classification</a></li>
+            <li><a href="Clustering.html">Clustering</a></li>
+            <li><a href="Dimensionality Reduction.html">Dimensionality Reduction</a></li>
+            <li><a href="Model Evaluation and Validation.html">Model Evaluation and Validation</a></li>
+        </ul>
+    
+        <h3>Deep Learning</h3>
+        <a href="Deep Learning.html">Deep Learning</a>
+        <ul>
+            <li><a href="Neural Networks.html">Neural Networks</a></li>
+            <li><a href="Convolutional Neural Networks (CNNs).html">Convolutional Neural Networks (CNNs)</a></li>
+            <li><a href="Recurrent Neural Networks (RNNs).html">Recurrent Neural Networks (RNNs)</a></li>
+            <li><a href="Generative Adversarial Networks (GANs).html">Generative Adversarial Networks (GANs)</a></li>
+            <li><a href="Transformers.html">Transformers</a></li>
+        </ul>
+    
+        <h3>Natural Language Processing (NLP)</h3>
+        <a href="Natural Language Processing (NLP).html">Natural Language Processing (NLP)</a>
+        <ul>
+            <li><a href="Text Preprocessing.html">Text Preprocessing</a></li>
+            <li><a href="Word Embeddings.html">Word Embeddings</a></li>
+            <li><a href="Sequence Modeling.html">Sequence Modeling</a></li>
+            <li><a href="Attention Mechanisms.html">Attention Mechanisms</a></li>
+            <li><a href="Language Models.html">Language Models</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Reinforcement Learning in AI.html">Reinforcement Learning</a></li>
+            <li><a href="Meta-Learning.html">Meta-Learning</a></li>
+            <li><a href="AI Ethics.html">AI Ethics</a></li>
+            <li><a href="AI in Production.html">AI in Production</a></li>
+            <li><a href="AI Research.html">AI Research</a></li>
+        </ul>
+    </div>
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+   
+        <button class="openbtn labs" onclick="golabs()">
+           
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn">
+            <i class="fas fa-question-circle"></i> AI Quiz
+        </button>
+    </div>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "";
+}
+    function goPrevious() {
+        window.location.href = "AI roadmap.html";
+    }
+    function goNext() {
+        window.location.href = "History of AI.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Artificial Intelligence (AI)</div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> 
+        <h2>What is AI?</h2>
+        <p>Artificial Intelligence (AI) refers to the ability of a computer or machine to perform tasks that typically require human intelligence. These tasks include learning from experience, understanding natural language, recognizing patterns, and solving problems. AI systems can make decisions, understand speech, and even translate languages.</p>
+        
+        <h2>Types of AI</h2>
+        <ul>
+            <li><strong>Narrow AI</strong>: Specialized in performing a specific task, such as voice assistants (e.g., Siri, Alexa) that can understand and respond to commands but cannot perform other functions.</li>
+            <li><strong>General AI</strong>: An advanced form of AI that would possess the ability to perform any intellectual task that a human can do. This type of AI is still theoretical and not yet realized.</li>
+        </ul>
+        
+        <h2>How AI Works</h2>
+        <ul>
+            <li><strong>Data Collection</strong>: AI systems require large amounts of data to learn and make predictions. For instance, recognizing cats in photos requires many images of cats and non-cats.</li>
+            <li><strong>Training</strong>: The AI uses data to learn patterns. It identifies features that distinguish cats from other animals based on the data it has processed.</li>
+            <li><strong>Algorithm</strong>: A set of rules or instructions used by AI to make decisions and predictions based on the learned data.</li>
+            <li><strong>Testing and Improvement</strong>: AI systems are tested to evaluate their performance. If they make errors, they are retrained with additional data to enhance their accuracy.</li>
+        </ul>
+        
+        <h2>Examples of AI in Daily Life</h2>
+        <ul>
+            <li><strong>Search Engines</strong>: Google uses AI to deliver relevant search results based on your queries.</li>
+            <li><strong>Recommendation Systems</strong>: Netflix and Spotify suggest movies or music based on your previous choices.</li>
+            <li><strong>Chatbots</strong>: AI-driven chatbots provide customer support and answer questions in various online services.</li>
+        </ul>
+
+        <h2>Why is AI Important?</h2>
+        <ul>
+            <li><strong>Efficiency</strong>: AI can perform repetitive tasks faster and more accurately than humans.</li>
+            <li><strong>Innovation</strong>: AI drives technological advancements and new solutions across various industries.</li>
+            <li><strong>Automation</strong>: AI automates routine tasks, allowing humans to focus on more complex and creative work.</li>
+        </ul>
+
+        <h2>The Future of AI</h2>
+        <p>AI is evolving rapidly and has the potential to revolutionize many aspects of our lives, from self-driving cars to personalized healthcare. As AI technology continues to advance, it will open up new opportunities and challenges for society.</p>
+
+        <h2>Getting Started with AI</h2>
+        <ul>
+            <li><strong>Learn the Basics</strong>: Start with online courses or tutorials to understand AI fundamentals.</li>
+            <li><strong>Explore AI Tools</strong>: Experiment with AI tools and platforms to gain hands-on experience.</li>
+            <li><strong>Follow AI News</strong>: Stay updated with the latest developments and breakthroughs in AI technology.</li>
+            <li><strong>Participate in AI Communities</strong>: Join forums and groups to discuss and learn from others in the AI field.</li>
+        </ul>
+
+        <div class="example">
+            <h2>Example Use Case: AI in Healthcare</h2>
+            <ul>
+                <li><strong>Diagnosis</strong>: AI can analyze medical images to assist in diagnosing diseases.</li>
+                <li><strong>Personalized Treatment</strong>: AI helps in tailoring treatments based on individual patient data.</li>
+                <li><strong>Predictive Analytics</strong>: AI predicts patient outcomes and identifies potential health risks.</li>
+            </ul>
+        </div>
+
+        <div class="resources">
+            <h2>Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Platforms like Coursera and Udacity offer courses on AI and machine learning.</li>
+                <li><strong>AI Books</strong>: Books like "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig provide in-depth knowledge.</li>
+                <li><strong>AI Conferences and Meetups</strong>: Attend events to learn from experts and network with professionals in the field.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>AI is a transformative technology that mimics human intelligence to perform tasks and make decisions. As AI continues to advance, it offers significant benefits and opportunities for innovation across various sectors. Understanding AI fundamentals and staying informed about its developments is key to leveraging its potential.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>  </div>
+</body>
+</html>

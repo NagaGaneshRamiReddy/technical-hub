@@ -1,0 +1,458 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Oracle course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Oracle
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Oracle Course</h3>
+        
+        <a href="Introduction to Oracle.html">Introduction to Oracle Database</a>
+        <ul>
+            <li><a href="History of Oracle.html">History of Oracle</a></li>
+            <li><a href="Oracle Editions.html">Oracle Editions</a></li>
+        </ul>
+    
+        <h3>Oracle Database Architecture</h3>
+        <a href="Oracle Architecture.html">Oracle Database Architecture</a>
+        <ul>
+            <li><a href="Memory Structure.html">Memory Structure</a></li>
+            <li><a href="Process Architecture.html">Process Architecture</a></li>
+        </ul>
+    
+        <h3>SQL Basics</h3>
+        <a href="SQL Basics oracle.html">SQL Basics</a>
+        <ul>
+            <li><a href="DML.html">Data Manipulation Language (DML)</a></li>
+            <li><a href="DDL.html">Data Definition Language (DDL)</a></li>
+            <li><a href="DCL.html">Data Control Language (DCL)</a></li>
+        </ul>
+    
+        <h3>PL/SQL Programming</h3>
+        <a href="PL-SQL.html">PL/SQL Programming</a>
+        <ul>
+            <li><a href="PL-SQL Basics.html">PL/SQL Basics</a></li>
+            <li><a href="Procedures and Functions.html">Procedures and Functions</a></li>
+        </ul>
+    
+        <h3>Data Modeling</h3>
+        <a href="Data Modeling.html">Data Modeling</a>
+        <ul>
+            <li><a href="Entity-Relationship Model.html">Entity-Relationship Model</a></li>
+            <li><a href="Normalization.html">Normalization</a></li>
+        </ul>
+    
+        <h3>Database Security</h3>
+        <a href="Database Security.html">Database Security</a>
+        <ul>
+            <li><a href="User Management.html">User Management</a></li>
+            <li><a href="Roles and Privileges.html">Roles and Privileges</a></li>
+        </ul>
+    
+        <h3>Backup and Recovery</h3>
+        <a href="Backup and Recovery.html">Backup and Recovery</a>
+        <ul>
+            <li><a href="RMAN.html">Recovery Manager (RMAN)</a></li>
+            <li><a href="Data Pump.html">Data Pump</a></li>
+        </ul>
+    
+        <h3>Oracle Networking</h3>
+        <a href="Oracle Networking.html">Oracle Networking</a>
+        <ul>
+            <li><a href="Oracle Net.html">Oracle Net Services</a></li>
+            <li><a href="TNS Configuration.html">TNS Configuration</a></li>
+        </ul>
+    
+        <h3>Performance Tuning</h3>
+        <a href="Performance Tuning.html">Performance Tuning</a>
+        <ul>
+            <li><a href="Query Optimization.html">Query Optimization</a></li>
+            <li><a href="Indexing.html">Indexing</a></li>
+        </ul>
+    
+        <h3>Oracle Cloud Services</h3>
+        <a href="Oracle Cloud.html">Oracle Cloud Services</a>
+        <ul>
+            <li><a href="Oracle Autonomous Database.html">Oracle Autonomous Database</a></li>
+            <li><a href="Cloud Infrastructure.html">Oracle Cloud Infrastructure</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    
+        
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Memory Structure.html";
+    }
+    function goNext() {
+        window.location.href = "SQL Basics oracle.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            
+
+            
+<div class="div1">Oracle Process Architecture</div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Introduction to Oracle Process Architecture</h2>
+<p>The Oracle Database process architecture is a critical component that manages how the database interacts with the operating system, handles user requests, and manages memory. Understanding this architecture is essential for database administrators (DBAs) to optimize performance and ensure efficient resource management.</p>
+
+<h2>Key Components of Oracle Process Architecture</h2>
+<ul>
+    <li><strong>Background Processes</strong>: These processes run in the background and perform various essential tasks for the database. Key background processes include:
+        <ul>
+            <li><strong>Database Writer (DBWn)</strong>: Responsible for writing modified data blocks from the buffer cache to the data files.</li>
+            <li><strong>Log Writer (LGWR)</strong>: Writes redo log entries from the log buffer to the online redo log files.</li>
+            <li><strong>System Monitor (SMON)</strong>: Performs instance recovery and cleans up temporary segments.</li>
+            <li><strong>Process Monitor (PMON)</strong>: Cleans up after failed user processes and manages process resources.</li>
+            <li><strong>Checkpoint (CKPT)</strong>: Signals DBWn to write dirty buffers to disk and updates the header of data files.</li>
+        </ul>
+    </li>
+    <li><strong>User Processes</strong>: These processes are created when a user connects to the database. They handle the execution of SQL statements and interactions with the database. Each user process interacts with the Oracle server to perform database operations.</li>
+    <li><strong>Oracle Server Processes</strong>: These processes perform the work required to execute SQL statements and manage user sessions. There are two types:
+        <ul>
+            <li><strong>Dedicated Server Process</strong>: Allocates a separate server process for each user connection. This process handles all user requests.</li>
+            <li><strong>Shared Server Process</strong>: Uses a pool of server processes to handle multiple user connections, sharing resources to improve scalability.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Process Communication</h2>
+<p>Oracle processes communicate with each other and with the operating system through inter-process communication (IPC). This communication allows for coordination between background processes, user processes, and Oracle server processes, ensuring smooth operation and data consistency.</p>
+
+<h2>Monitoring Oracle Processes</h2>
+<p>DBAs can monitor Oracle processes using various tools and views:</p>
+<ul>
+    <li><strong>Oracle Enterprise Manager</strong>: A web-based tool for monitoring database performance, including active processes.</li>
+    <li><strong>V$ Views</strong>: Dynamic performance views such as <code>V$PROCESS</code> and <code>V$SESSION</code> provide information about current processes and user sessions.</li>
+</ul>
+
+<h2>Best Practices for Managing Oracle Processes</h2>
+<ul>
+    <li>Regularly monitor the number of user and background processes to ensure optimal performance.</li>
+    <li>Configure the shared server environment appropriately if using shared server processes to balance load effectively.</li>
+    <li>Optimize SQL queries and sessions to minimize resource consumption by user processes.</li>
+</ul>
+
+<h2>Summary</h2>
+<p>Understanding Oracle Database process architecture is essential for DBAs to manage the database efficiently. By familiarizing themselves with the various processes and their roles, DBAs can optimize performance, manage resources effectively, and ensure a reliable database environment.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>HTML</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> HTML Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+
+
+    
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-html5"  style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">HTML Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        
+        <a href="HTML Roadmaps.html" target="_blank"><b class="b12">HTML Roadmap</b></a>
+        <ul> <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+        
+             <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+            <li><a href="What_is_HTML.html" target="_blank">What is HTML?</a></li>
+            <li><a href="HTML_Installation.html" target="_blank">Installation</a></li>
+            <li><a href="First_HTML_Page.html" target="_blank">First HTML Page</a></li>
+        </ul>
+    
+        <h3>HTML Basics</h3>
+        <a href="HTML_Basics.html" target="_blank">HTML Basics</a>
+        <ul>
+            <li><a href="HTML_Tags.html" target="_blank">HTML Tags</a></li>
+            <li><a href="HTML_Attributes.html" target="_blank">HTML Attributes</a></li>
+            <li><a href="HTML_Elements.html" target="_blank">HTML Elements</a></li>
+        </ul>
+    
+        <h3>HTML Text Formatting</h3>
+        <a href="HTML_Text_Formatting.html" target="_blank">HTML Text Formatting</a>
+        <ul>
+            <li><a href="Headings.html" target="_blank">Headings</a></li>
+            <li><a href="Paragraphs.html" target="_blank">Paragraphs</a></li>
+            <li><a href="Text_Styles.html" target="_blank">Text Styles</a></li>
+        </ul>
+    
+        <h3>HTML Lists</h3>
+        <a href="HTML_Lists.html" target="_blank">HTML Lists</a>
+        <ul>
+            <li><a href="Ordered_Lists.html" target="_blank">Ordered Lists</a></li>
+            <li><a href="Unordered_Lists.html" target="_blank">Unordered Lists</a></li>
+            <li><a href="Nested_Lists.html" target="_blank">Nested Lists</a></li>
+        </ul>
+    
+        <h3>HTML Forms</h3>
+        <a href="HTML_Forms.html" target="_blank">HTML Forms</a>
+        <ul>
+            <li><a href="Form_Elements.html" target="_blank">Form Elements</a></li>
+            <li><a href="Form_Validation.html" target="_blank">Form Validation</a></li>
+            <li><a href="Input_Types.html" target="_blank">Input Types</a></li>
+        </ul>
+    
+        <h3>HTML Media</h3>
+        <a href="HTML_Media.html" target="_blank">HTML Media</a>
+        <ul>
+            <li><a href="Images.html" target="_blank">Images</a></li>
+            <li><a href="Audio.html" target="_blank">Audio</a></li>
+            <li><a href="Video.html" target="_blank">Video</a></li>
+        </ul>
+    
+        <h3>HTML Tables</h3>
+        <a href="HTML_Tables.html" target="_blank">HTML Tables</a>
+        <ul>
+            <li><a href="Basic_Tables.html" target="_blank">Basic Tables</a></li>
+            <li><a href="Table_Headers.html" target="_blank">Table Headers</a></li>
+            <li><a href="Table_Spanning.html" target="_blank">Table Spanning</a></li>
+        </ul>
+    
+        <h3>HTML Semantics</h3>
+        <a href="HTML_Semantics.html" target="_blank">HTML Semantics</a>
+        <ul>
+            <li><a href="Div_vs_Semantic_Tags.html" target="_blank">Div vs Semantic Tags</a></li>
+            <li><a href="Semantic_Elements.html" target="_blank">Semantic Elements</a></li>
+        </ul>
+    </div>
+    
+    
+    
+  
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "HTML_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "HTML_quize.html";
+}
+function goproject() {
+    window.location.href = "HTML_projects.html";
+}
+function gocomp() {
+    window.location.href = "html_compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Nested_Lists.html";
+    }
+    function goNext() {
+        window.location.href = "Form_Elements.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-html5" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">HTML Tutorial</h2>
+<div class="div1">HTML Forms</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Understanding HTML Forms</h2>
+<p>HTML forms are used to collect user input and send it to a server for processing. A form can contain various input elements such as text fields, radio buttons, checkboxes, submit buttons, etc.</p>
+
+<h2>Basic Form Example</h2>
+<p>A simple form example with text input and a submit button:</p>
+
+<div class="example">
+    <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<h2>Form Input Elements</h2>
+<p>Forms can contain different types of input elements, such as text fields, checkboxes, radio buttons, etc.</p>
+
+<h3>1. Text Input</h3>
+<p>Used to accept single-line text input:</p>
+
+<div class="example">
+    <pre><code>&lt;input type="text" name="username"&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <input type="text" name="username">
+</div>
+
+<h3>2. Password Input</h3>
+<p>Used to accept password input, which masks the characters:</p>
+
+<div class="example">
+    <pre><code>&lt;input type="password" name="password"&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <input type="password" name="password">
+</div>
+
+<h3>3. Radio Buttons</h3>
+<p>Radio buttons allow users to select one option from a set:</p>
+
+<div class="example">
+    <pre><code>&lt;input type="radio" id="male" name="gender" value="male"&gt;
+&lt;label for="male"&gt;Male&lt;/label&gt;
+&lt;input type="radio" id="female" name="gender" value="female"&gt;
+&lt;label for="female"&gt;Female&lt;/label&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+</div>
+
+<h3>4. Checkboxes</h3>
+<p>Checkboxes allow users to select multiple options:</p>
+
+<div class="example">
+    <pre><code>&lt;input type="checkbox" id="subscribe" name="subscribe" value="newsletter"&gt;
+&lt;label for="subscribe"&gt;Subscribe to newsletter&lt;/label&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+    <label for="subscribe">Subscribe to newsletter</label>
+</div>
+
+<h3>5. Submit Button</h3>
+<p>The submit button is used to submit the form data:</p>
+
+<div class="example">
+    <pre><code>&lt;input type="submit" value="Submit"&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <input type="submit" value="Submit">
+</div>
+
+<h2>Form with GET and POST Methods</h2>
+<p>Forms use different methods to send data: <strong>GET</strong> sends data as a query string in the URL, while <strong>POST</strong> sends data in the request body.</p>
+
+<h3>Example: Form using GET</h3>
+<div class="example">
+    <pre><code>&lt;form action="/search" method="get"&gt;
+    &lt;label for="query"&gt;Search:&lt;/label&gt;
+    &lt;input type="text" id="query" name="query"&gt;
+    &lt;input type="submit" value="Search"&gt;
+&lt;/form&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <form action="/search" method="get">
+        <label for="query">Search:</label>
+        <input type="text" id="query" name="query">
+        <input type="submit" value="Search">
+    </form>
+</div>
+
+<h3>Example: Form using POST</h3>
+<div class="example">
+    <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <form action="/submit" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<h2>Resources</h2>
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">MDN Web Docs: &lt;form&gt; Element</a></li>
+        <li><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">W3Schools: HTML Forms</a></li>
+        <li><a href="https://www.w3.org/TR/html401/interact/forms.html" target="_blank">W3C: HTML 4 Forms Specification</a></li>
+    </ul>
+</div>
+
+<h2>Summary</h2>
+<p>HTML forms are an essential part of web development, enabling the collection of user input and the submission of data to a server. Forms can include text fields, radio buttons, checkboxes, and more, and can use either the GET or POST method for submitting data.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+</body>
+</html>

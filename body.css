@@ -1,0 +1,588 @@
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 250px; 
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    background: linear-gradient(135deg, #01161a, #033544); /* Gradient background for a unique look */
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+    overflow-x: hidden;
+    transition: 0.5s ease; /* Smooth transition for opening/closing */
+    padding-top: 60px;
+    z-index: 1000; 
+}
+
+/* Links within Sidebar */
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add slight text shadow */
+}
+
+/* Sidebar Link Hover Effect */
+.sidebar a:hover {
+    background: radial-gradient(circle, #4CAF50 40%, #01161a 100%);
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 50px; /* Circular effect */
+    transform: scale(1.1) rotate(-2deg); /* Hover zoom + slight rotation */
+}
+
+/* Close Button for Sidebar */
+.sidebar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .closebtn:hover {
+    color: #4CAF50;
+    transform: scale(1.2) rotate(90deg); /* Enlarges and rotates on hover */
+}
+
+/* Sidebar Active State */
+.sidebar.open {
+    left: 0; /* Sidebar slides in */
+}
+
+/* Sidebar Open/Close Animation */
+@keyframes slideIn {
+    from {
+        left: -250px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        left: 0;
+    }
+    to {
+        left: -250px;
+    }
+}
+
+/* Add entry animation for links */
+.sidebar a {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: calc(var(--order) * 0.1s); /* Staggered animation for links */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Open Button for Sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(0, 177, 212);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Open Button Hover Effect */
+.openbtn:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Adjustment when Sidebar is Open */
+.main {
+    transition: margin-left 0.3s ease;
+    padding: 16px;
+}
+
+.main.sidebar-open {
+    margin-left: 250px; 
+}
+
+/* Remove Bullet Points from Lists */
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+}
+
+/* Smooth fade-in animation for sidebar links */
+.sidebar a {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.sidebar a:nth-child(1) { animation-delay: 0.1s; }
+.sidebar a:nth-child(2) { animation-delay: 0.2s; }
+.sidebar a:nth-child(3) { animation-delay: 0.3s; }
+.sidebar a:nth-child(4) { animation-delay: 0.4s; }
+/* Add additional delay rules if more links */
+
+/* Keyframe for Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px); /* Slight slide effect */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+body {
+    background-color:#001e32;
+    color: white;
+    margin: 0;
+    padding-top: 60px; 
+}
+/* Header Styles */
+
+/* Header Container */
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #005305;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    animation: header-slide-in 1s ease-out;
+}
+
+/* Header Slide-In Animation */
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Tree Styling */
+.tree {
+    width: 50px;
+    height: 80px;
+    position: relative;
+    animation: tree-bounce 3s infinite;
+}
+
+/* Trunk */
+.tree .trunk {
+    width: 15px;
+    height: 30px;
+    background-color: #65554f;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+/* Leaves */
+.tree .leaves {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 40px solid #005305;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: leaf-bounce 2s infinite;
+}
+
+/* Bounce Animation for the Tree */
+@keyframes tree-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Leaf Bounce Animation */
+@keyframes leaf-bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+/* Animated Text Styling */
+.text {
+    font-size: 36px;
+    font-weight: bold;
+    animation: text-color-change 4s infinite, text-size-change 4s infinite;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Color Transition */
+@keyframes text-color-change {
+    0%, 100% {
+        color: #2e7d32;
+    }
+    50% {
+        color: #66bb6a;
+    }
+}
+
+/* Size Change */
+@keyframes text-size-change {
+    0%, 100% {
+        font-size: 36px;
+    }
+    50% {
+        font-size: 42px;
+    }
+}
+
+/* Glow Effect for Text */
+.text::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #66bb6a, transparent);
+    animation: glow-pulse 3s infinite;
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Main Container */
+.main-container {
+    padding: 100px 20px; /* Adjust for fixed header */
+}
+
+
+#main {
+    background: linear-gradient(90deg, rgb(243, 247, 247) 0%, rgb(239, 243, 241) 100%);
+    border-bottom: 3px solid #0aff0e;
+    margin-top: 150px;
+    display: flex;
+    height: 45px;
+    min-height: 40px;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: center;
+    width: 100vw;
+    left: 0; 
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.8s ease-out;
+}
+.nrg{
+    margin-top: 10px;
+}
+/* Button Styles */
+
+
+
+/* Specific Button Colors */
+
+/* General Button Styles */
+.openbtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Specific Button Styles */
+.openbtn.homebtn {
+    background: linear-gradient(45deg, #037d17, #00c853);
+    box-shadow: 0 4px 10px rgba(3, 125, 23, 0.4);
+}
+
+.openbtn.compbtn {
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.4);
+}
+
+.openbtn.videobtn {
+    background: linear-gradient(45deg, #2e696d, #05f6f2);
+    box-shadow: 0 4px 10px rgba(63, 81, 181, 0.4);
+}
+
+.openbtn.interviewbtn {
+    background: linear-gradient(45deg, #9c27b0, #e91e63);
+    box-shadow: 0 4px 10px rgba(156, 39, 176, 0.4);
+}
+
+.openbtn.labs {
+    background: linear-gradient(45deg, #009688, #4caf50);
+    box-shadow: 0 4px 10px rgba(0, 150, 136, 0.4);
+}
+
+.openbtn.quizbtn {
+    background: linear-gradient(45deg, #7d9ef1, #022940);
+    box-shadow: 0 4px 10px rgba(255, 235, 59, 0.4);
+}
+
+/* Hover Effects */
+.openbtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1);
+}
+
+/* Slide-in Animation for the Top Box */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.top-box {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: start; /* Align items horizontally */
+    background-color: #02370f;
+    color: #fff;
+    padding: 15px;
+    border-bottom: 5px solid #f79f06; /* 5px border on the downside */
+}
+
+
+
+
+/* Icon Styling */
+.top-box i {
+    font-size: 40px;
+    color: #f89820; /* Java logo color */
+    margin-right: 20px; /* 20px gap between icon and text */
+}
+.top-box1 {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: start; /* Align items horizontally */
+    background-color: #03405a;
+    color: #fff;
+    padding: 15px;
+    border-bottom: 5px solid #55e6ff;
+    
+    
+}
+
+
+.highlight {
+    background-color: yellow;
+    color: green;
+    font-weight: bold;
+}
+/* Icon Styling */
+.top-box1 i {
+    font-size: 40px;
+    color: #0548d7; /* Java logo color */
+    margin-right: 20px; /* 20px gap between icon and text */
+}
+.speaker-icon{
+    margin-left:60px;
+}
+/* "Java Tutorials" Text Styling */
+.jk {
+    font-size: 27px;
+    font-weight: bold;
+    padding-top: 27px; 
+    margin: 0;
+    color: rgb(236, 243, 245);
+}
+
+/* Hover Effect for Top Box */
+.top-box:hover {
+    background-color: #023714;
+    transition: background-color 0.3s ease;
+}
+
+/* Mobile and Tablet Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px; /* Add padding to prevent content overlap on smaller screens */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .logo-container {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Main Section */
+    #main {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .openbtn {
+        width: 80%;
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    /* Top Box */
+    .top-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prevbtn1, .nextbtn1 {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+/* For smaller devices like phones */
+@media (max-width: 480px) {
+    .text {
+        font-size: 28px;
+    }
+
+    .openbtn {
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .top-box {
+        padding: 12px;
+    }
+
+    .jk {
+        font-size: 22px;
+    }
+}
+.container-1{
+    margin-top: 150px;
+}
+.b12{
+    color: rgb(192, 245, 192);
+    font-size: 20px;
+}
+.explanation {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+}
+.explanation {
+    background-color: #e1f5fe;
+    border: 1px solid #0288d1;
+}
+.course-description {
+    animation: fadeIn 1s ease-in-out forwards; /* Animation settings */
+    opacity: 0; /* Initial state for better effect */
+    
+    /* Text styles */
+    color: #f8f8f8; /* Dark grey color for text */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 20px; /* Font size */
+    line-height: 1.5; /* Line height for better readability */
+    
+
+    background-color: #000000; 
+    border-left: 5px solid #04f50c; 
+    padding: 15px 20px; 
+    border-radius: 5px; 
+    
+    
+    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    
+    margin: 20px 0; 
+    
+}
+.score-card {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.score-card.correct {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.score-card.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

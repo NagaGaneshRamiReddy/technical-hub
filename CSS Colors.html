@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>CSS Roadmap</title>
+    
+    
+    
+</head>
+<body class="body">
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> CSS Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> CSS Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+  
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+
+
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-css3-alt" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">CSS Tutorial</h2>
+        </div>
+    
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="CSS Roadmaps.html" target="_blank"><b class="b12">CSS Roadmap</b></a>
+        <ul>
+            <a href="Introduction to CSS.html">Introduction to CSS</a>
+        
+            <li><a href="What is CSS.html">What is CSS?</a></li>
+            <li><a href="CSS Syntax.html">CSS Syntax</a></li>
+            <li><a href="How to Add CSS.html">How to Add CSS</a></li>
+        </ul>
+    
+        <h3>Selectors in CSS</h3>
+        <a href="Selectors in CSS.html">Selectors in CSS</a>
+        <ul>
+            <li><a href="Basic Selectors.html">Basic Selectors</a></li>
+            <li><a href="Combinators.html">Combinators</a></li>
+            <li>
+                <a href="Pseudo Classes.html">Pseudo Classes</a>
+                <ul>
+                    <li><a href="Hover Focus Active.html">:hover, :focus, :active</a></li>
+                    <li><a href="Nth-child.html">:nth-child</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Box Model in CSS</h3>
+        <a href="Box Model in CSS.html">Box Model in CSS</a>
+        <ul>
+            <li><a href="Content Padding Border.html">Content, Padding, Border</a></li>
+            <li><a href="Margin.html">Margin</a></li>
+            <li><a href="Box Sizing.html">Box Sizing</a></li>
+        </ul>
+    
+        <h3>CSS Layout</h3>
+        <a href="CSS Layout.html">CSS Layout</a>
+        <ul>
+            <li><a href="Display Property.html">Display Property</a></li>
+            <li><a href="Positioning.html">Positioning</a></li>
+            <li><a href="Float Clearfix.html">Float & Clearfix</a></li>
+            <li><a href="Flexbox.html">Flexbox</a></li>
+            <li><a href="CSS Grid.html">CSS Grid</a></li>
+        </ul>
+    
+        <h3>Typography in CSS</h3>
+        <a href="Typography in CSS.html">Typography in CSS</a>
+        <ul>
+            <li><a href="Font Properties.html">Font Properties</a></li>
+            <li><a href="Text Alignment.html">Text Alignment</a></li>
+            <li><a href="Line Height and Spacing.html">Line Height & Spacing</a></li>
+        </ul>
+    
+        <h3>CSS Colors</h3>
+        <a href="CSS Colors.html">CSS Colors</a>
+        <ul>
+            <li><a href="Color Naming Systems.html">Color Naming Systems</a></li>
+            <li><a href="Background Colors.html">Background Colors</a></li>
+            <li><a href="Gradients.html">Gradients</a></li>
+        </ul>
+    
+        <h3>CSS Animations</h3>
+        <a href="CSS Animations.html">CSS Animations</a>
+        <ul>
+            <li><a href="Transitions.html">Transitions</a></li>
+            <li><a href="Keyframes.html">Keyframes</a></li>
+            <li><a href="Animation Timing Functions.html">Animation Timing Functions</a></li>
+        </ul>
+    
+        <h3>Responsive Design</h3>
+        <a href="Responsive Design.html">Responsive Design</a>
+        <ul>
+            <li><a href="Media Queries.html">Media Queries</a></li>
+            <li><a href="Responsive Units.html">Responsive Units</a></li>
+            <li><a href="Viewport Meta Tag.html">Viewport Meta Tag</a></li>
+        </ul>
+    </div>
+    
+    
+        
+    
+        
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "CSS_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "CSS_quiz.html";
+    }
+    function goproject() {
+        window.location.href = "CSS_projects.html";
+    }
+    function gocomp() {
+        window.location.href = "CSS Compiler.html";
+    }
+    function goPrevious() {
+        window.location.href = "Line Height and Spacing.html";
+    }
+    function goNext() {
+        window.location.href ="Color Naming Systems.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-css3-alt" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">CSS Tutorial</h2>
+    <div class="div1">CSS Colors</div></div>
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+    <h2>Introduction to CSS Colors</h2>
+    <p>Colors in CSS can be specified using various methods, including color names, hexadecimal codes, RGB values, RGBA values, HSL values, and HSLA values. Each method offers different levels of control and flexibility when styling web pages.</p>
+    <style>
+        .color-box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .color-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+    <h2>Color Names</h2>
+    <p>CSS supports a set of named colors that are predefined and recognized by all browsers. Here are a few examples:</p>
+    <div class="color-box" style="background-color: red;"></div>
+    <p class="color-name">Red</p>
+
+    <div class="color-box" style="background-color: green;"></div>
+    <p class="color-name">Green</p>
+
+    <div class="color-box" style="background-color: blue;"></div>
+    <p class="color-name">Blue</p>
+
+    <h2>Hexadecimal Colors</h2>
+    <p>Hexadecimal color codes start with a hash (#) followed by six hexadecimal digits. The first two digits represent red, the next two represent green, and the last two represent blue.</p>
+    <div class="color-box" style="background-color: #ff5733;"></div>
+    <p class="color-name">#ff5733</p>
+
+    <div class="color-box" style="background-color: #33ff57;"></div>
+    <p class="color-name">#33ff57</p>
+
+    <div class="color-box" style="background-color: #3357ff;"></div>
+    <p class="color-name">#3357ff</p>
+
+    <h2>RGB Colors</h2>
+    <p>RGB color values are specified using the <code>rgb()</code> function, where the red, green, and blue values are given as integers between 0 and 255.</p>
+    <div class="color-box" style="background-color: rgb(255, 87, 51);"></div>
+    <p class="color-name">rgb(255, 87, 51)</p>
+
+    <div class="color-box" style="background-color: rgb(51, 255, 87);"></div>
+    <p class="color-name">rgb(51, 255, 87)</p>
+
+    <div class="color-box" style="background-color: rgb(51, 87, 255);"></div>
+    <p class="color-name">rgb(51, 87, 255)</p>
+
+    <h2>RGBA Colors</h2>
+    <p>RGBA color values are similar to RGB values but include an alpha channel for opacity. The <code>rgba()</code> function takes four parameters: red, green, blue, and alpha (where alpha is a value between 0 and 1).</p>
+    <div class="color-box" style="background-color: rgba(255, 87, 51, 0.5);"></div>
+    <p class="color-name">rgba(255, 87, 51, 0.5)</p>
+
+    <div class="color-box" style="background-color: rgba(51, 255, 87, 0.5);"></div>
+    <p class="color-name">rgba(51, 255, 87, 0.5)</p>
+
+    <div class="color-box" style="background-color: rgba(51, 87, 255, 0.5);"></div>
+    <p class="color-name">rgba(51, 87, 255, 0.5)</p>
+
+    <h2>HSL Colors</h2>
+    <p>HSL color values are specified using the <code>hsl()</code> function, where the hue is given in degrees (0-360), and saturation and lightness are given as percentages.</p>
+    <div class="color-box" style="background-color: hsl(12, 100%, 60%);"></div>
+    <p class="color-name">hsl(12, 100%, 60%)</p>
+
+    <div class="color-box" style="background-color: hsl(120, 100%, 60%);"></div>
+    <p class="color-name">hsl(120, 100%, 60%)</p>
+
+    <div class="color-box" style="background-color: hsl(240, 100%, 60%);"></div>
+    <p class="color-name">hsl(240, 100%, 60%)</p>
+
+    <h2>HSLA Colors</h2>
+    <p>HSLA color values are similar to HSL values but include an alpha channel for opacity. The <code>hsla()</code> function takes four parameters: hue, saturation, lightness, and alpha (where alpha is a value between 0 and 1).</p>
+    <div class="color-box" style="background-color: hsla(12, 100%, 60%, 0.5);"></div>
+    <p class="color-name">hsla(12, 100%, 60%, 0.5)</p>
+
+    <div class="color-box" style="background-color: hsla(120, 100%, 60%, 0.5);"></div>
+    <p class="color-name">hsla(120, 100%, 60%, 0.5)</p>
+
+    <div class="color-box" style="background-color: hsla(240, 100%, 60%, 0.5);"></div>
+    <p class="color-name">hsla(240, 100%, 60%, 0.5)</p>
+
+    <div class="resources">
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/css/css_colors.asp" target="_blank">W3Schools: CSS Colors</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">MDN: CSS Color Values</a></li>
+            <li><a href="https://css-tricks.com/almanac/properties/c/color/" target="_blank">CSS-Tricks: Color</a></li>
+        </ul>
+    </div>
+
+    <h2>Summary</h2>
+    <p>CSS provides a variety of ways to specify colors, including color names, hexadecimal codes, RGB, RGBA, HSL, and HSLA values. Understanding these methods allows you to create a wide range of color effects and ensure consistency across different web browsers.</p>
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+
+</body>
+</html>

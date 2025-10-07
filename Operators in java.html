@@ -1,0 +1,779 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Java Language Roadmap</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> Java Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="golabs()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Java Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "java_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Java_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+  
+
+        </script>
+      
+      
+       
+      
+
+    <script>
+        function toggleAnswer(button) {
+            const questionItem = button.closest('.question-item');
+            const allQuestionItems = document.querySelectorAll('.question-item');
+
+            // Close all open quiz containers
+            allQuestionItems.forEach(item => {
+                if (item !== questionItem) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Toggle the clicked question's quiz container
+            questionItem.classList.toggle('active');
+        }
+
+        function calculateScore(quizContainer, topicNumber) {
+            const options = quizContainer.querySelectorAll("input[type='radio']");
+            let score = 0;
+            options.forEach(option => {
+                if (option.checked && option.value === "1") {
+                    score += 1;
+                }
+            });
+
+            // Display score
+            const scoreCard = quizContainer.querySelector(".score-card");
+            scoreCard.style.display = "block";
+            scoreCard.classList.add(score === 5 ? 'correct' : 'incorrect');
+            scoreCard.innerHTML = `You scored ${score} out of 5 for Topic ${topicNumber}!`;
+        }
+    </script>
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-java" style="font-size: 60px;padding-left: 16px;  color: #e27f05;"></i>
+            <h2 class="jk">Java Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        <a href="javaRoadmaps.html" target="_blank"><b class="b12">Java Roadmap</b></a>
+        <ul>
+            <a href="Introduction to Java.html" target="_blank">Introduction to Java</a>
+            <li><a href="History of Java.html" target="_blank">History of Java</a></li>
+            <li><a href="Setting up Java Environment java.html" target="_blank">Setting up Java Environment</a></li>
+            <li><a href="Hello World Program java.html" target="_blank">Hello World Program</a></li>
+            <li><a href="JVM, JRE, and JDK in java.html" target="_blank">JVM, JRE, and JDK</a></li>
+        </ul>
+    
+        <h3>Basic Java Syntax</h3>
+        <a href="Basic Java Syntax java.html" target="_blank">Basic Java Syntax</a>
+        <ul>
+            <li><a href="variables and Data Types java.html" target="_blank">Variables and Data Types</a></li>
+            <li><a href="Operators in java.html" target="_blank">Operators</a></li>
+            <li><a href="Control Statements in java.html" target="_blank">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements in java.html" target="_blank">If-else Statements</a></li>
+                <li><a href="Switch Statement in java.html" target="_blank">Switch Statement</a></li>
+                <li><a href="Loops in java.html" target="_blank">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop in java.html" target="_blank">For Loop</a></li>
+                    <li><a href="While Loop in java.html" target="_blank">While Loop</a></li>
+                    <li><a href="Do-While Loop in java.html" target="_blank">Do-While Loop</a></li>
+                </ul>
+            </ul>
+        </ul>
+    
+        <h3>Arrays</h3>
+        <a href="Arrays in java.html" target="_blank">Arrays</a>
+        <ul>
+            <li><a href="Introduction to Arrays in java.html" target="_blank">Introduction to Arrays</a></li>
+            <li><a href="Single-Dimensional Arrays in java.html" target="_blank">Single-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays in java.html" target="_blank">Multi-Dimensional Arrays</a></li>
+            <li><a href="Array Operations in java.html" target="_blank">Array Operations</a></li>
+            <li><a href="ArrayList and Other Collections in java.html" target="_blank">ArrayList and Other Collections</a></li>
+        </ul>
+    
+        <h3>Strings</h3>
+        <a href="Strings in java.html" target="_blank">Strings</a>
+        <ul>
+            <li><a href="String Basics in java.html" target="_blank">String Basics</a></li>
+            <li><a href="String Methods in java.html" target="_blank">String Methods</a></li>
+            <li><a href="String Manipulation in java.html" target="_blank">String Manipulation</a></li>
+            <li><a href="String Formatting in java.html" target="_blank">String Formatting</a></li>
+            <li><a href="StringBuilder and StringBuffer in java.html" target="_blank">StringBuilder and StringBuffer</a></li>
+        </ul>
+    
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming in java.html" target="_blank">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects in java.html" target="_blank">Classes and Objects</a></li>
+            <li><a href="Constructors in java.html" target="_blank">Constructors</a></li>
+            <li><a href="Inheritance in java.html" target="_blank">Inheritance</a></li>
+            <li><a href="Polymorphism in java.html" target="_blank">Polymorphism</a></li>
+            <li><a href="Abstraction in java.html" target="_blank">Abstraction</a></li>
+            <li><a href="Encapsulation in java.html" target="_blank">Encapsulation</a></li>
+            <li><a href="Interfaces in java.html" target="_blank">Interfaces</a></li>
+            <li><a href="Packages in java.html" target="_blank">Packages</a></li>
+            <li><a href="Nested Classes in java.html" target="_blank">Nested Classes</a></li>
+            <li><a href="Enums in java.html" target="_blank">Enums</a></li>
+        </ul>
+    
+        <h3>Advanced Java Concepts</h3>
+        <a href="Advanced Java Concepts in java.html" target="_blank">Advanced Java Concepts</a>
+        <ul>
+            <li><a href="Exception Handling in java.html" target="_blank">Exception Handling</a></li>
+            <li><a href="File I-O in java.html" target="_blank">File I/O</a></li>
+            <li><a href="Error Handling and Debugging in java.html" target="_blank">Error Handling and Debugging</a></li>
+            <li><a href="Collections Framework in java.html" target="_blank">Collections Framework</a></li>
+            <ul>
+                <li><a href="List in java.html" target="_blank">List</a></li>
+                <li><a href="Set in java.html" target="_blank">Set</a></li>
+                <li><a href="Map in java.html" target="_blank">Map</a></li>
+                <li><a href="Queue in java.html" target="_blank">Queue</a></li>
+            </ul>
+            <li><a href="Generics in java.html" target="_blank">Generics</a></li>
+            <li><a href="Multithreading and Concurrency in java.html" target="_blank">Multithreading and Concurrency</a></li>
+            <li><a href="Networking in java.html" target="_blank">Networking</a></li>
+            <li><a href="JDBC in java.html" target="_blank">JDBC</a></li>
+            <li><a href="Java Reflection in java.html" target="_blank">Java Reflection</a></li>
+            <li><a href="Java Annotations in java.html" target="_blank">Java Annotations</a></li>
+        </ul>
+    </div>
+    
+        
+   
+   
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "java_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Java_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "variables and Data Types java.html";
+    }
+    function goNext() {
+        window.location.href = "Control Statements in java.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+
+           <style>
+            
+       
+            
+        .table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        .table, .table th, .table td {
+            border: 1px solid #ddd;
+        }
+        .table th, .table td {
+            padding: 10px;
+            text-align: center;
+        }
+        .table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+       
+        #output {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="top-box1">
+        <i class="fab fa-java" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+        <h2 class="jk">Java Tutorial</h2>
+    <div class="div1">Operators in Java</div></div>
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+    <h2>Introduction</h2>
+    <p>In Java, operators are special symbols used to perform operations on variables and values. Operators play an essential role in Java programming, allowing you to manipulate data, control flow, and perform calculations. Below are the different types of operators in Java:</p>
+
+    <h2>1. Arithmetic Operators in Java</h2>
+    <p>Arithmetic operators are used to perform basic mathematical operations such as addition, subtraction, multiplication, and division. Below are the commonly used arithmetic operators:</p>
+    
+    <table class="table">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>Addition</td>
+            <td>int sum = 5 + 3;</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Subtraction</td>
+            <td>int difference = 5 - 3;</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>Multiplication</td>
+            <td>int product = 5 * 3;</td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Division</td>
+            <td>int quotient = 5 / 3;</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Modulus (remainder)</td>
+            <td>int remainder = 5 % 3;</td>
+        </tr>
+    </table>
+
+    <pre><code>
+// Simple Java Program to demonstrate Arithmetic Operators
+ public class SimpleArithmeticExample {
+ public static void main(String[] args) {
+ int a = 5;
+ int b = 3;
+
+// Performing arithmetic operations
+int sum = a + b;             // Addition
+int difference = a - b;      // Subtraction
+int product = a * b;         // Multiplication
+int quotient = a / b;        // Division
+int remainder = a % b;       // Modulus
+
+    // Displaying the results
+System.out.println("Sum: " + sum);
+System.out.println("Difference: " + difference);
+System.out.println("Product: " + product);
+System.out.println("Quotient: " + quotient);
+System.out.println("Remainder: " + remainder);
+    }
+}
+
+    </code></pre>
+    
+    <div class="output">
+    <h2>Arithmetic Operators Output</h2>
+    <p>This is the output from the simple arithmetic program:</p>
+    
+    <pre>
+Sum: 8
+Difference: 2
+Product: 15
+Quotient: 1
+Remainder: 2
+    </pre>
+    </div>
+    <h2>Explanation of the Output</h2>
+<div class="explanation">
+    <p><strong>Sum: 8</strong> — <code>5 + 3</code> is 8, so <strong>Sum</strong> is 8.</p>
+    <p><strong>Difference: 2</strong> — <code>5 - 3</code> is 2, so <strong>Difference</strong> is 2.</p>
+    <p><strong>Product: 15</strong> — <code>5 * 3</code> is 15, so <strong>Product</strong> is 15.</p>
+    <p><strong>Quotient: 1</strong> — <code>5 / 3</code> is 1 (integer division truncates the decimal part), so <strong>Quotient</strong> is 1.</p>
+    <p><strong>Remainder: 2</strong> — <code>5 % 3</code> gives a remainder of 2, so <strong>Remainder</strong> is 2.</p>
+</div>
+
+
+    <h2>2. Relational Operators in Java</h2>
+    <p>Relational operators are used to compare two values and return a boolean result (true or false).</p>
+    
+    <table class="table">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>==</td>
+            <td>Equals</td>
+            <td>boolean isEqual = (5 == 3);</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>Not Equals</td>
+            <td>boolean isNotEqual = (5 != 3);</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>Greater Than</td>
+            <td>boolean isGreater = (5 &gt; 3);</td>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td>Less Than</td>
+            <td>boolean isLess = (5 &lt; 3);</td>
+        </tr>
+        <tr>
+            <td>&gt;=</td>
+            <td>Greater Than or Equal To</td>
+            <td>boolean isGreaterOrEqual = (5 &gt;= 3);</td>
+        </tr>
+        <tr>
+            <td>&lt;=</td>
+            <td>Less Than or Equal To</td>
+            <td>boolean isLessOrEqual = (5 &lt;= 3);</td>
+        </tr>
+    </table>
+
+    <pre><code>
+// Java Program using Relational Operators
+public class RelationalExample {
+public static void main(String[] args) {
+boolean isEqual = (5 == 3);
+boolean isNotEqual = (5 != 3);
+boolean isGreater = (5 > 3);
+boolean isLess = (5 < 3);
+boolean isGreaterOrEqual = (5 >= 3);
+boolean isLessOrEqual = (5 <= 3);
+
+System.out.println("isEqual: " + isEqual);
+System.out.println("isNotEqual: " + isNotEqual);
+System.out.println("isGreater: " + isGreater);
+System.out.println("isLess: " + isLess);
+System.out.println("isGreaterOrEqual: " + isGreaterOrEqual);
+System.out.println("isLessOrEqual: " + isLessOrEqual);
+            }
+        }
+    </code></pre>
+    <div class="output">
+        <h2>Relational Operators Output</h2>
+        <p>This is the output from the simple Relational Operators:</p>
+        
+        <pre>
+isEqual: false
+isNotEqual: true
+isGreater: true
+isLess: false
+isGreaterOrEqual: true
+isLessOrEqual: false
+ </pre>
+        </div>
+        <h2>Explanation of the Output</h2>
+    <div class="explanation">
+        <p><strong>isEqual: false</strong> — <code>5 == 3</code> is false, so <strong>isEqual</strong> is false.</p>
+        <p><strong>isNotEqual: true</strong> — <code>5 != 3</code> is true, so <strong>isNotEqual</strong> is true.</p>
+        <p><strong>isGreater: true</strong> — <code>5 &gt; 3</code> is true, so <strong>isGreater</strong> is true.</p>
+        <p><strong>isLess: false</strong> — <code>5 &lt; 3</code> is false, so <strong>isLess</strong> is false.</p>
+        <p><strong>isGreaterOrEqual: true</strong> — <code>5 &gt;= 3</code> is true, so <strong>isGreaterOrEqual</strong> is true.</p>
+        <p><strong>isLessOrEqual: false</strong> — <code>5 &lt;= 3</code> is false, so <strong>isLessOrEqual</strong> is false.</p>
+    </div>
+
+    <h2>3. Logical Operators in Java</h2>
+    <p>Logical operators are used to perform logical operations on boolean values. They help in combining multiple boolean expressions.</p>
+    
+    <table class="table">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>&&&</td>
+            <td>Logical AND</td>
+            <td>boolean and = (true &amp;&amp; false);</td>
+        </tr>
+        <tr>
+            <td>||</td>
+            <td>Logical OR</td>
+            <td>boolean or = (true || false);</td>
+        </tr>
+        <tr>
+            <td>!</td>
+            <td>Logical NOT</td>
+            <td>boolean not = !true;</td>
+        </tr>
+    </table>
+
+    <pre><code>
+// Java Program using Logical Operators
+public class LogicalExample {
+ public static void main(String[] args) {
+    boolean and = (true && false);
+    boolean or = (true || false);
+    boolean not = !true;
+
+        System.out.println("AND: " + and);
+        System.out.println("OR: " + or);
+        System.out.println("NOT: " + not);
+            }
+        }
+    </code></pre>
+    <div class="output">
+        <h2>Logical Operators Output</h2>
+        <p>This is the output from the simple Logical Operators:</p>
+        
+<pre>
+AND: false
+OR: true
+NOT: false     
+ </pre>
+        </div>
+        <h2>Explanation of the Output</h2>
+<div class="explanation">
+    <p><strong>AND: false</strong> — <code>true && false</code> evaluates to <strong>false</strong> because both operands must be true for the AND operator to return true, but one of them is false.</p>
+    <p><strong>OR: true</strong> — <code>true || false</code> evaluates to <strong>true</strong> because only one operand needs to be true for the OR operator to return true, and here the first operand is true.</p>
+    <p><strong>NOT: false</strong> — <code>!true</code> is the logical negation of true, which results in <strong>false</strong>.</p>
+</div>
+    <h2>4. Assignment Operators in Java</h2>
+    <p>Assignment operators are used to assign values to variables, and can also combine operations with assignment.</p>
+    
+    <table class="table">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>Assignment</td>
+            <td>int x = 10;</td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>Addition Assignment</td>
+            <td>x += 5;  // x = x + 5</td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>Subtraction Assignment</td>
+            <td>x -= 5;  // x = x - 5</td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td>Multiplication Assignment</td>
+            <td>x *= 5;  // x = x * 5</td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td>Division Assignment</td>
+            <td>x /= 5;  // x = x / 5</td>
+        </tr>
+    </table>
+
+    <pre><code>
+// Java Program using Assignment Operators
+public class AssignmentExample {
+public static void main(String[] args) {
+    int x = 10;
+    x += 5;
+    x -= 5;
+    x *= 5;
+    x /= 5;
+    System.out.println("Value of x: " + x);
+            }
+        }
+    </code></pre>
+    <h2>Assignment Operators Output</h2>
+    <div class="output">
+        <p>This is the output from the simple Assignment Operators:</p>
+        <pre>
+    Value of x: 10
+        </pre>
+    </div>
+    <h2>Explanation of the Output</h2>
+    <div class="explanation">
+        <p><strong>x = 10</strong> — Initially, the variable <code>x</code> is assigned the value <strong>10</strong>.</p>
+        <p><strong>x += 5</strong> — The <code>+=</code> assignment operator adds 5 to the current value of <code>x</code>, so <code>x</code> becomes <strong>15</strong>.</p>
+        <p><strong>x -= 5</strong> — The <code>-=</code> assignment operator subtracts 5 from the current value of <code>x</code>, so <code>x</code> becomes <strong>10</strong> again.</p>
+        <p><strong>x *= 5</strong> — The <code>*=</code> assignment operator multiplies the current value of <code>x</code> by 5, so <code>x</code> becomes <strong>50</strong>.</p>
+        <p><strong>x /= 5</strong> — The <code>/=</code> assignment operator divides the current value of <code>x</code> by 5, so <code>x</code> becomes <strong>10</strong> again (since 50 divided by 5 is 10).</p>
+    </div>
+    
+    
+    
+    
+    <h2>5. Unary Operators in Java</h2>
+    <p>Unary operators operate on a single operand, modifying its value or performing actions such as increment and decrement.</p>
+    
+    <table class="table">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>Unary Plus</td>
+            <td>int positive = +5;</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Unary Minus</td>
+            <td>int negative = -5;</td>
+        </tr>
+        <tr>
+            <td>++</td>
+            <td>Increment</td>
+            <td>count++;</td>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td>Decrement</td>
+            <td>count--;</td>
+        </tr>
+    </table>
+
+    <pre><code>
+// Java Program using Unary Operators
+public class UnaryExample {
+public static void main(String[] args) {
+   int count = 5;
+   count++;  // Increment
+   count--;  // Decrement
+      System.out.println("Incremented Count: " + count);
+      System.out.println("Decremented Count: " + (count-1));
+            }
+        }
+    </code></pre>
+    <h2>Unary Operators Output</h2>
+    <div class="output">
+        <p>This is the output from the simple Unary Operators:</p>
+        <pre>
+Incremented Count: 6
+Decremented Count: 5
+        </pre>
+    </div>
+    <h2>Explanation of the Output</h2>
+    <div class="explanation">
+        <p><strong>count = 5</strong> — Initially, the variable <code>count</code> is assigned the value <strong>5</strong>.</p>
+        <p><strong>count++</strong> — The <code>++</code> operator is a unary increment operator that increases the value of <code>count</code> by 1. After this operation, <code>count</code> becomes <strong>6</strong>.</p>
+        <p><strong>count--</strong> — The <code>--</code> operator is a unary decrement operator that decreases the value of <code>count</code> by 1. After this operation, <code>count</code> becomes <strong>5</strong> again.</p>
+    </div>
+    
+   
+    
+    <h2>6. Bitwise Operators in Java</h2>
+    <p>Bitwise operators perform bit-level operations, which can be used for low-level manipulations and optimizations.</p>
+    
+    <table class="table">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>&</td>
+            <td>Bitwise AND</td>
+            <td>int result = 5 & 3;</td>
+        </tr>
+        <tr>
+            <td>|</td>
+            <td>Bitwise OR</td>
+            <td>int result = 5 | 3;</td>
+        </tr>
+        <tr>
+            <td>^</td>
+            <td>Bitwise XOR</td>
+            <td>int result = 5 ^ 3;</td>
+        </tr>
+        <tr>
+            <td>~</td>
+            <td>Bitwise Complement</td>
+            <td>int result = ~5;</td>
+        </tr>
+        <tr>
+            <td>&lt;&lt;</td>
+            <td>Left Shift</td>
+            <td>int result = 5 << 1;</td>
+        </tr>
+        <tr>
+            <td>&gt;&gt;</td>
+            <td>Right Shift</td>
+            <td>int result = 5 >> 1;</td>
+        </tr>
+        <tr>
+            <td>&gt;&gt;&gt;</td>
+            <td>Unsigned Right Shift</td>
+            <td>int result = 5 >>> 1;</td>
+        </tr>
+    </table>
+
+    <pre><code>
+// Java Program using Bitwise Operators
+public class BitwiseExample {
+public static void main(String[] args) {
+    int bitwiseAnd = 5 & 3;
+    int bitwiseOr = 5 | 3;
+    int bitwiseXor = 5 ^ 3;
+    int bitwiseComplement = ~5;
+    int leftShift = 5 << 1;
+    int rightShift = 5 >> 1;
+    int unsignedRightShift = 5 >>> 1;
+
+    System.out.println("Bitwise AND: " + bitwiseAnd);
+    System.out.println("Bitwise OR: " + bitwiseOr);
+    System.out.println("Bitwise XOR: " + bitwiseXor);
+    System.out.println("Bitwise Complement: " + bitwiseComplement);
+    System.out.println("Left Shift: " + leftShift);
+    System.out.println("Right Shift: " + rightShift);
+    System.out.println("Unsigned Right Shift: " + unsignedRightShift);
+            }
+        }
+    </code></pre>
+    <h2>Bitwise Operators Output</h2>
+    <div class="output">
+        <p>This is the output from the Bitwise Operators program:</p>
+        <pre>
+Bitwise AND: 1
+Bitwise OR: 7
+Bitwise XOR: 6
+Bitwise Complement: -6
+Left Shift: 10
+Right Shift: 2
+Unsigned Right Shift: 2
+        </pre>
+    </div>
+    <h2>Explanation of the Output</h2>
+    <div class="explanation">
+        <p><strong>bitwiseAnd = 5 & 3</strong> — The <code>&</code> operator performs a bitwise AND. It compares the binary representation of 5 (0101) and 3 (0011) and returns 1 where both bits are 1, resulting in <strong>1</strong> (binary 0001).</p>
+        <p><strong>bitwiseOr = 5 | 3</strong> — The <code>|</code> operator performs a bitwise OR. It compares the binary representation of 5 (0101) and 3 (0011) and returns 1 where either of the bits is 1, resulting in <strong>7</strong> (binary 0111).</p>
+        <p><strong>bitwiseXor = 5 ^ 3</strong> — The <code>^</code> operator performs a bitwise XOR (exclusive OR). It compares the binary representation of 5 (0101) and 3 (0011) and returns 1 where only one of the bits is 1, resulting in <strong>6</strong> (binary 0110).</p>
+        <p><strong>bitwiseComplement = ~5</strong> — The <code>~</code> operator performs a bitwise complement (NOT). It flips all the bits of 5 (binary 0101), resulting in <strong>-6</strong> because of the way negative numbers are represented in two's complement.</p>
+        <p><strong>leftShift = 5 << 1</strong> — The <code>&lt;&lt;</code> operator performs a left shift. It shifts the bits of 5 (binary 0101) one position to the left, resulting in <strong>10</strong> (binary 1010).</p>
+        <p><strong>rightShift = 5 >> 1</strong> — The <code>&gt;&gt;</code> operator performs a right shift. It shifts the bits of 5 (binary 0101) one position to the right, resulting in <strong>2</strong> (binary 0010).</p>
+        <p><strong>unsignedRightShift = 5 >>> 1</strong> — The <code>&gt;&gt;&gt;</code> operator performs an unsigned right shift. It shifts the bits of 5 (binary 0101) one position to the right, resulting in <strong>2</strong> (binary 0010), and does not preserve the sign bit.</p>
+    </div>
+    
+   
+    
+    
+    <div class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,401 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Java Language Roadmap</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> Java Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="golabs()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Java Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "java_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Java_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+  
+
+        </script>
+      
+      
+       
+      
+
+    <script>
+        function toggleAnswer(button) {
+            const questionItem = button.closest('.question-item');
+            const allQuestionItems = document.querySelectorAll('.question-item');
+
+            // Close all open quiz containers
+            allQuestionItems.forEach(item => {
+                if (item !== questionItem) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Toggle the clicked question's quiz container
+            questionItem.classList.toggle('active');
+        }
+
+        function calculateScore(quizContainer, topicNumber) {
+            const options = quizContainer.querySelectorAll("input[type='radio']");
+            let score = 0;
+            options.forEach(option => {
+                if (option.checked && option.value === "1") {
+                    score += 1;
+                }
+            });
+
+            // Display score
+            const scoreCard = quizContainer.querySelector(".score-card");
+            scoreCard.style.display = "block";
+            scoreCard.classList.add(score === 5 ? 'correct' : 'incorrect');
+            scoreCard.innerHTML = `You scored ${score} out of 5 for Topic ${topicNumber}!`;
+        }
+    </script>
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-java" style="font-size: 60px;padding-left: 16px;  color: #e27f05;"></i>
+            <h2 class="jk">Java Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        <a href="javaRoadmaps.html" target="_blank"><b class="b12">Java Roadmap</b></a>
+        <ul>
+            <a href="Introduction to Java.html" target="_blank">Introduction to Java</a>
+            <li><a href="History of Java.html" target="_blank">History of Java</a></li>
+            <li><a href="Setting up Java Environment java.html" target="_blank">Setting up Java Environment</a></li>
+            <li><a href="Hello World Program java.html" target="_blank">Hello World Program</a></li>
+            <li><a href="JVM, JRE, and JDK in java.html" target="_blank">JVM, JRE, and JDK</a></li>
+        </ul>
+    
+        <h3>Basic Java Syntax</h3>
+        <a href="Basic Java Syntax java.html" target="_blank">Basic Java Syntax</a>
+        <ul>
+            <li><a href="variables and Data Types java.html" target="_blank">Variables and Data Types</a></li>
+            <li><a href="Operators in java.html" target="_blank">Operators</a></li>
+            <li><a href="Control Statements in java.html" target="_blank">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements in java.html" target="_blank">If-else Statements</a></li>
+                <li><a href="Switch Statement in java.html" target="_blank">Switch Statement</a></li>
+                <li><a href="Loops in java.html" target="_blank">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop in java.html" target="_blank">For Loop</a></li>
+                    <li><a href="While Loop in java.html" target="_blank">While Loop</a></li>
+                    <li><a href="Do-While Loop in java.html" target="_blank">Do-While Loop</a></li>
+                </ul>
+            </ul>
+        </ul>
+    
+        <h3>Arrays</h3>
+        <a href="Arrays in java.html" target="_blank">Arrays</a>
+        <ul>
+            <li><a href="Introduction to Arrays in java.html" target="_blank">Introduction to Arrays</a></li>
+            <li><a href="Single-Dimensional Arrays in java.html" target="_blank">Single-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays in java.html" target="_blank">Multi-Dimensional Arrays</a></li>
+            <li><a href="Array Operations in java.html" target="_blank">Array Operations</a></li>
+            <li><a href="ArrayList and Other Collections in java.html" target="_blank">ArrayList and Other Collections</a></li>
+        </ul>
+    
+        <h3>Strings</h3>
+        <a href="Strings in java.html" target="_blank">Strings</a>
+        <ul>
+            <li><a href="String Basics in java.html" target="_blank">String Basics</a></li>
+            <li><a href="String Methods in java.html" target="_blank">String Methods</a></li>
+            <li><a href="String Manipulation in java.html" target="_blank">String Manipulation</a></li>
+            <li><a href="String Formatting in java.html" target="_blank">String Formatting</a></li>
+            <li><a href="StringBuilder and StringBuffer in java.html" target="_blank">StringBuilder and StringBuffer</a></li>
+        </ul>
+    
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming in java.html" target="_blank">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects in java.html" target="_blank">Classes and Objects</a></li>
+            <li><a href="Constructors in java.html" target="_blank">Constructors</a></li>
+            <li><a href="Inheritance in java.html" target="_blank">Inheritance</a></li>
+            <li><a href="Polymorphism in java.html" target="_blank">Polymorphism</a></li>
+            <li><a href="Abstraction in java.html" target="_blank">Abstraction</a></li>
+            <li><a href="Encapsulation in java.html" target="_blank">Encapsulation</a></li>
+            <li><a href="Interfaces in java.html" target="_blank">Interfaces</a></li>
+            <li><a href="Packages in java.html" target="_blank">Packages</a></li>
+            <li><a href="Nested Classes in java.html" target="_blank">Nested Classes</a></li>
+            <li><a href="Enums in java.html" target="_blank">Enums</a></li>
+        </ul>
+    
+        <h3>Advanced Java Concepts</h3>
+        <a href="Advanced Java Concepts in java.html" target="_blank">Advanced Java Concepts</a>
+        <ul>
+            <li><a href="Exception Handling in java.html" target="_blank">Exception Handling</a></li>
+            <li><a href="File I-O in java.html" target="_blank">File I/O</a></li>
+            <li><a href="Error Handling and Debugging in java.html" target="_blank">Error Handling and Debugging</a></li>
+            <li><a href="Collections Framework in java.html" target="_blank">Collections Framework</a></li>
+            <ul>
+                <li><a href="List in java.html" target="_blank">List</a></li>
+                <li><a href="Set in java.html" target="_blank">Set</a></li>
+                <li><a href="Map in java.html" target="_blank">Map</a></li>
+                <li><a href="Queue in java.html" target="_blank">Queue</a></li>
+            </ul>
+            <li><a href="Generics in java.html" target="_blank">Generics</a></li>
+            <li><a href="Multithreading and Concurrency in java.html" target="_blank">Multithreading and Concurrency</a></li>
+            <li><a href="Networking in java.html" target="_blank">Networking</a></li>
+            <li><a href="JDBC in java.html" target="_blank">JDBC</a></li>
+            <li><a href="Java Reflection in java.html" target="_blank">Java Reflection</a></li>
+            <li><a href="Java Annotations in java.html" target="_blank">Java Annotations</a></li>
+        </ul>
+    </div>
+    
+        
+   
+   
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "java_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Java_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "JVM, JRE, and JDK in java.html";
+    }
+    function goNext() {
+        window.location.href = "variables and Data Types java.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+
+            <div class="top-box1">
+                <i class="fab fa-java" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">Java Tutorial</h2>
+
+    <div class="div1">Basic Java Syntax</div></div>
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+
+    <h1>Introduction to Java Programming</h1>
+    <p>Java is a widely-used programming language known for its simplicity, flexibility, and power. In this beginner's guide, we will help you learn the essential Java syntax, such as how to declare variables, work with different data types, use operators, and manage program flow. By understanding these basics, you'll be able to write and understand Java programs efficiently.</p>
+
+    <h2>1. Java Program Structure</h2>
+    <p>A basic Java program follows a simple structure that every Java program must have:</p>
+    <pre><code>public class MyClass {
+    public static void main(String[] args) {
+        // Your code goes here
+    }
+}
+</code></pre>
+    <ul>
+        <li><strong>public class MyClass:</strong> Declares a class named <code>MyClass</code>. In Java, every program needs to have at least one class, which is like a blueprint for creating objects.</li>
+        <li><strong>public static void main(String[] args):</strong> This is the main method where the program starts running. All Java programs need this to begin execution.</li>
+    </ul>
+
+    <h2>2. Variables and Data Types in Java</h2>
+    <p>In Java, variables store data. Every variable must be declared with a specific data type. Each data type is used to store a different kind of data, such as whole numbers, decimal numbers, characters, and boolean values.</p>
+    <pre><code>int number = 10;         // Integer type (whole numbers)
+double pi = 3.14;          // Double type (decimal numbers)
+char letter = 'A';         // Char type (single characters)
+boolean isJavaFun = true;  // Boolean type (true or false)
+</code></pre>
+    <ul>
+        <li><strong>int:</strong> For whole numbers (e.g., 1, -5, 100).</li>
+        <li><strong>double:</strong> For numbers with decimals (e.g., 3.14, -0.99).</li>
+        <li><strong>char:</strong> For single characters (e.g., 'A', 'z').</li>
+        <li><strong>boolean:</strong> For true or false values (e.g., true, false).</li>
+    </ul>
+
+    <h2>3. Java Operators</h2>
+    <p>Operators are symbols that allow you to perform operations on variables and values. Here are the most common types of operators in Java:</p>
+    <ul>
+        <li><strong>Arithmetic Operators:</strong> Perform basic mathematical operations.</li>
+        <pre><code>int sum = 5 + 3;   // Addition
+int difference = 5 - 3; // Subtraction
+int product = 5 * 3;    // Multiplication
+int quotient = 5 / 3;   // Division
+int remainder = 5 % 3;  // Modulus (gives the remainder of division)
+</code></pre>
+        <li><strong>Relational Operators:</strong> Used to compare two values. The result is true or false.</li>
+        <pre><code>boolean isEqual = (5 == 3);   // Checks if two values are equal
+boolean isNotEqual = (5 != 3); // Checks if two values are not equal
+boolean isGreater = (5 > 3);  // Checks if the first value is greater than the second
+boolean isLess = (5 < 3);     // Checks if the first value is less than the second
+</code></pre>
+        <li><strong>Logical Operators:</strong> Used to combine multiple conditions.</li>
+        <pre><code>boolean and = (true && false);   // Logical AND: true if both conditions are true
+boolean or = (true || false);   // Logical OR: true if either condition is true
+boolean not = !true;           // Logical NOT: reverses the value
+</code></pre>
+    </ul>
+
+    <h2>4. Control Statements in Java</h2>
+    <p>Control statements help to determine the flow of a program. They allow you to make decisions and repeat actions.</p>
+
+    <h3>If Statement</h3>
+    <pre><code>int age = 20;
+
+if (age >= 18) {
+    System.out.println("You are an adult.");
+} else {
+    System.out.println("You are a minor.");
+}
+</code></pre>
+
+    <h3>Switch Statement</h3>
+    <pre><code>int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    default:
+        System.out.println("Invalid day");
+}
+</code></pre>
+
+    <h3>For Loop</h3>
+    <pre><code>for (int i = 0; i &lt; 5; i++) {
+    System.out.println("Count: " + i);
+}
+</code></pre>
+
+    <h3>While Loop</h3>
+    <pre><code>int i = 0;
+while (i &lt; 5) {
+    System.out.println("Count: " + i);
+    i++; // Don't forget to update the loop counter to avoid an infinite loop!
+}
+</code></pre>
+
+    <h2>Summary: Mastering Java Syntax</h2>
+    <p>Understanding Java syntax is the first step towards becoming proficient in Java programming. In this guide, we covered the basic structure of a Java program, how to declare and use variables, the types of data available, operators, and how to control the flow of your program with statements like <code>if</code>, <code>switch</code>, and loops. Mastering these basics will allow you to write more complex Java programs and explore advanced programming concepts.</p>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+</body>
+</html>

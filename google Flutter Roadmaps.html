@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Flutter Course</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #023554;
+            overflow-y: auto;
+            background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        header {
+            width: 100%;
+            background-color:green;
+            color: white;
+           
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+       
+        
+
+        .roadmap-container {
+            text-align: center;
+            margin-top: 60px; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .tree {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+        }
+
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 2px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 2px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 2px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+
+        .tree ul ul::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 2px solid #ccc;
+            width: 0;
+            height: 20px;
+        }
+
+        .stage {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.5s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .stage.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.10s ease, transform 0.3s ease; 
+        }
+
+        a:hover {
+            color: #000000; 
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="container">
+            <h1 class="">
+                <i class="fas fa-tree"></i>
+                TreeLearners
+            </h1>
+        </div>
+    </header><br><br>
+    
+    <div class="roadmap-container"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="h1">Flutter Course</h1>
+        <div class="tree">
+            <ul>
+                <li>
+                    <div class="stage"><a href="Introduction to Flutter.html">Introduction to Flutter</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="What is Flutter.html">What is Flutter?</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Flutter Setup.html">Setting up Flutter Environment</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Dart Basics.html">Dart Basics</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Flutter Widgets.html">Flutter Widgets</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Stateless Widgets.html">Stateless Widgets</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Stateful Widgets.html">Stateful Widgets</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Common Widgets.html">Common Widgets (Text, Button, Image)</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Flutter Layouts.html">Flutter Layouts</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Column and Row.html">Column and Row</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Stack and Positioned.html">Stack and Positioned</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="GridView.html">GridView and ListView</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Flutter Navigation.html">Navigation and Routing</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Navigating Between Screens.html">Navigating Between Screens</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Passing Data.html">Passing Data Between Screens</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Named Routes.html">Named Routes</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Flutter State Management.html">State Management</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="setState.html">setState</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Provider.html">Provider Package</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="BLoC Pattern.html">BLoC Pattern</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Flutter Networking.html">Networking</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="HTTP Requests.html">Making HTTP Requests</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Working with APIs.html">Working with APIs</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Handling JSON.html">Handling JSON Data</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Flutter Database.html">Local Database</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Using SQLite.html">Using SQLite</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Using Hive.html">Using Hive</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Flutter Animations.html">Animations</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Implicit Animations.html">Implicit Animations</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Explicit Animations.html">Explicit Animations</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Flutter Testing.html">Testing</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Unit Testing.html">Unit Testing</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Widget Testing.html">Widget Testing</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Publishing Flutter App.html">Publishing Flutter Apps</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="For Android.html">Publishing for Android</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="For iOS.html">Publishing for iOS</a></div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const stages = document.querySelectorAll('.stage');
+    let delay = 0;
+
+    stages.forEach((stage, index) => {
+        setTimeout(() => {
+            stage.classList.add('visible');
+        }, delay);
+        delay += 300; // delay each stage by 300ms
+    });
+});
+
+    </script>
+</body>
+</html>

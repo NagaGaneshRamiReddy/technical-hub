@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>C Language Roadmap</title>
+    
+    
+</head>
+<body class="body">
+
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> C Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "C_interviews.html";
+}
+function goquizpro() {
+window.location.href = "C_quiz.html";
+}
+function gocomp() {
+window.location.href = "Java Compiler.html";
+}
+
+function goproject() {
+window.location.href = "C_project.html";
+}
+
+
+
+    </script>
+  
+  
+   
+  
+
+
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+        
+   
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box"><br><br>
+            <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0d80fb;"></i><br>
+            <h2 class="jk"> Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="Croadmap.html" target="_blank"><b class="b12">C Roadmap</b></a>
+        <ul>
+            <li> <a href="Introduction to C.html">Introduction to C</a></li>
+            <li><a href="History of C.html">History of C</a></li>
+            <li><a href="Setting up C Environment.html">Setting up C Environment</a></li>
+            <li><a href="Hello World Program C.html">Hello World Program</a></li>
+        </ul>
+
+        <h3>Basic C Syntax</h3>
+        <a href="Basic C Syntax.html">Basic C Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types C.html">Variables and Data Types</a></li>
+            <li><a href="Operators C.html">Operators</a></li>
+            <li><a href="Control Statements C.html">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements C.html">If-else Statements</a></li>
+                <li><a href="Switch Statement C.html">Switch Statement</a></li>
+                <li><a href="Loops C.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop C.html">For Loop</a></li>
+                    <li><a href="While Loop C.html">While Loop</a></li>
+                    <li><a href="Do-While Loop C.html">Do-While Loop</a></li>
+                    <li><a href="Break and Continue C.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+
+       
+        
+
+        <h3>Arrays in C</h3>
+        <a href="Arrays in C.html">Arrays in C</a>
+        <ul>
+            <li><a href="One-Dimensional Arrays C.html">One-Dimensional Arrays</a></li>
+            <li><a href="Two-Dimensional Arrays C.html">Two-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays C.html">Multi-Dimensional Arrays</a></li>
+            <li><a href="Arrays and Functions C.html">Arrays and Functions</a></li>
+        </ul>
+
+        <h3>Strings in C</h3>
+        <a href="Strings in C.html">Strings in C</a>
+        <ul>
+            <li><a href="String Basics c.html">String Basics</a></li>
+            <li><a href="String Functions C.html">String Functions</a></li>
+            <li><a href="String Manipulation C.html">String Manipulation</a></li>
+        </ul>
+        <h3>Pointers in C</h3>
+        <a href="Pointers in C.html">Pointers in C</a>
+        <ul>
+            <li><a href="Pointer Basics C.html">Pointer Basics</a></li>
+            <li><a href="Pointer Arithmetic C.html">Pointer Arithmetic</a></li>
+            <li><a href="Pointers and Arrays C.html">Pointers and Arrays</a></li>
+            <li><a href="Pointers and Functions C.html">Pointers and Functions</a></li>
+            <li><a href="Pointers and Structures C.html">Pointers and Structures</a></li>
+        </ul>
+        <h3>Functions in C</h3>
+        <a href="Function C.html">Functions in C</a>
+        <ul>
+            <li><a href="Function Basics C.html">Function Basics</a></li>
+            <li><a href="Function Arguments C.html">Function Arguments</a></li>
+            <li><a href="Recursion C.html">Recursion</a></li>
+            <li><a href="Library Functions C.html">Library Functions</a></li>
+        </ul>
+
+        <h3>Structures and Unions</h3>
+        <a href="Structures and Unions C.html">Structures and Unions</a>
+        <ul>
+            <li><a href="Defining Structures C.html">Defining Structures</a></li>
+            <li><a href="Accessing Structure Members C.html">Accessing Structure Members</a></li>
+            <li><a href="Nested structures.html">Nested Structures</a></li>
+            <li><a href="Unions C.html">Unions</a></li>
+        </ul>
+
+        <h3>File Handling in C</h3>
+        <a href="File Handling in C.html">File Handling in C</a>
+        <ul>
+            <li><a href="File Operations C.html">File Operations</a></li>
+            <li><a href="File Pointers C.html">File Pointers</a></li>
+            <li><a href="Reading and Writing Files C.html">Reading and Writing Files</a></li>
+            <li><a href="Binary Files C.html">Binary Files</a></li>
+        </ul>
+
+        <h3>Dynamic Memory Allocation</h3>
+        <a href="Dynamic Memory Allocation C.html">Dynamic Memory Allocation</a>
+        <ul>
+            <li><a href="malloc, calloc, realloc, free C.html">malloc, calloc, realloc, free</a></li>
+            <li><a href="Memory Leaks C.html">Memory Leaks</a></li>
+            <li><a href="Memory Management Techniques C.html">Memory Management Techniques</a></li>
+        </ul>
+
+        <h3>Advanced C Concepts</h3>
+        <a href="Advanced C Concepts.html">Advanced C Concepts</a>
+        <ul>
+            <li><a href="Preprocessor Directives C.html">Preprocessor Directives</a></li>
+            <li><a href="Bitwise Operators C.html">Bitwise Operators</a></li>
+            <li><a href="Command Line Arguments C.html">Command Line Arguments</a></li>
+            <li><a href="Error Handling C.html">Error Handling</a></li>
+            <li><a href="C programming Test.html">Course Test</a></li>
+        </ul>
+    </div>
+
+ 
+       
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "c_interviews.html";
+}
+function goquiz() {
+    window.location.href = "c_quiz.html";
+}
+function gocomp() {
+    window.location.href = "C Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Arrays and Functions C.html";
+    }
+    function goNext() {
+        window.location.href = "String Basics c.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                
+                <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0dfb49;"></i><br>
+                <h2 class="jk"> Tutorial</h2>
+<div class="div1">Strings in C</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>What is a String ?</h2>
+        <p>In C, a string is a sequence of characters terminated by a null character ('\0'). It is used to represent text and is handled as an array of characters. Strings are a fundamental part of C programming, allowing for text manipulation and input/output operations.</p>
+        
+        <h3>Declaration and Initialization</h3>
+        <p>Strings in C are declared as arrays of characters. They can be initialized with string literals. Here’s how to declare and initialize a string:</p>
+        <pre><code>char str1[6] = "Hello"; // 6 characters (including null terminator)
+char str2[] = "World";    // 6 characters (including null terminator)</code></pre>
+        <p>In the example above, <code>str1</code> is explicitly sized to hold 6 characters, while <code>str2</code> automatically sizes itself to fit the string literal.</p>
+
+        <h3>Accessing String Elements</h3>
+        <p>Characters in a string can be accessed using array indexing. For example:</p>
+        <pre><code>printf("%c", str1[0]); // Output: H</code></pre>
+        <p>This accesses the first character of the string <code>str1</code>.</p>
+
+        <h3>Example Program with Strings</h3>
+        <p>The following program demonstrates how to declare a string, initialize it, and print it:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    char str[] = "Hello, World!";
+    printf("%s\n", str); // Output: Hello, World!
+    return 0;
+}
+</code></pre>
+        <p>This program initializes a string with "Hello, World!" and prints it to the console.</p>
+
+        <h3>String Functions</h3>
+        <p>The C standard library provides several functions for manipulating strings. Some common functions include:</p>
+        <ul>
+            <li><code>strlen(str)</code> - Returns the length of the string <code>str</code>.</li>
+            <li><code>strcmp(str1, str2)</code> - Compares two strings and returns an integer based on their lexicographical order.</li>
+            <li><code>strcpy(dest, src)</code> - Copies the string <code>src</code> to <code>dest</code>.</li>
+            <li><code>strcat(dest, src)</code> - Appends the string <code>src</code> to the end of <code>dest</code>.</li>
+            <li><code>strchr(str, c)</code> - Searches for the first occurrence of the character <code>c</code> in the string <code>str</code>.</li>
+        </ul>
+
+        <h3>Example of String Functions</h3>
+        <p>The following program demonstrates the use of some common string functions:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str1[20] = "Hello";
+    char str2[] = "World";
+
+    strcat(str1, ", ");
+    strcat(str1, str2);
+    printf("%s\n", str1); // Output: Hello, World!
+
+    printf("Length of str1: %lu\n", strlen(str1)); // Output: Length of str1: 13
+
+    return 0;
+}
+</code></pre>
+        <p>This program concatenates "Hello" and "World" with a comma and space in between, then prints the result and the length of the resulting string.</p>
+
+        <h2>Free Resources for Learning C</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://www.learn-c.org/">Learn-C.org</a> - An interactive tutorial for learning C programming from the basics.</li>
+                <li><a href="https://www.cprogramming.com/tutorial/c-tutorial.html">CProgramming.com</a> - Comprehensive tutorials and resources for learning C programming.</li>
+                <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">Codecademy</a> - Offers a C++ course which includes C programming concepts. Some content is free.</li>
+                <li><a href="https://www.geeksforgeeks.org/c-programming-language/">GeeksforGeeks</a> - Tutorials and problems to help you practice C programming.</li>
+                <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-c">HackerRank</a> - Coding challenges and exercises in C to test and improve your skills.</li>
+                <li><a href="https://www.tutorialspoint.com/c_programming/index.htm">TutorialsPoint</a> - Detailed guide on C programming with examples and exercises.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Strings in C are essential for handling text. They are represented as arrays of characters terminated by a null character. Understanding how to declare, initialize, and manipulate strings is crucial for effective C programming. The C standard library offers various functions to facilitate string operations.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+    </div>
+</body>
+</html>

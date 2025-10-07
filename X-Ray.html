@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title> Amazon Web Services (AWS)</title>
+</head>
+<body class="body">
+
+   
+    
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> AWS Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> AWS Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-aws" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">AWS Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="awsRoadmaps.html" target="_blank"><b class="b12">AWS Roadmap</b></a>
+        <ul>
+            
+        <a href="Introduction to aws.html">Introduction to AWS</a>
+            <li><a href="overview of aws.html">Overview of AWS</a></li>
+            <li><a href="Global Infrastructure.html">Global Infrastructure</a></li>
+            <li><a href="Key Services and Use Cases.html">Key Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>AWS Foundations</h3>
+        <a href="AWS Foundations.html">AWS Foundations</a>
+        <ul>
+            <li><a href="AWS Management Console.html">AWS Management Console</a></li>
+            <li><a href="AWS CLI.html">AWS CLI</a></li>
+            <li><a href="IAM (Identity and Access Management).html">IAM (Identity and Access Management)</a></li>
+            <li><a href="AWS Billing and Pricing.html">AWS Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core AWS Services</h3>
+        <a href="Core AWS Services.html">Core AWS Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services.html">Compute Services</a>
+                <ul>
+                    <li><a href="EC2 (Elastic Compute Cloud).html">EC2 (Elastic Compute Cloud)</a></li>
+                    <li><a href="Lambda.html">Lambda</a></li>
+                    <li><a href="ECS (Elastic Container Service) .html">ECS (Elastic Container Service)</a></li>
+                    <li><a href="EKS (Elastic Kubernetes Service).html">EKS (Elastic Kubernetes Service)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services.html">Storage Services</a>
+                <ul>
+                    <li><a href="S3 (Simple Storage Service).html">S3 (Simple Storage Service)</a></li>
+                    <li><a href="EBS (Elastic Block Store).html">EBS (Elastic Block Store)</a></li>
+                    <li><a href="EFS (Elastic File System).html">EFS (Elastic File System)</a></li>
+                    <li><a href="Glacier.html">Glacier</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services.html">Database Services</a>
+                <ul>
+                    <li><a href="RDS (Relational Database Service).html">RDS (Relational Database Service)</a></li>
+                    <li><a href="DynamoDB.html">DynamoDB</a></li>
+                    <li><a href="Redshift.html">Redshift</a></li>
+                    <li><a href="Aurora.html">Aurora</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud).html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Route 53.html">Route 53</a></li>
+                    <li><a href="CloudFront.html">CloudFront</a></li>
+                    <li><a href="Direct Connect.html">Direct Connect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced AWS Services</h3>
+        <a href="Advanced AWS Services.html">Advanced AWS Services</a>
+        <ul>
+            <li>
+                <a href="Machine Learning Services.html">Machine Learning Services</a>
+                <ul>
+                    <li><a href="SageMaker .html">SageMaker</a></li>
+                    <li><a href="Rekognition.html">Rekognition</a></li>
+                    <li><a href="Comprehend.html">Comprehend</a></li>
+                    <li><a href="Lex.html">Lex</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services.html">Analytics Services</a>
+                <ul>
+                    <li><a href="Athena.html">Athena</a></li>
+                    <li><a href="EMR (Elastic MapReduce).html">EMR (Elastic MapReduce)</a></li>
+                    <li><a href="Kinesis.html">Kinesis</a></li>
+                    <li><a href="QuickSight.html">QuickSight</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services.html">Security Services</a>
+                <ul>
+                    <li><a href="Shield.html">Shield</a></li>
+                    <li><a href="WAF (Web Application Firewall) .html">WAF (Web Application Firewall)</a></li>
+                    <li><a href="GuardDuty.html">GuardDuty</a></li>
+                    <li><a href="Macie.html">Macie</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on AWS</h3>
+        <a href="DevOps on AWS.html">DevOps on AWS</a>
+        <ul>
+            <li><a href="Infrastructure as Code (IaC) .html">Infrastructure as Code (IaC)</a></li>
+            <li>
+                <a href="CI-CD Pipeline.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="CodeCommit.html">CodeCommit</a></li>
+                    <li><a href="CodeBuild.html">CodeBuild</a></li>
+                    <li><a href="CodeDeploy.html">CodeDeploy</a></li>
+                    <li><a href="CodePipeline.html">CodePipeline</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="CloudWatch.html">CloudWatch</a></li>
+                    <li><a href="CloudTrail.html">CloudTrail</a></li>
+                    <li><a href="X-Ray.html">X-Ray</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="AWS Migration Hub.html">AWS Migration Hub</a></li>
+            <li><a href="Server Migration Service.html">Server Migration Service</a></li>
+            <li><a href="Database Migration Service.html">Database Migration Service</a></li>
+            <li><a href="Snowball.html">Snowball</a></li>
+        </ul>
+    </div>
+    
+    
+
+   
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "AWS_interviews.html";
+}
+function goprojects() {
+    window.location.href = "AWS_projeets.html";
+}
+function golabs() {
+    window.location.href = "AWS_labs.html";
+}
+function goquizpro() {
+    window.location.href = "AWS_quiz.html";
+}
+    function goPrevious() {
+        window.location.href = "CloudTrail.html";
+    }
+    function goNext() {
+        window.location.href = "Migration and Transfer.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-aws" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">AWS Tutorial</h2>
+<div class="div1"> AWS X-Ray</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>  <h2>Introduction to AWS X-Ray</h2>
+            <p><strong>AWS X-Ray</strong> is a service that helps you analyze and debug distributed applications. It provides insights into how your application and its components are performing by tracing requests as they travel through your system. This allows you to pinpoint issues, understand bottlenecks, and optimize performance.</p>
+            <div id="languageSelector" style="margin-top: 20px; display: none;">
+                <label for="language">Select Language:</label>
+                <select id="language" onchange="changeVideo()">
+                    <option value="english">English</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+    
+        
+            <div id="videoContainer" style="display: none; margin-top: 20px;">
+                <iframe id="youtubeVideo" width="560" height="315" src="" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div> <script>
+                // Define YouTube video links for each language
+                const videos = {
+                    english: 'https://www.youtube.com/embed/tl8OWHl6jxw?si=ZDOZGJY-KTWsXgkg',  // Add the actual English video link here
+                    telugu: 'https://www.youtube.com/embed/',  // Replace with actual Telugu video link
+                    hindi: 'https://www.youtube.com/embed/'  // Replace with actual Hindi video link
+                };
+            
+            
+                function govideo() {
+                    // Show the language selector
+                    document.getElementById('languageSelector').style.display = 'block';
+                    
+                    // Show the video container
+                    document.getElementById('videoContainer').style.display = 'block';
+                    
+                    // Scroll to the video container
+                    window.scrollTo(0, document.getElementById('videoContainer').offsetTop);
+                    
+                    // Set default video (English)
+                    changeVideo();
+                }
+            
+                // Function to change video based on selected language
+                function changeVideo() {
+                    const selectedLanguage = document.getElementById('language').value;
+                    const videoUrl = videos[selectedLanguage];
+                    
+                    // Change the video source
+                    document.getElementById('youtubeVideo').src = videoUrl;
+                }
+            </script>
+           
+            <h2>Key Features of AWS X-Ray</h2>
+            <ul>
+                <li><strong>Request Tracing:</strong> Tracks the path of a request as it travels through various components of your application, from the front-end to the back-end services.</li>
+                <li><strong>Performance Insights:</strong> Provides metrics and visualizations to help you identify slow operations, errors, and performance bottlenecks.</li>
+                <li><strong>Error Detection:</strong> Detects and analyzes errors, helping you understand their causes and impacts on your application.</li>
+                <li><strong>Service Map:</strong> Generates a service map to visualize how different components of your application interact with each other.</li>
+                <li><strong>Integration with Other AWS Services:</strong> Integrates with services like AWS Lambda, EC2, ECS, and more to provide a comprehensive view of your application’s performance.</li>
+            </ul>
+
+            <h2>How AWS X-Ray Works</h2>
+            <p>AWS X-Ray provides end-to-end tracing for your requests, allowing you to visualize and analyze the interactions between various parts of your application:</p>
+            <ul>
+                <li><strong>Instrumentation:</strong> Integrate X-Ray SDKs with your application to capture trace data. SDKs are available for different programming languages and platforms.</li>
+                <li><strong>Data Collection:</strong> X-Ray collects trace data as requests pass through your application’s services, capturing information about latency, errors, and dependencies.</li>
+                <li><strong>Data Storage:</strong> Trace data is stored in AWS X-Ray’s data store, where it can be queried and analyzed.</li>
+                <li><strong>Visualization:</strong> Use the X-Ray console to view trace data, analyze performance issues, and generate service maps.</li>
+                <li><strong>Alerts and Monitoring:</strong> Set up CloudWatch alarms and notifications based on X-Ray metrics to stay informed of performance issues and errors.</li>
+            </ul>
+
+            <h2>Benefits of Using AWS X-Ray</h2>
+            <ul>
+                <li><strong>Enhanced Visibility:</strong> Gain deep insights into your application’s performance and behavior, helping you understand how different components interact.</li>
+                <li><strong>Improved Debugging:</strong> Easily identify and troubleshoot issues by tracing requests and analyzing performance metrics.</li>
+                <li><strong>Performance Optimization:</strong> Identify bottlenecks and optimize your application’s performance based on detailed trace data.</li>
+                <li><strong>Comprehensive Monitoring:</strong> Monitor your distributed applications more effectively by visualizing interactions and dependencies between components.</li>
+                <li><strong>Integration:</strong> Seamlessly integrates with other AWS services for a unified view of your application’s performance and health.</li>
+            </ul>
+
+            <h2>Example Use Case</h2>
+            <div class="example">
+                <p>Imagine you have a web application running on AWS with several microservices. You notice that the application is running slowly, but it’s hard to pinpoint the cause. By using AWS X-Ray:</p>
+                <ul>
+                    <li><strong>Trace Requests:</strong> You can trace requests as they flow through your microservices, identifying which components are causing delays.</li>
+                    <li><strong>Analyze Performance:</strong> Use X-Ray’s performance insights to find slow operations or dependencies that are affecting overall response times.</li>
+                    <li><strong>Detect Errors:</strong> Investigate errors and their impacts on your application, helping you resolve issues quickly.</li>
+                    <li><strong>Visualize Interactions:</strong> View a service map to understand how different components of your application interact and identify potential areas for improvement.</li>
+                </ul>
+            </div>
+
+            <div class="resources">
+                <h3>Learning Resources</h3>
+                <ul>
+                    <li><a href="https://aws.amazon.com/xray/" target="_blank">AWS X-Ray Overview</a></li>
+                    <li><a href="https://docs.aws.amazon.com/xray/latest/devguide/what-is-xray.html" target="_blank">AWS X-Ray Documentation</a></li>
+                    <li><a href="https://aws.amazon.com/blogs/compute/category/compute/xray/" target="_blank">AWS X-Ray Blog</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>AWS X-Ray is an essential tool for monitoring and debugging distributed applications. By providing detailed tracing and performance insights, X-Ray helps you understand and optimize your application’s behavior, detect and troubleshoot issues, and improve overall performance.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div> </div>
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,577 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>C++ Language Roadmap</title>
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                C++ programming language
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to C++</h3>
+        <a href="Introduction to C++.html">Introduction to C++</a>
+        <ul>
+            <li><a href="History of C++.html">History of C++</a></li>
+            <li><a href="Setting up C++ Environment.HTML">Setting up C++ Environment</a></li>
+            <li><a href="Hello program in c++.html">Hello World Program</a></li>
+        </ul>
+    
+        <h3>Basic C++ Syntax</h3>
+        <a href="Basic C++ Syntax.html">Basic C++ Syntax</a>
+        <ul>
+            <li><a href="variables in c++.html">Variables and Data Types</a></li>
+            <li><a href="Operators in c++.html">Operators</a></li>
+            <li><a href="Control Statements C++.html">Control Statements</a></li>
+            <ul>
+                <li><a href="ifstatementsc++.html">If-else Statements</a></li>
+                <li><a href="Switch Statement C++.html">Switch Statement</a></li>
+                <li><a href="Loops C++.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop C++.html">For Loop</a></li>
+                    <li><a href="While Loop C++.html">While Loop</a></li>
+                    <li><a href="Do-While Loop C++.html">Do-While Loop</a></li>
+                </ul>
+            </ul>
+        </ul>
+    
+        <h3>Arrays</h3>
+        <a href="Arrays C++.html">Arrays</a>
+        <ul>
+            <li><a href="Array Types in C++.html">Array Types</a></li>
+            <li><a href="Array Operations C++.html">Array Operations</a></li>
+        </ul>
+    
+        <h3>Strings</h3>
+        <a href="Strings C++.html">Strings</a>
+        <ul>
+            <li><a href="String Methods C++.html">String Methods</a></li>
+            <li><a href="String Operations C++.html">String Operations</a></li>
+        </ul>
+    
+        <h3>Functions in C++</h3>
+        <a href="Functions in C++.html">Functions in C++</a>
+        <ul>
+            <li><a href="Function Basics C++.html">Function Basics</a></li>
+            <li><a href="Function Overloading C++.html">Function Overloading</a></li>
+            <li><a href="Inline Functions C++.html">Inline Functions</a></li>
+            <li><a href="Recursion C++.html">Recursion</a></li>
+        </ul>
+    
+        <h3>Pointers</h3>
+        <a href="Pointers C++.html">Pointers</a>
+        <ul>
+            <li><a href="Basics of Pointers C++.html">Basics of Pointers</a></li>
+            <li><a href="Pointer Arithmetic C++.html">Pointer Arithmetic</a></li>
+            <li><a href="Pointers and Arrays C++.html">Pointers and Arrays</a></li>
+            <li><a href="Pointers and Functions C++.html">Pointers and Functions</a></li>
+            <li><a href="Dynamic Memory Allocation C++.html">Dynamic Memory Allocation</a></li>
+            <li><a href="Smart Pointers C++.html">Smart Pointers</a></li>
+        </ul>
+    
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming C++.html">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects C++.html">Classes and Objects</a></li>
+            <li><a href="Constructors and Destructors in C++.html">Constructors and Destructors</a></li>
+            <li><a href="Inheritance C++.html">Inheritance</a></li>
+            <li><a href="Polymorphism in C++.html">Polymorphism</a></li>
+            <li><a href="Abstraction C++.html">Abstraction</a></li>
+            <li><a href="Encapsulation inC++.html">Encapsulation</a></li>
+            <li><a href="Operator Overloading C++.html">Operator Overloading</a></li>
+            <li><a href="Friend Functions C++.html">Friend Functions</a></li>
+            <li><a href="Interfaces in C++.html">Interfaces</a></li>
+            <li><a href="Templates C++.html">Templates</a></li>
+        </ul>
+    
+        <h3>Advanced C++ Concepts</h3>
+        <a href="Advanced C++ Concepts.html">Advanced C++ Concepts</a>
+        <ul>
+            <li><a href="Exception Handling.html">Exception Handling</a></li>
+            <li><a href="File i-o in C++.html">File I/O</a></li>
+            <li><a href="Standard Template Library (STL).html">Standard Template Library (STL)</a></li>
+            <ul>
+                <li><a href="Vectors in C++.html">Vectors</a></li>
+                <li><a href="Lists C++.html">Lists</a></li>
+                <li><a href="Deques in C++.html">Deques</a></li>
+                <li><a href="Stacks C++.html">Stacks</a></li>
+                <li><a href="Queues .html">Queues</a></li>
+                <li><a href="Priority Queues C++.html">Priority Queues</a></li>
+                <li><a href="Sets in C++.html">Sets</a></li>
+                <li><a href="Maps in C++.html">Maps</a></li>
+            </ul>
+            <li><a href="Multithreading c++.html">Multithreading</a></li>
+            <li><a href="Move Semantics C++.html">Move Semantics</a></li>
+            <li><a href="Lambda Expressions C++.html">Lambda Expressions</a></li>
+            <li><a href="Concurrency in C++.html">Concurrency</a></li>
+        </ul>
+    </div>
+      
+        
+    
+    
+
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C++ Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gocomp() {
+    window.location.href = "C++ Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Advanced C++ Concepts.html";
+    }
+    function goNext() {
+        window.location.href = "File i-o in C++.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Exception handling in C++</div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>Exception handling in C++ is a mechanism to handle runtime errors or exceptions that occur during the execution of a program. By using exceptions, you can separate error-handling code from regular code, making your program more robust and easier to maintain. Exception handling helps in managing unexpected situations and ensuring that your program can handle errors gracefully.</p>
+
+        <h2>Basic Syntax</h2>
+        <p>Exception handling in C++ involves three main components:</p>
+        <ul>
+            <li><strong>try</strong>: This block contains the code that might throw an exception.</li>
+            <li><strong>catch</strong>: This block contains the code that handles the exception.</li>
+            <li><strong>throw</strong>: This keyword is used to signal the occurrence of an exception.</li>
+        </ul>
+        <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    try {
+        // Code that may throw an exception
+        throw std::runtime_error("An error occurred");
+    } catch (const std::exception &e) {
+        // Code to handle the exception
+        std::cout &lt;&lt; "Exception caught: " &lt;&lt; e.what() &lt;&lt; std::endl;
+    }
+    return 0;
+}
+</code></pre>
+
+        <h2>Throwing Exceptions</h2>
+        <p>You can throw exceptions using the <code>throw</code> keyword. It is often used to indicate errors or unusual conditions:</p>
+        <pre><code>#include &lt;iostream&gt;
+
+void divide(int a, int b) {
+    if (b == 0) {
+        throw std::invalid_argument("Division by zero is not allowed");
+    }
+    std::cout &lt;&lt; "Result: " &lt;&lt; (a / b) &lt;&lt; std::endl;
+}
+
+int main() {
+    try {
+        divide(10, 0);
+    } catch (const std::invalid_argument &e) {
+        std::cout &lt;&lt; "Exception caught: " &lt;&lt; e.what() &lt;&lt; std::endl;
+    }
+    return 0;
+}
+</code></pre>
+
+        <h2>Handling Exceptions</h2>
+        <p>To handle exceptions, you use the <code>catch</code> block, which follows the <code>try</code> block. The <code>catch</code> block catches exceptions thrown by the <code>try</code> block:</p>
+        <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    try {
+        // Code that may throw an exception
+        throw std::out_of_range("Out of range error");
+    } catch (const std::out_of_range &e) {
+        // Code to handle out_of_range exception
+        std::cout &lt;&lt; "Out of range exception caught: " &lt;&lt; e.what() &lt;&lt; std::endl;
+    } catch (const std::exception &e) {
+        // Code to handle any other exception
+        std::cout &lt;&lt; "Exception caught: " &lt;&lt; e.what() &lt;&lt; std::endl;
+    }
+    return 0;
+}
+</code></pre>
+
+        <h2>Custom Exceptions</h2>
+        <p>You can define your own exception classes to handle specific error conditions:</p>
+        <pre><code>#include &lt;iostream&gt;
+#include &lt;stdexcept&gt;
+
+class MyException : public std::exception {
+public:
+    const char* what() const noexcept override {
+        return "My custom exception occurred";
+    }
+};
+
+int main() {
+    try {
+        throw MyException();
+    } catch (const MyException &e) {
+        std::cout &lt;&lt; "Custom exception caught: " &lt;&lt; e.what() &lt;&lt; std::endl;
+    }
+    return 0;
+}
+</code></pre>
+
+        <h2>Exception Safety</h2>
+        <p>Exception safety ensures that your code remains in a valid state even if an exception occurs. There are several levels of exception safety:</p>
+        <ul>
+            <li><strong>No-Throw Guarantee:</strong> The function guarantees that it will not throw any exceptions.</li>
+            <li><strong>Strong Guarantee:</strong> If an exception occurs, the program state is unchanged.</li>
+            <li><strong>Basic Guarantee:</strong> The program state is valid, but not necessarily unchanged.</li>
+        </ul>
+
+        <h2>Best Practices</h2>
+        <ul>
+            <li><strong>Use Exceptions Sparingly:</strong> Exceptions should be used for error handling, not for normal control flow.</li>
+            <li><strong>Catch by Reference:</strong> Catch exceptions by reference to avoid slicing and improve performance.</li>
+            <li><strong>Be Specific:</strong> Catch specific exceptions before general ones to handle different error conditions appropriately.</li>
+        </ul>
+
+        <h2>Free Resources for Learning Exception Handling in C++</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://www.learncpp.com/cpp-tutorial/exception-handling/">LearnCpp.com</a> - Detailed tutorials on exception handling in C++.</li>
+                <li><a href="https://en.cppreference.com/w/cpp/error/exception">CppReference.com</a> - Comprehensive reference for C++ exception handling.</li>
+                <li><a href="https://www.geeksforgeeks.org/c-plus-plus/exception-handling-in-c-plus-plus/">GeeksforGeeks</a> - Tutorials and examples on handling exceptions in C++.</li>
+                <li><a href="https://www.cplusplus.com/doc/tutorial/exceptions/">CPlusPlus.com</a> - In-depth guide on C++ exceptions and error handling.</li>
+                <li><a href="https://www.udemy.com/topic/cplusplus/exception-handling/">Udemy</a> - Online courses focusing on C++ exception handling and best practices.</li>
+                <li><a href="https://www.pluralsight.com/courses/cplusplus-exception-handling">Pluralsight</a> - Advanced tutorials on exception handling in C++ with practical examples.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Exception handling in C++ is a powerful feature that helps you manage runtime errors and maintain the robustness of your programs. By using <code>try</code>, <code>catch</code>, and <code>throw</code> effectively, you can handle errors gracefully and ensure that your code remains stable. Utilize custom exceptions and follow best practices to enhance the quality of your error handling and overall program design.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

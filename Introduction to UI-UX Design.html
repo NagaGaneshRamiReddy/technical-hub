@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>HTML</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+            <div class="toggle-container">
+                <span id="themeText">Dark Mode</span>
+                <i id="themeIcon" class="fas fa-moon"></i>
+            </div>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> HTML Quiz
+            </button>
+           
+            
+        </div></div>
+    </header>
+    
+    
+    
+
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+
+
+
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fas fa-paint-brush"  style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">UI/UX Design Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        
+        <a href="Ui UXRoadmaps.html" target="_blank"><b class="b12">UI/UX Roadmap</b></a>
+        <a href="Introduction to UI-UX Design.html">Introduction to UI/UX Design</a>
+        <ul>
+            <li><a href="What is UI UX.html">What is UI/UX Design?</a></li>
+            <li><a href="importance of UI UX Design.html">Importance of UI/UX</a></li>
+            <li><a href="Difference Between UI and UX.html">Difference Between UI and UX</a></li>
+        </ul>
+    
+        <h3>Research and Discovery</h3>
+        <a href="Research.html">Research</a>
+        <ul>
+            <li><a href="User Research.html">User Research</a></li>
+            <li><a href="Market Research.html">Market Research</a></li>
+            <li><a href="Competitive Analysis.html">Competitive Analysis</a></li>
+        </ul>
+    
+        <h3>Design Fundamentals</h3>
+        <a href="Design Fundamentals.html">Design Fundamentals</a>
+        <ul>
+            <li><a href="Principles of Design.html">Principles of Design</a></li>
+            <li><a href="Color Theory.html">Color Theory</a></li>
+            <li><a href="Typography.html">Typography</a></li>
+            <li><a href="Layout and Composition.html">Layout and Composition</a></li>
+        </ul>
+    
+        <h3>Wireframing and Prototyping</h3>
+        <a href="Wireframing and Prototyping.html">Wireframing and Prototyping</a>
+        <ul>
+            <li><a href="Wireframing Basics.html">Wireframing Basics</a></li>
+            <li><a href="Prototyping Tools.html">Prototyping Tools</a></li>
+            <li><a href="Low-Fidelity Prototypes.html">Low-Fidelity Prototypes</a></li>
+            <li><a href="High-Fidelity Prototypes.html">High-Fidelity Prototypes</a></li>
+        </ul>
+    
+        <h3>User Interface (UI) Design</h3>
+        <a href="User Interface (UI) Design.html">User Interface (UI) Design</a>
+        <ul>
+            <li><a href="UI Design Patterns.html">UI Design Patterns</a></li>
+            <li><a href="Responsive Design.html">Responsive Design</a></li>
+            <li><a href="Design Systems.html">Design Systems</a></li>
+            <li><a href="Mobile UI Design.html">Mobile UI Design</a></li>
+        </ul>
+    
+        <h3>User Experience (UX) Design</h3>
+        <a href="User Experience (UX) Design.html">User Experience (UX) Design</a>
+        <ul>
+            <li><a href="Information Architecture.html">Information Architecture</a></li>
+            <li><a href="Interaction Design.html">Interaction Design</a></li>
+            <li><a href="Usability Testing.html">Usability Testing</a></li>
+            <li><a href="User Flows and Journey Mapping.html">User Flows and Journey Mapping</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics design.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Design for Accessibility.html">Design for Accessibility</a></li>
+            <li><a href="Design Thinking.html">Design Thinking</a></li>
+            <li><a href="UI UX Design Trends.html">UI/UX Design Trends</a></li>
+            <li><a href="Portfolio Building.html">Portfolio Building</a></li>
+            <li><a href="Career Development.html">Career Development</a></li>
+        </ul>
+    </div>
+    
+   
+   
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Ui UXRoadmaps.html";
+    }
+    function goNext() {
+        window.location.href = "What is UI UX.html";
+    }
+        </script>
+       
+       
+       <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-vector-square" style="font-size: 80px; padding-left: 16px; color: #ff9800;"></i>
+                <h2 class="jk">UI/UX Design</h2>
+                <div class="div1">Introduction to UI/UX</div>
+            </div>
+    
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>  <h2>What is UI/UX Design ?</h2>
+            <p><strong>UI (User Interface) Design</strong> and <strong>UX (User Experience) Design</strong> are two closely related fields that focus on designing and improving the interaction between users and digital products. While UI design focuses on the visual and interactive aspects of a product, UX design encompasses the overall experience a user has when interacting with the product.</p>
+
+            <h2>Key Concepts in UI Design</h2>
+            <ul>
+                <li><strong>Visual Design:</strong> This involves the look and feel of the user interface, including colors, typography, and layout.</li>
+                <li><strong>Interactivity:</strong> UI design focuses on how users interact with the product, such as buttons, menus, and other interactive elements.</li>
+                <li><strong>Consistency:</strong> Ensuring a consistent visual style and interaction pattern throughout the product helps users understand and navigate it more easily.</li>
+                <li><strong>Responsiveness:</strong> Designing interfaces that work well on various devices and screen sizes, ensuring a seamless experience for all users.</li>
+            </ul>
+
+            <h2>Key Concepts in UX Design</h2>
+            <ul>
+                <li><strong>User Research:</strong> Understanding the needs, behaviors, and pain points of users through methods like surveys, interviews, and observations.</li>
+                <li><strong>Information Architecture:</strong> Organizing and structuring content in a way that is intuitive and easy for users to navigate.</li>
+                <li><strong>Wireframing:</strong> Creating simple, low-fidelity designs to outline the structure and layout of a product before adding detailed design elements.</li>
+                <li><strong>Prototyping:</strong> Developing interactive models of the product to test and refine the user experience before the final design is implemented.</li>
+                <li><strong>Usability Testing:</strong> Evaluating the product with real users to identify issues and areas for improvement in the user experience.</li>
+            </ul>
+
+            <h2>How UI and UX Design Work Together</h2>
+            <p>UI and UX design are interdependent and should work together to create a cohesive and effective product. UI design ensures that the product is visually appealing and easy to interact with, while UX design ensures that the product meets user needs and provides a smooth, enjoyable experience.</p>
+
+            <h2>Free Resources for Practice</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://www.figma.com/resources/learn-design/" target="_blank">Figma Learn Design</a> - Free resources and tutorials on UI/UX design using Figma.</li>
+                    <li><a href="https://www.canva.com/learn/ui-ux-design/" target="_blank">Canva Learn UI/UX Design</a> - Educational materials on UI/UX design principles and practices.</li>
+                    <li><a href="https://www.invisionapp.com/inside-design/category/ux-design/" target="_blank">InVision UX Design Resources</a> - Articles, guides, and resources on UX design.</li>
+                    <li><a href="https://www.smashingmagazine.com/category/uxdesign" target="_blank">Smashing Magazine UX Design</a> - In-depth articles and tutorials on UX design.</li>
+                    <li><a href="https://uxdesign.cc/" target="_blank">UX Design.cc</a> - A platform for learning about UX design through articles and case studies.</li>
+                    <li><a href="https://www.interaction-design.org/learn" target="_blank">Interaction Design Foundation</a> - Free courses and materials on UX and interaction design.</li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>UI/UX Design is crucial for creating digital products that are both visually appealing and user-friendly. Understanding the principles of UI and UX helps designers craft experiences that meet user needs and enhance overall satisfaction. By utilizing the free resources available, you can practice and improve your design skills effectively.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div></div>
+    </div>
+
+   
+    
+</body>
+</html>

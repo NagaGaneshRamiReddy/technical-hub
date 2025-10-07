@@ -1,0 +1,329 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Rust Proagramming Language</title>
+   
+   
+   
+    <head>
+    
+        <body class="body">
+ 
+            <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+            
+                <div id="main" class="main">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                
+                    <button class="openbtn homebtn" onclick="goHome()">
+                        &#8962; Home
+                    </button>
+                    <button class="openbtn compbtn" onclick="gocomp()">
+                        <i class="fas fa-code"></i> Rust Compiler
+                    </button>
+                    <button class="openbtn videobtn" onclick="govideo()">
+                        <i class="fas fa-video"></i> Video
+                    </button>
+                    <button class="openbtn labs" onclick="goprojects()">
+                   
+                        <i class="fas fa-folder-open"></i> Projects
+                    </button>
+                    <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                        <i class="fas fa-user-tie"></i> Interview Preparation
+                    </button>
+                    <button class="openbtn quizbtn" onclick="goquizpro()">
+                        <i class="fas fa-question-circle"></i> Rust Quiz
+                    </button>
+                </div></div>
+            </header>
+            
+            
+            
+            
+            
+            
+          
+          
+              
+               
+              
+        
+              
+             <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+                  
+                    
+                     
+        
+                </div>
+            </header>
+            <br><br><br>
+            
+            <div id="mySidebar" class="sidebar">
+                <!-- Top Box with Icon and Title -->
+                <div class="top-box">
+                  
+                    <i class="fab fa-rust" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+                    <h2 class="jk">Rust Tutorial</h2>
+                </div>
+            
+                <!-- Close button and sidebar content -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Rust.html" target="_blank"><b class="b12">Rust Roadmap</b></a>   
+        <ul>
+            <a href="Introduction to Rust.html">Introduction to Rust</a>
+            <li><a href="What is Rust.html">What is Rust?</a></li>
+            <li><a href="Rust Features.html">Rust Features</a></li>
+            <li><a href="Rust Installation.html">Rust Installation</a></li>
+            <li><a href="First Rust Program.html">First Rust Program</a></li>
+            <li>
+               <h3> Control Statements</h3>
+                <ul>
+                    <li><a href="Rust if-else.html">Rust if-else</a></li>
+                    <li><a href="Rust if in a let.html">Rust if in a let</a></li>
+                    <li><a href="Rust Loop.html">Rust Loop</a></li>
+                    <li><a href="Rust While Loop.html">Rust While Loop</a></li>
+                    <li><a href="Rust For Loop.html">Rust For Loop</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Ownership</h3>
+                <ul>
+                    <li><a href="What is Ownership.html">What is Ownership?</a></li>
+                    <li><a href="Rust References & Borrowing.html">References & Borrowing</a></li>
+                    <li><a href="Rust Slices.html">Slices</a></li>
+                    <li><a href="Rust Structs.html">Structs</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Enums</h3>
+                <ul>
+                    <li><a href="What is enum.html">What is Enum?</a></li>
+                    <li><a href="Match Operator.html">Match Operator</a></li>
+                    <li><a href="If Let Operator.html">If Let Operator</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Modules</h3>
+                <ul>
+                    <li><a href="Rust Filesystem.html">Filesystem</a></li>
+                    <li><a href="Controlling visibility with pub.html">Controlling Visibility with pub</a></li>
+                    <li><a href="Rust use Keyword.html">use Keyword</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Collections</h3>
+                <ul>
+                    <li><a href="Rust Vectors.html">Vectors</a></li>
+                    <li><a href="Rust Strings.html">Strings</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Error Handling</h3>
+                <ul>
+                    <li><a href="Unrecoverable Errors.html">Unrecoverable Errors</a></li>
+                    <li><a href="Recoverable Errors.html">Recoverable Errors</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Generics & Traits</h3>
+                <ul>
+                    <li><a href="Rust Generics.html">Generics</a></li>
+                    <li><a href="Rust Traits.html">Traits</a></li>
+                    <li><a href="Rust Lifetime.html">Lifetime</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Smart Pointers</h3>
+                <ul>
+                    <li><a href="Smart Pointers.html">Smart Pointers</a></li>
+                    <li><a href="Rust Box.html">Box&lt;T&gt;</a></li>
+                    <li><a href="Rust Deref Trait.html">Deref Trait</a></li>
+                    <li><a href="Rust Drop Trait.html">Drop Trait</a></li>
+                    <li><a href="Rust Rc(T).html">Rc&lt;T&gt;</a></li>
+                    <li><a href="Rust RefCell(T).html">RefCell&lt;T&gt;</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Rust_interviews.html";
+}
+function goprojects() {
+    window.location.href = "Rust_projects.html";
+}
+function goquizpro() {
+    window.location.href = "Rust_quize.html";
+}
+function gocomp() {
+    window.location.href = "Rust Compiler.html";
+}
+   
+    function goPrevious() {
+        window.location.href = "What is enum.html";
+    }
+    function goNext() {
+        window.location.href = "If Let Operator.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-rust" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">Rust Tutorial</h2>
+            <div class="div1">Rust Match Operator</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Understanding the Match Operator</h2>
+<p>The <strong>match</strong> operator in Rust is a powerful control flow structure that allows you to compare a value against a series of patterns and execute code based on which pattern matches. It is similar to switch statements in other languages but is more expressive and safer.</p>
+
+<h2>Basic Syntax</h2>
+<p>The basic syntax of a match expression is as follows:</p>
+
+<div class="example">
+    <pre><code>match value {
+    pattern1 => expression1,
+    pattern2 => expression2,
+    _ => default_expression, // Optional default case
+}</code></pre>
+</div>
+
+<h2>Example of Match Operator</h2>
+<p>Here’s a simple example that demonstrates how to use the match operator:</p>
+
+<div class="example">
+    <pre><code>fn main() {
+    let number = 2;
+
+    match number {
+        1 => println!("One!"),
+        2 => println!("Two!"),
+        3 => println!("Three!"),
+        _ => println!("Not one, two, or three!"), // Default case
+    }
+}</code></pre>
+</div>
+
+<h2>Matching Enums</h2>
+<p>The match operator is particularly useful when working with enums. Here’s an example:</p>
+
+<div class="example">
+    <pre><code>enum Color {
+    Red,
+    Green,
+    Blue,
+}
+
+fn main() {
+    let color = Color::Green;
+
+    match color {
+        Color::Red => println!("The color is red."),
+        Color::Green => println!("The color is green."),
+        Color::Blue => println!("The color is blue."),
+    }
+}</code></pre>
+</div>
+
+<h2>Multiple Patterns</h2>
+<p>You can also match multiple patterns with a single arm:</p>
+
+<div class="example">
+    <pre><code>fn main() {
+    let number = 1;
+
+    match number {
+        1 | 2 => println!("One or Two!"),
+        3 => println!("Three!"),
+        _ => println!("Not one, two, or three!"),
+    }
+}</code></pre>
+</div>
+
+<h2>Destructuring with Match</h2>
+<p>The match operator can also destructure complex data types like structs and tuples:</p>
+
+<div class="example">
+    <pre><code>struct Point {
+    x: i32,
+    y: i32,
+}
+
+fn main() {
+    let point = Point { x: 10, y: 20 };
+
+    match point {
+        Point { x, y: 0 } => println!("On the X-axis at {}", x),
+        Point { x: 0, y } => println!("On the Y-axis at {}", y),
+        Point { x, y } => println!("Point at ({}, {})", x, y),
+    }
+}</code></pre>
+</div>
+
+
+
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://doc.rust-lang.org/book/ch06-02-match.html" target="_blank">The Rust Programming Language: Match Operator</a></li>
+        <li><a href="https://doc.rust-lang.org/rust-by-example/flow_control/match.html" target="_blank">Rust by Example: Match Operator</a></li>
+        <li><a href="https://doc.rust-lang.org/book/ch18-02-using-structs.html" target="_blank">Using Structs</a></li>
+    </ul>
+</div>
+<h2>Summary</h2>
+<p>The match operator in Rust provides a powerful way to control the flow of your program based on pattern matching. Its ability to match different types of data, including enums and complex structures, makes it a versatile tool for Rust developers.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>

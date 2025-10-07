@@ -1,0 +1,618 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>C++ Language Roadmap</title>
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                C++ programming language
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to C++</h3>
+        <a href="Introduction to C++.html">Introduction to C++</a>
+        <ul>
+            <li><a href="History of C++.html">History of C++</a></li>
+            <li><a href="Setting up C++ Environment.HTML">Setting up C++ Environment</a></li>
+            <li><a href="Hello program in c++.html">Hello World Program</a></li>
+        </ul>
+    
+        <h3>Basic C++ Syntax</h3>
+        <a href="Basic C++ Syntax.html">Basic C++ Syntax</a>
+        <ul>
+            <li><a href="variables in c++.html">Variables and Data Types</a></li>
+            <li><a href="Operators in c++.html">Operators</a></li>
+            <li><a href="Control Statements C++.html">Control Statements</a></li>
+            <ul>
+                <li><a href="ifstatementsc++.html">If-else Statements</a></li>
+                <li><a href="Switch Statement C++.html">Switch Statement</a></li>
+                <li><a href="Loops C++.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop C++.html">For Loop</a></li>
+                    <li><a href="While Loop C++.html">While Loop</a></li>
+                    <li><a href="Do-While Loop C++.html">Do-While Loop</a></li>
+                </ul>
+            </ul>
+        </ul>
+    
+        <h3>Arrays</h3>
+        <a href="Arrays C++.html">Arrays</a>
+        <ul>
+            <li><a href="Array Types in C++.html">Array Types</a></li>
+            <li><a href="Array Operations C++.html">Array Operations</a></li>
+        </ul>
+    
+        <h3>Strings</h3>
+        <a href="Strings C++.html">Strings</a>
+        <ul>
+            <li><a href="String Methods C++.html">String Methods</a></li>
+            <li><a href="String Operations C++.html">String Operations</a></li>
+        </ul>
+    
+        <h3>Functions in C++</h3>
+        <a href="Functions in C++.html">Functions in C++</a>
+        <ul>
+            <li><a href="Function Basics C++.html">Function Basics</a></li>
+            <li><a href="Function Overloading C++.html">Function Overloading</a></li>
+            <li><a href="Inline Functions C++.html">Inline Functions</a></li>
+            <li><a href="Recursion C++.html">Recursion</a></li>
+        </ul>
+    
+        <h3>Pointers</h3>
+        <a href="Pointers C++.html">Pointers</a>
+        <ul>
+            <li><a href="Basics of Pointers C++.html">Basics of Pointers</a></li>
+            <li><a href="Pointer Arithmetic C++.html">Pointer Arithmetic</a></li>
+            <li><a href="Pointers and Arrays C++.html">Pointers and Arrays</a></li>
+            <li><a href="Pointers and Functions C++.html">Pointers and Functions</a></li>
+            <li><a href="Dynamic Memory Allocation C++.html">Dynamic Memory Allocation</a></li>
+            <li><a href="Smart Pointers C++.html">Smart Pointers</a></li>
+        </ul>
+    
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming C++.html">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects C++.html">Classes and Objects</a></li>
+            <li><a href="Constructors and Destructors in C++.html">Constructors and Destructors</a></li>
+            <li><a href="Inheritance C++.html">Inheritance</a></li>
+            <li><a href="Polymorphism in C++.html">Polymorphism</a></li>
+            <li><a href="Abstraction C++.html">Abstraction</a></li>
+            <li><a href="Encapsulation inC++.html">Encapsulation</a></li>
+            <li><a href="Operator Overloading C++.html">Operator Overloading</a></li>
+            <li><a href="Friend Functions C++.html">Friend Functions</a></li>
+            <li><a href="Interfaces in C++.html">Interfaces</a></li>
+            <li><a href="Templates C++.html">Templates</a></li>
+        </ul>
+    
+        <h3>Advanced C++ Concepts</h3>
+        <a href="Advanced C++ Concepts.html">Advanced C++ Concepts</a>
+        <ul>
+            <li><a href="Exception Handling.html">Exception Handling</a></li>
+            <li><a href="File i-o in C++.html">File I/O</a></li>
+            <li><a href="Standard Template Library (STL).html">Standard Template Library (STL)</a></li>
+            <ul>
+                <li><a href="Vectors in C++.html">Vectors</a></li>
+                <li><a href="Lists C++.html">Lists</a></li>
+                <li><a href="Deques in C++.html">Deques</a></li>
+                <li><a href="Stacks C++.html">Stacks</a></li>
+                <li><a href="Queues .html">Queues</a></li>
+                <li><a href="Priority Queues C++.html">Priority Queues</a></li>
+                <li><a href="Sets in C++.html">Sets</a></li>
+                <li><a href="Maps in C++.html">Maps</a></li>
+            </ul>
+            <li><a href="Multithreading c++.html">Multithreading</a></li>
+            <li><a href="Move Semantics C++.html">Move Semantics</a></li>
+            <li><a href="Lambda Expressions C++.html">Lambda Expressions</a></li>
+            <li><a href="Concurrency in C++.html">Concurrency</a></li>
+        </ul>
+    </div>
+      
+        
+    
+    
+
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C++ Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gocomp() {
+    window.location.href = "C++ Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "String Methods C++.html";
+    }
+    function goNext() {
+        window.location.href = "Functions in C++.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">String Operations in C++</div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>In C++, the <code>std::string</code> class provides a robust set of operations for manipulating text. This includes operations like concatenation, comparison, substring extraction, and more. Mastering these operations is crucial for effectively handling and processing string data in your programs.</p>
+
+        <h2>Concatenation</h2>
+        <p>Concatenation is the process of joining two or more strings into a single string. In C++, this can be achieved using the <code>operator+</code> or the <code>append()</code> method.</p>
+        <pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+    std::string str1 = "Hello, ";
+    std::string str2 = "World!";
+
+    // Concatenate using operator+
+    std::string result1 = str1 + str2;
+    std::cout &lt;&lt; "Concatenated using operator+: " &lt;&lt; result1 &lt;&lt; std::endl;
+
+    // Concatenate using append()
+    str1.append(str2);
+    std::cout &lt;&lt; "Concatenated using append(): " &lt;&lt; str1 &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+        <p>Methods:</p>
+        <ul>
+            <li><code>operator+</code> - Joins two strings.</li>
+            <li><code>append()</code> - Adds a string to the end of the current string.</li>
+        </ul>
+
+        <h2>Comparison</h2>
+        <p>Comparing strings involves checking if they are equal, or determining their lexicographical order. This can be done using relational operators or the <code>compare()</code> method.</p>
+        <pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+    std::string str1 = "apple";
+    std::string str2 = "banana";
+
+    // Compare using relational operators
+    if (str1 == str2) {
+        std::cout &lt;&lt; "Strings are equal." &lt;&lt; std::endl;
+    } else if (str1 &lt; str2) {
+        std::cout &lt;&lt; "str1 is less than str2." &lt;&lt; std::endl;
+    } else {
+        std::cout &lt;&lt; "str1 is greater than str2." &lt;&lt; std::endl;
+    }
+
+    // Compare using compare()
+    int result = str1.compare(str2);
+    std::cout &lt;&lt; "Comparison result: " &lt;&lt; result &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+        <p>Methods:</p>
+        <ul>
+            <li><code>operator==</code>, <code>operator<</code>, etc. - Compares strings for equality or order.</li>
+            <li><code>compare()</code> - Compares the string with another string or substring.</li>
+        </ul>
+
+        <h2>Substring Extraction</h2>
+        <p>Extracting substrings involves retrieving a part of a string. This is commonly done using the <code>substr()</code> method.</p>
+        <pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+    std::string str = "Hello, World!";
+
+    // Extract a substring
+    std::string sub = str.substr(7, 5);  // Starts at index 7, length 5
+    std::cout &lt;&lt; "Substring: " &lt;&lt; sub &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+        <p>Methods:</p>
+        <ul>
+            <li><code>substr(pos, len)</code> - Extracts a substring starting from <code>pos</code> with length <code>len</code>.</li>
+        </ul>
+
+        <h2>Finding Substrings</h2>
+        <p>Finding a substring within a string helps in locating its position. This can be done using the <code>find()</code> method.</p>
+        <pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+    std::string str = "The quick brown fox";
+
+    // Find a substring
+    std::size_t found = str.find("brown");
+    if (found != std::string::npos) {
+        std::cout &lt;&lt; "'brown' found at index: " &lt;&lt; found &lt;&lt; std::endl;
+    }
+
+    return 0;
+}
+</code></pre>
+        <p>Methods:</p>
+        <ul>
+            <li><code>find(substring)</code> - Finds the index of the first occurrence of <code>substring</code>.</li>
+            <li><code>rfind(substring)</code> - Finds the index of the last occurrence of <code>substring</code>.</li>
+        </ul>
+
+        <h2>Replacing Substrings</h2>
+        <p>Replacing a substring involves substituting part of a string with another string. This can be done using the <code>replace()</code> method.</p>
+        <pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+    std::string str = "The quick brown fox";
+
+    // Replace a substring
+    std::size_t found = str.find("brown");
+    if (found != std::string::npos) {
+        str.replace(found, 5, "red");
+    }
+    std::cout &lt;&lt; "Modified string: " &lt;&lt; str &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+        <p>Methods:</p>
+        <ul>
+            <li><code>replace(pos, len, new_substring)</code> - Replaces part of the string starting from <code>pos</code> with length <code>len</code> with <code>new_substring</code>.</li>
+        </ul>
+
+        <h2>Other Operations</h2>
+        <p>Additional operations include trimming, converting to uppercase or lowercase, and more. C++ standard library does not include direct methods for these operations, but they can be implemented using standard functions.</p>
+        <pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;algorithm&gt>
+
+int main() {
+    std::string str = "   Hello, World!   ";
+
+    // Trim whitespace from both ends
+    str.erase(str.find_last_not_of(" ") + 1);
+    str.erase(0, str.find_first_not_of(" "));
+
+    std::cout &lt;&lt; "Trimmed string: '" &lt;&lt; str &lt;&lt; "'" &lt;&lt; std::endl;
+
+    // Convert to uppercase
+    std::transform(str.begin(), str.end(), str.begin(), ::toupper);
+    std::cout &lt;&lt; "Uppercase string: " &lt;&lt; str &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+        <p>Methods:</p>
+        <ul>
+            <li><code>erase(pos, len)</code> - Removes characters starting from <code>pos</code> with length <code>len</code>.</li>
+            <li><code>transform()</code> - Applies a function to each character in the string (e.g., to convert to uppercase).</li>
+        </ul>
+
+        <h2>Summary</h2>
+        <p>String operations in C++ provide essential functionalities for manipulating text data. Whether you need to concatenate strings, compare them, extract substrings, or perform other modifications, understanding these operations will help you handle strings efficiently in your programs.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

@@ -1,0 +1,720 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Basic Data Structures.html";
+    }
+    function goNext() {
+        window.location.href = "Linked Lists DSA.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1">Arrays</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction to Arrays</h2>
+        <p>An array is a fundamental data structure in computer science that holds a fixed-size sequence of elements of the same type. Arrays provide efficient access and manipulation of elements through indexing, making them essential for various algorithms and applications.</p>
+        
+        
+       
+        
+            <style>
+               
+               
+        
+                .container {
+                    text-align: center;
+                }
+        
+                .array {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 20px 0;
+                    position: relative;
+                }
+        
+                .element {
+                    width: 60px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid #007bff;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                    margin: 0 10px;
+                    position: relative;
+                    font-size: 18px;
+                    transition: transform 0.5s ease, background-color 0.5s ease;
+                }
+        
+                .element.highlight {
+                    background-color: #28a745;
+                    color: #ffffff;
+                    transform: scale(1.1);
+                }
+        
+              
+                
+                .description {
+                    background-color: #ffffff;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin: 20px auto;
+                    max-width: 800px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+                }
+        
+                .description h2 {
+                    font-size: 24px;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+        
+                .description p {
+                    font-size: 18px;
+                    color: #555;
+                    line-height: 1.6;
+                }
+        
+                .description ul {
+                    list-style-type: disc;
+                    padding-left: 20px;
+                }
+        
+                .description li {
+                    margin-bottom: 10px;
+                }
+        
+                @media (max-width: 600px) {
+                    .description {
+                        padding: 15px;
+                    }
+        
+                    .description h2 {
+                        font-size: 20px;
+                    }
+        
+                    .description p {
+                        font-size: 16px;
+                    }
+                }
+        
+                button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    background-color: #00fb26;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+        
+                button:hover {
+                    background-color: #0056b3;
+                }
+        
+                @keyframes slideIn {
+                    from {
+                        transform: translateX(100%);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+        
+                @keyframes slideOut {
+                    from {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                    to {
+                        transform: translateX(-100%);
+                        opacity: 0;
+                    }
+                }
+        
+                .add-element {
+                    animation: slideIn 0.5s forwards;
+                }
+        
+                .remove-element {
+                    animation: slideOut 0.5s forwards;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Array Animation</h1>
+                <div class="array" id="array">
+                    <div class="element" id="elem1">1</div>
+                    <div class="element" id="elem2">2</div>
+                    <div class="element" id="elem3">3</div>
+                </div>
+                <button onclick="addElement()">Add Element</button>
+                <button onclick="removeElement()">Remove Element</button>
+                <button onclick="highlightElement()">Highlight Element</button>
+                <div class="description">
+                    <p><strong>Array Operations:</strong></p>
+                    <ul>
+                        <li><strong>Add Element:</strong> Adds a new element to the end of the array.</li>
+                        <li><strong>Remove Element:</strong> Removes the last element from the array.</li>
+                        <li><strong>Highlight Element:</strong> Highlights a specific element to show access.</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <script>
+                let counter = 4;
+        
+                function addElement() {
+                    const array = document.getElementById('array');
+                    const newElement = document.createElement('div');
+                    newElement.classList.add('element', 'add-element');
+                    newElement.innerText = counter++;
+                    array.appendChild(newElement);
+                }
+        
+                function removeElement() {
+                    const array = document.getElementById('array');
+                    const lastElement = array.lastElementChild;
+                    if (lastElement) {
+                        lastElement.classList.add('remove-element');
+                        setTimeout(() => lastElement.remove(), 500);
+                    }
+                }
+        
+                function highlightElement() {
+                    const array = document.getElementById('array');
+                    const elements = array.getElementsByClassName('element');
+                    for (let i = 0; i < elements.length; i++) {
+                        elements[i].classList.remove('highlight');
+                    }
+                    if (elements.length > 0) {
+                        elements[Math.floor(Math.random() * elements.length)].classList.add('highlight');
+                    }
+                }
+            </script>
+       
+       
+        <h2>1. Arrays in C</h2>
+        <p>Arrays in C are declared with a fixed size and can be accessed using indices. Here's a basic example of using arrays in C:</p>
+        <pre>
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    // Declare an array of integers
+    int numbers[5] = {1, 2, 3, 4, 5};
+
+    // Print array elements
+    for (int i = 0; i &lt; 5; i++) {
+        printf("Element at index %d: %d\\n", i, numbers[i]);
+    }
+
+    return 0;
+}
+</code>
+        </pre>
+        <p><strong>Real-World Problem:</strong> Suppose you need to store the daily temperatures for a week and print them. You can use an array to store these temperatures and iterate through the array to display them.</p>
+
+        <h2>2. Arrays in C++</h2>
+        <p>In C++, arrays are similar to C but provide additional features such as standard template libraries (STL). Here’s a basic example:</p>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+
+int main() {
+    // Declare an array of integers
+    int numbers[5] = {1, 2, 3, 4, 5};
+
+    // Print array elements
+    for (int i = 0; i &lt; 5; i++) {
+        std::cout &lt;&lt; "Element at index " &lt;&lt; i &lt;&lt; ": " &lt;&lt; numbers[i] &lt;&lt; std::endl;
+    }
+
+    return 0;
+}
+</code>
+        </pre>
+        <p><strong>Real-World Problem:</strong> Imagine a scenario where you need to store and sort student scores. Arrays in C++ can be used along with STL algorithms to sort the scores efficiently.</p>
+
+        <h2>3. Arrays in Java</h2>
+        <p>Java arrays are objects that store multiple variables of the same type. Here’s a basic example:</p>
+        <pre>
+<code>
+public class Main {
+    public static void main(String[] args) {
+        // Declare an array of integers
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Print array elements
+        for (int i = 0; i &lt; numbers.length; i++) {
+            System.out.println("Element at index " + i + ": " + numbers[i]);
+        }
+    }
+}
+</code>
+        </pre>
+        <p><strong>Real-World Problem:</strong> Consider a situation where you need to manage a list of employee IDs. Arrays in Java can be used to store and access employee IDs efficiently.</p>
+
+        <h2>4. Arrays in Python</h2>
+        <p>In Python, arrays are implemented using lists, which are dynamic and can hold different types of elements. Here’s a basic example:</p>
+        <pre>
+<code>
+# Declare a list of integers
+numbers = [1, 2, 3, 4, 5]
+
+# Print list elements
+for i in range(len(numbers)):
+    print(f"Element at index {i}: {numbers[i]}")
+</code>
+        </pre>
+        <p><strong>Real-World Problem:</strong> Suppose you need to track user scores in a game. You can use Python lists to store and update user scores as needed.</p>
+        <h1> Solve Array Problems</h1>
+        <div class="resources">
+        <style>
+           
+           
+            select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #46e800;
+                border-radius: 5px;
+            }
+    
+            option {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        
+        <div id="problems-list">
+            <h2>LeetCode</h2>
+            <div class="difficulty" id="leetcode">
+                <h3>Easy</h3>
+                <select id="leetcode-easy">
+                    <option value="">Select an Easy Problem</option>
+                </select>
+                <h3>Medium</h3>
+                <select id="leetcode-medium">
+                    <option value="">Select a Medium Problem</option>
+                </select>
+                <h3>Hard</h3>
+                <select id="leetcode-hard">
+                    <option value="">Select a Hard Problem</option>
+                </select>
+            </div>
+    
+            <h2>GeeksforGeeks</h2>
+            <div class="difficulty" id="geeksforgeeks">
+                <h3>Easy</h3>
+                <select id="geeksforgeeks-easy">
+                    <option value="">Select an Easy Problem</option>
+                </select>
+                <h3>Medium</h3>
+                <select id="geeksforgeeks-medium">
+                    <option value="">Select a Medium Problem</option>
+                </select>
+                <h3>Hard</h3>
+                <select id="geeksforgeeks-hard">
+                    <option value="">Select a Hard Problem</option>
+                </select>
+            </div>
+    
+            <h2>CodeChef</h2>
+            <div class="difficulty" id="codechef">
+                <h3>Easy</h3>
+                <select id="codechef-easy">
+                    <option value="">Select an Easy Problem</option>
+                </select>
+                <h3>Medium</h3>
+                <select id="codechef-medium">
+                    <option value="">Select a Medium Problem</option>
+                </select>
+                <h3>Hard</h3>
+                <select id="codechef-hard">
+                    <option value="">Select a Hard Problem</option>
+                </select>
+            </div>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const problems = {
+                    leetcode: {
+                        easy: [
+                            { name: 'Two Sum', url: 'https://leetcode.com/problems/two-sum/' },
+                            { name: 'Best Time to Buy and Sell Stock', url: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/' },
+                            { name: 'Move Zeroes', url: 'https://leetcode.com/problems/move-zeroes/' },
+                            { name: 'Single Number', url: 'https://leetcode.com/problems/single-number/' },
+                            { name: 'Intersection of Two Arrays II', url: 'https://leetcode.com/problems/intersection-of-two-arrays-ii/' }
+                        ],
+                        medium: [
+                            { name: '3Sum', url: 'https://leetcode.com/problems/3sum/' },
+                            { name: 'Longest Substring Without Repeating Characters', url: 'https://leetcode.com/problems/longest-substring-without-repeating-characters/' },
+                            { name: 'Container With Most Water', url: 'https://leetcode.com/problems/container-with-most-water/' },
+                            { name: 'Product of Array Except Self', url: 'https://leetcode.com/problems/product-of-array-except-self/' },
+                            { name: 'Group Anagrams', url: 'https://leetcode.com/problems/group-anagrams/' }
+                        ],
+                        hard: [
+                            { name: 'Median of Two Sorted Arrays', url: 'https://leetcode.com/problems/median-of-two-sorted-arrays/' },
+                            { name: 'Trapping Rain Water', url: 'https://leetcode.com/problems/trapping-rain-water/' },
+                            { name: 'Reverse Pairs', url: 'https://leetcode.com/problems/reverse-pairs/' },
+                            { name: 'Largest Rectangle in Histogram', url: 'https://leetcode.com/problems/largest-rectangle-in-histogram/' },
+                            { name: 'First Missing Positive', url: 'https://leetcode.com/problems/first-missing-positive/' }
+                        ]
+                    },
+                    geeksforgeeks: {
+                        easy: [
+                            { name: 'Find the Missing Number', url: 'https://www.geeksforgeeks.org/find-the-missing-number/' },
+                            { name: 'Sort an Array of 0s, 1s and 2s', url: 'https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/' },
+                            { name: 'Find the Duplicate Number', url: 'https://www.geeksforgeeks.org/find-duplicate-number-array/' },
+                            { name: 'Count the Inversions', url: 'https://www.geeksforgeeks.org/count-inversions/' },
+                            { name: 'Maximum Subarray Sum', url: 'https://www.geeksforgeeks.org/maximum-subarray-sum-2/' }
+                        ],
+                        medium: [
+                            { name: 'Longest Consecutive Subsequence', url: 'https://www.geeksforgeeks.org/longest-consecutive-subsequence/' },
+                            { name: 'Subarray with Given Sum', url: 'https://www.geeksforgeeks.org/subarray-with-given-sum/' },
+                            { name: 'Minimum Swaps Required', url: 'https://www.geeksforgeeks.org/minimum-swaps-required-sort-array/' },
+                            { name: 'Find Pair with Given Sum', url: 'https://www.geeksforgeeks.org/find-pair-with-given-sum-in-the-array/' },
+                            { name: 'Max Product Subarray', url: 'https://www.geeksforgeeks.org/maximum-product-subarray/' }
+                        ],
+                        hard: [
+                            { name: 'Merge Intervals', url: 'https://www.geeksforgeeks.org/merge-intervals/' },
+                            { name: 'Largest Rectangle in Histogram', url: 'https://www.geeksforgeeks.org/largest-rectangle-in-histogram/' },
+                            { name: 'Median of Two Sorted Arrays', url: 'https://www.geeksforgeeks.org/median-of-two-sorted-arrays/' },
+                            { name: 'Kth Largest Element in an Array', url: 'https://www.geeksforgeeks.org/kth-largest-element-in-an-array/' },
+                            { name: 'Max Sum Rectangle in a Matrix', url: 'https://www.geeksforgeeks.org/maximum-sum-rectangle-in-a-matrix/' }
+                        ]
+                    },
+                    codechef: {
+                        easy: [
+                            { name: 'Life, the Universe, and Everything', url: 'https://www.codechef.com/problems/TEST' },
+                            { name: 'Reverse the Number', url: 'https://www.codechef.com/problems/REVERSE' },
+                            { name: 'Small Factorials', url: 'https://www.codechef.com/problems/FCTRL' },
+                            { name: 'Odd Sum', url: 'https://www.codechef.com/problems/ODD_SUM' },
+                            { name: 'ATM', url: 'https://www.codechef.com/problems/ATM' }
+                        ],
+                        medium: [
+                            { name: 'Chef and Operations', url: 'https://www.codechef.com/problems/CHEFOP' },
+                            { name: 'Two Numbers', url: 'https://www.codechef.com/problems/TWONUM' },
+                            { name: 'Chef and Subarrays', url: 'https://www.codechef.com/problems/CHEFSUB' },
+                            { name: 'Combining Powers', url: 'https://www.codechef.com/problems/COMBPOW' },
+                            { name: 'Array Splitting', url: 'https://www.codechef.com/problems/ARRSPLIT' }
+                        ],
+                        hard: [
+                            { name: 'Chef and Operations II', url: 'https://www.codechef.com/problems/CHEFOP2' },
+                            { name: 'XOR Array', url: 'https://www.codechef.com/problems/XORARRAY' },
+                            { name: 'Chef and a Matrix', url: 'https://www.codechef.com/problems/CHEFMAT' },
+                            { name: 'Magic Array', url: 'https://www.codechef.com/problems/MAGICARR' },
+                            { name: 'Max Sum After K Operations', url: 'https://www.codechef.com/problems/MAXSUMK' }
+                        ]
+                    }
+                };
+    
+                function populateSelect(platform) {
+                    const platformDiv = document.getElementById(platform);
+                    for (const [difficulty, problemsList] of Object.entries(problems[platform])) {
+                        const select = platformDiv.querySelector(`#${platform}-${difficulty}`);
+                        problemsList.forEach(problem => {
+                            const option = document.createElement('option');
+                            option.value = problem.url;
+                            option.textContent = problem.name;
+                            select.appendChild(option);
+                        });
+    
+                        // Add event listener to open the link when a problem is selected
+                        select.addEventListener('change', (event) => {
+                            const url = event.target.value;
+                            if (url) {
+                                window.open(url, '_blank');
+                            }
+                        });
+                    }
+                }
+    
+                populateSelect('leetcode');
+                populateSelect('geeksforgeeks');
+                populateSelect('codechef');
+            });
+        </script>
+        
+</div>
+        <div class="resources">
+            <h2>Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Explore courses on Coursera and edX to deepen your understanding of arrays in various programming languages.</li>
+                <li><strong>Books</strong>: Books such as "Data Structures and Algorithm Analysis in C++" by Weiss provide comprehensive coverage of arrays and other data structures.</li>
+                <li><strong>Interactive Tools</strong>: Use online coding platforms to practice implementing and working with arrays.</li>
+            </ul></div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>  </div>
+       
+        

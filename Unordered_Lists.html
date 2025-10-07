@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>HTML</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> HTML Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+
+
+    
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-html5"  style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">HTML Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        
+        <a href="HTML Roadmaps.html" target="_blank"><b class="b12">HTML Roadmap</b></a>
+        <ul> <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+        
+             <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+            <li><a href="What_is_HTML.html" target="_blank">What is HTML?</a></li>
+            <li><a href="HTML_Installation.html" target="_blank">Installation</a></li>
+            <li><a href="First_HTML_Page.html" target="_blank">First HTML Page</a></li>
+        </ul>
+    
+        <h3>HTML Basics</h3>
+        <a href="HTML_Basics.html" target="_blank">HTML Basics</a>
+        <ul>
+            <li><a href="HTML_Tags.html" target="_blank">HTML Tags</a></li>
+            <li><a href="HTML_Attributes.html" target="_blank">HTML Attributes</a></li>
+            <li><a href="HTML_Elements.html" target="_blank">HTML Elements</a></li>
+        </ul>
+    
+        <h3>HTML Text Formatting</h3>
+        <a href="HTML_Text_Formatting.html" target="_blank">HTML Text Formatting</a>
+        <ul>
+            <li><a href="Headings.html" target="_blank">Headings</a></li>
+            <li><a href="Paragraphs.html" target="_blank">Paragraphs</a></li>
+            <li><a href="Text_Styles.html" target="_blank">Text Styles</a></li>
+        </ul>
+    
+        <h3>HTML Lists</h3>
+        <a href="HTML_Lists.html" target="_blank">HTML Lists</a>
+        <ul>
+            <li><a href="Ordered_Lists.html" target="_blank">Ordered Lists</a></li>
+            <li><a href="Unordered_Lists.html" target="_blank">Unordered Lists</a></li>
+            <li><a href="Nested_Lists.html" target="_blank">Nested Lists</a></li>
+        </ul>
+    
+        <h3>HTML Forms</h3>
+        <a href="HTML_Forms.html" target="_blank">HTML Forms</a>
+        <ul>
+            <li><a href="Form_Elements.html" target="_blank">Form Elements</a></li>
+            <li><a href="Form_Validation.html" target="_blank">Form Validation</a></li>
+            <li><a href="Input_Types.html" target="_blank">Input Types</a></li>
+        </ul>
+    
+        <h3>HTML Media</h3>
+        <a href="HTML_Media.html" target="_blank">HTML Media</a>
+        <ul>
+            <li><a href="Images.html" target="_blank">Images</a></li>
+            <li><a href="Audio.html" target="_blank">Audio</a></li>
+            <li><a href="Video.html" target="_blank">Video</a></li>
+        </ul>
+    
+        <h3>HTML Tables</h3>
+        <a href="HTML_Tables.html" target="_blank">HTML Tables</a>
+        <ul>
+            <li><a href="Basic_Tables.html" target="_blank">Basic Tables</a></li>
+            <li><a href="Table_Headers.html" target="_blank">Table Headers</a></li>
+            <li><a href="Table_Spanning.html" target="_blank">Table Spanning</a></li>
+        </ul>
+    
+        <h3>HTML Semantics</h3>
+        <a href="HTML_Semantics.html" target="_blank">HTML Semantics</a>
+        <ul>
+            <li><a href="Div_vs_Semantic_Tags.html" target="_blank">Div vs Semantic Tags</a></li>
+            <li><a href="Semantic_Elements.html" target="_blank">Semantic Elements</a></li>
+        </ul>
+    </div>
+    
+    
+    
+  
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "HTML_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "HTML_quize.html";
+}
+function goproject() {
+    window.location.href = "HTML_projects.html";
+}
+function gocomp() {
+    window.location.href = "html_compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Ordered_Lists.html";
+    }
+    function goNext() {
+        window.location.href = "Nested_Lists.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-html5" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">HTML Tutorial</h2>
+<div class="div1">Unordered Lists</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Understanding Unordered Lists in HTML</h2>
+<p>An unordered list is used to group a set of related items in no particular order. This is created using the <code>&lt;ul&gt;</code> tag, and each item within the list is defined using the <code>&lt;li&gt;</code> tag.</p>
+
+<h2>Basic Unordered List Example</h2>
+<p>Here’s how to create a simple unordered list:</p>
+
+<div class="example">
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</div>
+
+<h2>Unordered List with Different Styles</h2>
+<p>You can change the bullet style of unordered lists using the <code>list-style-type</code> property in CSS. Here are some options:</p>
+
+<div class="example">
+    <pre><code>&lt;ul style="list-style-type: disc;"&gt;  
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;ul style="list-style-type: circle;"&gt;  
+    &lt;li&gt;Item A&lt;/li&gt;
+    &lt;li&gt;Item B&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;ul style="list-style-type: square;"&gt; 
+    &lt;li&gt;Item i&lt;/li&gt;
+    &lt;li&gt;Item ii&lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <ul style="list-style-type: disc;">
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+
+    <ul style="list-style-type: circle;">
+        <li>Item A</li>
+        <li>Item B</li>
+    </ul>
+
+    <ul style="list-style-type: square;">
+        <li>Item i</li>
+        <li>Item ii</li>
+    </ul>
+</div>
+
+<h2>Nesting Unordered Lists</h2>
+<p>Unordered lists can be nested within one another. This is useful for creating sub-items:</p>
+
+<div class="example">
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Main Item 1
+        &lt;ul&gt;
+            &lt;li&gt;Sub Item 1.1&lt;/li&gt;
+            &lt;li&gt;Sub Item 1.2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Main Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output:</p>
+    <ul>
+        <li>Main Item 1
+            <ul>
+                <li>Sub Item 1.1</li>
+                <li>Sub Item 1.2</li>
+            </ul>
+        </li>
+        <li>Main Item 2</li>
+    </ul>
+</div>
+
+<h2>Styling Unordered Lists with CSS</h2>
+<p>Unordered lists can also be styled using CSS to improve their appearance:</p>
+
+<div class="example">
+    <pre><code>ul {
+    list-style-type: square;  /* Change to 'circle', 'disc', etc. */
+    padding: 10px;
+    margin: 0;
+    color: #333; /* Change text color */
+}</code></pre>
+</div>
+
+<div class="output">
+    <p>Expected Output: The list style will change according to the CSS applied.</p>
+</div>
+
+<h2>Resources</h2>
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">MDN Web Docs: The &lt;ul&gt; Element</a></li>
+        <li><a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank">W3Schools: HTML Unordered Lists</a></li>
+    </ul>
+</div>
+
+<h2>Summary</h2>
+<p>Unordered lists in HTML are essential for displaying items in no specific order. By using different styles and nesting lists, you can create structured and organized content effectively.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+</body>
+</html>

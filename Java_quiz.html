@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="interviews.css">
+    <title>Java Language Roadmap</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> Java Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="golabs()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Java Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "java_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Java_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+  
+
+        </script>
+      
+      
+       
+      
+    <script>
+        function toggleAnswer(button) {
+            const questionItem = button.closest('.question-item');
+            const allQuestionItems = document.querySelectorAll('.question-item');
+
+            // Close all open quiz containers
+            allQuestionItems.forEach(item => {
+                if (item !== questionItem) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Toggle the clicked question's quiz container
+            questionItem.classList.toggle('active');
+        }
+
+        function calculateScore(quizContainer, topicNumber) {
+            const options = quizContainer.querySelectorAll("input[type='radio']");
+            let score = 0;
+            options.forEach(option => {
+                if (option.checked && option.value === "1") {
+                    score += 1;
+                }
+            });
+
+            // Display score
+            const scoreCard = quizContainer.querySelector(".score-card");
+            scoreCard.style.display = "block";
+            scoreCard.classList.add(score === 5 ? 'correct' : 'incorrect');
+            scoreCard.innerHTML = `You scored ${score} out of 5 for Topic ${topicNumber}!`;
+        }
+    </script>
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+
+        </div>
+    </header>
+    <br><br><br>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-java" style="font-size: 60px;padding-left: 16px;  color: #e27f05;"></i>
+            <h2 class="jk">Java Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        <a href="javaRoadmaps.html" target="_blank"><b class="b12">Java Roadmap</b></a>
+        <ul>
+            <a href="Introduction to Java.html" target="_blank">Introduction to Java</a>
+            <li><a href="History of Java.html" target="_blank">History of Java</a></li>
+            <li><a href="Setting up Java Environment java.html" target="_blank">Setting up Java Environment</a></li>
+            <li><a href="Hello World Program java.html" target="_blank">Hello World Program</a></li>
+            <li><a href="JVM, JRE, and JDK in java.html" target="_blank">JVM, JRE, and JDK</a></li>
+        </ul>
+    
+        <h3>Basic Java Syntax</h3>
+        <a href="Basic Java Syntax java.html" target="_blank">Basic Java Syntax</a>
+        <ul>
+            <li><a href="variables and Data Types java.html" target="_blank">Variables and Data Types</a></li>
+            <li><a href="Operators in java.html" target="_blank">Operators</a></li>
+            <li><a href="Control Statements in java.html" target="_blank">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements in java.html" target="_blank">If-else Statements</a></li>
+                <li><a href="Switch Statement in java.html" target="_blank">Switch Statement</a></li>
+                <li><a href="Loops in java.html" target="_blank">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop in java.html" target="_blank">For Loop</a></li>
+                    <li><a href="While Loop in java.html" target="_blank">While Loop</a></li>
+                    <li><a href="Do-While Loop in java.html" target="_blank">Do-While Loop</a></li>
+                </ul>
+            </ul>
+        </ul>
+    
+        <h3>Arrays</h3>
+        <a href="Arrays in java.html" target="_blank">Arrays</a>
+        <ul>
+            <li><a href="Introduction to Arrays in java.html" target="_blank">Introduction to Arrays</a></li>
+            <li><a href="Single-Dimensional Arrays in java.html" target="_blank">Single-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays in java.html" target="_blank">Multi-Dimensional Arrays</a></li>
+            <li><a href="Array Operations in java.html" target="_blank">Array Operations</a></li>
+            <li><a href="ArrayList and Other Collections in java.html" target="_blank">ArrayList and Other Collections</a></li>
+        </ul>
+    
+        <h3>Strings</h3>
+        <a href="Strings in java.html" target="_blank">Strings</a>
+        <ul>
+            <li><a href="String Basics in java.html" target="_blank">String Basics</a></li>
+            <li><a href="String Methods in java.html" target="_blank">String Methods</a></li>
+            <li><a href="String Manipulation in java.html" target="_blank">String Manipulation</a></li>
+            <li><a href="String Formatting in java.html" target="_blank">String Formatting</a></li>
+            <li><a href="StringBuilder and StringBuffer in java.html" target="_blank">StringBuilder and StringBuffer</a></li>
+        </ul>
+    
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming in java.html" target="_blank">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects in java.html" target="_blank">Classes and Objects</a></li>
+            <li><a href="Constructors in java.html" target="_blank">Constructors</a></li>
+            <li><a href="Inheritance in java.html" target="_blank">Inheritance</a></li>
+            <li><a href="Polymorphism in java.html" target="_blank">Polymorphism</a></li>
+            <li><a href="Abstraction in java.html" target="_blank">Abstraction</a></li>
+            <li><a href="Encapsulation in java.html" target="_blank">Encapsulation</a></li>
+            <li><a href="Interfaces in java.html" target="_blank">Interfaces</a></li>
+            <li><a href="Packages in java.html" target="_blank">Packages</a></li>
+            <li><a href="Nested Classes in java.html" target="_blank">Nested Classes</a></li>
+            <li><a href="Enums in java.html" target="_blank">Enums</a></li>
+        </ul>
+    
+        <h3>Advanced Java Concepts</h3>
+        <a href="Advanced Java Concepts in java.html" target="_blank">Advanced Java Concepts</a>
+        <ul>
+            <li><a href="Exception Handling in java.html" target="_blank">Exception Handling</a></li>
+            <li><a href="File I-O in java.html" target="_blank">File I/O</a></li>
+            <li><a href="Error Handling and Debugging in java.html" target="_blank">Error Handling and Debugging</a></li>
+            <li><a href="Collections Framework in java.html" target="_blank">Collections Framework</a></li>
+            <ul>
+                <li><a href="List in java.html" target="_blank">List</a></li>
+                <li><a href="Set in java.html" target="_blank">Set</a></li>
+                <li><a href="Map in java.html" target="_blank">Map</a></li>
+                <li><a href="Queue in java.html" target="_blank">Queue</a></li>
+            </ul>
+            <li><a href="Generics in java.html" target="_blank">Generics</a></li>
+            <li><a href="Multithreading and Concurrency in java.html" target="_blank">Multithreading and Concurrency</a></li>
+            <li><a href="Networking in java.html" target="_blank">Networking</a></li>
+            <li><a href="JDBC in java.html" target="_blank">JDBC</a></li>
+            <li><a href="Java Reflection in java.html" target="_blank">Java Reflection</a></li>
+            <li><a href="Java Annotations in java.html" target="_blank">Java Annotations</a></li>
+        </ul>
+    </div>
+    
+        
+   
+   
+    <div class="container">
+  
+  
+        <h1 class="java-quiz-header">
+            <i class="fab fa-java" style="font-size: 100px;padding-left: 16px;  color: #07fe45;"></i>
+                Java Programming Quiz!
+        </h1>
+        <ol class="question-list">
+            <ol class="question-list">
+                <li class="question-item">
+                    <div class="question">1. Introduction to Java Programming Language</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Who is known as the father of the Java programming language?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">James Gosling</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Dennis Ritchie</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Bjarne Stroustrup</label></li>
+                        </ul>
+                
+                        <p>2. In which year was the Java programming language released?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="0">1990</label></li>
+                            <li><label><input type="radio" name="q2" value="1">1995</label></li>
+                            <li><label><input type="radio" name="q2" value="0">2000</label></li>
+                        </ul>
+                
+                        <p>3. Which of the following file extensions is typically used for Java programs?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">.java</label></li>
+                            <li><label><input type="radio" name="q3" value="0">.class</label></li>
+                            <li><label><input type="radio" name="q3" value="0">.py</label></li>
+                        </ul>
+                
+                        <p>4. What is the name of the tool used to compile Java code?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">javac</label></li>
+                            <li><label><input type="radio" name="q4" value="0">java</label></li>
+                            <li><label><input type="radio" name="q4" value="0">javadoc</label></li>
+                        </ul>
+                
+                        <p>5. Which keyword is used to define a class in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">class</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Class</label></li>
+                            <li><label><input type="radio" name="q5" value="0">object</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                
+                <li class="question-item">
+                    <div class="question">2. History of Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Which company originally developed Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q6" value="1">Sun Microsystems</label></li>
+                            <li><label><input type="radio" name="q6" value="0">Microsoft</label></li>
+                            <li><label><input type="radio" name="q6" value="0">Google</label></li>
+                        </ul>
+                
+                        <p>2. What was Java originally called?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q7" value="1">Oak</label></li>
+                            <li><label><input type="radio" name="q7" value="0">Maple</label></li>
+                            <li><label><input type="radio" name="q7" value="0">Pine</label></li>
+                        </ul>
+                
+                        <p>3. Which programming paradigm does Java follow?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q8" value="1">Object-Oriented</label></li>
+                            <li><label><input type="radio" name="q8" value="0">Procedural</label></li>
+                            <li><label><input type="radio" name="q8" value="0">Functional</label></li>
+                        </ul>
+                
+                        <p>4. Which of the following is a Java feature?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q9" value="1">Platform Independent</label></li>
+                            <li><label><input type="radio" name="q9" value="0">Platform Dependent</label></li>
+                            <li><label><input type="radio" name="q9" value="0">Single-Threaded</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">3. JVM, JRE, and JDK</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. What does JRE stand for?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Java Runtime Environment</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Java Resource Editor</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Java Runtime Executor</label></li>
+                        </ul>
+                
+                        <p>2. What is the primary role of JDK?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">To develop Java applications</label></li>
+                            <li><label><input type="radio" name="q2" value="0">To execute Java programs</label></li>
+                            <li><label><input type="radio" name="q2" value="0">To debug Java applications</label></li>
+                        </ul>
+                
+                        <p>3. JVM converts Java bytecode into:</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Machine code</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Assembly code</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Source code</label></li>
+                        </ul>
+                
+                        <p>4. Which part of JDK includes tools like javac?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Development Tools</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Java Libraries</label></li>
+                            <li><label><input type="radio" name="q4" value="0">JRE</label></li>
+                        </ul>
+                
+                        <p>5. Can JRE alone compile Java programs?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">No</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Yes</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Only for small programs</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">4. Variables and Data Types</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Which data type is used to store true/false values in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">boolean</label></li>
+                            <li><label><input type="radio" name="q1" value="0">int</label></li>
+                            <li><label><input type="radio" name="q1" value="0">char</label></li>
+                        </ul>
+                
+                        <p>2. What is the range of the byte data type?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">-128 to 127</label></li>
+                            <li><label><input type="radio" name="q2" value="0">0 to 255</label></li>
+                            <li><label><input type="radio" name="q2" value="0">-32768 to 32767</label></li>
+                        </ul>
+                
+                        <p>3. Which keyword is used to declare constants in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">final</label></li>
+                            <li><label><input type="radio" name="q3" value="0">const</label></li>
+                            <li><label><input type="radio" name="q3" value="0">static</label></li>
+                        </ul>
+                
+                        <p>4. What is the default value of a float variable in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">0.0</label></li>
+                            <li><label><input type="radio" name="q4" value="0">null</label></li>
+                            <li><label><input type="radio" name="q4" value="0">0</label></li>
+                        </ul>
+                
+                        <p>5. What is the size of an int in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">4 bytes</label></li>
+                            <li><label><input type="radio" name="q5" value="0">2 bytes</label></li>
+                            <li><label><input type="radio" name="q5" value="0">8 bytes</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li><li class="question-item">
+                    <div class="question">5. Operators in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Which of the following is a relational operator in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">==</label></li>
+                            <li><label><input type="radio" name="q1" value="0">=</label></li>
+                            <li><label><input type="radio" name="q1" value="0">+</label></li>
+                        </ul>
+                
+                        <p>2. What is the output of the expression 10 % 3 ?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">1</label></li>
+                            <li><label><input type="radio" name="q2" value="0">0</label></li>
+                            <li><label><input type="radio" name="q2" value="0">3</label></li>
+                        </ul>
+                
+                        <p>3. Which operator is used to concatenate strings in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">+</label></li>
+                            <li><label><input type="radio" name="q3" value="0">&</label></li>
+                            <li><label><input type="radio" name="q3" value="0">|</label></li>
+                        </ul>
+                
+                        <p>4. What is the result of the following code snippet? 
+                        
+                           int a = 5, b = 10;
+                           System.out.println(a > b ? a : b);
+                        
+                        </p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">10</label></li>
+                            <li><label><input type="radio" name="q4" value="0">5</label></li>
+                            <li><label><input type="radio" name="q4" value="0">0</label></li>
+                        </ul>
+                
+                        <p>5. Which operator is used to perform bitwise AND in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">&</label></li>
+                            <li><label><input type="radio" name="q5" value="0">|</label></li>
+                            <li><label><input type="radio" name="q5" value="0">^</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                
+                <li class="question-item">
+                    <div class="question">6. Control Statements</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Which control statement is used for looping a fixed number of times?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">for</label></li>
+                            <li><label><input type="radio" name="q1" value="0">while</label></li>
+                            <li><label><input type="radio" name="q1" value="0">if</label></li>
+                        </ul>
+                
+                        <p>2. What will be the output of this code snippet? 
+        
+                           int x = 5;
+                           if (x > 3) {
+                               System.out.println("Hello");
+                           }
+                        
+                        </p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">Hello</label></li>
+                            <li><label><input type="radio" name="q2" value="0">No output</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Error</label></li>
+                        </ul>
+                
+                        <p>3. Which keyword is used to exit a loop prematurely?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">break</label></li>
+                            <li><label><input type="radio" name="q3" value="0">exit</label></li>
+                            <li><label><input type="radio" name="q3" value="0">stop</label></li>
+                        </ul>
+                
+                        <p>4. What is the main difference between while and do-while loops?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">do-while executes at least once</label></li>
+                            <li><label><input type="radio" name="q4" value="0">do-while runs only when condition is true</label></li>
+                            <li><label><input type="radio" name="q4" value="0">while executes at least once</label></li>
+                        </ul>
+                
+                        <p>5. Can a switch statement evaluate strings in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Yes</label></li>
+                            <li><label><input type="radio" name="q5" value="0">No</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">7. Loops in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. How many times will the following for loop execute? 
+                           
+                           for (int i = 0; i < 5; i++) {
+                               System.out.println(i);
+                           }
+                           
+                        </p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">5</label></li>
+                            <li><label><input type="radio" name="q1" value="0">6</label></li>
+                            <li><label><input type="radio" name="q1" value="0">4</label></li>
+                        </ul>
+                
+                        <p>2. What is the output of the following while loop? 
+                           
+                           int x = 0;
+                           while (x < 3) {
+                               System.out.print(x);
+                               x++;
+                           }
+                           
+                        </p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">012</label></li>
+                            <li><label><input type="radio" name="q2" value="0">123</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Infinite loop</label></li>
+                        </ul>
+                
+                        <p>3. Which loop guarantees at least one iteration even if the condition is false?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">do-while</label></li>
+                            <li><label><input type="radio" name="q3" value="0">while</label></li>
+                            <li><label><input type="radio" name="q3" value="0">for</label></li>
+                        </ul>
+                
+                        <p>4. What is wrong with the following code? 
+                    
+                           for (int i = 0; i < 5; i--) {
+                               System.out.println(i);
+                           }
+                           
+                        </p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Infinite loop</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Syntax error</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Logical error</label></li>
+                        </ul>
+                
+                        <p>5. Which of the following is a valid way to declare a for loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">for (int i = 0; i < 10; i++)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">for (i < 10; int i = 0; i++)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">for (int i = 0; i++)</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                
+                <li class="question-item">
+                    <div class="question">8. Arrays in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the correct way to declare an array in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">int[] arr;</label></li>
+                            <li><label><input type="radio" name="q1" value="0">arr int[];</label></li>
+                            <li><label><input type="radio" name="q1" value="0">int arr[];</label></li>
+                        </ul>
+                
+                        <p>2. How do you initialize an array with values in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">int[] arr = {1, 2, 3};</label></li>
+                            <li><label><input type="radio" name="q2" value="0">int arr = [1, 2, 3];</label></li>
+                            <li><label><input type="radio" name="q2" value="0">int[] arr = new int[3]{1, 2, 3};</label></li>
+                        </ul>
+                
+                        <p>3. What is the length of the following array?
+                           
+                           int[][] matrix = {
+                               {1, 2, 3},
+                               {4, 5, 6},
+                               {7, 8, 9}
+                           };
+                           
+                        </p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">3</label></li>
+                            <li><label><input type="radio" name="q3" value="0">9</label></li>
+                            <li><label><input type="radio" name="q3" value="0">6</label></li>
+                        </ul>
+                
+                        <p>4. How can you find the largest element in a single-dimensional array?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Using a for loop to compare elements</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Using the array.sort() method directly</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Using Arrays.toString()</label></li>
+                        </ul>
+                
+                        <p>5. Which of the following is correct about ArrayLists in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">ArrayLists can grow in size dynamically</label></li>
+                            <li><label><input type="radio" name="q5" value="0">ArrayLists require a fixed size</label></li>
+                            <li><label><input type="radio" name="q5" value="0">ArrayLists are faster than arrays in all cases</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">9. Strings in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. Which of the following is a correct way to create a String in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">String str = "Hello";</label></li>
+                            <li><label><input type="radio" name="q1" value="0">String str = new String("Hello");</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Both A and B</label></li>
+                        </ul>
+                
+                        <p>2. What does the length() method of a String return?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">The number of characters in the string</label></li>
+                            <li><label><input type="radio" name="q2" value="0">The size of the string in bytes</label></li>
+                            <li><label><input type="radio" name="q2" value="0">The capacity of the string</label></li>
+                        </ul>
+                
+                        <p>3. What is the output of the following code? 
+                    
+                           String s1 = "Hello";
+                           String s2 = s1.toUpperCase();
+                           System.out.println(s2);
+                           
+                        </p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">HELLO</label></li>
+                            <li><label><input type="radio" name="q3" value="0">hello</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Hello</label></li>
+                        </ul>
+                
+                        <p>4. Which class should be used for creating mutable strings in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">StringBuilder</label></li>
+                            <li><label><input type="radio" name="q4" value="0">String</label></li>
+                            <li><label><input type="radio" name="q4" value="0">StringBuffer</label></li>
+                        </ul>
+                
+                        <p>5. What is the purpose of the format() method in the String class?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">To format strings using placeholders</label></li>
+                            <li><label><input type="radio" name="q5" value="0">To reverse the string</label></li>
+                            <li><label><input type="radio" name="q5" value="0">To compare two strings</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">10. Object-Oriented Programming in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the purpose of a constructor in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">To initialize an object</label></li>
+                            <li><label><input type="radio" name="q1" value="0">To destroy an object</label></li>
+                            <li><label><input type="radio" name="q1" value="0">To call a method</label></li>
+                        </ul>
+                
+                        <p>2. What does polymorphism allow in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">A method to behave differently based on the object</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Access to private variables</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Inheritance from multiple classes</label></li>
+                        </ul>
+                
+                        <p>3. Which keyword is used to inherit a class in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">extends</label></li>
+                            <li><label><input type="radio" name="q3" value="0">implements</label></li>
+                            <li><label><input type="radio" name="q3" value="0">inherits</label></li>
+                        </ul>
+                
+                        <p>4. Which access modifier ensures encapsulation by restricting access to fields?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">private</label></li>
+                            <li><label><input type="radio" name="q4" value="0">public</label></li>
+                            <li><label><input type="radio" name="q4" value="0">protected</label></li>
+                        </ul>
+                
+                        <p>5. Which class should be used to define a fixed set of constants in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Enum</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Interface</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Abstract class</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">11. Classes and Objects in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is a class in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">A blueprint for creating objects</label></li>
+                            <li><label><input type="radio" name="q1" value="0">A collection of variables</label></li>
+                            <li><label><input type="radio" name="q1" value="0">A method that returns an object</label></li>
+                        </ul>
+                
+                        <p>2. How do you create an object from a class in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">Using the new keyword</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Using the create keyword</label></li>
+                            <li><label><input type="radio" name="q2" value="0">By invoking a constructor directly</label></li>
+                        </ul>
+                
+                        <p>3. What is the default value of an instance variable if not initialized?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Depends on the type (e.g., 0 for int, null for object references)</label></li>
+                            <li><label><input type="radio" name="q3" value="0">It causes a compile-time error</label></li>
+                            <li><label><input type="radio" name="q3" value="0">It is automatically set to false</label></li>
+                        </ul>
+                
+                        <p>4. Which keyword is used to access members (fields or methods) of a class from another class?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Object reference</label></li>
+                            <li><label><input type="radio" name="q4" value="0">this</label></li>
+                            <li><label><input type="radio" name="q4" value="0">super</label></li>
+                        </ul>
+                
+                        <p>5. What does the this keyword refer to in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">The current object</label></li>
+                            <li><label><input type="radio" name="q5" value="0">The parent class</label></li>
+                            <li><label><input type="radio" name="q5" value="0">The reference variable of a class</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">12. Constructors in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the main purpose of a constructor in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">To initialize an object when it is created</label></li>
+                            <li><label><input type="radio" name="q1" value="0">To define the structure of a class</label></li>
+                            <li><label><input type="radio" name="q1" value="0">To call methods inside the class</label></li>
+                        </ul>
+                
+                        <p>2. Which of the following is true about constructors?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">A constructor has the same name as the class</label></li>
+                            <li><label><input type="radio" name="q2" value="0">A constructor cannot have parameters</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Constructors can be called explicitly</label></li>
+                        </ul>
+                
+                        <p>3. What happens if no constructor is defined in a class?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">The Java compiler provides a default constructor</label></li>
+                            <li><label><input type="radio" name="q3" value="0">The code will throw an error</label></li>
+                            <li><label><input type="radio" name="q3" value="0">A runtime exception will occur</label></li>
+                        </ul>
+                
+                        <p>4. What is the constructor type that accepts no arguments called?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Default constructor</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Parameterized constructor</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Copy constructor</label></li>
+                        </ul>
+                
+                        <p>5. Can a constructor return a value?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">No, constructors do not return any value</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Yes, constructors can return a value</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Yes, constructors can return a reference to the class</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">13. Polymorphism in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the key concept behind polymorphism in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">A method behaving differently based on the object</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Using multiple inheritance</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Defining abstract methods</label></li>
+                        </ul>
+                
+                        <p>2. Which type of polymorphism occurs when a method is overridden in a subclass?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">Runtime polymorphism</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Compile-time polymorphism</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Interface polymorphism</label></li>
+                        </ul>
+                
+                        <p>3. Which keyword is used to call the overridden method of a parent class?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">super</label></li>
+                            <li><label><input type="radio" name="q3" value="0">this</label></li>
+                            <li><label><input type="radio" name="q3" value="0">extends</label></li>
+                        </ul>
+                
+                        <p>4. Which of the following is an example of compile-time polymorphism?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Method overloading</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Method overriding</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Dynamic method dispatch</label></li>
+                        </ul>
+                
+                        <p>5. How is polymorphism achieved in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">By method overriding and method overloading</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By creating objects from multiple classes</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By implementing multiple interfaces</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">14. Abstraction in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the main purpose of abstraction in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Hiding implementation details from the user</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Defining concrete classes</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Allowing multiple inheritance</label></li>
+                        </ul>
+                
+                        <p>2. Which of the following can be abstract in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">Methods</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Variables</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Constructors</label></li>
+                        </ul>
+                
+                        <p>3. What must a class do if it contains an abstract method?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Declare the class as abstract</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Provide an implementation for the abstract method</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Inherit from an abstract class</label></li>
+                        </ul>
+                
+                        <p>4. What is the key feature of an abstract class in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">It can have both abstract and concrete methods</label></li>
+                            <li><label><input type="radio" name="q4" value="0">It can only have abstract methods</label></li>
+                            <li><label><input type="radio" name="q4" value="0">It cannot be extended by other classes</label></li>
+                        </ul>
+                
+                        <p>5. Can an interface be abstract in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Yes, all methods in an interface are implicitly abstract</label></li>
+                            <li><label><input type="radio" name="q5" value="0">No, interfaces cannot be abstract</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Yes, but only if declared with the abstract keyword</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+               
+                
+                <li class="question-item">
+                    <div class="question">15. Interfaces in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the purpose of an interface in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">To define a contract for implementing classes</label></li>
+                            <li><label><input type="radio" name="q1" value="0">To provide a mechanism for multiple inheritance</label></li>
+                            <li><label><input type="radio" name="q1" value="0">To group related classes together</label></li>
+                        </ul>
+                
+                        <p>2. Can an interface have constructor methods?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">No</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Yes</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Yes, but only if implemented in a class</label></li>
+                        </ul>
+                
+                        <p>3. How do classes implement interfaces in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">By using the implements keyword</label></li>
+                            <li><label><input type="radio" name="q3" value="0">By extending the interface</label></li>
+                            <li><label><input type="radio" name="q3" value="0">By using the interface keyword</label></li>
+                        </ul>
+                
+                        <p>4. Can an interface extend another interface in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Yes</label></li>
+                            <li><label><input type="radio" name="q4" value="0">No</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Yes, but only once</label></li>
+                        </ul>
+                
+                        <p>5. What happens if a class implements an interface but doesn't implement its methods?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">The class must be declared as abstract</label></li>
+                            <li><label><input type="radio" name="q5" value="0">The class will compile successfully without error</label></li>
+                            <li><label><input type="radio" name="q5" value="0">The interface will be automatically implemented</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">16. Inheritance in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the main advantage of inheritance in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Code reusability</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Better performance</label></li>
+                            <li><label><input type="radio" name="q1" value="0">More complex class design</label></li>
+                        </ul>
+                
+                        <p>2. Which keyword is used to inherit a class in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">extends</label></li>
+                            <li><label><input type="radio" name="q2" value="0">implements</label></li>
+                            <li><label><input type="radio" name="q2" value="0">super</label></li>
+                        </ul>
+                
+                        <p>3. Can a class inherit from more than one class in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">No, Java does not support multiple inheritance</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Yes, using the extends keyword</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Yes, using the implements keyword</label></li>
+                        </ul>
+                
+                        <p>4. Can a subclass inherit private members of a parent class?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">No</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Yes</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Yes, but only through setter methods</label></li>
+                        </ul>
+                
+                        <p>5. What is method overriding in the context of inheritance?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">When a subclass provides its own implementation of a method defined in the superclass</label></li>
+                            <li><label><input type="radio" name="q5" value="0">When a method is inherited from the superclass without changes</label></li>
+                            <li><label><input type="radio" name="q5" value="0">When a subclass changes the constructor of the superclass</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">17. Packages in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the primary purpose of packages in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">To group related classes and interfaces together</label></li>
+                            <li><label><input type="radio" name="q1" value="0">To improve the performance of the program</label></li>
+                            <li><label><input type="radio" name="q1" value="0">To make the code more complex</label></li>
+                        </ul>
+                
+                        <p>2. Which keyword is used to define a package in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">package</label></li>
+                            <li><label><input type="radio" name="q2" value="0">import</label></li>
+                            <li><label><input type="radio" name="q2" value="0">namespace</label></li>
+                        </ul>
+                
+                        <p>3. Can classes from different packages interact with each other?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Yes, if they are imported properly</label></li>
+                            <li><label><input type="radio" name="q3" value="0">No, classes from different packages cannot interact</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Yes, but only if they are in the same directory</label></li>
+                        </ul>
+                
+                        <p>4. What is the default package in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Unnamed package</label></li>
+                            <li><label><input type="radio" name="q4" value="0">java.lang package</label></li>
+                            <li><label><input type="radio" name="q4" value="0">system package</label></li>
+                        </ul>
+                
+                        <p>5. How do you import a class from another package in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">By using the import keyword</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By defining the package in the class</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By copying the class code directly into the project</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">18. Nested Classes in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is a nested class in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">A class defined within another class</label></li>
+                            <li><label><input type="radio" name="q1" value="0">A class with methods and variables</label></li>
+                            <li><label><input type="radio" name="q1" value="0">A class that extends another class</label></li>
+                        </ul>
+                
+                        <p>2. Which type of nested class has access to the instance variables of the outer class?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">Inner class</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Static nested class</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Local class</label></li>
+                        </ul>
+                
+                        <p>3. Can a static nested class access the non-static members of the outer class?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">No</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Yes</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Only if it is an inner class</label></li>
+                        </ul>
+                
+                        <p>4. What is the primary advantage of using a nested class?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Logical grouping of classes</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Reduces the size of the code</label></li>
+                            <li><label><input type="radio" name="q4" value="0">It makes the class faster</label></li>
+                        </ul>
+                
+                        <p>5. How do you create an instance of a nested class?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">By using the outer class reference</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By creating a static reference</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By calling the constructor of the outer class</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">19. Enums in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is an enum in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">A special class used to define a set of constants</label></li>
+                            <li><label><input type="radio" name="q1" value="0">A class used to store multiple values of different types</label></li>
+                            <li><label><input type="radio" name="q1" value="0">A method that returns a constant value</label></li>
+                        </ul>
+                
+                        <p>2. Which keyword is used to define an enum in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">enum</label></li>
+                            <li><label><input type="radio" name="q2" value="0">class</label></li>
+                            <li><label><input type="radio" name="q2" value="0">const</label></li>
+                        </ul>
+                
+                        <p>3. Can enums have methods and constructors in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Yes</label></li>
+                            <li><label><input type="radio" name="q3" value="0">No</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Only methods</label></li>
+                        </ul>
+                
+                        <p>4. How do you access an enum constant in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">By using the enum type and constant name</label></li>
+                            <li><label><input type="radio" name="q4" value="0">By using the enum's constructor</label></li>
+                            <li><label><input type="radio" name="q4" value="0">By calling the enum's getValue() method</label></li>
+                        </ul>
+                
+                        <p>5. Can you add fields to an enum in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Yes</label></li>
+                            <li><label><input type="radio" name="q5" value="0">No</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Only methods can be added</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">20. Exception Handling in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is an exception in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">An event that disrupts the normal flow of the program</label></li>
+                            <li><label><input type="radio" name="q1" value="0">A syntax error in the code</label></li>
+                            <li><label><input type="radio" name="q1" value="0">A warning message during compilation</label></li>
+                        </ul>
+                
+                        <p>2. Which keyword is used to handle exceptions in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">try</label></li>
+                            <li><label><input type="radio" name="q2" value="0">handle</label></li>
+                            <li><label><input type="radio" name="q2" value="0">check</label></li>
+                        </ul>
+                
+                        <p>3. Which block is mandatory when handling exceptions in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">try</label></li>
+                            <li><label><input type="radio" name="q3" value="0">catch</label></li>
+                            <li><label><input type="radio" name="q3" value="0">finally</label></li>
+                        </ul>
+                
+                        <p>4. What is the parent class of all exceptions in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">java.lang.Throwable</label></li>
+                            <li><label><input type="radio" name="q4" value="0">java.lang.Exception</label></li>
+                            <li><label><input type="radio" name="q4" value="0">java.lang.Error</label></li>
+                        </ul>
+                
+                        <p>5. Can a finally block execute if no exception occurs?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Yes</label></li>
+                            <li><label><input type="radio" name="q5" value="0">No</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Only if explicitly called</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">21. File I/O in Java</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. Which class is used to read from a file in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">FileReader</label></li>
+                            <li><label><input type="radio" name="q1" value="0">FileWriter</label></li>
+                            <li><label><input type="radio" name="q1" value="0">File</label></li>
+                        </ul>
+                
+                        <p>2. What does the File.exists() method return?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">True if the file exists</label></li>
+                            <li><label><input type="radio" name="q2" value="0">The size of the file</label></li>
+                            <li><label><input type="radio" name="q2" value="0">The name of the file</label></li>
+                        </ul>
+                
+                        <p>3. How do you create a new file in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Using the File.createNewFile() method</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Using the File.read() method</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Using the Scanner class</label></li>
+                        </ul>
+                
+                        <p>4. Which package contains classes for file operations in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">java.io</label></li>
+                            <li><label><input type="radio" name="q4" value="0">java.util</label></li>
+                            <li><label><input type="radio" name="q4" value="0">java.lang</label></li>
+                        </ul>
+                
+                        <p>5. How do you close a file after operations in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">By calling the close() method</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By deleting the file object</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By stopping the program</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">22. Error Handling and Debugging</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the difference between errors and exceptions in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Errors are unrecoverable; exceptions can be handled</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Errors and exceptions are the same</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Errors occur at runtime; exceptions occur at compile time</label></li>
+                        </ul>
+                
+                        <p>2. What is a breakpoint in debugging?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">A point where the code execution is paused</label></li>
+                            <li><label><input type="radio" name="q2" value="0">A condition for exiting a loop</label></li>
+                            <li><label><input type="radio" name="q2" value="0">A runtime error in the code</label></li>
+                        </ul>
+                
+                        <p>3. Which tool is commonly used for debugging in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Debugger in IDEs like IntelliJ or Eclipse</label></li>
+                            <li><label><input type="radio" name="q3" value="0">FileReader</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Package explorer</label></li>
+                        </ul>
+                
+                        <p>4. Which exception is thrown for division by zero in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">ArithmeticException</label></li>
+                            <li><label><input type="radio" name="q4" value="0">IOException</label></li>
+                            <li><label><input type="radio" name="q4" value="0">NullPointerException</label></li>
+                        </ul>
+                
+                        <p>5. What does the printStackTrace() method do?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Prints the details of the exception to the console</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Terminates the program</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Returns the exception message</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">23. Collections Framework: List</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. Which interface does ArrayList implement in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">List</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Set</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Map</label></li>
+                        </ul>
+                
+                        <p>2. What is the default capacity of an ArrayList in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">10</label></li>
+                            <li><label><input type="radio" name="q2" value="0">5</label></li>
+                            <li><label><input type="radio" name="q2" value="0">15</label></li>
+                        </ul>
+                
+                        <p>3. Which of these allows duplicates in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">List</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Set</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Queue</label></li>
+                        </ul>
+                
+                        <p>4. Which of these is NOT a List implementation?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">HashSet</label></li>
+                            <li><label><input type="radio" name="q4" value="0">ArrayList</label></li>
+                            <li><label><input type="radio" name="q4" value="0">LinkedList</label></li>
+                        </ul>
+                
+                        <p>5. How do you retrieve an element from a List at a specific position?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">get(index)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">elementAt(index)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">find(index)</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">24. Collections Framework: Set</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. Which of the following implementations of Set maintains insertion order?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">LinkedHashSet</label></li>
+                            <li><label><input type="radio" name="q1" value="0">HashSet</label></li>
+                            <li><label><input type="radio" name="q1" value="0">TreeSet</label></li>
+                        </ul>
+                
+                        <p>2. Which of the following does NOT allow duplicate elements?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">Set</label></li>
+                            <li><label><input type="radio" name="q2" value="0">List</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Queue</label></li>
+                        </ul>
+                
+                        <p>3. What does TreeSet use to maintain its elements?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Natural ordering or Comparator</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Hashing</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Stack</label></li>
+                        </ul>
+                
+                        <p>4. Which of these classes is NOT part of the Set framework?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">PriorityQueue</label></li>
+                            <li><label><input type="radio" name="q4" value="0">HashSet</label></li>
+                            <li><label><input type="radio" name="q4" value="0">TreeSet</label></li>
+                        </ul>
+                
+                        <p>5. What is the time complexity of adding an element in HashSet?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">O(1)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">O(log n)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">O(n)</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">25. Collections Framework: Map</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. Which method is used to retrieve a value in a Map by its key?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">get()</label></li>
+                            <li><label><input type="radio" name="q1" value="0">retrieve()</label></li>
+                            <li><label><input type="radio" name="q1" value="0">find()</label></li>
+                        </ul>
+                
+                        <p>2. Which Map implementation maintains insertion order?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">LinkedHashMap</label></li>
+                            <li><label><input type="radio" name="q2" value="0">HashMap</label></li>
+                            <li><label><input type="radio" name="q2" value="0">TreeMap</label></li>
+                        </ul>
+                
+                        <p>3. Can a HashMap contain duplicate keys?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">No</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Yes</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Only if values are the same</label></li>
+                        </ul>
+                
+                        <p>4. Which method removes a key-value pair from a Map?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">remove()</label></li>
+                            <li><label><input type="radio" name="q4" value="0">delete()</label></li>
+                            <li><label><input type="radio" name="q4" value="0">discard()</label></li>
+                        </ul>
+                
+                        <p>5. Which Map implementation sorts its keys by natural order?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">TreeMap</label></li>
+                            <li><label><input type="radio" name="q5" value="0">HashMap</label></li>
+                            <li><label><input type="radio" name="q5" value="0">LinkedHashMap</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">26. Collections Framework: Queue</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What does the peek() method of a Queue do?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Retrieves the head without removing it</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Retrieves and removes the head</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Adds an element to the queue</label></li>
+                        </ul>
+                
+                        <p>2. Which implementation of Queue allows duplicates?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">PriorityQueue</label></li>
+                            <li><label><input type="radio" name="q2" value="0">LinkedHashSet</label></li>
+                            <li><label><input type="radio" name="q2" value="0">TreeSet</label></li>
+                        </ul>
+                
+                        <p>3. What is the primary difference between a Queue and a Deque?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Deque allows insertion/removal from both ends</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Queue is LIFO</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Deque does not allow duplicates</label></li>
+                        </ul>
+                
+                        <p>4. Which method is used to add an element to a Queue?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">offer()</label></li>
+                            <li><label><input type="radio" name="q4" value="0">push()</label></li>
+                            <li><label><input type="radio" name="q4" value="0">addFirst()</label></li>
+                        </ul>
+                
+                        <p>5. What happens when you call poll() on an empty Queue?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Returns null</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Throws an exception</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Does nothing</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">27. Generics</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is the primary purpose of Generics in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Type safety</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Improving performance</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Error handling</label></li>
+                        </ul>
+                
+                        <p>2. Which wildcard is used in Generics to represent an unknown type?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">?</label></li>
+                            <li><label><input type="radio" name="q2" value="0">T</label></li>
+                            <li><label><input type="radio" name="q2" value="0">E</label></li>
+                        </ul>
+                
+                        <p>3. What does `<T>` signify in a generic class declaration?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Type parameter</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Template</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Thread</label></li>
+                        </ul>
+                
+                        <p>4. Which class in Java Collections Framework is implemented using Generics?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">ArrayList</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Vector</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Queue</label></li>
+                        </ul>
+                
+                        <p>5. How can you create a generic method in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">By adding a type parameter before the return type</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By adding ? as the method name</label></li>
+                            <li><label><input type="radio" name="q5" value="0">By using @Generic</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">28. Multithreading and Concurrency</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. Which method is used to start a thread in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">start()</label></li>
+                            <li><label><input type="radio" name="q1" value="0">run()</label></li>
+                            <li><label><input type="radio" name="q1" value="0">execute()</label></li>
+                        </ul>
+                
+                        <p>2. What is the default priority of a thread in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">5</label></li>
+                            <li><label><input type="radio" name="q2" value="0">1</label></li>
+                            <li><label><input type="radio" name="q2" value="0">10</label></li>
+                        </ul>
+                
+                        <p>3. Which Java class provides thread-safe access to a collection?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">ConcurrentHashMap</label></li>
+                            <li><label><input type="radio" name="q3" value="0">HashMap</label></li>
+                            <li><label><input type="radio" name="q3" value="0">ArrayList</label></li>
+                        </ul>
+                
+                        <p>4. Which interface must a class implement to define a thread's task?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Runnable</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Callable</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Executor</label></li>
+                        </ul>
+                
+                        <p>5. What is a synchronized block used for?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">To prevent thread interference</label></li>
+                            <li><label><input type="radio" name="q5" value="0">To create a new thread</label></li>
+                            <li><label><input type="radio" name="q5" value="0">To stop all threads</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">29. Networking</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. Which class is used to create server sockets?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">ServerSocket</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Socket</label></li>
+                            <li><label><input type="radio" name="q1" value="0">DatagramSocket</label></li>
+                        </ul>
+                
+                        <p>2. Which protocol is used by sockets in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">TCP</label></li>
+                            <li><label><input type="radio" name="q2" value="0">HTTP</label></li>
+                            <li><label><input type="radio" name="q2" value="0">FTP</label></li>
+                        </ul>
+                
+                        <p>3. What method is used to accept a connection in ServerSocket?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">accept()</label></li>
+                            <li><label><input type="radio" name="q3" value="0">connect()</label></li>
+                            <li><label><input type="radio" name="q3" value="0">bind()</label></li>
+                        </ul>
+                
+                        <p>4. Which class is used for UDP communication in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">DatagramSocket</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Socket</label></li>
+                            <li><label><input type="radio" name="q4" value="0">ServerSocket</label></li>
+                        </ul>
+                
+                        <p>5. Which method closes a socket connection?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">close()</label></li>
+                            <li><label><input type="radio" name="q5" value="0">shutdown()</label></li>
+                            <li><label><input type="radio" name="q5" value="0">terminate()</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">30. JDBC</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What does JDBC stand for?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Java Database Connectivity</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Java Development Connector</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Java Data Connection</label></li>
+                        </ul>
+                
+                        <p>2. Which method is used to execute a SQL query in JDBC?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">executeQuery()</label></li>
+                            <li><label><input type="radio" name="q2" value="0">runQuery()</label></li>
+                            <li><label><input type="radio" name="q2" value="0">submitQuery()</label></li>
+                        </ul>
+                
+                        <p>3. Which interface is used to establish a connection to a database?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">Connection</label></li>
+                            <li><label><input type="radio" name="q3" value="0">DriverManager</label></li>
+                            <li><label><input type="radio" name="q3" value="0">Statement</label></li>
+                        </ul>
+                
+                        <p>4. Which exception is commonly thrown in JDBC operations?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">SQLException</label></li>
+                            <li><label><input type="radio" name="q4" value="0">IOException</label></li>
+                            <li><label><input type="radio" name="q4" value="0">ClassNotFoundException</label></li>
+                        </ul>
+                
+                        <p>5. Which JDBC driver type is fully written in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Type 4</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Type 1</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Type 2</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">31. Java Reflection</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What does Java Reflection allow you to do?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Inspect or modify runtime behavior of classes</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Handle memory management</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Manage threads</label></li>
+                        </ul>
+                
+                        <p>2. Which class provides methods for inspecting class metadata?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">Class</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Object</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Field</label></li>
+                        </ul>
+                
+                        <p>3. Which method retrieves all methods of a class in Java Reflection?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">getMethods()</label></li>
+                            <li><label><input type="radio" name="q3" value="0">getFields()</label></li>
+                            <li><label><input type="radio" name="q3" value="0">getConstructors()</label></li>
+                        </ul>
+                
+                        <p>4. How do you check if a field is private using Reflection?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Modifier.isPrivate()</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Modifier.checkPrivate()</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Field.isPrivate()</label></li>
+                        </ul>
+                
+                        <p>5. Can Reflection be used to access private fields?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Yes, with setAccessible(true)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">No</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Only in abstract classes</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">32. Java Reflection</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What does Java Reflection allow you to do?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Inspect or modify runtime behavior of classes</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Handle memory management</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Manage threads</label></li>
+                        </ul>
+                
+                        <p>2. Which class provides methods for inspecting class metadata?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">Class</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Object</label></li>
+                            <li><label><input type="radio" name="q2" value="0">Field</label></li>
+                        </ul>
+                
+                        <p>3. Which method retrieves all methods of a class in Java Reflection?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">getMethods()</label></li>
+                            <li><label><input type="radio" name="q3" value="0">getFields()</label></li>
+                            <li><label><input type="radio" name="q3" value="0">getConstructors()</label></li>
+                        </ul>
+                
+                        <p>4. How do you check if a field is private using Reflection?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">Modifier.isPrivate()</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Modifier.checkPrivate()</label></li>
+                            <li><label><input type="radio" name="q4" value="0">Field.isPrivate()</label></li>
+                        </ul>
+                
+                        <p>5. Can Reflection be used to access private fields?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">Yes, with setAccessible(true)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">No</label></li>
+                            <li><label><input type="radio" name="q5" value="0">Only in abstract classes</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">33. Java Annotations</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                
+                        <p>1. What is an annotation in Java?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Metadata for code</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Data type</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Compiler directive</label></li>
+                        </ul>
+                
+                        <p>2. Which annotation indicates a method override?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="1">@Override</label></li>
+                            <li><label><input type="radio" name="q2" value="0">@Inherited</label></li>
+                            <li><label><input type="radio" name="q2" value="0">@Retention</label></li>
+                        </ul>
+                
+                        <p>3. What does `@Deprecated` indicate?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">A method or class is no longer recommended for use</label></li>
+                            <li><label><input type="radio" name="q3" value="0">A method is overridden</label></li>
+                            <li><label><input type="radio" name="q3" value="0">A method is optimized</label></li>
+                        </ul>
+                
+                        <p>4. Which annotation ensures a method is invoked in test environments?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">@Test</label></li>
+                            <li><label><input type="radio" name="q4" value="0">@RunWith</label></li>
+                            <li><label><input type="radio" name="q4" value="0">@Check</label></li>
+                        </ul>
+                
+                        <p>5. Which annotation restricts the retention of metadata to runtime only?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">@Retention(RetentionPolicy.RUNTIME)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">@Retention(RetentionPolicy.CLASS)</label></li>
+                            <li><label><input type="radio" name="q5" value="0">@Retention(RetentionPolicy.SOURCE)</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                      </ol></ol> </div>
+                   
+                      

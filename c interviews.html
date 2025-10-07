@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 50 C Programming Interview Questions</title>
+
+    <style>
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            padding: 20px;
+            color: #fff;
+        }
+
+        /* Title section */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3rem;
+            color: #f1faee;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Container for interview questions */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1s ease;
+        }
+
+        /* Each question styling */
+        .question {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .question-title {
+            font-size: 1.5rem;
+            padding: 10px;
+            background: #1d3557;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .question-title:hover {
+            background: #457b9d;
+        }
+
+        .answer {
+            display: none;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f1faee;
+            color: #1d3557;
+            border-radius: 10px;
+        }
+
+        .code-example {
+            background-color: #a8dadc;
+            padding: 10px;
+            border-radius: 5px;
+            color: #000;
+            margin-top: 10px;
+        }
+
+        /* Animation for fading in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animation for sliding in */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .question-title {
+                font-size: 1.3rem;
+            }
+
+            .answer {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> C Programming Interview Questions</h1>
+
+        <!-- Basic Level Questions -->
+        <h2>Basic Level</h2>
+        <div class="question">
+            <div class="question-title">
+                <span>1. What is a pointer in C?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A pointer in C is a variable that stores the memory address of another variable. Pointers are used for dynamic memory allocation, arrays, and functions.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+int x = 10;
+int *p = &x; // p points to x
+printf("%d", *p); // Output: 10
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-title">
+                <span>2. What is the difference between "==" and "="?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>"==" is the equality operator that checks if two values are equal, while "=" is the assignment operator used to assign a value to a variable.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+int a = 5; // Assignment
+if (a == 5) { // Equality check
+    printf("a is equal to 5");
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-title">
+                <span>3. What is a structure in C?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A structure is a user-defined data type in C that allows grouping of different data types together. Structures are used to represent a record.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+struct Student {
+    char name[50];
+    int age;
+};
+
+struct Student s1; // Creating a structure variable
+strcpy(s1.name, "John");
+s1.age = 20;
+printf("%s is %d years old.", s1.name, s1.age);
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Intermediate Level Questions -->
+        <h2>Intermediate Level</h2>
+        <div class="question">
+            <div class="question-title">
+                <span>4. What are the different storage classes in C?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>There are four storage classes in C:</p>
+                <ul>
+                    <li><strong>auto:</strong> The default storage class for local variables.</li>
+                    <li><strong>register:</strong> Stores variables in CPU registers for faster access.</li>
+                    <li><strong>static:</strong> Preserves variable value across function calls.</li>
+                    <li><strong>extern:</strong> Declares a variable defined in another file.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-title">
+                <span>5. What is the difference between malloc() and calloc()?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p><strong>malloc():</strong> Allocates a specified number of bytes but does not initialize the memory.</p>
+                <p><strong>calloc():</strong> Allocates memory for an array of elements and initializes all bytes to zero.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+// Using malloc
+int *arr1 = (int *)malloc(5 * sizeof(int));
+
+// Using calloc
+int *arr2 = (int *)calloc(5, sizeof(int));
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-title">
+                <span>6. What is a function pointer?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A function pointer is a pointer that points to a function instead of a variable. It allows the function to be called dynamically.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+#include &lt;stdio.h&gt;
+
+void greet() {
+    printf("Hello, World!");
+}
+
+int main() {
+    void (*funcPtr)() = &greet; // Pointer to the function greet
+    funcPtr(); // Call the function
+    return 0;
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advanced Level Questions -->
+        <h2>Advanced Level</h2>
+        <div class="question">
+            <div class="question-title">
+                <span>7. What is a segmentation fault?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A segmentation fault occurs when a program tries to access a memory location that it's not allowed to. This usually happens due to dereferencing a null or uninitialized pointer.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+int *p = NULL;
+printf("%d", *p); // This will cause a segmentation fault
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-title">
+                <span>8. What is the use of the 'static' keyword?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The 'static' keyword is used to declare static variables. Static variables maintain their value between function calls and are only initialized once.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+#include &lt;stdio.h&gt;
+
+void count() {
+    static int count = 0; // Initialized only once
+    count++;
+    printf("%d\n", count);
+}
+
+int main() {
+    count(); // Output: 1
+    count(); // Output: 2
+    return 0;
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-title">
+                <span>9. What is the difference between a stack and a heap?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The stack is a region of memory that stores local variables and function call information, managed automatically. The heap is a region of memory used for dynamic memory allocation, managed manually using functions like malloc and free.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+// Stack allocation
+void function() {
+    int a = 10; // Allocated on the stack
+}
+
+// Heap allocation
+int *ptr = (int *)malloc(sizeof(int)); // Allocated on the heap
+free(ptr); // Free the allocated memory
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more questions as needed -->
+    </div>
+
+    
+    <script>
+        // JavaScript to handle toggle for answers
+        const questions = document.querySelectorAll('.question-title');
+
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const arrow = question.querySelector('span:last-child');
+
+                // Toggle answer display
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    arrow.classList.remove('rotate');
+                } else {
+                    answer.style.display = 'block';
+                    arrow.classList.add('rotate');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

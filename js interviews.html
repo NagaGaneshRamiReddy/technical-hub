@@ -1,0 +1,997 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 50 JavaScript Interview Questions</title>
+   
+    <style>
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            padding: 20px;
+            color: #fff;
+        }
+
+        /* Title section */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3rem;
+            color: #f1faee;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Container for interview questions */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1s ease;
+        }
+
+        /* Each question styling */
+        .question {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .question-title {
+            font-size: 1.5rem;
+            padding: 10px;
+            background: #1d3557;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .question-title:hover {
+            background: #457b9d;
+        }
+
+        .question-title span {
+            transition: transform 0.3s ease;
+        }
+
+        .answer {
+            display: none;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f1faee;
+            color: #1d3557;
+            border-radius: 10px;
+        }
+
+        .code-example {
+            background-color: #a8dadc;
+            padding: 10px;
+            border-radius: 5px;
+            color: #000;
+            margin-top: 10px;
+        }
+
+        /* Animation for fading in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animation for sliding in */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Arrow rotation */
+        .rotate {
+            transform: rotate(90deg);
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .question-title {
+                font-size: 1.3rem;
+            }
+
+            .answer {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Interview Questions</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <div class="question-title">
+                <span>1. What is the difference between var, let, and const?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p><strong>var:</strong> Declares a function-scoped or globally-scoped variable. It can be redeclared and updated.</p>
+                <p><strong>let:</strong> Declares a block-scoped variable. It can be updated but not redeclared.</p>
+                <p><strong>const:</strong> Declares a block-scoped, read-only constant. It cannot be updated or redeclared.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+var x = 10;
+let y = 20;
+const z = 30;
+
+x = 15; // valid
+y = 25; // valid
+z = 35; // Error: Assignment to constant variable.
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <div class="question-title">
+                <span>2. What are JavaScript closures?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A closure is a function that remembers the variables from the place where it was defined, even if executed in a different scope.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+function outer() {
+    let count = 0;
+    return function inner() {
+        count++;
+        return count;
+    }
+}
+
+const increment = outer();
+console.log(increment()); // 1
+console.log(increment()); // 2
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <div class="question-title">
+                <span>3. What is the difference between == and === in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p><strong>==</strong> compares two values after converting them to a common type (type coercion), whereas <strong>===</strong> compares both the values and types (strict equality).</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+console.log(1 == '1');  // true (type coercion)
+console.log(1 === '1'); // false (different types)
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <div class="question-title">
+                <span>4. What is hoisting in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+console.log(x); // undefined (due to hoisting)
+var x = 5;
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <div class="question-title">
+                <span>5. What is an IIFE in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>An IIFE (Immediately Invoked Function Expression) is a function that is executed immediately after it is defined.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+(function() {
+    console.log("IIFE executed!");
+})();
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <div class="question-title">
+                <span>6. What is the difference between null and undefined?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p><strong>null:</strong> A value explicitly assigned to a variable to represent "no value".</p>
+                <p><strong>undefined:</strong> A variable that has been declared but not assigned any value.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+let a;
+console.log(a); // undefined
+
+let b = null;
+console.log(b); // null
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <div class="question-title">
+                <span>7. What is a callback function in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A callback function is a function passed into another function as an argument and executed after the parent function completes its task.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+function greet(name, callback) {
+    console.log('Hello ' + name);
+    callback();
+}
+
+function sayGoodbye() {
+    console.log('Goodbye!');
+}
+
+greet('John', sayGoodbye);
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <div class="question-title">
+                <span>8. What are promises in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A promise is an object that represents the eventual completion or failure of an asynchronous operation.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+let promise = new Promise(function(resolve, reject) {
+    let success = true;
+    if(success) {
+        resolve('Promise fulfilled!');
+    } else {
+        reject('Promise rejected!');
+    }
+});
+
+promise.then(function(message) {
+    console.log(message);
+}).catch(function(error) {
+    console.log(error);
+});
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <div class="question-title">
+                <span>9. What is the 'this' keyword in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The 'this' keyword refers to the context in which a function is called. It can represent different objects depending on how the function is invoked.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const obj = {
+    name: 'Alice',
+    greet: function() {
+        console.log('Hello, ' + this.name);
+    }
+};
+
+obj.greet(); // Hello, Alice
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <div class="question-title">
+                <span>10. What is event delegation?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>Event delegation is a technique where a single event listener is added to a parent element instead of multiple listeners on child elements. It utilizes event bubbling to handle events.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const parent = document.getElementById('parent');
+parent.addEventListener('click', function(event) {
+    if (event.target.tagName === 'BUTTON') {
+        console.log('Button clicked: ' + event.target.innerText);
+    }
+});
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <div class="question-title">
+                <span>11. What is the purpose of the 'bind' method?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The 'bind' method creates a new function that, when called, has its 'this' keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const obj = {
+    name: 'Alice'
+};
+
+function greet() {
+    console.log('Hello, ' + this.name);
+}
+
+const greetAlice = greet.bind(obj);
+greetAlice(); // Hello, Alice
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <div class="question-title">
+                <span>12. Explain the concept of prototype in JavaScript.</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>In JavaScript, every object has a prototype, which is another object from which it can inherit properties and methods. This allows for shared behavior between instances of objects.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+function Person(name) {
+    this.name = name;
+}
+
+Person.prototype.greet = function() {
+    console.log('Hello, ' + this.name);
+};
+
+const alice = new Person('Alice');
+alice.greet(); // Hello, Alice
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <div class="question-title">
+                <span>13. What are the different data types in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>JavaScript has the following data types:</p>
+                <ul>
+                    <li>Primitive Types: <strong>String, Number, Boolean, Null, Undefined, Symbol, BigInt</strong></li>
+                    <li>Reference Types: <strong>Object, Array, Function</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <div class="question-title">
+                <span>14. What is the difference between an object and an array?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>An object is a collection of key-value pairs, while an array is an ordered collection of values. Arrays can be thought of as a special type of object.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const obj = { name: 'Alice', age: 25 }; // Object
+const arr = [1, 2, 3, 4, 5]; // Array
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <div class="question-title">
+                <span>15. What is a higher-order function in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A higher-order function is a function that takes another function as an argument, returns a function, or both.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+function map(arr, callback) {
+    const result = [];
+    for (let i = 0; i < arr.length; i++) {
+        result.push(callback(arr[i]));
+    }
+    return result;
+}
+
+const numbers = [1, 2, 3];
+const squares = map(numbers, x => x * x);
+console.log(squares); // [1, 4, 9]
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <div class="question-title">
+                <span>16. What is the 'new' keyword in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The 'new' keyword is used to create an instance of an object that has a constructor function. It allocates memory and binds 'this' to the new object.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+function Car(make, model) {
+    this.make = make;
+    this.model = model;
+}
+
+const myCar = new Car('Toyota', 'Corolla');
+console.log(myCar); // Car { make: 'Toyota', model: 'Corolla' }
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <div class="question-title">
+                <span>17. What is an arrow function in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>An arrow function is a shorter syntax for writing function expressions in JavaScript. It does not have its own 'this', which means it lexically binds 'this' from the surrounding code.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const add = (a, b) => a + b;
+console.log(add(2, 3)); // 5
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <div class="question-title">
+                <span>18. What is the spread operator in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The spread operator (...) allows an iterable (like an array) to be expanded in places where 0+ arguments or elements are expected. It can be used for function calls, array literals, and object literals.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const combined = [...arr1, ...arr2];
+console.log(combined); // [1, 2, 3, 4, 5, 6]
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <div class="question-title">
+                <span>19. What is destructuring in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>Destructuring is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const arr = [1, 2, 3];
+const [a, b] = arr;
+console.log(a); // 1
+console.log(b); // 2
+
+const obj = { x: 1, y: 2 };
+const { x, y } = obj;
+console.log(x); // 1
+console.log(y); // 2
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <div class="question-title">
+                <span>20. What is the purpose of the 'typeof' operator?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The 'typeof' operator is used to determine the type of a variable or expression. It returns a string indicating the type of the unevaluated operand.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+console.log(typeof 'Hello'); // "string"
+console.log(typeof 42); // "number"
+console.log(typeof true); // "boolean"
+console.log(typeof undefined); // "undefined"
+console.log(typeof null); // "object" (this is a known bug)
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+            <div class="question-title">
+                <span>21. What is the difference between synchronous and asynchronous programming?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>Synchronous programming is when tasks are executed one after another, blocking the execution of the next task until the current one is complete. Asynchronous programming allows tasks to be executed concurrently, enabling the program to continue running while waiting for operations to complete.</p>
+            </div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question">
+            <div class="question-title">
+                <span>22. What is AJAX?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>AJAX (Asynchronous JavaScript and XML) is a technique for creating asynchronous web applications. It allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes.</p>
+            </div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question">
+            <div class="question-title">
+                <span>23. What are template literals in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>Template literals are a way to work with strings in JavaScript, allowing for multi-line strings and string interpolation using backticks (``).</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const name = 'Alice';
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // Hello, Alice!
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question">
+            <div class="question-title">
+                <span>24. What is a Promise chain?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A Promise chain is a sequence of Promise calls where each call returns a new Promise, allowing you to perform asynchronous operations in a clean and manageable way.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log('Error:', error));
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 25 -->
+        <div class="question">
+            <div class="question-title">
+                <span>25. What are modules in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>Modules are a way to encapsulate code in JavaScript, allowing you to divide your code into reusable pieces. Each module can export its functionality and import others, promoting better organization and maintenance.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+// module.js
+export const PI = 3.14;
+export function add(x, y) {
+    return x + y;
+}
+
+// main.js
+import { PI, add } from './module.js';
+console.log(PI); // 3.14
+console.log(add(2, 3)); // 5
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 26 -->
+        <div class="question">
+            <div class="question-title">
+                <span>26. What is the difference between 'call', 'apply', and 'bind'?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>'call', 'apply', and 'bind' are methods that control the 'this' context of a function:</p>
+                <ul>
+                    <li><strong>call:</strong> Calls a function with a given 'this' value and arguments provided individually.</li>
+                    <li><strong>apply:</strong> Calls a function with a given 'this' value and arguments provided as an array.</li>
+                    <li><strong>bind:</strong> Returns a new function with a given 'this' value, allowing you to set 'this' for future calls.</li>
+                </ul>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+function greet(greeting) {
+    console.log(greeting + ', ' + this.name);
+}
+
+const obj = { name: 'Alice' };
+
+greet.call(obj, 'Hello'); // Hello, Alice
+greet.apply(obj, ['Hi']); // Hi, Alice
+
+const greetAlice = greet.bind(obj);
+greetAlice('Hey'); // Hey, Alice
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 27 -->
+        <div class="question">
+            <div class="question-title">
+                <span>27. What is the 'this' keyword in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The 'this' keyword refers to the context in which a function is called. Its value can change based on how the function is invoked (e.g., as a method, a standalone function, or an event handler).</p>
+            </div>
+        </div>
+
+        <!-- Question 28 -->
+        <div class="question">
+            <div class="question-title">
+                <span>28. Explain the concept of 'event bubbling' in JavaScript.</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>Event bubbling is a mechanism in JavaScript where an event starts from the target element and bubbles up to the parent elements in the DOM. This allows parent elements to handle events triggered by their child elements.</p>
+            </div>
+        </div>
+
+        <!-- Question 29 -->
+        <div class="question">
+            <div class="question-title">
+                <span>29. What is the difference between forEach and map?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p><strong>forEach:</strong> Executes a provided function once for each array element but does not return a new array.</p>
+                <p><strong>map:</strong> Creates a new array populated with the results of calling a provided function on every element in the calling array.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const numbers = [1, 2, 3];
+
+const squares = numbers.map(num => num * num);
+console.log(squares); // [1, 4, 9]
+
+numbers.forEach(num => console.log(num)); // 1, 2, 3
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 30 -->
+        <div class="question">
+            <div class="question-title">
+                <span>30. What is a closure in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope. This allows for data encapsulation and private variables.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+function makeCounter() {
+    let count = 0;
+    return function() {
+        count++;
+        return count;
+    };
+}
+
+const counter = makeCounter();
+console.log(counter()); // 1
+console.log(counter()); // 2
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 31 -->
+        <div class="question">
+            <div class="question-title">
+                <span>31. What is a JavaScript function expression?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A function expression is a function that is defined within an expression, usually assigned to a variable. Unlike function declarations, function expressions can be anonymous.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const greet = function(name) {
+    return 'Hello, ' + name;
+};
+
+console.log(greet('Alice')); // Hello, Alice
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 32 -->
+        <div class="question">
+            <div class="question-title">
+                <span>32. What is the difference between a function declaration and a function expression?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>A function declaration defines a function with a name and is hoisted, allowing it to be called before its definition. A function expression creates a function without a name (or with one) and is not hoisted.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+// Function Declaration
+function greet() {
+    return 'Hello';
+}
+
+// Function Expression
+const sayHello = function() {
+    return 'Hello';
+};
+
+greet(); // Hello
+sayHello(); // Hello
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 33 -->
+        <div class="question">
+            <div class="question-title">
+                <span>33. Explain the concept of 'hoisting' in JavaScript.</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase, allowing them to be used before their declaration.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+console.log(x); // undefined
+var x = 5;
+
+function sayHi() {
+    console.log('Hi');
+}
+sayHi(); // Hi
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 34 -->
+        <div class="question">
+            <div class="question-title">
+                <span>34. What is an Immediately Invoked Function Expression (IIFE)?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>An IIFE is a function that is defined and executed immediately after its creation. It helps in avoiding polluting the global scope and is commonly used for encapsulation.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+(function() {
+    console.log('I am an IIFE');
+})(); // I am an IIFE
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 35 -->
+        <div class="question">
+            <div class="question-title">
+                <span>35. What are async and await in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>Async and await are used for handling asynchronous operations in a cleaner way. An async function returns a Promise, and await can be used to pause the execution until the Promise is resolved.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+async function fetchData() {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+}
+
+fetchData();
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 36 -->
+        <div class="question">
+            <div class="question-title">
+                <span>36. What is the difference between '==' and '===' in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>'==' is the equality operator that checks for value equality with type coercion, while '===' is the strict equality operator that checks for both value and type equality without type coercion.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+console.log(5 == '5'); // true (type coercion)
+console.log(5 === '5'); // false (strict equality)
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 37 -->
+        <div class="question">
+            <div class="question-title">
+                <span>37. What is JSON?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy to read and write for humans and easy to parse and generate for machines. It is often used for transmitting data in web applications.</p>
+            </div>
+        </div>
+
+        <!-- Question 38 -->
+        <div class="question">
+            <div class="question-title">
+                <span>38. How can you parse a JSON string in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>You can parse a JSON string using the <code>JSON.parse()</code> method, which converts a JSON string into a JavaScript object.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const jsonString = '{"name": "Alice", "age": 25}';
+const obj = JSON.parse(jsonString);
+console.log(obj.name); // Alice
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 39 -->
+        <div class="question">
+            <div class="question-title">
+                <span>39. What is the purpose of the <code>JSON.stringify()</code> method?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The <code>JSON.stringify()</code> method converts a JavaScript object into a JSON string, which can then be sent to a server or stored in a file.</p>
+                <div class="code-example">
+                    Example:<br>
+                    <pre><code>
+const obj = { name: 'Alice', age: 25 };
+const jsonString = JSON.stringify(obj);
+console.log(jsonString); // {"name":"Alice","age":25}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 40 -->
+        <div class="question">
+            <div class="question-title">
+                <span>40. What is the 'window' object in JavaScript?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <p>The 'window' object represents the browser's window and is the global object in a browser environment. It provides properties and methods for interacting with the browser, such as <code>alert()</code>, <code>console.log()</code>, and <code>setTimeout()</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+    </div>
+
+    <!-- JavaScript for interaction -->
+    <script>
+        const questions = document.querySelectorAll('.question-title');
+
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const arrow = question.querySelector('span:last-child');
+
+                // Toggle answer display
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    arrow.classList.remove('rotate');
+                } else {
+                    answer.style.display = 'block';
+                    arrow.classList.add('rotate');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

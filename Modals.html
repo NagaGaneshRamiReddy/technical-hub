@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Bootstrap</title>
+
+</head>
+<body class="body">
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML/CSS Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Bootstrap Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+      
+    
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+    
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-bootstrap" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">Bootstrap Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Bootstrap.html" target="_blank"><b class="b12">Bootstrap Roadmap</b></a>
+        <ul>
+            <a href="Introduction_to_Bootstrap.html" target="_blank">Bootstrap Introduction</a>
+    
+            <li><a href="Getting_Started.html" target="_blank">Getting Started</a></li>
+            <li><a href="Installation.html" target="_blank">Installation</a></li>
+            <li><a href="Bootstrap_Grid_System.html" target="_blank">Bootstrap Grid System</a></li>
+        </ul>
+    
+        <h3> Components</h3>
+        <a href="Bootstrap_Components.html" target="_blank">Bootstrap Components</a>
+        <ul>
+            <li><a href="Alerts.html" target="_blank">Alerts</a></li>
+            <li><a href="Buttons.html" target="_blank">Buttons</a></li>
+            <li><a href="Cards.html" target="_blank">Cards</a></li>
+            <li><a href="Forms.html" target="_blank">Forms</a></li>
+            <li><a href="Modals.html" target="_blank">Modals</a></li>
+            <li><a href="Navigation.html" target="_blank">Navigation</a></li>
+        </ul>
+    
+        <h3>Bootstrap Utilities</h3>
+        <a href="Bootstrap_Utilities.html" target="_blank">Bootstrap Utilities</a>
+        <ul>
+            <li><a href="Spacing.html" target="_blank">Spacing</a></li>
+            <li><a href="Colors.html" target="_blank">Colors</a></li>
+            <li><a href="Borders.html" target="_blank">Borders</a></li>
+            <li><a href="Display.html" target="_blank">Display</a></li>
+        </ul>
+    
+        <h3>Bootstrap JavaScript</h3>
+        <a href="Bootstrap_JavaScript.html" target="_blank">Bootstrap JavaScript</a>
+        <ul>
+            <li><a href="Overview.html" target="_blank">Overview</a></li>
+            <li><a href="Using_JavaScript.html" target="_blank">Using Bootstrap with JavaScript</a></li>
+            <li><a href="Customizing_Bootstrap.html" target="_blank">Customizing Bootstrap</a></li>
+        </ul>
+    
+        <h3>Responsive Design</h3>
+        <a href="Responsive_Design.html" target="_blank">Responsive Design</a>
+        <ul>
+            <li><a href="Media_Queries.html" target="_blank">Media Queries</a></li>
+            <li><a href="Responsive_Utilities.html" target="_blank">Responsive Utilities</a></li>
+        </ul>
+    
+        <h3>Bootstrap Themes</h3>
+        <a href="Bootstrap_Themes.html" target="_blank">Bootstrap Themes</a>
+        <ul>
+            <li><a href="Creating_Themes.html" target="_blank">Creating Themes</a></li>
+            <li><a href="Using_Themes.html" target="_blank">Using Themes</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Bootstrap_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Bootstrap_quiz.html";
+}
+function goproject() {
+    window.location.href = "Bootstrap_projects.html";
+}
+function gocomp() {
+        window.location.href = "html-css_Compiler.html";
+    }
+      
+    function goPrevious() {
+        window.location.href = "Forms.html";
+    }
+    function goNext() {
+        window.location.href = "Navigation.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-bootstrap"  style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk"> Bootstrap Tutorial</h2>
+<div class="div1">Bootstrap Modals</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+<br><br>
+<h2>Introduction to Bootstrap Modals</h2>
+<p>Bootstrap modals are dialog boxes that overlay the main content of a webpage. They can be used for various purposes, such as displaying alerts, forms, or additional information without navigating away from the page.</p>
+
+<h2>Basic Modal Example</h2>
+<div class="example">
+    <pre><code>&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"&gt;
+    Launch Modal
+&lt;/button&gt;
+
+&lt;div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog" role="document"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Modal title&lt;/h5&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                This is a simple modal example.
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<h3>Expected Output:</h3>
+<div class="output">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Launch Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    This is a simple modal example.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Modal with Form</h2>
+<div class="example">
+    <pre><code>&lt;button type="button" class="btn btn-success" data-toggle="modal" data-target="#formModal"&gt;
+    Open Form Modal
+&lt;/button&gt;
+
+&lt;div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog" role="document"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title" id="formModalLabel"&gt;Form in Modal&lt;/h5&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                &lt;form&gt;
+                    &lt;div class="form-group"&gt;
+                        &lt;label for="recipient-name"&gt;Recipient:&lt;/label&gt;
+                        &lt;input type="text" class="form-control" id="recipient-name"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-group"&gt;
+                        &lt;label for="message-text"&gt;Message:&lt;/label&gt;
+                        &lt;textarea class="form-control" id="message-text"&gt;&lt;/textarea&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Send message&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<h3>Expected Output:</h3>
+<div class="output">
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#formModal">
+        Open Form Modal
+    </button>
+
+    <!-- Form Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formModalLabel">Form in Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Resources</h2>
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/4.5/components/modal/" target="_blank">Bootstrap Modals Documentation</a></li>
+        <li><a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank">Bootstrap Introduction</a></li>
+    </ul>
+</div>
+
+<h2>Summary</h2>
+<p>Bootstrap modals are a powerful way to display content without navigating away from the current page. They can include forms, alerts, and various other interactive elements.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

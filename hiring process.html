@@ -1,0 +1,794 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Interview Processes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #03ff18;
+            color: white;
+            background: linear-gradient(45deg, #7dc0da, #07fbff, #c4f1d8, #a5d4e8);
+            background-size: 400% 400%;
+            animation: gradientFlow 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+       
+         header {
+            width: 100%;
+            background-color:green;
+            color: white;
+           padding-left: 20px;
+           font-size: 20px;
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .container1 {
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 100px; /* Adjusted to fit below header */
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .box {
+            border: 4px solid #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #000000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            flex: 1;
+            min-width: 220px;
+            max-width: 250px;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .h1 {
+            font-size: 20px;
+            color: blue;
+            margin: 0;
+        }
+
+        .box h2 {
+            margin-top: 0;
+            color: #00e2fb;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .details {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+        }
+
+        .details.show {
+            max-height: 1000px;
+            opacity: 1;
+        }
+
+        .show-button {
+            background-color: #059231;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .show-button:hover {
+            background-color: #0ac9f4;
+        }
+
+        .str {
+            color: #059231;
+        }
+
+        .h11 {
+            color: #000000;
+            font-size: 27px;
+        }
+
+        #box12-container {
+            display: flex;
+            position: absolute;
+            top: 60px; /* Adjust top position to fit below header */
+            left: 0;
+            width: 100%;
+            margin-top: 250px;
+            overflow: hidden;
+        }
+
+        .box12 {
+            display: inline-block;
+            width: 500px; /* Adjusted for visibility */
+            height: 150px; /* Adjusted for visibility */
+            background-color: #021105;
+            border: 5px solid black;
+            margin: 0 10px;
+            border-radius: 10px;
+            animation: moveBoxes 10s linear infinite;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes moveBoxes {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .box12.clicked {
+            transform: scale(1.2);
+            background-color: rgb(3, 60, 68);
+        }
+
+        @media (max-width: 600px) {
+            .box12 {
+                width: 100px;
+                height: 70px;
+            }
+        }
+        .ai{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1 class="">
+           <a class="ai"href="index.html"> <i class="fas fa-tree"></i>
+            TreeLearners</a>
+        </h1>
+    </header>
+
+    
+    <div class="container1"><br><br>
+        
+        <h1 class="h11">Google Companies Hiring Process</h1><br><br>
+        <div class="box-container">
+            <!-- Google Interview Process -->
+            <div class="box" onclick="toggleDetails('google-screening')">
+                <h2 class="h1"> 1. Initial Screening</h2>
+                <div id="google-screening" class="details">
+                    <p><strong class="str">Recruiter Call:</strong> Assess fit for the role, discuss resume, and clarify the job description.</p>
+                    <p><strong class="str">Duration:</strong> 30-60 minutes.</p>
+                    <p><strong class="str">Focus:</strong> General experience, technical skills, and cultural fit.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('google-phone')">
+                <h2 class="h1"> 2. Technical Phone/Video Interviews</h2>
+                <div id="google-phone" class="details">
+                    <p><strong class="str">First Round:</strong> Evaluate technical skills and problem-solving ability.</p>
+                    <p><strong class="str">Format:</strong> Coding questions, algorithms, data structures.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                    <p><strong class="str">Tools:</strong> Typically done via a coding platform or shared document.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('google-onsite')">
+                <h2 class="h1">3. On-Site Interviews</h2>
+                <div id="google-onsite" class="details">
+                    <p><strong class="str">Technical Interviews:</strong> In-depth technical evaluation through problem-solving and coding challenges.</p>
+                    <p><strong class="str">Format:</strong> Multiple technical rounds including algorithm questions, system design, and coding.</p>
+                    <p><strong class="str">Duration:</strong> 4-6 hours.</p>
+                    <p><strong class="str">Components:</strong> Whiteboard coding or online coding tests, discussion of past projects.</p>
+                    <div id="google-behavioral" class="details">
+                        <p><strong class="str">Behavioral Interviews:</strong> Assess soft skills, teamwork, and fit with Google’s culture.</p>
+                        <p><strong class="str">Format:</strong> Behavioral questions based on past experiences (STAR method: Situation, Task, Action, Result).</p>
+                        <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Preparation Tips -->
+            <div class="box" onclick="toggleDetails('interview-prep')">
+                <h2 class="h1">Interview Preparation Tips</h2>
+                <div id="interview-prep" class="details">
+                    <ul>
+                        <li><strong class="str">Understand the Role:</strong> Thoroughly review the job description and required skills.</li>
+                        <li><strong class="str">Practice Coding:</strong> Use platforms like LeetCode or HackerRank to practice coding problems.</li>
+                        <li><strong class="str">Study Algorithms and Data Structures:</strong> Focus on common algorithms and data structures used in technical interviews.</li>
+                        <li><strong class="str">Prepare Behavioral Responses:</strong> Use the STAR method to structure your answers to behavioral questions.</li>
+                        <li><strong class="str">Research Company Culture:</strong> Understand the company’s values and prepare to discuss how you fit with their culture.</li>
+                        <li><strong class="str">Mock Interviews:</strong> Conduct mock interviews with friends or use online services to simulate the interview experience.</li>
+                        <li><strong class="str">Ask Questions:</strong> Prepare insightful questions to ask your interviewers about the team, projects, and company culture.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 class="h11">Amazon Companies Hiring Process</h1><br><br>
+        <div class="box-container">
+            <!-- Amazon Interview Process -->
+            <div class="box" onclick="toggleDetails('amazon-screening')">
+                <h2 class="h1"> 1. Initial Screening</h2>
+                <div id="amazon-screening" class="details">
+                    <p><strong class="str">Recruiter Call:</strong> Discuss resume, evaluate fit for the role, and explain the hiring process.</p>
+                    <p><strong class="str">Duration:</strong> 30-45 minutes.</p>
+                    <p><strong class="str">Focus:</strong> General qualifications, experience, and understanding of the role.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('amazon-phone')">
+                <h2 class="h1"> 2. Technical Phone/Video Interviews</h2>
+                <div id="amazon-phone" class="details">
+                    <p><strong class="str">First Round:</strong> Assess technical skills and problem-solving capabilities.</p>
+                    <p><strong class="str">Format:</strong> Coding problems, system design questions, and problem-solving exercises.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                    <p><strong class="str">Tools:</strong> Typically conducted via a coding platform or video call.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('amazon-onsite')">
+                <h2 class="h1">3. On-Site Interviews</h2>
+                <div id="amazon-onsite" class="details">
+                    <p><strong class="str">Technical Interviews:</strong> In-depth technical evaluation with coding exercises, design problems, and scenario-based questions.</p>
+                    <p><strong class="str">Format:</strong> Multiple rounds including coding, design, and sometimes behavioral questions.</p>
+                    <p><strong class="str">Duration:</strong> 4-6 hours, typically spread across a few sessions.</p>
+                    <p><strong class="str">Components:</strong> Whiteboard coding, live coding sessions, and discussion of previous projects.</p>
+                    <div id="amazon-behavioral" class="details">
+                        <p><strong class="str">Behavioral Interviews:</strong> Evaluate leadership principles and fit with Amazon’s culture.</p>
+                        <p><strong class="str">Format:</strong> Behavioral questions based on Amazon’s Leadership Principles (e.g., Customer Obsession, Deliver Results).</p>
+                        <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Preparation Tips -->
+            <div class="box" onclick="toggleDetails('interview-prep1')">
+                <h2 class="h1">Interview Preparation Tips</h2>
+                <div id="interview-prep1" class="details">
+                    <ul>
+                        <li><strong class="str">Understand Amazon's Leadership Principles:</strong> Familiarize yourself with the 16 principles and prepare examples from your experience.</li>
+                        <li><strong class="str">Practice Coding:</strong> Use platforms like LeetCode or HackerRank to solve coding problems.</li>
+                        <li><strong class="str">Study System Design:</strong> Review common system design patterns and prepare to discuss your design approach.</li>
+                        <li><strong class="str">Prepare Behavioral Responses:</strong> Use the STAR method to structure your answers for behavioral questions.</li>
+                        <li><strong class="str">Research Amazon's Culture:</strong> Understand Amazon’s work environment and be prepared to discuss how you align with their values.</li>
+                        <li><strong class="str">Mock Interviews:</strong> Conduct mock interviews to simulate the interview experience and receive feedback.</li>
+                        <li><strong class="str">Ask Insightful Questions:</strong> Prepare questions to ask your interviewers about the team, role, and company culture.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 class="h11">Apply Companies Hiring Process</h1><br><br>
+        <div class="box-container">
+            <!-- Apply Companies Interview Process -->
+            <div class="box" onclick="toggleDetails('apply-screening')">
+                <h2 class="h1"> 1. Initial Screening</h2>
+                <div id="apply-screening" class="details">
+                    <p><strong class="str">Recruiter Call:</strong> Review resume, discuss role expectations, and outline the hiring process.</p>
+                    <p><strong class="str">Duration:</strong> 30 minutes.</p>
+                    <p><strong class="str">Focus:</strong> General qualifications and fit for the position.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('apply-technical')">
+                <h2 class="h1"> 2. Technical Interviews</h2>
+                <div id="apply-technical" class="details">
+                    <p><strong class="str">First Round:</strong> Evaluate technical skills through problem-solving and coding tasks.</p>
+                    <p><strong class="str">Format:</strong> Coding challenges, system design scenarios, and technical discussions.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                    <p><strong class="str">Tools:</strong> Conducted using coding platforms or video conferencing.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('apply-onsite')">
+                <h2 class="h1">3. On-Site Interviews</h2>
+                <div id="apply-onsite" class="details">
+                    <p><strong class="str">Technical Interviews:</strong> Detailed assessment through coding tests, design exercises, and technical scenarios.</p>
+                    <p><strong class="str">Format:</strong> Multiple rounds including coding, design, and problem-solving.</p>
+                    <p><strong class="str">Duration:</strong> 4-5 hours, divided into several sessions.</p>
+                    <p><strong class="str">Components:</strong> Whiteboard coding, live coding, and project discussions.</p>
+                    <div id="apply-behavioral" class="details">
+                        <p><strong class="str">Behavioral Interviews:</strong> Assess cultural fit and leadership qualities.</p>
+                        <p><strong class="str">Format:</strong> Questions focused on past experiences and alignment with company values.</p>
+                        <p><strong class="str">Duration:</strong> 45 minutes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Preparation Tips -->
+            <div class="box" onclick="toggleDetails('apply-prep')">
+                <h2 class="h1">Interview Preparation Tips</h2>
+                <div id="apply-prep" class="details">
+                    <ul>
+                        <li><strong class="str">Know the Company:</strong> Research the company's mission, values, and recent news.</li>
+                        <li><strong class="str">Practice Coding:</strong> Solve coding problems on platforms like LeetCode or CodeSignal.</li>
+                        <li><strong class="str">Review System Design:</strong> Study common design patterns and be ready to discuss your design strategies.</li>
+                        <li><strong class="str">Prepare Behavioral Responses:</strong> Use the STAR method to structure your answers to behavioral questions.</li>
+                        <li><strong class="str">Understand the Role:</strong> Have a clear understanding of the role's requirements and how your skills match.</li>
+                        <li><strong class="str">Mock Interviews:</strong> Practice with mock interviews to get used to the format and receive feedback.</li>
+                        <li><strong class="str">Ask Questions:</strong> Prepare insightful questions about the role, team, and company culture.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 class="h11">Microsoft Companies Hiring Process</h1><br><br>
+        <div class="box-container">
+            <!-- Microsoft Interview Process -->
+            <div class="box" onclick="toggleDetails('microsoft-screening')">
+                <h2 class="h1"> 1. Initial Screening</h2>
+                <div id="microsoft-screening" class="details">
+                    <p><strong class="str">Recruiter Call:</strong> Review your resume, discuss your interest in the role, and explain the next steps in the hiring process.</p>
+                    <p><strong class="str">Duration:</strong> 30-45 minutes.</p>
+                    <p><strong class="str">Focus:</strong> Your background, experience, and fit for the role at Microsoft.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('microsoft-technical')">
+                <h2 class="h1"> 2. Technical Phone/Video Interviews</h2>
+                <div id="microsoft-technical" class="details">
+                    <p><strong class="str">First Round:</strong> Assess technical skills, problem-solving abilities, and coding proficiency.</p>
+                    <p><strong class="str">Format:</strong> Coding challenges, technical questions, and system design problems.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                    <p><strong class="str">Tools:</strong> Conducted via coding platforms or video calls.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('microsoft-onsite')">
+                <h2 class="h1">3. On-Site Interviews</h2>
+                <div id="microsoft-onsite" class="details">
+                    <p><strong class="str">Technical Interviews:</strong> In-depth evaluation including coding challenges, system design discussions, and problem-solving scenarios.</p>
+                    <p><strong class="str">Format:</strong> Multiple rounds with a focus on technical skills, coding, and design.</p>
+                    <p><strong class="str">Duration:</strong> 4-5 hours, usually spread across several interviews.</p>
+                    <p><strong class="str">Components:</strong> Whiteboard coding, live coding sessions, and discussions on previous projects.</p>
+                    <div id="microsoft-behavioral" class="details">
+                        <p><strong class="str">Behavioral Interviews:</strong> Evaluate cultural fit, leadership qualities, and alignment with Microsoft’s values.</p>
+                        <p><strong class="str">Format:</strong> Questions based on Microsoft’s core competencies and your past experiences.</p>
+                        <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Preparation Tips -->
+            <div class="box" onclick="toggleDetails('microsoft-prep')">
+                <h2 class="h1">Interview Preparation Tips</h2>
+                <div id="microsoft-prep" class="details">
+                    <ul>
+                        <li><strong class="str">Understand Microsoft's Culture:</strong> Familiarize yourself with Microsoft's core values and recent projects.</li>
+                        <li><strong class="str">Practice Coding:</strong> Use coding practice platforms like LeetCode or HackerRank to solve a variety of problems.</li>
+                        <li><strong class="str">Review System Design:</strong> Study system design principles and be ready to discuss your design approach.</li>
+                        <li><strong class="str">Prepare for Behavioral Questions:</strong> Use the STAR method to prepare responses to behavioral questions.</li>
+                        <li><strong class="str">Research the Role:</strong> Understand the role’s requirements and how your skills align with them.</li>
+                        <li><strong class="str">Mock Interviews:</strong> Practice with mock interviews to simulate the interview process and receive feedback.</li>
+                        <li><strong class="str">Ask Questions:</strong> Prepare thoughtful questions about the team, role, and company culture.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 class="h11">TCS Hiring Process</h1><br><br>
+        <div class="box-container">
+            <!-- TCS Interview Process -->
+            <div class="box" onclick="toggleDetails('tcs-screening')">
+                <h2 class="h1"> 1. Initial Screening</h2>
+                <div id="tcs-screening" class="details">
+                    <p><strong class="str">Recruiter Call:</strong> Initial call to discuss your resume, experience, and fit for the role at TCS.</p>
+                    <p><strong class="str">Duration:</strong> 20-30 minutes.</p>
+                    <p><strong class="str">Focus:</strong> Basic qualifications, interest in the role, and next steps in the hiring process.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('tcs-aptitude')">
+                <h2 class="h1"> 2. Aptitude Test</h2>
+                <div id="tcs-aptitude" class="details">
+                    <p><strong class="str">Format:</strong> Online test assessing quantitative aptitude, logical reasoning, and verbal ability.</p>
+                    <p><strong class="str">Duration:</strong> 60-90 minutes.</p>
+                    <p><strong class="str">Components:</strong> Numerical reasoning, analytical reasoning, and English comprehension.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('tcs-technical')">
+                <h2 class="h1">3. Technical Interview</h2>
+                <div id="tcs-technical" class="details">
+                    <p><strong class="str">Technical Assessment:</strong> Evaluate your technical skills, coding ability, and problem-solving capabilities.</p>
+                    <p><strong class="str">Format:</strong> Coding questions, technical problems, and discussions on previous projects.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('tcs-hr')">
+                <h2 class="h1">4. HR Interview</h2>
+                <div id="tcs-hr" class="details">
+                    <p><strong class="str">HR Round:</strong> Assess cultural fit, communication skills, and alignment with TCS values.</p>
+                    <p><strong class="str">Format:</strong> Questions about your background, career goals, and fit for the company culture.</p>
+                    <p><strong class="str">Duration:</strong> 30-45 minutes.</p>
+                </div>
+            </div>
+
+            <!-- Interview Preparation Tips -->
+            <div class="box" onclick="toggleDetails('tcs-prep')">
+                <h2 class="h1">Interview Preparation Tips</h2>
+                <div id="tcs-prep" class="details">
+                    <ul>
+                        <li><strong class="str">Understand TCS’s Culture:</strong> Familiarize yourself with TCS’s mission, values, and recent projects.</li>
+                        <li><strong class="str">Prepare for Aptitude Tests:</strong> Practice quantitative, logical, and verbal reasoning with online resources.</li>
+                        <li><strong class="str">Brush Up on Technical Skills:</strong> Review key programming concepts, data structures, and algorithms.</li>
+                        <li><strong class="str">Mock Interviews:</strong> Conduct mock interviews to practice technical and behavioral questions.</li>
+                        <li><strong class="str">Prepare Behavioral Responses:</strong> Use the STAR method to structure answers to HR and behavioral questions.</li>
+                        <li><strong class="str">Research the Role:</strong> Understand the specific requirements and responsibilities of the role you’re applying for.</li>
+                        <li><strong class="str">Ask Questions:</strong> Prepare thoughtful questions about the team, role, and company to ask during the interview.</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <h1 class="h11">NVIDIA Hiring Process</h1><br><br>
+    <div class="box-container">
+        <!-- NVIDIA Interview Process -->
+        <div class="box" onclick="toggleDetails('nvidia-screening')">
+            <h2 class="h1"> 1. Initial Screening</h2>
+            <div id="nvidia-screening" class="details">
+                <p><strong class="str">Recruiter Call:</strong> An initial call to discuss your resume, experience, and interest in the role at NVIDIA.</p>
+                <p><strong class="str">Duration:</strong> 30-45 minutes.</p>
+                <p><strong class="str">Focus:</strong> Your background, qualifications, and fit for the position.</p>
+            </div>
+        </div>
+
+        <div class="box" onclick="toggleDetails('nvidia-technical')">
+            <h2 class="h1"> 2. Technical Phone/Video Interviews</h2>
+            <div id="nvidia-technical" class="details">
+                <p><strong class="str">First Round:</strong> Assess your technical skills, problem-solving abilities, and coding proficiency.</p>
+                <p><strong class="str">Format:</strong> Coding exercises, technical questions, and problem-solving scenarios.</p>
+                <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                <p><strong class="str">Tools:</strong> Usually conducted through coding platforms or video conferencing.</p>
+            </div>
+        </div>
+
+        <div class="box" onclick="toggleDetails('nvidia-onsite')">
+            <h2 class="h1">3. On-Site Interviews</h2>
+            <div id="nvidia-onsite" class="details">
+                <p><strong class="str">Technical Interviews:</strong> Comprehensive assessment including coding challenges, design problems, and technical discussions.</p>
+                <p><strong class="str">Format:</strong> Multiple rounds covering different aspects of technical expertise.</p>
+                <p><strong class="str">Duration:</strong> 4-5 hours, spread across several sessions.</p>
+                <p><strong class="str">Components:</strong> Whiteboard coding, live coding sessions, and deep dives into previous projects.</p>
+                <div id="nvidia-behavioral" class="details">
+                    <p><strong class="str">Behavioral Interviews:</strong> Evaluate your fit with NVIDIA’s culture, teamwork, and leadership skills.</p>
+                    <p><strong class="str">Format:</strong> Questions about past experiences, teamwork, and how you handle challenges.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interview Preparation Tips -->
+        <div class="box" onclick="toggleDetails('nvidia-prep')">
+            <h2 class="h1">Interview Preparation Tips</h2>
+            <div id="nvidia-prep" class="details">
+                <ul>
+                    <li><strong class="str">Understand NVIDIA’s Mission:</strong> Research NVIDIA’s latest innovations, products, and company culture.</li>
+                    <li><strong class="str">Practice Coding:</strong> Solve coding problems on platforms like LeetCode, CodeSignal, or HackerRank.</li>
+                    <li><strong class="str">Review System Design:</strong> Study system design principles and be prepared to discuss your design approach.</li>
+                    <li><strong class="str">Prepare Behavioral Responses:</strong> Use the STAR method to prepare for questions about your experiences and teamwork.</li>
+                    <li><strong class="str">Research NVIDIA’s Technology:</strong> Familiarize yourself with NVIDIA’s technology stack and recent advancements.</li>
+                    <li><strong class="str">Mock Interviews:</strong> Conduct mock interviews to practice both technical and behavioral questions.</li>
+                    <li><strong class="str">Ask Insightful Questions:</strong> Prepare questions to ask your interviewers about the team, role, and projects at NVIDIA.</li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="h11">Zopsmart Hiring Process</h1><br><br>
+        <div class="box-container">
+            <!-- Zopsmart Interview Process -->
+            <div class="box" onclick="toggleDetails('zopsmart-screening')">
+                <h2 class="h1"> 1. Initial Screening</h2>
+                <div id="zopsmart-screening" class="details">
+                    <p><strong class="str">Recruiter Call:</strong> An initial discussion to review your resume, qualifications, and interest in the role at Zopsmart.</p>
+                    <p><strong class="str">Duration:</strong> 20-30 minutes.</p>
+                    <p><strong class="str">Focus:</strong> Understanding your background and fit for the role, and explaining the next steps in the process.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('zopsmart-technical')">
+                <h2 class="h1"> 2. Technical Assessment</h2>
+                <div id="zopsmart-technical" class="details">
+                    <p><strong class="str">Technical Evaluation:</strong> Assessment of your technical skills relevant to the role.</p>
+                    <p><strong class="str">Format:</strong> Online technical test or coding challenge.</p>
+                    <p><strong class="str">Duration:</strong> 60-90 minutes.</p>
+                    <p><strong class="str">Components:</strong> Coding problems, technical scenarios, and sometimes a case study.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('zopsmart-interview')">
+                <h2 class="h1">3. Technical Interview</h2>
+                <div id="zopsmart-interview" class="details">
+                    <p><strong class="str">Interview Focus:</strong> In-depth discussion of your technical skills, problem-solving approach, and relevant experience.</p>
+                    <p><strong class="str">Format:</strong> Coding exercises, technical discussions, and review of previous projects.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('zopsmart-hr')">
+                <h2 class="h1">4. HR Interview</h2>
+                <div id="zopsmart-hr" class="details">
+                    <p><strong class="str">HR Round:</strong> Assess cultural fit, discuss career goals, and evaluate communication skills.</p>
+                    <p><strong class="str">Format:</strong> Questions about your background, motivations, and fit for the company culture.</p>
+                    <p><strong class="str">Duration:</strong> 30-45 minutes.</p>
+                </div>
+            </div>
+
+            <!-- Interview Preparation Tips -->
+            <div class="box" onclick="toggleDetails('zopsmart-prep')">
+                <h2 class="h1">Interview Preparation Tips</h2>
+                <div id="zopsmart-prep" class="details">
+                    <ul>
+                        <li><strong class="str">Understand Zopsmart’s Mission:</strong> Research Zopsmart’s projects, technology, and company values.</li>
+                        <li><strong class="str">Practice Technical Skills:</strong> Prepare for coding challenges and technical assessments by practicing on relevant platforms.</li>
+                        <li><strong class="str">Review Technical Concepts:</strong> Brush up on key technical concepts and problem-solving strategies related to the role.</li>
+                        <li><strong class="str">Prepare for Behavioral Questions:</strong> Use the STAR method to prepare responses for behavioral and HR questions.</li>
+                        <li><strong class="str">Research the Role:</strong> Understand the specific responsibilities and requirements of the role you’re applying for.</li>
+                        <li><strong class="str">Mock Interviews:</strong> Conduct mock interviews to get feedback and improve your performance.</li>
+                        <li><strong class="str">Ask Questions:</strong> Prepare thoughtful questions about the team, projects, and company culture to ask your interviewers.</li>
+                    </ul>
+                </div>
+            </div>
+            
+    </div>
+    <h1 class="h11">Cisco Hiring Process</h1><br><br>
+    <div class="box-container">
+        <!-- Cisco Interview Process -->
+        <div class="box" onclick="toggleDetails('cisco-screening')">
+            <h2 class="h1"> 1. Initial Screening</h2>
+            <div id="cisco-screening" class="details">
+                <p><strong class="str">Recruiter Call:</strong> An initial conversation to discuss your resume, career goals, and fit for the role at Cisco.</p>
+                <p><strong class="str">Duration:</strong> 30-45 minutes.</p>
+                <p><strong class="str">Focus:</strong> Your background, qualifications, and the recruitment process overview.</p>
+            </div>
+        </div>
+
+        <div class="box" onclick="toggleDetails('cisco-technical')">
+            <h2 class="h1"> 2. Technical Phone/Video Interview</h2>
+            <div id="cisco-technical" class="details">
+                <p><strong class="str">First Round:</strong> Evaluation of your technical skills and problem-solving abilities.</p>
+                <p><strong class="str">Format:</strong> Coding problems, technical questions, and scenario-based challenges.</p>
+                <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                <p><strong class="str">Tools:</strong> Typically conducted via video conferencing or a coding platform.</p>
+            </div>
+        </div>
+
+        <div class="box" onclick="toggleDetails('cisco-onsite')">
+            <h2 class="h1">3. On-Site Interviews</h2>
+            <div id="cisco-onsite" class="details">
+                <p><strong class="str">Technical Interviews:</strong> In-depth evaluation including coding exercises, technical discussions, and problem-solving scenarios.</p>
+                <p><strong class="str">Format:</strong> Multiple rounds covering various aspects of technical expertise and previous project experiences.</p>
+                <p><strong class="str">Duration:</strong> 4-6 hours, often spread across multiple sessions.</p>
+                <p><strong class="str">Components:</strong> Whiteboard coding, live coding, and in-depth technical discussions.</p>
+                <div id="cisco-behavioral" class="details">
+                    <p><strong class="str">Behavioral Interviews:</strong> Assess cultural fit, teamwork, and leadership qualities.</p>
+                    <p><strong class="str">Format:</strong> Behavioral questions based on past experiences and alignment with Cisco’s values.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interview Preparation Tips -->
+        <div class="box" onclick="toggleDetails('cisco-prep')">
+            <h2 class="h1">Interview Preparation Tips</h2>
+            <div id="cisco-prep" class="details">
+                <ul>
+                    <li><strong class="str">Understand Cisco’s Business:</strong> Research Cisco’s products, services, and recent innovations.</li>
+                    <li><strong class="str">Practice Technical Skills:</strong> Solve coding problems on platforms like LeetCode, CodeSignal, or HackerRank.</li>
+                    <li><strong class="str">Review System Design:</strong> Prepare for system design questions and review key principles.</li>
+                    <li><strong class="str">Prepare Behavioral Responses:</strong> Use the STAR method to structure responses for behavioral and HR questions.</li>
+                    <li><strong class="str">Research Cisco’s Culture:</strong> Understand Cisco’s values and work environment to better align with their expectations.</li>
+                    <li><strong class="str">Mock Interviews:</strong> Conduct mock interviews to practice technical and behavioral questions.</li>
+                    <li><strong class="str">Ask Insightful Questions:</strong> Prepare thoughtful questions about the team, role, and company to ask during interviews.</li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="h11">Walmart Hiring Process</h1><br><br>
+        <div class="box-container">
+            <!-- Walmart Interview Process -->
+            <div class="box" onclick="toggleDetails('walmart-screening')">
+                <h2 class="h1"> 1. Initial Screening</h2>
+                <div id="walmart-screening" class="details">
+                    <p><strong class="str">Recruiter Call:</strong> An initial conversation to review your resume, discuss your interest in the role, and explain Walmart’s hiring process.</p>
+                    <p><strong class="str">Duration:</strong> 20-30 minutes.</p>
+                    <p><strong class="str">Focus:</strong> Your background, skills, and fit for the position.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('walmart-technical')">
+                <h2 class="h1"> 2. Online Assessment</h2>
+                <div id="walmart-technical" class="details">
+                    <p><strong class="str">Assessment:</strong> An online test to evaluate your technical skills or aptitude, depending on the role.</p>
+                    <p><strong class="str">Format:</strong> Online tests or exercises related to the specific job role.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('walmart-interview')">
+                <h2 class="h1">3. Phone/Video Interview</h2>
+                <div id="walmart-interview" class="details">
+                    <p><strong class="str">Interview Focus:</strong> A detailed discussion on your technical skills, experience, and how you handle job-specific scenarios.</p>
+                    <p><strong class="str">Format:</strong> Typically conducted via phone or video conferencing.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('walmart-onsite')">
+                <h2 class="h1">4. On-Site Interviews</h2>
+                <div id="walmart-onsite" class="details">
+                    <p><strong class="str">Technical Interviews:</strong> In-depth evaluation including problem-solving tasks, coding exercises, and technical discussions.</p>
+                    <p><strong class="str">Behavioral Interviews:</strong> Assess cultural fit, teamwork, and leadership qualities.</p>
+                    <p><strong class="str">Duration:</strong> 4-5 hours, typically divided into several sessions.</p>
+                </div>
+            </div>
+
+            <!-- Interview Preparation Tips -->
+            <div class="box" onclick="toggleDetails('walmart-prep')">
+                <h2 class="h1">Interview Preparation Tips</h2>
+                <div id="walmart-prep" class="details">
+                    <ul>
+                        <li><strong class="str">Understand Walmart’s Business:</strong> Research Walmart’s operations, values, and recent initiatives.</li>
+                        <li><strong class="str">Practice Online Assessments:</strong> Prepare for potential online tests by practicing relevant exercises.</li>
+                        <li><strong class="str">Review Technical Skills:</strong> Brush up on key technical concepts and problem-solving techniques.</li>
+                        <li><strong class="str">Prepare for Behavioral Questions:</strong> Use the STAR method to answer questions about your experiences and skills.</li>
+                        <li><strong class="str">Research the Role:</strong> Understand the job description and requirements to align your preparation.</li>
+                        <li><strong class="str">Mock Interviews:</strong> Conduct practice interviews to improve your performance.</li>
+                        <li><strong class="str">Prepare Questions:</strong> Develop insightful questions about the role, team, and company to ask during your interviews.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 class="h11">HP Hiring Process</h1><br><br>
+        <div class="box-container">
+            <!-- HP Interview Process -->
+            <div class="box" onclick="toggleDetails('hp-screening')">
+                <h2 class="h1"> 1. Initial Screening</h2>
+                <div id="hp-screening" class="details">
+                    <p><strong class="str">Recruiter Call:</strong> An initial call to discuss your resume, career objectives, and to provide an overview of the hiring process at HP.</p>
+                    <p><strong class="str">Duration:</strong> 20-30 minutes.</p>
+                    <p><strong class="str">Focus:</strong> Your background, skills, and the role you’re applying for.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('hp-technical')">
+                <h2 class="h1"> 2. Online Assessment</h2>
+                <div id="hp-technical" class="details">
+                    <p><strong class="str">Assessment:</strong> An online test to evaluate your technical abilities or problem-solving skills based on the job role.</p>
+                    <p><strong class="str">Format:</strong> Online platform tests or exercises relevant to the job function.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('hp-interview')">
+                <h2 class="h1">3. Phone/Video Interview</h2>
+                <div id="hp-interview" class="details">
+                    <p><strong class="str">Interview Focus:</strong> A detailed discussion of your technical skills, previous experiences, and how you approach job-specific scenarios.</p>
+                    <p><strong class="str">Format:</strong> Conducted via phone or video conferencing.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('hp-onsite')">
+                <h2 class="h1">4. On-Site Interviews</h2>
+                <div id="hp-onsite" class="details">
+                    <p><strong class="str">Technical Interviews:</strong> Detailed technical evaluation including problem-solving tasks, coding exercises, and discussions on your technical expertise.</p>
+                    <p><strong class="str">Behavioral Interviews:</strong> Assess how you fit with HP’s company culture and teamwork capabilities.</p>
+                    <p><strong class="str">Duration:</strong> 4-5 hours, often divided into several sessions.</p>
+                </div>
+            </div>
+
+            <!-- Interview Preparation Tips -->
+            <div class="box" onclick="toggleDetails('hp-prep')">
+                <h2 class="h1">Interview Preparation Tips</h2>
+                <div id="hp-prep" class="details">
+                    <ul>
+                        <li><strong class="str">Research HP:</strong> Understand HP’s products, services, and company culture.</li>
+                        <li><strong class="str">Prepare for Online Assessments:</strong> Practice relevant technical and problem-solving exercises on online platforms.</li>
+                        <li><strong class="str">Review Technical Concepts:</strong> Refresh your knowledge on key technical concepts and problem-solving techniques.</li>
+                        <li><strong class="str">Practice Behavioral Responses:</strong> Use the STAR method to prepare for behavioral and situational questions.</li>
+                        <li><strong class="str">Understand the Role:</strong> Familiarize yourself with the specific requirements and responsibilities of the job you’re applying for.</li>
+                        <li><strong class="str">Conduct Mock Interviews:</strong> Simulate interviews to improve your performance and receive feedback.</li>
+                        <li><strong class="str">Prepare Questions:</strong> Develop insightful questions to ask your interviewers about the role, team, and HP’s work environment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div><h1 class="h11">Flipkart Hiring Process</h1><br><br>
+        <div class="box-container">
+            <!-- Flipkart Interview Process -->
+            <div class="box" onclick="toggleDetails('flipkart-screening')">
+                <h2 class="h1"> 1. Initial Screening</h2>
+                <div id="flipkart-screening" class="details">
+                    <p><strong class="str">Recruiter Call:</strong> An initial call to discuss your resume, career aspirations, and provide an overview of the hiring process at Flipkart.</p>
+                    <p><strong class="str">Duration:</strong> 30-45 minutes.</p>
+                    <p><strong class="str">Focus:</strong> Your background, skills, and alignment with the role you’re applying for.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('flipkart-technical')">
+                <h2 class="h1"> 2. Online Assessment</h2>
+                <div id="flipkart-technical" class="details">
+                    <p><strong class="str">Assessment:</strong> An online test to evaluate your technical skills, problem-solving abilities, or aptitude depending on the role.</p>
+                    <p><strong class="str">Format:</strong> Online platform with coding problems, logical reasoning, or domain-specific questions.</p>
+                    <p><strong class="str">Duration:</strong> 60-90 minutes.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('flipkart-interview')">
+                <h2 class="h1">3. Phone/Video Interview</h2>
+                <div id="flipkart-interview" class="details">
+                    <p><strong class="str">Interview Focus:</strong> Detailed discussion of your technical skills, problem-solving approach, and relevant experience.</p>
+                    <p><strong class="str">Format:</strong> Conducted via phone or video conferencing.</p>
+                    <p><strong class="str">Duration:</strong> 45-60 minutes.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleDetails('flipkart-onsite')">
+                <h2 class="h1">4. On-Site Interviews</h2>
+                <div id="flipkart-onsite" class="details">
+                    <p><strong class="str">Technical Interviews:</strong> In-depth evaluation including coding exercises, system design problems, and technical discussions.</p>
+                    <p><strong class="str">Behavioral Interviews:</strong> Assess your fit with Flipkart’s culture, leadership qualities, and teamwork.</p>
+                    <p><strong class="str">Duration:</strong> 4-6 hours, often divided into multiple sessions with different interviewers.</p>
+                </div>
+            </div>
+
+            <!-- Interview Preparation Tips -->
+            <div class="box" onclick="toggleDetails('flipkart-prep')">
+                <h2 class="h1">Interview Preparation Tips</h2>
+                <div id="flipkart-prep" class="details">
+                    <ul>
+                        <li><strong class="str">Understand Flipkart’s Business:</strong> Research Flipkart’s operations, products, and recent developments.</li>
+                        <li><strong class="str">Prepare for Online Assessments:</strong> Practice coding problems, logical reasoning, and domain-specific questions on relevant platforms.</li>
+                        <li><strong class="str">Review Technical Skills:</strong> Brush up on key technical concepts, system design, and problem-solving techniques.</li>
+                        <li><strong class="str">Practice Behavioral Responses:</strong> Use the STAR method to structure your answers for behavioral questions.</li>
+                        <li><strong class="str">Understand the Role:</strong> Familiarize yourself with the job description and requirements to align your preparation.</li>
+                        <li><strong class="str">Conduct Mock Interviews:</strong> Simulate interviews to improve your performance and gain feedback.</li>
+                        <li><strong class="str">Prepare Insightful Questions:</strong> Develop questions about the role, team, and Flipkart’s work environment to ask during your interviews.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.classList.contains('show')) {
+                details.classList.remove('show');
+            } else {
+                // Hide all details sections
+                document.querySelectorAll('.details').forEach(function(detail) {
+                    detail.classList.remove('show');
+                });
+                // Show the selected one
+                details.classList.add('show');
+            }
+        }
+    </script>
+</body>
+</html>

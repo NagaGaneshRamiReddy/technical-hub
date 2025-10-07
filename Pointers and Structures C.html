@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>C Language Roadmap</title>
+    
+    
+</head>
+<body class="body">
+
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> C Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "C_interviews.html";
+}
+function goquizpro() {
+window.location.href = "C_quiz.html";
+}
+function gocomp() {
+window.location.href = "Java Compiler.html";
+}
+
+function goproject() {
+window.location.href = "C_project.html";
+}
+
+
+
+    </script>
+  
+  
+   
+  
+
+
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+        
+   
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box"><br><br>
+            <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0d80fb;"></i><br>
+            <h2 class="jk"> Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="Croadmap.html" target="_blank"><b class="b12">C Roadmap</b></a>
+        <ul>
+            <li> <a href="Introduction to C.html">Introduction to C</a></li>
+            <li><a href="History of C.html">History of C</a></li>
+            <li><a href="Setting up C Environment.html">Setting up C Environment</a></li>
+            <li><a href="Hello World Program C.html">Hello World Program</a></li>
+        </ul>
+
+        <h3>Basic C Syntax</h3>
+        <a href="Basic C Syntax.html">Basic C Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types C.html">Variables and Data Types</a></li>
+            <li><a href="Operators C.html">Operators</a></li>
+            <li><a href="Control Statements C.html">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements C.html">If-else Statements</a></li>
+                <li><a href="Switch Statement C.html">Switch Statement</a></li>
+                <li><a href="Loops C.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop C.html">For Loop</a></li>
+                    <li><a href="While Loop C.html">While Loop</a></li>
+                    <li><a href="Do-While Loop C.html">Do-While Loop</a></li>
+                    <li><a href="Break and Continue C.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+
+       
+        
+
+        <h3>Arrays in C</h3>
+        <a href="Arrays in C.html">Arrays in C</a>
+        <ul>
+            <li><a href="One-Dimensional Arrays C.html">One-Dimensional Arrays</a></li>
+            <li><a href="Two-Dimensional Arrays C.html">Two-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays C.html">Multi-Dimensional Arrays</a></li>
+            <li><a href="Arrays and Functions C.html">Arrays and Functions</a></li>
+        </ul>
+
+        <h3>Strings in C</h3>
+        <a href="Strings in C.html">Strings in C</a>
+        <ul>
+            <li><a href="String Basics c.html">String Basics</a></li>
+            <li><a href="String Functions C.html">String Functions</a></li>
+            <li><a href="String Manipulation C.html">String Manipulation</a></li>
+        </ul>
+        <h3>Pointers in C</h3>
+        <a href="Pointers in C.html">Pointers in C</a>
+        <ul>
+            <li><a href="Pointer Basics C.html">Pointer Basics</a></li>
+            <li><a href="Pointer Arithmetic C.html">Pointer Arithmetic</a></li>
+            <li><a href="Pointers and Arrays C.html">Pointers and Arrays</a></li>
+            <li><a href="Pointers and Functions C.html">Pointers and Functions</a></li>
+            <li><a href="Pointers and Structures C.html">Pointers and Structures</a></li>
+        </ul>
+        <h3>Functions in C</h3>
+        <a href="Function C.html">Functions in C</a>
+        <ul>
+            <li><a href="Function Basics C.html">Function Basics</a></li>
+            <li><a href="Function Arguments C.html">Function Arguments</a></li>
+            <li><a href="Recursion C.html">Recursion</a></li>
+            <li><a href="Library Functions C.html">Library Functions</a></li>
+        </ul>
+
+        <h3>Structures and Unions</h3>
+        <a href="Structures and Unions C.html">Structures and Unions</a>
+        <ul>
+            <li><a href="Defining Structures C.html">Defining Structures</a></li>
+            <li><a href="Accessing Structure Members C.html">Accessing Structure Members</a></li>
+            <li><a href="Nested structures.html">Nested Structures</a></li>
+            <li><a href="Unions C.html">Unions</a></li>
+        </ul>
+
+        <h3>File Handling in C</h3>
+        <a href="File Handling in C.html">File Handling in C</a>
+        <ul>
+            <li><a href="File Operations C.html">File Operations</a></li>
+            <li><a href="File Pointers C.html">File Pointers</a></li>
+            <li><a href="Reading and Writing Files C.html">Reading and Writing Files</a></li>
+            <li><a href="Binary Files C.html">Binary Files</a></li>
+        </ul>
+
+        <h3>Dynamic Memory Allocation</h3>
+        <a href="Dynamic Memory Allocation C.html">Dynamic Memory Allocation</a>
+        <ul>
+            <li><a href="malloc, calloc, realloc, free C.html">malloc, calloc, realloc, free</a></li>
+            <li><a href="Memory Leaks C.html">Memory Leaks</a></li>
+            <li><a href="Memory Management Techniques C.html">Memory Management Techniques</a></li>
+        </ul>
+
+        <h3>Advanced C Concepts</h3>
+        <a href="Advanced C Concepts.html">Advanced C Concepts</a>
+        <ul>
+            <li><a href="Preprocessor Directives C.html">Preprocessor Directives</a></li>
+            <li><a href="Bitwise Operators C.html">Bitwise Operators</a></li>
+            <li><a href="Command Line Arguments C.html">Command Line Arguments</a></li>
+            <li><a href="Error Handling C.html">Error Handling</a></li>
+            <li><a href="C programming Test.html">Course Test</a></li>
+        </ul>
+    </div>
+
+ 
+       
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "c_interviews.html";
+}
+function goquiz() {
+    window.location.href = "c_quiz.html";
+}
+function gocomp() {
+    window.location.href = "C Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Pointers and Functions C.html";
+    }
+    function goNext() {
+        window.location.href = "Function C.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                
+                <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0dfb49;"></i><br>
+                <h2 class="jk"> Tutorial</h2>
+<div class="div1">Pointer and Structures in C</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>In C programming, structures are used to group variables of different types into a single unit. Pointers can be used with structures to dynamically allocate memory and access structure members efficiently.</p>
+      
+        
+        
+        
+        
+        
+        <h2>1. Basics of Structures</h2>
+        <p>Structures allow you to create complex data types that group together variables under a single name.</p>
+
+        <h3>Defining a Structure</h3>
+        <p>Structures are defined using the <code>struct</code> keyword, followed by the structure name and the members it contains.</p>
+        <pre><code>
+#include &lt;stdio.h&gt;
+
+struct Person {
+    char name[50];
+    int age;
+};
+
+int main() {
+    struct Person person1;
+    person1.age = 30;
+    snprintf(person1.name, sizeof(person1.name), "John Doe");
+
+    printf("Name: %s\n", person1.name);
+    printf("Age: %d\n", person1.age);
+
+    return 0;
+}
+        </code></pre>
+
+        <h3>Accessing Structure Members</h3>
+        <p>Structure members are accessed using the dot operator (<code>.</code>).</p>
+
+        <h2>2. Pointers to Structures</h2>
+        <p>Pointers can be used to point to structures, allowing you to dynamically manage memory and access structure members.</p>
+
+        <h3>Declaring and Using Pointers to Structures</h3>
+        <p>You can declare pointers to structures and use them to access structure members via the arrow operator (<code>-></code>).</p>
+        <pre><code>
+#include &lt;stdio.h&gt;
+
+struct Person {
+    char name[50];
+    int age;
+};
+
+int main() {
+    struct Person person1;
+    struct Person *ptr = &person1;
+
+    ptr-&gt;age = 30;
+    snprintf(ptr-&gt;name, sizeof(ptr-&gt;name), "Jane Smith");
+
+    printf("Name: %s\n", ptr-&gt;name);
+    printf("Age: %d\n", ptr-&gt;age);
+
+    return 0;
+}
+        </code></pre>
+
+        <h3>Dynamic Memory Allocation for Structures</h3>
+        <p>Using pointers with dynamic memory allocation allows you to create structures at runtime.</p>
+        <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+struct Person {
+    char name[50];
+    int age;
+};
+
+int main() {
+    struct Person *ptr = (struct Person *)malloc(sizeof(struct Person));
+    if (ptr == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+
+    ptr-&gt;age = 40;
+    snprintf(ptr-&gt;name, sizeof(ptr-&gt;name), "Alice Johnson");
+
+    printf("Name: %s\n", ptr-&gt;name);
+    printf("Age: %d\n", ptr-&gt;age);
+
+    free(ptr); // Free allocated memory
+    return 0;
+}
+        </code></pre>
+
+        <h2>3. Pointers to Structures in Functions</h2>
+        <p>Pointers to structures can be passed to functions, allowing the function to modify the structure directly.</p>
+
+        <h3>Passing Structure Pointers to Functions</h3>
+        <p>By passing a structure pointer to a function, you can modify the structure’s contents from within the function.</p>
+        <pre><code>
+#include &lt;stdio.h&gt;
+
+struct Person {
+    char name[50];
+    int age;
+};
+
+void updatePerson(struct Person *p) {
+    p-&gt;age += 1;
+    snprintf(p-&gt;name, sizeof(p-&gt;name), "Updated Name");
+}
+
+int main() {
+    struct Person person1;
+    person1.age = 25;
+    snprintf(person1.name, sizeof(person1.name), "Robert Brown");
+
+    updatePerson(&person1);
+
+    printf("Name: %s\n", person1.name);
+    printf("Age: %d\n", person1.age);
+
+    return 0;
+}
+        </code></pre>
+
+        <h2>4. Structures and Arrays</h2>
+        <p>You can create arrays of structures and use pointers to manage and access the elements of these arrays.</p>
+
+        <h3>Array of Structures</h3>
+        <p>Arrays of structures can be used to store multiple records of the same type.</p>
+        <pre><code>
+#include &lt;stdio.h&gt;
+
+struct Person {
+    char name[50];
+    int age;
+};
+
+int main() {
+    struct Person people[3] = {
+        {"Alice", 30},
+        {"Bob", 25},
+        {"Charlie", 35}
+    };
+
+    for (int i = 0; i &lt; 3; i++) {
+        printf("Name: %s, Age: %d\n", people[i].name, people[i].age);
+    }
+
+    return 0;
+}
+        </code></pre>
+
+        <h2>Additional Resources</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://www.learn-c.org/">Learn-C.org</a> - Free interactive C programming tutorial.</li>
+                <li><a href="https://www.cprogramming.com/tutorial/c-tutorial.html">C Programming Tutorial</a> - Comprehensive tutorial on C programming.</li>
+                <li><a href="https://www.geeksforgeeks.org/c-programming-language/">GeeksforGeeks C Programming</a> - Tutorials and examples on C programming.</li>
+                <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">Codecademy C++ Course</a> - Online course to learn C++ (similar concepts apply to C).</li>
+            </ul>
+        </div>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+    </div>
+</body>
+</html>

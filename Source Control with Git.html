@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title> Salesforce Course</title>
+ 
+ 
+    
+</head>
+<body class="body">
+
+   
+   
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> Salesforce Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Salesforce Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+           
+            <i class="fab fa-salesforce"  style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk" style="font-size: 23.5px;">Salesforce Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="salesforeRoadmaps.html" target="_blank"><b class="b12">Salesforce Roadmap</b></a>
+        <ul>
+            <a href="Introduction to Salesforce.html">Introduction to Salesforce</a>
+            <li><a href="What is Salesforce .html">What is Salesforce ?</a></li>
+            <li><a href="Salesforce Architecture.html">Salesforce Architecture</a></li>
+            <li><a href="Salesforce Cloud Overview.html">Salesforce Cloud Overview</a></li>
+        </ul>
+
+        <h3>Salesforce Basics</h3>
+        <a href="Salesforce Basics.html">Salesforce Basics</a>
+        <ul>
+            <li><a href="Salesforce Platform Basics.html">Salesforce Platform Basics</a></li>
+            <li><a href="Salesforce Data Model.html">Salesforce Data Model</a></li>
+            <li><a href="Salesforce App Customization.html">Salesforce App Customization</a></li>
+            <li><a href="Salesforce Security Model.html">Salesforce Security Model</a></li>
+        </ul>
+
+        <h3>Core Salesforce Services</h3>
+        <a href="Core Salesforce Services.html">Core Salesforce Services</a>
+        <ul>
+            <li>
+                <a href="Sales Cloud salesforce.html">Sales Cloud</a>
+                <ul>
+                    <li><a href="Lead Management.html">Lead Management</a></li>
+                    <li><a href="Opportunity Management.html">Opportunity Management</a></li>
+                    <li><a href="Salesforce CPQ.html">Salesforce CPQ</a></li>
+                    <li><a href="Salesforce Mobile App.html">Salesforce Mobile App</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Service Cloud Salesforce.html">Service Cloud</a>
+                <ul>
+                    <li><a href="Case Management.html">Case Management</a></li>
+                    <li><a href="Service Console.html">Service Console</a></li>
+                    <li><a href="Knowledge Management.html">Knowledge Management</a></li>
+                    <li><a href="Omni-Channel Routing.html">Omni-Channel Routing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Marketing Cloud.html">Marketing Cloud</a>
+                <ul>
+                    <li><a href="Email Studio.html">Email Studio</a></li>
+                    <li><a href="Journey Builder.html">Journey Builder</a></li>
+                    <li><a href="Social Studio.html">Social Studio</a></li>
+                    <li><a href="Advertising Studio.html">Advertising Studio</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Commerce Cloud.html">Commerce Cloud</a>
+                <ul>
+                    <li><a href="Storefront Reference Architecture (SFRA).html">Storefront Reference Architecture (SFRA)</a></li>
+                    <li><a href="B2C Commerce.html">B2C Commerce</a></li>
+                    <li><a href="B2B Commerce.html">B2B Commerce</a></li>
+                    <li><a href="Order Management.html">Order Management</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Advanced Salesforce Services</h3>
+        <a href="Advanced Salesforce Services.html">Advanced Salesforce Services</a>
+        <ul>
+            <li>
+                <a href="Einstein Analytics.html">Einstein Analytics</a>
+                <ul>
+                    <li><a href="Einstein Discovery.html">Einstein Discovery</a></li>
+                    <li><a href="Einstein Prediction Builder.html">Einstein Prediction Builder</a></li>
+                    <li><a href="Einstein Voice.html">Einstein Voice</a></li>
+                    <li><a href="Einstein Bots.html">Einstein Bots</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Integration Services.html">Integration Services</a>
+                <ul>
+                    <li><a href="Salesforce Connect.html">Salesforce Connect</a></li>
+                    <li><a href="Mulesoft.html">Mulesoft</a></li>
+                    <li><a href="APIs and Web Services.html">APIs and Web Services</a></li>
+                    <li><a href="AppExchange.html">AppExchange</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Industry Solutions.html">Industry Solutions</a>
+                <ul>
+                    <li><a href="Financial Services Cloud.html">Financial Services Cloud</a></li>
+                    <li><a href="Health Cloud.html">Health Cloud</a></li>
+                    <li><a href="Government Cloud.html">Government Cloud</a></li>
+                    <li><a href="Nonprofit Cloud.html">Nonprofit Cloud</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>DevOps on Salesforce</h3>
+        <a href="DevOps on Salesforce.html">DevOps on Salesforce</a>
+        <ul>
+            <li><a href="Salesforce DX.html">Salesforce DX</a></li>
+            <li><a href="Source Control with Git.html">Source Control with Git</a></li>
+            <li>
+                <a href="CI-CD Pipeline Salesforce.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Salesforce CLI.html">Salesforce CLI</a></li>
+                    <li><a href="Jenkins Integration.html">Jenkins Integration</a></li>
+                    <li><a href="GitHub Actions.html">GitHub Actions</a></li>
+                    <li><a href="Salesforce Org Development Model.html">Salesforce Org Development Model</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Salesforce.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Salesforce Shield.html">Salesforce Shield</a></li>
+                    <li><a href="Event Monitoring.html">Event Monitoring</a></li>
+                    <li><a href="Apex Debugging.html">Apex Debugging</a></li>
+                    <li><a href="Log Analysis.html">Log Analysis</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+   
+    
+    
+
+   
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+        window.location.href = "Salesforce_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "Salesforce_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "Salesforce_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "Salesforce_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "Salesforce DX.html";
+    }
+    function goNext() {
+        window.location.href = "CI-CD Pipeline Salesforce.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-salesforce" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">Salesforce Tutorial</h2>
+<div class="div1"> Git</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>What is Git ?</h2>
+        <p>Git is a distributed version control system that allows multiple developers to work on the same codebase simultaneously while tracking changes and managing different versions of the code. Git enables efficient collaboration, provides powerful branching and merging capabilities, and helps maintain a history of changes to the code.</p>
+
+        <h2>Why Use Git for Salesforce Development ?</h2>
+        <ul>
+            <li><strong>Version Tracking</strong>: Track changes to Salesforce metadata and code over time, making it easy to roll back to previous versions if needed.</li>
+            <li><strong>Collaboration</strong>: Facilitate collaboration among team members by allowing multiple developers to work on different features or bug fixes simultaneously.</li>
+            <li><strong>Branching and Merging</strong>: Use branching to develop features or fixes in isolation and merge changes back into the main codebase when ready.</li>
+            <li><strong>Code Review</strong>: Implement code review processes to ensure code quality and consistency before changes are integrated into the main codebase.</li>
+            <li><strong>Continuous Integration</strong>: Integrate Git with CI/CD pipelines to automate testing and deployment processes, improving the reliability and speed of releases.</li>
+        </ul>
+
+        <h2>Setting Up Git for Salesforce Development</h2>
+        <ul>
+            <li><strong>Install Git</strong>: Download and install Git from the <a href="https://git-scm.com/" target="_blank">official Git website</a>.</li>
+            <li><strong>Configure Git</strong>: Set up Git with your user information using the following commands:
+                <pre><code>git config --global user.name "Your Name"</code></pre>
+                <pre><code>git config --global user.email "your.email@example.com"</code></pre>
+            </li>
+            <li><strong>Create a Git Repository</strong>: Initialize a new Git repository in your Salesforce DX project directory with:
+                <pre><code>git init</code></pre>
+            </li>
+            <li><strong>Connect to a Remote Repository</strong>: Link your local repository to a remote repository (e.g., on GitHub or GitLab) using:
+                <pre><code>git remote add origin <remote-repo-URL></code></pre>
+            </li>
+            <li><strong>Commit Changes</strong>: Stage and commit changes to your local repository:
+                <pre><code>git add .</code></pre>
+                <pre><code>git commit -m "Commit message"</code></pre>
+            </li>
+            <li><strong>Push and Pull Changes</strong>: Push changes to the remote repository and pull updates from it:
+                <pre><code>git push origin main</code></pre>
+                <pre><code>git pull origin main</code></pre>
+            </li>
+        </ul>
+
+        <h2>Best Practices for Git in Salesforce Development</h2>
+        <ul>
+            <li><strong>Use Branches for Features and Fixes</strong>: Create separate branches for each new feature or bug fix to isolate changes and avoid conflicts.</li>
+            <li><strong>Write Clear Commit Messages</strong>: Use descriptive commit messages to clearly explain the purpose of each change, making it easier to track the history of changes.</li>
+            <li><strong>Regularly Sync with Remote Repository</strong>: Frequently push and pull changes to keep your local repository in sync with the remote repository and avoid conflicts.</li>
+            <li><strong>Merge Changes Carefully</strong>: Review and test changes before merging them into the main branch to ensure that they do not introduce errors or conflicts.</li>
+            <li><strong>Implement Code Reviews</strong>: Use pull requests and code reviews to ensure that changes meet quality standards and are reviewed by other team members before merging.</li>
+            <li><strong>Automate with CI/CD</strong>: Integrate Git with CI/CD pipelines to automate testing and deployment processes, ensuring consistent and reliable releases.</li>
+        </ul>
+
+        <h2>Example Workflow: Using Git with Salesforce DX</h2>
+        <div class="example">
+            <ul>
+                <li><strong>Clone the Repository</strong>: Start by cloning the remote Git repository to your local machine:
+                    <pre><code>git clone <remote-repo-URL></code></pre>
+                </li>
+                <li><strong>Create a Feature Branch</strong>: Create a new branch for a specific feature or bug fix:
+                    <pre><code>git checkout -b feature-branch-name</code></pre>
+                </li>
+                <li><strong>Make Changes</strong>: Develop and test your changes locally using Salesforce DX and commit your updates:
+                    <pre><code>git add .</code></pre>
+                    <pre><code>git commit -m "Add new feature"</code></pre>
+                </li>
+                <li><strong>Push Changes to Remote</strong>: Push your feature branch to the remote repository:
+                    <pre><code>git push origin feature-branch-name</code></pre>
+                </li>
+                <li><strong>Create a Pull Request</strong>: Open a pull request on the remote repository to review and merge your changes into the main branch.</li>
+                <li><strong>Merge Changes</strong>: Once approved, merge your pull request and pull the latest changes to your local repository:
+                    <pre><code>git pull origin main</code></pre>
+                </li>
+            </ul>
+        </div>
+
+        <h2>Learning Resources</h2>
+        <div class="resources">
+            <ul>
+                <li><strong>Git Documentation</strong>: Access the official Git documentation for comprehensive guides and reference materials. <a href="https://git-scm.com/doc" target="_blank">Read more</a>.</li>
+                <li><strong>Salesforce DX Documentation</strong>: Explore the official Salesforce DX documentation for details on integrating Git with Salesforce DX. <a href="https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm" target="_blank">Read more</a>.</li>
+                <li><strong>Trailhead Modules</strong>: Explore <a href="https://trailhead.salesforce.com/" target="_blank">Trailhead</a> modules related to version control and Salesforce DX for interactive learning.</li>
+                <li><strong>Git Tutorials</strong>: Find tutorials and courses online to learn more about Git fundamentals and best practices.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Source control with Git is essential for managing Salesforce development projects, offering features like version tracking, collaboration, and automated deployment. By integrating Git with Salesforce DX, developers can efficiently handle changes, collaborate effectively, and ensure high-quality releases. Setting up Git involves installing the software, configuring repositories, and following best practices for branching, committing, and merging. With proper use and management, Git enhances the development process and supports successful project outcomes.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

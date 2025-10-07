@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Course Roadmap</title>
+</head>
+<body>
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+    
+header {
+            background-color: #050605;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000; 
+        }
+
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        
+        .tree {
+            width: 100px;
+            height: 150px;
+            position: relative;
+        }
+
+        .tree .trunk {
+            width: 30px;
+            height: 60px;
+            background-color: #8d6e63;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+        .tree .leaves {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 80px solid #66bb6a;
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            animation: leaf-bounce 2s infinite;
+        }
+
+        @keyframes leaf-bounce {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-15px);
+            }
+        }
+
+    
+        .text {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000000;
+            animation: text-color-change 4s infinite, text-size-change 4s infinite;
+        }
+
+        @keyframes text-color-change {
+            0%, 100% {
+                color: #2e7d32;
+            }
+            50% {
+                color: #66bb6a;
+            }
+        }
+
+        @keyframes text-size-change {
+            0%, 100% {
+                font-size: 36px;
+            }
+            50% {
+                font-size: 42px;
+            }
+        }
+
+    
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons button {
+            background-color: #2e7d32;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #66bb6a;
+        }
+
+        
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.course {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.course h2 {
+    margin-top: 0;
+}
+
+.learn-more {
+    background: #35424a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.learn-more:hover {
+    background: #4a646e;
+}
+
+.course-details {
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+    <header>
+        <h1>Course Roadmap</h1>
+        <nav>
+            <ul>
+                <li><a href="#course1">Course 1</a></li>
+                <li><a href="#course2">Course 2</a></li>
+                <li><a href="#course3">Course 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="course1" class="course">
+            <h2>Course 1: Introduction to HTML</h2>
+            <p>This course covers the basics of HTML, including elements, attributes, and page structure.</p>
+            <button class="learn-more" onclick="toggleDetails('details1')">Learn More</button>
+            <div id="details1" class="course-details">
+                <p>More information about Course 1...</p>
+            </div>
+        </section>
+
+        <section id="course2" class="course">
+            <h2>Course 2: CSS Fundamentals</h2>
+            <p>This course focuses on CSS styling, layout techniques, and responsive design.</p>
+            <button class="learn-more" onclick="toggleDetails('details2')">Learn More</button>
+            <div id="details2" class="course-details">
+                <p>More information about Course 2...</p>
+            </div>
+        </section>
+
+        <section id="course3" class="course">
+            <h2>Course 3: JavaScript Basics</h2>
+            <p>This course introduces JavaScript programming, covering variables, functions, and events.</p>
+            <button class="learn-more" onclick="toggleDetails('details3')">Learn More</button>
+            <div id="details3" class="course-details">
+                <p>More information about Course 3...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Course Roadmap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

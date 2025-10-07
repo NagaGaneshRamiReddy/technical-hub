@@ -1,0 +1,400 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>C++  Programming Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #023554;
+            overflow-y: auto;
+            background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        header {
+            width: 100%;
+            background-color:green;
+            color: white;
+           
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        
+        
+
+        .roadmap-container {
+            text-align: center;
+            margin-top: 60px; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .tree {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+        }
+
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 2px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 2px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 2px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+
+        .tree ul ul::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 2px solid #ccc;
+            width: 0;
+            height: 20px;
+        }
+
+        .stage {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.5s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .stage.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.10s ease, transform 0.3s ease; 
+        }
+
+        a:hover {
+            color: #000000; 
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="container">
+            <h1 class="">
+                <i class="fas fa-tree"></i>
+                TreeLearners
+            </h1>
+        </div>
+    </header><br><br>
+    <div class="roadmap-container"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        
+        <h1 class="h1">C++ Programming Course</h1>
+        <div class="tree">
+            <ul>
+                <li>
+                    <div class="stage"><a href="Introduction to_CPP.html" style="text-decoration: none;">Introduction to C++</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="History of C++.html" style="text-decoration: none;">History of C++</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Setting up C++ Environment.HTML" style="text-decoration: none;">Setting up C++ Environment</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Hello program in c++.html" style="text-decoration: none;">Hello World Program</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Basic C++ Syntax.html" style="text-decoration: none;">Basic C++ Syntax</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="variables in c++.html" style="text-decoration: none;">Variables and Data Types</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Operators in c++.html" style="text-decoration: none;">Operators</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Control Statements C++.html" style="text-decoration: none;">Control Statements</a></div>
+                            <ul>
+                                <li>
+                                    <div class="stage"><a href="If-else Statements C++.html" style="text-decoration: none;">If-else Statements</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Switch Statement C++.html" style="text-decoration: none;">Switch Statement</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Loops C++.html" style="text-decoration: none;">Loops</a></div>
+                                    <ul>
+                                        <li>
+                                            <div class="stage"><a href="For Loop C++.html" style="text-decoration: none;">For Loop</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="stage"><a href="While Loop C++.html" style="text-decoration: none;">While Loop</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="stage"><a href="Do-While Loop C++.html" style="text-decoration: none;">Do-While Loop</a></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Arrays C++.html" style="text-decoration: none;">Arrays</a></div>
+                            <ul>
+                                <li>
+                                    <div class="stage"><a href="Array Types in C++.html" style="text-decoration: none;">Array Types</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Array Operations C++.html" style="text-decoration: none;">Array Operations</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Strings C++.html" style="text-decoration: none;">Strings</a></div>
+                            <ul>
+                                <li>
+                                    <div class="stage"><a href="String Methods C++.html" style="text-decoration: none;">String Methods</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="String Operations C++.html" style="text-decoration: none;">String Operations</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Functions in C++.html" style="text-decoration: none;">Functions in C++</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Function Basics C++.html" style="text-decoration: none;">Function Basics</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Function Overloading C++.html" style="text-decoration: none;">Function Overloading</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Inline Functions C++.html" style="text-decoration: none;">Inline Functions</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Recursion C++.html" style="text-decoration: none;">Recursion</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- New Pointers Section -->
+                <li>
+                    <div class="stage"><a href="Pointers C++.html" style="text-decoration: none;">Pointers</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Basics of Pointers C++.html" style="text-decoration: none;">Basics of Pointers</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Pointer Arithmetic C++.html" style="text-decoration: none;">Pointer Arithmetic</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Pointers and Arrays C++.html" style="text-decoration: none;">Pointers and Arrays</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Pointers and Functions C++.html" style="text-decoration: none;">Pointers and Functions</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Dynamic Memory Allocation C++.html" style="text-decoration: none;">Dynamic Memory Allocation</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Smart Pointers C++.html" style="text-decoration: none;">Smart Pointers</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End of New Pointers Section -->
+                <li>
+                    <div class="stage"><a href="Object-Oriented Programming C++.html" style="text-decoration: none;">Object-Oriented Programming</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Classes and Objects C++.html" style="text-decoration: none;">Classes and Objects</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Constructors and Destructors in C++.html" style="text-decoration: none;">Constructors and Destructors</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Inheritance C++.html" style="text-decoration: none;">Inheritance</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Polymorphism in C++.html" style="text-decoration: none;">Polymorphism</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Abstraction C++.html" style="text-decoration: none;">Abstraction</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Encapsulation inC++.html" style="text-decoration: none;">Encapsulation</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Operator Overloading C++.html" style="text-decoration: none;">Operator Overloading</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Friend Functions C++.html" style="text-decoration: none;">Friend Functions</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Interfaces in C++.html" style="text-decoration: none;">Interfaces</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Templates C++.html" style="text-decoration: none;">Templates</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Advanced C++ Concepts.html" style="text-decoration: none;">Advanced C++ Concepts</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Exception Handling.html" style="text-decoration: none;">Exception Handling</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="File i-o in C++.html" style="text-decoration: none;">File I/O</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Standard Template Library (STL).html" style="text-decoration: none;">Standard Template Library (STL)</a></div>
+                            <ul>
+                                <li>
+                                    <div class="stage"><a href="Vectors in C++.html" style="text-decoration: none;">Vectors</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Lists C++.html" style="text-decoration: none;">Lists</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Deques in C++.html" style="text-decoration: none;">Deques</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Stacks C++.html" style="text-decoration: none;">Stacks</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Queues .html" style="text-decoration: none;">Queues</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Priority Queues C++.html" style="text-decoration: none;">Priority Queues</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Sets in C++.html" style="text-decoration: none;">Sets</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Maps in C++.html" style="text-decoration: none;">Maps</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Multithreading c++.html" style="text-decoration: none;">Multithreading</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Move Semantics C++.html" style="text-decoration: none;">Move Semantics</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Lambda Expressions C++.html" style="text-decoration: none;">Lambda Expressions</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Concurrency in C++.html" style="text-decoration: none;">Concurrency</a></div>
+                        </li>
+                    </ul>
+                
+        </div>
+    </div>
+
+    <script>
+        // script.js
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const stages = document.querySelectorAll('.stage');
+            let delay = 0;
+
+            stages.forEach((stage, index) => {
+                setTimeout(() => {
+                    stage.classList.add('visible');
+                }, delay);
+                delay += 300; // delay each stage by 300ms
+            });
+        });
+    </script>
+</body>
+</html>

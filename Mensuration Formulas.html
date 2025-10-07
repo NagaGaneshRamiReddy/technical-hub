@@ -1,0 +1,539 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Aptitude</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Aptitude
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href ="Basic Geometry.html";
+    }
+    function goNext() {
+        window.location.href = "Rational and Irrational Numbers.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Geometry & Mensuration</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  
+            <h2>Mensuration Formulas</h2>
+            <p><strong>Mensuration</strong> involves calculating the area, volume, and surface area of various geometric shapes. Here are the essential formulas for different shapes.</p>
+
+            <h3>1. Area Formulas</h3>
+
+            <h4>Rectangle</h4>
+            <p>The <strong>area</strong> of a rectangle is given by:</p>
+            <div class="formula">
+                <strong>Area of a Rectangle:</strong><br>
+                <text>A = length × width</text>
+            </div>
+
+            <h4>Square</h4>
+            <p>The <strong>area</strong> of a square is given by:</p>
+            <div class="formula">
+                <strong>Area of a Square:</strong><br>
+                <text>A = side²</text>
+            </div>
+
+            <h4>Triangle</h4>
+            <p>The <strong>area</strong> of a triangle is given by:</p>
+            <div class="formula">
+                <strong>Area of a Triangle:</strong><br>
+                <text>A = 1/2 × base × height</text>
+            </div>
+
+            <h4>Circle</h4>
+            <p>The <strong>area</strong> of a circle is given by:</p>
+            <div class="formula">
+                <strong>Area of a Circle:</strong><br>
+                <text>A = πr²</text>
+            </div>
+
+            <h3>2. Perimeter Formulas</h3>
+
+            <h4>Rectangle</h4>
+            <p>The <strong>perimeter</strong> of a rectangle is given by:</p>
+            <div class="formula">
+                <strong>Perimeter of a Rectangle:</strong><br>
+                <text>P = 2 × (length + width)</text>
+            </div>
+
+            <h4>Square</h4>
+            <p>The <strong>perimeter</strong> of a square is given by:</p>
+            <div class="formula">
+                <strong>Perimeter of a Square:</strong><br>
+                <text>P = 4 × side</text>
+            </div>
+
+            <h4>Triangle</h4>
+            <p>The <strong>perimeter</strong> of a triangle is given by:</p>
+            <div class="formula">
+                <strong>Perimeter of a Triangle:</strong><br>
+                <text>P = a + b + c</text>
+            </div>
+
+            <h4>Circle</h4>
+            <p>The <strong>circumference</strong> (perimeter) of a circle is given by:</p>
+            <div class="formula">
+                <strong>Circumference of a Circle:</strong><br>
+                <text>C = 2πr</text>
+            </div>
+
+            <h3>3. Surface Area Formulas</h3>
+
+            <h4>Cube</h4>
+            <p>The <strong>surface area</strong> of a cube is given by:</p>
+            <div class="formula">
+                <strong>Surface Area of a Cube:</strong><br>
+                <text>SA = 6 × side²</text>
+            </div>
+
+            <h4>Rectangular Prism (Cuboid)</h4>
+            <p>The <strong>surface area</strong> of a rectangular prism is given by:</p>
+            <div class="formula">
+                <strong>Surface Area of a Rectangular Prism:</strong><br>
+                <text>SA = 2 × (length × width + width × height + height × length)</text>
+            </div>
+
+            <h4>Cylinder</h4>
+            <p>The <strong>surface area</strong> of a cylinder is given by:</p>
+            <div class="formula">
+                <strong>Surface Area of a Cylinder:</strong><br>
+                <text>SA = 2πr(h + r)</text>
+            </div>
+
+            <h4>Sphere</h4>
+            <p>The <strong>surface area</strong> of a sphere is given by:</p>
+            <div class="formula">
+                <strong>Surface Area of a Sphere:</strong><br>
+                <text>SA = 4πr²</text>
+            </div>
+
+            <h3>4. Volume Formulas</h3>
+
+            <h4>Cube</h4>
+            <p>The <strong>volume</strong> of a cube is given by:</p>
+            <div class="formula">
+                <strong>Volume of a Cube:</strong><br>
+                <text>V = side³</text>
+            </div>
+
+            <h4>Rectangular Prism (Cuboid)</h4>
+            <p>The <strong>volume</strong> of a rectangular prism is given by:</p>
+            <div class="formula">
+                <strong>Volume of a Rectangular Prism:</strong><br>
+                <text>V = length × width × height</text>
+            </div>
+
+            <h4>Cylinder</h4>
+            <p>The <strong>volume</strong> of a cylinder is given by:</p>
+            <div class="formula">
+                <strong>Volume of a Cylinder:</strong><br>
+                <text>V = πr²h</text>
+            </div>
+
+            <h4>Sphere</h4>
+            <p>The <strong>volume</strong> of a sphere is given by:</p>
+            <div class="formula">
+                <strong>Volume of a Sphere:</strong><br>
+                <text>V = 4/3 × πr³</text>
+            </div>
+
+            <h3>5. Key Applications</h3>
+            <ul>
+                <li><strong>Architecture:</strong> Designing and calculating the space and material required for buildings.</li>
+                <li><strong>Engineering:</strong> Measuring and optimizing designs for machines and structures.</li>
+                <li><strong>Interior Design:</strong> Planning and calculating materials needed for spaces and furniture.</li>
+            </ul>
+
+            <h2>Practice Resources</h2>
+            <div class="resources">
+                <p>Enhance your understanding of mensuration with these practice resources:</p>
+                <ul>
+                    <li><a href="https://www.khanacademy.org/math/geometry/geometry-area-perimeter" target="_blank">Khan Academy: Area and Perimeter</a></li>
+                    <li><a href="https://www.mathsisfun.com/geometry/index.html" target="_blank">Math is Fun: Geometry</a></li>
+                    <li><a href="https://www.cuemath.com/learn/mensuration/" target="_blank">Cuemath: Mensuration Practice</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Mensuration involves calculating various measurements related to geometric shapes, including area, perimeter, surface area, and volume. Mastering these formulas is essential for solving practical problems in fields such as architecture, engineering, and design. Practice these formulas to enhance your understanding and application of mensuration concepts.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                   </div>
+    </div>
+</body>
+</html>

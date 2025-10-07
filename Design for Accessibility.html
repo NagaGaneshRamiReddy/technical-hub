@@ -1,0 +1,475 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> UI/UX Design Course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                UI/UX Design
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to UI/UX Design</h3>
+        <a href="Introduction to UI-UX Design.html">Introduction to UI/UX Design</a>
+        <ul>
+            <li><a href="What is UI UX.html">What is UI/UX Design?</a></li>
+            <li><a href="importance of UI UX Design.html">Importance of UI/UX</a></li>
+            <li><a href="Difference Between UI and UX.html">Difference Between UI and UX</a></li>
+        </ul>
+    
+        <h3>Research and Discovery</h3>
+        <a href="Research.html">Research</a>
+        <ul>
+            <li><a href="User Research.html">User Research</a></li>
+            <li><a href="Market Research.html">Market Research</a></li>
+            <li><a href="Competitive Analysis.html">Competitive Analysis</a></li>
+        </ul>
+    
+        <h3>Design Fundamentals</h3>
+        <a href="Design Fundamentals.html">Design Fundamentals</a>
+        <ul>
+            <li><a href="Principles of Design.html">Principles of Design</a></li>
+            <li><a href="Color Theory.html">Color Theory</a></li>
+            <li><a href="Typography.html">Typography</a></li>
+            <li><a href="Layout and Composition.html">Layout and Composition</a></li>
+        </ul>
+    
+        <h3>Wireframing and Prototyping</h3>
+        <a href="Wireframing and Prototyping.html">Wireframing and Prototyping</a>
+        <ul>
+            <li><a href="Wireframing Basics.html">Wireframing Basics</a></li>
+            <li><a href="Prototyping Tools.html">Prototyping Tools</a></li>
+            <li><a href="Low-Fidelity Prototypes.html">Low-Fidelity Prototypes</a></li>
+            <li><a href="High-Fidelity Prototypes.html">High-Fidelity Prototypes</a></li>
+        </ul>
+    
+        <h3>User Interface (UI) Design</h3>
+        <a href="User Interface (UI) Design.html">User Interface (UI) Design</a>
+        <ul>
+            <li><a href="UI Design Patterns.html">UI Design Patterns</a></li>
+            <li><a href="Responsive Design.html">Responsive Design</a></li>
+            <li><a href="Design Systems.html">Design Systems</a></li>
+            <li><a href="Mobile UI Design.html">Mobile UI Design</a></li>
+        </ul>
+    
+        <h3>User Experience (UX) Design</h3>
+        <a href="User Experience (UX) Design.html">User Experience (UX) Design</a>
+        <ul>
+            <li><a href="Information Architecture.html">Information Architecture</a></li>
+            <li><a href="Interaction Design.html">Interaction Design</a></li>
+            <li><a href="Usability Testing.html">Usability Testing</a></li>
+            <li><a href="User Flows and Journey Mapping.html">User Flows and Journey Mapping</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics design.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Design for Accessibility.html">Design for Accessibility</a></li>
+            <li><a href="Design Thinking.html">Design Thinking</a></li>
+            <li><a href="UI UX Design Trends.html">UI/UX Design Trends</a></li>
+            <li><a href="Portfolio Building.html">Portfolio Building</a></li>
+            <li><a href="Career Development.html">Career Development</a></li>
+        </ul>
+    </div>
+    
+   
+   
+    
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Advanced Topics design.html";
+    }
+    function goNext() {
+        window.location.href = "Design Thinking.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1"> Accessibility Design </div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Introduction to Accessibility Design</h2>
+        <p><strong>Design for Accessibility</strong> ensures that digital products and services are usable by people with a wide range of abilities and disabilities. Accessibility design is about creating inclusive experiences that everyone can use, regardless of their physical or cognitive abilities.</p>
+
+        <h3>Why Accessibility Matters</h3>
+        <p>Designing for accessibility is not only a legal requirement in many jurisdictions but also a fundamental aspect of ethical and user-centered design. Accessible design helps in reaching a broader audience and ensures that all users can interact with your product effectively.</p>
+
+        <h4>Key Benefits of Accessibility Design</h4>
+        <ul>
+            <li><strong>Inclusivity:</strong> Makes products usable by individuals with diverse abilities and disabilities.</li>
+            <li><strong>Legal Compliance:</strong> Meets legal standards and regulations for accessibility.</li>
+            <li><strong>Improved Usability:</strong> Enhances the overall user experience for everyone, not just those with disabilities.</li>
+        </ul>
+
+        <h3>Core Principles of Accessibility Design</h3>
+        <p>Accessibility design follows several core principles to ensure that digital products are usable by everyone. These principles are often encapsulated in the Web Content Accessibility Guidelines (WCAG).</p>
+
+        <h4>Four Principles of WCAG</h4>
+        <ul>
+            <li><strong>Perceivable:</strong> Information and user interface components must be presented in ways that users can perceive. For example, provide text alternatives for non-text content and ensure that all content is accessible via screen readers.</li>
+            <li><strong>Operable:</strong> User interface components and navigation must be operable by all users. This includes ensuring that all interactive elements are accessible via keyboard and providing sufficient time for users to interact with content.</li>
+            <li><strong>Understandable:</strong> Information and operation of the user interface must be understandable. This involves using clear and consistent language, providing easy-to-follow instructions, and ensuring that content is predictable.</li>
+            <li><strong>Robust:</strong> Content must be robust enough to work with current and future technologies. This includes using semantic HTML and ensuring compatibility with assistive technologies.</li>
+        </ul>
+
+        <h3>Techniques for Designing Accessible Products</h3>
+        <p>There are various techniques and best practices for designing accessible products that adhere to the core principles of accessibility.</p>
+
+        <h4>Design Techniques</h4>
+        <ul>
+            <li><strong>Keyboard Navigation:</strong> Ensure that all interactive elements can be navigated using a keyboard alone. This is crucial for users who cannot use a mouse.</li>
+            <li><strong>Color Contrast:</strong> Use sufficient color contrast between text and background to ensure readability for users with visual impairments.</li>
+            <li><strong>Alt Text:</strong> Provide descriptive alt text for images and non-text content to make them accessible to screen readers.</li>
+            <li><strong>Responsive Design:</strong> Ensure that designs work well on various devices and screen sizes, including mobile devices and tablets.</li>
+            <li><strong>Clear Language:</strong> Use plain language and clear instructions to make content understandable for users with cognitive disabilities.</li>
+        </ul>
+
+        <h3>Accessibility Testing and Tools</h3>
+        <p>Testing for accessibility is essential to ensure that your designs meet accessibility standards and are usable by all users.</p>
+
+        <h4>Testing Methods</h4>
+        <ul>
+            <li><strong>Automated Testing:</strong> Use tools like Lighthouse, Axe, or WAVE to perform automated accessibility checks and identify potential issues.</li>
+            <li><strong>Manual Testing:</strong> Conduct manual testing with keyboard-only navigation and screen readers to evaluate real-world accessibility.</li>
+            <li><strong>User Testing:</strong> Involve users with disabilities in testing to gain insights into their experiences and identify areas for improvement.</li>
+        </ul>
+
+        <h4>Free Resources for Accessibility Design</h4>
+        <div class="resources">
+            <ul>
+                <li><strong><a href="https://www.w3.org/WAI/WCAG21/quickref/">W3C WCAG Quick Reference</a>:</strong> Comprehensive guidelines and standards for web accessibility.</li>
+                <li><strong><a href="https://a11yproject.com/">The A11Y Project</a>:</strong> A community-driven effort to make web accessibility easier to understand and implement.</li>
+                <li><strong><a href="https://www.a11y.com/">A11Y</a>:</strong> Resources and tools for web accessibility best practices.</li>
+                <li><strong><a href="https://www.nngroup.com/articles/accessibility/ ">Nielsen Norman Group: Accessibility</a>:</strong> Articles and research on accessibility in user experience design.</li>
+                <li><strong><a href="https://www.smashingmagazine.com/tag/accessibility/">Smashing Magazine: Accessibility</a>:</strong> Insights and techniques for designing accessible digital products.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Designing for accessibility ensures that digital products are inclusive and usable by everyone, including individuals with disabilities. By following core principles, employing effective design techniques, and utilizing testing tools and resources, designers can create accessible and user-friendly experiences that meet legal requirements and enhance overall usability.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

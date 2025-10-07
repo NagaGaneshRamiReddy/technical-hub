@@ -1,0 +1,454 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> UI/UX Design Course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                UI/UX Design
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to UI/UX Design</h3>
+        <a href="Introduction to UI-UX Design.html">Introduction to UI/UX Design</a>
+        <ul>
+            <li><a href="What is UI UX.html">What is UI/UX Design?</a></li>
+            <li><a href="importance of UI UX Design.html">Importance of UI/UX</a></li>
+            <li><a href="Difference Between UI and UX.html">Difference Between UI and UX</a></li>
+        </ul>
+    
+        <h3>Research and Discovery</h3>
+        <a href="Research.html">Research</a>
+        <ul>
+            <li><a href="User Research.html">User Research</a></li>
+            <li><a href="Market Research.html">Market Research</a></li>
+            <li><a href="Competitive Analysis.html">Competitive Analysis</a></li>
+        </ul>
+    
+        <h3>Design Fundamentals</h3>
+        <a href="Design Fundamentals.html">Design Fundamentals</a>
+        <ul>
+            <li><a href="Principles of Design.html">Principles of Design</a></li>
+            <li><a href="Color Theory.html">Color Theory</a></li>
+            <li><a href="Typography.html">Typography</a></li>
+            <li><a href="Layout and Composition.html">Layout and Composition</a></li>
+        </ul>
+    
+        <h3>Wireframing and Prototyping</h3>
+        <a href="Wireframing and Prototyping.html">Wireframing and Prototyping</a>
+        <ul>
+            <li><a href="Wireframing Basics.html">Wireframing Basics</a></li>
+            <li><a href="Prototyping Tools.html">Prototyping Tools</a></li>
+            <li><a href="Low-Fidelity Prototypes.html">Low-Fidelity Prototypes</a></li>
+            <li><a href="High-Fidelity Prototypes.html">High-Fidelity Prototypes</a></li>
+        </ul>
+    
+        <h3>User Interface (UI) Design</h3>
+        <a href="User Interface (UI) Design.html">User Interface (UI) Design</a>
+        <ul>
+            <li><a href="UI Design Patterns.html">UI Design Patterns</a></li>
+            <li><a href="Responsive Design.html">Responsive Design</a></li>
+            <li><a href="Design Systems.html">Design Systems</a></li>
+            <li><a href="Mobile UI Design.html">Mobile UI Design</a></li>
+        </ul>
+    
+        <h3>User Experience (UX) Design</h3>
+        <a href="User Experience (UX) Design.html">User Experience (UX) Design</a>
+        <ul>
+            <li><a href="Information Architecture.html">Information Architecture</a></li>
+            <li><a href="Interaction Design.html">Interaction Design</a></li>
+            <li><a href="Usability Testing.html">Usability Testing</a></li>
+            <li><a href="User Flows and Journey Mapping.html">User Flows and Journey Mapping</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics design.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Design for Accessibility.html">Design for Accessibility</a></li>
+            <li><a href="Design Thinking.html">Design Thinking</a></li>
+            <li><a href="UI UX Design Trends.html">UI/UX Design Trends</a></li>
+            <li><a href="Portfolio Building.html">Portfolio Building</a></li>
+            <li><a href="Career Development.html">Career Development</a></li>
+        </ul>
+    </div>
+    
+   
+   
+    
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Design Fundamentals.html";
+    }
+    function goNext() {
+        window.location.href = "Color Theory.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Principles of Design </div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>  <h2>Introduction to Principles of Design</h2>
+            <p><strong>Principles of Design</strong> are the foundational guidelines that help designers create visually compelling and functional designs. These principles ensure that a design communicates effectively and achieves its intended purpose. They involve the arrangement and organization of design elements to create aesthetically pleasing and well-structured outputs.</p>
+
+            <h2>Key Principles of Design</h2>
+            <ul>
+                <li><strong>Balance:</strong> Balance refers to the distribution of visual weight in a design. It can be achieved through symmetrical balance (equal visual weight on both sides) or asymmetrical balance (uneven distribution that still creates harmony). Proper balance ensures stability and structure in a design.</li>
+                <li><strong>Contrast:</strong> Contrast involves using differences in color, size, shape, or texture to create visual interest and highlight important elements. High contrast helps draw attention to key areas, while low contrast can create a more subtle and harmonious look.</li>
+                <li><strong>Emphasis:</strong> Emphasis is about creating a focal point in a design to draw attention to the most important elements. This can be achieved through size, color, contrast, or placement. Emphasis ensures that viewers notice and understand the main message or feature of the design.</li>
+                <li><strong>Unity:</strong> Unity is the principle that ensures all elements in a design work together cohesively. It involves creating a sense of harmony and consistency throughout the design. Unity can be achieved through repetition, alignment, and proximity, ensuring that the design feels complete and organized.</li>
+                <li><strong>Alignment:</strong> Alignment involves arranging elements in relation to each other or a design grid. Proper alignment creates order and organization, making the design easier to navigate and more visually appealing. It helps in creating a clean and structured layout.</li>
+                <li><strong>Proximity:</strong> Proximity refers to placing related elements close to each other to create a visual relationship. This principle helps in organizing information and improving readability by grouping related items together and creating a sense of connection.</li>
+                <li><strong>Repetition:</strong> Repetition involves using recurring visual elements like colors, shapes, and fonts throughout the design. It helps in creating consistency and reinforcing the design's theme. Repetition can also help in creating a cohesive and recognizable brand identity.</li>
+            </ul>
+
+            <h2>Application of Design Principles</h2>
+            <ul>
+                <li><strong>Creating Visual Hierarchy:</strong> Use principles like contrast, emphasis, and alignment to establish a clear visual hierarchy. This guides viewers through the design and helps them focus on the most important information.</li>
+                <li><strong>Designing Layouts:</strong> Apply balance, alignment, and proximity to create well-structured layouts. A well-balanced and aligned layout ensures that the design is aesthetically pleasing and easy to navigate.</li>
+                <li><strong>Enhancing Readability:</strong> Utilize contrast and proximity to improve text readability and ensure that the information is easily accessible. Proper contrast between text and background, as well as grouping related text elements, enhances the overall readability of the design.</li>
+                <li><strong>Building Brand Identity:</strong> Use repetition to reinforce brand identity by consistently applying brand colors, fonts, and visual elements across various design materials. This helps in creating a recognizable and cohesive brand presence.</li>
+            </ul>
+
+            <h2>Learning Resources</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://www.smashingmagazine.com/2010/07/the-ultimate-guide-to-the-design-principles/" target="_blank">Smashing Magazine - The Ultimate Guide to Design Principles</a> - In-depth guide covering fundamental design principles.</li>
+                    <li><a href="https://www.creativebloq.com/advice/the-7-principles-of-design" target="_blank">Creative Bloq - The 7 Principles of Design</a> - Overview of essential design principles and their practical applications.</li>
+                    <li><a href="https://www.interaction-design.org/literature/topics/visual-design" target="_blank">Interaction Design Foundation - Visual Design</a> - Comprehensive articles on visual design principles and best practices.</li>
+                    <li><a href="https://www.udemy.com/course/ui-ux-design-essentials/" target="_blank">Udemy - UI/UX Design Essentials</a> - Online course offering detailed instruction on design principles and practices.</li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>The principles of design are essential guidelines that help create visually effective and functional designs. By applying principles such as balance, contrast, emphasis, unity, alignment, proximity, and repetition, designers can ensure that their work is aesthetically pleasing, well-organized, and communicates effectively. Understanding and implementing these principles is key to producing successful design outcomes.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>  </div>
+    </div>
+
+    
+    
+</body>
+</html>

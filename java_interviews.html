@@ -1,0 +1,1847 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Java Interview Questions</title>
+    <link rel="stylesheet" href="interviews.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+</head>
+  
+ 
+
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> Java Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="golabs()">
+           
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> Java Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "java_interviews.html";
+}
+function goquizpro() {
+window.location.href = "Java_quiz.html";
+}
+function gocomp() {
+window.location.href = "Java Compiler.html";
+}
+
+
+    </script>
+  
+  
+   
+  
+
+<script>
+    function toggleAnswer(button) {
+        const questionItem = button.closest('.question-item');
+        const allQuestionItems = document.querySelectorAll('.question-item');
+
+        // Close all open quiz containers
+        allQuestionItems.forEach(item => {
+            if (item !== questionItem) {
+                item.classList.remove('active');
+            }
+        });
+
+        // Toggle the clicked question's quiz container
+        questionItem.classList.toggle('active');
+    }
+
+    function calculateScore(quizContainer, topicNumber) {
+        const options = quizContainer.querySelectorAll("input[type='radio']");
+        let score = 0;
+        options.forEach(option => {
+            if (option.checked && option.value === "1") {
+                score += 1;
+            }
+        });
+
+        // Display score
+        const scoreCard = quizContainer.querySelector(".score-card");
+        scoreCard.style.display = "block";
+        scoreCard.classList.add(score === 5 ? 'correct' : 'incorrect');
+        scoreCard.innerHTML = `You scored ${score} out of 5 for Topic ${topicNumber}!`;
+    }
+</script>
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+<br><br><br>
+  
+<div id="mySidebar" class="sidebar">
+    <!-- Top Box with Icon and Title -->
+    <div class="top-box">
+        <i class="fab fa-java" style="font-size: 60px;padding-left: 16px;  color: #e27f05;"></i>
+        <h2 class="jk">Java Tutorial</h2>
+    </div>
+
+    <!-- Close button and sidebar content -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+    <a href="javaRoadmaps.html" target="_blank"><b class="b12">Java Roadmap</b></a>
+    <ul>
+        <a href="Introduction to Java.html" target="_blank">Introduction to Java</a>
+        <li><a href="History of Java.html" target="_blank">History of Java</a></li>
+        <li><a href="Setting up Java Environment java.html" target="_blank">Setting up Java Environment</a></li>
+        <li><a href="Hello World Program java.html" target="_blank">Hello World Program</a></li>
+        <li><a href="JVM, JRE, and JDK in java.html" target="_blank">JVM, JRE, and JDK</a></li>
+    </ul>
+
+    <h3>Basic Java Syntax</h3>
+    <a href="Basic Java Syntax java.html" target="_blank">Basic Java Syntax</a>
+    <ul>
+        <li><a href="variables and Data Types java.html" target="_blank">Variables and Data Types</a></li>
+        <li><a href="Operators in java.html" target="_blank">Operators</a></li>
+        <li><a href="Control Statements in java.html" target="_blank">Control Statements</a></li>
+        <ul>
+            <li><a href="If-else Statements in java.html" target="_blank">If-else Statements</a></li>
+            <li><a href="Switch Statement in java.html" target="_blank">Switch Statement</a></li>
+            <li><a href="Loops in java.html" target="_blank">Loops</a></li>
+            <ul>
+                <li><a href="For Loop in java.html" target="_blank">For Loop</a></li>
+                <li><a href="While Loop in java.html" target="_blank">While Loop</a></li>
+                <li><a href="Do-While Loop in java.html" target="_blank">Do-While Loop</a></li>
+            </ul>
+        </ul>
+    </ul>
+
+    <h3>Arrays</h3>
+    <a href="Arrays in java.html" target="_blank">Arrays</a>
+    <ul>
+        <li><a href="Introduction to Arrays in java.html" target="_blank">Introduction to Arrays</a></li>
+        <li><a href="Single-Dimensional Arrays in java.html" target="_blank">Single-Dimensional Arrays</a></li>
+        <li><a href="Multi-Dimensional Arrays in java.html" target="_blank">Multi-Dimensional Arrays</a></li>
+        <li><a href="Array Operations in java.html" target="_blank">Array Operations</a></li>
+        <li><a href="ArrayList and Other Collections in java.html" target="_blank">ArrayList and Other Collections</a></li>
+    </ul>
+
+    <h3>Strings</h3>
+    <a href="Strings in java.html" target="_blank">Strings</a>
+    <ul>
+        <li><a href="String Basics in java.html" target="_blank">String Basics</a></li>
+        <li><a href="String Methods in java.html" target="_blank">String Methods</a></li>
+        <li><a href="String Manipulation in java.html" target="_blank">String Manipulation</a></li>
+        <li><a href="String Formatting in java.html" target="_blank">String Formatting</a></li>
+        <li><a href="StringBuilder and StringBuffer in java.html" target="_blank">StringBuilder and StringBuffer</a></li>
+    </ul>
+
+    <h3>Object-Oriented Programming</h3>
+    <a href="Object-Oriented Programming in java.html" target="_blank">Object-Oriented Programming</a>
+    <ul>
+        <li><a href="Classes and Objects in java.html" target="_blank">Classes and Objects</a></li>
+        <li><a href="Constructors in java.html" target="_blank">Constructors</a></li>
+        <li><a href="Inheritance in java.html" target="_blank">Inheritance</a></li>
+        <li><a href="Polymorphism in java.html" target="_blank">Polymorphism</a></li>
+        <li><a href="Abstraction in java.html" target="_blank">Abstraction</a></li>
+        <li><a href="Encapsulation in java.html" target="_blank">Encapsulation</a></li>
+        <li><a href="Interfaces in java.html" target="_blank">Interfaces</a></li>
+        <li><a href="Packages in java.html" target="_blank">Packages</a></li>
+        <li><a href="Nested Classes in java.html" target="_blank">Nested Classes</a></li>
+        <li><a href="Enums in java.html" target="_blank">Enums</a></li>
+    </ul>
+
+    <h3>Advanced Java Concepts</h3>
+    <a href="Advanced Java Concepts in java.html" target="_blank">Advanced Java Concepts</a>
+    <ul>
+        <li><a href="Exception Handling in java.html" target="_blank">Exception Handling</a></li>
+        <li><a href="File I-O in java.html" target="_blank">File I/O</a></li>
+        <li><a href="Error Handling and Debugging in java.html" target="_blank">Error Handling and Debugging</a></li>
+        <li><a href="Collections Framework in java.html" target="_blank">Collections Framework</a></li>
+        <ul>
+            <li><a href="List in java.html" target="_blank">List</a></li>
+            <li><a href="Set in java.html" target="_blank">Set</a></li>
+            <li><a href="Map in java.html" target="_blank">Map</a></li>
+            <li><a href="Queue in java.html" target="_blank">Queue</a></li>
+        </ul>
+        <li><a href="Generics in java.html" target="_blank">Generics</a></li>
+        <li><a href="Multithreading and Concurrency in java.html" target="_blank">Multithreading and Concurrency</a></li>
+        <li><a href="Networking in java.html" target="_blank">Networking</a></li>
+        <li><a href="JDBC in java.html" target="_blank">JDBC</a></li>
+        <li><a href="Java Reflection in java.html" target="_blank">Java Reflection</a></li>
+        <li><a href="Java Annotations in java.html" target="_blank">Java Annotations</a></li>
+    </ul>
+</div>
+
+    
+    <br><br><br>
+    <div class="container">
+        <script src="script.js"></script>
+        
+        <h1> <i class="fab fa-java" style="font-size: 100px;padding-left: 16px;  color: #07fe45;"></i> Top Java Interviews Questions</h1>
+        <ol class="question-list">
+
+<li class="question-item">
+    <div class="question">1. What is Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Java is a high-level, object-oriented programming language designed to be platform-independent, allowing developers to write code once and run it anywhere. It was developed by Sun Microsystems (now owned by Oracle) and is widely used for building enterprise applications, mobile apps (Android), web applications, and more.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java is a high-level, object-oriented programming language that allows platform-independent coding and is used for various applications.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">2. Explain the Java Virtual Machine (JVM).</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            The JVM is an abstract computing machine that enables a computer to run Java programs. It converts Java bytecode (compiled Java code) into machine code specific to the underlying hardware, making Java platform-independent. The JVM also manages memory and provides a runtime environment for executing Java applications.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The JVM is an abstract machine that runs Java programs by converting bytecode to machine code, providing platform independence.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">3. What are the main features of Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Key features of Java include:
+             Platform Independence: Write once, run anywhere (WORA).
+             Object-Oriented: Supports concepts like inheritance, encapsulation, and polymorphism.
+             Automatic Garbage Collection: Manages memory automatically.
+             Multithreading: Supports concurrent execution of multiple threads.
+             Rich API: Provides a vast standard library for various functionalities.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java features include platform independence, object-oriented programming, automatic garbage collection, multithreading, and a rich API.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">4. What is the difference between JDK, JRE, and JVM?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            JDK (Java Development Kit): A software development kit that includes tools for developing, compiling, and debugging Java applications (includes JRE).
+            JRE (Java Runtime Environment): Provides the libraries and JVM necessary to run Java applications but does not include development tools.
+        JVM (Java Virtual Machine): The runtime environment that executes Java bytecode.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'JDK includes tools for development, JRE provides the environment to run Java apps, and JVM executes bytecode.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">5. What is a class in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            A class is a blueprint for creating objects. It defines the properties (attributes) and behaviors (methods) that the objects created from the class will have. For example, a Car class may have attributes like color and model and methods like drive().
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A class is a blueprint for objects, defining attributes and methods for instances like a Car class.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">6. What is an object in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            An object is an instance of a class. It represents a specific entity with defined characteristics and behaviors. For example, if `Car` is a class, then a specific car like a red Toyota Corolla is an object of that class.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'An object is an instance of a class, representing a specific entity with defined attributes and behaviors.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">7. Explain the concept of inheritance in Java.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Inheritance allows one class (subclass) to inherit the properties and methods of another class (superclass). This promotes code reusability and establishes a hierarchical relationship. For example, if Vehicle is a superclass, Car can inherit from it.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Inheritance allows subclasses to inherit properties and methods from superclasses, promoting code reuse.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">8. What is polymorphism?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Polymorphism allows objects to be treated as instances of their parent class. The most common types are:
+            Compile-time polymorphism (method overloading): Multiple methods with the same name but different parameters.
+            Runtime polymorphism (method overriding): A subclass provides a specific implementation of a method declared in its superclass.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Polymorphism allows methods to be used in different ways, with compile-time overloading and runtime overriding.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">9. What is encapsulation?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Encapsulation is the bundling of data (attributes) and methods (behaviors) that operate on that data into a single unit, usually a class. It restricts direct access to some components and can be achieved using access modifiers (private, protected, public).
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Encapsulation bundles data and methods into a class, restricting access via access modifiers for data protection.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">10. What is an interface in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            An interface is a reference type in Java that defines a contract (a set of methods) that implementing classes must provide. Interfaces can be used to achieve abstraction and multiple inheritance. For example, an interface `Animal` could declare methods like eat() and sleep().
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'An interface in Java defines a contract of methods that implementing classes must provide, allowing abstraction and multiple inheritance.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+<li class="question-item">
+    <div class="question">11. What are the primitive data types in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Java has eight primitive data types:
+             byte (8 bits)
+             short (16 bits)
+             int (32 bits)
+             long (64 bits)
+             float (32 bits)
+             double (64 bits)
+             char (16 bits, represents a single character)
+             boolean (true or false)
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java has eight primitive data types: byte, short, int, long, float, double, char, and boolean.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">12. What is the difference between int and Integer?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            int is a primitive data type, while Integer is a wrapper class for the primitive type int. The Integer class provides methods for converting integers to strings and vice versa, as well as other utility functions.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'int is a primitive data type, Integer is a wrapper class for int, providing utility methods.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">13. What is a variable in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            A variable is a container that holds data that can change during program execution. Each variable has a type (like int, String, etc.) and a name. For example, int age = 25; declares a variable named age of type int.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A variable is a container for data that can change, defined with a type and a name.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">14. How do you declare a constant in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            You declare a constant in Java using the final keyword. Once a constant is assigned a value, it cannot be changed. For example:
+            final int DAYS_IN_WEEK = 7;
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use final keyword to declare a constant, e.g., final int DAYS_IN_WEEK = 7;')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">15. What is type casting in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Type casting is the process of converting one data type into another. There are two types:
+             Widening Casting (automatic): Converting a smaller type to a larger type (e.g., int to double).
+             Narrowing Casting (manual): Converting a larger type to a smaller type (e.g., double to int), which requires explicit casting:
+            int num = (int) 5.7; // num will be 5
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Type casting converts one data type to another, with widening (automatic) and narrowing (manual) casting.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">16. What are the different types of control flow statements in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Control flow statements determine the order in which code executes. The main types are:
+             Conditional statements: if, else if, else, switch.
+             Looping statements: for, while, do while.
+             Branching statements: break, continue, return.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Control flow statements include conditional, looping, and branching statements.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">17. How do if, else if, and else work?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            The if statement evaluates a condition and executes a block of code if the condition is true. else if allows checking additional conditions if the first if is false, and else executes a block of code if all previous conditions are false:
+            if (condition1) {
+                // code
+            } else if (condition2) {
+                // code
+            } else {
+                // code
+            }
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'if checks a condition, else if checks further conditions, and else handles default execution.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">18. What is a switch statement?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            A switch statement allows you to execute one block of code among many alternatives based on the value of a variable. It's often used as a cleaner alternative to multiple if-else statements:
+            switch (day) {
+                case 1:
+                    System.out.println("Monday");
+                    break;
+                case 2:
+                    System.out.println("Tuesday");
+                    break;
+                default:
+                    System.out.println("Other day");
+                    break;
+            }
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A switch statement executes code blocks based on the value of a variable, providing a cleaner alternative to if-else.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">19. Explain the for loop and while loop.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            A for loop is typically used when the number of iterations is known:
+            for (int i = 0; i < 5; i++) {
+                System.out.println(i);
+            }
+            A while loop continues executing as long as its condition is true, but the number of iterations may not be known beforehand:
+            int i = 0;
+            while (i < 5) {
+                System.out.println(i);
+                i++;
+            }
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'for loops are for known iterations, while loops continue while a condition is true.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">20. What is a do while loop?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            A do while loop is similar to a while loop, but it guarantees at least one execution of the loop body since the condition is checked after the loop body:
+            int i = 0;
+            do {
+                System.out.println(i);
+                i++;
+            } while (i < 5);
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A do while loop guarantees at least one execution as the condition is checked after the loop.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">21. What are the principles of Object-Oriented Programming?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            The four main principles are:
+            - Encapsulation: Bundling data and methods that operate on the data within one unit (class).
+            - Abstraction: Hiding complex implementation details and exposing only essential features.
+            - Inheritance: Creating new classes based on existing classes to promote code reuse.
+            - Polymorphism: Allowing methods to do different things based on the object it is acting upon.
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The principles are encapsulation, abstraction, inheritance, and polymorphism.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">22. What is an abstract class?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            An abstract class is a class that cannot be instantiated and can contain abstract methods (without implementation) as well as concrete methods. It is used to define a template for other classes. For example:
+            abstract class Animal {
+                abstract void makeSound();
+            }
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'An abstract class cannot be instantiated and defines a template for other classes with abstract methods.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">23. How does method overloading work?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Method overloading allows you to define multiple methods with the same name but different parameter lists (different type or number of parameters). This enables you to call the same method name with different inputs:
+            void add(int a, int b) { /* code */ }
+            void add(double a, double b) { /* code */ }
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Method overloading defines multiple methods with the same name but different parameter lists.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">24. How does method overriding work?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. This allows the subclass to modify the behavior of that method:
+            class Animal {
+                void makeSound() { System.out.println("Animal sound"); }
+            }
+            class Dog extends Animal {
+                void makeSound() { System.out.println("Bark"); }
+            }
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Method overriding allows a subclass to provide a specific implementation of a superclass method.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">25. What is a constructor in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            A constructor is a special method that is called when an object is instantiated. It initializes the objects attributes. Constructors can be default (no parameters) or parameterized (with parameters):
+            class Car {
+                String model;
+                Car(String model) { this.model = model; } // Parameterized constructor
+            }
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A constructor initializes an object when it is instantiated, and can be default or parameterized.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+<li>
+    
+<li class="question-item">
+    <div class="question">26. What is an exception?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> An exception is an event that disrupts the normal flow of a program's execution. It typically indicates an error, such as invalid input or a file not found. Exceptions can be handled to prevent program crashes.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'An exception disrupts normal program flow and typically indicates an error, such as invalid input or file not found.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">27. What is the difference between checked and unchecked exceptions?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b></p>
+            <ul>
+                <li><b>Checked exceptions:</b> These are exceptions that must be either caught or declared in the method signature. They are checked at compile time (e.g., <code>IOException</code>).</li>
+                <li><b>Unchecked exceptions:</b> These are not required to be caught or declared. They occur at runtime (e.g., <code>NullPointerException</code>).</li>
+            </ul>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Checked exceptions must be caught or declared and are checked at compile time, while unchecked exceptions occur at runtime.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">28. How do you handle exceptions in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You handle exceptions using <code>try</code>, <code>catch</code>, and <code>finally</code> blocks. Code that may throw an exception is placed in the <code>try</code> block, and the handling logic is placed in the <code>catch</code> block. The <code>finally</code> block is executed regardless of whether an exception occurred:</p>
+            <pre><code>try {
+    // Code that may throw an exception
+} catch (ExceptionType e) {
+    // Exception handling code
+} finally {
+    // Code that executes regardless
+}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Exceptions in Java are handled using try, catch, and finally blocks.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">29. What is a <code>try</code>, <code>catch</code>, and <code>finally</code> block?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b></p>
+            <ul>
+                <li>The <code>try</code> block contains code that may throw an exception.</li>
+                <li>The <code>catch</code> block contains code that handles the exception.</li>
+                <li>The <code>finally</code> block contains code that always executes after the try-catch, regardless of whether an exception was thrown or not.</li>
+            </ul>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The try block holds code that may throw an exception, the catch block handles it, and finally always executes after try-catch.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">30. What is the <code>throw</code> keyword?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>throw</code> keyword is used to explicitly throw an exception. It can be used to signal that an error condition has occurred:</p>
+            <pre><code>throw new IllegalArgumentException("Invalid argument!");</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The throw keyword is used to explicitly throw an exception in Java.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+<li>
+    <li class="question-item">
+    <div class="question">31. What is the Java Collections Framework?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The Java Collections Framework is a set of classes and interfaces that implement commonly used data structures and algorithms. It provides a standard way to manage groups of objects (collections), making it easier to manipulate and access data.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The Java Collections Framework is a set of classes and interfaces that provide commonly used data structures.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">32. What is the difference between <code>List</code>, <code>Set</code>, and <code>Map</code>?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b></p>
+            <ul>
+                <li><b>List:</b> An ordered collection that allows duplicate elements (e.g., <code>ArrayList</code>, <code>LinkedList</code>).</li>
+                <li><b>Set:</b> A collection that does not allow duplicate elements (e.g., <code>HashSet</code>, <code>TreeSet</code>).</li>
+                <li><b>Map:</b> A collection that stores key-value pairs, where each key is unique (e.g., <code>HashMap</code>, <code>TreeMap</code>).</li>
+            </ul>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'List allows duplicates, Set doesn’t allow duplicates, and Map stores key-value pairs.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">33. What is an ArrayList?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> An <code>ArrayList</code> is a resizable array implementation of the <code>List</code> interface. It allows dynamic resizing and provides random access to its elements. It can store null values and allows duplicates:</p>
+            <pre><code>ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();
+list.add("Hello");</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'An ArrayList is a resizable array in Java that allows duplicates and provides random access.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">34. What is a HashMap?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A <code>HashMap</code> is an implementation of the <code>Map</code> interface that uses a hash table to store key-value pairs. It allows null values and keys and provides constant-time performance for basic operations like adding, removing, and accessing elements:</p>
+            <pre><code>HashMap&lt;String, Integer&gt; map = new HashMap&lt;&gt;();
+map.put("Alice", 25);</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A HashMap stores key-value pairs in a hash table, allowing null values and keys.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">35. How does a TreeSet work?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A <code>TreeSet</code> is a collection that implements the <code>Set</code> interface and stores elements in a sorted order. It uses a red-black tree for storage, ensuring that elements are unique and ordered:</p>
+            <pre><code>TreeSet&lt;Integer&gt; set = new TreeSet&lt;&gt;();
+set.add(3);
+set.add(1);
+set.add(2); // Elements will be stored as 1, 2, 3</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'TreeSet stores unique elements in a sorted order using a red-black tree.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">36. What is multithreading in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Multithreading is the concurrent execution of two or more threads within a single program. It allows for efficient use of CPU resources and can improve application performance by performing multiple tasks simultaneously.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Multithreading allows multiple threads to run concurrently, improving CPU efficiency.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">37. How do you create a thread in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a thread in Java by either extending the <code>Thread</code> class or implementing the <code>Runnable</code> interface. Here’s how to do it with both approaches:</p>
+            <pre><code>// Extending Thread
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread running");
+    }
+}
+
+// Implementing Runnable
+class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Thread running");
+    }
+}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A thread can be created in Java by extending Thread or implementing Runnable.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">38. What is the <code>synchronized</code> keyword?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>synchronized</code> keyword is used to control access to a method or block of code by multiple threads. It ensures that only one thread can execute the synchronized code at a time, preventing thread interference and ensuring thread safety:</p>
+            <pre><code>synchronized void synchronizedMethod() {
+    // Thread-safe code
+}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The synchronized keyword in Java controls thread access to methods or blocks.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">39. What is a thread pool?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A thread pool is a collection of pre-initialized threads that are used to execute tasks concurrently. It manages the creation and reuse of threads, improving performance by avoiding the overhead of creating new threads for each task. Java provides <code>ExecutorService</code> for managing thread pools.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A thread pool manages a group of threads for executing tasks efficiently, avoiding thread creation overhead.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">40. How do you implement the Runnable interface?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> To implement the <code>Runnable</code> interface, you define a class that implements <code>Runnable</code> and override its <code>run()</code> method. Then, you can create a thread using a <code>Thread</code> object:</p>
+            <pre><code>class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Runnable thread running");
+    }
+}
+
+Thread thread = new Thread(new MyRunnable());
+thread.start(); // Start the thread</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'To implement Runnable, create a class with run() method and pass it to a Thread object.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+<li>
+    <li class="question-item">
+    <div class="question">41. What is Java I/O?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Java I/O (Input/Output) is a set of classes and interfaces in Java that allow for reading from and writing to data sources such as files, network connections, and memory. It includes both byte streams and character streams.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java I/O handles input and output operations for data sources like files and networks.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">42. What are streams in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Streams are abstractions that represent input and output sources. They can be classified into two types:</p>
+            <ul>
+                <li><b>Byte Streams:</b> Handle raw binary data (e.g., <code>InputStream</code>, <code>OutputStream</code>).</li>
+                <li><b>Character Streams:</b> Handle character data (e.g., <code>Reader</code>, <code>Writer</code>).</li>
+            </ul>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Streams represent sources of input and output in Java.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">43. Explain the difference between <code>FileInputStream</code> and <code>FileOutputStream</code>.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> <code>FileInputStream</code> is used for reading byte data from a file, whereas <code>FileOutputStream</code> is used for writing byte data to a file.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'FileInputStream reads bytes, while FileOutputStream writes bytes to files.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">44. What is a BufferedReader?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> <code>BufferedReader</code> is a class used to read text from a character input stream, buffering characters for efficient reading of characters, arrays, and lines:</p>
+            <pre><code>BufferedReader reader = new BufferedReader(new FileReader("file.txt"));
+String line = reader.readLine(); // Reads a line from the file</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'BufferedReader reads text efficiently by buffering characters.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">45. How do you serialize an object in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Serialization converts an object into a byte stream. A class must implement the <code>Serializable</code> interface:</p>
+            <pre><code>class Person implements Serializable {
+    String name;
+    int age;
+}
+
+ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("person.ser"));
+oos.writeObject(new Person("Alice", 30));</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Serialization in Java turns objects into byte streams for storage or transfer.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">46. What are lambda expressions?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Lambda expressions allow concise implementation of functional interfaces, improving code readability:</p>
+            <pre><code>List&lt;String&gt; names = Arrays.asList("Alice", "Bob", "Charlie");
+names.forEach(name -> System.out.println(name));</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Lambdas allow for concise functional interface implementations in Java.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">47. What is the Stream API?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The Stream API provides methods for filtering, mapping, and reducing data in a functional style:</p>
+            <pre><code>List&lt;String&gt; filteredNames = names.stream()
+                        .filter(name -> name.startsWith("A"))
+                        .collect(Collectors.toList());</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The Stream API allows processing data in a functional style.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">48. Explain Optional in Java 8.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> <code>Optional</code> is a container that may or may not contain a value, used to handle nullable values safely:</p>
+            <pre><code>Optional&lt;String&gt; optionalName = Optional.ofNullable(getName());
+optionalName.ifPresent(name -> System.out.println(name));</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Optional is used to handle null values safely in Java.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">49. What is the difference between <code>map()</code> and <code>flatMap()</code> in Streams?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> <code>map()</code> transforms each element individually, whereas <code>flatMap()</code> flattens nested collections into a single stream:</p>
+            <pre><code>// Using map
+List&lt;String&gt; upperCaseNames = names.stream().map(String::toUpperCase).collect(Collectors.toList());
+
+// Using flatMap
+List&lt;List&lt;String&gt;&gt; nestedList = Arrays.asList(Arrays.asList("A", "B"), Arrays.asList("C", "D"));
+List&lt;String&gt; flatList = nestedList.stream().flatMap(List::stream).collect(Collectors.toList());</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'map() transforms elements individually; flatMap() flattens nested collections.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">50. What are default methods in interfaces?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Default methods in interfaces have a body and are used to add new functionality without breaking existing implementations:</p>
+            <pre><code>interface MyInterface {
+    default void myDefaultMethod() {
+        System.out.println("Default method implementation");
+    }
+}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Default methods allow interfaces to have implemented methods.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">51. What are design patterns?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Design patterns are reusable solutions to common software design problems, providing templates for flexible, maintainable, and scalable code.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Design patterns are reusable solutions to common software problems.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+<li>
+    <li class="question-item">
+    <div class="question">51. What are design patterns?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Design patterns are reusable solutions to common software design problems. They provide best practices and templates for writing code that is flexible, maintainable, and scalable.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Design patterns are reusable solutions to common software design problems.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">52. Explain the Singleton pattern.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. This is typically achieved by making the constructor private and providing a static method to get the instance:</p>
+            <pre><code>class Singleton {
+    private static Singleton instance;
+    private Singleton() {}
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Singleton ensures only one instance of a class is created.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">53. What is the Factory pattern?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The Factory pattern is a creational pattern that defines an interface for creating objects but allows subclasses to alter the type of objects that will be created. It promotes loose coupling and easier maintenance:</p>
+            <pre><code>interface Shape { void draw(); }
+class Circle implements Shape { public void draw() { System.out.println("Drawing a circle"); } }
+class ShapeFactory {
+    public Shape getShape(String shapeType) {
+        if (shapeType.equals("CIRCLE")) return new Circle();
+        return null;
+    }
+}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The Factory pattern defines an interface for creating objects and allows subclasses to modify their creation.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">54. What is the Observer pattern?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The Observer pattern defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically. It is often used in event handling:</p>
+            <pre><code>interface Observer { void update(); }
+class Subject {
+    private List&lt;Observer&gt; observers = new ArrayList&lt;&gt;();
+    void addObserver(Observer observer) { observers.add(observer); }
+    void notifyObservers() { observers.forEach(Observer::update); }
+}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Observer pattern updates dependents automatically when the subject changes.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">55. What is the Decorator pattern?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The Decorator pattern allows behavior to be added to individual objects, either statically or dynamically, without affecting other objects from the same class. It is used to extend functionality:</p>
+            <pre><code>interface Coffee { String getDescription(); double cost(); }
+class SimpleCoffee implements Coffee {
+    public String getDescription() { return "Simple coffee"; }
+    public double cost() { return 1.0; }
+}
+class MilkDecorator implements Coffee {
+    private Coffee coffee;
+    MilkDecorator(Coffee coffee) { this.coffee = coffee; }
+    public String getDescription() { return coffee.getDescription() + ", milk"; }
+    public double cost() { return coffee.cost() + 0.5; }
+}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Decorator pattern adds behavior to objects without modifying others.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">56. What is Java Reflection?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Java Reflection is an API that allows inspection and manipulation of classes, methods, and fields at runtime, even if they are private. It is used for dynamic object creation and accessing metadata about classes:</p>
+            <pre><code>Class&lt;?&gt; clazz = Class.forName("com.example.MyClass");
+Method[] methods = clazz.getDeclaredMethods();</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Reflection lets you inspect and manipulate classes and fields at runtime.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">57. Explain annotations in Java.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Annotations are metadata that provide additional information about the code. They are used by the compiler or runtime and do not affect program logic. Common uses include code analysis and configuration:</p>
+            <pre><code>@Override
+public void myMethod() {}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Annotations provide metadata to aid in code analysis and configuration.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">58. What is the difference between a <code>final</code> class and a <code>final</code> method?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A <code>final</code> class cannot be subclassed or extended, whereas a <code>final</code> method cannot be overridden by subclasses.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Final class prevents subclassing; final method prevents overriding.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">59. What is garbage collection?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Garbage collection is the process of automatically reclaiming memory occupied by objects that are no longer in use, thus preventing memory leaks. Java has an automatic garbage collector that runs in the background to free memory.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Garbage collection reclaims memory by freeing unused objects.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">60. How does the <code>volatile</code> keyword work?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>volatile</code> keyword is used to indicate that a variable's value will be modified by different threads. It ensures visibility of changes to variables across threads, preventing caching issues:</p>
+            <pre><code>volatile boolean flag = false;</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Volatile ensures visibility of variable changes across threads.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+<li>
+    <li class="question-item">
+    <div class="question">61. What is an IDE?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> An Integrated Development Environment (IDE) is software that provides comprehensive facilities to programmers for software development. It typically includes a code editor, debugger, build automation tools, and more. Examples include IntelliJ IDEA, Eclipse, and NetBeans.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'IDE is software providing development tools like code editor, debugger, build tools.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">62. What are Maven and Gradle?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Maven is a build automation tool using XML configuration (pom.xml) for managing Java project dependencies. Gradle is a flexible build tool using a Groovy-based DSL, allowing more control than Maven.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Maven and Gradle are Java build tools, Maven uses XML, and Gradle uses Groovy DSL.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">63. How do you use JUnit for testing?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> JUnit allows developers to write repeatable tests using `@Test` annotations and assertions to check results:</p>
+            <pre><code>import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class MyTest {
+    @Test
+    public void testAddition() {
+        assertEquals(2, 1 + 1);
+    }
+}</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'JUnit uses @Test annotation and assertions to test Java code.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">64. What is a build tool?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A build tool automates compiling, packaging, and dependency management. Java build tools include Maven, Gradle, and Ant.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Build tools automate compiling, packaging, and managing dependencies.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">65. What is version control, and why is it important?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Version control records file changes over time, supporting collaboration, tracking, and conflict resolution. Popular systems include Git and Subversion.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Version control tracks file changes, supporting collaboration and conflict resolution.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">66. What is Spring Framework?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Spring is an application framework for Java providing infrastructure for developing apps, offering dependency injection, AOP, and data access support.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Spring provides infrastructure for Java apps, including dependency injection and AOP.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">67. What is Hibernate?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Hibernate is an ORM framework that maps Java objects to database tables, simplifying database interaction without SQL.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Hibernate maps Java objects to database tables, simplifying database interaction.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">68. Explain RESTful web services in Java.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> RESTful web services adhere to REST principles, using HTTP methods (GET, POST, PUT, DELETE) to create stateless services. Java frameworks include Spring Boot and JAX-RS.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'RESTful services in Java use HTTP methods to create stateless services.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">69. What is JavaFX?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> JavaFX is a framework for building desktop applications with a rich user interface, supporting graphics, animation, and media.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'JavaFX builds rich desktop applications with UI, graphics, and media support.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">70. What is JavaServer Faces (JSF)?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> JSF is a Java specification for building web application UIs using reusable components and event handling.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'JSF builds web UIs using reusable components and event handling.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">71. What is networking in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Networking in Java allows communication between systems over a network, with support for sockets, URLs, etc.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Networking in Java enables communication between systems over a network.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">72. How do you create a simple client-server application?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Use Java sockets, with the server accepting connections and the client connecting:</p>
+            <pre><code>// Server
+ServerSocket serverSocket = new ServerSocket(1234);
+Socket clientSocket = serverSocket.accept();
+
+// Client
+Socket socket = new Socket("localhost", 1234);</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Client-server applications in Java use sockets to communicate.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">73. What is a socket?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A socket is an endpoint for data exchange between client and server over a network.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A socket is an endpoint for data exchange between client and server over a network.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">74. Explain the difference between TCP and UDP.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> TCP is connection-oriented, reliable, ordered; UDP is connectionless, faster but less reliable.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'TCP is reliable and ordered, UDP is faster but less reliable.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">75. What is the URL class in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The URL class represents a Uniform Resource Locator, allowing access to protocol, host, path, etc.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'URL class allows access to different parts of a URL.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">76. What is Java security?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Java security protects applications from unauthorized access, including cryptography and secure coding practices.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java security protects applications with cryptography and secure practices.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">77. What is a Java security manager?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Java security manager controls access to resources, ensuring only authorized code performs sensitive operations.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java security manager controls access to sensitive resources.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">78. Explain Java cryptography.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Java cryptography provides APIs for encryption, decryption, and secure communication.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java cryptography provides encryption and secure communication APIs.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">79. What is SSL/TLS in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> SSL/TLS are protocols for secure network communication, used in Java with SSLSocket and SSLServerSocket.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'SSL/TLS provide secure communication over networks in Java.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">80. How do you handle secure passwords in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Use hashing (e.g., SHA-256) and salting to secure passwords:</p>
+            <pre><code>MessageDigest md = MessageDigest.getInstance("SHA-256");
+byte[] hashedPassword = md.digest(password.getBytes(StandardCharsets.UTF_8));</code></pre>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Hashing and salting secure passwords, like using SHA-256.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+<li>
+    <li class="question-item">
+    <div class="question">81. What is Java performance tuning?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Java performance tuning is the process of improving the performance of Java applications by optimizing resource usage, reducing memory consumption, and increasing execution speed. This can involve analyzing code, optimizing algorithms, and configuring JVM settings.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java performance tuning optimizes resource usage and execution speed.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">82. What is garbage collection tuning?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Garbage collection tuning involves configuring the Java garbage collector to optimize memory management and performance. It can include adjusting heap sizes, selecting a garbage collection algorithm, and monitoring GC behavior to minimize pause times.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Garbage collection tuning optimizes memory management and performance.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">83. How can you improve the performance of a Java application?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Performance improvement strategies for Java applications include using efficient data structures and algorithms, minimizing object creation to reduce garbage collection, using caching to store frequently accessed data, and profiling to identify bottlenecks.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use efficient data structures, minimize object creation, and use caching.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">84. What is the Java profiler?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A Java profiler is a tool that helps analyze the performance of Java applications by measuring resource usage, such as CPU time, memory consumption, and thread activity. Popular profilers include VisualVM, YourKit, and JProfiler.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java profilers analyze performance, measuring CPU and memory usage.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">85. Explain the concept of JIT compilation.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> JIT (Just-In-Time) compilation is an optimization technique used by the Java Virtual Machine (JVM) to improve the performance of Java applications. It compiles bytecode into native machine code at runtime, which can then be executed directly, improving execution speed.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'JIT compilation compiles bytecode to native code at runtime for better performance.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">86. What are Java best practices?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Java best practices are guidelines for writing clean, maintainable, and efficient Java code. Common practices include using meaningful names, following coding conventions, writing modular code, documenting with comments, and using exception handling appropriately.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Best practices include meaningful names, conventions, and documentation.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">87. What is the importance of code reviews?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Code reviews are essential for ensuring code quality, identifying bugs, and promoting knowledge sharing among team members. They help maintain coding standards, improve maintainability, and enhance collaboration within the development team.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Code reviews ensure quality, identify bugs, and promote knowledge sharing.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">88. What is refactoring?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Refactoring is the process of restructuring existing code without changing its external behavior. The goal is to improve readability, maintainability, and performance. Techniques include extracting methods, renaming variables, and simplifying logic.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Refactoring restructures code for better readability and maintainability.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">89. How do you manage dependencies in Java projects?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can manage dependencies in Java projects using build tools like Maven or Gradle. These tools allow you to specify dependencies in configuration files, automatically resolving and downloading them as needed.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Manage dependencies using tools like Maven or Gradle.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">90. What is Continuous Integration (CI)?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Continuous Integration (CI) is a software development practice where code changes are automatically tested and integrated into a shared repository frequently. CI tools (e.g., Jenkins, Travis CI) facilitate automated builds, tests, and deployment, ensuring that code is always in a working state.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'CI automates testing and integration of code changes into a shared repository.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">91. What is the Java Virtual Machine (JVM)?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The Java Virtual Machine (JVM) is an abstract computing machine that enables Java bytecode to be executed on any platform. It provides a runtime environment, handles memory management, and performs just-in-time (JIT) compilation.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'JVM executes Java bytecode on any platform and handles memory management.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">92. What is the Java Development Kit (JDK)?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The Java Development Kit (JDK) is a software development kit that provides the tools necessary for developing Java applications. It includes the Java compiler, Java Runtime Environment (JRE), and development tools such as debugging and profiling utilities.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'JDK provides tools for developing Java applications, including a compiler and runtime environment.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">93. What is the role of the Java Runtime Environment (JRE)?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The Java Runtime Environment (JRE) is a part of the Java Development Kit (JDK) that provides the environment for running Java applications. It includes the JVM, core libraries, and other components required for executing Java programs.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'JRE provides the environment for running Java applications, including the JVM.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">94. What is a Java package?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A Java package is a namespace that organizes a set of related classes and interfaces. Packages help avoid naming conflicts and can control access with protected and default access levels. Common Java packages include java.util and java.io.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A Java package organizes related classes and controls access levels.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">95. What is the significance of Java annotations?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Java annotations are metadata that provide additional information about the program but do not affect the program's execution. They are used for configuration, documentation, and provide instructions to the compiler and runtime. Common annotations include @Override and @Deprecated.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Annotations provide metadata for configuration and documentation.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">96. How does Java handle exceptions?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Java handles exceptions using a structured mechanism that includes try, catch, and finally blocks. Code that may throw an exception is placed in a try block, while catch blocks handle specific exceptions. Finally blocks execute code regardless of whether an exception occurred.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Java uses try, catch, and finally blocks to handle exceptions.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">97. What are checked and unchecked exceptions?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Checked exceptions are exceptions that must be either caught or declared in the method signature. They are checked at compile-time. Unchecked exceptions, such as runtime exceptions, do not require explicit handling and are checked at runtime.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Checked exceptions must be handled; unchecked exceptions do not require handling.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">98. What is a Java interface?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A Java interface is a reference type that defines a set of abstract methods that a class can implement. Interfaces allow for multiple inheritance of type and provide a way to achieve abstraction and loose coupling in Java.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'An interface defines abstract methods that a class can implement.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">99. What is the difference between an abstract class and an interface?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> An abstract class can have both abstract methods and concrete methods, while an interface can only have abstract methods (prior to Java 8). Abstract classes allow for code reuse, while interfaces define a contract for behavior without implementation.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Abstract classes can have methods; interfaces only declare methods.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">100. What are lambda expressions in Java?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Lambda expressions in Java are a feature introduced in Java 8 that allows for the implementation of functional interfaces using a concise syntax. They enable the creation of anonymous methods that can be passed as arguments or used to define behavior in functional programming.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Lambda expressions implement functional interfaces with a concise syntax.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+

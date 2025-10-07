@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Google Cloud Course</title>
+    
+    
+</head>
+<body class="body">
+
+  
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> GCP Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> GCP Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            
+            
+            <i class="fab fa-google" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> GCP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="Google cloudRoadmaps.html" target="_blank"><b class="b12">GCP Roadmap</b></a>
+    
+        <ul><a href="Introduction to Google Cloud.html">Introduction to Google Cloud</a>
+            <li><a href="Overview of Google Cloud.html">Overview of Google Cloud</a></li>
+            <li><a href="Global Infrastructure Google Cloud.html">Global Infrastructure</a></li>
+            <li><a href="Core Services and Use Cases Google Cloud.html">Core Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>Google Cloud Foundations</h3>
+        <a href="Google Cloud Foundations.html">Google Cloud Foundations</a>
+        <ul>
+            <li><a href="Google Cloud Console.html">Google Cloud Console</a></li>
+            <li><a href="Cloud Shell and Cloud SDK.html">Cloud Shell and Cloud SDK</a></li>
+            <li><a href="Identity and Access Management (IAM).html">Identity and Access Management (IAM)</a></li>
+            <li><a href="Billing and Pricing in Google Cloud.html">Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core Google Cloud Services</h3>
+        <a href="Core Google Cloud Services.html">Core Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services Google cloud.html">Compute Services</a>
+                <ul>
+                    <li><a href="Compute Engine.html">Compute Engine</a></li>
+                    <li><a href="App Engine.html">App Engine</a></li>
+                    <li><a href="Kubernetes Engine (GKE).html">Kubernetes Engine (GKE)</a></li>
+                    <li><a href="Cloud Functions.html">Cloud Functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services in Google cloud.html">Storage Services</a>
+                <ul>
+                    <li><a href="Cloud Storage.html">Cloud Storage</a></li>
+                    <li><a href="Persistent Disk.html">Persistent Disk</a></li>
+                    <li><a href="Filestore.html">Filestore</a></li>
+                    <li><a href="Cloud SQL.html">Cloud SQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services in Google cloud.html">Database Services</a>
+                <ul>
+                    <li><a href="Cloud Firestore.html">Cloud Firestore</a></li>
+                    <li><a href="Bigtable.html">Bigtable</a></li>
+                    <li><a href="Cloud Spanner.html">Cloud Spanner</a></li>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services Google Cloud.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud) google cloud.html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Cloud Load Balancing.html">Cloud Load Balancing</a></li>
+                    <li><a href="Cloud CDN.html">Cloud CDN</a></li>
+                    <li><a href="Cloud Interconnect.html">Cloud Interconnect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Google Cloud Services</h3>
+        <a href="Advanced Google Cloud Services.html">Advanced Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="AI and Machine Learning Google Cloud.html">AI and Machine Learning</a>
+                <ul>
+                    <li><a href="AI Platform.html">AI Platform</a></li>
+                    <li><a href="AutoML.html">AutoML</a></li>
+                    <li><a href="Vision AI.html">Vision AI</a></li>
+                    <li><a href="Dialogflow.html">Dialogflow</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services Google.html">Analytics Services</a>
+                <ul>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                    <li><a href="Dataflow.html">Dataflow</a></li>
+                    <li><a href="pub sub.html">Pub/Sub</a></li>
+                    <li><a href="Dataproc.html">Dataproc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services Google.html">Security Services</a>
+                <ul>
+                    <li><a href="Cloud IAM.html">Cloud IAM</a></li>
+                    <li><a href="Cloud Armor.html">Cloud Armor</a></li>
+                    <li><a href="Security Command Center.html">Security Command Center</a></li>
+                    <li><a href="Cloud Key Management Service (KMS).html">Cloud Key Management Service (KMS)</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on Google Cloud</h3>
+        <a href="DevOps on Google Cloud.html">DevOps on Google Cloud</a>
+        <ul>
+            <li>
+                <a href="Infrastructure as Code (IaC) Google.html">Infrastructure as Code (IaC)</a>
+                <ul>
+                    <li><a href="Deployment Manager.html">Deployment Manager</a></li>
+                    <li><a href="Terraform on Google Cloud.html">Terraform on Google Cloud</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="CI-CD Pipeline google.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Cloud Build.html">Cloud Build</a></li>
+                    <li><a href="Container Registry.html">Container Registry</a></li>
+                    <li><a href="Artifact Registry.html">Artifact Registry</a></li>
+                    <li><a href="Cloud Source Repositories.html">Cloud Source Repositories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Google.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Cloud Monitoring.html">Cloud Monitoring</a></li>
+                    <li><a href="Cloud Logging.html">Cloud Logging</a></li>
+                    <li><a href="Cloud Trace.html">Cloud Trace</a></li>
+                    <li><a href="Cloud Debugger.html">Cloud Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer Google.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="Migrate for Compute Engine.html">Migrate for Compute Engine</a></li>
+            <li><a href="Database Migration Service Google.html">Database Migration Service</a></li>
+            <li><a href="Transfer Appliance.html">Transfer Appliance</a></li>
+            <li><a href="Storage Transfer Service.html">Storage Transfer Service</a></li>
+        </ul>
+    
+    </div>
+    
+   
+   
+   
+    
+
+    
+    
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "GCP_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "GCP_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "GCP_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "GCP_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "pub sub.html";
+    }
+    function goNext() {
+        window.location.href = "Security Services Google.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-google" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">GCP Tutorial</h2>
+<div class="div1">Google Cloud Dataproc</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Introduction to Dataproc</h2>
+        <p>Google Cloud Dataproc is a fully-managed cloud service that simplifies running Apache Hadoop and Apache Spark clusters. It provides a fast, easy-to-use, and cost-effective way to process and analyze large datasets. Dataproc automates cluster management, scaling, and configuration, allowing you to focus on your data and analytics tasks.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Fully Managed:</strong> Dataproc automates the setup, management, and scaling of Hadoop and Spark clusters.</li>
+            <li><strong>Fast and Efficient:</strong> Cluster startup times in seconds and integrates with Google Cloud storage services for fast data processing.</li>
+            <li><strong>Cost-Effective:</strong> Pay only for the resources you use, with on-demand pricing and support for preemptible VMs to reduce costs.</li>
+            <li><strong>Integration:</strong> Seamlessly integrates with other Google Cloud services such as BigQuery, Cloud Storage, and Dataflow.</li>
+            <li><strong>Scalability:</strong> Automatically scales clusters up or down based on your workload requirements.</li>
+            <li><strong>Open Source:</strong> Supports popular open-source tools like Apache Hadoop, Spark, and Hive, giving you flexibility and control.</li>
+        </ul>
+
+        <h2>Use Cases</h2>
+        <ul>
+            <li><strong>Big Data Processing:</strong> Process large-scale datasets using Hadoop and Spark frameworks for batch and stream processing.</li>
+            <li><strong>Data Analytics:</strong> Analyze and transform data with Apache Spark, and run SQL queries with Apache Hive.</li>
+            <li><strong>ETL Workflows:</strong> Build Extract, Transform, Load (ETL) pipelines to move and transform data between different storage systems.</li>
+            <li><strong>Machine Learning:</strong> Prepare data for machine learning models and integrate with Google Cloud AI and ML services.</li>
+            <li><strong>Log Analysis:</strong> Analyze log data and generate insights to monitor and troubleshoot applications.</li>
+        </ul>
+
+        <h2>Free Resources for Practice</h2>
+        <ul>
+            <li><a href="https://cloud.google.com/dataproc/docs">Dataproc Documentation</a> - Comprehensive guides and tutorials on using Dataproc.</li>
+            <li><a href="https://www.qwiklabs.com/quests/65">Qwiklabs Dataproc Labs</a> - Hands-on labs for practicing Dataproc in a live environment.</li>
+            <li><a href="https://www.coursera.org/learn/gcp-dataproc">Coursera Dataproc Course</a> - Free course covering the basics and advanced features of Google Cloud Dataproc.</li>
+            <li><a href="https://www.youtube.com/user/googlecloudplatform">YouTube Tutorials</a> - Video tutorials and webinars on Dataproc.</li>
+        </ul>
+
+        <h2>Getting Started with Dataproc</h2>
+        <ol>
+            <li><a href="https://cloud.google.com/dataproc/docs/quickstarts">Create a Dataproc Cluster</a> - Follow the quickstart guide to set up your first Dataproc cluster.</li>
+            <li><a href="https://console.cloud.google.com/dataproc">Explore the Dataproc Console</a> - Use the web UI to manage your clusters and jobs.</li>
+            <li><a href="https://cloud.google.com/dataproc/docs/reference/libraries">Learn the API</a> - Explore the Dataproc API for integrating with your applications.</li>
+            <li>Check out the resources listed above to deepen your knowledge and skills in using Dataproc.</li>
+        </ol>
+
+        <h2>Summary</h2>
+        <p>Google Cloud Dataproc is a powerful tool for managing and processing large datasets with Hadoop and Spark. Its fully-managed nature, cost-effectiveness, and integration with other Google Cloud services make it an ideal choice for big data processing, analytics, and machine learning tasks. By utilizing Dataproc, you can streamline your data workflows and leverage the scalability and flexibility of cloud-based analytics.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+    </div>
+</body>
+</html>

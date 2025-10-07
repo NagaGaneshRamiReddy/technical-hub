@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Course Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #023554;
+            overflow-y: auto;
+            background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        header {
+            width: 100%;
+            background-color:green;
+            color: white;
+           
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+       
+        
+
+        .roadmap-container {
+            text-align: center;
+            margin-top: 60px; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .tree {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+        }
+
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 2px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 2px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 2px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+
+        .tree ul ul::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 2px solid #ccc;
+            width: 0;
+            height: 20px;
+        }
+
+        .stage {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.5s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .stage.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.10s ease, transform 0.3s ease; 
+        }
+
+        a:hover {
+            color: #000000; 
+            transform: scale(1.1);
+        }
+        .ai{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="container">
+            <h1 class="">
+             <a class="ai" href="index.html">   <i class="fas fa-tree"></i>
+                TreeLearners
+            </a></h1>
+        </div>
+    </header><br><br>
+    <div class="roadmap-container"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="h1">AI Course Roadmap</h1>
+        <div class="tree">
+            <ul>
+                <li>
+                    <div class="stage"><a href="Introduction to AI.html"style="text-decoration: none;">Introduction to AI</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="History of AI.html"style="text-decoration: none;">History of AI</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="AI vs. Machine Learning vs. Deep Learning.html"style="text-decoration: none;">AI vs. Machine Learning vs. Deep Learning</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Applications of AI.html"style="text-decoration: none;">Applications of AI</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Basic Concepts.html"style="text-decoration: none;">Basic Concepts</a></div>
+                            <ul>
+                                <li>
+                                    <div class="stage"><a href="Supervised Learning.html"style="text-decoration: none;">Supervised Learning</a></div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Unsupervised Learning.html"style="text-decoration: none;">Unsupervised Learning</div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Reinforcement Learning.html"style="text-decoration: none;">Reinforcement Learning</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Mathematics for AI.html"style="text-decoration: none;">Mathematics for AI</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Linear Algebra.html"style="text-decoration: none;">Linear Algebra</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Calculus.html"style="text-decoration: none;">Calculus</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Probability and Statistics.html"style="text-decoration: none;">Probability and Statistics</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Optimization.html"style="text-decoration: none;">Optimization</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Machine Learning.html"style="text-decoration: none;">Machine Learning</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Regression.html"style="text-decoration: none;">Regression</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Classification al.html"style="text-decoration: none;">Classification</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Clustering.html"style="text-decoration: none;">Clustering</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Dimensionality Reduction.html"style="text-decoration: none;">Dimensionality Reduction</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Model Evaluation and Validation.html"style="text-decoration: none;">Model Evaluation and Validation</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Deep Learning.html"style="text-decoration: none;">Deep Learning</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Neural Networks.html"style="text-decoration: none;">Neural Networks</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Convolutional Neural Networks (CNNs).html"style="text-decoration: none;">Convolutional Neural Networks (CNNs)</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Recurrent Neural Networks (RNNs).html"style="text-decoration: none;">Recurrent Neural Networks (RNNs)</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Generative Adversarial Networks (GANs).html"style="text-decoration: none;">Generative Adversarial Networks (GANs)</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Transformers.html"style="text-decoration: none;">Transformers</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Natural Language Processing (NLP).html"style="text-decoration: none;">Natural Language Processing (NLP)</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Text Preprocessing.html"style="text-decoration: none;">Text Preprocessing</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Word Embeddings.html"style="text-decoration: none;">Word Embeddings</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Sequence Modeling.html"style="text-decoration: none;">Sequence Modeling</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Attention Mechanisms.html"style="text-decoration: none;">Attention Mechanisms</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Language Models.html"style="text-decoration: none;">Language Models</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Advanced Topics.html"style="text-decoration: none;">Advanced Topics</a></div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Reinforcement Learning in AI.html"style="text-decoration: none;">Reinforcement Learning</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Meta-Learning.html"style="text-decoration: none;">Meta-Learning</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="AI Ethics.html"style="text-decoration: none;">AI Ethics</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="AI in Production.html"style="text-decoration: none;">AI in Production</a></div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="AI Research.html"style="text-decoration: none;">AI Research</a></div>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const stages = document.querySelectorAll('.stage');
+    let delay = 0;
+
+    stages.forEach((stage, index) => {
+        setTimeout(() => {
+            stage.classList.add('visible');
+        }, delay);
+        delay += 300; // delay each stage by 300ms
+    });
+});
+
+    </script>
+</body>
+</html>

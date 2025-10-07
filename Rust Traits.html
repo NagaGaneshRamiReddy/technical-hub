@@ -1,0 +1,361 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Rust Proagramming Language</title>
+   
+   
+   
+    <head>
+    
+        <body class="body">
+ 
+            <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+            
+                <div id="main" class="main">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                
+                    <button class="openbtn homebtn" onclick="goHome()">
+                        &#8962; Home
+                    </button>
+                    <button class="openbtn compbtn" onclick="gocomp()">
+                        <i class="fas fa-code"></i> Rust Compiler
+                    </button>
+                    <button class="openbtn videobtn" onclick="govideo()">
+                        <i class="fas fa-video"></i> Video
+                    </button>
+                    <button class="openbtn labs" onclick="goprojects()">
+                   
+                        <i class="fas fa-folder-open"></i> Projects
+                    </button>
+                    <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                        <i class="fas fa-user-tie"></i> Interview Preparation
+                    </button>
+                    <button class="openbtn quizbtn" onclick="goquizpro()">
+                        <i class="fas fa-question-circle"></i> Rust Quiz
+                    </button>
+                </div></div>
+            </header>
+            
+            
+            
+            
+            
+            
+          
+          
+              
+               
+              
+        
+              
+             <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+                  
+                    
+                     
+        
+                </div>
+            </header>
+            <br><br><br>
+            
+            <div id="mySidebar" class="sidebar">
+                <!-- Top Box with Icon and Title -->
+                <div class="top-box">
+                  
+                    <i class="fab fa-rust" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+                    <h2 class="jk">Rust Tutorial</h2>
+                </div>
+            
+                <!-- Close button and sidebar content -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Rust.html" target="_blank"><b class="b12">Rust Roadmap</b></a>   
+        <ul>
+            <a href="Introduction to Rust.html">Introduction to Rust</a>
+            <li><a href="What is Rust.html">What is Rust?</a></li>
+            <li><a href="Rust Features.html">Rust Features</a></li>
+            <li><a href="Rust Installation.html">Rust Installation</a></li>
+            <li><a href="First Rust Program.html">First Rust Program</a></li>
+            <li>
+               <h3> Control Statements</h3>
+                <ul>
+                    <li><a href="Rust if-else.html">Rust if-else</a></li>
+                    <li><a href="Rust if in a let.html">Rust if in a let</a></li>
+                    <li><a href="Rust Loop.html">Rust Loop</a></li>
+                    <li><a href="Rust While Loop.html">Rust While Loop</a></li>
+                    <li><a href="Rust For Loop.html">Rust For Loop</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Ownership</h3>
+                <ul>
+                    <li><a href="What is Ownership.html">What is Ownership?</a></li>
+                    <li><a href="Rust References & Borrowing.html">References & Borrowing</a></li>
+                    <li><a href="Rust Slices.html">Slices</a></li>
+                    <li><a href="Rust Structs.html">Structs</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Enums</h3>
+                <ul>
+                    <li><a href="What is enum.html">What is Enum?</a></li>
+                    <li><a href="Match Operator.html">Match Operator</a></li>
+                    <li><a href="If Let Operator.html">If Let Operator</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Modules</h3>
+                <ul>
+                    <li><a href="Rust Filesystem.html">Filesystem</a></li>
+                    <li><a href="Controlling visibility with pub.html">Controlling Visibility with pub</a></li>
+                    <li><a href="Rust use Keyword.html">use Keyword</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Collections</h3>
+                <ul>
+                    <li><a href="Rust Vectors.html">Vectors</a></li>
+                    <li><a href="Rust Strings.html">Strings</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Error Handling</h3>
+                <ul>
+                    <li><a href="Unrecoverable Errors.html">Unrecoverable Errors</a></li>
+                    <li><a href="Recoverable Errors.html">Recoverable Errors</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Generics & Traits</h3>
+                <ul>
+                    <li><a href="Rust Generics.html">Generics</a></li>
+                    <li><a href="Rust Traits.html">Traits</a></li>
+                    <li><a href="Rust Lifetime.html">Lifetime</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Smart Pointers</h3>
+                <ul>
+                    <li><a href="Smart Pointers.html">Smart Pointers</a></li>
+                    <li><a href="Rust Box.html">Box&lt;T&gt;</a></li>
+                    <li><a href="Rust Deref Trait.html">Deref Trait</a></li>
+                    <li><a href="Rust Drop Trait.html">Drop Trait</a></li>
+                    <li><a href="Rust Rc(T).html">Rc&lt;T&gt;</a></li>
+                    <li><a href="Rust RefCell(T).html">RefCell&lt;T&gt;</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Rust_interviews.html";
+}
+function goprojects() {
+    window.location.href = "Rust_projects.html";
+}
+function goquizpro() {
+    window.location.href = "Rust_quize.html";
+}
+function gocomp() {
+    window.location.href = "Rust Compiler.html";
+}
+   
+    function goPrevious() {
+        window.location.href = "Rust Generics.html";
+    }
+    function goNext() {
+        window.location.href = "Rust Lifetime.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-rust" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">Rust Tutorial</h2>
+            <div class="div1">Rust Traits</div>
+</div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Understanding Traits in Rust</h2>
+<p>Traits in Rust are a way to define shared behavior in types. They allow you to specify functionality that can be implemented by different types, similar to interfaces in other programming languages. Traits enable polymorphism and code reuse.</p>
+
+<h2>Defining a Trait</h2>
+<p>You define a trait using the <code>trait</code> keyword. Here’s an example of a simple trait called <code>Summary</code>:</p>
+
+<div class="example">
+    <pre><code>trait Summary {
+    fn summarize(&self) -> String;
+}</code></pre>
+</div>
+
+<h2>Implementing a Trait</h2>
+<p>After defining a trait, you can implement it for specific types. For example, here’s how to implement the <code>Summary</code> trait for a struct called <code>Article</code>:</p>
+
+<div class="example">
+    <pre><code>struct Article {
+    headline: String,
+    content: String,
+}
+
+impl Summary for Article {
+    fn summarize(&self) -> String {
+        format!("{}: {}", self.headline, self.content)
+    }
+}
+
+fn main() {
+    let article = Article {
+        headline: String::from("Rust Traits"),
+        content: String::from("An introduction to traits in Rust."),
+    };
+
+    println!("Article Summary: {}", article.summarize());
+}</code></pre>
+</div>
+
+<h2>Using Traits as Bounds</h2>
+<p>You can use traits as bounds on generic types, ensuring that the types used with a function implement the specified trait. Here’s an example:</p>
+
+<div class="example">
+    <pre><code>fn notify<T: Summary>(item: T) {
+    println!("Breaking news! {}", item.summarize());
+}
+
+fn main() {
+    let article = Article {
+        headline: String::from("Using Traits in Rust"),
+        content: String::from("Traits are powerful for code reuse."),
+    };
+
+    notify(article);
+}</code></pre>
+</div>
+
+<h2>Default Implementations</h2>
+<p>Traits can provide default implementations for methods. Types that implement the trait can choose to use the default or override it:</p>
+
+<div class="example">
+    <pre><code>trait Summary {
+    fn summarize(&self) -> String {
+        String::from("(Read more...)")
+    }
+}
+
+struct Article {
+    headline: String,
+    content: String,
+}
+
+impl Summary for Article {
+    fn summarize(&self) -> String {
+        format!("{}: {}", self.headline, self.content)
+    }
+}
+
+fn main() {
+    let article = Article {
+        headline: String::from("Default Implementation"),
+        content: String::from("Traits can have default methods."),
+    };
+
+    println!("Article Summary: {}", article.summarize());
+}</code></pre>
+</div>
+
+<h2>Traits for Shared Behavior</h2>
+<p>Traits can also be used to define shared behavior across different types. For instance, you can define a trait for drawing shapes:</p>
+
+<div class="example">
+    <pre><code>trait Drawable {
+    fn draw(&self);
+}
+
+struct Circle;
+struct Square;
+
+impl Drawable for Circle {
+    fn draw(&self) {
+        println!("Drawing a circle");
+    }
+}
+
+impl Drawable for Square {
+    fn draw(&self) {
+        println!("Drawing a square");
+    }
+}
+
+fn main() {
+    let shapes: Vec<&dyn Drawable> = vec![&Circle, &Square];
+    for shape in shapes {
+        shape.draw();
+    }
+}</code></pre>
+</div>
+
+
+
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://doc.rust-lang.org/book/ch10-02-traits.html" target="_blank">The Rust Programming Language: Traits</a></li>
+        <li><a href="https://doc.rust-lang.org/rust-by-example/trait.html" target="_blank">Rust by Example: Traits</a></li>
+        <li><a href="https://doc.rust-lang.org/reference/items/trait.html" target="_blank">Rust Reference: Traits</a></li>
+    </ul>
+</div>
+<h2>Summary</h2>
+<p>Traits are a fundamental feature in Rust that enable you to define shared functionality for different types. They enhance code reuse, promote polymorphism, and allow for better abstraction in your programs.</p>
+
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>

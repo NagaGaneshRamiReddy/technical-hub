@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>PHP course</title>
+   
+   
+   
+</head>
+<body class="body">
+
+   
+    
+    
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> PHP Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> PHP Quiz
+            </button>
+        </div></div>
+    </header>
+    
+      
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-php" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">PHP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+   
+    
+        <a href="php Roadmaps.html" target="_blank"><b class="b12">PHP Roadmap</b></a>
+        
+        <ul>
+            <a href="Introduction to PHP.html">Introduction to PHP</a>
+            <li><a href="What is PHP.html">What is PHP?</a></li>
+            <li><a href="Setting up PHP environment.html">Setting up PHP environment</a></li>
+            <li><a href="Basic PHP Syntax.html">Basic PHP Syntax</a></li>
+        </ul>
+    
+        <h3>PHP Variables</h3>
+        <a href="PHP Variables.html">PHP Variables</a>
+        <ul>
+            <li><a href="Data Types.html">Data Types</a></li>
+            <li><a href="PHP Constants.html">PHP Constants</a></li>
+            <li><a href="String Manipulation.html">String Manipulation</a></li>
+        </ul>
+    
+        <h3>Control Structures</h3>
+        <a href="Control Structures in PHP.html">Control Structures in PHP</a>
+        <ul>
+            <li><a href="If Else Statements.html">If Else Statements</a></li>
+            <li><a href="Switch Statements.html">Switch Statements</a></li>
+            <li><a href="Loops in PHP.html">Loops in PHP</a></li>
+        </ul>
+    
+        <h3>Functions</h3>
+        <a href="Functions in PHP.html">Functions in PHP</a>
+        <ul>
+            <li><a href="Creating Functions.html">Creating Functions</a></li>
+            <li><a href="Function Parameters.html">Function Parameters</a></li>
+            <li><a href="Returning Values.html">Returning Values</a></li>
+        </ul>
+    
+        <h3>Arrays</h3>
+        <a href="PHP Arrays.html">PHP Arrays</a>
+        <ul>
+            <li><a href="Indexed Arrays.html">Indexed Arrays</a></li>
+            <li><a href="Associative Arrays.html">Associative Arrays</a></li>
+            <li><a href="Multidimensional Arrays.html">Multidimensional Arrays</a></li>
+        </ul>
+    
+        <h3>Object-Oriented PHP</h3>
+        <a href="Object Oriented PHP.html">Object Oriented PHP</a>
+        <ul>
+            <li><a href="Classes and Objects.html">Classes and Objects</a></li>
+            <li><a href="Inheritance in PHP.html">Inheritance in PHP</a></li>
+            <li><a href="Polymorphism.html">Polymorphism</a></li>
+            <li><a href="PHP Interfaces and Traits.html">Interfaces and Traits</a></li>
+        </ul>
+    
+        <h3>Form Handling</h3>
+        <a href="PHP Forms Handling.html">PHP Forms Handling</a>
+        <ul>
+            <li><a href="GET and POST Methods.html">GET and POST Methods</a></li>
+            <li><a href="Form Validation.html">Form Validation</a></li>
+            <li><a href="Form Security.html">Form Security</a></li>
+        </ul>
+    
+        <h3>Sessions & Cookies</h3>
+        <a href="PHP Sessions and Cookies.html">Sessions and Cookies</a>
+        <ul>
+            <li><a href="Session Management.html">Session Management</a></li>
+            <li><a href="Working with Cookies.html">Working with Cookies</a></li>
+        </ul>
+    
+        <h3>PHP & MySQL</h3>
+        <a href="PHP and MySQL.html">PHP and MySQL</a>
+        <ul>
+            <li><a href="Connecting to a Database.html">Connecting to a Database</a></li>
+            <li><a href="CRUD Operations.html">CRUD Operations</a></li>
+            <li><a href="Prepared Statements.html">Prepared Statements</a></li>
+            <li><a href="MySQLi and PDO.html">MySQLi and PDO</a></li>
+        </ul>
+    
+        <h3>File Handling</h3>
+        <a href="File Handling in PHP.html">File Handling in PHP</a>
+        <ul>
+            <li><a href="Reading Files.html">Reading Files</a></li>
+            <li><a href="Writing Files.html">Writing Files</a></li>
+            <li><a href="File Uploads.html">File Uploads</a></li>
+        </ul>
+    
+        <h3>Error Handling</h3>
+        <a href="PHP Error Handling.html">Error Handling</a>
+        <ul>
+            <li><a href="Try Catch Blocks.html">Try Catch Blocks</a></li>
+            <li><a href="Error Logging.html">Error Logging</a></li>
+        </ul>
+    
+        <h3>Advanced PHP Topics</h3>
+        <a href="Advanced PHP Topics.html">Advanced PHP Topics</a>
+        <ul>
+            <li><a href="PHP Regular Expressions.html">PHP Regular Expressions</a></li>
+            <li><a href="Handling JSON Data.html">Handling JSON Data</a></li>
+            <li><a href="PHP RESTful APIs.html">PHP RESTful APIs</a></li>
+        </ul>
+    
+        <h3>PHP Deployment</h3>
+        <a href="PHP Deployment.html">PHP Deployment</a>
+        <ul>
+            <li><a href="Deploying on Shared Hosting.html">Deploying on Shared Hosting</a></li>
+            <li><a href="Deploying on Cloud Platforms.html">Deploying on Cloud Platforms</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "PHP_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "PHP_quiz.html";
+}
+function goprojects() {
+    window.location.href = "PHP_projects.html";
+}
+function gocomp() {
+    window.location.href = "Php Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Data Types.html";
+    }
+    function goNext() {
+        window.location.href = "String Manipulation.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+
+           
+            <div class="top-box1">
+                <i class="fab fa-php" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">PHP Tutorial</h2>
+            
+    <div class="div1">PHP Constants</div></div>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+
+    <h2>Overview</h2>
+    <p>Constants are identifiers (names) for simple values that remain the same throughout the execution of a script. Unlike variables, constants cannot be changed or undefined once they are set.</p>
+
+    <h2>Defining Constants</h2>
+    <p>You can define a constant in PHP using the <strong>define()</strong> function:</p>
+    <pre>
+    define("CONSTANT_NAME", "Value");
+    </pre>
+    <p>Example:</p>
+    <pre>
+    define("PI", 3.14);
+    </pre>
+
+    <h2>Using Constants</h2>
+    <p>Once defined, constants can be used throughout your code without the dollar sign:</p>
+    <pre>
+    echo PI; // Outputs: 3.14
+    </pre>
+
+    <h2>Constant Naming Rules</h2>
+    <p>When naming constants, follow these rules:</p>
+    <ul>
+        <li>Names should be uppercase by convention (e.g., <strong>MY_CONSTANT</strong>).</li>
+        <li>Names can contain letters, numbers, and underscores.</li>
+        <li>Constants cannot start with a number.</li>
+    </ul>
+
+    <h2>Magic Constants</h2>
+    <p>PHP has predefined constants known as magic constants. These include:</p>
+    <ul>
+        <li><strong>__LINE__:</strong> The current line number in the script.</li>
+        <li><strong>__FILE__:</strong> The full path and filename of the file.</li>
+        <li><strong>__DIR__:</strong> The directory of the file.</li>
+        <li><strong>__FUNCTION__:</strong> The name of the function.</li>
+        <li><strong>__CLASS__:</strong> The name of the class.</li>
+    </ul>
+    <p>Example usage:</p>
+    <pre>
+    echo "This is line " . __LINE__; // Outputs the current line number
+    </pre>
+
+    <h2>Case Sensitivity</h2>
+    <p>Constant names are case-insensitive. However, it is recommended to use uppercase for better readability:</p>
+    <pre>
+    define("SAMPLE_CONSTANT", "Hello");
+    echo sample_constant; // Outputs: Hello
+    </pre>
+
+    <h2>Undefined Constants</h2>
+    <p>Accessing an undefined constant will produce a notice, and the constant will be evaluated as a string:</p>
+    <pre>
+    echo UNDEFINED_CONSTANT; // Outputs: UNDEFINED_CONSTANT (as a string)
+    </pre>
+
+    <div class="resources">
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.php.net/manual/en/language.constants.php" target="_blank">PHP Manual: Constants</a></li>
+            <li><a href="https://www.w3schools.com/php/php_constants.asp" target="_blank">W3Schools PHP Constants Tutorial</a></li>
+            <li><a href="https://www.tutorialspoint.com/php/php_constants.htm" target="_blank">TutorialsPoint PHP Constants</a></li>
+        </ul>
+    </div>
+
+    <h2>Summary</h2>
+    <p>Constants are useful for defining values that should remain unchanged throughout your script. Understanding how to use and define constants effectively can enhance the clarity and maintainability of your code.</p>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+</body>
+</html>

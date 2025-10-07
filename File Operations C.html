@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>C Language Roadmap</title>
+    
+    
+</head>
+<body class="body">
+
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> C Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "C_interviews.html";
+}
+function goquizpro() {
+window.location.href = "C_quiz.html";
+}
+function gocomp() {
+window.location.href = "Java Compiler.html";
+}
+
+function goproject() {
+window.location.href = "C_project.html";
+}
+
+
+
+    </script>
+  
+  
+   
+  
+
+
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+        
+   
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box"><br><br>
+            <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0d80fb;"></i><br>
+            <h2 class="jk"> Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="Croadmap.html" target="_blank"><b class="b12">C Roadmap</b></a>
+        <ul>
+            <li> <a href="Introduction to C.html">Introduction to C</a></li>
+            <li><a href="History of C.html">History of C</a></li>
+            <li><a href="Setting up C Environment.html">Setting up C Environment</a></li>
+            <li><a href="Hello World Program C.html">Hello World Program</a></li>
+        </ul>
+
+        <h3>Basic C Syntax</h3>
+        <a href="Basic C Syntax.html">Basic C Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types C.html">Variables and Data Types</a></li>
+            <li><a href="Operators C.html">Operators</a></li>
+            <li><a href="Control Statements C.html">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements C.html">If-else Statements</a></li>
+                <li><a href="Switch Statement C.html">Switch Statement</a></li>
+                <li><a href="Loops C.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop C.html">For Loop</a></li>
+                    <li><a href="While Loop C.html">While Loop</a></li>
+                    <li><a href="Do-While Loop C.html">Do-While Loop</a></li>
+                    <li><a href="Break and Continue C.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+
+       
+        
+
+        <h3>Arrays in C</h3>
+        <a href="Arrays in C.html">Arrays in C</a>
+        <ul>
+            <li><a href="One-Dimensional Arrays C.html">One-Dimensional Arrays</a></li>
+            <li><a href="Two-Dimensional Arrays C.html">Two-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays C.html">Multi-Dimensional Arrays</a></li>
+            <li><a href="Arrays and Functions C.html">Arrays and Functions</a></li>
+        </ul>
+
+        <h3>Strings in C</h3>
+        <a href="Strings in C.html">Strings in C</a>
+        <ul>
+            <li><a href="String Basics c.html">String Basics</a></li>
+            <li><a href="String Functions C.html">String Functions</a></li>
+            <li><a href="String Manipulation C.html">String Manipulation</a></li>
+        </ul>
+        <h3>Pointers in C</h3>
+        <a href="Pointers in C.html">Pointers in C</a>
+        <ul>
+            <li><a href="Pointer Basics C.html">Pointer Basics</a></li>
+            <li><a href="Pointer Arithmetic C.html">Pointer Arithmetic</a></li>
+            <li><a href="Pointers and Arrays C.html">Pointers and Arrays</a></li>
+            <li><a href="Pointers and Functions C.html">Pointers and Functions</a></li>
+            <li><a href="Pointers and Structures C.html">Pointers and Structures</a></li>
+        </ul>
+        <h3>Functions in C</h3>
+        <a href="Function C.html">Functions in C</a>
+        <ul>
+            <li><a href="Function Basics C.html">Function Basics</a></li>
+            <li><a href="Function Arguments C.html">Function Arguments</a></li>
+            <li><a href="Recursion C.html">Recursion</a></li>
+            <li><a href="Library Functions C.html">Library Functions</a></li>
+        </ul>
+
+        <h3>Structures and Unions</h3>
+        <a href="Structures and Unions C.html">Structures and Unions</a>
+        <ul>
+            <li><a href="Defining Structures C.html">Defining Structures</a></li>
+            <li><a href="Accessing Structure Members C.html">Accessing Structure Members</a></li>
+            <li><a href="Nested structures.html">Nested Structures</a></li>
+            <li><a href="Unions C.html">Unions</a></li>
+        </ul>
+
+        <h3>File Handling in C</h3>
+        <a href="File Handling in C.html">File Handling in C</a>
+        <ul>
+            <li><a href="File Operations C.html">File Operations</a></li>
+            <li><a href="File Pointers C.html">File Pointers</a></li>
+            <li><a href="Reading and Writing Files C.html">Reading and Writing Files</a></li>
+            <li><a href="Binary Files C.html">Binary Files</a></li>
+        </ul>
+
+        <h3>Dynamic Memory Allocation</h3>
+        <a href="Dynamic Memory Allocation C.html">Dynamic Memory Allocation</a>
+        <ul>
+            <li><a href="malloc, calloc, realloc, free C.html">malloc, calloc, realloc, free</a></li>
+            <li><a href="Memory Leaks C.html">Memory Leaks</a></li>
+            <li><a href="Memory Management Techniques C.html">Memory Management Techniques</a></li>
+        </ul>
+
+        <h3>Advanced C Concepts</h3>
+        <a href="Advanced C Concepts.html">Advanced C Concepts</a>
+        <ul>
+            <li><a href="Preprocessor Directives C.html">Preprocessor Directives</a></li>
+            <li><a href="Bitwise Operators C.html">Bitwise Operators</a></li>
+            <li><a href="Command Line Arguments C.html">Command Line Arguments</a></li>
+            <li><a href="Error Handling C.html">Error Handling</a></li>
+            <li><a href="C programming Test.html">Course Test</a></li>
+        </ul>
+    </div>
+
+ 
+       
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "c_interviews.html";
+}
+function goquiz() {
+    window.location.href = "c_quiz.html";
+}
+function gocomp() {
+    window.location.href = "C Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "File Handling in C.html";
+    }
+    function goNext() {
+        window.location.href = "File Pointers C.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                
+                <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0dfb49;"></i><br>
+                <h2 class="jk"> Tutorial</h2>
+<div class="div1"> File Operations in C</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction to File Operations</h2>
+        <p>File operations in C programming involve handling files to perform various tasks such as reading data from a file or writing data to a file. The C standard library provides several functions to facilitate these operations. All file handling functions are defined in the <code>stdio.h</code> header file.</p>
+
+        <h2>Opening a File</h2>
+        <p>To work with files, you first need to open them using the <code>fopen</code> function. This function returns a file pointer that is used for subsequent operations on the file:</p>
+        <pre><code>FILE *fopen(const char *filename, const char *mode);
+</code></pre>
+        <p>The <code>mode</code> argument specifies the file access mode, such as:</p>
+        <ul>
+            <li><code>"r"</code>: Open a file for reading. The file must exist.</li>
+            <li><code>"w"</code>: Open a file for writing. If the file exists, its contents are truncated. If it does not exist, a new file is created.</li>
+            <li><code>"a"</code>: Open a file for appending. Data is written at the end of the file. If the file does not exist, it is created.</li>
+            <li><code>"r+"</code>: Open a file for both reading and writing. The file must exist.</li>
+            <li><code>"w+"</code>: Open a file for both reading and writing. If the file exists, its contents are truncated. If it does not exist, a new file is created.</li>
+            <li><code>"a+"</code>: Open a file for both reading and appending. Data is written at the end of the file. If the file does not exist, it is created.</li>
+        </ul>
+
+        <h2>Example: Opening a File</h2>
+        <p>Here's an example of opening a file in read mode:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    FILE *filePointer;
+
+    filePointer = fopen("example.txt", "r");
+
+    if (filePointer == NULL) {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    // File operations here
+
+    fclose(filePointer);
+    return 0;
+}
+</code></pre>
+        <p>This example opens a file named <code>example.txt</code> for reading. If the file cannot be opened, it prints an error message.</p>
+
+        <h2>Reading from a File</h2>
+        <p>To read data from a file, you can use the following functions:</p>
+        <ul>
+            <li><code>fgetc</code>: Reads a single character from the file.</li>
+            <li><code>fgets</code>: Reads a string of characters from the file.</li>
+            <li><code>fread</code>: Reads a block of data from the file.</li>
+        </ul>
+
+        <h2>Example: Reading from a File</h2>
+        <p>The following example demonstrates reading characters from a file:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    FILE *filePointer;
+    char ch;
+
+    filePointer = fopen("example.txt", "r");
+
+    if (filePointer == NULL) {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    while ((ch = fgetc(filePointer)) != EOF) {
+        printf("%c", ch);
+    }
+
+    fclose(filePointer);
+    return 0;
+}
+</code></pre>
+        <p>This program reads characters from <code>example.txt</code> one by one and prints them until the end-of-file (EOF) is reached.</p>
+
+        <h2>Writing to a File</h2>
+        <p>To write data to a file, use the following functions:</p>
+        <ul>
+            <li><code>fputc</code>: Writes a single character to the file.</li>
+            <li><code>fputs</code>: Writes a string of characters to the file.</li>
+            <li><code>fwrite</code>: Writes a block of data to the file.</li>
+        </ul>
+
+        <h2>Example: Writing to a File</h2>
+        <p>The following example writes a string to a file:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    FILE *filePointer;
+
+    filePointer = fopen("output.txt", "w");
+
+    if (filePointer == NULL) {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    fprintf(filePointer, "Hello, World!\n");
+
+    fclose(filePointer);
+    return 0;
+}
+</code></pre>
+        <p>This program opens (or creates) a file named <code>output.txt</code> in write mode and writes "Hello, World!" to it.</p>
+
+        <h2>Closing a File</h2>
+        <p>After performing file operations, it’s important to close the file using the <code>fclose</code> function:</p>
+        <pre><code>int fclose(FILE *stream);
+</code></pre>
+        <p>This function closes the file associated with the file pointer <code>stream</code> and returns 0 if successful, or EOF if an error occurs.</p>
+
+        <h2>Example: Closing a File</h2>
+        <p>In the previous examples, the <code>fclose</code> function is used to close the file after performing operations.</p>
+
+        <h2>Handling File Errors</h2>
+        <p>It's essential to handle errors that may occur during file operations. Common functions for error handling include:</p>
+        <ul>
+            <li><code>feof</code>: Checks if the end-of-file indicator is set.</li>
+            <li><code>ferror</code>: Checks for errors during file operations.</li>
+            <li><code>clearerr</code>: Clears the end-of-file and error indicators.</li>
+        </ul>
+
+        <h2>Example: Handling Errors</h2>
+        <p>The following example demonstrates basic error checking while opening a file:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    FILE *filePointer;
+    filePointer = fopen("example.txt", "r");
+
+    if (filePointer == NULL) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    // Perform file operations here
+
+    if (ferror(filePointer)) {
+        printf("Error reading file.\n");
+    }
+
+    fclose(filePointer);
+    return 0;
+}
+</code></pre>
+        <p>This program uses <code>perror</code> to print a descriptive error message if the file cannot be opened and checks for errors during file operations.</p>
+
+        <h2>Summary</h2>
+        <p>File operations in C are crucial for managing file input and output. Understanding how to open, read, write, and close files, as well as handle file errors, is fundamental for effective file management in your C programs.</p>
+
+        <h2>Free Resources for Learning C</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://www.learn-c.org/">Learn-C.org</a> - An interactive tutorial for learning C programming from the basics.</li>
+                <li><a href="https://www.cprogramming.com/tutorial/c-tutorial.html">CProgramming.com</a> - Comprehensive tutorials and resources for learning C programming.</li>
+                <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">Codecademy</a> - Offers a C++ course which includes C programming concepts. Some content is free.</li>
+                <li><a href="https://www.geeksforgeeks.org/c-programming-language/">GeeksforGeeks</a> - Tutorials and problems to help you practice C programming.</li>
+                <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-c">HackerRank</a> - Coding challenges and exercises in C to test and improve your skills.</li>
+                <li><a href="https://www.tutorialspoint.com/c_programming/index.htm">TutorialsPoint</a> - Detailed guide on C programming with examples and exercises.</li>
+            </ul>
+        </div>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+    </div>
+</body>
+</html>

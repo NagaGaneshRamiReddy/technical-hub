@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Google Cloud Course</title>
+    
+    
+</head>
+<body class="body">
+
+  
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> GCP Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> GCP Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            
+            
+            <i class="fab fa-google" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> GCP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="Google cloudRoadmaps.html" target="_blank"><b class="b12">GCP Roadmap</b></a>
+    
+        <ul><a href="Introduction to Google Cloud.html">Introduction to Google Cloud</a>
+            <li><a href="Overview of Google Cloud.html">Overview of Google Cloud</a></li>
+            <li><a href="Global Infrastructure Google Cloud.html">Global Infrastructure</a></li>
+            <li><a href="Core Services and Use Cases Google Cloud.html">Core Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>Google Cloud Foundations</h3>
+        <a href="Google Cloud Foundations.html">Google Cloud Foundations</a>
+        <ul>
+            <li><a href="Google Cloud Console.html">Google Cloud Console</a></li>
+            <li><a href="Cloud Shell and Cloud SDK.html">Cloud Shell and Cloud SDK</a></li>
+            <li><a href="Identity and Access Management (IAM).html">Identity and Access Management (IAM)</a></li>
+            <li><a href="Billing and Pricing in Google Cloud.html">Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core Google Cloud Services</h3>
+        <a href="Core Google Cloud Services.html">Core Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services Google cloud.html">Compute Services</a>
+                <ul>
+                    <li><a href="Compute Engine.html">Compute Engine</a></li>
+                    <li><a href="App Engine.html">App Engine</a></li>
+                    <li><a href="Kubernetes Engine (GKE).html">Kubernetes Engine (GKE)</a></li>
+                    <li><a href="Cloud Functions.html">Cloud Functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services in Google cloud.html">Storage Services</a>
+                <ul>
+                    <li><a href="Cloud Storage.html">Cloud Storage</a></li>
+                    <li><a href="Persistent Disk.html">Persistent Disk</a></li>
+                    <li><a href="Filestore.html">Filestore</a></li>
+                    <li><a href="Cloud SQL.html">Cloud SQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services in Google cloud.html">Database Services</a>
+                <ul>
+                    <li><a href="Cloud Firestore.html">Cloud Firestore</a></li>
+                    <li><a href="Bigtable.html">Bigtable</a></li>
+                    <li><a href="Cloud Spanner.html">Cloud Spanner</a></li>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services Google Cloud.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud) google cloud.html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Cloud Load Balancing.html">Cloud Load Balancing</a></li>
+                    <li><a href="Cloud CDN.html">Cloud CDN</a></li>
+                    <li><a href="Cloud Interconnect.html">Cloud Interconnect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Google Cloud Services</h3>
+        <a href="Advanced Google Cloud Services.html">Advanced Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="AI and Machine Learning Google Cloud.html">AI and Machine Learning</a>
+                <ul>
+                    <li><a href="AI Platform.html">AI Platform</a></li>
+                    <li><a href="AutoML.html">AutoML</a></li>
+                    <li><a href="Vision AI.html">Vision AI</a></li>
+                    <li><a href="Dialogflow.html">Dialogflow</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services Google.html">Analytics Services</a>
+                <ul>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                    <li><a href="Dataflow.html">Dataflow</a></li>
+                    <li><a href="pub sub.html">Pub/Sub</a></li>
+                    <li><a href="Dataproc.html">Dataproc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services Google.html">Security Services</a>
+                <ul>
+                    <li><a href="Cloud IAM.html">Cloud IAM</a></li>
+                    <li><a href="Cloud Armor.html">Cloud Armor</a></li>
+                    <li><a href="Security Command Center.html">Security Command Center</a></li>
+                    <li><a href="Cloud Key Management Service (KMS).html">Cloud Key Management Service (KMS)</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on Google Cloud</h3>
+        <a href="DevOps on Google Cloud.html">DevOps on Google Cloud</a>
+        <ul>
+            <li>
+                <a href="Infrastructure as Code (IaC) Google.html">Infrastructure as Code (IaC)</a>
+                <ul>
+                    <li><a href="Deployment Manager.html">Deployment Manager</a></li>
+                    <li><a href="Terraform on Google Cloud.html">Terraform on Google Cloud</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="CI-CD Pipeline google.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Cloud Build.html">Cloud Build</a></li>
+                    <li><a href="Container Registry.html">Container Registry</a></li>
+                    <li><a href="Artifact Registry.html">Artifact Registry</a></li>
+                    <li><a href="Cloud Source Repositories.html">Cloud Source Repositories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Google.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Cloud Monitoring.html">Cloud Monitoring</a></li>
+                    <li><a href="Cloud Logging.html">Cloud Logging</a></li>
+                    <li><a href="Cloud Trace.html">Cloud Trace</a></li>
+                    <li><a href="Cloud Debugger.html">Cloud Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer Google.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="Migrate for Compute Engine.html">Migrate for Compute Engine</a></li>
+            <li><a href="Database Migration Service Google.html">Database Migration Service</a></li>
+            <li><a href="Transfer Appliance.html">Transfer Appliance</a></li>
+            <li><a href="Storage Transfer Service.html">Storage Transfer Service</a></li>
+        </ul>
+    
+    </div>
+    
+   
+   
+   
+    
+
+    
+    
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "GCP_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "GCP_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "GCP_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "GCP_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "Container Registry.html";
+    }
+    function goNext() {
+        window.location.href = "Cloud Source Repositories.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-google" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">GCP Tutorial</h2>
+<div class="div1">Google Artifact Registry</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Introduction to Google Artifact Registry</h2>
+        <p>Google Artifact Registry is a fully-managed service for storing, managing, and securing artifacts such as container images, language packages, and other build artifacts. It integrates seamlessly with Google Cloud Platform, providing a central repository for your development and CI/CD processes.</p>
+
+        <h2>Key Features of Artifact Registry</h2>
+        <ul>
+            <li><strong>Multi-format Support:</strong> Supports various artifact formats including Docker container images, Maven artifacts, npm packages, and Python packages.</li>
+            <li><strong>Seamless Integration:</strong> Integrates with Google Cloud Build, Google Kubernetes Engine (GKE), and other Google Cloud services for efficient CI/CD workflows.</li>
+            <li><strong>Secure Storage:</strong> Provides encryption at rest and in transit, along with granular IAM policies to control access to artifacts.</li>
+            <li><strong>Global Availability:</strong> Artifacts are stored in multiple regions to ensure high availability and low latency access.</li>
+            <li><strong>Automated Vulnerability Scanning:</strong> Integrates with Container Analysis to automatically scan container images for vulnerabilities.</li>
+        </ul>
+
+        <h2>How Google Artifact Registry Works</h2>
+        <p>Google Artifact Registry serves as a central repository for managing various types of artifacts. Here’s an overview of how it operates:</p>
+        <ol>
+            <li><strong>Upload Artifacts:</strong> Developers build and push artifacts such as container images, packages, and binaries to Artifact Registry.</li>
+            <li><strong>Store Artifacts:</strong> Artifacts are securely stored and managed in repositories, organized by type and project.</li>
+            <li><strong>Manage Artifacts:</strong> Users can manage their artifacts through the Google Cloud Console, gcloud command-line tool, or API, including tasks such as versioning, deleting, and accessing artifacts.</li>
+            <li><strong>Deploy Artifacts:</strong> Artifacts can be pulled from Artifact Registry by various services for deployment in production environments or development stages.</li>
+        </ol>
+
+        <h2>Example Commands for Using Artifact Registry</h2>
+        <p>Here are some common commands for interacting with Google Artifact Registry using the `gcloud` command-line tool:</p>
+        <pre><code>
+# Authenticate Docker to your Google Cloud project
+gcloud auth configure-docker
+
+# Build a Docker image
+docker build -t [REGION]-docker.pkg.dev/[PROJECT-ID]/[REPOSITORY]/my-image:tag .
+
+# Push the Docker image to Artifact Registry
+docker push [REGION]-docker.pkg.dev/[PROJECT-ID]/[REPOSITORY]/my-image:tag
+
+# Pull the Docker image from Artifact Registry
+docker pull [REGION]-docker.pkg.dev/[PROJECT-ID]/[REPOSITORY]/my-image:tag
+
+# List artifacts in a repository
+gcloud artifacts docker images list [REGION]-docker.pkg.dev/[PROJECT-ID]/[REPOSITORY]
+
+# Delete an artifact
+gcloud artifacts docker images delete [REGION]-docker.pkg.dev/[PROJECT-ID]/[REPOSITORY]/my-image:tag
+        </code></pre>
+
+        <h2>Free Resources for Learning Google Artifact Registry</h2>
+        <ul>
+            <li><a href="https://cloud.google.com/artifact-registry/docs">Google Artifact Registry Documentation</a> - Comprehensive guides and tutorials on using Artifact Registry.</li>
+            <li><a href="https://codelabs.developers.google.com/?cat=Cloud">Google Cloud Codelabs</a> - Interactive tutorials and hands-on labs for learning about Artifact Registry and other Google Cloud services.</li>
+            <li><a href="https://www.youtube.com/results?search_query=google+artifact+registry">YouTube Tutorials</a> - Video tutorials on setting up and using Google Artifact Registry.</li>
+            <li><a href="https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/">Udemy - Docker and Kubernetes</a> - Course covering Docker and container registry concepts, including Artifact Registry.</li>
+        </ul>
+
+        <h2>Summary</h2>
+        <p>Google Artifact Registry provides a unified, secure repository for managing and storing various types of artifacts, including container images and packages. It enhances development workflows by integrating seamlessly with other Google Cloud services and offering robust security features.</p>
+
+        <h2>Conclusion</h2>
+        <p>By utilizing Google Artifact Registry, developers can streamline their artifact management processes, ensuring secure and efficient storage, access, and deployment of their build artifacts. It is a vital component for modern DevOps and cloud-native application development.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

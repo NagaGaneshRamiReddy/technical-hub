@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>CSS Roadmap</title>
+    
+    
+    
+</head>
+<body class="body">
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> CSS Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> CSS Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+  
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+
+
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-css3-alt" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">CSS Tutorial</h2>
+        </div>
+    
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="CSS Roadmaps.html" target="_blank"><b class="b12">CSS Roadmap</b></a>
+        <ul>
+            <a href="Introduction to CSS.html">Introduction to CSS</a>
+        
+            <li><a href="What is CSS.html">What is CSS?</a></li>
+            <li><a href="CSS Syntax.html">CSS Syntax</a></li>
+            <li><a href="How to Add CSS.html">How to Add CSS</a></li>
+        </ul>
+    
+        <h3>Selectors in CSS</h3>
+        <a href="Selectors in CSS.html">Selectors in CSS</a>
+        <ul>
+            <li><a href="Basic Selectors.html">Basic Selectors</a></li>
+            <li><a href="Combinators.html">Combinators</a></li>
+            <li>
+                <a href="Pseudo Classes.html">Pseudo Classes</a>
+                <ul>
+                    <li><a href="Hover Focus Active.html">:hover, :focus, :active</a></li>
+                    <li><a href="Nth-child.html">:nth-child</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Box Model in CSS</h3>
+        <a href="Box Model in CSS.html">Box Model in CSS</a>
+        <ul>
+            <li><a href="Content Padding Border.html">Content, Padding, Border</a></li>
+            <li><a href="Margin.html">Margin</a></li>
+            <li><a href="Box Sizing.html">Box Sizing</a></li>
+        </ul>
+    
+        <h3>CSS Layout</h3>
+        <a href="CSS Layout.html">CSS Layout</a>
+        <ul>
+            <li><a href="Display Property.html">Display Property</a></li>
+            <li><a href="Positioning.html">Positioning</a></li>
+            <li><a href="Float Clearfix.html">Float & Clearfix</a></li>
+            <li><a href="Flexbox.html">Flexbox</a></li>
+            <li><a href="CSS Grid.html">CSS Grid</a></li>
+        </ul>
+    
+        <h3>Typography in CSS</h3>
+        <a href="Typography in CSS.html">Typography in CSS</a>
+        <ul>
+            <li><a href="Font Properties.html">Font Properties</a></li>
+            <li><a href="Text Alignment.html">Text Alignment</a></li>
+            <li><a href="Line Height and Spacing.html">Line Height & Spacing</a></li>
+        </ul>
+    
+        <h3>CSS Colors</h3>
+        <a href="CSS Colors.html">CSS Colors</a>
+        <ul>
+            <li><a href="Color Naming Systems.html">Color Naming Systems</a></li>
+            <li><a href="Background Colors.html">Background Colors</a></li>
+            <li><a href="Gradients.html">Gradients</a></li>
+        </ul>
+    
+        <h3>CSS Animations</h3>
+        <a href="CSS Animations.html">CSS Animations</a>
+        <ul>
+            <li><a href="Transitions.html">Transitions</a></li>
+            <li><a href="Keyframes.html">Keyframes</a></li>
+            <li><a href="Animation Timing Functions.html">Animation Timing Functions</a></li>
+        </ul>
+    
+        <h3>Responsive Design</h3>
+        <a href="Responsive Design.html">Responsive Design</a>
+        <ul>
+            <li><a href="Media Queries.html">Media Queries</a></li>
+            <li><a href="Responsive Units.html">Responsive Units</a></li>
+            <li><a href="Viewport Meta Tag.html">Viewport Meta Tag</a></li>
+        </ul>
+    </div>
+    
+    
+        
+    
+        
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "CSS_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "CSS_quiz.html";
+    }
+    function goproject() {
+        window.location.href = "CSS_projects.html";
+    }
+    function gocomp() {
+        window.location.href = "CSS Compiler.html";
+    }
+    function goPrevious() {
+        window.location.href = "Text Alignment.html";
+    }
+    function goNext() {
+        window.location.href ="CSS Colors.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-css3-alt" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">CSS Tutorial</h2>
+    <div class="div1">Line Height and Spacing in CSS</div></div>
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+    <h2>What is Line Height?</h2>
+    <p><strong>Line height</strong> is a CSS property that controls the amount of space between lines of text. It is important for improving readability and visual appeal. The line height can be set using a unitless number, pixels (px), ems (em), or percentages (%).</p>
+
+    <h2>Key Line Height Properties</h2>
+    <style>
+        .line-height-1 {
+            line-height: 1;
+        }
+        .line-height-1-5 {
+            line-height: 1.5;
+        }
+        .line-height-2 {
+            line-height: 2;
+        }
+        .margin-top {
+            margin-top: 20px;
+        }
+        .margin-bottom {
+            margin-bottom: 20px;
+        }
+        .padding-top {
+            padding-top: 20px;
+        }
+        .padding-bottom {
+            padding-bottom: 20px;
+        }
+    </style>
+    <h3>1. Line Height: Unitless Number</h3>
+    <p>The line height property can be set to a unitless number, which multiplies the element's font size. For example, a line height of 1.5 means the line height will be 1.5 times the font size.</p>
+    <pre><code>
+/* Line height of 1.5 times the font size */
+.line-height-1-5 {
+    line-height: 1.5;
+}
+    </code></pre>
+    <div class="resources">
+    <p class="line-height-1-5">This paragraph has a line height of 1.5, which means there is extra space between lines compared to the default line height.</p>
+</div>
+    <h3>2. Line Height: Pixels</h3>
+    <p>You can also set line height using pixel values. For example, <code>line-height: 24px;</code> will set the line height to 24 pixels.</p>
+    <pre><code>
+/* Line height of 24 pixels */
+.line-height-2 {
+    line-height: 24px;
+}
+    </code></pre>
+    <div class="resources">
+    <p class="line-height-2">This paragraph has a line height of 24 pixels, providing a fixed amount of space between lines.</p>
+</div>
+    <h3>3. Line Height: Ems</h3>
+    <p>Using ems for line height scales the line height relative to the font size of the element. For example, <code>line-height: 1.5em;</code> will set the line height to 1.5 times the font size.</p>
+    <pre><code>
+/* Line height of 1.5 ems */
+.line-height-1 {
+    line-height: 1em;
+}
+    </code></pre>
+    <div class="resources">
+    <p class="line-height-1">This paragraph has a line height of 1 em, which is equal to the font size.</p>
+</div>
+    <h2>Spacing Properties</h2>
+    <p>In addition to line height, CSS provides properties to control spacing around elements, including margins and padding.</p>
+
+    <h3>1. Margin</h3>
+    <p><strong>Margin</strong> creates space outside the border of an element, pushing it away from other elements.</p>
+    <pre><code>
+/* Margin top and bottom of 20 pixels */
+.margin-top {
+    margin-top: 20px;
+}
+.margin-bottom {
+    margin-bottom: 20px;
+}
+    </code></pre>
+    <div class="resources">
+    <p class="margin-top">This paragraph has a margin-top of 20 pixels.</p>
+    <p class="margin-bottom">This paragraph has a margin-bottom of 20 pixels.</p>
+</div>
+    <h3>2. Padding</h3>
+    <p><strong>Padding</strong> creates space inside the border of an element, between the border and the content.</p>
+    <pre><code>
+/* Padding top and bottom of 20 pixels */
+.padding-top {
+    padding-top: 20px;
+}
+.padding-bottom {
+    padding-bottom: 20px;
+}
+    </code></pre>
+    <div class="resources">
+    <p class="padding-top">This paragraph has padding-top of 20 pixels.</p>
+    <p class="padding-bottom">This paragraph has padding-bottom of 20 pixels.</p>
+</div>
+    <div class="resources">
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/css/css_line_height.asp" target="_blank">W3Schools: CSS Line Height</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" target="_blank">MDN: line-height</a></li>
+            <li><a href="https://css-tricks.com/almanac/properties/l/line-height/" target="_blank">CSS-Tricks: Line Height</a></li>
+            <li><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">W3Schools: CSS Margin</a></li>
+            <li><a href="https://www.w3schools.com/css/css_padding.asp" target="_blank">W3Schools: CSS Padding</a></li>
+        </ul>
+    </div>
+
+    <h2>Summary</h2>
+    <p>Line height and spacing are crucial for creating visually appealing and readable web content. By adjusting line height, margins, and padding, you can improve the layout and spacing of your text and elements.</p>
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+
+</body>
+</html>

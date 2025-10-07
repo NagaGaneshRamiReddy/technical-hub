@@ -1,0 +1,472 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Aptitude</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Aptitude
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href ="Work Problems.html";
+    }
+    function goNext() {
+        window.location.href = "Pipes & Cisterns.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Time & Work</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  
+            <h2>Efficiency and Time</h2>
+            <p><strong>Efficiency</strong> in the context of work problems refers to how effectively a person or machine performs a task. It is often used to compare the productivity of different workers or machines. <strong>Time</strong> is the duration required to complete a task, and it is closely related to efficiency.</p>
+
+            <h3>Key Concepts</h3>
+
+            <h4>1. Definition of Efficiency</h4>
+            <p><strong>Efficiency</strong> is a measure of how well a person or machine completes a task within a given time. It can be quantified as the ratio of work done to the time taken. In other words, it indicates how quickly and effectively the work is being completed.</p>
+
+            <h4>2. Efficiency Formula</h4>
+            <p>The efficiency of a person or machine is calculated using the following formula:</p>
+
+            <div class="formula">
+                <strong>Efficiency Formula:</strong><br>
+                <text>Efficiency = (1 / Time) × 100%</text>
+            </div>
+
+            <p><strong>Where:</strong><br>
+            <strong>Time:</strong> Total time taken to complete the task.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                If a machine completes a task in 8 hours, its efficiency is:<br>
+                Efficiency = (1 / 8) × 100% = 12.5%<br>
+                This means the machine is working at an efficiency of 12.5% for that task.
+            </div>
+
+            <h4>3. Relation Between Efficiency and Time</h4>
+            <p>Efficiency and time are inversely related. As the efficiency of a worker or machine increases, the time required to complete the task decreases, and vice versa. The formula for calculating the time based on efficiency is:</p>
+
+            <div class="formula">
+                <strong>Time Formula:</strong><br>
+                <text>Time = 1 / Efficiency</text>
+            </div>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                If a worker has an efficiency of 20%, then the time required to complete the task is:<br>
+                Time = 1 / 0.20 = 5 hours<br>
+                This indicates that the worker will take 5 hours to complete the task at this efficiency level.
+            </div>
+
+            <h4>4. Comparative Efficiency</h4>
+            <p>To compare the efficiency of two or more workers or machines, you can use the efficiency formula and calculate the time required for each. The worker or machine with the higher efficiency will complete the task in less time.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                Worker A completes a task in 6 hours, and Worker B completes the same task in 4 hours. To compare their efficiencies:<br>
+                Efficiency of Worker A = (1 / 6) × 100% = 16.67%<br>
+                Efficiency of Worker B = (1 / 4) × 100% = 25%<br>
+                Worker B is more efficient than Worker A, as Worker B completes the task faster.
+            </div>
+
+            <h3>Applications of Efficiency and Time</h3>
+            <ul>
+                <li><strong>Manufacturing:</strong> Determining the productivity of machines and workers to optimize production schedules.</li>
+                <li><strong>Project Management:</strong> Assessing the efficiency of team members to ensure timely project completion.</li>
+                <li><strong>Resource Allocation:</strong> Allocating resources based on the efficiency of workers or machines to improve overall performance.</li>
+            </ul>
+
+            <h3>Visualizing Efficiency and Time</h3>
+            <img src="efficiency-time-visualization.png" alt="Efficiency and Time Visualization" style="width: 100%; max-width: 600px;">
+            <p>The diagram above illustrates the relationship between efficiency and time, showing how increasing efficiency reduces the time required to complete a task. Visual aids like this can enhance your understanding of these concepts.</p>
+
+            <h2>Practice Resources</h2>
+            <div class="resources">
+                <p>Enhance your understanding of efficiency and time with these practice resources:</p>
+                <ul>
+                    <li><a href="https://www.khanacademy.org/math/algebra/x2f8bb115bf4c3406:ratios-rates/x2f8bb115bf4c3406:work/v/work-problems" target="_blank">Khan Academy: Work Problems</a></li>
+                    <li><a href="https://www.mathsisfun.com/work.html" target="_blank">Math is Fun: Work Problems</a></li>
+                    <li><a href="https://www.cuemath.com/learn/work-problems/" target="_blank">Cuemath: Work Problems Practice</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Efficiency and time are key factors in work problems. Efficiency measures how quickly and effectively a task is completed, while time indicates the duration required. Understanding the relationship between these concepts helps in optimizing performance and resource allocation. Practice calculating efficiency and time to improve your problem-solving skills in various scenarios.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  </div>
+    </div>
+</body>
+</html>

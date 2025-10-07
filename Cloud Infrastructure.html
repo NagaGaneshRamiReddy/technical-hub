@@ -1,0 +1,454 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Oracle course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Oracle
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Oracle Course</h3>
+        
+        <a href="Introduction to Oracle.html">Introduction to Oracle Database</a>
+        <ul>
+            <li><a href="History of Oracle.html">History of Oracle</a></li>
+            <li><a href="Oracle Editions.html">Oracle Editions</a></li>
+        </ul>
+    
+        <h3>Oracle Database Architecture</h3>
+        <a href="Oracle Architecture.html">Oracle Database Architecture</a>
+        <ul>
+            <li><a href="Memory Structure.html">Memory Structure</a></li>
+            <li><a href="Process Architecture.html">Process Architecture</a></li>
+        </ul>
+    
+        <h3>SQL Basics</h3>
+        <a href="SQL Basics oracle.html">SQL Basics</a>
+        <ul>
+            <li><a href="DML.html">Data Manipulation Language (DML)</a></li>
+            <li><a href="DDL.html">Data Definition Language (DDL)</a></li>
+            <li><a href="DCL.html">Data Control Language (DCL)</a></li>
+        </ul>
+    
+        <h3>PL/SQL Programming</h3>
+        <a href="PL-SQL.html">PL/SQL Programming</a>
+        <ul>
+            <li><a href="PL-SQL Basics.html">PL/SQL Basics</a></li>
+            <li><a href="Procedures and Functions.html">Procedures and Functions</a></li>
+        </ul>
+    
+        <h3>Data Modeling</h3>
+        <a href="Data Modeling.html">Data Modeling</a>
+        <ul>
+            <li><a href="Entity-Relationship Model.html">Entity-Relationship Model</a></li>
+            <li><a href="Normalization.html">Normalization</a></li>
+        </ul>
+    
+        <h3>Database Security</h3>
+        <a href="Database Security.html">Database Security</a>
+        <ul>
+            <li><a href="User Management.html">User Management</a></li>
+            <li><a href="Roles and Privileges.html">Roles and Privileges</a></li>
+        </ul>
+    
+        <h3>Backup and Recovery</h3>
+        <a href="Backup and Recovery.html">Backup and Recovery</a>
+        <ul>
+            <li><a href="RMAN.html">Recovery Manager (RMAN)</a></li>
+            <li><a href="Data Pump.html">Data Pump</a></li>
+        </ul>
+    
+        <h3>Oracle Networking</h3>
+        <a href="Oracle Networking.html">Oracle Networking</a>
+        <ul>
+            <li><a href="Oracle Net.html">Oracle Net Services</a></li>
+            <li><a href="TNS Configuration.html">TNS Configuration</a></li>
+        </ul>
+    
+        <h3>Performance Tuning</h3>
+        <a href="Performance Tuning.html">Performance Tuning</a>
+        <ul>
+            <li><a href="Query Optimization.html">Query Optimization</a></li>
+            <li><a href="Indexing.html">Indexing</a></li>
+        </ul>
+    
+        <h3>Oracle Cloud Services</h3>
+        <a href="Oracle Cloud.html">Oracle Cloud Services</a>
+        <ul>
+            <li><a href="Oracle Autonomous Database.html">Oracle Autonomous Database</a></li>
+            <li><a href="Cloud Infrastructure.html">Oracle Cloud Infrastructure</a></li>
+        </ul>
+    </div>
+    
+    
+        
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Oracle Autonomous Database.html";
+    }
+    function goNext() {
+        window.location.href = "#";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+
+
+     
+            
+
+<div class="div1">Oracle Cloud Infrastructure</div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>What is Oracle Cloud Infrastructure?</h2>
+<p><strong>Oracle Cloud Infrastructure (OCI)</strong> is a cloud computing service that offers a set of flexible, scalable, and high-performance cloud services. Designed for enterprise workloads, OCI enables businesses to run their applications and store data in a secure and efficient environment.</p>
+
+<h2>Key Features of Oracle Cloud Infrastructure</h2>
+<ul>
+    <li><strong>Compute:</strong> Provides virtual machines (VMs), bare metal instances, and container orchestration to suit different workload requirements.</li>
+    <li><strong>Storage:</strong> Offers block storage, object storage, and file storage solutions to meet diverse data storage needs.</li>
+    <li><strong>Networking:</strong> Includes features such as Virtual Cloud Networks (VCNs), load balancers, and fast connectivity options to ensure secure and high-performance communication.</li>
+    <li><strong>Database:</strong> Supports various database services, including Oracle Autonomous Database, to enable efficient data management and analysis.</li>
+    <li><strong>Security:</strong> Built-in security features, including identity and access management, encryption, and auditing, to safeguard applications and data.</li>
+</ul>
+
+<h2>Benefits of Using Oracle Cloud Infrastructure</h2>
+<ul>
+    <li><strong>High Performance:</strong> OCI provides high-speed networking and low-latency connections, ensuring optimal performance for demanding applications.</li>
+    <li><strong>Cost Efficiency:</strong> Flexible pricing models allow organizations to optimize costs based on their usage patterns and business needs.</li>
+    <li><strong>Scalability:</strong> Easily scale resources up or down based on changing demands without sacrificing performance.</li>
+    <li><strong>Robust Security:</strong> Comprehensive security measures protect against threats while ensuring compliance with industry standards.</li>
+    <li><strong>Seamless Integration:</strong> Integrates with other Oracle Cloud services and third-party applications for enhanced functionality.</li>
+</ul>
+
+<h2>Use Cases for Oracle Cloud Infrastructure</h2>
+<ul>
+    <li><strong>Enterprise Applications:</strong> Run mission-critical applications like ERP, CRM, and HCM in a secure and scalable environment.</li>
+    <li><strong>Data Analytics:</strong> Utilize OCI for data processing, analytics, and machine learning workloads to derive insights from large datasets.</li>
+    <li><strong>Development and Testing:</strong> Provide a flexible platform for developers to build, test, and deploy applications quickly.</li>
+    <li><strong>Disaster Recovery:</strong> Implement disaster recovery solutions to ensure business continuity and protect against data loss.</li>
+</ul>
+
+<h2>Getting Started with Oracle Cloud Infrastructure</h2>
+<ul>
+    <li><strong>Create an Account:</strong> Sign up for an Oracle Cloud account to access OCI services.</li>
+    <li><strong>Choose Services:</strong> Evaluate your business needs and select the appropriate OCI services to deploy.</li>
+    <li><strong>Deploy Resources:</strong> Use the Oracle Cloud Console or CLI to provision and manage your resources efficiently.</li>
+    <li><strong>Monitor and Optimize:</strong> Utilize Oracle's monitoring tools to track resource usage and optimize performance.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Oracle Cloud Infrastructure offers a powerful platform for organizations to leverage cloud computing effectively. With its high-performance capabilities, robust security features, and cost-effective pricing models, OCI enables businesses to innovate and scale in today's competitive landscape.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+
+</body>
+</html>

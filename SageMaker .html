@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title> Amazon Web Services (AWS)</title>
+</head>
+<body class="body">
+
+   
+    
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> AWS Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> AWS Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-aws" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">AWS Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="awsRoadmaps.html" target="_blank"><b class="b12">AWS Roadmap</b></a>
+        <ul>
+            
+        <a href="Introduction to aws.html">Introduction to AWS</a>
+            <li><a href="overview of aws.html">Overview of AWS</a></li>
+            <li><a href="Global Infrastructure.html">Global Infrastructure</a></li>
+            <li><a href="Key Services and Use Cases.html">Key Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>AWS Foundations</h3>
+        <a href="AWS Foundations.html">AWS Foundations</a>
+        <ul>
+            <li><a href="AWS Management Console.html">AWS Management Console</a></li>
+            <li><a href="AWS CLI.html">AWS CLI</a></li>
+            <li><a href="IAM (Identity and Access Management).html">IAM (Identity and Access Management)</a></li>
+            <li><a href="AWS Billing and Pricing.html">AWS Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core AWS Services</h3>
+        <a href="Core AWS Services.html">Core AWS Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services.html">Compute Services</a>
+                <ul>
+                    <li><a href="EC2 (Elastic Compute Cloud).html">EC2 (Elastic Compute Cloud)</a></li>
+                    <li><a href="Lambda.html">Lambda</a></li>
+                    <li><a href="ECS (Elastic Container Service) .html">ECS (Elastic Container Service)</a></li>
+                    <li><a href="EKS (Elastic Kubernetes Service).html">EKS (Elastic Kubernetes Service)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services.html">Storage Services</a>
+                <ul>
+                    <li><a href="S3 (Simple Storage Service).html">S3 (Simple Storage Service)</a></li>
+                    <li><a href="EBS (Elastic Block Store).html">EBS (Elastic Block Store)</a></li>
+                    <li><a href="EFS (Elastic File System).html">EFS (Elastic File System)</a></li>
+                    <li><a href="Glacier.html">Glacier</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services.html">Database Services</a>
+                <ul>
+                    <li><a href="RDS (Relational Database Service).html">RDS (Relational Database Service)</a></li>
+                    <li><a href="DynamoDB.html">DynamoDB</a></li>
+                    <li><a href="Redshift.html">Redshift</a></li>
+                    <li><a href="Aurora.html">Aurora</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud).html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Route 53.html">Route 53</a></li>
+                    <li><a href="CloudFront.html">CloudFront</a></li>
+                    <li><a href="Direct Connect.html">Direct Connect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced AWS Services</h3>
+        <a href="Advanced AWS Services.html">Advanced AWS Services</a>
+        <ul>
+            <li>
+                <a href="Machine Learning Services.html">Machine Learning Services</a>
+                <ul>
+                    <li><a href="SageMaker .html">SageMaker</a></li>
+                    <li><a href="Rekognition.html">Rekognition</a></li>
+                    <li><a href="Comprehend.html">Comprehend</a></li>
+                    <li><a href="Lex.html">Lex</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services.html">Analytics Services</a>
+                <ul>
+                    <li><a href="Athena.html">Athena</a></li>
+                    <li><a href="EMR (Elastic MapReduce).html">EMR (Elastic MapReduce)</a></li>
+                    <li><a href="Kinesis.html">Kinesis</a></li>
+                    <li><a href="QuickSight.html">QuickSight</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services.html">Security Services</a>
+                <ul>
+                    <li><a href="Shield.html">Shield</a></li>
+                    <li><a href="WAF (Web Application Firewall) .html">WAF (Web Application Firewall)</a></li>
+                    <li><a href="GuardDuty.html">GuardDuty</a></li>
+                    <li><a href="Macie.html">Macie</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on AWS</h3>
+        <a href="DevOps on AWS.html">DevOps on AWS</a>
+        <ul>
+            <li><a href="Infrastructure as Code (IaC) .html">Infrastructure as Code (IaC)</a></li>
+            <li>
+                <a href="CI-CD Pipeline.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="CodeCommit.html">CodeCommit</a></li>
+                    <li><a href="CodeBuild.html">CodeBuild</a></li>
+                    <li><a href="CodeDeploy.html">CodeDeploy</a></li>
+                    <li><a href="CodePipeline.html">CodePipeline</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="CloudWatch.html">CloudWatch</a></li>
+                    <li><a href="CloudTrail.html">CloudTrail</a></li>
+                    <li><a href="X-Ray.html">X-Ray</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="AWS Migration Hub.html">AWS Migration Hub</a></li>
+            <li><a href="Server Migration Service.html">Server Migration Service</a></li>
+            <li><a href="Database Migration Service.html">Database Migration Service</a></li>
+            <li><a href="Snowball.html">Snowball</a></li>
+        </ul>
+    </div>
+    
+    
+
+   
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "AWS_interviews.html";
+}
+function goprojects() {
+    window.location.href = "AWS_projeets.html";
+}
+function golabs() {
+    window.location.href = "AWS_labs.html";
+}
+function goquizpro() {
+    window.location.href = "AWS_quiz.html";
+}
+    function goPrevious() {
+        window.location.href = "Machine Learning Services.html";
+    }
+    function goNext() {
+        window.location.href = "Rekognition.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-aws" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">AWS Tutorial</h2>
+<div class="div1">Amazon SageMaker</div>
+</div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>Introduction to Amazon SageMaker</h2>
+            <p><strong>Amazon SageMaker</strong> is a fully managed service that provides tools for building, training, and deploying machine learning models at scale. It simplifies the machine learning process by offering integrated development environments, built-in algorithms, and automated workflows.</p>
+            <div id="languageSelector" style="margin-top: 20px; display: none;">
+                <label for="language">Select Language:</label>
+                <select id="language" onchange="changeVideo()">
+                    <option value="english">English</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+    
+        
+            <div id="videoContainer" style="display: none; margin-top: 20px;">
+                <iframe id="youtubeVideo" width="560" height="315" src="" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div> <script>
+                // Define YouTube video links for each language
+                const videos = {
+                    english: 'https://www.youtube.com/embed/Qv_Tr_BCFCQ?si=X79T13sXuBb_Eo-W',  // Add the actual English video link here
+                    telugu: 'https://www.youtube.com/embed/',  // Replace with actual Telugu video link
+                    hindi: 'https://www.youtube.com/embed/'  // Replace with actual Hindi video link
+                };
+            
+            
+                function govideo() {
+                    // Show the language selector
+                    document.getElementById('languageSelector').style.display = 'block';
+                    
+                    // Show the video container
+                    document.getElementById('videoContainer').style.display = 'block';
+                    
+                    // Scroll to the video container
+                    window.scrollTo(0, document.getElementById('videoContainer').offsetTop);
+                    
+                    // Set default video (English)
+                    changeVideo();
+                }
+            
+                // Function to change video based on selected language
+                function changeVideo() {
+                    const selectedLanguage = document.getElementById('language').value;
+                    const videoUrl = videos[selectedLanguage];
+                    
+                    // Change the video source
+                    document.getElementById('youtubeVideo').src = videoUrl;
+                }
+            </script>
+           
+            <h2>Key Features of Amazon SageMaker</h2>
+
+            <h3>1. Built-in Algorithms and Frameworks</h3>
+            <p>SageMaker provides a variety of built-in machine learning algorithms and frameworks. These include algorithms for classification, regression, clustering, and more. You can also use popular frameworks such as TensorFlow, PyTorch, and MXNet.</p>
+            <ul>
+                <li><strong>Pre-built Algorithms:</strong> Ready-to-use algorithms for common machine learning tasks.</li>
+                <li><strong>Custom Frameworks:</strong> Support for popular machine learning frameworks and libraries.</li>
+            </ul>
+
+            <h3>2. Managed Jupyter Notebooks</h3>
+            <p>SageMaker offers managed Jupyter notebooks, which are interactive environments for writing and running code. These notebooks come pre-configured with the necessary libraries and packages, making it easy to get started with machine learning experiments.</p>
+            <ul>
+                <li><strong>Interactive Development:</strong> Write and test code in an interactive notebook environment.</li>
+                <li><strong>Pre-configured Environments:</strong> Access a range of pre-installed machine learning libraries.</li>
+            </ul>
+
+            <h3>3. Automated Model Tuning</h3>
+            <p>SageMaker includes a feature called <strong>Automatic Model Tuning</strong> (or hyperparameter optimization), which helps you find the best model parameters. It automatically explores different parameter values to optimize model performance.</p>
+            <ul>
+                <li><strong>Hyperparameter Tuning:</strong> Automatically adjusts parameters to improve model accuracy.</li>
+                <li><strong>Experiment Tracking:</strong> Track and compare different experiments to find the best model.</li>
+            </ul>
+
+            <h3>4. Easy Model Deployment</h3>
+            <p>Once your model is trained, SageMaker provides easy deployment options. You can deploy your model to a real-time endpoint or use batch processing to handle large-scale data predictions.</p>
+            <ul>
+                <li><strong>Real-time Endpoints:</strong> Deploy models for real-time predictions.</li>
+                <li><strong>Batch Transform:</strong> Process large amounts of data in batch mode.</li>
+            </ul>
+
+            <h3>5. Integrated Data Labeling</h3>
+            <p>SageMaker offers <strong>SageMaker Ground Truth</strong>, a data labeling service that helps you create labeled datasets for training your models. It uses human labelers and machine learning to improve labeling efficiency and accuracy.</p>
+            <ul>
+                <li><strong>Human Labelers:</strong> Label data using human annotators.</li>
+                <li><strong>Machine Learning Assistance:</strong> Use machine learning to assist in data labeling.</li>
+            </ul>
+
+            <h2>How to Get Started with Amazon SageMaker</h2>
+            <div class="example">
+                <p>Here’s how to start using Amazon SageMaker:</p>
+                <ul>
+                    <li><strong>Create a SageMaker Notebook Instance:</strong> Set up a managed Jupyter notebook to start experimenting with machine learning models.</li>
+                    <li><strong>Choose an Algorithm or Framework:</strong> Select a built-in algorithm or custom framework to build your model.</li>
+                    <li><strong>Train Your Model:</strong> Use your data to train the model, and utilize automated model tuning to optimize it.</li>
+                    <li><strong>Deploy the Model:</strong> Deploy the trained model to an endpoint for real-time predictions or batch processing.</li>
+                </ul>
+            </div>
+
+            <div class="resources">
+                <h3>Learning Resources</h3>
+                <ul>
+                    <li><a href="https://aws.amazon.com/sagemaker/" target="_blank">Amazon SageMaker Overview</a></li>
+                    <li><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html" target="_blank">Amazon SageMaker Documentation</a></li>
+                    <li><a href="https://aws.amazon.com/training/sagemaker/" target="_blank">Amazon SageMaker Training and Tutorials</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Amazon SageMaker is a powerful and comprehensive machine learning service that simplifies the process of building, training, and deploying models. With its built-in algorithms, managed notebooks, automated tuning, and deployment options, SageMaker provides all the tools you need to leverage machine learning for your applications.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div> </div>
+    </div>
+
+   
+    
+</body>
+</html>

@@ -1,0 +1,318 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Rust Proagramming Language</title>
+   
+   
+   
+    <head>
+    
+        <body class="body">
+ 
+            <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+            
+                <div id="main" class="main">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                
+                    <button class="openbtn homebtn" onclick="goHome()">
+                        &#8962; Home
+                    </button>
+                    <button class="openbtn compbtn" onclick="gocomp()">
+                        <i class="fas fa-code"></i> Rust Compiler
+                    </button>
+                    <button class="openbtn videobtn" onclick="govideo()">
+                        <i class="fas fa-video"></i> Video
+                    </button>
+                    <button class="openbtn labs" onclick="goprojects()">
+                   
+                        <i class="fas fa-folder-open"></i> Projects
+                    </button>
+                    <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                        <i class="fas fa-user-tie"></i> Interview Preparation
+                    </button>
+                    <button class="openbtn quizbtn" onclick="goquizpro()">
+                        <i class="fas fa-question-circle"></i> Rust Quiz
+                    </button>
+                </div></div>
+            </header>
+            
+            
+            
+            
+            
+            
+          
+          
+              
+               
+              
+        
+              
+             <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+                  
+                    
+                     
+        
+                </div>
+            </header>
+            <br><br><br>
+            
+            <div id="mySidebar" class="sidebar">
+                <!-- Top Box with Icon and Title -->
+                <div class="top-box">
+                  
+                    <i class="fab fa-rust" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+                    <h2 class="jk">Rust Tutorial</h2>
+                </div>
+            
+                <!-- Close button and sidebar content -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Rust.html" target="_blank"><b class="b12">Rust Roadmap</b></a>   
+        <ul>
+            <a href="Introduction to Rust.html">Introduction to Rust</a>
+            <li><a href="What is Rust.html">What is Rust?</a></li>
+            <li><a href="Rust Features.html">Rust Features</a></li>
+            <li><a href="Rust Installation.html">Rust Installation</a></li>
+            <li><a href="First Rust Program.html">First Rust Program</a></li>
+            <li>
+               <h3> Control Statements</h3>
+                <ul>
+                    <li><a href="Rust if-else.html">Rust if-else</a></li>
+                    <li><a href="Rust if in a let.html">Rust if in a let</a></li>
+                    <li><a href="Rust Loop.html">Rust Loop</a></li>
+                    <li><a href="Rust While Loop.html">Rust While Loop</a></li>
+                    <li><a href="Rust For Loop.html">Rust For Loop</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Ownership</h3>
+                <ul>
+                    <li><a href="What is Ownership.html">What is Ownership?</a></li>
+                    <li><a href="Rust References & Borrowing.html">References & Borrowing</a></li>
+                    <li><a href="Rust Slices.html">Slices</a></li>
+                    <li><a href="Rust Structs.html">Structs</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Enums</h3>
+                <ul>
+                    <li><a href="What is enum.html">What is Enum?</a></li>
+                    <li><a href="Match Operator.html">Match Operator</a></li>
+                    <li><a href="If Let Operator.html">If Let Operator</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Modules</h3>
+                <ul>
+                    <li><a href="Rust Filesystem.html">Filesystem</a></li>
+                    <li><a href="Controlling visibility with pub.html">Controlling Visibility with pub</a></li>
+                    <li><a href="Rust use Keyword.html">use Keyword</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Collections</h3>
+                <ul>
+                    <li><a href="Rust Vectors.html">Vectors</a></li>
+                    <li><a href="Rust Strings.html">Strings</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Error Handling</h3>
+                <ul>
+                    <li><a href="Unrecoverable Errors.html">Unrecoverable Errors</a></li>
+                    <li><a href="Recoverable Errors.html">Recoverable Errors</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Generics & Traits</h3>
+                <ul>
+                    <li><a href="Rust Generics.html">Generics</a></li>
+                    <li><a href="Rust Traits.html">Traits</a></li>
+                    <li><a href="Rust Lifetime.html">Lifetime</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Smart Pointers</h3>
+                <ul>
+                    <li><a href="Smart Pointers.html">Smart Pointers</a></li>
+                    <li><a href="Rust Box.html">Box&lt;T&gt;</a></li>
+                    <li><a href="Rust Deref Trait.html">Deref Trait</a></li>
+                    <li><a href="Rust Drop Trait.html">Drop Trait</a></li>
+                    <li><a href="Rust Rc(T).html">Rc&lt;T&gt;</a></li>
+                    <li><a href="Rust RefCell(T).html">RefCell&lt;T&gt;</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Rust_interviews.html";
+}
+function goprojects() {
+    window.location.href = "Rust_projects.html";
+}
+function goquizpro() {
+    window.location.href = "Rust_quize.html";
+}
+function gocomp() {
+    window.location.href = "Rust Compiler.html";
+}
+   
+    function goPrevious() {
+        window.location.href = "Rust Installation.html";
+    }
+    function goNext() {
+        window.location.href = "Control Statements.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-rust" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">Rust Tutorial</h2>
+            <div class="div1">Your First Rust Program</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Creating Your First Rust Program</h2>
+<p>Now that you have Rust installed and your development environment set up, it's time to write your first Rust program. In this guide, we’ll walk you through creating a simple "Hello, World!" application.</p>
+
+<h2>Step 1: Create a New Project</h2>
+<p>Rust comes with a powerful tool called <strong>Cargo</strong>, which helps you manage your projects, dependencies, and builds. To create a new Rust project, open your terminal or command prompt and run the following command:</p>
+
+<div class="example">
+    <pre><code>cargo new hello_world</code></pre>
+</div>
+
+<p>This command will create a new directory called <strong>hello_world</strong> with all the necessary files for a basic Rust project. The structure will look like this:</p>
+
+<div class="example">
+    <pre><code>hello_world/
+├── Cargo.toml
+└── src
+    └── main.rs</code></pre>
+</div>
+
+<ul>
+    <li><strong>Cargo.toml:</strong> This file contains the project’s metadata, such as the project name, version, and dependencies.</li>
+    <li><strong>main.rs:</strong> This is where your program code lives. By default, it contains a simple "Hello, World!" program.</li>
+</ul>
+
+<h2>Step 2: Write Your First Rust Program</h2>
+<p>Open the <code>src/main.rs</code> file in your favorite code editor. You should see the following code:</p>
+
+<div class="example">
+    <pre><code>fn main() {
+    println!("Hello, world!");
+}</code></pre>
+</div>
+
+<p>This is the simplest Rust program. The <code>main</code> function is the entry point of every Rust program. The <code>println!</code> macro prints text to the console.</p>
+
+<h2>Step 3: Run Your Program</h2>
+<p>To run your program, use the following command in your terminal from the project directory:</p>
+
+<div class="example">
+    <pre><code>cargo run</code></pre>
+</div>
+
+<p>Cargo will compile your code and execute it. You should see the output:</p>
+
+<div class="example">
+    <pre><code>Hello, world!</code></pre>
+</div>
+
+<p>This confirms that your Rust installation is working correctly and that you’ve successfully written and executed your first Rust program.</p>
+
+<h2>Step 4: Understanding Cargo</h2>
+<p>Cargo not only helps you run your programs but also manages dependencies and builds. Here are some common commands you will use frequently:</p>
+
+<ul>
+    <li><code>cargo build</code>: Compiles your project without running it.</li>
+    <li><code>cargo run</code>: Compiles and runs your project.</li>
+    <li><code>cargo check</code>: Quickly checks if your code compiles without producing an executable.</li>
+    <li><code>cargo test</code>: Runs tests if you have any defined in your project.</li>
+</ul>
+
+<h2>Step 5: Modify Your Program</h2>
+<p>Let’s modify the program to print a custom message. Open <code>main.rs</code> again and change the code to this:</p>
+
+<div class="example">
+    <pre><code>fn main() {
+    println!("Welcome to Rust programming!");
+}</code></pre>
+</div>
+
+<p>Save the file and run the program again using <code>cargo run</code>. You should now see:</p>
+
+<div class="example">
+    <pre><code>Welcome to Rust programming!</code></pre>
+</div>
+
+
+
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://doc.rust-lang.org/book/ch01-02-hello-world.html" target="_blank">Rust "Hello, World!" Tutorial</a></li>
+        <li><a href="https://doc.rust-lang.org/cargo/" target="_blank">Cargo Documentation</a></li>
+        <li><a href="https://doc.rust-lang.org/rust-by-example/hello.html" target="_blank">Rust by Example: Hello World</a></li>
+    </ul>
+</div>
+<h2>Summary</h2>
+<p>In this guide, you learned how to create a new Rust project using Cargo, write a simple "Hello, World!" program, and run it. You also got an introduction to how Cargo helps manage your Rust projects. Rust’s simplicity, combined with Cargo’s powerful features, makes it easy to get started with writing reliable and efficient programs.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>

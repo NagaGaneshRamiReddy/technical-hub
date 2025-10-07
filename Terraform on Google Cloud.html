@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Google Cloud Course</title>
+    
+    
+</head>
+<body class="body">
+
+  
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> GCP Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> GCP Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            
+            
+            <i class="fab fa-google" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> GCP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="Google cloudRoadmaps.html" target="_blank"><b class="b12">GCP Roadmap</b></a>
+    
+        <ul><a href="Introduction to Google Cloud.html">Introduction to Google Cloud</a>
+            <li><a href="Overview of Google Cloud.html">Overview of Google Cloud</a></li>
+            <li><a href="Global Infrastructure Google Cloud.html">Global Infrastructure</a></li>
+            <li><a href="Core Services and Use Cases Google Cloud.html">Core Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>Google Cloud Foundations</h3>
+        <a href="Google Cloud Foundations.html">Google Cloud Foundations</a>
+        <ul>
+            <li><a href="Google Cloud Console.html">Google Cloud Console</a></li>
+            <li><a href="Cloud Shell and Cloud SDK.html">Cloud Shell and Cloud SDK</a></li>
+            <li><a href="Identity and Access Management (IAM).html">Identity and Access Management (IAM)</a></li>
+            <li><a href="Billing and Pricing in Google Cloud.html">Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core Google Cloud Services</h3>
+        <a href="Core Google Cloud Services.html">Core Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services Google cloud.html">Compute Services</a>
+                <ul>
+                    <li><a href="Compute Engine.html">Compute Engine</a></li>
+                    <li><a href="App Engine.html">App Engine</a></li>
+                    <li><a href="Kubernetes Engine (GKE).html">Kubernetes Engine (GKE)</a></li>
+                    <li><a href="Cloud Functions.html">Cloud Functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services in Google cloud.html">Storage Services</a>
+                <ul>
+                    <li><a href="Cloud Storage.html">Cloud Storage</a></li>
+                    <li><a href="Persistent Disk.html">Persistent Disk</a></li>
+                    <li><a href="Filestore.html">Filestore</a></li>
+                    <li><a href="Cloud SQL.html">Cloud SQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services in Google cloud.html">Database Services</a>
+                <ul>
+                    <li><a href="Cloud Firestore.html">Cloud Firestore</a></li>
+                    <li><a href="Bigtable.html">Bigtable</a></li>
+                    <li><a href="Cloud Spanner.html">Cloud Spanner</a></li>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services Google Cloud.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud) google cloud.html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Cloud Load Balancing.html">Cloud Load Balancing</a></li>
+                    <li><a href="Cloud CDN.html">Cloud CDN</a></li>
+                    <li><a href="Cloud Interconnect.html">Cloud Interconnect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Google Cloud Services</h3>
+        <a href="Advanced Google Cloud Services.html">Advanced Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="AI and Machine Learning Google Cloud.html">AI and Machine Learning</a>
+                <ul>
+                    <li><a href="AI Platform.html">AI Platform</a></li>
+                    <li><a href="AutoML.html">AutoML</a></li>
+                    <li><a href="Vision AI.html">Vision AI</a></li>
+                    <li><a href="Dialogflow.html">Dialogflow</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services Google.html">Analytics Services</a>
+                <ul>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                    <li><a href="Dataflow.html">Dataflow</a></li>
+                    <li><a href="pub sub.html">Pub/Sub</a></li>
+                    <li><a href="Dataproc.html">Dataproc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services Google.html">Security Services</a>
+                <ul>
+                    <li><a href="Cloud IAM.html">Cloud IAM</a></li>
+                    <li><a href="Cloud Armor.html">Cloud Armor</a></li>
+                    <li><a href="Security Command Center.html">Security Command Center</a></li>
+                    <li><a href="Cloud Key Management Service (KMS).html">Cloud Key Management Service (KMS)</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on Google Cloud</h3>
+        <a href="DevOps on Google Cloud.html">DevOps on Google Cloud</a>
+        <ul>
+            <li>
+                <a href="Infrastructure as Code (IaC) Google.html">Infrastructure as Code (IaC)</a>
+                <ul>
+                    <li><a href="Deployment Manager.html">Deployment Manager</a></li>
+                    <li><a href="Terraform on Google Cloud.html">Terraform on Google Cloud</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="CI-CD Pipeline google.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Cloud Build.html">Cloud Build</a></li>
+                    <li><a href="Container Registry.html">Container Registry</a></li>
+                    <li><a href="Artifact Registry.html">Artifact Registry</a></li>
+                    <li><a href="Cloud Source Repositories.html">Cloud Source Repositories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Google.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Cloud Monitoring.html">Cloud Monitoring</a></li>
+                    <li><a href="Cloud Logging.html">Cloud Logging</a></li>
+                    <li><a href="Cloud Trace.html">Cloud Trace</a></li>
+                    <li><a href="Cloud Debugger.html">Cloud Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer Google.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="Migrate for Compute Engine.html">Migrate for Compute Engine</a></li>
+            <li><a href="Database Migration Service Google.html">Database Migration Service</a></li>
+            <li><a href="Transfer Appliance.html">Transfer Appliance</a></li>
+            <li><a href="Storage Transfer Service.html">Storage Transfer Service</a></li>
+        </ul>
+    
+    </div>
+    
+   
+   
+   
+    
+
+    
+    
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "GCP_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "GCP_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "GCP_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "GCP_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "Deployment Manager.html";
+    }
+    function goNext() {
+        window.location.href = "CI-CD Pipeline google.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-google" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">GCP Tutorial</h2>
+<div class="div1">Google Cloud Terraform</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Introduction to Terraform</h2>
+        <p>Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp. It allows you to define and provision your infrastructure using a declarative configuration language. Terraform is used to automate the management of cloud resources, making it easier to create, update, and maintain your infrastructure in a consistent manner.</p>
+
+        <h2>Why Use Terraform with Google Cloud?</h2>
+        <ul>
+            <li><strong>Declarative Configuration:</strong> Define your infrastructure using a high-level configuration language, making it easier to manage and version control.</li>
+            <li><strong>Resource Management:</strong> Manage Google Cloud resources such as VMs, storage, and networking components through code.</li>
+            <li><strong>Consistency:</strong> Ensure consistent and repeatable deployments across environments by using the same configuration files.</li>
+            <li><strong>Integration:</strong> Integrates seamlessly with Google Cloud and other cloud providers, allowing for multi-cloud deployments.</li>
+            <li><strong>State Management:</strong> Keeps track of your infrastructure's state, enabling Terraform to manage updates and changes effectively.</li>
+        </ul>
+
+        <h2>Getting Started with Terraform on Google Cloud</h2>
+        <ol>
+            <li><strong>Install Terraform:</strong> Download and install Terraform from the [Terraform website](https://www.terraform.io/downloads.html).</li>
+            <li><strong>Set Up Google Cloud Credentials:</strong> Configure your Google Cloud credentials to allow Terraform to interact with your Google Cloud resources. Follow the instructions in the [Google Cloud documentation](https://cloud.google.com/docs/authentication/getting-started).</li>
+            <li><strong>Create a Configuration File:</strong> Define your infrastructure using a `.tf` configuration file. This file describes the resources you want to provision and their configurations.</li>
+            <li><strong>Initialize Terraform:</strong> Run `terraform init` in your project directory to initialize Terraform and download the necessary provider plugins.</li>
+            <li><strong>Apply the Configuration:</strong> Use `terraform apply` to create or update resources based on your configuration file.</li>
+            <li><strong>Manage State:</strong> Terraform maintains a state file to keep track of your infrastructure. Ensure this file is managed securely and consider using remote state storage solutions like Google Cloud Storage.</li>
+        </ol>
+
+        <h2>Sample Terraform Configuration</h2>
+        <pre><code>
+provider "google" {
+  credentials = file("<YOUR_SERVICE_ACCOUNT_KEY>.json")
+  project     = "<YOUR_PROJECT_ID>"
+  region      = "us-central1"
+}
+
+resource "google_compute_instance" "default" {
+  name         = "my-instance"
+  machine_type = "n1-standard-1"
+  zone         = "us-central1-a"
+
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-9"
+    }
+  }
+
+  network_interface {
+    network = "default"
+    access_config {}
+  }
+}
+        </code></pre>
+        <p>This sample configuration creates a Google Compute Engine instance with a specified machine type and boot disk image.</p>
+
+        <h2>Free Resources for Learning Terraform</h2>
+        <ul>
+            <li><a href="https://learn.hashicorp.com/terraform">HashiCorp Learn</a> - Free tutorials and guides on using Terraform, including Google Cloud examples.</li>
+            <li><a href="https://www.terraform.io/docs/providers/google/index.html">Terraform Google Cloud Provider Documentation</a> - Official documentation for using Terraform with Google Cloud.</li>
+            <li><a href="https://www.udemy.com/course/learn-devops-infrastructure-as-code-with-terraform/">Udemy Course</a> - "Learn DevOps: Infrastructure as Code with Terraform" – This course provides a comprehensive introduction to Terraform and its use with cloud providers.</li>
+            <li><a href="https://www.youtube.com/results?search_query=terraform+google+cloud">YouTube Tutorials</a> - Find video tutorials on Terraform and Google Cloud integration.</li>
+            <li><a href="https://github.com/terraform-google-modules">GitHub Repositories</a> - Explore community-contributed Terraform modules for Google Cloud.</li>
+        </ul>
+
+        <h2>Summary</h2>
+        <p>Terraform is a powerful tool for managing your Google Cloud infrastructure using code. It simplifies the process of defining, provisioning, and managing cloud resources. By leveraging Terraform, you can ensure consistent and efficient infrastructure management, automate deployments, and integrate seamlessly with Google Cloud and other cloud providers.</p>
+
+        <h2>Conclusion</h2>
+        <p>Getting started with Terraform on Google Cloud can greatly enhance your infrastructure management capabilities. With its declarative configuration language and robust state management, Terraform allows you to maintain and scale your cloud resources effectively. Utilize the resources provided to deepen your understanding and make the most of Terraform for your Google Cloud projects.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

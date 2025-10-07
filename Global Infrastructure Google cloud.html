@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Google Cloud Course</title>
+    
+    
+</head>
+<body class="body">
+
+  
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> GCP Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> GCP Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            
+            
+            <i class="fab fa-google" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> GCP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="Google cloudRoadmaps.html" target="_blank"><b class="b12">GCP Roadmap</b></a>
+    
+        <ul><a href="Introduction to Google Cloud.html">Introduction to Google Cloud</a>
+            <li><a href="Overview of Google Cloud.html">Overview of Google Cloud</a></li>
+            <li><a href="Global Infrastructure Google Cloud.html">Global Infrastructure</a></li>
+            <li><a href="Core Services and Use Cases Google Cloud.html">Core Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>Google Cloud Foundations</h3>
+        <a href="Google Cloud Foundations.html">Google Cloud Foundations</a>
+        <ul>
+            <li><a href="Google Cloud Console.html">Google Cloud Console</a></li>
+            <li><a href="Cloud Shell and Cloud SDK.html">Cloud Shell and Cloud SDK</a></li>
+            <li><a href="Identity and Access Management (IAM).html">Identity and Access Management (IAM)</a></li>
+            <li><a href="Billing and Pricing in Google Cloud.html">Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core Google Cloud Services</h3>
+        <a href="Core Google Cloud Services.html">Core Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services Google cloud.html">Compute Services</a>
+                <ul>
+                    <li><a href="Compute Engine.html">Compute Engine</a></li>
+                    <li><a href="App Engine.html">App Engine</a></li>
+                    <li><a href="Kubernetes Engine (GKE).html">Kubernetes Engine (GKE)</a></li>
+                    <li><a href="Cloud Functions.html">Cloud Functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services in Google cloud.html">Storage Services</a>
+                <ul>
+                    <li><a href="Cloud Storage.html">Cloud Storage</a></li>
+                    <li><a href="Persistent Disk.html">Persistent Disk</a></li>
+                    <li><a href="Filestore.html">Filestore</a></li>
+                    <li><a href="Cloud SQL.html">Cloud SQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services in Google cloud.html">Database Services</a>
+                <ul>
+                    <li><a href="Cloud Firestore.html">Cloud Firestore</a></li>
+                    <li><a href="Bigtable.html">Bigtable</a></li>
+                    <li><a href="Cloud Spanner.html">Cloud Spanner</a></li>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services Google Cloud.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud) google cloud.html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Cloud Load Balancing.html">Cloud Load Balancing</a></li>
+                    <li><a href="Cloud CDN.html">Cloud CDN</a></li>
+                    <li><a href="Cloud Interconnect.html">Cloud Interconnect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Google Cloud Services</h3>
+        <a href="Advanced Google Cloud Services.html">Advanced Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="AI and Machine Learning Google Cloud.html">AI and Machine Learning</a>
+                <ul>
+                    <li><a href="AI Platform.html">AI Platform</a></li>
+                    <li><a href="AutoML.html">AutoML</a></li>
+                    <li><a href="Vision AI.html">Vision AI</a></li>
+                    <li><a href="Dialogflow.html">Dialogflow</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services Google.html">Analytics Services</a>
+                <ul>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                    <li><a href="Dataflow.html">Dataflow</a></li>
+                    <li><a href="pub sub.html">Pub/Sub</a></li>
+                    <li><a href="Dataproc.html">Dataproc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services Google.html">Security Services</a>
+                <ul>
+                    <li><a href="Cloud IAM.html">Cloud IAM</a></li>
+                    <li><a href="Cloud Armor.html">Cloud Armor</a></li>
+                    <li><a href="Security Command Center.html">Security Command Center</a></li>
+                    <li><a href="Cloud Key Management Service (KMS).html">Cloud Key Management Service (KMS)</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on Google Cloud</h3>
+        <a href="DevOps on Google Cloud.html">DevOps on Google Cloud</a>
+        <ul>
+            <li>
+                <a href="Infrastructure as Code (IaC) Google.html">Infrastructure as Code (IaC)</a>
+                <ul>
+                    <li><a href="Deployment Manager.html">Deployment Manager</a></li>
+                    <li><a href="Terraform on Google Cloud.html">Terraform on Google Cloud</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="CI-CD Pipeline google.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Cloud Build.html">Cloud Build</a></li>
+                    <li><a href="Container Registry.html">Container Registry</a></li>
+                    <li><a href="Artifact Registry.html">Artifact Registry</a></li>
+                    <li><a href="Cloud Source Repositories.html">Cloud Source Repositories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Google.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Cloud Monitoring.html">Cloud Monitoring</a></li>
+                    <li><a href="Cloud Logging.html">Cloud Logging</a></li>
+                    <li><a href="Cloud Trace.html">Cloud Trace</a></li>
+                    <li><a href="Cloud Debugger.html">Cloud Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer Google.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="Migrate for Compute Engine.html">Migrate for Compute Engine</a></li>
+            <li><a href="Database Migration Service Google.html">Database Migration Service</a></li>
+            <li><a href="Transfer Appliance.html">Transfer Appliance</a></li>
+            <li><a href="Storage Transfer Service.html">Storage Transfer Service</a></li>
+        </ul>
+    
+    </div>
+    
+   
+   
+   
+    
+
+    
+    
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "GCP_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "GCP_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "GCP_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "GCP_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "Overview of Google Cloud.html";
+    }
+    function goNext() {
+        window.location.href = "Core Services and Use Cases Google cloud.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-google" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">GCP Tutorial</h2>
+            <div class="div1"> Google Cloud Global Infrastructure </div></div>
+
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+            
+            <h2> Google Cloud Global Infrastructure</h2>
+            <p><strong>Google Cloud</strong> provides a global network of data centers designed for scalability, reliability, and low-latency services. Its global infrastructure spans multiple regions and zones, ensuring businesses can deploy applications and store data close to their users, with high availability and disaster recovery in mind.</p>
+            
+            <p>By leveraging Google's backbone network, Google Cloud delivers exceptional performance for distributed applications and data across the globe. The infrastructure is designed for high redundancy, security, and compliance, serving a wide range of industries and use cases including AI, machine learning, IoT, and large-scale data analytics.</p>
+            <div id="languageSelector" style="margin-top: 20px; display: none;">
+                <label for="language">Select Language:</label>
+                <select id="language" onchange="changeVideo()">
+                    <option value="english">English</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+            
+            <!-- YouTube video embed (Hidden initially) -->
+            <div id="videoContainer" style="display: none; margin-top: 20px;">
+                <iframe id="youtubeVideo" width="560" height="315" src="" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+            
+            <script>
+                // Define YouTube video links for each language
+                const videos = {
+                    english: 'https://www.youtube.com/embed/IeMYQ-qJeK4?si=he9UT06178bM3YgV',  // English video link
+                    telugu: 'https://www.youtube.com/embed/ilWoKcI9-fg',  // Telugu video link
+                    hindi: 'https://www.youtube.com/embed/Nb2t0lYvqSY'  // Hindi video link
+                };
+            
+                function govideo() {
+                    // Show the language selector
+                    document.getElementById('languageSelector').style.display = 'block';
+            
+                    // Show the video container
+                    document.getElementById('videoContainer').style.display = 'block';
+            
+                    // Scroll to the video container
+                    window.scrollTo(0, document.getElementById('videoContainer').offsetTop);
+            
+                    // Set default video (English)
+                    changeVideo();
+                }
+            
+                // Function to change video based on selected language
+                function changeVideo() {
+                    const selectedLanguage = document.getElementById('language').value;
+                    const videoUrl = videos[selectedLanguage];
+            
+                    // Change the video source
+                    document.getElementById('youtubeVideo').src = videoUrl;
+                }
+            </script>
+            
+            
+            <h2>Key Features of Google Cloud Global Infrastructure</h2>
+            <ul>
+                <li><strong>Global Network of Regions and Zones:</strong> 
+                    Google Cloud operates across 38 regions and over 100 zones worldwide (as of 2024). Each region consists of multiple isolated locations called zones, providing high availability and fault tolerance.
+                </li>
+                <li><strong>Low Latency and High Performance:</strong> 
+                    Google Cloud runs on the same network that powers Google Search, Gmail, YouTube, and other global services. This ensures extremely low latency, high bandwidth, and robust global routing for customer applications.
+                </li>
+                <li><strong>Edge Locations and POPs (Points of Presence):</strong> 
+                    Google Cloud offers over 180 edge locations across the globe, which are strategically placed near major internet exchange points (IXPs). This helps in accelerating content delivery, improving latency, and enhancing user experiences.
+                </li>
+                <li><strong>High Availability and Disaster Recovery:</strong> 
+                    Google Cloud regions are designed with multiple availability zones to ensure redundancy and fault tolerance. In the event of a zone failure, your workloads can automatically failover to another zone within the same region, ensuring minimal downtime.
+                </li>
+                <li><strong>Private Global Fiber Network:</strong> 
+                    Google owns one of the largest private fiber networks in the world, providing secure, high-speed connections between its data centers. This network is critical for large-scale, distributed applications requiring fast, private communication.
+                </li>
+                <li><strong>Sustainability and Carbon Neutrality:</strong> 
+                    Google Cloud operates the cleanest cloud infrastructure, running on 100% renewable energy since 2017. Google continues to invest in green energy to minimize the carbon footprint of its data centers.
+                </li>
+            </ul>
+            
+        
+            <h2>Using Google Cloud Global Infrastructure</h2>
+            <ul>
+                <li><strong>Choosing a Region:</strong> 
+                    When deploying services, choose a region that is closest to your users or meets your regulatory and compliance needs. Google Cloud provides a <a href="https://cloud.google.com/about/locations" target="_blank">locations guide</a> to help you choose the right region for your application.
+                </li>
+                <li><strong>Redundancy Across Zones:</strong> 
+                    Use multiple zones within a region for high availability. For example, deploying your application across different zones ensures that a zone failure does not disrupt your service.
+                </li>
+                <li><strong>Global Load Balancing:</strong> 
+                    Utilize Google Cloud’s global load balancing feature to distribute traffic across multiple regions, ensuring minimal latency and providing backup capacity in case of a regional failure.
+                </li>
+                <li><strong>Private Interconnect and Direct Peering:</strong> 
+                    If your application requires direct and private connectivity to Google’s global infrastructure, you can use <a href="https://cloud.google.com/network-connectivity" target="_blank">Cloud Interconnect</a> or <a href="https://cloud.google.com/peering" target="_blank">Direct Peering</a> options to establish low-latency connections.
+                </li>
+            </ul>
+            
+        
+            
+            <h2>Example: Deploying a Global Web Application</h2>
+            <p>Let's look at an example of deploying a highly available web application across multiple regions using Google Cloud's global infrastructure.</p>
+            <ul>
+                <li><strong>Create a Virtual Machine:</strong> First, create virtual machine (VM) instances in two different regions (e.g., us-central1 and europe-west1).</li>
+                <li><strong>Set Up Global Load Balancing:</strong> Configure global load balancing to distribute incoming traffic between the VMs in the two regions.</li>
+                <li><strong>Enable Failover:</strong> In the load balancer settings, enable failover to route traffic to the other region if one of the regions becomes unavailable.</li>
+                <li><strong>Configure DNS:</strong> Use Cloud DNS to manage the domain and point traffic to the global load balancer.</li>
+            </ul>
+            
+            <p>With this setup, your web application will be globally distributed, ensuring low-latency access for users and automatic failover in case of regional outages.</p>
+            
+            
+            
+            <h2>Common Use Cases for Google Cloud Global Infrastructure</h2>
+            <ul>
+                <li><strong>High-Performance Web Applications:</strong> 
+                    Hosting applications that require low-latency and high availability across the globe, such as e-commerce platforms or media streaming services.
+                </li>
+                <li><strong>Disaster Recovery and Backup:</strong> 
+                    Google Cloud’s regional and zonal architecture is ideal for setting up disaster recovery systems, ensuring data is replicated across multiple zones or regions.
+                </li>
+                <li><strong>Hybrid Cloud Solutions:</strong> 
+                    Google Cloud supports hybrid cloud deployments, allowing businesses to connect their on-premise infrastructure with Google Cloud’s global network.
+                </li>
+                <li><strong>Machine Learning and AI:</strong> 
+                    Leveraging the power of Google Cloud’s infrastructure for distributed training of machine learning models or running large-scale AI workloads across different regions.
+                </li>
+                <li><strong>Gaming Platforms:</strong> 
+                    Global game servers can benefit from Google Cloud’s low-latency, high-performance network, providing players with a seamless experience no matter their geographic location.
+                </li>
+            </ul>
+            
+            
+            
+            <h2>Learning Resources</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://cloud.google.com/infrastructure" target="_blank">Google Cloud Infrastructure Overview</a></li>
+                    <li><a href="https://cloud.google.com/network" target="_blank">Google Cloud Network Overview</a></li>
+                    <li><a href="https://cloud.google.com/compute/docs/zones" target="_blank">Google Cloud Regions and Zones</a></li>
+                    <li><a href="https://cloud.google.com/interconnect" target="_blank">Google Cloud Interconnect</a></li>
+                    <li><a href="https://cloud.google.com/network-connectivity/docs/how-to/choose-connectivity-option" target="_blank">Choosing a Network Connectivity Option</a></li>
+                </ul>
+            </div>
+            
+        
+            
+            <h2>Summary</h2>
+            <p>Google Cloud's global infrastructure is designed to meet the needs of enterprises that require low-latency, high-performance, and secure cloud services. By leveraging Google's private fiber network, multiple regions and zones, and sustainability efforts, organizations can deploy reliable and scalable applications anywhere in the world. Whether you are building web apps, gaming platforms, or machine learning models, Google Cloud’s global infrastructure provides the backbone needed to ensure performance, availability, and resilience.</p>
+            
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+            

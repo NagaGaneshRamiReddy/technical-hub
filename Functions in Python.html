@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Python Language Roadmap</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> Python Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Python Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function goproject() {
+    window.location.href = "python_Projects.html";
+}
+function gointerviewpro() {
+    window.location.href = "python_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Python_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+  
+
+        </script>
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-python" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">Python Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="pythonRoadmps.html" target="_blank"><b class="b12">python Roadmap</b></a>
+        <ul>
+             <a href="Introduction to Python.html">Introduction to Python</a>
+            <li><a href="History of Python.html">History of Python</a></li>
+            <li><a href="Setting up Python Environment.html">Setting up Python Environment</a></li>
+            <li><a href="Hello World Program python.html">Hello World Program</a></li>
+        </ul>
+        
+        <h3>Basic Python Syntax</h3>
+        <a href="Basic Python Syntax.html">Basic Python Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types python.html">Variables and Data Types</a></li>
+            <li><a href="Operators in python.html">Operators</a></li>
+            <li><a href="Control Statements in python.html">Control Statements</a></li>
+            <ul>
+                <li><a href="if-else statements in Python.html">If-else Statements</a></li>
+                <li><a href="Elif Statement in python.html">Elif Statement</a></li>
+                <li><a href="Loops in python.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop in python.html">For Loop</a></li>
+                    <li><a href="While Loop in python.html">While Loop</a></li>
+                    <li><a href="Break and Continue python.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+        
+        <h3>Strings</h3>
+        <a href="Strings in python.html">Strings</a>
+        <ul>
+            <li><a href="String Basics in python.html">String Basics</a></li>
+            <li><a href="String Operations in python.html">String Operations</a></li>
+            <li><a href="String Formatting in python.html">String Formatting</a></li>
+        </ul>
+        
+        <h3>Arrays</h3>
+        <a href="Arrays in python.html">Arrays</a>
+        <ul>
+            <li><a href="List Basics in python.html">List Basics</a></li>
+            <li><a href="Array Operations in python.html">Array Operations</a></li>
+            <li><a href="List Comprehensions in python.html">List Comprehensions</a></li>
+        </ul>
+        
+        
+        
+        <h3>Functions in Python</h3>
+        <a href="Functions in Python.html">Functions in Python</a>
+        <ul>
+            <li><a href="Function Basics in python.html">Function Basics</a></li>
+            <li><a href="Function Arguments in python.html">Function Arguments</a></li>
+            <li><a href="Lambda Functions in python.html">Lambda Functions</a></li>
+            <li><a href="Recursion in python.html">Recursion</a></li>
+            <li><a href="Built-in Functions in python.html">Built-in Functions</a></li>
+        </ul>
+        
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming in python.html">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects in python.html">Classes and Objects</a></li>
+            <li><a href="Constructors in python.html">Constructors</a></li>
+            <li><a href="Inheritance in python.html">Inheritance</a></li>
+            <li><a href="Polymorphism in python.html">Polymorphism</a></li>
+            <li><a href="Abstraction in python.html">Abstraction</a></li>
+            <li><a href="Encapsulation in python.html">Encapsulation</a></li>
+            <li><a href="Magic Methods in python.html">Magic Methods</a></li>
+            <li><a href="Static Methods.html">Class and Static Methods</a></li>
+        </ul>
+        
+        <h3>Advanced Python Concepts</h3>
+        <a href="Advanced Python Concepts in python.html">Advanced Python Concepts</a>
+        <ul>
+            <li><a href="Exception Handling in python.html">Exception Handling</a></li>
+            <li><a href="File I-O in python.html">File I/O</a></li>
+            <li><a href="Modules and Packages in python.html">Modules and Packages</a></li>
+            <li><a href="Decorators in python.html">Decorators</a></li>
+            <li><a href="Generators in python.html">Generators</a></li>
+            <li><a href="Comprehensions in python.html">Comprehensions</a></li>
+            <li><a href="Context Managers in python.html">Context Managers</a></li>
+            <li><a href="Regular Expressions in python.html">Regular Expressions</a></li>
+        </ul>
+        
+        <h3>Data Handling and Libraries</h3>
+        <a href="Data Handling and Libraries.html">Data Handling and Libraries</a>
+        <ul>
+            <li><a href="NumPy in python.html">NumPy</a></li>
+            <li><a href="Pandas in python.html">Pandas</a></li>
+            <li><a href="Matplotlib in python.html">Matplotlib</a></li>
+            <li><a href="Seaborn in python.html">Seaborn</a></li>
+            <li><a href="Scikit-learn in python.html">Scikit-learn</a></li>
+            <li><a href="TensorFlow in python.html">TensorFlow</a></li>
+        </ul>
+        
+        <h3>Web Development</h3>
+        <a href="Web Development in python.html">Web Development</a>
+        <ul>
+            <li><a href="Flask in python.html">Flask</a></li>
+            <li><a href="Django in python.html">Django</a></li>
+            <li><a href="FastAPI in python.html">FastAPI</a></li>
+        </ul>
+        
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics in python.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Asyncio in python.html">Asyncio</a></li>
+            <li><a href="Multithreading and Multiprocessing in python.html">Multithreading and Multiprocessing</a></li>
+            <li><a href="Web Scraping with BeautifulSoup in python.html">Web Scraping with BeautifulSoup</a></li>
+            <li><a href="APIs and RESTful Services in python.html">APIs and RESTful Services</a></li>
+            <li><a href="Data Science with Python.html">Data Science with Python</a></li>
+            <li><a href="Machine Learning with Python.html">Machine Learning with Python</a></li>
+            <li><a href="Deep Learning with Python.html">Deep Learning with Python</a></li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    <script>
+        
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "python_interviews.html";
+}
+function gocomp() {
+    window.location.href = "Python Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "List Comprehensions in python.html";
+    }
+    function goNext() {
+        window.location.href = "Function Basics in python.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-python" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">Python Tutorial</h2>
+<div class="div1">function in Python</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>What is a Function?</h2>
+        <p>A <strong>function</strong> in Python is a reusable block of code that performs a specific task. Functions help in organizing code, avoiding repetition, and improving readability. They can take input arguments, perform operations, and return results.</p>
+
+        <h2>Defining a Function</h2>
+        <p>Functions are defined using the <code>def</code> keyword, followed by the function name, parentheses for parameters, and a colon. The function body is indented:</p>
+        <pre><code>def function_name(parameters):
+    # Code to execute
+    return result
+</code></pre>
+
+        <p>Example:</p>
+        <pre><code># Function to add two numbers
+def add(a, b):
+    return a + b
+
+# Calling the function
+result = add(5, 3)
+print(result)  # Output: 8
+</code></pre>
+
+        <h2>Function Parameters</h2>
+        <p>Functions can have parameters (inputs) and return values (outputs). Parameters can be:</p>
+        <ul>
+            <li><strong>Positional Parameters:</strong> Required parameters that must be provided in the correct order.</li>
+            <li><strong>Default Parameters:</strong> Parameters that have a default value if not provided by the caller.</li>
+            <li><strong>Keyword Parameters:</strong> Parameters passed by explicitly specifying their names.</li>
+            <li><strong>Variable-Length Parameters:</strong> Allow functions to accept an arbitrary number of arguments.</li>
+        </ul>
+
+        <h3>Examples:</h3>
+        <pre><code># Default parameter
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+# Keyword parameter
+print(greet("Alice", greeting="Hi"))  # Output: Hi, Alice!
+
+# Variable-length parameters
+def print_numbers(*numbers):
+    for number in numbers:
+        print(number)
+
+print_numbers(1, 2, 3, 4)  # Output: 1 2 3 4
+</code></pre>
+
+        <h2>Returning Values</h2>
+        <p>Functions can return a value using the <code>return</code> statement. If no <code>return</code> statement is used, the function returns <code>None</code> by default:</p>
+        <pre><code># Function returning multiple values
+def divide(x, y):
+    if y == 0:
+        return "Error: Division by zero"
+    return x / y, x % y
+
+quotient, remainder = divide(10, 3)
+print(quotient)  # Output: 3.3333333333333335
+print(remainder) # Output: 1
+</code></pre>
+
+        <h2>Lambda Functions</h2>
+        <p>Lambda functions are anonymous functions defined using the <code>lambda</code> keyword. They are often used for short, throwaway functions:</p>
+        <pre><code># Lambda function example
+square = lambda x: x * x
+print(square(4))  # Output: 16
+</code></pre>
+
+        <h2>Scope and Lifetime</h2>
+        <p>The <strong>scope</strong> of a function refers to where in the code the function is accessible. Local variables are only accessible within the function where they are defined, while global variables are accessible throughout the code:</p>
+        <pre><code># Example of scope
+global_var = "I am global"
+
+def my_function():
+    local_var = "I am local"
+    print(global_var)
+    print(local_var)
+
+my_function()
+print(global_var)
+# print(local_var)  # This would raise an error because local_var is not accessible outside the function
+</code></pre>
+
+        <h2>Recursion</h2>
+        <p>Functions can call themselves, a technique known as recursion. Recursive functions must have a base case to terminate the recursion:</p>
+        <pre><code># Recursive function example
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(5))  # Output: 120
+</code></pre>
+
+        <h2>Key Points About Functions</h2>
+        <ul>
+            <li><strong>Code Reusability:</strong> Functions allow you to write code once and reuse it multiple times.</li>
+            <li><strong>Modularity:</strong> Functions help in breaking down complex problems into simpler, manageable parts.</li>
+            <li><strong>Readability:</strong> Functions make code more readable and maintainable by abstracting details.</li>
+            <li><strong>Testing:</strong> Functions can be individually tested to ensure correctness.</li>
+        </ul>
+
+        
+        
+
+        <h2>Summary</h2>
+        <p>Functions are a fundamental concept in Python programming, enabling code reuse, modularity, and clarity. By understanding how to define, use, and manage functions, you can write more organized and efficient code. With the resources provided, you can further explore and master Python functions.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

@@ -1,0 +1,493 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> Cyber Security</title>
+ 
+     
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Cyber Security
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to Cyber Security</h3>
+        <a href="Introduction to Cyber Security.html">Introduction to Cyber Security</a>
+        <ul>
+            <li><a href="What is Cyber Security.html">What is Cyber Security?</a></li>
+            <li><a href="History of Cyber Security.html">History of Cyber Security</a></li>
+            <li><a href="Importance of Cyber Security.html">Importance of Cyber Security</a></li>
+            <li>
+                <a href="Types of Cyber Threats.html">Types of Cyber Threats</a>
+                <ul>
+                    <li><a href="Malware.html">Malware</a></li>
+                    <li><a href="Phishing.html">Phishing</a></li>
+                    <li><a href="Ransomware.html">Ransomware</a></li>
+                    <li><a href="Social Engineering.html">Social Engineering</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Network Security</h3>
+        <a href="Network Security.html">Network Security</a>
+        <ul>
+            <li><a href="Introduction to Networks.html">Introduction to Networks</a></li>
+            <li><a href="Network Protocols.html">Network Protocols</a></li>
+            <li><a href="Firewalls.html">Firewalls</a></li>
+            <li><a href="Intrusion Detection Systems (IDS).html">Intrusion Detection Systems (IDS)</a></li>
+            <li><a href="Virtual Private Networks (VPN).html">Virtual Private Networks (VPN)</a></li>
+        </ul>
+    
+        <h3>Cryptography</h3>
+        <a href="Cryptography.html">Cryptography</a>
+        <ul>
+            <li><a href="Introduction to Cryptography.html">Introduction to Cryptography</a></li>
+            <li><a href="Symmetric Encryption.html">Symmetric Encryption</a></li>
+            <li><a href="Asymmetric Encryption.html">Asymmetric Encryption</a></li>
+            <li><a href="Hash Functions.html">Hash Functions</a></li>
+            <li><a href="Digital Signatures.html">Digital Signatures</a></li>
+            <li><a href="Public Key Infrastructure (PKI).html">Public Key Infrastructure (PKI)</a></li>
+        </ul>
+    
+        <h3>Application Security</h3>
+        <a href="Application Security.html">Application Security</a>
+        <ul>
+            <li><a href="Secure Coding Practices.html">Secure Coding Practices</a></li>
+            <li><a href="Web Application Security.html">Web Application Security</a></li>
+            <li><a href="Mobile Application Security.html">Mobile Application Security</a></li>
+            <li><a href="Database Security.html">Database Security</a></li>
+            <li><a href="Security Testing.html">Security Testing</a></li>
+        </ul>
+    
+        <h3>Endpoint Security</h3>
+        <a href="Endpoint Security.html">Endpoint Security</a>
+        <ul>
+            <li><a href="Antivirus and Anti-Malware.html">Antivirus and Anti-Malware</a></li>
+            <li><a href="Endpoint Detection and Response (EDR).html">Endpoint Detection and Response (EDR)</a></li>
+            <li><a href="Patch Management.html">Patch Management</a></li>
+            <li><a href="Device Encryption.html">Device Encryption</a></li>
+            <li><a href="Mobile Device Security.html">Mobile Device Security</a></li>
+        </ul>
+    
+        <h3>Incident Response and Management</h3>
+        <a href="Incident Response and Management.html">Incident Response and Management</a>
+        <ul>
+            <li><a href="Incident Response Planning.html">Incident Response Planning</a></li>
+            <li><a href="Incident Detection and Analysis.html">Incident Detection and Analysis</a></li>
+            <li><a href="Containment, Eradication, and Recovery.html">Containment, Eradication, and Recovery</a></li>
+            <li><a href="Post-Incident Activities.html">Post-Incident Activities</a></li>
+            <li><a href="Forensics.html">Forensics</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics Cyber Security.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Penetration Testing.html">Penetration Testing</a></li>
+            <li><a href="Ethical Hacking.html">Ethical Hacking</a></li>
+            <li><a href="Cyber Threat Intelligence.html">Cyber Threat Intelligence</a></li>
+            <li><a href="Cloud Security.html">Cloud Security</a></li>
+            <li><a href="IoT Security.html">IoT Security</a></li>
+            <li><a href="AI in Cyber Security.html">AI in Cyber Security</a></li>
+        </ul>
+    </div>
+   
+    
+    
+
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Cyber Threat Intelligence.html";
+    }
+    function goNext() {
+        window.location.href = "IoT Security.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Cloud Security</div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>What is Cloud Security ?</h2>
+        <p><strong>Cloud Security</strong> refers to the practices, technologies, and policies designed to protect data, applications, and services in a cloud computing environment. As organizations increasingly move their operations to the cloud, ensuring the security of cloud-based resources becomes crucial. Cloud security encompasses various measures to safeguard cloud infrastructures, applications, and data from unauthorized access, data breaches, and other cyber threats.</p>
+
+        <h2>Importance of Cloud Security</h2>
+        <ul>
+            <li><strong>Data Protection</strong>: Ensures that sensitive data stored in the cloud is protected from unauthorized access and breaches.</li>
+            <li><strong>Compliance</strong>: Helps organizations meet regulatory requirements and industry standards related to data privacy and security, such as GDPR, HIPAA, and CCPA.</li>
+            <li><strong>Operational Continuity</strong>: Minimizes the risk of downtime and disruptions by securing cloud services and maintaining business continuity.</li>
+            <li><strong>Trust and Reputation</strong>: Building and maintaining customer trust by demonstrating strong security measures and protecting against data breaches.</li>
+            <li><strong>Cost Management</strong>: Helps in avoiding the financial impact of security incidents and data breaches, which can be costly for organizations.</li>
+        </ul>
+
+        <h2>Key Components of Cloud Security</h2>
+        <ul>
+            <li><strong>Identity and Access Management (IAM)</strong>: Controls who has access to cloud resources and what they can do with them. IAM policies and roles help manage permissions and enforce security practices.</li>
+            <li><strong>Data Encryption</strong>: Encrypts data both in transit and at rest to protect it from unauthorized access. Encryption ensures that even if data is intercepted or accessed by malicious actors, it remains unreadable.</li>
+            <li><strong>Network Security</strong>: Protects cloud networks through firewalls, intrusion detection systems (IDS), and secure network configurations to prevent unauthorized access and attacks.</li>
+            <li><strong>Security Monitoring and Logging</strong>: Continuously monitors cloud environments for suspicious activities and maintains logs of access and changes to detect and respond to security incidents.</li>
+            <li><strong>Compliance and Governance</strong>: Ensures that cloud operations adhere to relevant regulations and standards. Regular audits and assessments help maintain compliance and manage risks.</li>
+            <li><strong>Incident Response</strong>: Develops and implements procedures for detecting, responding to, and recovering from security incidents and breaches in the cloud environment.</li>
+            <li><strong>Vulnerability Management</strong>: Identifies and addresses security vulnerabilities in cloud services and applications through regular scans and updates.</li>
+            <li><strong>Backup and Recovery</strong>: Implements backup solutions and disaster recovery plans to ensure data can be restored and services can continue in case of a security incident or failure.</li>
+        </ul>
+
+        <h2>Best Practices for Cloud Security</h2>
+        <ul>
+            <li><strong>Implement Strong IAM Policies</strong>: Use least privilege access principles, regularly review permissions, and enforce multi-factor authentication (MFA) for cloud accounts.</li>
+            <li><strong>Encrypt Data</strong>: Apply encryption to data at rest and in transit to protect sensitive information from unauthorized access.</li>
+            <li><strong>Regularly Monitor and Audit</strong>: Continuously monitor cloud environments for security incidents and conduct regular audits to ensure compliance with security policies and standards.</li>
+            <li><strong>Use Secure Network Configurations</strong>: Configure firewalls, VPNs, and other network security measures to protect cloud networks and prevent unauthorized access.</li>
+            <li><strong>Stay Updated on Patches</strong>: Regularly update and patch cloud services and applications to address security vulnerabilities and protect against exploits.</li>
+            <li><strong>Develop an Incident Response Plan</strong>: Create and test an incident response plan for handling security breaches and ensure all stakeholders are trained and prepared.</li>
+            <li><strong>Implement Backup and Recovery Solutions</strong>: Ensure that backup and recovery solutions are in place and regularly tested to maintain data integrity and availability.</li>
+            <li><strong>Educate and Train Employees</strong>: Provide ongoing security training and awareness programs for employees to reduce the risk of human errors and enhance overall security posture.</li>
+        </ul>
+
+        <h2>Examples of Cloud Security Tools</h2>
+        <ul>
+            <li><strong>AWS Identity and Access Management (IAM)</strong>: Provides tools to manage user access and permissions for AWS resources. [More Information](https://aws.amazon.com/iam/)</li>
+            <li><strong>Microsoft Azure Security Center</strong>: Offers unified security management and advanced threat protection for Azure and on-premises environments. [More Information](https://azure.microsoft.com/en-us/services/security-center/)</li>
+            <li><strong>Google Cloud Security Command Center</strong>: Provides security and risk management capabilities for Google Cloud resources. [More Information](https://cloud.google.com/security-command-center)</li>
+            <li><strong>Cloudflare</strong>: Delivers network security, performance, and reliability solutions for web applications and services. [More Information](https://www.cloudflare.com/)</li>
+            <li><strong>Splunk Cloud</strong>: A cloud-based platform for security information and event management (SIEM) and log analysis. [More Information](https://www.splunk.com/en_us/products/splunk-cloud.html)</li>
+        </ul>
+
+        <div class="resources">
+            <h2>Additional Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Explore cloud security courses on platforms like <a href="https://www.udemy.com/" target="_blank">Udemy</a> and <a href="https://www.coursera.org/" target="_blank">Coursera</a> for detailed learning.</li>
+                <li><strong>Books and Guides</strong>: Read "Cloud Security and Privacy: An Enterprise Perspective on Risks and Compliance" by Tim Mather or "Cloud Security: A Comprehensive Guide to Secure Cloud Computing" by Ronald L. Krutz for in-depth knowledge.</li>
+                <li><strong>Interactive Tools</strong>: Use demo tools and resources from cloud security providers like <a href="https://aws.amazon.com/iam/" target="_blank">AWS IAM</a> and <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">Microsoft Azure Security Center</a> for hands-on practice.</li>
+                <li><strong>Cyber Security News</strong>: Stay updated with the latest trends and developments in cloud security through sources like <a href="https://www.darkreading.com/" target="_blank">Dark Reading</a> and <a href="https://www.scmagazine.com/" target="_blank">SC Magazine</a>.</li>
+                <li><strong>Professional Organizations</strong>: Join organizations such as <a href="https://www.isc2.org/" target="_blank">(ISC)²</a> and <a href="https://www.isaca.org/" target="_blank">ISACA</a> for additional resources and certifications in cloud security.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Cloud security is essential for protecting data, applications, and services in cloud environments. By implementing strong security practices and leveraging advanced tools, organizations can safeguard their cloud resources, meet compliance requirements, and ensure operational continuity. Understanding and addressing the key components of cloud security helps mitigate risks and enhance overall security posture.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

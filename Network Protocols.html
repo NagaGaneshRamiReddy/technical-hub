@@ -1,0 +1,482 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> Cyber Security</title>
+ 
+     
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Cyber Security
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to Cyber Security</h3>
+        <a href="Introduction to Cyber Security.html">Introduction to Cyber Security</a>
+        <ul>
+            <li><a href="What is Cyber Security.html">What is Cyber Security?</a></li>
+            <li><a href="History of Cyber Security.html">History of Cyber Security</a></li>
+            <li><a href="Importance of Cyber Security.html">Importance of Cyber Security</a></li>
+            <li>
+                <a href="Types of Cyber Threats.html">Types of Cyber Threats</a>
+                <ul>
+                    <li><a href="Malware.html">Malware</a></li>
+                    <li><a href="Phishing.html">Phishing</a></li>
+                    <li><a href="Ransomware.html">Ransomware</a></li>
+                    <li><a href="Social Engineering.html">Social Engineering</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Network Security</h3>
+        <a href="Network Security.html">Network Security</a>
+        <ul>
+            <li><a href="Introduction to Networks.html">Introduction to Networks</a></li>
+            <li><a href="Network Protocols.html">Network Protocols</a></li>
+            <li><a href="Firewalls.html">Firewalls</a></li>
+            <li><a href="Intrusion Detection Systems (IDS).html">Intrusion Detection Systems (IDS)</a></li>
+            <li><a href="Virtual Private Networks (VPN).html">Virtual Private Networks (VPN)</a></li>
+        </ul>
+    
+        <h3>Cryptography</h3>
+        <a href="Cryptography.html">Cryptography</a>
+        <ul>
+            <li><a href="Introduction to Cryptography.html">Introduction to Cryptography</a></li>
+            <li><a href="Symmetric Encryption.html">Symmetric Encryption</a></li>
+            <li><a href="Asymmetric Encryption.html">Asymmetric Encryption</a></li>
+            <li><a href="Hash Functions.html">Hash Functions</a></li>
+            <li><a href="Digital Signatures.html">Digital Signatures</a></li>
+            <li><a href="Public Key Infrastructure (PKI).html">Public Key Infrastructure (PKI)</a></li>
+        </ul>
+    
+        <h3>Application Security</h3>
+        <a href="Application Security.html">Application Security</a>
+        <ul>
+            <li><a href="Secure Coding Practices.html">Secure Coding Practices</a></li>
+            <li><a href="Web Application Security.html">Web Application Security</a></li>
+            <li><a href="Mobile Application Security.html">Mobile Application Security</a></li>
+            <li><a href="Database Security.html">Database Security</a></li>
+            <li><a href="Security Testing.html">Security Testing</a></li>
+        </ul>
+    
+        <h3>Endpoint Security</h3>
+        <a href="Endpoint Security.html">Endpoint Security</a>
+        <ul>
+            <li><a href="Antivirus and Anti-Malware.html">Antivirus and Anti-Malware</a></li>
+            <li><a href="Endpoint Detection and Response (EDR).html">Endpoint Detection and Response (EDR)</a></li>
+            <li><a href="Patch Management.html">Patch Management</a></li>
+            <li><a href="Device Encryption.html">Device Encryption</a></li>
+            <li><a href="Mobile Device Security.html">Mobile Device Security</a></li>
+        </ul>
+    
+        <h3>Incident Response and Management</h3>
+        <a href="Incident Response and Management.html">Incident Response and Management</a>
+        <ul>
+            <li><a href="Incident Response Planning.html">Incident Response Planning</a></li>
+            <li><a href="Incident Detection and Analysis.html">Incident Detection and Analysis</a></li>
+            <li><a href="Containment, Eradication, and Recovery.html">Containment, Eradication, and Recovery</a></li>
+            <li><a href="Post-Incident Activities.html">Post-Incident Activities</a></li>
+            <li><a href="Forensics.html">Forensics</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics Cyber Security.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Penetration Testing.html">Penetration Testing</a></li>
+            <li><a href="Ethical Hacking.html">Ethical Hacking</a></li>
+            <li><a href="Cyber Threat Intelligence.html">Cyber Threat Intelligence</a></li>
+            <li><a href="Cloud Security.html">Cloud Security</a></li>
+            <li><a href="IoT Security.html">IoT Security</a></li>
+            <li><a href="AI in Cyber Security.html">AI in Cyber Security</a></li>
+        </ul>
+    </div>
+   
+    
+    
+
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Introduction to Networks.html";
+    }
+    function goNext() {
+        window.location.href = "Firewalls.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Network Protocols</div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>What are Network Protocols ?</h2>
+        <p>Network protocols are a set of rules and standards that define how data is transmitted, received, and processed over a network. They ensure that devices and applications can communicate effectively, providing a common language for data exchange. Protocols are essential for establishing connections, managing data flow, and ensuring reliable and secure communication across networks.</p>
+
+        <h2>Key Functions of Network Protocols</h2>
+        <ul>
+            <li><strong>Data Formatting</strong>: Protocols define how data is formatted and structured for transmission, ensuring that data sent by one device can be correctly interpreted by another.</li>
+            <li><strong>Data Transmission</strong>: They specify the methods for data transmission, including how data packets are sent, routed, and reassembled.</li>
+            <li><strong>Error Detection and Correction</strong>: Protocols include mechanisms for detecting and correcting errors that may occur during data transmission, ensuring data integrity.</li>
+            <li><strong>Flow Control</strong>: They manage the pace at which data is transmitted to prevent network congestion and ensure efficient communication.</li>
+            <li><strong>Security</strong>: Protocols implement security measures to protect data from unauthorized access and tampering, ensuring privacy and security during transmission.</li>
+        </ul>
+
+        <h2>Common Network Protocols</h2>
+        <ul>
+            <li><strong>Transmission Control Protocol (TCP)</strong>: A connection-oriented protocol that ensures reliable and orderly delivery of data between devices. It breaks data into packets, sends them, and ensures they are correctly reassembled. Example: Used for email transmission and web browsing.</li>
+            <li><strong>Internet Protocol (IP)</strong>: Responsible for addressing and routing packets of data so that they can travel across networks and reach the correct destination. IP addresses identify devices on a network. Example: IPv4 and IPv6.</li>
+            <li><strong>Hypertext Transfer Protocol (HTTP)</strong>: A protocol used for transferring web pages and other resources on the internet. It operates over TCP and is the foundation of data communication on the World Wide Web. Example: Accessing websites through web browsers.</li>
+            <li><strong>File Transfer Protocol (FTP)</strong>: A protocol used to transfer files between computers over a network. It allows users to upload, download, and manage files on a remote server. Example: Uploading files to a website’s server.</li>
+            <li><strong>Post Office Protocol (POP3)</strong>: A protocol used by email clients to retrieve emails from a mail server. It downloads emails to the client’s device and typically removes them from the server. Example: Accessing email from a desktop email client.</li>
+            <li><strong>Simple Mail Transfer Protocol (SMTP)</strong>: A protocol used for sending emails from a client to a server or between servers. It handles the transmission of email messages. Example: Sending emails through an email service provider.</li>
+            <li><strong>Dynamic Host Configuration Protocol (DHCP)</strong>: A protocol that automatically assigns IP addresses and other network configuration settings to devices on a network, simplifying network management. Example: Assigning IP addresses to devices in a home network.</li>
+            <li><strong>Domain Name System (DNS)</strong>: A protocol that translates human-readable domain names (e.g., www.example.com) into IP addresses that computers use to identify each other on the network. Example: Resolving a website's domain name to an IP address.</li>
+            <li><strong>Secure Sockets Layer (SSL)/Transport Layer Security (TLS)</strong>: Protocols that provide secure encryption for data transmitted over networks, ensuring privacy and security. Example: Securing online transactions and communications.</li>
+        </ul>
+
+        <h2>Importance of Network Protocols</h2>
+        <ul>
+            <li><strong>Standardization</strong>: Protocols ensure that different devices and systems can communicate and work together by following standardized rules and formats.</li>
+            <li><strong>Reliability</strong>: They provide mechanisms for ensuring reliable data transmission, including error detection, correction, and retransmission if needed.</li>
+            <li><strong>Efficiency</strong>: Protocols manage data flow and congestion, optimizing network performance and preventing data loss or delays.</li>
+            <li><strong>Security</strong>: By implementing encryption and authentication, protocols protect data from unauthorized access and cyber threats, ensuring secure communication.</li>
+            <li><strong>Interoperability</strong>: Protocols enable devices from different manufacturers and systems to work together, facilitating seamless communication and data exchange.</li>
+        </ul>
+
+        <div class="resources">
+            <h2>Additional Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Learn about network protocols through courses on <a href="https://www.udemy.com/" target="_blank">Udemy</a> and <a href="https://www.coursera.org/" target="_blank">Coursera</a>.</li>
+                <li><strong>Books and Articles</strong>: Read books such as "Computer Networking: A Top-Down Approach" by Kurose and Ross, and articles from <a href="https://www.networkworld.com/" target="_blank">Network World</a> for more detailed information.</li>
+                <li><strong>Interactive Tools</strong>: Use network simulation tools like <a href="https://www.gns3.com/" target="_blank">GNS3</a> and <a href="https://www.packettracer.org/" target="_blank">Cisco Packet Tracer</a> to explore and experiment with different protocols.</li>
+                <li><strong>Cyber Security News</strong>: Stay updated with news related to network protocols and security from sources like <a href="https://www.bbc.com/news/technology" target="_blank">BBC Technology</a> and <a href="https://www.scmagazine.com/" target="_blank">SC Magazine</a>.</li>
+                <li><strong>Professional Organizations</strong>: Join organizations like <a href="https://www.isc2.org/" target="_blank">(ISC)²</a> and <a href="https://www.sans.org/" target="_blank">SANS Institute</a> for additional resources and certifications related to network protocols and security.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Network protocols are fundamental to the functioning of networks, defining the rules for data communication and ensuring that devices can exchange information reliably and securely. Understanding key protocols and their roles helps in configuring, managing, and securing network communications effectively.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Rust Proagramming Language</title>
+   
+   
+   
+    <head>
+    
+        <body class="body">
+ 
+            <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+            
+                <div id="main" class="main">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                
+                    <button class="openbtn homebtn" onclick="goHome()">
+                        &#8962; Home
+                    </button>
+                    <button class="openbtn compbtn" onclick="gocomp()">
+                        <i class="fas fa-code"></i> Rust Compiler
+                    </button>
+                    <button class="openbtn videobtn" onclick="govideo()">
+                        <i class="fas fa-video"></i> Video
+                    </button>
+                    <button class="openbtn labs" onclick="goprojects()">
+                   
+                        <i class="fas fa-folder-open"></i> Projects
+                    </button>
+                    <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                        <i class="fas fa-user-tie"></i> Interview Preparation
+                    </button>
+                    <button class="openbtn quizbtn" onclick="goquizpro()">
+                        <i class="fas fa-question-circle"></i> Rust Quiz
+                    </button>
+                </div></div>
+            </header>
+            
+            
+            
+            
+            
+            
+          
+          
+              
+               
+              
+        
+              
+             <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+                  
+                    
+                     
+        
+                </div>
+            </header>
+            <br><br><br>
+            
+            <div id="mySidebar" class="sidebar">
+                <!-- Top Box with Icon and Title -->
+                <div class="top-box">
+                  
+                    <i class="fab fa-rust" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+                    <h2 class="jk">Rust Tutorial</h2>
+                </div>
+            
+                <!-- Close button and sidebar content -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Rust.html" target="_blank"><b class="b12">Rust Roadmap</b></a>   
+        <ul>
+            <a href="Introduction to Rust.html">Introduction to Rust</a>
+            <li><a href="What is Rust.html">What is Rust?</a></li>
+            <li><a href="Rust Features.html">Rust Features</a></li>
+            <li><a href="Rust Installation.html">Rust Installation</a></li>
+            <li><a href="First Rust Program.html">First Rust Program</a></li>
+            <li>
+               <h3> Control Statements</h3>
+                <ul>
+                    <li><a href="Rust if-else.html">Rust if-else</a></li>
+                    <li><a href="Rust if in a let.html">Rust if in a let</a></li>
+                    <li><a href="Rust Loop.html">Rust Loop</a></li>
+                    <li><a href="Rust While Loop.html">Rust While Loop</a></li>
+                    <li><a href="Rust For Loop.html">Rust For Loop</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Ownership</h3>
+                <ul>
+                    <li><a href="What is Ownership.html">What is Ownership?</a></li>
+                    <li><a href="Rust References & Borrowing.html">References & Borrowing</a></li>
+                    <li><a href="Rust Slices.html">Slices</a></li>
+                    <li><a href="Rust Structs.html">Structs</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Enums</h3>
+                <ul>
+                    <li><a href="What is enum.html">What is Enum?</a></li>
+                    <li><a href="Match Operator.html">Match Operator</a></li>
+                    <li><a href="If Let Operator.html">If Let Operator</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Modules</h3>
+                <ul>
+                    <li><a href="Rust Filesystem.html">Filesystem</a></li>
+                    <li><a href="Controlling visibility with pub.html">Controlling Visibility with pub</a></li>
+                    <li><a href="Rust use Keyword.html">use Keyword</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Collections</h3>
+                <ul>
+                    <li><a href="Rust Vectors.html">Vectors</a></li>
+                    <li><a href="Rust Strings.html">Strings</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Error Handling</h3>
+                <ul>
+                    <li><a href="Unrecoverable Errors.html">Unrecoverable Errors</a></li>
+                    <li><a href="Recoverable Errors.html">Recoverable Errors</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Generics & Traits</h3>
+                <ul>
+                    <li><a href="Rust Generics.html">Generics</a></li>
+                    <li><a href="Rust Traits.html">Traits</a></li>
+                    <li><a href="Rust Lifetime.html">Lifetime</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Smart Pointers</h3>
+                <ul>
+                    <li><a href="Smart Pointers.html">Smart Pointers</a></li>
+                    <li><a href="Rust Box.html">Box&lt;T&gt;</a></li>
+                    <li><a href="Rust Deref Trait.html">Deref Trait</a></li>
+                    <li><a href="Rust Drop Trait.html">Drop Trait</a></li>
+                    <li><a href="Rust Rc(T).html">Rc&lt;T&gt;</a></li>
+                    <li><a href="Rust RefCell(T).html">RefCell&lt;T&gt;</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Rust_interviews.html";
+}
+function goprojects() {
+    window.location.href = "Rust_projects.html";
+}
+function goquizpro() {
+    window.location.href = "Rust_quize.html";
+}
+function gocomp() {
+    window.location.href = "Rust Compiler.html";
+}
+   
+    function goPrevious() {
+        window.location.href = "Rust References & Borrowing.html";
+    }
+    function goNext() {
+        window.location.href = "Rust Structs.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-rust" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">Rust Tutorial</h2>
+            <div class="div1">Rust Slices</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Understanding Slices in Rust</h2>
+<p>Slices in Rust are a way to reference a contiguous sequence of elements in a collection, such as arrays or vectors, without taking ownership of the data. They provide a view into a portion of a collection and are useful for working with parts of data structures.</p>
+
+<h2>What is a Slice?</h2>
+<p>A slice is a reference to a contiguous sequence of elements. It is defined with a type syntax of <code>&[T]</code>, where <code>T</code> is the type of elements in the slice. Slices can be created from arrays or vectors:</p>
+
+<div class="example">
+    <pre><code>fn main() {
+    let arr = [1, 2, 3, 4, 5];
+    let slice = &arr[1..4]; // A slice of the array
+
+    println!("Slice: {:?}", slice); // Outputs: [2, 3, 4]
+}</code></pre>
+</div>
+
+<h2>Creating Slices</h2>
+<p>You can create a slice from any contiguous sequence of elements. Here are a couple of examples:</p>
+
+<div class="example">
+    <pre><code>fn main() {
+    let vec = vec![10, 20, 30, 40, 50];
+    let slice_from_vec = &vec[0..3]; // Slice of the first three elements
+    let slice_from_arr = &[100, 200, 300, 400][1..3]; // Slice from an array
+
+    println!("Slice from vector: {:?}", slice_from_vec); // Outputs: [10, 20, 30]
+    println!("Slice from array: {:?}", slice_from_arr); // Outputs: [200, 300]
+}</code></pre>
+</div>
+
+<h2>Using Slices as Function Parameters</h2>
+<p>Slices are often used as parameters in functions to allow passing parts of collections without transferring ownership:</p>
+
+<div class="example">
+    <pre><code>fn main() {
+    let data = [1, 2, 3, 4, 5];
+    print_slice(&data[1..4]); // Passing a slice
+
+    let vec = vec![6, 7, 8, 9];
+    print_slice(&vec[0..2]); // Passing another slice
+}
+
+fn print_slice(slice: &[i32]) {
+    for &item in slice {
+        println!("{}", item);
+    }
+}</code></pre>
+</div>
+
+
+
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://doc.rust-lang.org/book/ch04-03-slices.html" target="_blank">The Rust Programming Language: Slices</a></li>
+        <li><a href="https://doc.rust-lang.org/rust-by-example/slice.html" target="_blank">Rust by Example: Slices</a></li>
+        <li><a href="https://doc.rust-lang.org/rust-by-example/trait/iter.html" target="_blank">Rust by Example: Iterators</a></li>
+    </ul>
+</div>
+<h2>Summary</h2>
+<p>Slices provide a way to work with sections of arrays and vectors in Rust without taking ownership of the data. They are lightweight and efficient, making them an essential tool for handling collections in a safe and performant manner.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>

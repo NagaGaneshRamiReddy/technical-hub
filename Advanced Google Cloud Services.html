@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Google Cloud Course</title>
+    
+    
+</head>
+<body class="body">
+
+  
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> GCP Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> GCP Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            
+            
+            <i class="fab fa-google" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> GCP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="Google cloudRoadmaps.html" target="_blank"><b class="b12">GCP Roadmap</b></a>
+    
+        <ul><a href="Introduction to Google Cloud.html">Introduction to Google Cloud</a>
+            <li><a href="Overview of Google Cloud.html">Overview of Google Cloud</a></li>
+            <li><a href="Global Infrastructure Google Cloud.html">Global Infrastructure</a></li>
+            <li><a href="Core Services and Use Cases Google Cloud.html">Core Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>Google Cloud Foundations</h3>
+        <a href="Google Cloud Foundations.html">Google Cloud Foundations</a>
+        <ul>
+            <li><a href="Google Cloud Console.html">Google Cloud Console</a></li>
+            <li><a href="Cloud Shell and Cloud SDK.html">Cloud Shell and Cloud SDK</a></li>
+            <li><a href="Identity and Access Management (IAM).html">Identity and Access Management (IAM)</a></li>
+            <li><a href="Billing and Pricing in Google Cloud.html">Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core Google Cloud Services</h3>
+        <a href="Core Google Cloud Services.html">Core Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services Google cloud.html">Compute Services</a>
+                <ul>
+                    <li><a href="Compute Engine.html">Compute Engine</a></li>
+                    <li><a href="App Engine.html">App Engine</a></li>
+                    <li><a href="Kubernetes Engine (GKE).html">Kubernetes Engine (GKE)</a></li>
+                    <li><a href="Cloud Functions.html">Cloud Functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services in Google cloud.html">Storage Services</a>
+                <ul>
+                    <li><a href="Cloud Storage.html">Cloud Storage</a></li>
+                    <li><a href="Persistent Disk.html">Persistent Disk</a></li>
+                    <li><a href="Filestore.html">Filestore</a></li>
+                    <li><a href="Cloud SQL.html">Cloud SQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services in Google cloud.html">Database Services</a>
+                <ul>
+                    <li><a href="Cloud Firestore.html">Cloud Firestore</a></li>
+                    <li><a href="Bigtable.html">Bigtable</a></li>
+                    <li><a href="Cloud Spanner.html">Cloud Spanner</a></li>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services Google Cloud.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud) google cloud.html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Cloud Load Balancing.html">Cloud Load Balancing</a></li>
+                    <li><a href="Cloud CDN.html">Cloud CDN</a></li>
+                    <li><a href="Cloud Interconnect.html">Cloud Interconnect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Google Cloud Services</h3>
+        <a href="Advanced Google Cloud Services.html">Advanced Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="AI and Machine Learning Google Cloud.html">AI and Machine Learning</a>
+                <ul>
+                    <li><a href="AI Platform.html">AI Platform</a></li>
+                    <li><a href="AutoML.html">AutoML</a></li>
+                    <li><a href="Vision AI.html">Vision AI</a></li>
+                    <li><a href="Dialogflow.html">Dialogflow</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services Google.html">Analytics Services</a>
+                <ul>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                    <li><a href="Dataflow.html">Dataflow</a></li>
+                    <li><a href="pub sub.html">Pub/Sub</a></li>
+                    <li><a href="Dataproc.html">Dataproc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services Google.html">Security Services</a>
+                <ul>
+                    <li><a href="Cloud IAM.html">Cloud IAM</a></li>
+                    <li><a href="Cloud Armor.html">Cloud Armor</a></li>
+                    <li><a href="Security Command Center.html">Security Command Center</a></li>
+                    <li><a href="Cloud Key Management Service (KMS).html">Cloud Key Management Service (KMS)</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on Google Cloud</h3>
+        <a href="DevOps on Google Cloud.html">DevOps on Google Cloud</a>
+        <ul>
+            <li>
+                <a href="Infrastructure as Code (IaC) Google.html">Infrastructure as Code (IaC)</a>
+                <ul>
+                    <li><a href="Deployment Manager.html">Deployment Manager</a></li>
+                    <li><a href="Terraform on Google Cloud.html">Terraform on Google Cloud</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="CI-CD Pipeline google.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Cloud Build.html">Cloud Build</a></li>
+                    <li><a href="Container Registry.html">Container Registry</a></li>
+                    <li><a href="Artifact Registry.html">Artifact Registry</a></li>
+                    <li><a href="Cloud Source Repositories.html">Cloud Source Repositories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Google.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Cloud Monitoring.html">Cloud Monitoring</a></li>
+                    <li><a href="Cloud Logging.html">Cloud Logging</a></li>
+                    <li><a href="Cloud Trace.html">Cloud Trace</a></li>
+                    <li><a href="Cloud Debugger.html">Cloud Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer Google.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="Migrate for Compute Engine.html">Migrate for Compute Engine</a></li>
+            <li><a href="Database Migration Service Google.html">Database Migration Service</a></li>
+            <li><a href="Transfer Appliance.html">Transfer Appliance</a></li>
+            <li><a href="Storage Transfer Service.html">Storage Transfer Service</a></li>
+        </ul>
+    
+    </div>
+    
+   
+   
+   
+    
+
+    
+    
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "GCP_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "GCP_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "GCP_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "GCP_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "Cloud Interconnect.html";
+    }
+    function goNext() {
+        window.location.href = "AI and Machine Learning google cloud.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-google" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">GCP Tutorial</h2>
+<div class="div1">Google Cloud  Advanced Services</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Overview</h2>
+        <p>Google Cloud offers a range of advanced services designed to meet complex and specialized requirements across various industries. These services provide capabilities such as artificial intelligence, machine learning, data analytics, and more, allowing organizations to leverage Google's cutting-edge technologies for enhanced business operations and innovation.</p>
+
+        <h2>Key Advanced Services</h2>
+        <ul>
+            <li><strong>Google Cloud AI and Machine Learning</strong>
+                <ul>
+                    <li><strong>AI Platform:</strong> A comprehensive suite for building, training, and deploying machine learning models. Includes tools for data preparation, model training, and deployment.</li>
+                    <li><strong>AutoML:</strong> Allows users to build custom machine learning models with minimal coding by automating model training and tuning.</li>
+                    <li><strong>Vertex AI:</strong> Provides a unified AI platform to manage the entire machine learning lifecycle, from data preparation to model deployment.</li>
+                </ul>
+            </li>
+            <li><strong>Big Data and Analytics</strong>
+                <ul>
+                    <li><strong>BigQuery:</strong> A serverless data warehouse that enables real-time analytics on large datasets with high performance and scalability.</li>
+                    <li><strong>Dataproc:</strong> A managed Hadoop and Spark service for processing large-scale data with ease and speed.</li>
+                    <li><strong>Dataflow:</strong> A fully managed service for stream and batch data processing that allows you to build data pipelines for real-time and batch processing.</li>
+                </ul>
+            </li>
+            <li><strong>Security and Identity</strong>
+                <ul>
+                    <li><strong>Cloud Security Command Center:</strong> Provides a comprehensive view of your security posture, helping you detect and respond to vulnerabilities and threats.</li>
+                    <li><strong>Identity-Aware Proxy (IAP):</strong> Controls access to your applications and VMs based on user identity and context, enhancing security without requiring a VPN.</li>
+                    <li><strong>Cloud Armor:</strong> Protects applications from DDoS attacks and other threats with customizable security policies and rules.</li>
+                </ul>
+            </li>
+            <li><strong>Internet of Things (IoT)</strong>
+                <ul>
+                    <li><strong>Cloud IoT Core:</strong> Manages IoT devices, securely connects them to Google Cloud, and processes data from these devices for analysis.</li>
+                    <li><strong>Cloud IoT Edge:</strong> Extends Google Cloud’s IoT capabilities to edge devices for local data processing and analysis.</li>
+                </ul>
+            </li>
+            <li><strong>Application Modernization</strong>
+                <ul>
+                    <li><strong>Anthos:</strong> A hybrid and multi-cloud platform that enables you to build, deploy, and manage applications across on-premises and cloud environments.</li>
+                    <li><strong>Cloud Run:</strong> A fully managed compute platform that allows you to run containerized applications without managing infrastructure.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Benefits of Advanced Services</h2>
+        <ul>
+            <li><strong>Innovation:</strong> Leverage cutting-edge technologies in AI, machine learning, and big data to drive innovation and stay competitive.</li>
+            <li><strong>Scalability:</strong> Easily scale applications and services to handle large volumes of data and traffic with Google’s global infrastructure.</li>
+            <li><strong>Efficiency:</strong> Improve operational efficiency with fully managed services that reduce the complexity of infrastructure management.</li>
+            <li><strong>Security:</strong> Benefit from Google Cloud’s robust security features and tools to protect your data and applications.</li>
+            <li><strong>Flexibility:</strong> Choose from a variety of services and tools to meet your specific needs and integrate with existing systems.</li>
+        </ul>
+
+        <h2>Getting Started with Advanced Services</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://cloud.google.com/products/ai">Google Cloud AI and Machine Learning</a> - Explore AI and machine learning services and tools.</li>
+                <li><a href="https://cloud.google.com/bigquery">BigQuery Documentation</a> - Learn about BigQuery and its capabilities for big data analytics.</li>
+                <li><a href="https://cloud.google.com/dataproc">Dataproc Documentation</a> - Guide for using Dataproc for large-scale data processing.</li>
+                <li><a href="https://cloud.google.com/security-command-center">Cloud Security Command Center</a> - Overview of security and compliance features.</li>
+                <li><a href="https://cloud.google.com/anthos">Anthos Documentation</a> - Information on Anthos for hybrid and multi-cloud application management.</li>
+                <li><a href="https://cloud.google.com/run">Cloud Run Documentation</a> - Learn how to deploy and manage containerized applications with Cloud Run.</li>
+            </ul>
+        </div>
+
+        <h2>Free Resources</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://cloud.google.com/training">Google Cloud Training</a> - Free courses and labs on advanced Google Cloud services.</li>
+                <li><a href="https://www.coursera.org/">Coursera</a> - Search for courses on advanced topics in Google Cloud.</li>
+                <li><a href="https://www.qwiklabs.com/">Qwiklabs</a> - Hands-on labs for practical experience with advanced Google Cloud services.</li>
+                <li><a href="https://www.youtube.com/user/googlecloudplatform">YouTube Tutorials</a> - Video tutorials and webinars on advanced Google Cloud services.</li>
+            </ul>
+        </div>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interview Questions</title>
+    <style>
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            padding: 20px;
+            color: #fff;
+        }
+
+        /* Title section */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3rem;
+            color: #f1faee;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Container for interview questions */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1s ease;
+        }
+
+        /* Each question styling */
+        .question {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .question-title {
+            font-size: 1.5rem;
+            padding: 10px;
+            background: #1d3557;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .question-title:hover {
+            background: #457b9d;
+        }
+
+        .question-title span {
+            transition: transform 0.3s ease;
+        }
+
+        .answer {
+            display: none;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f1faee;
+            color: #1d3557;
+            border-radius: 10px;
+        }
+
+        .code-example {
+            background-color: #a8dadc;
+            padding: 10px;
+            border-radius: 5px;
+            color: #000;
+            margin-top: 10px;
+        }
+
+        /* Animation for fading in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animation for sliding in */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Arrow rotation */
+        .rotate {
+            transform: rotate(90deg);
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .question-title {
+                font-size: 1.3rem;
+            }
+
+            .answer {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Interview Questions</h1>
+    <div class="container">
+
+        <!-- Question 1 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                CSS stands for Cascading Style Sheets. It is used to style and layout web pages, including the design, layout, and variations in display for different devices and screen sizes.
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What are the different ways to apply CSS to a web page?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                CSS can be applied to HTML in three different ways:
+                <ol>
+                    <li><b>Inline CSS:</b> Using the <code>style</code> attribute directly inside HTML elements.</li>
+                    <li><b>Internal CSS:</b> Using a <code>&lt;style&gt;</code> element within the <code>&lt;head&gt;</code> of an HTML document.</li>
+                    <li><b>External CSS:</b> Linking to an external CSS file using the <code>&lt;link&gt;</code> element.</li>
+                </ol>
+                <div class="code-example">
+                    Example of inline CSS:<br>
+                    <code>&lt;p style="color: red;"&gt;This is red text.&lt;/p&gt;</code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the CSS box model?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The CSS box model is a box that wraps around every HTML element. It consists of: 
+                <ul>
+                    <li><b>Content:</b> The actual content of the box, such as text or images.</li>
+                    <li><b>Padding:</b> Clears an area around the content inside the box.</li>
+                    <li><b>Border:</b> A border around the padding (if any is defined).</li>
+                    <li><b>Margin:</b> Clears an area outside the border, creating space between elements.</li>
+                </ul>
+                <div class="code-example">
+                    Example:<br>
+                    <pre>
+.element {
+    width: 200px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 20px;
+}</pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between classes and IDs in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <b>Classes</b> are reusable and can be applied to multiple elements, whereas <b>IDs</b> must be unique within a page. In CSS, classes are prefixed with a dot <code>.</code> and IDs are prefixed with a hash <code>#</code>.
+                <div class="code-example">
+                    Example:<br>
+                    <code>.example-class { color: blue; }</code><br>
+                    <code>#example-id { color: red; }</code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between padding and margin?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <b>Padding</b> is the space inside the element, between the content and the border. <b>Margin</b> is the space outside the element, creating distance between the element and its neighbors.
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is Flexbox in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                Flexbox is a layout model in CSS that makes it easy to align elements vertically and horizontally, distribute space, and handle dynamic resizing of elements within a container. It uses properties like <code>justify-content</code>, <code>align-items</code>, and <code>flex-direction</code>.
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is CSS Grid?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                CSS Grid is a powerful layout system that allows you to design complex web layouts easily by using rows and columns. It is more flexible than Flexbox when it comes to creating two-dimensional layouts.
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What are pseudo-classes in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                A pseudo-class is used to define a special state of an element. For example, <code>:hover</code> applies a style when the user hovers over an element.
+                <div class="code-example">
+                    Example:<br>
+                    <code>a:hover { color: red; }</code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What are pseudo-elements in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                A pseudo-element is used to style specific parts of an element. For example, <code>::before</code> can insert content before an element's content.
+                <div class="code-example">
+                    Example:<br>
+                    <code>p::before { content: "Prefix"; }</code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between block, inline, and inline-block elements?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <ul>
+                    <li><b>Block elements:</b> Take up the full width and start on a new line (e.g., <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>).</li>
+                    <li><b>Inline elements:</b> Take up only the space their content needs and do not start on a new line (e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>).</li>
+                    <li><b>Inline-block elements:</b> Behave like inline elements but respect width and height properties.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How can you center an element in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                There are different ways to center elements horizontally and vertically. Here is a common method using Flexbox:
+                <div class="code-example">
+                    Example:<br>
+                    <pre>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}</pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between relative, absolute, fixed, and sticky positioning?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <ul>
+                    <li><b>Relative:</b> Positioned relative to its normal position in the document flow.</li>
+                    <li><b>Absolute:</b> Positioned relative to its nearest positioned ancestor (if any), otherwise the document body.</li>
+                    <li><b>Fixed:</b> Positioned relative to the browser window, staying in the same place even when the page is scrolled.</li>
+                    <li><b>Sticky:</b> Toggles between relative and fixed positioning depending on the user's scroll position.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How does the z-index property work in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>z-index</code> property determines the stack order of elements. Elements with a higher <code>z-index</code> appear in front of elements with a lower <code>z-index</code>. The property only works on positioned elements (relative, absolute, fixed).
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between CSS transition and animation?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <ul>
+                    <li><b>Transitions:</b> Changes an element’s property values over a specified duration. It requires a trigger such as hover or focus.</li>
+                    <li><b>Animations:</b> Allow more complex changes and can be looped. You can define multiple keyframes to control the state of an element at different stages.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Continue with more CSS questions -->
+
+        <!-- Question 15 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How do media queries work in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                Media queries are used to apply different styles to different devices or screen sizes. You can specify different CSS rules for different breakpoints using the <code>@media</code> rule.
+                <div class="code-example">
+                    Example:<br>
+                    <code>
+                    @media (max-width: 768px) {
+                        body { font-size: 14px; }
+                    }
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What are CSS preprocessors like Sass or Less?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                CSS preprocessors like Sass or Less add features that don’t exist in regular CSS, such as variables, nested rules, and mixins. The preprocessor syntax is compiled into standard CSS before being used in a webpage.
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between rem and em units?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <b>rem:</b> Refers to the font-size of the root element (usually <code>html</code>).<br>
+                <b>em:</b> Refers to the font-size of the current element's parent. It is relative to the element's inherited size.
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How do you create a responsive design?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                Responsive design is created by using flexible grids, layouts, images, and CSS media queries. It ensures that the webpage adjusts to different screen sizes and devices.
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the :nth-child() selector?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>:nth-child()</code> selector allows you to style elements based on their position in a parent element, such as styling every odd or even child.
+                <div class="code-example">
+                    Example:<br>
+                    <code>
+                    li:nth-child(odd) { background-color: lightgray; }
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the display property in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>display</code> property controls the layout of an element. Common values include <code>block</code>, <code>inline</code>, <code>flex</code>, and <code>grid</code>.
+            </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the calc() function in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>calc()</code> function allows you to perform calculations to determine CSS property values. For example, you can dynamically calculate width or margins.
+                <div class="code-example">
+                    Example:<br>
+                    <code>
+                    width: calc(100% - 50px);
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How do you make a CSS rule apply only to a specific screen size?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                You can use media queries to apply CSS rules based on the screen size or device type. For example:
+                <div class="code-example">
+                    <code>
+                    @media (min-width: 768px) {
+                        .container { width: 70%; }
+                    }
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the ::after pseudo-element?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>::after</code> pseudo-element inserts content after an element's content. It's commonly used for adding decorative elements or icons.
+                <div class="code-example">
+                    Example:<br>
+                    <code>
+                    p::after { content: "*"; color: red; }
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What are vendor prefixes and why are they used?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                Vendor prefixes (like <code>-webkit-</code>, <code>-moz-</code>, <code>-o-</code>, <code>-ms-</code>) are used to ensure CSS works in specific browsers that don't fully support new CSS features yet.
+            </div>
+        </div>
+
+        <!-- Question 25 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between visibility: hidden and display: none?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                <ul>
+                    <li><b>visibility: hidden:</b> The element remains in the layout but is invisible.</li>
+                    <li><b>display: none:</b> The element is removed from the layout entirely, as if it doesn't exist.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Question 26 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How do you optimize CSS for better performance?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                Some ways to optimize CSS include:
+                <ul>
+                    <li>Minifying CSS files.</li>
+                    <li>Using shorthand properties where possible.</li>
+                    <li>Combining multiple CSS files into one to reduce HTTP requests.</li>
+                    <li>Using efficient selectors and reducing specificity.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Question 27 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the content property in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>content</code> property is used with pseudo-elements like <code>::before</code> and <code>::after</code> to insert generated content into an element. It can be text, images, or symbols.
+            </div>
+        </div>
+
+        <!-- Question 28 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is specificity in CSS?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                Specificity is a rule in CSS that determines which styles are applied to an element when there are conflicting styles. It's calculated based on the types of selectors used (inline, ID, class, or element).
+            </div>
+        </div>
+
+        <!-- Question 29 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How do you target elements with CSS that don’t have a specific class or ID?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                You can target elements without classes or IDs by using element selectors (e.g., <code>div</code>, <code>p</code>) or pseudo-classes (e.g., <code>:nth-child()</code>, <code>:first-of-type</code>).
+            </div>
+        </div>
+
+        <!-- Question 30 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between hover and focus pseudo-classes?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>:hover</code> pseudo-class applies when the user hovers over an element with their mouse. The <code>:focus</code> pseudo-class applies when an element gains focus, such as when a user clicks on an input field.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript for interaction -->
+    <script>
+        // JavaScript to handle toggle for answers
+        const questions = document.querySelectorAll('.question-title');
+
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const arrow = question.querySelector('span:last-child');
+
+                // Toggle answer display
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    arrow.classList.remove('rotate');
+                } else {
+                    answer.style.display = 'block';
+                    arrow.classList.add('rotate');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

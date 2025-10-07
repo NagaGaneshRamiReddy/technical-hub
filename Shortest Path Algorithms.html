@@ -1,0 +1,730 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Breadth-First Search (BFS).html";
+    }
+    function goNext() {
+        window.location.href = "Dijkstra's Algorithm.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1">Shortest path algorithms</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>Shortest path algorithms are used to find the shortest path between nodes in a graph. These algorithms are essential in various applications such as routing and navigation systems, network design, and geographical mapping. Below are some common shortest path algorithms along with their types and uses.</p>
+
+        <h2>Dijkstra's Algorithm</h2>
+        <p>Dijkstra's Algorithm finds the shortest path from a source node to all other nodes in a weighted graph with non-negative weights. It uses a priority queue to efficiently select the next node with the smallest tentative distance.</p>
+        
+        <h3>Implementation in C++</h3>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &ltvector&gt;
+#include &lt;queue&gt;
+
+const int INF = 1e9;
+
+class Graph {
+    int V;
+    std::vector<std::vector<std::pair<int, int>>> adjList;
+
+public:
+    Graph(int V) : V(V), adjList(V) {}
+
+    void addEdge(int u, int v, int w) {
+        adjList[u].push_back({v, w});
+        adjList[v].push_back({u, w}); // For undirected graph
+    }
+
+    void dijkstra(int start) {
+        std::vector<int> dist(V, INF);
+        std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> pq;
+        pq.push({0, start});
+        dist[start] = 0;
+
+        while (!pq.empty()) {
+            int u = pq.top().second;
+            pq.pop();
+
+            for (const auto& neighbor : adjList[u]) {
+                int v = neighbor.first;
+                int weight = neighbor.second;
+
+                if (dist[u] + weight < dist[v]) {
+                    dist[v] = dist[u] + weight;
+                    pq.push({dist[v], v});
+                }
+            }
+        }
+
+        for (int i = 0; i < V; ++i) {
+            std::cout &lt;&lt; "Distance from " &lt;&lt; start &lt;&lt; " to " &lt;&lt; i &lt;&lt; " is " &lt;&lt; (dist[i] == INF ? "INF" : std::to_string(dist[i])) &lt;&lt; std::endl;
+        }
+    }
+};
+
+int main() {
+    Graph g(5);
+    g.addEdge(0, 1, 10);
+    g.addEdge(0, 4, 3);
+    g.addEdge(1, 2, 2);
+    g.addEdge(1, 3, 1);
+    g.addEdge(2, 3, 9);
+    g.addEdge(3, 4, 4);
+    g.dijkstra(0);
+    return 0;
+}
+</code>
+        </pre>
+
+        <h3>Implementation in Python</h3>
+        <pre>
+<code>
+import heapq
+
+INF = float('inf')
+
+class Graph:
+    def __init__(self, vertices):
+        self.V = vertices
+        self.adjList = [[] for _ in range(vertices)]
+
+    def add_edge(self, u, v, w):
+        self.adjList[u].append((v, w))
+        self.adjList[v].append((u, w))  # For undirected graph
+
+    def dijkstra(self, start):
+        dist = [INF] * self.V
+        dist[start] = 0
+        pq = [(0, start)]
+
+        while pq:
+            current_dist, u = heapq.heappop(pq)
+
+            if current_dist > dist[u]:
+                continue
+
+            for neighbor, weight in self.adjList[u]:
+                distance = current_dist + weight
+
+                if distance < dist[neighbor]:
+                    dist[neighbor] = distance
+                    heapq.heappush(pq, (distance, neighbor))
+
+        for i in range(self.V):
+            print(f"Distance from {start} to {i} is {dist[i] if dist[i] != INF else 'INF'}")
+
+# Example usage
+g = Graph(5)
+g.add_edge(0, 1, 10)
+g.add_edge(0, 4, 3)
+g.add_edge(1, 2, 2)
+g.add_edge(1, 3, 1)
+g.add_edge(2, 3, 9)
+g.add_edge(3, 4, 4)
+g.dijkstra(0)
+</code>
+        </pre>
+
+        <h2>Bellman-Ford Algorithm</h2>
+        <p>The Bellman-Ford Algorithm finds the shortest path from a source node to all other nodes in a weighted graph. It works with graphs containing negative weights but cannot handle graphs with negative weight cycles.</p>
+
+        <h3>Implementation in C++</h3>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt<vector&gt;
+
+const int INF = 1e9;
+
+class Graph {
+    int V;
+    std::vector<std::tuple<int, int, int>> edges; // (u, v, w)
+
+public:
+    Graph(int V) : V(V) {}
+
+    void addEdge(int u, int v, int w) {
+        edges.push_back({u, v, w});
+    }
+
+    void bellmanFord(int start) {
+        std::vector<int> dist(V, INF);
+        dist[start] = 0;
+
+        for (int i = 1; i < V; ++i) {
+            for (const auto& [u, v, w] : edges) {
+                if (dist[u] != INF && dist[u] + w < dist[v]) {
+                    dist[v] = dist[u] + w;
+                }
+            }
+        }
+
+        for (const auto& [u, v, w] : edges) {
+            if (dist[u] != INF && dist[u] + w < dist[v]) {
+                std::cout &lt;&lt; "Graph contains a negative weight cycle" &lt;&lt; std::endl;
+                return;
+            }
+        }
+
+        for (int i = 0; i < V; ++i) {
+            std::cout &lt;&lt; "Distance from " &lt;&lt; start &lt;&lt; " to " &lt;&lt; i &lt;&lt; " is " &lt;&lt; (dist[i] == INF ? "INF" : std::to_string(dist[i])) &lt;&lt; std::endl;
+        }
+    }
+};
+
+int main() {
+    Graph g(5);
+    g.addEdge(0, 1, -1);
+    g.addEdge(0, 2, 4);
+    g.addEdge(1, 2, 3);
+    g.addEdge(1, 3, 2);
+    g.addEdge(1, 4, 2);
+    g.addEdge(3, 2, 5);
+    g.addEdge(3, 1, 1);
+    g.addEdge(4, 3, -3);
+    g.bellmanFord(0);
+    return 0;
+}
+</code>
+        </pre>
+
+        <h3>Implementation in Python</h3>
+        <pre>
+<code>
+class Graph:
+    def __init__(self, vertices):
+        self.V = vertices
+        self.edges = []
+
+    def add_edge(self, u, v, w):
+        self.edges.append((u, v, w))
+
+    def bellman_ford(self, start):
+        dist = [float('inf')] * self.V
+        dist[start] = 0
+
+        for _ in range(self.V - 1):
+            for u, v, w in self.edges:
+                if dist[u] != float('inf') and dist[u] + w < dist[v]:
+                    dist[v] = dist[u] + w
+
+        for u, v, w in self.edges:
+            if dist[u] != float('inf') and dist[u] + w < dist[v]:
+                print("Graph contains a negative weight cycle")
+                return
+
+        for i in range(self.V):
+            print(f"Distance from {start} to {i} is {dist[i] if dist[i] != float('inf') else 'INF'}")
+
+# Example usage
+g = Graph(5)
+g.add_edge(0, 1, -1)
+g.add_edge(0, 2, 4)
+g.add_edge(1, 2, 3)
+g.add_edge(1, 3, 2)
+g.add_edge(1, 4, 2)
+g.add_edge(3, 2, 5)
+g.add_edge(3, 1, 1)
+g.add_edge(4, 3, -3)
+g.bellman_ford(0)
+</code>
+        </pre>
+
+        <h2>Floyd-Warshall Algorithm</h2>
+        <p>The Floyd-Warshall Algorithm finds the shortest paths between all pairs of nodes in a weighted graph. It is capable of handling graphs with negative weights and can detect negative weight cycles.</p>
+
+        <h3>Implementation in C++</h3>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt<vector&gt;
+
+const int INF = 1e9;
+
+class Graph {
+    int V;
+    std::vector<std::vector<int>> dist;
+
+public:
+    Graph(int V) : V(V), dist(V, std::vector<int>(V, INF)) {
+        for (int i = 0; i < V; ++i) {
+            dist[i][i] = 0;
+        }
+    }
+
+    void addEdge(int u, int v, int w) {
+        dist[u][v] = w;
+    }
+
+    void floydWarshall() {
+        for (int k = 0; k < V; ++k) {
+            for (int i = 0; i < V; ++i) {
+                for (int j = 0; j < V; ++j) {
+                    if (dist[i][k] != INF && dist[k][j] != INF) {
+                        dist[i][j] = std::min(dist[i][j], dist[i][k] + dist[k][j]);
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < V; ++i) {
+            for (int j = 0; j < V; ++j) {
+                if (dist[i][j] == INF) {
+                    std::cout &lt;&lt; "INF ";
+                } else {
+                    std::cout &lt;&lt; dist[i][j] &lt;&lt; " ";
+                }
+            }
+            std::cout &lt;&lt; std::endl;
+        }
+    }
+};
+
+int main() {
+    Graph g(4);
+    g.addEdge(0, 1, 3);
+    g.addEdge(0, 2, 5);
+    g.addEdge(1, 2, 1);
+    g.addEdge(2, 3, 2);
+    g.addEdge(3, 1, -6);
+    std::cout &lt;&lt; "Shortest path matrix:" &lt;&lt; std::endl;
+    g.floydWarshall();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h3>Implementation in Python</h3>
+        <pre>
+<code>
+class Graph:
+    def __init__(self, vertices):
+        self.V = vertices
+        self.dist = [[float('inf')] * vertices for _ in range(vertices)]
+
+        for i in range(vertices):
+            self.dist[i][i] = 0
+
+    def add_edge(self, u, v, w):
+        self.dist[u][v] = w
+
+    def floyd_warshall(self):
+        for k in range(self.V):
+            for i in range(self.V):
+                for j in range(self.V):
+                    if self.dist[i][k] != float('inf') and self.dist[k][j] != float('inf'):
+                        self.dist[i][j] = min(self.dist[i][j], self.dist[i][k] + self.dist[k][j])
+
+        for row in self.dist:
+            print(' '.join(['INF' if x == float('inf') else str(x) for x in row]))
+
+# Example usage
+g = Graph(4)
+g.add_edge(0, 1, 3)
+g.add_edge(0, 2, 5)
+g.add_edge(1, 2, 1)
+g.add_edge(2, 3, 2)
+g.add_edge(3, 1, -6)
+print("Shortest path matrix:")
+g.floyd_warshall()
+</code>
+        </pre>
+
+        <h2>A* (A-star) Algorithm</h2>
+        <p>The A* Algorithm is an extension of Dijkstra's Algorithm that uses heuristics to improve performance. It finds the shortest path from a start node to a goal node and is commonly used in pathfinding and graph traversal.</p>
+
+        <h3>Implementation in C++</h3>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt<vector&gt;
+#include &lt<queue&gt>
+#include &lt<cmath&gt>
+
+const int INF = 1e9;
+
+class Graph {
+    int V;
+    std::vector<std::vector<std::pair<int, int>>> adjList;
+
+public:
+    Graph(int V) : V(V), adjList(V) {}
+
+    void addEdge(int u, int v, int w) {
+        adjList[u].push_back({v, w});
+    }
+
+    int heuristic(int u, int goal) {
+        // Simple heuristic: Euclidean distance or any other appropriate heuristic can be used.
+        return 0; // For demonstration purposes, this is a placeholder
+    }
+
+    void aStar(int start, int goal) {
+        std::vector<int> gScore(V, INF);
+        std::vector<int> fScore(V, INF);
+        std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> pq;
+
+        gScore[start] = 0;
+        fScore[start] = heuristic(start, goal);
+        pq.push({fScore[start], start});
+
+        while (!pq.empty()) {
+            int u = pq.top().second;
+            pq.pop();
+
+            if (u == goal) {
+                std::cout &lt;&lt; "Path found with cost " &lt;&lt; gScore[u] &lt;&lt; std::endl;
+                return;
+            }
+
+            for (const auto& neighbor : adjList[u]) {
+                int v = neighbor.first;
+                int weight = neighbor.second;
+
+                int tentative_gScore = gScore[u] + weight;
+                if (tentative_gScore < gScore[v]) {
+                    gScore[v] = tentative_gScore;
+                    fScore[v] = gScore[v] + heuristic(v, goal);
+                    pq.push({fScore[v], v});
+                }
+            }
+        }
+
+        std::cout &lt;&lt; "No path found" &lt;&lt; std::endl;
+    }
+};
+
+int main() {
+    Graph g(5);
+    g.addEdge(0, 1, 1);
+    g.addEdge(0, 2, 4);
+    g.addEdge(1, 2, 2);
+    g.addEdge(1, 3, 5);
+    g.addEdge(2, 3, 1);
+    g.addEdge(3, 4, 3);
+    g.aStar(0, 4);
+    return 0;
+}
+</code>
+        </pre>
+
+        <h3>Implementation in Python</h3>
+        <pre>
+<code>
+import heapq
+
+class Graph:
+    def __init__(self, vertices):
+        self.V = vertices
+        self.adjList = [[] for _ in range(vertices)]
+
+    def add_edge(self, u, v, w):
+        self.adjList[u].append((v, w))
+
+    def heuristic(self, u, goal):
+        # Simple heuristic: Euclidean distance or any other appropriate heuristic can be used.
+        return 0 # For demonstration purposes, this is a placeholder
+
+    def a_star(self, start, goal):
+        gScore = [float('inf')] * self.V
+        fScore = [float('inf')] * self.V
+        pq = [(0, start)]
+
+        gScore[start] = 0
+        fScore[start] = self.heuristic(start, goal)
+
+        while pq:
+            _, u = heapq.heappop(pq)
+
+            if u == goal:
+                print(f"Path found with cost {gScore[u]}")
+                return
+
+            for neighbor, weight in self.adjList[u]:
+                tentative_gScore = gScore[u] + weight
+                if tentative_gScore < gScore[neighbor]:
+                    gScore[neighbor] = tentative_gScore
+                    fScore[neighbor] = gScore[neighbor] + self.heuristic(neighbor, goal)
+                    heapq.heappush(pq, (fScore[neighbor], neighbor))
+
+        print("No path found")
+
+# Example usage
+g = Graph(5)
+g.add_edge(0, 1, 1)
+g.add_edge(0, 2, 4)
+g.add_edge(1, 2, 2)
+g.add_edge(1, 3, 5)
+g.add_edge(2, 3, 1)
+g.add_edge(3, 4, 3)
+g.a_star(0, 4)
+</code>
+        </pre>
+
+        <h2>Summary</h2>
+        <p>Shortest path algorithms are crucial for finding optimal routes in various contexts. Dijkstra's Algorithm is efficient for graphs with non-negative weights, while the Bellman-Ford Algorithm can handle negative weights but not negative weight cycles. The Floyd-Warshall Algorithm is useful for finding shortest paths between all pairs of nodes, and A* (A-star) improves upon Dijkstra's by using heuristics to guide the search. Understanding these algorithms and their applications is essential for solving complex routing and network optimization problems.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

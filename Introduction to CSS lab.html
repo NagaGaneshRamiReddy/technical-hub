@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lab: Introduction to CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #001f3f;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background: #3d9970;
+            color: #f9f9f9;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            height: 50px; 
+            top: 0; 
+            left: 0; 
+            z-index: 1000; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .container {
+            width: 90%; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 34px;
+            color: white;
+            flex-grow: 1; 
+        }
+
+        nav {
+            margin-left: auto; 
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 20px; 
+        }
+
+        nav ul li a {
+            color: #f9f9f9;
+            text-decoration: none;
+            font-size: 18px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .output1 {
+            background-color: white;
+        }
+
+        .task-details, .editor-section {
+            background: #f6f6f6;
+            padding: 20px;
+            gap: 20px;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            color: #003366;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 48%;
+            transition: background-color 0.3s;
+        }
+
+        .dark-mode .task-details, .dark-mode .editor-section {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .task-details {
+            margin-right: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            font-family: monospace;
+            font-size: 16px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .submit-btn {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .marks-display {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e0ffe0;
+            border: 1px solid green;
+            display: none;
+        }
+
+        .hp {
+            color: lightblue;
+        }
+
+        .hr {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-paint-brush"></i> CSS Lab
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <h1 class="hp">Web Development Lab: Task - Introduction to CSS</h1>
+
+    <div class="container">
+        <!-- Task: CSS Introduction -->
+        <div class="task-details">
+            <h2>Task: Basic Styling with CSS (20 Marks)</h2>
+            <hr class="hr">
+            <p>In this task, you need to apply basic CSS styling to an HTML page. Your CSS should include the following:</p>
+            <ul>
+                <li>Change the background color of the body</li>
+                <li>Style the headings with different colors and fonts</li>
+                <li>Set padding and margin for the elements</li>
+                <li>Create a button with hover effect</li>
+                <li>Change text color inside a <code>div</code></li>
+            </ul>
+            
+            <h3>Example Output</h3>
+            <p>Your page should have CSS styles similar to the ones below:</p>
+
+            <div style="background-color: lightblue; padding: 10px;">
+                <h1 style="color: darkblue; font-family: 'Arial', sans-serif;">Welcome to CSS Lab</h1>
+                <p style="color: #333; font-family: 'Times New Roman', serif;">
+                    This is an example of a styled paragraph. Apply various CSS styles in your task to achieve similar effects.
+                </p>
+                <button style="padding: 10px 15px; background-color: green; color: white; border: none; cursor: pointer;">
+                    Click Me
+                </button>
+            </div>
+        </div>
+
+        <!-- Editor and Controls -->
+        <div class="editor-section">
+            <h2>CSS Code Editor</h2>
+            <textarea id="cssCode" placeholder="Write your CSS code here..."></textarea>
+            <button class="submit-btn" onclick="runCSS()">Run Code</button>
+            <iframe class="output1" id="output"></iframe>
+            <button class="submit-btn" onclick="checkTask()">Submit Task</button>
+            <div class="marks-display" id="taskMarks"></div>
+        </div>
+    </div>
+
+    <script>
+        // Function to display the user's CSS in the iframe
+        function runCSS() {
+            const cssCode = document.getElementById("cssCode").value;
+            const iframe = document.getElementById("output");
+            iframe.srcdoc = '<style>' + cssCode + '</style>' + '<div style="background-color: lightblue; padding: 10px;"><h1>Welcome to CSS Lab</h1><p>This is an example of a styled paragraph.</p><button>Click Me</button></div>';
+        }
+
+        // Function to check Task: CSS Basics
+        function checkTask() {
+            const cssCode = document.getElementById("cssCode").value;
+            let taskMarks = 0;
+
+            // Simple checks for CSS properties
+            if (cssCode.includes('background-color') && cssCode.includes('color') && cssCode.includes('padding') && cssCode.includes('hover')) {
+                taskMarks = 20;
+            }
+
+            // Display the result
+            const taskDisplay = document.getElementById("taskMarks");
+            taskDisplay.innerHTML = `Task Marks: ${taskMarks} / 20`;
+            taskDisplay.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>HTML</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> HTML Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+
+
+    
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-html5"  style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">HTML Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        
+        <a href="HTML Roadmaps.html" target="_blank"><b class="b12">HTML Roadmap</b></a>
+        <ul> <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+        
+             <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+            <li><a href="What_is_HTML.html" target="_blank">What is HTML?</a></li>
+            <li><a href="HTML_Installation.html" target="_blank">Installation</a></li>
+            <li><a href="First_HTML_Page.html" target="_blank">First HTML Page</a></li>
+        </ul>
+    
+        <h3>HTML Basics</h3>
+        <a href="HTML_Basics.html" target="_blank">HTML Basics</a>
+        <ul>
+            <li><a href="HTML_Tags.html" target="_blank">HTML Tags</a></li>
+            <li><a href="HTML_Attributes.html" target="_blank">HTML Attributes</a></li>
+            <li><a href="HTML_Elements.html" target="_blank">HTML Elements</a></li>
+        </ul>
+    
+        <h3>HTML Text Formatting</h3>
+        <a href="HTML_Text_Formatting.html" target="_blank">HTML Text Formatting</a>
+        <ul>
+            <li><a href="Headings.html" target="_blank">Headings</a></li>
+            <li><a href="Paragraphs.html" target="_blank">Paragraphs</a></li>
+            <li><a href="Text_Styles.html" target="_blank">Text Styles</a></li>
+        </ul>
+    
+        <h3>HTML Lists</h3>
+        <a href="HTML_Lists.html" target="_blank">HTML Lists</a>
+        <ul>
+            <li><a href="Ordered_Lists.html" target="_blank">Ordered Lists</a></li>
+            <li><a href="Unordered_Lists.html" target="_blank">Unordered Lists</a></li>
+            <li><a href="Nested_Lists.html" target="_blank">Nested Lists</a></li>
+        </ul>
+    
+        <h3>HTML Forms</h3>
+        <a href="HTML_Forms.html" target="_blank">HTML Forms</a>
+        <ul>
+            <li><a href="Form_Elements.html" target="_blank">Form Elements</a></li>
+            <li><a href="Form_Validation.html" target="_blank">Form Validation</a></li>
+            <li><a href="Input_Types.html" target="_blank">Input Types</a></li>
+        </ul>
+    
+        <h3>HTML Media</h3>
+        <a href="HTML_Media.html" target="_blank">HTML Media</a>
+        <ul>
+            <li><a href="Images.html" target="_blank">Images</a></li>
+            <li><a href="Audio.html" target="_blank">Audio</a></li>
+            <li><a href="Video.html" target="_blank">Video</a></li>
+        </ul>
+    
+        <h3>HTML Tables</h3>
+        <a href="HTML_Tables.html" target="_blank">HTML Tables</a>
+        <ul>
+            <li><a href="Basic_Tables.html" target="_blank">Basic Tables</a></li>
+            <li><a href="Table_Headers.html" target="_blank">Table Headers</a></li>
+            <li><a href="Table_Spanning.html" target="_blank">Table Spanning</a></li>
+        </ul>
+    
+        <h3>HTML Semantics</h3>
+        <a href="HTML_Semantics.html" target="_blank">HTML Semantics</a>
+        <ul>
+            <li><a href="Div_vs_Semantic_Tags.html" target="_blank">Div vs Semantic Tags</a></li>
+            <li><a href="Semantic_Elements.html" target="_blank">Semantic Elements</a></li>
+        </ul>
+    </div>
+    
+    
+    
+  
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "HTML_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "HTML_quize.html";
+}
+function goproject() {
+    window.location.href = "HTML_projects.html";
+}
+function gocomp() {
+    window.location.href = "html_compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Paragraphs.html";
+    }
+    function goNext() {
+        window.location.href = "HTML_Lists.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-html5" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">HTML Tutorial</h2>
+            
+            <div class="div1">HTML Text Styles</div></div>
+            
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+            
+            <h2>Understanding Text Styles in HTML</h2>
+            <p>HTML provides various tags to apply different text styles, enhancing the appearance and readability of the content. These styles can include bold, italic, underlined text, and more.</p>
+            
+            <h2>Bold Text</h2>
+            <p>You can create bold text using the <code>&lt;strong&gt;</code> or <code>&lt;b&gt;</code> tags. The <code>&lt;strong&gt;</code> tag also indicates that the text is of strong importance.</p>
+            
+            <div class="example">
+                <pre><code>&lt;strong&gt;This text is bold and important.&lt;/strong&gt;</code></pre>
+            </div>
+            
+            <div class="output">
+                <p>Expected Output: <strong>This text is bold and important.</strong></p>
+            </div>
+            
+            <h2>Italic Text</h2>
+            <p>To italicize text, you can use the <code>&lt;em&gt;</code> or <code>&lt;i&gt;</code> tags. The <code>&lt;em&gt;</code> tag conveys emphasis.</p>
+            
+            <div class="example">
+                <pre><code>&lt;em&gt;This text is italicized and emphasized.&lt;/em&gt;</code></pre>
+            </div>
+            
+            <div class="output">
+                <p>Expected Output: <em>This text is italicized and emphasized.</em></p>
+            </div>
+            
+            <h2>Underlined Text</h2>
+            <p>To underline text, you can use the <code>&lt;u&gt;</code> tag. This is often used to indicate links or important text.</p>
+            
+            <div class="example">
+                <pre><code>&lt;u&gt;This text is underlined.&lt;/u&gt;</code></pre>
+            </div>
+            
+            <div class="output">
+                <p>Expected Output: <u>This text is underlined.</u></p>
+            </div>
+            
+            <h2>Strikethrough Text</h2>
+            <p>You can create strikethrough text using the <code>&lt;s&gt;</code> tag. This is useful for indicating deleted or outdated content.</p>
+            
+            <div class="example">
+                <pre><code>&lt;s&gt;This text is strikethrough.&lt;/s&gt;</code></pre>
+            </div>
+            
+            <div class="output">
+                <p>Expected Output: <s>This text is strikethrough.</s></p>
+            </div>
+            
+            <h2>Text Highlighting</h2>
+            <p>To highlight text, you can use the <code>&lt;mark&gt;</code> tag, which indicates a portion of text that has been highlighted or marked for reference.</p>
+            
+            <div class="example">
+                <pre><code>&lt;mark&gt;This text is highlighted.&lt;/mark&gt;</code></pre>
+            </div>
+            
+            <div class="output">
+                <p>Expected Output: <mark>This text is highlighted.</mark></p>
+            </div>
+            
+            <h2>Subscript and Superscript</h2>
+            <p>Subscript text can be created using the <code>&lt;sub&gt;</code> tag, while superscript text uses the <code>&lt;sup&gt;</code> tag. These are commonly used in mathematical formulas or chemical equations.</p>
+            
+            <div class="example">
+                <pre><code>&lt;sub&gt;This is subscript.&lt;/sub&gt;<br>
+            &lt;sup&gt;This is superscript.&lt;/sup&gt;</code></pre>
+            </div>
+            
+            <div class="output">
+                <p>Expected Output: This is subscript.<sub>This is subscript.</sub> and This is superscript.<sup>This is superscript.</sup></p>
+            </div>
+            
+            <h2>Combining Styles</h2>
+            <p>You can also combine multiple styles within a single element to create complex formatting.</p>
+            
+            <div class="example">
+                <pre><code>&lt;strong&gt;&lt;em&gt;This text is bold and italic.&lt;/em&gt;&lt;/strong&gt;</code></pre>
+            </div>
+            
+            <div class="output">
+                <p>Expected Output: <strong><em>This text is bold and italic.</em></strong></p>
+            </div>
+            
+            <h2>Accessibility Considerations</h2>
+            <p>When using text styles, it's important to consider accessibility. Overusing certain styles can make content harder to read, especially for individuals with visual impairments.</p>
+            
+            <div class="resources">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">MDN Web Docs: The &lt;strong&gt; Element</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">MDN Web Docs: The &lt;em&gt; Element</a></li>
+                    <li><a href="https://www.w3schools.com/tags/tag_u.asp" target="_blank">W3Schools: HTML Underline</a></li>
+                </ul>
+            </div>
+            
+            <h2>Summary</h2>
+            <p>HTML text styles allow you to enhance the presentation of your content. By using tags like <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, and <code>&lt;u&gt;</code>, you can make your text more readable and visually appealing.</p>
+            
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+            
+            </body>
+            </html>
+            

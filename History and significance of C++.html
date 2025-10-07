@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statements in C Programming</title>
+    <link rel="stylesheet" href="aws.css">
+</head>
+<body>
+    <header>
+        <h1 class="h1">Control Statements in C Programming</h1>
+    </header>
+
+    <div class="container">
+        <h2>Introduction</h2>
+        <p>Control statements in C programming are used to control the flow of execution based on certain conditions. They enable you to make decisions, repeat actions, and control the execution of code blocks. Here’s an overview of the primary control statements in C:</p>
+
+        <h2>1. Conditional Statements</h2>
+        <p>Conditional statements allow you to execute certain sections of code based on whether a condition is true or false.</p>
+        
+        <h3>If Statement</h3>
+        <p>The <code>if</code> statement evaluates a condition and executes the code block if the condition is true.</p>
+        <pre><code>
+if (condition) {
+    // code to be executed if condition is true
+}
+        </code></pre>
+        <p>Example:</p>
+        <pre><code>
+int age = 18;
+if (age >= 18) {
+    printf("You are an adult.\n");
+}
+        </code></pre>
+
+        <h3>If-Else Statement</h3>
+        <p>The <code>if-else</code> statement allows you to execute one block of code if the condition is true, and another block if the condition is false.</p>
+        <pre><code>
+if (condition) {
+    // code to be executed if condition is true
+} else {
+    // code to be executed if condition is false
+}
+        </code></pre>
+        <p>Example:</p>
+        <pre><code>
+int age = 16;
+if (age >= 18) {
+    printf("You are an adult.\n");
+} else {
+    printf("You are a minor.\n");
+}
+        </code></pre>
+
+        <h3>If-Else If-Else Statement</h3>
+        <p>The <code>if-else if-else</code> statement allows you to test multiple conditions in sequence.</p>
+        <pre><code>
+if (condition1) {
+    // code to be executed if condition1 is true
+} else if (condition2) {
+    // code to be executed if condition2 is true
+} else {
+    // code to be executed if none of the conditions are true
+}
+        </code></pre>
+        <p>Example:</p>
+        <pre><code>
+int score = 85;
+if (score >= 90) {
+    printf("Grade: A\n");
+} else if (score >= 80) {
+    printf("Grade: B\n");
+} else if (score >= 70) {
+    printf("Grade: C\n");
+} else {
+    printf("Grade: D\n");
+}
+        </code></pre>
+
+        <h2>2. Switch Statement</h2>
+        <p>The <code>switch</code> statement allows you to select one of many code blocks to be executed based on the value of an expression.</p>
+        <pre><code>
+switch (expression) {
+    case value1:
+        // code to be executed if expression == value1
+        break;
+    case value2:
+        // code to be executed if expression == value2
+        break;
+    // add more cases as needed
+    default:
+        // code to be executed if no case matches
+}
+        </code></pre>
+        <p>Example:</p>
+        <pre><code>
+int day = 3;
+switch (day) {
+    case 1:
+        printf("Monday\n");
+        break;
+    case 2:
+        printf("Tuesday\n");
+        break;
+    case 3:
+        printf("Wednesday\n");
+        break;
+    default:
+        printf("Invalid day\n");
+}
+        </code></pre>
+
+        <h2>3. Looping Statements</h2>
+        <p>Looping statements are used to repeat a block of code multiple times.</p>
+
+        <h3>For Loop</h3>
+        <p>The <code>for</code> loop executes a block of code a specified number of times.</p>
+        <pre><code>
+for (initialization; condition; increment) {
+    // code to be executed in each iteration
+}
+        </code></pre>
+        <p>Example:</p>
+        <pre><code>
+for (int i = 0; i < 5; i++) {
+    printf("%d\n", i);
+}
+        </code></pre>
+
+        <h3>While Loop</h3>
+        <p>The <code>while</code> loop executes a block of code as long as a condition is true.</p>
+        <pre><code>
+while (condition) {
+    // code to be executed while condition is true
+}
+        </code></pre>
+        <p>Example:</p>
+        <pre><code>
+int i = 0;
+while (i < 5) {
+    printf("%d\n", i);
+    i++;
+}
+        </code></pre>
+
+        <h3>Do-While Loop</h3>
+        <p>The <code>do-while</code> loop is similar to the <code>while</code> loop, but it guarantees that the block of code is executed at least once.</p>
+        <pre><code>
+do {
+    // code to be executed
+} while (condition);
+        </code></pre>
+        <p>Example:</p>
+        <pre><code>
+int i = 0;
+do {
+    printf("%d\n", i);
+    i++;
+} while (i < 5);
+        </code></pre>
+
+        <h2>4. Break and Continue Statements</h2>
+        <p>Break and continue statements control the flow of loops.</p>
+
+        <h3>Break Statement</h3>
+        <p>The <code>break</code> statement exits from the innermost loop or switch statement.</p>
+        <pre><code>
+for (int i = 0; i < 10; i++) {
+    if (i == 5) {
+        break; // exits the loop when i is 5
+    }
+    printf("%d\n", i);
+}
+        </code></pre>
+
+        <h3>Continue Statement</h3>
+        <p>The <code>continue</code> statement skips the current iteration of the loop and proceeds to the next iteration.</p>
+        <pre><code>
+for (int i = 0; i < 10; i++) {
+    if (i % 2 == 0) {
+        continue; // skips even numbers
+    }
+    printf("%d\n", i);
+}
+        </code></pre>
+
+      
+            <h2>Additional Resources</h2>
+            <div class="resources"></div>
+            <ul>
+                <li><a href="https://www.learn-c.org/">Learn-C.org</a> - Free interactive C programming tutorial.</li>
+                <li><a href="https://www.cprogramming.com/tutorial/c-tutorial.html">C Programming Tutorial</a> - Comprehensive tutorial on C programming.</li>
+                <li><a href="https://www.geeksforgeeks.org/c-programming-language/">GeeksforGeeks C Programming</a> - Tutorials and examples on C programming.</li>
+                <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">Codecademy C++ Course</a> - Online course to learn C++ (similar concepts apply to C).</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Interview Questions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #95f5ea, #155f0d);
+            padding: 20px;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3rem;
+            color: #264653;
+            animation: fadeIn 2s ease;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1s ease;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .question-title {
+            font-size: 1.5rem;
+            padding: 10px;
+            background: #264653;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .question-title:hover {
+            background: #2a9d8f;
+        }
+
+        .question-title span {
+            transition: transform 0.3s ease;
+        }
+
+        .answer {
+            display: none;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #00410c;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .rotate {
+            transform: rotate(90deg);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .question-title {
+                font-size: 1.3rem;
+            }
+
+            .answer {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Interview Questions</h1>
+    <div class="container">
+
+        <!-- Question 1 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is HTML?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                HTML stands for HyperText Markup Language. It is the standard markup language used to create web pages and web applications.
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What are HTML forms?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                HTML forms are used to collect user input. A form can contain elements like input fields, radio buttons, checkboxes, and submit buttons.
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What are the new features of HTML5?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                HTML5 introduced new elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and media elements like <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>.
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between HTML and XHTML?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                XHTML is a stricter version of HTML, following XML rules. In XHTML, all tags must be properly closed, and attributes must be quoted and written in lowercase.
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the <code>&lt;doctype&gt;</code> declaration?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;!DOCTYPE&gt;</code> declaration defines the document type and version of HTML being used. In HTML5, it is simply <code>&lt;!DOCTYPE html&gt;</code>.
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the <code>&lt;meta&gt;</code> tag?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;meta&gt;</code> tag provides metadata about the HTML document. It includes information such as character set, author, description, and viewport settings for responsive design.
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;div&gt;</code> tag is a block-level element, typically used to group larger chunks of content. The <code>&lt;span&gt;</code> tag is an inline element, often used to style small pieces of content within a larger block.
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How do you create a hyperlink in HTML?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                A hyperlink is created using the <code>&lt;a&gt;</code> tag, with the <code>href</code> attribute specifying the URL. For example: <code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code>.
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the <code>&lt;head&gt;</code> section?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;head&gt;</code> section contains metadata about the document, links to external resources (like stylesheets), and defines the document's title and character set.
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is semantic HTML?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                Semantic HTML refers to using HTML5 elements like <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code>, which clearly describe their meaning in a way that helps both the developer and search engines understand the content.
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the <code>&lt;nav&gt;</code> element used for?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;nav&gt;</code> element is used to define a block of navigation links, such as a website’s primary navigation menu.
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the <code>&lt;section&gt;</code> element in HTML5?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;section&gt;</code> element is used to define a section of a document, typically with a heading. It groups related content into a specific area.
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the <code>&lt;aside&gt;</code> element used for?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;aside&gt;</code> element represents content that is tangentially related to the content around it, like a sidebar or call-out box.
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How do you include comments in HTML?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                Comments in HTML are included using <code>&lt;!-- comment text --&gt;</code>. They are not displayed by browsers and are used for documentation purposes.
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the <code>&lt;em&gt;</code> tag used for?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;em&gt;</code> tag is used to emphasize text, which is typically displayed in italics. It indicates stress or importance of a word or phrase.
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the <code>&lt;strong&gt;</code> tag used for?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;strong&gt;</code> tag is used to give importance to text, which is typically displayed in bold. It indicates that the content inside is of strong importance.
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <div class="question-title">
+                <span>How do you add images in HTML?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                Images are added in HTML using the <code>&lt;img&gt;</code> tag, with the <code>src</code> attribute specifying the image source and <code>alt</code> attribute providing alternative text. Example: <code>&lt;img src="image.jpg" alt="Description"&gt;</code>.
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the <code>&lt;table&gt;</code> tag?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;table&gt;</code> tag is used to create a table in HTML. It contains rows (<code>&lt;tr&gt;</code>) and cells (<code>&lt;td&gt;</code>), along with optional table headers (<code>&lt;th&gt;</code>).
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the difference between <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;ul&gt;</code> tag creates an unordered list (bullets), while the <code>&lt;ol&gt;</code> tag creates an ordered list (numbers).
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What are HTML attributes?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                HTML attributes provide additional information about an element, such as <code>href</code> for links, <code>src</code> for images, and <code>id</code> for unique identification.
+            </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the <code>alt</code> attribute in the <code>&lt;img&gt;</code> tag?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>alt</code> attribute provides alternative text for an image if it cannot be displayed. It is also important for accessibility and SEO.
+            </div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the <code>&lt;footer&gt;</code> element used for?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;footer&gt;</code> element defines the footer section of a document or section, often containing copyright information, links, and other relevant details.
+            </div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the <code>&lt;header&gt;</code> element used for?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;header&gt;</code> element defines the header section of a document or section, typically containing headings, logos, or navigation.
+            </div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the purpose of the <code>&lt;mark&gt;</code> tag?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;mark&gt;</code> tag highlights text, usually for reference or emphasis, and it is typically displayed with a yellow background.
+            </div>
+        </div>
+
+        <!-- Question 25 -->
+        <div class="question">
+            <div class="question-title">
+                <span>What is the <code>&lt;blockquote&gt;</code> element used for?</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="answer">
+                The <code>&lt;blockquote&gt;</code> element is used for longer quotes, typically displayed as an indented block of text.
+            </div>
+            </div>
+            <!-- Question 26 -->
+
+<div class="question">
+    <div class="question-title">
+        <span>How do you create a drop-down list in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        A drop-down list is created using the <code>&lt;select&gt;</code> element. Individual options are defined using the <code>&lt;option&gt;</code> tags. Example: <code>&lt;select&gt;&lt;option&gt;Option 1&lt;/option&gt;&lt;/select&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 27 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;iframe&gt;</code> tag used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;iframe&gt;</code> tag is used to embed another HTML page within the current page. Example: <code>&lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 28 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;progress&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;progress&gt;</code> element is used to display the progress of a task, such as a file download or an upload progress bar.
+    </div>
+</div>
+
+<!-- Question 29 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;datalist&gt;</code> element?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;datalist&gt;</code> element is used to provide an autocomplete feature for input elements. It defines a list of pre-defined options for a user to choose from.
+    </div>
+</div>
+
+<!-- Question 30 -->
+<div class="question">
+    <div class="question-title">
+        <span>How do you create a checkbox in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        A checkbox is created using the <code>&lt;input&gt;</code> element with the type attribute set to "checkbox". Example: <code>&lt;input type="checkbox"&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 31 -->
+<div class="question">
+    <div class="question-title">
+        <span>What are inline elements in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        Inline elements do not start on a new line and only take up as much width as necessary. Examples include <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, and <code>&lt;img&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 32 -->
+<div class="question">
+    <div class="question-title">
+        <span>What are block-level elements in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        Block-level elements start on a new line and take up the full width available. Examples include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;h1&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 33 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;canvas&gt;</code> element used for in HTML5?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;canvas&gt;</code> element is used to draw graphics, such as charts, games, or animations, via scripting (usually JavaScript).
+    </div>
+</div>
+
+<!-- Question 34 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;article&gt;</code> tag in HTML5?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;article&gt;</code> tag is used to represent a self-contained composition in a document, such as a blog post or news article.
+    </div>
+</div>
+
+<!-- Question 35 -->
+<div class="question">
+    <div class="question-title">
+        <span>How do you embed audio in HTML5?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;audio&gt;</code> element is used to embed audio. Example: <code>&lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 36 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the difference between <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code>?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;b&gt;</code> tag displays text in bold for stylistic purposes, while the <code>&lt;strong&gt;</code> tag gives text strong importance, typically displayed in bold as well but with semantic meaning.
+    </div>
+</div>
+
+<!-- Question 37 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the difference between <code>&lt;i&gt;</code> and <code>&lt;em&gt;</code>?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;i&gt;</code> tag displays text in italics for stylistic purposes, while the <code>&lt;em&gt;</code> tag emphasizes text semantically, often displayed in italics but with importance.
+    </div>
+</div>
+
+<!-- Question 38 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;time&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;time&gt;</code> element is used to represent a specific time (with optional machine-readable formatting using the <code>datetime</code> attribute).
+    </div>
+</div>
+
+<!-- Question 39 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;picture&gt;</code> element in HTML5?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;picture&gt;</code> element allows for different image resources to be used depending on screen size or pixel density. It is often used for responsive image support.
+    </div>
+</div>
+
+<!-- Question 40 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is a favicon?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        A favicon is a small icon displayed in the browser tab, next to the website title. It is linked using a <code>&lt;link rel="icon" href="favicon.ico"&gt;</code> tag in the document's <code>&lt;head&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 41 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;meta&gt;</code> viewport tag?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;meta&gt;</code> viewport tag is used to control the layout on mobile browsers. Example: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 42 -->
+<div class="question">
+    <div class="question-title">
+        <span>How do you add a video in HTML5?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        Videos can be embedded using the <code>&lt;video&gt;</code> element. Example: <code>&lt;video controls&gt;&lt;source src="video.mp4" type="video/mp4"&gt;&lt;/video&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 43 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;noscript&gt;</code> tag?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;noscript&gt;</code> tag defines alternative content to be displayed if the browser does not support or has disabled JavaScript.
+    </div>
+</div>
+
+<!-- Question 44 -->
+<div class="question">
+    <div class="question-title">
+        <span>What are semantic elements in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        Semantic elements clearly describe their meaning to both the browser and the developer. Examples include <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>, and <code>&lt;section&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 45 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;abbr&gt;</code> tag used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;abbr&gt;</code> tag is used to define an abbreviation or acronym, with optional title attribute for full form display. Example: <code>&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 46 -->
+<div class="question">
+    <div class="question-title">
+        <span>How do you create a radio button in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        Radio buttons are created using the <code>&lt;input&gt;</code> element with <code>type="radio"</code>. Example: <code>&lt;input type="radio" name="choice"&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 47 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;figure&gt;</code> tag is used to encapsulate media content such as images, and the <code>&lt;figcaption&gt;</code> provides a caption for that media.
+    </div>
+</div>
+
+<!-- Question 48 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;code&gt;</code> tag?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;code&gt;</code> tag is used to display inline code snippets in a monospace font. It is useful for showing small pieces of computer code.
+    </div>
+</div>
+
+<!-- Question 49 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;pre&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;pre&gt;</code> element displays preformatted text, preserving both spaces and line breaks.
+    </div>
+</div>
+
+<!-- Question 50 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is a self-closing tag?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        A self-closing tag does not need a closing tag. It ends with a <code>/&gt;</code>. Examples: <code>&lt;br /&gt;</code>, <code>&lt;img /&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 51 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;nav&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;nav&gt;</code> element defines a section of navigation links, such as menus or table of contents.
+    </div>
+</div>
+
+<!-- Question 52 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;aside&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;aside&gt;</code> element represents a sidebar or other tangentially related content.
+    </div>
+</div>
+
+<!-- Question 53 -->
+<div class="question">
+    <div class="question-title">
+        <span>How do you define an input field for email in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        Use <code>&lt;input type="email"&gt;</code> to create an input field specifically for email addresses.
+    </div>
+</div>
+
+<!-- Question 54 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;label&gt;</code> tag?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;label&gt;</code> tag provides a caption or label for an <code>&lt;input&gt;</code> element, improving usability and accessibility.
+    </div>
+</div>
+
+<!-- Question 55 -->
+<div class="question">
+    <div class="question-title">
+        <span>How do you add a tooltip to an HTML element?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        Use the <code>title</code> attribute to add a tooltip. Example: <code>&lt;p title="This is a tooltip"&gt;Hover over me!&lt;/p&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 56 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;summary&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;summary&gt;</code> element is used inside the <code>&lt;details&gt;</code> tag to provide a summary or label for the details that the user can toggle.
+    </div>
+</div>
+
+<!-- Question 57 -->
+<div class="question">
+    <div class="question-title">
+        <span>What are custom data attributes in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        Custom data attributes allow you to store extra information on HTML elements using the <code>data-*</code> attribute. Example: <code>&lt;div data-user="123"&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 58 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;wbr&gt;</code> tag used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;wbr&gt;</code> tag is used to define a possible line break opportunity in a long word, which will only be visible when needed (e.g., if the word is too long for the current container).
+    </div>
+</div>
+
+<!-- Question 59 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;base&gt;</code> tag used for in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;base&gt;</code> tag defines the base URL for all relative URLs in the document. It is typically placed inside the <code>&lt;head&gt;</code> element.
+    </div>
+</div>
+
+<!-- Question 60 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;output&gt;</code> element?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;output&gt;</code> element represents the result of a calculation or user action, often used in forms.
+    </div>
+</div>
+
+<!-- Question 61 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the difference between <code>&lt;section&gt;</code> and <code>&lt;div&gt;</code>?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;section&gt;</code> element is used for defining sections of a document with thematic grouping, while <code>&lt;div&gt;</code> is a general-purpose container without any specific meaning.
+    </div>
+</div>
+<!-- Question 62 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;legend&gt;</code> element used for in forms?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;legend&gt;</code> element is used to provide a caption or title for the <code>&lt;fieldset&gt;</code> element, grouping related form controls together. It helps improve the accessibility of the form.
+    </div>
+</div>
+
+<!-- Question 63 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;optgroup&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;optgroup&gt;</code> element is used to group related <code>&lt;option&gt;</code> elements in a drop-down list. It helps users better navigate long lists by organizing them into categories.
+    </div>
+</div>
+
+<!-- Question 64 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;fieldset&gt;</code> element used for in forms?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;fieldset&gt;</code> element is used to group related elements within a form. It helps to visually and semantically group inputs and controls, often alongside a <code>&lt;legend&gt;</code> element.
+    </div>
+</div>
+
+<!-- Question 65 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;details&gt;</code> element?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;details&gt;</code> element is used to create a collapsible section of content that the user can toggle open or closed. It is often used with the <code>&lt;summary&gt;</code> element.
+    </div>
+</div>
+
+<!-- Question 66 -->
+<div class="question">
+    <div class="question-title">
+        <span>What does the <code>&lt;progress&gt;</code> element represent?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;progress&gt;</code> element represents the completion progress of a task. It is displayed as a progress bar, showing how much of the task has been completed.
+    </div>
+</div>
+
+<!-- Question 67 -->
+<div class="question">
+    <div class="question-title">
+        <span>How do you include audio in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        Audio is included in HTML using the <code>&lt;audio&gt;</code> element, with the <code>src</code> attribute specifying the audio file. Example: <code>&lt;audio controls src="audio.mp3"&gt;&lt;/audio&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 68 -->
+<div class="question">
+    <div class="question-title">
+        <span>How do you embed a video in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        A video is embedded using the <code>&lt;video&gt;</code> element with the <code>src</code> attribute. You can also include <code>controls</code> for play, pause, and volume. Example: <code>&lt;video controls src="video.mp4"&gt;&lt;/video&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 69 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;output&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;output&gt;</code> element is used to represent the result of a calculation or user action, often in combination with JavaScript for dynamic updates.
+    </div>
+</div>
+
+<!-- Question 70 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;time&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;time&gt;</code> element is used to represent a specific time or date. It can be used to mark events and improve accessibility for time-related content.
+    </div>
+</div>
+
+<!-- Question 71 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;code&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;code&gt;</code> element is used to display code snippets or programming instructions. It is typically styled with a monospace font by default.
+    </div>
+</div>
+
+<!-- Question 72 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;kbd&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;kbd&gt;</code> element represents user input, typically from a keyboard, and is often styled with a monospace font.
+    </div>
+</div>
+
+<!-- Question 73 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;samp&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;samp&gt;</code> element represents sample output from a program or computing system, often displayed in a monospace font.
+    </div>
+</div>
+
+<!-- Question 74 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;var&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;var&gt;</code> element is used to define a variable in programming or mathematical expressions, typically displayed in italics by default.
+    </div>
+</div>
+
+<!-- Question 75 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;dfn&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;dfn&gt;</code> element is used to indicate the defining instance of a term. It is often styled in italics to highlight the term.
+    </div>
+</div>
+
+<!-- Question 76 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;bdi&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;bdi&gt;</code> (bidirectional isolation) element isolates a section of text that might be formatted in a different direction, making it easier to handle mixed language content.
+    </div>
+</div>
+
+<!-- Question 77 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;wbr&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;wbr&gt;</code> (word break opportunity) element is used to suggest where a line break could occur in a long word or URL to improve readability.
+    </div>
+</div>
+
+<!-- Question 78 -->
+<div class="question">
+    <div class="question-title">
+        <span>How do you specify the language of a document in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        You specify the language of an HTML document using the <code>lang</code> attribute in the <code>&lt;html&gt;</code> tag. Example: <code>&lt;html lang="en"&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 79 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;small&gt;</code> element?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;small&gt;</code> element is used to display text in a smaller font size, often for legal disclaimers or secondary information.
+    </div>
+</div>
+
+<!-- Question 80 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the difference between <code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code>?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;sup&gt;</code> element displays text as superscript (above the baseline), while the <code>&lt;sub&gt;</code> element displays text as subscript (below the baseline).
+    </div>
+</div>
+
+<!-- Question 81 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;abbr&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;abbr&gt;</code> element represents an abbreviation or acronym, and the <code>title</code> attribute can be used to provide the full meaning. Example: <code>&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 82 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;cite&gt;</code> element?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;cite&gt;</code> element is used to reference a title of a work, such as a book, article, or other creative work, typically displayed in italics.
+    </div>
+</div>
+
+<!-- Question 83 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;ins&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;ins&gt;</code> element is used to indicate inserted content, often styled with an underline. It shows that text has been added to the document.
+    </div>
+</div>
+
+<!-- Question 84 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;del&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;del&gt;</code> element is used to represent deleted content, typically displayed with a strikethrough to show it has been removed.
+    </div>
+</div>
+
+<!-- Question 85 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;s&gt;</code> element?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;s&gt;</code> element is used to indicate that the text has been struck through and is no longer accurate or relevant.
+    </div>
+</div>
+
+<!-- Question 86 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;u&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;u&gt;</code> element is used to underline text, which is often used to indicate misspelled words or for stylistic purposes.
+    </div>
+</div>
+
+<!-- Question 87 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;hr&gt;</code> element?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;hr&gt;</code> element represents a thematic break or horizontal rule, often used to separate sections of content visually.
+    </div>
+</div>
+
+<!-- Question 88 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;pre&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;pre&gt;</code> element is used to display preformatted text. It preserves white spaces, line breaks, and indentation exactly as written in the HTML.
+    </div>
+</div>
+
+<!-- Question 89 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the difference between <code>&lt;strong&gt;</code> and <code>&lt;b&gt;</code>?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;strong&gt;</code> element indicates text of strong importance, typically bold by default. The <code>&lt;b&gt;</code> element only makes text bold without adding semantic importance.
+    </div>
+</div>
+
+<!-- Question 90 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the difference between <code>&lt;i&gt;</code> and <code>&lt;em&gt;</code>?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;i&gt;</code> element italicizes text for stylistic purposes, while the <code>&lt;em&gt;</code> element emphasizes text, indicating importance, often italicized by default.
+    </div>
+</div>
+
+<!-- Question 91 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;source&gt;</code> element used for in media elements?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;source&gt;</code> element is used to specify multiple media sources for the <code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code> elements. It allows the browser to choose the appropriate format for playback.
+    </div>
+</div>
+
+<!-- Question 92 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;track&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;track&gt;</code> element is used in the <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> elements to specify text tracks like subtitles, captions, or descriptions.
+    </div>
+</div>
+
+<!-- Question 93 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;summary&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;summary&gt;</code> element is used as a heading for the <code>&lt;details&gt;</code> element. When clicked, it toggles the visibility of the content inside the <code>&lt;details&gt;</code>.
+    </div>
+</div>
+
+<!-- Question 94 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;canvas&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;canvas&gt;</code> element is used to draw graphics, animations, and other visual content using JavaScript, such as game elements, charts, and interactive graphics.
+    </div>
+</div>
+
+<!-- Question 95 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;noscript&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;noscript&gt;</code> element provides alternative content to display if the user's browser does not support JavaScript or has JavaScript disabled.
+    </div>
+</div>
+
+<!-- Question 96 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the difference between <code>&lt;link&gt;</code> and <code>&lt;a&gt;</code>?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;link&gt;</code> element is used to link external resources like stylesheets, while the <code>&lt;a&gt;</code> element is used to create hyperlinks to navigate between web pages or to external websites.
+    </div>
+</div>
+
+<!-- Question 97 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;base&gt;</code> tag?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;base&gt;</code> tag specifies the base URL for all relative URLs in the document, allowing you to set a standard base for all links or resource references.
+    </div>
+</div>
+
+<!-- Question 98 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the <code>&lt;picture&gt;</code> element used for?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;picture&gt;</code> element is used to provide multiple versions of an image for responsive design, allowing the browser to choose the appropriate image based on screen size or format.
+    </div>
+</div>
+
+<!-- Question 99 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;iframe&gt;</code> element?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;iframe&gt;</code> element is used to embed another HTML document or external content like videos or websites within the current page.
+    </div>
+</div>
+
+<!-- Question 100 -->
+<div class="question">
+    <div class="question-title">
+        <span>What is the purpose of the <code>&lt;meta&gt;</code> tag in HTML?</span>
+        <span>&#8250;</span>
+    </div>
+    <div class="answer">
+        The <code>&lt;meta&gt;</code> tag provides metadata about the HTML document, such as descriptions, keywords, and author information. It is also used to control the document's character set and viewport settings.
+    </div>
+</div>
+
+
+
+
+       
+</div>
+
+    <script>
+        const questions = document.querySelectorAll('.question-title');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const arrow = question.querySelector('span:last-child');
+
+                // Toggle answer display
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    arrow.classList.remove('rotate');
+                } else {
+                    answer.style.display = 'block';
+                    arrow.classList.add('rotate');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1465 @@
+            
+            
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interviews.css">
+    <title>Azure Interviews Questions</title>
+   
+   
+   
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+             <i class="fab fa-html5 icon"></i>
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    <div class="container">
+        
+        <h1>Top Azure Interviews Questions</h1>
+        <ol class="question-list">
+
+    <li class="question-item">
+        <div class="question">1. What is Microsoft Azure?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Microsoft Azure is a cloud computing platform and service created by Microsoft, offering a range of cloud services, including those for computing, analytics, storage, and networking. Users can choose and configure these services to meet their specific needs. Azure supports a variety of programming languages, frameworks, and tools, making it versatile for different applications and workloads.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Microsoft Azure is a cloud computing platform offering a range of services for computing, analytics, storage, and networking.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">2. What are the main features of Azure?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Key features of Azure include:
+                <ul>
+                    <li><strong>Compute Services:</strong> Virtual Machines, Azure Kubernetes Service, Azure Functions for serverless computing.</li>
+                    <li><strong>Storage Solutions:</strong> Blob storage, File storage, Disk storage, and Data Lake.</li>
+                    <li><strong>Database Services:</strong> Azure SQL Database, Cosmos DB, and Azure Database for MySQL/PostgreSQL.</li>
+                    <li><strong>Networking:</strong> Virtual Networks, Load Balancers, VPN Gateway, and ExpressRoute.</li>
+                    <li><strong>AI and Machine Learning:</strong> Azure Machine Learning, Cognitive Services.</li>
+                    <li><strong>DevOps:</strong> Azure DevOps for CI/CD, monitoring, and management tools.</li>
+                </ul>
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Key features of Azure include Compute Services, Storage Solutions, Database Services, Networking, AI and Machine Learning, and DevOps tools.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">3. Explain the Azure Resource Manager (ARM).</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Resource Manager (ARM) is a management framework that enables you to deploy, manage, and organize Azure resources. It provides a unified management layer that allows for the creation, updating, and deletion of resources in your Azure account. ARM uses resource groups to logically organize resources, enabling users to manage them collectively rather than individually.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Resource Manager is a management framework for deploying, managing, and organizing Azure resources using resource groups.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">4. What is the difference between IaaS, PaaS, and SaaS?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                <ul>
+                    <li><strong>IaaS (Infrastructure as a Service):</strong> Provides virtualized computing resources over the internet. Users manage the operating system, applications, and runtime. Examples: Azure Virtual Machines, Azure Blob Storage.</li>
+                    <li><strong>PaaS (Platform as a Service):</strong> Offers hardware and software tools over the internet, typically for application development. Users manage applications and data but not the underlying infrastructure. Examples: Azure App Services, Azure Functions.</li>
+                    <li><strong>SaaS (Software as a Service):</strong> Delivers software applications over the internet on a subscription basis. Users do not manage the infrastructure or platforms on which the software is running. Examples: Microsoft 365, Dynamics 365.</li>
+                </ul>
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'IaaS provides virtualized computing resources, PaaS offers application development tools, and SaaS delivers software applications over the internet.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">5. How does Azure's pricing model work?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure uses a pay-as-you-go pricing model, allowing users to pay only for the resources they consume. Pricing can vary based on service type, usage, and region. Azure also offers reserved instances for VMs, which can provide significant savings for long-term commitments. Additionally, users can utilize cost management tools to monitor and optimize their spending.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure uses a pay-as-you-go pricing model based on resource consumption and offers reserved instances for savings.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">6. What are Azure Regions and Availability Zones?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                <ul>
+                    <li><strong>Azure Regions:</strong> Geographic locations around the world that contain datacenters, allowing for data sovereignty and compliance.</li>
+                    <li><strong>Availability Zones:</strong> Physically separate locations within an Azure region, designed to provide high availability and protect applications from datacenter failures.</li>
+                </ul>
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Regions are geographic locations with datacenters, while Availability Zones are separate locations within a region for high availability.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">7. What is Azure Active Directory (AD)?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Active Directory (AD) is a cloud-based identity and access management service that helps employees sign in and access resources. Azure AD provides single sign-on, multi-factor authentication, and conditional access to ensure secure access to applications, both in the cloud and on-premises.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Active Directory is a cloud-based identity management service that provides secure access to applications.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">8. How does Azure ensure security for its services?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure employs multiple layers of security, including:
+                <ul>
+                    <li><strong>Physical Security:</strong> Datacenters are protected with physical barriers, surveillance, and security personnel.</li>
+                    <li><strong>Network Security:</strong> Firewalls, VPNs, and DDoS protection safeguard Azure services.</li>
+                    <li><strong>Identity Management:</strong> Azure AD manages user identities and access.</li>
+                    <li><strong>Data Protection:</strong> Data encryption in transit and at rest, and compliance with various regulations (GDPR, HIPAA).</li>
+                    <li><strong>Security Monitoring:</strong> Azure Security Center monitors and provides recommendations for improving security posture.</li>
+                </ul>
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure ensures security through physical security, network security, identity management, data protection, and security monitoring.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">9. Explain Azure Virtual Machines (VMs).</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Virtual Machines are scalable computing resources that provide on-demand, pay-as-you-go virtualized computing. Users can choose the operating system (Windows or Linux), size (CPU and memory), and configurations based on their workload needs. VMs can be used for a variety of tasks, including hosting applications, development environments, and running workloads that require custom configurations.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Virtual Machines are scalable resources for on-demand virtualized computing, used for various tasks including hosting applications.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">10. What is an Azure App Service?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure App Service is a fully managed platform for building, deploying, and scaling web applications. It supports multiple programming languages (e.g., .NET, PHP, Node.js) and frameworks, allowing developers to create robust web applications without managing the underlying infrastructure. Features include automatic scaling, continuous deployment, and integrated security features.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure App Service is a managed platform for building and scaling web applications without infrastructure management.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">11. What is Azure Blob Storage?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Blob Storage is a service for storing unstructured data, such as text and binary data, in the cloud. It allows for massive amounts of data to be stored and accessed from anywhere. Blob Storage is typically used for data lakes, content storage for web applications, and backup and recovery solutions. Blobs can be categorized into three types: Block blobs, Append blobs, and Page blobs.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Blob Storage is a service for storing unstructured data in the cloud, used for various storage needs.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">12. Explain Azure SQL Database.</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure SQL Database is a fully managed relational database service based on Microsoft SQL Server. It provides high availability, automated backups, and scalability without the need for hardware provisioning. Users can choose between various deployment models, including single databases, elastic pools, and managed instances, catering to different application requirements.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure SQL Database is a managed relational database service that provides high availability and scalability.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">13. What are Azure Functions?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Functions is a serverless compute service that allows you to run event-driven code without provisioning or managing servers. It enables you to execute small pieces of code (functions) in response to events, such as HTTP requests, queue messages, or timer-based triggers. This allows for cost savings and efficient resource use since you only pay for the compute resources consumed during execution.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Functions is a serverless compute service for running event-driven code without managing servers.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">14. Describe Azure Kubernetes Service (AKS).</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Kubernetes Service (AKS) is a managed Kubernetes container orchestration service that simplifies deploying, managing, and scaling containerized applications using Kubernetes. AKS handles the complexities of Kubernetes, such as provisioning the underlying infrastructure and maintaining the Kubernetes control plane, allowing developers to focus on their applications.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Kubernetes Service is a managed service for deploying and managing containerized applications using Kubernetes.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">15. What is Azure DevOps?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure DevOps is a set of development tools and services that help teams plan, develop, test, and deliver software. It includes Azure Boards for project management, Azure Repos for version control, Azure Pipelines for CI/CD, Azure Test Plans for testing, and Azure Artifacts for package management. It supports collaboration and integrates with various tools, enabling continuous delivery and integration.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure DevOps is a set of tools for software development that includes project management, version control, CI/CD, and testing services.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">16. Explain the role of Azure Logic Apps.</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Logic Apps is a cloud service that helps automate workflows and integrate apps, data, and services across organizations. Users can create workflows using a visual designer, allowing for seamless data integration between various services and applications, such as Salesforce, Dynamics 365, and Azure services. Logic Apps can trigger workflows based on events or schedules.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Logic Apps is a service for automating workflows and integrating applications across organizations.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">17. What is Azure Cognitive Services?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Cognitive Services is a collection of APIs and services that enable developers to add AI capabilities to applications. It provides pre-built models for various tasks, such as vision recognition, speech recognition, language understanding, and decision-making. Developers can easily integrate these services to enhance applications with intelligent features without needing extensive machine learning expertise.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Cognitive Services is a set of APIs for adding AI capabilities to applications, including vision, speech, and language processing.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">18. What are Azure Cosmos DB and its advantages?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Cosmos DB is a globally distributed, multi-model database service that supports various data models, including document, key-value, graph, and column-family. Key advantages include:
+                <ul>
+                    <li><strong>Global Distribution:</strong> Automatically replicate data across multiple Azure regions.</li>
+                    <li><strong>Multi-Model Support:</strong> Work with different data models within a single database service.</li>
+                    <li><strong>Low Latency:</strong> Offers single-digit millisecond response times.</li>
+                    <li><strong>Scalability:</strong> Dynamically scale throughput and storage as needed.</li>
+                    <li><strong>Consistency Models:</strong> Choose from five consistency models to meet application needs.</li>
+                </ul>
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Cosmos DB is a globally distributed database service that supports multiple data models and provides low latency and scalability.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">19. What is Azure Data Factory?</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows for orchestrating and automating data movement and transformation. Users can connect to various data sources, perform data transformation, and load data into storage or analytics services. It supports a wide range of connectors, making it suitable for ETL (Extract, Transform, Load) processes.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Data Factory is a service for data integration that orchestrates data movement and transformation across sources.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+
+    <li class="question-item">
+        <div class="question">20. Describe Azure Event Hubs.</div>
+        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+        <div class="answer-container">
+            <div class="answer">
+                Azure Event Hubs is a real-time data ingestion service that can process millions of events per second. It is designed for big data scenarios, enabling applications to process and analyze data from various sources, such as sensors, applications, and websites. Event Hubs supports data streaming and real-time analytics, making it suitable for scenarios like IoT telemetry and log data collection.
+            </div>
+            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+            <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Event Hubs is a real-time data ingestion service for processing millions of events from various sources.')">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </li>
+    
+
+        <li class="question-item">
+            <div class="question">21. What is Azure Virtual Network (VNet)?</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    Azure Virtual Network (VNet) is a logical representation of a network in Azure. It enables users to create isolated network environments to host their Azure resources. VNets allow for secure communication between resources, including VMs and services, and can be extended to on-premises networks through VPNs. Users can configure subnets, IP address ranges, and network security groups (NSGs) within a VNet.
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Virtual Network (VNet) is a logical representation of a network that enables isolated environments for Azure resources.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+    
+        <li class="question-item">
+            <div class="question">22. Explain Azure Load Balancer.</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    Azure Load Balancer is a networking service that distributes incoming traffic across multiple servers to ensure high availability and reliability of applications. It provides two types of load balancing:
+                    <ul>
+                        <li><strong>Public Load Balancer:</strong> Distributes traffic from the internet to VMs or services.</li>
+                        <li><strong>Internal Load Balancer:</strong> Distributes traffic within a VNet.</li>
+                    </ul>
+                    Load Balancer can also perform health checks to route traffic only to healthy instances.
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Load Balancer distributes traffic to ensure high availability and offers public and internal load balancing.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+    
+        <li class="question-item">
+            <div class="question">23. What is Azure Traffic Manager?</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    Azure Traffic Manager is a DNS-based traffic load balancer that enables users to distribute traffic across multiple Azure regions or external endpoints. It helps improve application availability and responsiveness by routing user requests based on performance, priority, or geographic location. Traffic Manager can be used in conjunction with Azure Load Balancer for enhanced traffic management.
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Traffic Manager is a DNS-based load balancer that distributes traffic across Azure regions or external endpoints.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+    
+        <li class="question-item">
+            <div class="question">24. Describe Azure VPN Gateway.</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    Azure VPN Gateway is a service that provides a secure connection between an on-premises network and an Azure Virtual Network (VNet) through encrypted tunnels. It supports Site-to-Site VPN connections, allowing users to extend their data center to Azure. VPN Gateway can also be used for Point-to-Site connections, enabling individual users to connect to Azure securely.
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure VPN Gateway provides secure connections between on-premises networks and Azure VNets via encrypted tunnels.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+    
+        <li class="question-item">
+            <div class="question">25. What is Azure ExpressRoute?</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    Azure ExpressRoute is a service that establishes a private connection between on-premises infrastructure and Azure datacenters, bypassing the public internet. This connection offers greater reliability, faster speeds, lower latencies, and higher security than typical internet connections. ExpressRoute is ideal for organizations with strict compliance and security requirements.
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure ExpressRoute provides a private connection between on-premises networks and Azure, offering greater reliability and security.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+    
+        <li class="question-item">
+            <div class="question">26. What are Azure Network Security Groups (NSGs)?</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    Azure Network Security Groups (NSGs) are used to control inbound and outbound traffic to Azure resources within a VNet. NSGs contain rules that define which traffic is allowed or denied based on IP address, port, and protocol. By applying NSGs to subnets or individual network interfaces, users can enhance security and manage network access effectively.
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure NSGs control inbound and outbound traffic to Azure resources, using rules based on IP address, port, and protocol.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+    
+        <li class="question-item">
+            <div class="question">27. How does Azure Firewall work?</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    Azure Firewall is a cloud-native, stateful firewall service that provides network security for Azure Virtual Networks. It filters and monitors network traffic based on pre-configured rules, protecting applications and resources from threats. Azure Firewall supports features like threat intelligence, application rules, network rules, and integration with Azure Monitor for logging and analytics.
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Firewall is a stateful firewall service for Azure VNets that filters and monitors network traffic based on rules.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+    
+        <li class="question-item">
+            <div class="question">28. What is Azure DNS?</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    Azure DNS is a hosting service for DNS domains that provides name resolution for your Azure services and applications. It allows users to manage DNS records (A, CNAME, MX, etc.) using the same Azure portal or API they use to manage other Azure resources. Azure DNS ensures high availability and fast DNS resolution through its global infrastructure.
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure DNS is a hosting service that provides DNS name resolution for Azure services and allows management of DNS records.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+    
+        <li class="question-item">
+            <div class="question">29. Explain the concept of peering in Azure.</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    Peering in Azure allows users to connect two Virtual Networks (VNets) privately, enabling them to communicate with each other as if they were part of the same network. There are two types of peering:
+                    <ul>
+                        <li><strong>VNet Peering:</strong> Connects two VNets within the same Azure region or across different regions.</li>
+                        <li><strong>Global VNet Peering:</strong> Allows for peering across Azure regions. Peered VNets can communicate directly without traversing the public internet.</li>
+                    </ul>
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'Peering in Azure connects two VNets privately, enabling direct communication, with VNet and Global VNet peering types.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+    
+        <li class="question-item">
+            <div class="question">30. What is a Public IP address in Azure?</div>
+            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+            <div class="answer-container">
+                <div class="answer">
+                    A Public IP address in Azure is an address that allows Azure resources to communicate with the internet. Public IPs can be dynamic (changing when the resource is stopped and started) or static (retained until explicitly released). They can be associated with Azure resources such as Virtual Machines, Load Balancers, and Application Gateways to enable inbound traffic from the internet.
+                </div>
+                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                <button class="check-answer-btn" onclick="checkAnswer(this, 'A Public IP address allows Azure resources to communicate with the internet and can be dynamic or static.')">Check Answer</button>
+                <div class="feedback"></div>
+            </div>
+        </li>
+        
+            <li class="question-item">
+                <div class="question">31. What are Azure Key Vault and its uses?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Key Vault is a cloud service for securely storing and managing cryptographic keys, secrets, and certificates. It helps organizations safeguard sensitive information, such as passwords and API keys, by providing secure access and centralized management. Key Vault enables encryption at rest and in transit, supports role-based access control (RBAC), and integrates with other Azure services for enhanced security.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Key Vault is a service for securely storing and managing cryptographic keys, secrets, and certificates.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">32. How does Azure implement encryption?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure implements encryption in various ways:
+                        <ul>
+                            <li><strong>Data Encryption at Rest:</strong> Uses Storage Service Encryption (SSE) to encrypt data stored in Azure storage services automatically.</li>
+                            <li><strong>Data Encryption in Transit:</strong> Protects data during transfer using protocols like HTTPS and TLS.</li>
+                            <li><strong>Encryption of Virtual Machines:</strong> Azure Disk Encryption (ADE) uses BitLocker for Windows and DM-Crypt for Linux to protect VM disks.</li>
+                            <li><strong>Key Management:</strong> Encryption keys can be managed through Azure Key Vault, allowing for secure key management and access control.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure implements encryption using Data Encryption at Rest, Data Encryption in Transit, and encryption for VMs.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">33. What is Azure Security Center?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Security Center is a unified security management system that provides advanced threat protection across Azure resources. It offers a centralized dashboard to monitor security status, identifies vulnerabilities, and provides recommendations for improving security posture. Security Center also supports threat detection, security alerts, and compliance assessments.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Security Center provides a unified security management system for threat protection across Azure resources.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">34. Explain Azure Policy and Azure Blueprints.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        <strong>Azure Policy:</strong> A service that helps enforce organizational standards and assess compliance at scale. It allows users to create policies that restrict or audit Azure resources based on specified criteria, ensuring resources adhere to regulatory requirements and company policies.<br><br>
+                        <strong>Azure Blueprints:</strong> A service that enables users to define a repeatable set of Azure resources and policies, streamlining the deployment of environments. Blueprints can include resource groups, role assignments, and policies, facilitating compliance and governance in Azure.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Policy enforces standards and assesses compliance; Azure Blueprints define repeatable sets of resources and policies.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">35. What is Azure Sentinel?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Sentinel is a cloud-native security information and event management (SIEM) solution that uses AI to provide intelligent security analytics across your enterprise. It collects data from various sources, analyzes it, and provides insights to detect and respond to threats in real time. Sentinel also offers automated response capabilities and integration with other security tools.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Sentinel is a cloud-native SIEM solution that provides intelligent security analytics using AI.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">36. How do you manage identity and access in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Identity and access management in Azure is primarily handled through Azure Active Directory (AD). Users can manage user identities, implement multi-factor authentication, and set up role-based access control (RBAC) to assign permissions based on roles. Azure AD also integrates with other identity providers and supports features like conditional access for enhanced security.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Identity and access in Azure are managed through Azure AD, which supports RBAC and multi-factor authentication.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">37. What is the principle of least privilege in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        The principle of least privilege is a security concept that states users and applications should have only the minimum level of access necessary to perform their tasks. In Azure, this can be implemented through role-based access control (RBAC) by assigning users the least privileged roles required for their responsibilities, reducing the risk of unauthorized access and potential security breaches.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'The principle of least privilege ensures users have only the minimum necessary access to perform tasks, reducing security risks.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">38. How do you ensure compliance in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Ensuring compliance in Azure involves:
+                        <ul>
+                            <li><strong>Utilizing Compliance Offerings:</strong> Azure provides compliance certifications and attestations that can be referenced.</li>
+                            <li><strong>Implementing Policies and Blueprints:</strong> Using Azure Policy and Blueprints to enforce compliance standards and guidelines across resources.</li>
+                            <li><strong>Monitoring and Reporting:</strong> Using Azure Monitor, Azure Security Center, and Azure Sentinel for continuous monitoring, threat detection, and compliance reporting.</li>
+                            <li><strong>Data Protection:</strong> Ensuring data is protected in accordance with regulations, such as GDPR and HIPAA, through encryption and access controls.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Ensuring compliance in Azure involves utilizing compliance offerings, implementing policies, monitoring, and data protection.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">39. What are the shared responsibility model and its implications?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        The shared responsibility model outlines the division of security responsibilities between Azure and its customers. Azure is responsible for securing the cloud infrastructure (datacenters, networks, hardware), while customers are responsible for securing their applications, data, and identity management. Understanding this model is crucial for effectively implementing security measures and compliance strategies in the cloud.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'The shared responsibility model divides security responsibilities; Azure secures the infrastructure, customers secure applications and data.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">40. Describe Azure Role-Based Access Control (RBAC).</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Role-Based Access Control (RBAC) is a method of managing access to Azure resources based on user roles. It allows administrators to assign roles to users, groups, or service principals at different scopes (subscription, resource group, or resource level). Each role defines a set of permissions that determine what actions can be performed on resources, ensuring users only have access to what they need.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure RBAC manages access to resources based on roles, ensuring users have only necessary permissions.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">41. What is Infrastructure as Code (IaC)?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Infrastructure as Code (IaC) is a practice that involves managing and provisioning infrastructure using code and automation tools rather than manual processes. In Azure, IaC can be implemented using Azure Resource Manager templates, Terraform, or other configuration management tools. This approach improves consistency, reduces errors, and allows for version control of infrastructure changes.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Infrastructure as Code is managing and provisioning infrastructure using code and automation tools.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">42. Explain the concept of Azure Resource Templates.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Resource Templates, also known as ARM templates, are JSON files that define the resources needed for a solution in Azure. These templates allow users to deploy and manage Azure resources consistently and repeatedly. Users can parameterize templates to make them reusable and deploy resources in a single operation, improving efficiency and reducing deployment errors.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Resource Templates are JSON files that define Azure resources for consistent deployment and management.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">43. What are Azure CLI and Azure PowerShell?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        <strong>Azure CLI:</strong> A command-line tool that allows users to manage Azure resources through scripts or command prompts. It is cross-platform and supports various operating systems, providing commands to create, manage, and configure Azure resources.<br><br>
+                        <strong>Azure PowerShell:</strong> A set of cmdlets for managing Azure resources using Windows PowerShell. It allows for scripting and automation of Azure management tasks and provides a familiar interface for users who are accustomed to PowerShell.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure CLI is a cross-platform command-line tool for managing Azure resources; Azure PowerShell uses cmdlets for Azure management.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">44. How do you deploy a web application to Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        To deploy a web application to Azure, you typically follow these steps:
+                        <ol>
+                            <li>Choose an appropriate Azure service (e.g., Azure App Service, Azure Kubernetes Service).</li>
+                            <li>Create the Azure resource (e.g., App Service).</li>
+                            <li>Prepare the application for deployment (e.g., package the code).</li>
+                            <li>Deploy the application using tools like Azure DevOps, GitHub Actions, or directly through the Azure portal.</li>
+                            <li>Configure settings (e.g., connection strings, environment variables) as needed.</li>
+                            <li>Monitor and manage the application post-deployment.</li>
+                        </ol>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'To deploy a web application to Azure, choose a service, create the resource, package the app, and deploy using various tools.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">45. What is Continuous Integration/Continuous Deployment (CI/CD)?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Continuous Integration (CI) is a development practice where code changes are automatically tested and merged into a shared repository frequently. Continuous Deployment (CD) extends CI by automatically deploying these changes to production environments after passing tests. In Azure, CI/CD can be implemented using Azure DevOps pipelines, which automate the build, test, and deployment processes.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'CI/CD involves automatically testing and merging code changes (CI) and deploying them to production (CD) using Azure DevOps.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">46. Explain Azure DevOps pipelines.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure DevOps pipelines provide a set of tools for building, testing, and deploying applications. Pipelines can be configured as:
+                        <ul>
+                            <li><strong>Build Pipelines:</strong> Automate the process of compiling source code and running tests.</li>
+                            <li><strong>Release Pipelines:</strong> Deploy applications to various environments (development, staging, production).</li>
+                        </ul>
+                        Pipelines support CI/CD, integration with Git repositories, and can be configured to trigger automatically on code changes.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure DevOps pipelines are tools for building, testing, and deploying applications, supporting CI/CD and integration with Git.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">47. What is a Container Registry in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Container Registry is a managed service that allows users to store and manage Docker container images and artifacts in a private repository. It supports features like image versioning, automated builds, and integration with Azure Kubernetes Service (AKS). A Container Registry enables organizations to manage their container lifecycle securely and efficiently.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Container Registry is a managed service for storing and managing Docker images in a private repository.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">48. How do you scale applications in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Applications in Azure can be scaled in two ways:
+                        <ul>
+                            <li><strong>Vertical Scaling:</strong> Increasing the resources (CPU, memory) of an existing instance.</li>
+                            <li><strong>Horizontal Scaling:</strong> Adding more instances of an application (scaling out) to handle increased load.</li>
+                        </ul>
+                        Azure provides autoscaling features that automatically adjust resources based on predefined rules (e.g., CPU usage, memory consumption), ensuring optimal performance during varying traffic levels.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Applications can be scaled vertically by increasing resources or horizontally by adding instances; Azure supports autoscaling.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">49. What is Azure Application Insights?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Application Insights is an application performance management (APM) service that monitors and analyzes the performance of applications in real-time. It provides insights into application usage, availability, and exceptions. Developers can use Application Insights to track user interactions, diagnose performance issues, and gain actionable insights to improve application performance.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Application Insights is an APM service that monitors application performance, usage, and exceptions in real-time.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">50. Describe the process of using Azure Functions with an event-driven architecture.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Functions are serverless compute services that allow users to run code in response to events without managing infrastructure. In an event-driven architecture, Azure Functions can be triggered by various Azure services (e.g., Blob storage, Event Hubs, Service Bus) or HTTP requests. The process typically involves:
+                        <ol>
+                            <li>Defining an event source (e.g., a blob being uploaded).</li>
+                            <li>Creating an Azure Function to execute specific logic when the event occurs.</li>
+                            <li>Deploying the function and configuring the event trigger.</li>
+                            <li>Monitoring the function execution and optimizing based on performance metrics.</li>
+                        </ol>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Functions are serverless services triggered by events; process includes defining events, creating functions, and monitoring.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            <li class="question-item">
+                <div class="question">51. What are Azure Monitor and Azure Application Insights?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        <strong>Azure Monitor</strong>: A comprehensive service that provides monitoring and management capabilities for Azure resources and applications. It collects metrics and logs, analyzes data, and provides alerts based on predefined conditions. Azure Monitor helps organizations gain insights into performance and availability.<br><br>
+                        <strong>Azure Application Insights</strong>: A part of Azure Monitor focused specifically on monitoring application performance and user behavior. It tracks application metrics, requests, exceptions, and dependencies, enabling developers to diagnose issues and optimize performance.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Monitor provides monitoring for Azure resources; Application Insights focuses on application performance and user behavior.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">52. How do you set up alerts in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Alerts in Azure can be set up through Azure Monitor by creating alert rules that define the conditions under which alerts should be triggered. The process includes:
+                        <ul>
+                            <li>Selecting the resource to monitor (e.g., a VM, application).</li>
+                            <li>Defining the condition (e.g., CPU usage exceeds a certain threshold).</li>
+                            <li>Setting the action to take when the alert is triggered (e.g., send an email, trigger an Azure Function).</li>
+                            <li>Reviewing and creating the alert rule, which will then monitor the specified conditions and notify users accordingly.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Set up alerts in Azure Monitor by creating alert rules with conditions, actions, and review steps.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">53. What is Azure Log Analytics?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Log Analytics is a service within Azure Monitor that helps users collect, analyze, and visualize log data from various sources. It enables querying and analyzing large amounts of log data using the Kusto Query Language (KQL). Organizations can use Log Analytics to identify trends, troubleshoot issues, and gain insights into system performance and health.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Log Analytics helps collect, analyze, and visualize log data using KQL for insights and troubleshooting.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">54. Explain Azure Automation.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Automation is a cloud-based service that automates repetitive tasks and processes across Azure and on-premises environments. It provides tools for managing configurations, orchestrating processes, and running scripts in PowerShell or Python. Azure Automation helps organizations improve efficiency, reduce errors, and maintain consistent configurations across resources.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Automation automates tasks and processes using PowerShell or Python scripts for efficiency and consistency.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">55. How can you manage costs in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Managing costs in Azure involves:
+                        <ul>
+                            <li><strong>Monitoring Usage</strong>: Using Azure Cost Management to track spending and resource usage.</li>
+                            <li><strong>Setting Budgets</strong>: Establishing budgets and alerts to notify users when spending exceeds thresholds.</li>
+                            <li><strong>Optimizing Resource Usage</strong>: Identifying and deallocating underutilized resources, right-sizing instances, and using reserved instances for predictable workloads.</li>
+                            <li><strong>Implementing Tagging</strong>: Applying tags to resources for better organization and cost tracking by department or project.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Manage costs in Azure by monitoring usage, setting budgets, optimizing resource usage, and implementing tagging.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">56. What is Azure Advisor?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Advisor is a personalized cloud consultant that provides best practices and recommendations for optimizing Azure resources. It analyzes user deployments and offers actionable insights to enhance performance, security, availability, and cost efficiency. Azure Advisor helps organizations follow Azure best practices and improve their overall cloud strategy.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Advisor provides personalized best practices and recommendations to optimize Azure resources for performance and cost efficiency.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">57. Describe Azure Resource Health.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Resource Health is a service that provides information about the status of Azure resources, helping users understand the health of their resources. It informs users of any issues affecting resources, such as outages or maintenance activities, and provides troubleshooting steps. Resource Health helps organizations maintain service reliability and availability.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Resource Health informs users about resource status, issues, and provides troubleshooting steps to maintain reliability.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">58. What is Azure Policy?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Policy is a service that allows organizations to create, assign, and manage policies that enforce specific rules and effects on Azure resources. Policies can be used to ensure compliance with standards, such as restricting the types of resources that can be deployed, enforcing tagging conventions, or auditing configurations. Azure Policy helps organizations maintain governance over their Azure environments.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Policy enforces rules on Azure resources for compliance and governance, ensuring standard adherence.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">59. How do you implement backup and disaster recovery in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Implementing backup and disaster recovery in Azure involves:
+                        <ul>
+                            <li><strong>Using Azure Backup</strong>: A service that enables users to back up data from Azure resources and on-premises systems securely.</li>
+                            <li><strong>Setting Up Recovery Services Vault</strong>: To manage backups and configure policies for retention and scheduling.</li>
+                            <li><strong>Implementing Azure Site Recovery</strong>: A service that enables replication and failover of applications and workloads to ensure business continuity during outages.</li>
+                            <li><strong>Testing Recovery Plans</strong>: Regularly testing disaster recovery plans to ensure systems can be restored as expected.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Implement backup and disaster recovery using Azure Backup, Recovery Services Vault, Site Recovery, and testing plans.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">60. What is Azure Resource Manager (ARM)?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Resource Manager (ARM) is the deployment and management service for Azure. It provides a unified management layer that enables users to create, update, and delete resources in Azure. ARM uses templates to define resources in a declarative way, allowing for consistent and repeatable deployments. Additionally, it provides role-based access control (RBAC) for managing permissions across resources.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Resource Manager is the management service for Azure, enabling resource creation, updates, and access control through templates.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">61. Explain the microservices architecture in Azure.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Microservices architecture is a design approach that structures applications as a collection of small, loosely coupled services that communicate through APIs. In Azure, microservices can be implemented using Azure Kubernetes Service (AKS), Azure Functions, or Azure App Service. This architecture enhances scalability, enables independent deployments, and allows teams to use different technologies for different services, fostering agility and innovation.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Microservices architecture structures applications as small, loosely coupled services communicating via APIs, enhancing scalability and independent deployments in Azure.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">62. What are the best practices for designing Azure applications?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Best practices for designing Azure applications include:
+                        <ul>
+                            <li><strong>Use Azure Well-Architected Framework</strong>: Follow principles of reliability, performance efficiency, security, cost optimization, and operational excellence.</li>
+                            <li><strong>Leverage Managed Services</strong>: Use Azure PaaS services to reduce management overhead and focus on application development.</li>
+                            <li><strong>Design for Scalability</strong>: Implement autoscaling and load balancing to handle varying loads effectively.</li>
+                            <li><strong>Implement Security Best Practices</strong>: Secure applications through authentication, encryption, and network security measures.</li>
+                            <li><strong>Enable Monitoring and Logging</strong>: Integrate Azure Monitor and Application Insights for real-time visibility into application performance.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Best practices include using the Azure Well-Architected Framework, leveraging managed services, designing for scalability, implementing security best practices, and enabling monitoring and logging.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">63. How do you ensure high availability in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Ensuring high availability in Azure involves:
+                        <ul>
+                            <li><strong>Using Availability Zones</strong>: Distributing resources across multiple Azure regions to prevent single points of failure.</li>
+                            <li><strong>Implementing Load Balancers</strong>: Distributing traffic across multiple instances to ensure service continuity.</li>
+                            <li><strong>Configuring Autoscaling</strong>: Automatically scaling resources based on demand to maintain performance during peak loads.</li>
+                            <li><strong>Setting Up Disaster Recovery</strong>: Using Azure Site Recovery for replication and failover of critical applications to ensure business continuity.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Ensure high availability by using Availability Zones, implementing load balancers, configuring autoscaling, and setting up disaster recovery with Azure Site Recovery.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">64. What is the Azure Well-Architected Framework?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        The Azure Well-Architected Framework is a set of guiding principles and best practices designed to help architects and developers create high-quality, secure, and scalable applications in Azure. It encompasses five pillars:
+                        <ul>
+                            <li><strong>Cost Optimization</strong>: Efficiently manage costs and optimize resource usage.</li>
+                            <li><strong>Operational Excellence</strong>: Enhance operations and monitoring for smooth service delivery.</li>
+                            <li><strong>Performance Efficiency</strong>: Ensure applications meet performance requirements and can scale effectively.</li>
+                            <li><strong>Reliability</strong>: Design for resiliency and fault tolerance to maintain service availability.</li>
+                            <li><strong>Security</strong>: Implement security practices to protect data and applications.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'The Azure Well-Architected Framework provides principles for cost optimization, operational excellence, performance efficiency, reliability, and security.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">65. Explain the concept of serverless computing in Azure.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Serverless computing is a cloud computing model where the cloud provider manages the infrastructure, allowing developers to focus on writing code without worrying about server management. In Azure, serverless computing is represented by services like Azure Functions and Azure Logic Apps. These services automatically scale based on demand, only charging users for the actual execution time of their code, making it a cost-effective solution for event-driven applications.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Serverless computing in Azure allows developers to focus on code without managing infrastructure, using services like Azure Functions and Logic Apps that scale automatically.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">66. What are Azure Logic Apps?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Logic Apps is a cloud service that enables users to automate workflows and integrate applications and services using a visual designer. Logic Apps can connect to various Azure services, third-party APIs, and on-premises systems, allowing users to create automated processes for tasks such as data integration, notifications, and approvals. It simplifies building complex workflows without writing extensive code.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Logic Apps automates workflows and integrates applications/services using a visual designer, simplifying complex processes.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">67. How do you implement an API Management strategy in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Implementing an API Management strategy in Azure involves using Azure API Management service to create, publish, secure, and analyze APIs. Key steps include:
+                        <ul>
+                            <li><strong>Creating an API Management Instance</strong>: Set up an instance to host APIs.</li>
+                            <li><strong>Importing or Defining APIs</strong>: Define APIs through import or manual configuration.</li>
+                            <li><strong>Securing APIs</strong>: Implement authentication and authorization (e.g., OAuth, API keys).</li>
+                            <li><strong>Monitoring and Analytics</strong>: Use built-in analytics to track API usage, performance, and health.</li>
+                            <li><strong>Creating Developer Portals</strong>: Provide documentation and tools for developers to access APIs easily.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Implement API Management by creating an instance, importing APIs, securing them, monitoring usage, and creating developer portals.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">68. What is Azure Service Fabric?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Service Fabric is a distributed systems platform that simplifies the packaging, deployment, and management of microservices applications. It provides a robust runtime environment for building scalable and reliable applications, allowing developers to create stateless and stateful microservices. Service Fabric supports various programming models, enables automatic scaling, and integrates with other Azure services for monitoring and orchestration.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Service Fabric simplifies microservices application management, providing a robust runtime for scalable, reliable applications.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">69. How do you integrate Azure with on-premises resources?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Integrating Azure with on-premises resources can be achieved using services like Azure VPN Gateway or Azure ExpressRoute to establish secure connections. Additionally, Azure Arc enables management of on-premises and multi-cloud resources through Azure. Azure Logic Apps and Azure Functions can also facilitate integration through workflows and APIs, allowing seamless data exchange between Azure and on-premises systems.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Integrate Azure with on-premises resources using Azure VPN Gateway, ExpressRoute, Azure Arc, Logic Apps, and Functions.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">70. What is Azure DevTest Labs?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure DevTest Labs is a service that provides a cloud environment for developing and testing applications. It enables users to create and manage virtual machines and environments quickly, supporting the rapid development lifecycle. DevTest Labs helps reduce costs by allowing users to manage lab resources effectively, integrate with CI/CD pipelines, and apply policies for compliance and governance.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure DevTest Labs provides a cloud environment for rapid development and testing of applications, reducing costs and integrating with CI/CD pipelines.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">71. Explain Azure Kubernetes Service (AKS).</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Kubernetes Service (AKS) is a managed container orchestration service that simplifies the deployment, management, and scaling of containerized applications using Kubernetes. AKS automates routine tasks such as health monitoring and maintenance, allowing developers to focus on building applications. It integrates with Azure services for monitoring, security, and scaling, making it easier to manage containerized workloads in the cloud.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Kubernetes Service is a managed service for deploying and managing containerized applications using Kubernetes, simplifying scaling and monitoring.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">72. What is Azure Batch?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Batch is a cloud-based service that enables users to run large-scale parallel and high-performance computing (HPC) applications efficiently. It allows developers to manage the execution of batch jobs, automatically scaling the required compute resources based on demand. Azure Batch supports various workloads, such as rendering, simulations, and data processing, streamlining batch job management.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Batch is a cloud service for running large-scale parallel and HPC applications, managing batch jobs efficiently and scaling resources based on demand.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">73. Describe the Azure Cognitive Services.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Cognitive Services is a collection of APIs and services that enable developers to add intelligent features to applications without needing expertise in machine learning. It includes capabilities for vision (image analysis, facial recognition), speech (speech-to-text, text-to-speech), language (natural language processing), and decision-making (anomaly detection). Cognitive Services allows developers to enhance user experiences with AI-driven functionalities.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Cognitive Services provides APIs for adding intelligent features like image analysis, speech recognition, and natural language processing to applications.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">74. What is Azure Machine Learning?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Machine Learning is a cloud service for building, training, and deploying machine learning models at scale. It provides a comprehensive platform for data scientists and developers to collaborate on ML projects, offering tools for data preparation, model training, and deployment. Azure Machine Learning supports various frameworks (e.g., TensorFlow, PyTorch) and automates machine learning processes through capabilities like AutoML and MLOps.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Machine Learning is a cloud service for building and deploying machine learning models at scale, offering tools for data preparation, training, and deployment.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">75. Explain the role of Azure Event Grid.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Event Grid is a fully managed event routing service that enables users to build event-driven architectures by connecting applications and services through events. It allows developers to publish, subscribe, and react to events from various Azure services and custom sources. Event Grid supports low-latency event delivery, scalability, and integration with Azure Functions, Logic Apps, and other services, simplifying the implementation of reactive applications.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Event Grid is an event routing service that connects applications and services, allowing event-driven architectures and low-latency event delivery.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">76. What is Azure Data Lake?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Data Lake is a scalable data storage and analytics service designed for big data analytics. It allows organizations to store and analyze large volumes of structured and unstructured data in a cost-effective manner. Azure Data Lake integrates with Azure analytics services like Azure Databricks, Azure Synapse Analytics, and Azure HDInsight, enabling users to perform advanced analytics and machine learning on their data.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Data Lake is a scalable storage and analytics service for big data, integrating with various Azure analytics services for advanced analytics.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">77. Describe Azure Synapse Analytics.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Synapse Analytics is an integrated analytics service that combines big data and data warehousing. It provides a unified platform for ingesting, preparing, managing, and serving data for business intelligence and analytics. Users can run SQL queries, use Spark for big data processing, and create data pipelines, all within a single workspace. Azure Synapse enables organizations to derive insights from their data efficiently.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Synapse Analytics combines big data and data warehousing, providing a unified platform for data management and analytics.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">78. What is Azure Data Factory?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Data Factory is a cloud-based data integration service that enables users to create, schedule, and orchestrate data workflows. It allows for the movement and transformation of data from various sources to different destinations. Data Factory supports data ingestion, data transformation, and data orchestration through pipelines, enabling organizations to build ETL (extract, transform, load) processes for analytics and reporting.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Data Factory is a cloud service for data integration, allowing users to create and orchestrate data workflows and ETL processes.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">79. Explain Azure Data Warehouse.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Data Warehouse, now part of Azure Synapse Analytics, is a cloud-based, fully managed data warehouse solution that enables organizations to store and analyze large volumes of structured and semi-structured data. It provides capabilities for running complex queries and reporting, supporting real-time analytics. Users can scale storage and compute resources independently, optimizing costs based on workload demands.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Data Warehouse, part of Azure Synapse Analytics, is a managed solution for storing and analyzing large volumes of data, supporting real-time analytics and independent scaling.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">80. What are Azure Functions and their use cases?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure Functions are serverless compute services that allow users to run event-driven code without managing infrastructure. Use cases for Azure Functions include:
+                        <ul>
+                            <li>Data Processing: Trigger functions to process data as it arrives in Azure Blob Storage or Event Hubs.</li>
+                            <li>API Integration: Create serverless APIs that respond to HTTP requests.</li>
+                            <li>Scheduled Tasks: Use timer triggers to execute functions on a schedule (e.g., periodic data cleanup).</li>
+                            <li>Webhook Handlers: Respond to events from external services or applications.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure Functions are serverless services for running event-driven code, used for data processing, API integration, scheduled tasks, and webhook handling.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            <li class="question-item">
+                <div class="question">81. What are common troubleshooting steps for Azure services?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        When troubleshooting Azure services, I usually start by checking the <strong>Azure Status Page</strong> to see if there are any ongoing outages. Then, I review <strong>logs and metrics</strong> using tools like Azure Monitor or Log Analytics, which can provide insights into what went wrong. It’s also important to validate the configuration of the resources; sometimes, a misconfiguration can cause issues. I check the <strong>network connectivity</strong> as well, using Azure Network Watcher, to ensure everything is set up correctly. If the problem seems isolated, I focus on that specific resource, but if it affects multiple services, I dig deeper into broader configurations. Finally, I always refer to the official documentation or community forums for guidance on specific error messages.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Common troubleshooting steps include checking the Azure Status Page, reviewing logs and metrics, validating resource configurations, checking network connectivity, focusing on specific resources, and consulting documentation for error messages.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">82. How do you handle performance issues in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        For performance issues, I start by monitoring key metrics using <strong>Azure Monitor</strong> to see if there are spikes in CPU usage or memory pressure. If I find that resources are consistently over-utilized, I might consider <strong>scaling up</strong> (adding more resources) or <strong>scaling out</strong> (adding more instances). Optimizing the application code is also critical—sometimes, small changes can yield big performance improvements. I often implement caching with Azure Cache for Redis to reduce database load and improve response times. Lastly, I make sure to review the network setup to minimize latency, as that can greatly impact performance as well.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'I handle performance issues by monitoring metrics in Azure Monitor, considering scaling up or out, optimizing application code, implementing caching, and reviewing network setup to minimize latency.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">83. Describe the process of diagnosing failed deployments in Azure.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        When a deployment fails, the first step is to check the <strong>deployment status</strong> in the Azure portal or via Azure CLI to see what happened. Next, I dive into the <strong>deployment logs</strong> to identify any error messages or warnings that can give clues about the failure. It’s crucial to verify that all resource configurations are correct and to check for any <strong>dependencies</strong> that might be missing. If there are issues, I make the necessary corrections and try redeploying. If the problem persists, I might need to consult the community or documentation for more insights.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Diagnosing failed deployments involves checking the deployment status, reviewing deployment logs for errors, verifying resource configurations, checking for dependencies, and consulting documentation if needed.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">84. What are some best practices for securing Azure resources?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        To secure Azure resources, I always start with <strong>Azure Active Directory (Azure AD)</strong> for identity and access management. Using <strong>role-based access control (RBAC)</strong> allows me to assign permissions appropriately. Enabling <strong>multi-factor authentication (MFA)</strong> adds an essential layer of security. I also ensure that data is <strong>encrypted</strong>, both at rest and in transit. Regularly updating security policies and using the <strong>Azure Security Center</strong> to monitor compliance are also key practices. Additionally, implementing <strong>Network Security Groups (NSGs)</strong> and Azure Firewalls helps manage traffic and secure my resources effectively.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Best practices for securing Azure resources include using Azure AD for identity management, implementing RBAC, enabling MFA, ensuring data encryption, monitoring compliance with Azure Security Center, and utilizing NSGs and Azure Firewalls.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">85. How do you manage version control in Azure DevOps?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        In Azure DevOps, I manage version control primarily using <strong>Git repositories</strong>. This allows me to create branches for features or fixes, making collaboration easier through pull requests. I follow a versioning strategy—like semantic versioning—to keep track of changes and releases. <strong>Continuous Integration (CI)</strong> is set up to automatically build and test the code when changes are made, ensuring quality. I also utilize <strong>release pipelines</strong> to manage deployments across various environments, and I maintain good documentation to track project history and changes.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'I manage version control in Azure DevOps using Git repositories, create branches for collaboration, implement CI for automatic builds and tests, use release pipelines for deployments, and maintain documentation for project changes.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">86. What should you do if an Azure service goes down?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        If an Azure service goes down, the first thing I do is check the <strong>Azure Status Page</strong> for any reported outages. It’s essential to assess which applications and services are affected and communicate this to stakeholders to keep everyone informed. Depending on the situation, I look for <strong>workarounds</strong> or <strong>failover options</strong> to minimize downtime. Monitoring the situation closely and following updates from Azure is crucial to ensure services are restored as quickly as possible.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'If an Azure service goes down, I check the Azure Status Page, assess the impact on applications, communicate with stakeholders, look for workarounds or failover options, and monitor for updates.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">87. Explain the importance of tagging in Azure.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Tagging is incredibly important in Azure because it helps with <strong>resource management</strong>. By tagging resources based on departments or projects, it becomes much easier to categorize and manage them. Tags are also valuable for <strong>cost tracking</strong>, allowing teams to analyze spending by grouping resources. They can enforce policies and automate processes, making it easier to manage resources at scale. Plus, tags enhance <strong>searchability</strong>, which is helpful in larger environments.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Tagging in Azure is important for resource management, cost tracking, policy enforcement, automation, and enhancing searchability of resources.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">88. What is the difference between a standard and a premium service in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        The primary difference between standard and premium services in Azure often boils down to <strong>performance</strong> and <strong>features</strong>. Premium services typically offer better performance metrics, such as faster processing speeds and lower latency. They may also provide additional features like enhanced security options or advanced analytics capabilities. Furthermore, premium services come with stricter <strong>Service Level Agreements (SLAs)</strong>, offering better uptime guarantees. Of course, premium options usually come at a higher cost, reflecting these additional benefits.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'The difference between standard and premium Azure services includes performance, features, and SLAs, with premium services typically offering better performance, additional features, and stricter uptime guarantees at a higher cost.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">89. How can you optimize Azure costs?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        To optimize costs in Azure, I start by using <strong>Azure Cost Management</strong> to analyze usage and identify areas where I can cut back. <strong>Right-sizing resources</strong> is crucial; I regularly assess whether my resources are over or under-provisioned. Implementing <strong>autoscaling</strong> is another effective strategy, as it adjusts resources based on demand, which means I’m only paying for what I use. Additionally, I look into <strong>reserved instances</strong> for predictable workloads, which can save a lot over time. Regular monitoring and reviews help me stay on top of costs and find new savings.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'I optimize Azure costs by using Azure Cost Management, right-sizing resources, implementing autoscaling, exploring reserved instances, and conducting regular monitoring and reviews.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">90. What is Azure's approach to managing legacy applications?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Azure takes a multi-faceted approach to managing legacy applications. One common strategy is the <strong>lift-and-shift</strong> migration, where you move applications to Azure with minimal changes. For those looking to modernize, <strong>refactoring</strong> or even rearchitecting the application can enhance performance and maintainability. <strong>Containerization</strong> is also a viable option; legacy apps can be containerized using Docker and deployed on <strong>Azure Kubernetes Service (AKS)</strong>. Additionally, Azure offers options to integrate legacy apps with cloud-native services, allowing for a hybrid approach where both old and new technologies can work together.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Azure manages legacy applications through lift-and-shift migrations, refactoring for modernization, containerization with AKS, and integrating legacy apps with cloud-native services for a hybrid approach.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            <li class="question-item">
+                <div class="question">91. How would you migrate an on-premises application to Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Migrating an on-premises application to Azure typically starts with an <strong>assessment</strong> of the application’s architecture, dependencies, and resource requirements. After that, I create a detailed <strong>migration plan</strong>. Depending on the app, I might choose a <strong>lift-and-shift</strong> approach or consider refactoring it for the cloud. Selecting the right Azure services for hosting is crucial; I could use Azure App Service or Virtual Machines, depending on the app's needs. I’d also plan the <strong>data migration</strong> carefully, possibly using Azure Database Migration Service or Azure Data Factory. After conducting thorough testing in the Azure environment, I’d execute the final cutover, ensuring minimal downtime.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Migrating an on-premises application to Azure involves assessing architecture and dependencies, creating a migration plan, choosing a lift-and-shift or refactoring approach, selecting appropriate Azure services, planning data migration, and testing before final cutover.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">92. Describe a situation where you had to troubleshoot a failed Azure deployment.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Once, I encountered a situation where a deployment failed due to a misconfiguration. I first checked the <strong>deployment logs</strong>, which highlighted a specific error with one of the resources. I then looked into the configurations of related resources and found a missing dependency that was causing the issue. After making the necessary adjustments, I redeployed and monitored the process closely. Thankfully, the second attempt was successful, and the application was up and running without any further issues.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'I had to troubleshoot a failed Azure deployment by checking deployment logs, identifying a misconfiguration, fixing the missing dependency, and successfully redeploying the application on the second attempt.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">93. How would you implement a multi-region architecture in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        To implement a multi-region architecture, I’d start by choosing the Azure regions based on factors like geographical requirements and compliance needs. I’d deploy the necessary resources in each selected region, ensuring that they are configured to handle the load effectively. Using <strong>Azure Traffic Manager</strong> or <strong>Azure Front Door</strong> would help in routing user traffic intelligently, depending on performance and availability. Data replication is also critical, so I’d configure services like <strong>Azure SQL Database geo-replication</strong> to ensure data consistency. Finally, I’d set up monitoring and failover mechanisms to maintain service availability.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'I would implement a multi-region architecture by selecting appropriate Azure regions, deploying resources, using Azure Traffic Manager or Front Door for traffic routing, configuring data replication, and setting up monitoring and failover mechanisms.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">94. What considerations would you have for data residency in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        When considering data residency in Azure, I focus on <strong>regulatory compliance</strong> first. It’s crucial to understand the legal requirements regarding data storage and processing in specific regions, such as GDPR or HIPAA. I choose Azure regions that align with these data residency requirements to ensure compliance. Additionally, I consider the <strong>location of my users</strong> to minimize latency and ensure quick access to data. Implementing proper data protection measures and understanding Azure’s data governance options are also vital.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'For data residency in Azure, I focus on regulatory compliance, choose Azure regions that meet legal requirements, consider user location for latency, and implement data protection measures.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">95. How do you manage secrets and sensitive information in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        For managing secrets and sensitive information in Azure, I rely heavily on <strong>Azure Key Vault</strong>. It’s a secure place to store keys, secrets, and certificates, and it allows for controlled access through Azure AD. I also use policies to ensure that only authorized applications or users can retrieve sensitive data. Additionally, I ensure that secrets are rotated regularly and monitor access logs to detect any unauthorized access attempts. Implementing encryption for sensitive data both at rest and in transit is also a crucial part of my strategy.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'I manage secrets in Azure using Azure Key Vault for secure storage, implement access controls, rotate secrets regularly, monitor access logs, and enforce encryption for sensitive data.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">96. Explain how you would set up a CI/CD pipeline for a microservices application.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        To set up a CI/CD pipeline for a microservices application, I would start by defining the repository structure in <strong>Azure DevOps</strong> or GitHub. Each microservice would have its own repository to facilitate independent development. I’d create <strong>build pipelines</strong> that trigger automatically upon code changes, running tests and building Docker images for each service. For deployment, I would set up <strong>release pipelines</strong> to automate the deployment of these services to Azure Kubernetes Service (AKS). Additionally, I’d integrate monitoring and logging tools to track the health of each microservice post-deployment, ensuring everything runs smoothly.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'I would set up a CI/CD pipeline for a microservices application by defining the repository structure, creating build pipelines for automatic testing, and setting up release pipelines for deployment to AKS, while integrating monitoring tools.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">97. Describe a time you implemented monitoring in an Azure environment.</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        In a previous project, I implemented <strong>Azure Monitor</strong> to gain insights into application performance and resource utilization. I set up alerts for critical metrics, such as CPU usage and response times, so that I would be notified if anything went awry. Additionally, I integrated <strong>Application Insights</strong> to track user behavior and application performance in real time. This setup allowed us to identify performance bottlenecks quickly and improve the user experience based on actual usage patterns. The implementation of monitoring played a crucial role in maintaining high availability and performance.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'I implemented Azure Monitor to track performance and utilization, set alerts for critical metrics, integrated Application Insights for user behavior tracking, and improved user experience based on data analysis.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">98. How would you design an application that requires low latency?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        When designing an application that requires low latency, I would focus on several key aspects. First, I’d choose Azure regions that are geographically close to the user base to minimize network latency. Next, I would implement <strong>caching strategies</strong> using Azure Cache for Redis to reduce the load on the backend and speed up response times. <strong>Load balancing</strong> would also be critical to distribute traffic efficiently across multiple instances. Additionally, I’d optimize the application code and database queries to ensure they execute as quickly as possible. Lastly, using a <strong>Content Delivery Network (CDN)</strong> would help deliver static content faster by caching it at edge locations closer to users.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'To design a low-latency application, I would choose Azure regions close to users, implement caching strategies, ensure effective load balancing, optimize code and queries, and use a CDN for static content.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">99. What steps would you take to ensure data integrity in Azure?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        To ensure data integrity in Azure, I would implement several strategies. First, I’d utilize <strong>data encryption</strong> both at rest and in transit to protect sensitive information. I would also set up <strong>data validation</strong> rules in the application layer to ensure only accurate and valid data is accepted. Regularly backing up data and implementing <strong>disaster recovery</strong> plans would be crucial as well. Utilizing features like <strong>Azure SQL Database's built-in data integrity checks</strong> can help catch potential issues early. Finally, monitoring and logging access to the data can help identify unauthorized changes and maintain accountability.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'To ensure data integrity in Azure, I would use data encryption, set validation rules, perform regular backups, implement disaster recovery plans, and monitor data access.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">100. How would you handle a request for a new Azure feature from a client?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        When a client requests a new Azure feature, I would start by gathering detailed requirements to understand their needs fully. I’d then conduct a feasibility analysis to determine if the feature is possible within Azure’s current offerings. If the feature aligns with Azure’s roadmap, I would guide the client through the existing alternatives and best practices while providing timelines for potential rollout. If it’s a request for a feature not currently available, I would escalate it to the appropriate Azure team or suggest they provide feedback through Azure’s user voice platform. Keeping the client informed throughout the process is key to ensuring their needs are met and maintaining a good relationship.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'I would handle a request for a new Azure feature by gathering requirements, conducting feasibility analysis, guiding the client through alternatives, and escalating requests to the Azure team if necessary.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        </ol></div>
+ <script src="script.js"></script>
+            
+            

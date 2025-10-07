@@ -1,0 +1,481 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Aptitude</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Aptitude
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href ="Probability Rules.html";
+    }
+    function goNext() {
+        window.location.href = "Permutations.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Permutations & Combinations</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  
+            <h2>Introduction to Permutations and Combinations</h2>
+            <p>Permutations and combinations are fundamental concepts in combinatorics, a branch of mathematics dealing with counting and arranging objects. These concepts are used to solve problems related to the arrangement and selection of items. Understanding the difference between permutations and combinations is crucial for solving various probability and combinatorial problems.</p>
+
+            <h2>What are Permutations?</h2>
+            <p>Permutations refer to the different ways in which a set of objects can be arranged in a specific order. The order of arrangement matters in permutations.</p>
+
+            <div class="formula">
+                <strong>Formula to Calculate Permutations:</strong><br>
+                Permutations (P) = n! / (n - r)!
+            </div>
+
+            <p><strong>n:</strong> Total number of objects<br>
+            <strong>r:</strong> Number of objects to arrange<br>
+            <strong>n!:</strong> Factorial of n, which is the product of all positive integers up to n.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                Suppose you want to arrange 3 out of 5 books on a shelf. To find the number of permutations:
+                <br><br>
+                n = 5 (total books), r = 3 (books to arrange)<br>
+                Permutations = 5! / (5 - 3)! = 5! / 2! = (5 × 4 × 3 × 2 × 1) / (2 × 1) = 60<br>
+                Therefore, there are 60 different ways to arrange 3 books out of 5.
+            </div>
+
+            <h2>What are Combinations?</h2>
+            <p>Combinations refer to the different ways of selecting items from a set, where the order of selection does not matter. Combinations are used when the arrangement or order of the selected items is not important.</p>
+
+            <div class="formula">
+                <strong>Formula to Calculate Combinations:</strong><br>
+                Combinations (C) = n! / [r! × (n - r)!]
+            </div>
+
+            <p><strong>n:</strong> Total number of objects<br>
+            <strong>r:</strong> Number of objects to select<br>
+            <strong>n!:</strong> Factorial of n<br>
+            <strong>r!:</strong> Factorial of r</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                Suppose you want to select 2 out of 4 different fruits. To find the number of combinations:
+                <br><br>
+                n = 4 (total fruits), r = 2 (fruits to select)<br>
+                Combinations = 4! / [2! × (4 - 2)!] = 4! / (2! × 2!) = (4 × 3 × 2 × 1) / [(2 × 1) × (2 × 1)] = 6<br>
+                Therefore, there are 6 different ways to select 2 fruits out of 4.
+            </div>
+
+            <h2>How to Calculate Permutations and Combinations</h2>
+            <ul>
+                <li><strong>Identify the Total Number of Objects (n):</strong> Determine the total number of items available.</li>
+                <li><strong>Determine the Number of Objects to Arrange or Select (r):</strong> Decide how many items you want to arrange or select.</li>
+                <li><strong>Apply the Formulas:</strong> Use the permutation formula if the order matters, or the combination formula if the order does not matter.</li>
+            </ul>
+
+            <h2>Why are Permutations and Combinations Important?</h2>
+            <ul>
+                <li><strong>Problem Solving:</strong> Useful for solving problems related to arrangement and selection in various fields such as probability, statistics, and game theory.</li>
+                <li><strong>Decision Making:</strong> Helps in determining the number of possible outcomes and making informed decisions based on different scenarios.</li>
+                <li><strong>Statistical Analysis:</strong> Forms the basis for many statistical methods and analyses used in research and data interpretation.</li>
+            </ul>
+
+            <h2>Real-Life Example</h2>
+            <p>Consider a situation where you are organizing a committee of 3 members from a group of 7 people:</p>
+
+            <div class="example">
+                <strong>Scenario:</strong><br>
+                - You need to select 3 members from 7 people.<br><br>
+                Using combinations (since the order of selection does not matter):<br>
+                Combinations = 7! / [3! × (7 - 3)!] = 7! / (3! × 4!) = (7 × 6 × 5 × 4 × 3 × 2 × 1) / [(3 × 2 × 1) × (4 × 3 × 2 × 1)] = 35<br><br>
+                Therefore, there are 35 different ways to select 3 members from 7 people.
+            </div>
+
+            <h2>Practice Tests</h2>
+            <div class="resources">
+                <p>Test your understanding of permutations and combinations with these free practice resources:</p>
+                <ul>
+                    
+                    <li><a href="https://www.ixl.com/math/algebra-2/permutations-and-combinations" target="_blank">IXL: Permutations and Combinations Practice</a></li>
+                    <li><a href="https://www.khanacademy.org/math/statistics-probability/counting-permutations-combinations" target="_blank">Khan Academy: Permutations and Combinations Tutorial</a></li>
+                    <li><a href="https://www.cuemath.com/learn/math-permutations-and-combinations/" target="_blank">Cuemath: Permutations and Combinations Practice</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Permutations and combinations are key concepts in combinatorics used to count and arrange objects. Permutations focus on the arrangement where order matters, while combinations focus on the selection where order does not matter. Understanding these concepts helps in solving various mathematical and real-life problems related to arrangement and selection.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                    </div>
+    </div>
+</body>
+</html>

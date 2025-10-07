@@ -1,0 +1,810 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Linked Lists DSA.html";
+    }
+    function goNext() {
+        window.location.href = "Doubly Linked List DSA.html";
+    }
+        </script><br><br><br><br><br><br>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1">Singly Linked List</div></div>
+
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+
+        <h2>What is a Singly Linked List ?</h2>
+        <p>A singly linked list is a linear data structure consisting of a sequence of nodes. Each node contains a data value and a reference (or link) to the next node in the sequence. It provides efficient insertion and deletion operations at both the beginning and middle of the list.</p>
+        
+        
+            <style>
+                .container-1 {
+                    margin: 20px;
+                }
+        
+                .list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 20px 0;
+                }
+        
+                .node {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid #007bff;
+                    border-radius: 30px;
+                    background-color: #ffffff;
+                    position: relative;
+                    font-size: 20px;
+                    margin: 0 20px;
+                    transition: transform 0.3s ease, background-color 0.3s ease;
+                }
+        
+                .node:hover {
+                    transform: scale(1.1);
+                    background-color: #e7f0ff;
+                }
+        
+                .arrow {
+                    width: 40px;
+                    height: 40px;
+                    border-top: 2px solid #007bff;
+                    border-right: 2px solid #007bff;
+                    transform: rotate(45deg);
+                    position: relative;
+                    margin: 0 10px;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+        
+                .arrow.active {
+                    opacity: 1;
+                }
+        
+                @keyframes bounce {
+                    0%, 20%, 50%, 80%, 100% {
+                        transform: translateY(0);
+                    }
+                    40% {
+                        transform: translateY(-15px);
+                    }
+                    60% {
+                        transform: translateY(-10px);
+                    }
+                }
+        
+                .node.active {
+                    animation: bounce 0.6s;
+                    border-color: #28a745;
+                    background-color: #d4edda;
+                }
+        
+                .null-pointer {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px dashed #007bff;
+                    border-radius: 30px;
+                    background-color: #ffffff;
+                    font-size: 18px;
+                    color: #777;
+                    margin: 0 20px;
+                    transition: border-color 0.3s ease, background-color 0.3s ease;
+                }
+        
+                .null-pointer.active {
+                    border-color: #28a745;
+                    background-color: #d4edda;
+                }
+        
+                .description {
+                    background-color: #ffffff;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin: 20px auto;
+                    max-width: 800px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+                }
+        
+                .description h2 {
+                    font-size: 24px;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+        
+                .description p {
+                    font-size: 18px;
+                    color: #555;
+                    line-height: 1.6;
+                }
+        
+                .description ul {
+                    list-style-type: disc;
+                    padding-left: 20px;
+                }
+        
+                .description li {
+                    margin-bottom: 10px;
+                }
+        
+                @media (max-width: 600px) {
+                    .description {
+                        padding: 15px;
+                    }
+        
+                    .description h2 {
+                        font-size: 20px;
+                    }
+        
+                    .description p {
+                        font-size: 16px;
+                    }
+                }
+        
+                button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    background-color: #11ff00;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+        
+                button:hover {
+                    background-color: #0056b3;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container-1">
+                <h1>Singly Linked List Animation</h1>
+                <div class="list">
+                    <div class="node" id="node1">1</div>
+                    <div class="arrow" id="arrow1"></div>
+                    <div class="node" id="node2">2</div>
+                    <div class="arrow" id="arrow2"></div>
+                    <div class="node" id="node3">3</div>
+                    <div class="arrow" id="arrow3"></div>
+                    <div class="node" id="node4">4</div>
+                    <div class="arrow" id="arrow4"></div>
+                    <div class="null-pointer" id="nullPointer">NULL</div>
+                </div>
+                <button onclick="animateList()">Animate</button>
+                <div class="description">
+                    <p><strong>Singly Linked List Explanation:</strong></p>
+                    <p>A singly linked list is a sequence of nodes where each node points to the next node in the sequence. In this animation:</p>
+                    <ul>
+                        <li><strong>Node 1</strong> points to <strong>Node 2</strong></li>
+                        <li><strong>Node 2</strong> points to <strong>Node 3</strong></li>
+                        <li><strong>Node 3</strong> points to <strong>Node 4</strong></li>
+                        <li><strong>Node 4</strong> points to <strong>NULL</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                function animateList() {
+                    const arrows = document.querySelectorAll('.arrow');
+                    const nodes = document.querySelectorAll('.node');
+                    const nullPointer = document.getElementById('nullPointer');
+                    let index = 0;
+                    
+                    function showArrow() {
+                        if (index > 0) {
+                            arrows[index - 1].classList.remove('active');
+                            nodes[index - 1].classList.remove('active');
+                        }
+                        if (index < arrows.length) {
+                            arrows[index].classList.add('active');
+                            nodes[index].classList.add('active');
+                            index++;
+                            setTimeout(showArrow, 1000); // Adjust timing if needed
+                        } else {
+                            nullPointer.classList.add('active');
+                        }
+                    }
+        
+                    showArrow();
+                }
+            </script>
+    
+        
+        <h2>Basic Operations on Singly Linked Lists</h2>
+        <ul>
+            <li><strong>Insertion:</strong> Adding a new node at the beginning, end, or a specific position in the list.</li>
+            <li><strong>Deletion:</strong> Removing a node from the beginning, end, or a specific position in the list.</li>
+            <li><strong>Traversal:</strong> Visiting each node in the list to perform operations or retrieve values.</li>
+            <li><strong>Searching:</strong> Finding a node with a specific value.</li>
+            <li><strong>Displaying:</strong> Printing the contents of the list.</li>
+        </ul>
+
+        <!-- Problem 1 -->
+        <h3>1. Implementing a Singly Linked List</h3>
+        <p><strong>Description:</strong> Implement a singly linked list with basic operations such as insertion, deletion, traversal, and display.</p>
+
+        <h4>C</h4>
+        <pre>
+<code>
+#include &lt;stdio.h>
+#include &lt;stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+void insertAtBeginning(struct Node** head, int value) {
+    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+    new_node->data = value;
+    new_node->next = *head;
+    *head = new_node;
+}
+
+void insertAtEnd(struct Node** head, int value) {
+    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+    struct Node* last = *head;
+    new_node->data = value;
+    new_node->next = NULL;
+
+    if (*head == NULL) {
+        *head = new_node;
+        return;
+    }
+
+    while (last->next != NULL) {
+        last = last->next;
+    }
+    last->next = new_node;
+}
+
+void deleteNode(struct Node** head, int value) {
+    struct Node* temp = *head;
+    struct Node* prev = NULL;
+
+    if (temp != NULL && temp->data == value) {
+        *head = temp->next;
+        free(temp);
+        return;
+    }
+
+    while (temp != NULL && temp->data != value) {
+        prev = temp;
+        temp = temp->next;
+    }
+
+    if (temp == NULL) return;
+
+    prev->next = temp->next;
+    free(temp);
+}
+
+void traverseList(struct Node* head) {
+    struct Node* temp = head;
+    while (temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\n");
+}
+
+int main() {
+    struct Node* head = NULL;
+    insertAtBeginning(&head, 10);
+    insertAtBeginning(&head, 20);
+    insertAtEnd(&head, 30);
+    traverseList(head);
+    deleteNode(&head, 20);
+    traverseList(head);
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+
+class Node {
+public:
+    int data;
+    Node* next;
+    Node(int value) : data(value), next(nullptr) {}
+};
+
+class SinglyLinkedList {
+    Node* head;
+public:
+    SinglyLinkedList() : head(nullptr) {}
+
+    void insertAtBeginning(int value) {
+        Node* new_node = new Node(value);
+        new_node->next = head;
+        head = new_node;
+    }
+
+    void insertAtEnd(int value) {
+        Node* new_node = new Node(value);
+        if (head == nullptr) {
+            head = new_node;
+            return;
+        }
+        Node* last = head;
+        while (last->next != nullptr) {
+            last = last->next;
+        }
+        last->next = new_node;
+    }
+
+    void deleteNode(int value) {
+        Node* temp = head;
+        Node* prev = nullptr;
+
+        if (temp != nullptr && temp->data == value) {
+            head = temp->next;
+            delete temp;
+            return;
+        }
+
+        while (temp != nullptr && temp->data != value) {
+            prev = temp;
+            temp = temp->next;
+        }
+
+        if (temp == nullptr) return;
+
+        prev->next = temp->next;
+        delete temp;
+    }
+
+    void traverseList() {
+        Node* temp = head;
+        while (temp != nullptr) {
+            std::cout &lt;&lt; temp->data &lt;&lt; " -> ";
+            temp = temp->next;
+        }
+        std::cout &lt;&lt; "NULL\n";
+    }
+};
+
+int main() {
+    SinglyLinkedList list;
+    list.insertAtBeginning(10);
+    list.insertAtBeginning(20);
+    list.insertAtEnd(30);
+    list.traverseList();
+    list.deleteNode(20);
+    list.traverseList();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Java</h4>
+        <pre>
+<code>
+class Node {
+    int data;
+    Node next;
+    Node(int value) {
+        data = value;
+        next = null;
+    }
+}
+
+class SinglyLinkedList {
+    Node head;
+
+    SinglyLinkedList() {
+        head = null;
+    }
+
+    void insertAtBeginning(int value) {
+        Node newNode = new Node(value);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    void insertAtEnd(int value) {
+        Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        Node last = head;
+        while (last.next != null) {
+            last = last.next;
+        }
+        last.next = newNode;
+    }
+
+    void deleteNode(int value) {
+        Node temp = head;
+        Node prev = null;
+
+        if (temp != null && temp.data == value) {
+            head = temp.next;
+            return;
+        }
+
+        while (temp != null && temp.data != value) {
+            prev = temp;
+            temp = temp.next;
+        }
+
+        if (temp == null) return;
+
+        prev.next = temp.next;
+    }
+
+    void traverseList() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("NULL");
+    }
+
+    public static void main(String[] args) {
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.insertAtBeginning(10);
+        list.insertAtBeginning(20);
+        list.insertAtEnd(30);
+        list.traverseList();
+        list.deleteNode(20);
+        list.traverseList();
+    }
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class Node:
+    def __init__(self, value):
+        self.data = value
+        self.next = None
+
+class SinglyLinkedList:
+    def __init__(self):
+        self.head = None
+
+    def insert_at_beginning(self, value):
+        new_node = Node(value)
+        new_node.next = self.head
+        self.head = new_node
+
+    def insert_at_end(self, value):
+        new_node = Node(value)
+        if self.head is None:
+            self.head = new_node
+            return
+        last = self.head
+        while last.next:
+            last = last.next
+        last.next = new_node
+
+    def delete_node(self, value):
+        temp = self.head
+        prev = None
+
+        if temp is not None and temp.data == value:
+            self.head = temp.next
+            return
+
+        while temp is not None and temp.data != value:
+            prev = temp
+            temp = temp.next
+
+        if temp is None:
+            return
+
+        prev.next = temp.next
+
+    def traverse_list(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("NULL")
+
+# Example usage
+list = SinglyLinkedList()
+list.insert_at_beginning(10)
+list.insert_at_beginning(20)
+list.insert_at_end(30)
+list.traverse_list()
+list.delete_node(20)
+list.traverse_list()
+</code>
+        </pre>
+
+        <h2>Real-World Problems and Applications</h2>
+        <ul>
+            <li><strong>Dynamic Memory Allocation:</strong> Singly linked lists are useful in situations where the number of elements is not known in advance and
+
+ dynamic memory allocation is required.</li>
+            <li><strong>Queue Implementation:</strong> Singly linked lists can be used to implement queue data structures, allowing efficient enqueue and dequeue operations.</li>
+            <li><strong>Polynomial Representation:</strong> Polynomials can be represented and manipulated using singly linked lists, where each node represents a term in the polynomial.</li>
+            <li><strong>Undo Functionality:</strong> In applications that require undo functionality, singly linked lists can store previous states of the application to allow users to revert to previous actions.</li>
+        </ul>
+
+        <h2>Summary</h2>
+        <p>Singly linked lists are a fundamental data structure that provide efficient ways to store and manipulate a sequence of elements. With basic operations like insertion, deletion, and traversal, singly linked lists are versatile and useful for various real-world applications.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>  </div>
+</body>
+</html>
+
+

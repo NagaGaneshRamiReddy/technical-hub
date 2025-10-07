@@ -1,0 +1,412 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Logical Reasoning</title>
+    
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+            Logical Reasoning
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <h3> Verbal</h3>
+        <a href="Number Series.html">Number Series</a>
+        <a href="Letter Series.html">Letter Series</a>
+        <a href="Analogies.html">Analogies</a>
+        <a href="Cause & Effect.html">Cause & Effect</a>
+        <a href="Verbal Classification.html">Verbal Classification</a>
+        <a href="Blood Relations.html">Blood Relations</a>
+        <a href="Logical Sequence of Words.html">Logical Sequence of Words</a>
+        <a href="Direction Sense Test.html">Direction Sense Test</a>
+        <a href="Logical Venn Diagram.html">Logical Venn Diagram</a>
+        <a href="Verification of the Truth of the Statement.html">Verification of the Truth of the Statement</a>
+        <a href="Data Sufficiency.html">Data Sufficiency</a>
+        <a href="Coding Decoding.html">Coding Decoding</a>
+        <a href="Assertion and Reason.html">Assertion and Reason</a>
+        <a href="Essential Part.html">Essential Part</a>
+        <a href="Analyzing Arguments.html">Analyzing Arguments</a>
+        <a href="Logical Problems.html">Logical Problems</a>
+        <a href="Course of Action.html">Course of Action</a>
+        <a href="Matching Definition.html">Matching Definition</a>
+        <a href="Syllogism.html">Syllogism</a>
+        <a href="Statement and Assumptions.html">Statement and Assumptions</a>
+
+        <h3> Non-verbal</h3>
+        <a href="Image Series.html">Image Series</a>
+        <a href="Construction of Shapes.html">Construction of Shapes</a>
+        <a href="Classification.html">Classification</a>
+        <a href="Picture Analogies.html">Picture Analogies</a>
+        <a href="Rule Detection.html">Rule Detection</a>
+    </div>
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Essential Part.html";
+    }
+    function goNext() {
+        window.location.href = "Logical Problems.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Analyzing Arguments</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+            <h2>Understanding Analyzing Arguments</h2>
+            <p><strong>Analyzing Arguments</strong> involves evaluating the structure and content of arguments to determine their validity and strength. It requires assessing whether the conclusions follow logically from the premises and whether the premises are credible and relevant.</p>
+
+            <h3>Key Concepts in Analyzing Arguments</h3>
+
+            <h4>1. Argument</h4>
+            <p>An <strong>argument</strong> is a set of statements where one or more statements (premises) are offered in support of another statement (the conclusion). The goal is to determine if the premises provide sufficient support for the conclusion.</p>
+
+            <h4>2. Premises</h4>
+            <p><strong>Premises</strong> are the statements or reasons provided to support the conclusion. They should be relevant and credible. Analyzing premises involves checking their truthfulness and relevance to the argument.</p>
+
+            <h4>3. Conclusion</h4>
+            <p>The <strong>conclusion</strong> is the statement that is supported by the premises. It should logically follow from the premises provided. In evaluating an argument, determine if the conclusion is a reasonable inference based on the premises.</p>
+
+            <h4>4. Validity and Soundness</h4>
+            <p>An argument is <strong>valid</strong> if the conclusion logically follows from the premises. An argument is <strong>sound</strong> if it is both valid and its premises are true.</p>
+
+            <h3>Steps to Analyze an Argument</h3>
+
+            <h4>1. Identify the Premises and Conclusion</h4>
+            <p>Clearly identify the premises and conclusion of the argument. This involves distinguishing between statements that provide support (premises) and the statement being supported (conclusion).</p>
+
+            <h4>2. Evaluate the Premises</h4>
+            <p>Assess the truthfulness and relevance of each premise. Determine if the premises are accurate and if they effectively support the conclusion.</p>
+
+            <h4>3. Check the Logical Structure</h4>
+            <p>Analyze whether the conclusion logically follows from the premises. Ensure there are no logical fallacies or errors in reasoning.</p>
+
+            <h4>4. Consider Counterarguments</h4>
+            <p>Examine potential counterarguments or alternative perspectives. Consider if there are any valid reasons to reject the premises or the conclusion.</p>
+
+            <h4>5. Evaluate Overall Strength</h4>
+            <p>Determine the overall strength of the argument. An argument is strong if its premises provide compelling support for the conclusion and if it is free from logical fallacies.</p>
+
+            <h3>Practice Example</h3>
+            <div class="example">
+                <strong>Example:</strong><br>
+                <p><strong>Argument:</strong> "All humans are mortal. Socrates is a human. Therefore, Socrates is mortal."</p>
+                <p><strong>Premises:</strong> "All humans are mortal" and "Socrates is a human."</p>
+                <p><strong>Conclusion:</strong> "Socrates is mortal."</p>
+                <p><strong>Analysis:</strong> The premises are true and logically support the conclusion. The argument is both valid and sound.</p>
+            </div>
+
+            <h3>Practice Resources</h3>
+            <div class="resources">
+                <p>Enhance your understanding of analyzing arguments with these practice resources:</p>
+                <ul>
+                    <li><a href="https://www.khanacademy.org/test-prep/lsat/lsat-critical-reasoning/a/analyzing-arguments" target="_blank">Khan Academy: Analyzing Arguments</a></li>
+                    <li><a href="https://www.logicmatters.net/resources/understanding-arguments/" target="_blank">Logic Matters: Understanding Arguments</a></li>
+                    <li><a href="https://www.coursera.org/learn/argument-analysis" target="_blank">Coursera: Argument Analysis</a></li>
+                </ul>
+            </div>
+
+            <h3>Summary</h3>
+            <p>Analyzing arguments involves evaluating the logical structure and content of arguments to determine their validity and strength. By understanding the key components of arguments and practicing the steps to analyze them, you can effectively assess the quality of reasoning and make informed judgments about the arguments presented.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div></div>
+    </div>
+</body>
+</html>

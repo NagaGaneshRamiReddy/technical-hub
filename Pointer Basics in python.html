@@ -1,0 +1,477 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Python Language</title>
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #01838f;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(0, 250, 242);
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .nextbtn {
+            background-color: #dc3545;
+        }
+
+        .nextbtn:hover {
+            background-color: #c82333; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.div1{
+    background-color: green;
+    color:white;
+    font-size: 40px;
+    text-align: center;
+}
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Python programming language
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <h3>Introduction to Python</h3>
+        <a href="Introduction to Python.html">Introduction to Python</a>
+        <ul>
+            <li><a href="History of Python.html">History of Python</a></li>
+            <li><a href="Setting up Python Environment.html">Setting up Python Environment</a></li>
+            <li><a href="Hello World Program python.html">Hello World Program</a></li>
+        </ul>
+        
+        <h3>Basic Python Syntax</h3>
+        <a href="Basic Python Syntax.html">Basic Python Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types python.html">Variables and Data Types</a></li>
+            <li><a href="Operators in python.html">Operators</a></li>
+            <li><a href="Control Statements in python.html">Control Statements</a></li>
+            <ul>
+                <li><a href="if-else statements in Python.html">If-else Statements</a></li>
+                <li><a href="Elif Statement in python.html">Elif Statement</a></li>
+                <li><a href="Loops in python.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop in python.html">For Loop</a></li>
+                    <li><a href="While Loop in python.html">While Loop</a></li>
+                    <li><a href="Break and Continue python.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+        
+        <h3>Strings</h3>
+        <a href="Strings in python.html">Strings</a>
+        <ul>
+            <li><a href="String Basics in python.html">String Basics</a></li>
+            <li><a href="String Operations in python.html">String Operations</a></li>
+            <li><a href="String Formatting in python.html">String Formatting</a></li>
+        </ul>
+        
+        <h3>Arrays</h3>
+        <a href="Arrays in python.html">Arrays</a>
+        <ul>
+            <li><a href="List Basics in python.html">List Basics</a></li>
+            <li><a href="Array Operations in python.html">Array Operations</a></li>
+            <li><a href="List Comprehensions in python.html">List Comprehensions</a></li>
+        </ul>
+        
+        <h3>Pointers</h3>
+        <a href="Pointers in python.html">Pointers</a>
+        <ul>
+            <li><a href="Pointer Basics in python.html">Pointer Basics</a></li>
+        </ul>
+        
+        <h3>Functions in Python</h3>
+        <a href="Functions in Python.html">Functions in Python</a>
+        <ul>
+            <li><a href="Function Basics in python.html">Function Basics</a></li>
+            <li><a href="Function Arguments in python.html">Function Arguments</a></li>
+            <li><a href="Lambda Functions in python.html">Lambda Functions</a></li>
+            <li><a href="Recursion in python.html">Recursion</a></li>
+            <li><a href="Built-in Functions in python.html">Built-in Functions</a></li>
+        </ul>
+        
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming in python.html">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects in python.html">Classes and Objects</a></li>
+            <li><a href="Constructors in python.html">Constructors</a></li>
+            <li><a href="Inheritance in python.html">Inheritance</a></li>
+            <li><a href="Polymorphism in python.html">Polymorphism</a></li>
+            <li><a href="Abstraction in python.html">Abstraction</a></li>
+            <li><a href="Encapsulation in python.html">Encapsulation</a></li>
+            <li><a href="Magic Methods in python.html">Magic Methods</a></li>
+            <li><a href="Static Methods.html">Class and Static Methods</a></li>
+        </ul>
+        
+        <h3>Advanced Python Concepts</h3>
+        <a href="Advanced Python Concepts in python.html">Advanced Python Concepts</a>
+        <ul>
+            <li><a href="Exception Handling in python.html">Exception Handling</a></li>
+            <li><a href="File I-O in python.html">File I/O</a></li>
+            <li><a href="Modules and Packages in python.html">Modules and Packages</a></li>
+            <li><a href="Decorators in python.html">Decorators</a></li>
+            <li><a href="Generators in python.html">Generators</a></li>
+            <li><a href="Comprehensions in python.html">Comprehensions</a></li>
+            <li><a href="Context Managers in python.html">Context Managers</a></li>
+            <li><a href="Regular Expressions in python.html">Regular Expressions</a></li>
+        </ul>
+        
+        <h3>Data Handling and Libraries</h3>
+        <a href="Data Handling and Libraries.html">Data Handling and Libraries</a>
+        <ul>
+            <li><a href="NumPy in python.html">NumPy</a></li>
+            <li><a href="Pandas in python.html">Pandas</a></li>
+            <li><a href="Matplotlib in python.html">Matplotlib</a></li>
+            <li><a href="Seaborn in python.html">Seaborn</a></li>
+            <li><a href="Scikit-learn in python.html">Scikit-learn</a></li>
+            <li><a href="TensorFlow in python.html">TensorFlow</a></li>
+        </ul>
+        
+        <h3>Web Development</h3>
+        <a href="Web Development in python.html">Web Development</a>
+        <ul>
+            <li><a href="Flask in python.html">Flask</a></li>
+            <li><a href="Django in python.html">Django</a></li>
+            <li><a href="FastAPI in python.html">FastAPI</a></li>
+        </ul>
+        
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics in python.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Asyncio in python.html">Asyncio</a></li>
+            <li><a href="Multithreading and Multiprocessing in python.html">Multithreading and Multiprocessing</a></li>
+            <li><a href="Web Scraping with BeautifulSoup in python.html">Web Scraping with BeautifulSoup</a></li>
+            <li><a href="APIs and RESTful Services in python.html">APIs and RESTful Services</a></li>
+            <li><a href="Data Science with Python.html">Data Science with Python</a></li>
+            <li><a href="Machine Learning with Python.html">Machine Learning with Python</a></li>
+            <li><a href="Deep Learning with Python.html">Deep Learning with Python</a></li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+        <button class="openbtn prevbtn" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn" onclick="goNext()">&#9654; Next</button></div>
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function goPrevious() {
+        window.location.href = "Pointers in python.html";
+    }
+    function goNext() {
+        window.location.href = "Functions in Python.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Pointers Basics in Python</div>
+
+        <h2>What are Pointers?</h2>
+        <p><strong>Pointers</strong> are variables that store the memory address of another variable. Instead of holding a data value directly, a pointer holds the location where the value is stored in memory. Pointers are a fundamental concept in languages like C and C++, allowing for direct memory access and manipulation.</p>
+
+        <h2>Why Use Pointers?</h2>
+        <ul>
+            <li><strong>Memory Management:</strong> Pointers provide control over memory allocation and deallocation, allowing for efficient use of memory.</li>
+            <li><strong>Array and String Handling:</strong> Pointers are used to traverse and manipulate arrays and strings efficiently.</li>
+            <li><strong>Dynamic Data Structures:</strong> They enable the creation and manipulation of complex data structures like linked lists, trees, and graphs.</li>
+            <li><strong>Function Arguments:</strong> Pointers allow functions to modify the arguments passed to them, enabling more flexible function designs.</li>
+        </ul>
+
+        <h2>Basic Terminology</h2>
+        <ul>
+            <li><strong>Pointer:</strong> A variable that stores the memory address of another variable.</li>
+            <li><strong>Dereferencing:</strong> Accessing the value stored at the address held by a pointer using the `*` operator.</li>
+            <li><strong>Address-of Operator (&):</strong> Used to obtain the memory address of a variable.</li>
+            <li><strong>Null Pointer:</strong> A pointer that does not point to any valid memory location and is often used to signify that the pointer is not currently in use.</li>
+        </ul>
+
+        <h2>Declaring and Using Pointers</h2>
+        <p>In C/C++, you declare a pointer using the `*` symbol, and you can assign it the address of a variable using the `&` operator. Here’s a basic example:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int value = 10;       // Declare an integer variable
+    int *ptr = &value;    // Declare a pointer and initialize it with the address of 'value'
+
+    printf("Value: %d\n", value);          // Print the value
+    printf("Pointer Address: %p\n", (void *)ptr); // Print the address stored in the pointer
+    printf("Value through Pointer: %d\n", *ptr); // Dereference the pointer to get the value
+
+    return 0;
+}
+</code></pre>
+
+        <h2>Pointer Arithmetic</h2>
+        <p>Pointer arithmetic allows you to perform operations on pointers to navigate through memory addresses, particularly useful when working with arrays:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int array[] = {10, 20, 30, 40};  // Declare an array
+    int *ptr = array;                // Pointer to the first element of the array
+
+    for (int i = 0; i < 4; i++) {
+        printf("Element %d: %d\n", i, *(ptr + i)); // Access array elements using pointer arithmetic
+    }
+
+    return 0;
+}
+</code></pre>
+
+        <h2>Common Uses of Pointers</h2>
+        <ul>
+            <li><strong>Dynamic Memory Allocation:</strong> Using pointers with functions like `malloc` and `free` to manage memory dynamically.</li>
+            <li><strong>Function Pointers:</strong> Pointers to functions that allow you to call functions indirectly and implement callback mechanisms.</li>
+            <li><strong>Data Structures:</strong> Building and managing complex data structures such as linked lists and trees.</li>
+        </ul>
+
+        
+        
+        <h2>Summary</h2>
+        <p>Pointers are a powerful feature in programming languages like C and C++, providing direct control over memory and enabling efficient data manipulation. Understanding pointers is essential for tasks involving dynamic memory, data structures, and low-level programming techniques. Proper use of pointers can lead to more efficient and flexible code, but they also require careful management to avoid common issues like memory leaks and invalid memory access.</p>
+    </div>
+</body>
+</html>

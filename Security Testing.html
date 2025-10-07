@@ -1,0 +1,497 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> Cyber Security</title>
+ 
+     
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Cyber Security
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to Cyber Security</h3>
+        <a href="Introduction to Cyber Security.html">Introduction to Cyber Security</a>
+        <ul>
+            <li><a href="What is Cyber Security.html">What is Cyber Security?</a></li>
+            <li><a href="History of Cyber Security.html">History of Cyber Security</a></li>
+            <li><a href="Importance of Cyber Security.html">Importance of Cyber Security</a></li>
+            <li>
+                <a href="Types of Cyber Threats.html">Types of Cyber Threats</a>
+                <ul>
+                    <li><a href="Malware.html">Malware</a></li>
+                    <li><a href="Phishing.html">Phishing</a></li>
+                    <li><a href="Ransomware.html">Ransomware</a></li>
+                    <li><a href="Social Engineering.html">Social Engineering</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Network Security</h3>
+        <a href="Network Security.html">Network Security</a>
+        <ul>
+            <li><a href="Introduction to Networks.html">Introduction to Networks</a></li>
+            <li><a href="Network Protocols.html">Network Protocols</a></li>
+            <li><a href="Firewalls.html">Firewalls</a></li>
+            <li><a href="Intrusion Detection Systems (IDS).html">Intrusion Detection Systems (IDS)</a></li>
+            <li><a href="Virtual Private Networks (VPN).html">Virtual Private Networks (VPN)</a></li>
+        </ul>
+    
+        <h3>Cryptography</h3>
+        <a href="Cryptography.html">Cryptography</a>
+        <ul>
+            <li><a href="Introduction to Cryptography.html">Introduction to Cryptography</a></li>
+            <li><a href="Symmetric Encryption.html">Symmetric Encryption</a></li>
+            <li><a href="Asymmetric Encryption.html">Asymmetric Encryption</a></li>
+            <li><a href="Hash Functions.html">Hash Functions</a></li>
+            <li><a href="Digital Signatures.html">Digital Signatures</a></li>
+            <li><a href="Public Key Infrastructure (PKI).html">Public Key Infrastructure (PKI)</a></li>
+        </ul>
+    
+        <h3>Application Security</h3>
+        <a href="Application Security.html">Application Security</a>
+        <ul>
+            <li><a href="Secure Coding Practices.html">Secure Coding Practices</a></li>
+            <li><a href="Web Application Security.html">Web Application Security</a></li>
+            <li><a href="Mobile Application Security.html">Mobile Application Security</a></li>
+            <li><a href="Database Security.html">Database Security</a></li>
+            <li><a href="Security Testing.html">Security Testing</a></li>
+        </ul>
+    
+        <h3>Endpoint Security</h3>
+        <a href="Endpoint Security.html">Endpoint Security</a>
+        <ul>
+            <li><a href="Antivirus and Anti-Malware.html">Antivirus and Anti-Malware</a></li>
+            <li><a href="Endpoint Detection and Response (EDR).html">Endpoint Detection and Response (EDR)</a></li>
+            <li><a href="Patch Management.html">Patch Management</a></li>
+            <li><a href="Device Encryption.html">Device Encryption</a></li>
+            <li><a href="Mobile Device Security.html">Mobile Device Security</a></li>
+        </ul>
+    
+        <h3>Incident Response and Management</h3>
+        <a href="Incident Response and Management.html">Incident Response and Management</a>
+        <ul>
+            <li><a href="Incident Response Planning.html">Incident Response Planning</a></li>
+            <li><a href="Incident Detection and Analysis.html">Incident Detection and Analysis</a></li>
+            <li><a href="Containment, Eradication, and Recovery.html">Containment, Eradication, and Recovery</a></li>
+            <li><a href="Post-Incident Activities.html">Post-Incident Activities</a></li>
+            <li><a href="Forensics.html">Forensics</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics Cyber Security.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Penetration Testing.html">Penetration Testing</a></li>
+            <li><a href="Ethical Hacking.html">Ethical Hacking</a></li>
+            <li><a href="Cyber Threat Intelligence.html">Cyber Threat Intelligence</a></li>
+            <li><a href="Cloud Security.html">Cloud Security</a></li>
+            <li><a href="IoT Security.html">IoT Security</a></li>
+            <li><a href="AI in Cyber Security.html">AI in Cyber Security</a></li>
+        </ul>
+    </div>
+   
+    
+    
+
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Database Security.html";
+    }
+    function goNext() {
+        window.location.href = "Endpoint Security.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Security Testing </div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>What is Security Testing ?</h2>
+        <p>Security testing is a process used to identify vulnerabilities, threats, and risks in a system, application, or network. The goal of security testing is to ensure that the system is protected against unauthorized access, data breaches, and other security threats by evaluating its security controls and mechanisms.</p>
+
+        <h2>Why is Security Testing Important?</h2>
+        <ul>
+            <li><strong>Identifies Vulnerabilities</strong>: Detects weaknesses in the system before attackers can exploit them, helping to prevent potential security breaches.</li>
+            <li><strong>Ensures Compliance</strong>: Helps organizations meet regulatory requirements and industry standards for security, such as GDPR, HIPAA, and PCI-DSS.</li>
+            <li><strong>Protects Sensitive Data</strong>: Ensures that sensitive and personal data is secure from unauthorized access and potential leaks.</li>
+            <li><strong>Enhances Security Posture</strong>: Improves the overall security posture of the organization by identifying and addressing security issues proactively.</li>
+            <li><strong>Reduces Financial Impact</strong>: Minimizes the risk of financial loss and reputational damage associated with security incidents and breaches.</li>
+        </ul>
+
+        <h2>Types of Security Testing</h2>
+        <ul>
+            <li><strong>Penetration Testing</strong>: Simulates attacks on the system to identify and exploit vulnerabilities. Penetration tests are conducted to assess the effectiveness of security measures and find weaknesses that could be exploited by attackers.</li>
+            <li><strong>Vulnerability Scanning</strong>: Uses automated tools to scan the system for known vulnerabilities. This type of testing helps to identify security flaws that could potentially be exploited.</li>
+            <li><strong>Security Audits</strong>: Comprehensive reviews of security policies, procedures, and controls to ensure they are effective and comply with standards and regulations. Security audits often involve assessing access controls, data protection, and incident response plans.</li>
+            <li><strong>Static Application Security Testing (SAST)</strong>: Analyzes source code or binaries for security vulnerabilities without executing the code. SAST helps to identify potential issues early in the development process.</li>
+            <li><strong>Dynamic Application Security Testing (DAST)</strong>: Tests applications in a running state to identify vulnerabilities that occur during execution. DAST simulates real-world attacks to find issues that may not be visible in static analysis.</li>
+            <li><strong>Interactive Application Security Testing (IAST)</strong>: Combines elements of both SAST and DAST by analyzing applications during runtime to provide more accurate and context-aware vulnerability assessments.</li>
+            <li><strong>Threat Modeling</strong>: Identifies and assesses potential threats to the system by analyzing its architecture, design, and interactions. Threat modeling helps in understanding the potential attack vectors and implementing appropriate countermeasures.</li>
+        </ul>
+
+        <h2>Best Practices for Security Testing</h2>
+        <ul>
+            <li><strong>Regular Testing</strong>: Perform security testing regularly to identify new vulnerabilities and ensure that security controls are up-to-date.</li>
+            <li><strong>Integrate into Development Lifecycle</strong>: Incorporate security testing into the software development lifecycle (SDLC) to identify and address security issues early in the development process.</li>
+            <li><strong>Use Automated Tools</strong>: Leverage automated security testing tools to efficiently identify vulnerabilities and reduce manual effort. Tools like OWASP ZAP and Burp Suite can be used for automated scanning.</li>
+            <li><strong>Conduct Manual Testing</strong>: Complement automated testing with manual assessments to uncover complex vulnerabilities that automated tools may miss. Manual testing often involves techniques like penetration testing and code reviews.</li>
+            <li><strong>Prioritize Findings</strong>: Assess and prioritize identified vulnerabilities based on their potential impact and exploitability. Focus on addressing high-risk issues first to mitigate the most significant threats.</li>
+            <li><strong>Document and Remediate</strong>: Document all findings from security testing and implement remediation measures to address identified vulnerabilities. Follow up to ensure that fixes are effective and verify that vulnerabilities have been resolved.</li>
+            <li><strong>Engage with Security Experts</strong>: Work with security experts or consultants to gain deeper insights and ensure that testing is thorough and effective. They can provide valuable expertise and guidance on complex security issues.</li>
+        </ul>
+
+        <h2>Examples of Security Testing Practices</h2>
+        <ul>
+            <li><strong>Penetration Testing Example</strong>: Use tools like Metasploit to simulate attacks and identify vulnerabilities:
+                <pre><code>msfconsole
+use exploit/windows/smb/ms17_010_eternalblue
+set RHOSTS 192.168.1.1
+run</code></pre>
+                </li>
+            <li><strong>Vulnerability Scanning Example</strong>: Use tools like Nessus for automated vulnerability scanning:
+                <pre><code>nessus -q -x -T pdf -o report.pdf -i target_list.txt</code></pre>
+                </li>
+            <li><strong>Static Analysis Example</strong>: Use tools like SonarQube to analyze code for security vulnerabilities:
+                <pre><code>sonar-scanner -Dsonar.projectKey=my_project -Dsonar.sources=src</code></pre>
+                </li>
+        </ul>
+
+        <div class="resources">
+            <h2>Additional Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Explore security testing courses on platforms like <a href="https://www.udemy.com/" target="_blank">Udemy</a> and <a href="https://www.coursera.org/" target="_blank">Coursera</a> for in-depth training.</li>
+                <li><strong>Books and Guides</strong>: Read "The Web Application Hacker's Handbook" by Dafydd Stuttard and Marcus Pinto, and "Penetration Testing: A Hands-On Introduction to Hacking" by Georgia Weidman.</li>
+                <li><strong>Interactive Tools</strong>: Use tools like <a href="https://owasp.org/www-project-zap/" target="_blank">OWASP ZAP</a> and <a href="https://portswigger.net/burp" target="_blank">Burp Suite</a> for security testing.</li>
+                <li><strong>Cyber Security News</strong>: Stay updated with the latest trends and threats in security testing through sources like <a href="https://www.bbc.com/news/technology" target="_blank">BBC Technology</a> and <a href="https://www.thehackernews.com/" target="_blank">The Hacker News</a>.</li>
+                <li><strong>Professional Organizations</strong>: Join organizations such as <a href="https://www.owasp.org/" target="_blank">OWASP</a> and <a href="https://www.isc2.org/" target="_blank">(ISC)²</a> for resources and networking in security testing.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Security testing is essential for identifying vulnerabilities, threats, and risks in systems, applications, and networks. By performing regular and thorough testing, organizations can enhance their security posture, protect sensitive data, and ensure compliance with regulatory requirements. Employing best practices such as integrating testing into the development lifecycle, using automated tools, and engaging with security experts helps in identifying and addressing security issues effectively.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>  </div>
+</body>
+</html>

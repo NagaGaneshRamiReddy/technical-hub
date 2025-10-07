@@ -1,0 +1,785 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+           
+            
+            line-height: 1.6;
+            -webkit-user-select: none; /* Chrome, Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
+            -webkit-touch-callout: none; /* iOS Safari */
+            background-color: #023554;
+            overflow-y: auto;
+            background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+
+        
+        header {
+    background-color: #2e6da4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+        main {
+            padding: 20px;
+        }
+
+        fieldset {
+            border: 3px solid #ddd;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+           
+            
+        
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        button {
+            background: #44d805;
+            color: #fff;
+            border: none;
+            font-size: 30px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #02e1ff;
+        }
+
+        
+        
+
+        #timer {
+            font-size: 20px;
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #score {
+            border: 5px solid black;
+            font-size: 100px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+  
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>C Programming Test</h1>
+    </header>
+
+    <main>
+        <div id="timer">Time left: 100:00</div>
+        <form id="quiz-form">
+            <div id="questions-container"></div>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+        <div id="score"></div>
+    </main>
+
+    
+    
+
+    <script>
+       const questions = [
+    {
+        number: 1,
+        question: "Who is credited with the creation of the C programming language?",
+        options: ["Dennis Ritchie", "Brian Kernighan", "Ken Thompson", "Bjarne Stroustrup"],
+        answer: "Dennis Ritchie"
+    },
+    {
+        number: 2,
+        question: "In which year was the C language first developed?",
+        options: ["1972", "1980", "1985", "1991"],
+        answer: "1972"
+    },
+    {
+        number: 3,
+        question: "What is the correct way to print 'Hello World' in C?",
+        options: ["printf('Hello World');", "print('Hello World');", "echo 'Hello World';", "cout << 'Hello World';"],
+        answer: "printf('Hello World');"
+    },
+    {
+        number: 4,
+        question: "Which of the following is the correct syntax to declare a variable in C?",
+        options: ["int x;", "int x = 10;", "x = int 10;", "var x = 10;"],
+        answer: "int x = 10;"
+    },
+    {
+        number: 5,
+        question: "Which operator is used to assign a value to a variable in C?",
+        options: ["=", "==", ":", "?"],
+        answer: "="
+    },
+    {
+        number: 6,
+        question: "What will be the output of `int a = 5; printf('%d', a++);`?",
+        options: ["5", "6", "4", "Error"],
+        answer: "5"
+    },
+    {
+        number: 7,
+        question: "What is the result of `5 % 2` in C?",
+        options: ["1", "2", "3", "0"],
+        answer: "1"
+    },
+    {
+        number: 8,
+        question: "What is the purpose of the 'if' statement in C?",
+        options: ["To execute a block of code based on a condition", "To repeat a block of code", "To define a function", "To declare a variable"],
+        answer: "To execute a block of code based on a condition"
+    },
+    {
+        number: 9,
+        question: "Which loop is guaranteed to execute at least once?",
+        options: ["for", "while", "do-while", "foreach"],
+        answer: "do-while"
+    },
+    {
+        number: 10,
+        question: "How do you declare a function in C?",
+        options: ["return_type function_name(parameters);", "function return_type function_name(parameters);", "function_name(parameters) return_type;", "return_type function_name(parameters) { }"],
+        answer: "return_type function_name(parameters) { }"
+    },
+    {
+        number: 11,
+        question: "What is a pointer in C?",
+        options: ["A variable that stores the address of another variable", "A function that returns an address", "An array of addresses", "A special type of loop"],
+        answer: "A variable that stores the address of another variable"
+    },
+    {
+        number: 12,
+        question: "How do you declare a pointer to an integer in C?",
+        options: ["int *ptr;", "pointer int;", "int ptr;", "int &ptr;"],
+        answer: "int *ptr;"
+    },
+    {
+        number: 13,
+        question: "What does the expression `*ptr` do in C?",
+        options: ["Dereferences the pointer", "Declares a pointer", "Points to the next memory location", "Allocates memory for the pointer"],
+        answer: "Dereferences the pointer"
+    },
+    {
+        number: 14,
+        question: "How do you initialize a pointer in C?",
+        options: ["int *ptr = &var;", "int ptr = &var;", "int *ptr = var;", "ptr = &var;"],
+        answer: "int *ptr = &var;"
+    },
+    {
+        number: 15,
+        question: "What is the output of `int arr[3] = {1, 2, 3}; printf('%d', arr[2]);`?",
+        options: ["3", "2", "1", "Error"],
+        answer: "3"
+    },
+    {
+        number: 16,
+        question: "How do you declare a two-dimensional array in C?",
+        options: ["int arr[3][4];", "int arr[3,4];", "int arr(3,4);", "int arr[3][4] = {};"],
+        answer: "int arr[3][4];"
+    },
+    {
+        number: 17,
+        question: "What is the output of `int arr[3] = {1, 2, 3}; printf('%d', sizeof(arr) / sizeof(arr[0]));`?",
+        options: ["3", "2", "1", "Error"],
+        answer: "3"
+    },
+    {
+        number: 18,
+        question: "Which function is used to find the length of a string in C?",
+        options: ["strlen", "strlength", "length", "size"],
+        answer: "strlen"
+    },
+    {
+        number: 19,
+        question: "What is the null character in C strings?",
+        options: ["'\0'", "'NULL'", "'0'", "'\n'"],
+        answer: "'\0'"
+    },
+    {
+        number: 20,
+        question: "How do you copy a string in C?",
+        options: ["strcpy", "copy", "strdup", "clone"],
+        answer: "strcpy"
+    },
+    {
+        number: 21,
+        question: "What is the purpose of the 'typedef' keyword?",
+        options: ["To create new data types", "To define functions", "To allocate memory", "To declare variables"],
+        answer: "To create new data types"
+    },
+    {
+        number: 22,
+        question: "How do you define a structure in C?",
+        options: ["struct Name { int age; };", "struct Name { int age; };", "struct Name int { age; };", "structure Name { int age; };"],
+        answer: "struct Name { int age; };"
+    },
+    {
+        number: 23,
+        question: "Which function is used to open a file in C?",
+        options: ["fopen", "fileopen", "openfile", "createfile"],
+        answer: "fopen"
+    },
+    {
+        number: 24,
+        question: "What does the 'fclose' function do?",
+        options: ["Closes an open file", "Opens a file", "Reads from a file", "Writes to a file"],
+        answer: "Closes an open file"
+    },
+    {
+        number: 25,
+        question: "Which function is used to allocate memory dynamically in C?",
+        options: ["malloc", "alloc", "new", "create"],
+        answer: "malloc"
+    },
+    {
+        number: 26,
+        question: "What does the 'calloc' function do?",
+        options: ["Allocates memory and initializes it to zero", "Allocates memory", "Frees allocated memory", "Reallocates memory"],
+        answer: "Allocates memory and initializes it to zero"
+    },
+    {
+        number: 27,
+        question: "What is a memory leak?",
+        options: ["Failure to deallocate memory", "A function that fails to allocate memory", "Memory allocated on the stack", "None of the above"],
+        answer: "Failure to deallocate memory"
+    },
+    {
+        number: 28,
+        question: "How do you access a member of a structure in C?",
+        options: ["Using the dot operator", "Using the arrow operator", "Using square brackets", "Using parentheses"],
+        answer: "Using the dot operator"
+    },
+    {
+        number: 29,
+        question: "What will be the output of `union Data { int i; float f; }; union Data d; d.i = 10; d.f = 20.5; printf('%d', d.i);`?",
+        options: ["20", "10", "20.5", "undefined"],
+        answer: "20"
+    },
+    {
+        number: 30,
+        question: "What is the purpose of the '#define' directive?",
+        options: ["To create constants or macros", "To include header files", "To define data types", "To declare functions"],
+        answer: "To create constants or macros"
+    },
+    {
+        number: 31,
+        question: "What will be the output of `int a = 5; printf('%d', a >> 1);`?",
+        options: ["2", "3", "4", "1"],
+        answer: "2"
+    },
+    {
+        number: 32,
+        question: "What does the 'assert' function do?",
+        options: ["Checks conditions at runtime", "Allocates memory", "Reads input from the user", "Writes output to the screen"],
+        answer: "Checks conditions at runtime"
+    },
+    {
+        number: 33,
+        question: "How do you include a user-defined header file in C?",
+        options: ["#include 'myheader.h'", "#include <myheader.h>", "#include myheader", "#include myheader.h"],
+        answer: "#include 'myheader.h'"
+    },
+    {
+        number: 34,
+        question: "What is the correct syntax for defining a function that does not return a value?",
+        options: ["void function_name() {}", "function_name() void {}", "void function_name() ;", "function_name() { void }"],
+        answer: "void function_name() {}"
+    },
+    {
+        number: 35,
+        question: "Which of the following functions can be used to read a single character from a file?",
+        options: ["fgetc", "fread", "fgets", "fscanf"],
+        answer: "fgetc"
+    },
+    {
+        number: 36,
+        question: "What is the result of `~0` in C?",
+        options: ["-1", "0", "1", "undefined"],
+        answer: "-1"
+    },
+    {
+        number: 37,
+        question: "How do you define a constant in C?",
+        options: ["const int MAX = 100;", "#define MAX 100", "int MAX = 100;", "constant int MAX = 100;"],
+        answer: "#define MAX 100"
+    },
+    {
+        number: 38,
+        question: "What does the `sizeof` operator return for an array?",
+        options: ["Size of the entire array", "Size of the first element", "Size of the pointer", "Size of the data type"],
+        answer: "Size of the entire array"
+    },
+    {
+        number: 39,
+        question: "How do you pass a structure to a function in C?",
+        options: ["By value or by reference", "By pointer only", "By reference only", "By array"],
+        answer: "By value or by reference"
+    },
+    {
+        number: 40,
+        question: "Which function is used to get the length of a string?",
+        options: ["strlen", "strlength", "stringlen", "size"],
+        answer: "strlen"
+    },
+    {
+        number: 41,
+        question: "What does the 'fseek' function do?",
+        options: ["Moves the file pointer", "Reads from the file", "Writes to the file", "Closes the file"],
+        answer: "Moves the file pointer"
+    },
+    {
+        number: 42,
+        question: "How do you check if a file was successfully opened?",
+        options: ["By checking if the file pointer is not NULL", "By checking the file name", "By checking the file size", "By checking the file path"],
+        answer: "By checking if the file pointer is not NULL"
+    },
+    {
+        number: 43,
+        question: "What is the result of the expression `5 & 3`?",
+        options: ["1", "2", "7", "15"],
+        answer: "1"
+    },
+    {
+        number: 44,
+        question: "How do you declare a dynamic array of 10 integers?",
+        options: ["int *arr = malloc(10 * sizeof(int));", "int arr[10];", "int arr = malloc(10 * sizeof(int));", "int *arr = calloc(10, sizeof(int));"],
+        answer: "int *arr = malloc(10 * sizeof(int));"
+    },
+    {
+        number: 45,
+        question: "Which operator is used to perform a bitwise OR operation in C?",
+        options: ["|", "&", "^", "~"],
+        answer: "|"
+    },
+    {
+        number: 46,
+        question: "What is the purpose of the 'switch' statement?",
+        options: ["To execute one block of code from multiple options", "To repeat a block of code", "To handle exceptions", "To define a function"],
+        answer: "To execute one block of code from multiple options"
+    },
+    {
+        number: 47,
+        question: "Which function is used to write data to a file?",
+        options: ["fprintf", "fscanf", "fread", "fwrite"],
+        answer: "fprintf"
+    },
+    {
+        number: 48,
+        question: "How do you declare a union in C?",
+        options: ["union Name { int i; float f; };", "struct Name { int i; float f; };", "union Name { int i; float f; };", "structure Name { int i; float f; };"],
+        answer: "union Name { int i; float f; };"
+    },
+    {
+        number: 49,
+        question: "What does the 'sizeof' operator return for a pointer?",
+        options: ["Size of the pointer", "Size of the data type it points to", "Size of the array", "Size of the entire structure"],
+        answer: "Size of the pointer"
+    },
+    {
+        number: 50,
+        question: "How do you read a line from a file in C?",
+        options: ["fgets", "fread", "getline", "fscanf"],
+        answer: "fgets"
+    },
+    {
+        number: 51,
+        question: "What does the 'fread' function do?",
+        options: ["Reads binary data from a file", "Reads text data from a file", "Writes binary data to a file", "Writes text data to a file"],
+        answer: "Reads binary data from a file"
+    },
+    {
+        number: 52,
+        question: "How do you define a macro in C?",
+        options: ["#define NAME value", "#macro NAME value", "macro NAME = value", "NAME = value"],
+        answer: "#define NAME value"
+    },
+    {
+        number: 53,
+        question: "What is the difference between 'fopen' and 'freopen'?",
+        options: ["'fopen' opens a file, 'freopen' reopens a file", "'fopen' is for reading, 'freopen' is for writing", "'fopen' is for text files, 'freopen' is for binary files", "'fopen' creates a file, 'freopen' deletes a file"],
+        answer: "'fopen' opens a file, 'freopen' reopens a file"
+    },
+    {
+        number: 54,
+        question: "Which function is used to close a file in C?",
+        options: ["fclose", "fileclose", "closefile", "endfile"],
+        answer: "fclose"
+    },
+    {
+        number: 55,
+        question: "How do you allocate memory for a structure in C?",
+        options: ["struct *ptr = malloc(sizeof(struct Name));", "struct ptr = malloc(sizeof(struct Name));", "struct ptr = sizeof(struct Name);", "struct *ptr = sizeof(struct Name);"],
+        answer: "struct *ptr = malloc(sizeof(struct Name));"
+    },
+    {
+        number: 56,
+        question: "How do you access the elements of a two-dimensional array?",
+        options: ["array[row][column]", "array[column][row]", "array[row, column]", "array[row] [column]"],
+        answer: "array[row][column]"
+    },
+    {
+        number: 57,
+        question: "What is the output of `printf('%d', 10 / 3);` in C?",
+        options: ["3", "3.333", "4", "undefined"],
+        answer: "3"
+    },
+    {
+        number: 58,
+        question: "How do you declare a function pointer in C?",
+        options: ["return_type (*ptr)(parameters);", "return_type ptr(parameters);", "(*ptr) return_type(parameters);", "return_type ptr;"],
+        answer: "return_type (*ptr)(parameters);"
+    },
+    {
+        number: 59,
+        question: "What is the result of the expression `10 & 4`?",
+        options: ["0", "4", "10", "14"],
+        answer: "0"
+    },
+    {
+        number: 60,
+        question: "How do you free allocated memory in C?",
+        options: ["free(ptr);", "dealloc(ptr);", "release(ptr);", "delete(ptr);"],
+        answer: "free(ptr);"
+    },
+    {
+        number: 61,
+        question: "What does the 'strcat' function do?",
+        options: ["Concatenates two strings", "Compares two strings", "Finds the length of a string", "Copies a string"],
+        answer: "Concatenates two strings"
+    },
+    {
+        number: 62,
+        question: "How do you define a macro that calculates the square of a number?",
+        options: ["#define SQUARE(x) ((x) * (x))", "#define square(x) (x * x)", "#macro SQUARE(x) (x * x)", "#define SQUARE x * x"],
+        answer: "#define SQUARE(x) ((x) * (x))"
+    },
+    {
+        number: 63,
+        question: "Which function is used to get a formatted input from the user?",
+        options: ["scanf", "input", "getchar", "fgets"],
+        answer: "scanf"
+    },
+    {
+        number: 64,
+        question: "What is the purpose of the 'return' statement in a function?",
+        options: ["To exit the function and optionally return a value", "To define a variable", "To allocate memory", "To loop through a block of code"],
+        answer: "To exit the function and optionally return a value"
+    },
+    {
+        number: 65,
+        question: "How do you declare a function that returns an integer?",
+        options: ["int function_name();", "function_name() int;", "int function_name() {};", "function_name() { return int; }"],
+        answer: "int function_name() {};"
+    },
+    {
+        number: 66,
+        question: "What does the 'sizeof' operator do in C?",
+        options: ["Returns the size of a variable or data type", "Returns the size of a file", "Returns the size of a string", "Returns the size of an array element"],
+        answer: "Returns the size of a variable or data type"
+    },
+    {
+        number: 67,
+        question: "How do you initialize a pointer to a constant integer in C?",
+        options: ["const int *ptr;", "int * const ptr;", "const int ptr;", "int const *ptr;"],
+        answer: "const int *ptr;"
+    },
+    {
+        number: 68,
+        question: "What is the correct syntax for a 'for' loop in C?",
+        options: ["for (initialization; condition; increment) {}", "for (initialization; increment; condition) {}", "for (condition; initialization; increment) {}", "for (increment; condition; initialization) {}"],
+        answer: "for (initialization; condition; increment) {}"
+    },
+    {
+        number: 69,
+        question: "Which operator is used to perform a bitwise XOR operation in C?",
+        options: ["^", "|", "&", "~"],
+        answer: "^"
+    },
+    {
+        number: 70,
+        question: "How do you create a multi-dimensional array in C?",
+        options: ["int arr[3][4];", "int arr[3, 4];", "int arr[3][4][5];", "int arr[3][4][5] = {};"],
+        answer: "int arr[3][4];"
+    },
+    {
+        number: 71,
+        question: "Which function is used to copy a string in C?",
+        options: ["strcpy", "strncpy", "strcopy", "copystr"],
+        answer: "strcpy"
+    },
+    {
+        number: 72,
+        question: "How do you access a member of a union?",
+        options: ["Using the dot operator", "Using the arrow operator", "Using square brackets", "Using parentheses"],
+        answer: "Using the dot operator"
+    },
+    {
+        number: 73,
+        question: "What is the difference between 'struct' and 'union' in C?",
+        options: ["'struct' stores all members, 'union' stores only one member at a time", "'struct' stores one member, 'union' stores all members", "'struct' is used for arrays, 'union' is used for strings", "'struct' and 'union' are the same"],
+        answer: "'struct' stores all members, 'union' stores only one member at a time"
+    },
+    {
+        number: 74,
+        question: "What is the default value of an uninitialized static variable?",
+        options: ["0", "undefined", "NULL", "random"],
+        answer: "0"
+    },
+    {
+        number: 75,
+        question: "How do you read an integer from the user?",
+        options: ["scanf", "fscanf", "getchar", "fgets"],
+        answer: "scanf"
+    },
+    {
+        number: 76,
+        question: "What is the purpose of the 'break' statement?",
+        options: ["To exit from a loop or switch statement", "To continue to the next iteration", "To exit from a function", "To declare a variable"],
+        answer: "To exit from a loop or switch statement"
+    },
+    {
+        number: 77,
+        question: "What is the purpose of the 'continue' statement?",
+        options: ["To skip the current iteration of a loop", "To exit from a loop", "To exit from a function", "To return a value from a function"],
+        answer: "To skip the current iteration of a loop"
+    },
+    {
+        number: 78,
+        question: "How do you define a constant pointer in C?",
+        options: ["int * const ptr;", "const int ptr;", "const int *ptr;", "int const *ptr;"],
+        answer: "int * const ptr;"
+    },
+    {
+        number: 79,
+        question: "How do you write a comment in C?",
+        options: ["// Single line comment or /* multi-line comment */", "/* single line comment */", "// multi-line comment", "/* single line comment */ or // multi-line comment"],
+        answer: "// Single line comment or /* multi-line comment */"
+    },
+    {
+        number: 80,
+        question: "What is the purpose of the 'goto' statement in C?",
+        options: ["To jump to a specific point in the program", "To define a function", "To declare a variable", "To end the program"],
+        answer: "To jump to a specific point in the program"
+    },
+    {
+        number: 81,
+        question: "Which of the following is not a valid data type in C?",
+        options: ["bool", "char", "int", "float"],
+        answer: "bool"
+    },
+    {
+        number: 82,
+        question: "What is the correct syntax for a 'while' loop in C?",
+        options: ["while (condition) {}", "while { condition }", "while (condition) { }", "while (condition) ;"],
+        answer: "while (condition) {}"
+    },
+    {
+        number: 83,
+        question: "What is the purpose of the 'sizeof' operator in C?",
+        options: ["To get the size of a variable or data type", "To get the size of a file", "To get the length of a string", "To get the number of elements in an array"],
+        answer: "To get the size of a variable or data type"
+    },
+    {
+        number: 84,
+        question: "Which function is used to allocate memory for an array of integers?",
+        options: ["malloc", "calloc", "realloc", "free"],
+        answer: "malloc"
+    },
+    {
+        number: 85,
+        question: "What is the purpose of the 'return' statement in a function?",
+        options: ["To exit the function and optionally return a value", "To define a variable", "To allocate memory", "To loop through a block of code"],
+        answer: "To exit the function and optionally return a value"
+    },
+    {
+        number: 86,
+        question: "How do you define a structure with nested structures?",
+        options: ["struct Outer { struct Inner { int data; }; struct Inner inner; };", "struct Outer { int data; struct Inner { int value; }; };", "struct Outer { int data; struct Inner; };", "struct Outer { struct Inner inner; int data; };"],
+        answer: "struct Outer { struct Inner { int data; }; struct Inner inner; };"
+    },
+    {
+        number: 87,
+        question: "What is the correct syntax for a 'do-while' loop in C?",
+        options: ["do { } while (condition);", "do { while (condition); }", "do { condition; } while;", "do { while (condition);"],
+        answer: "do { } while (condition);"
+    },
+    {
+        number: 88,
+        question: "How do you define a function that takes a pointer to a structure as an argument?",
+        options: ["void function(struct Name *ptr);", "void function(struct Name ptr);", "void function(struct Name &ptr);", "void function(struct Name ptr[]);"],
+        answer: "void function(struct Name *ptr);"
+    },
+    {
+        number: 89,
+        question: "Which function is used to get a single character from the user?",
+        options: ["getchar", "fgetc", "scanf", "fread"],
+        answer: "getchar"
+    },
+    {
+        number: 90,
+        question: "How do you declare a variable as a constant in C?",
+        options: ["const int x;", "int const x;", "const x int;", "int x const;"],
+        answer: "const int x;"
+    },
+    {
+        number: 91,
+        question: "What is the output of `printf('%d', 5 << 1);` in C?",
+        options: ["10", "5", "2", "20"],
+        answer: "10"
+    },
+    {
+        number: 92,
+        question: "What does the 'memcpy' function do?",
+        options: ["Copies memory from one location to another", "Allocates memory", "Frees allocated memory", "Compares two memory blocks"],
+        answer: "Copies memory from one location to another"
+    },
+    {
+        number: 93,
+        question: "What is the use of 'void' in C?",
+        options: ["To indicate that a function does not return a value", "To define a variable", "To declare a constant", "To initialize an array"],
+        answer: "To indicate that a function does not return a value"
+    },
+    {
+        number: 94,
+        question: "How do you initialize a one-dimensional array of integers?",
+        options: ["int arr[] = {1, 2, 3};", "int arr[3] = {1, 2, 3};", "int arr[3] = (1, 2, 3);", "int arr = {1, 2, 3};"],
+        answer: "int arr[3] = {1, 2, 3};"
+    },
+    {
+        number: 95,
+        question: "What is the result of `10 >> 2` in C?",
+        options: ["2", "5", "20", "40"],
+        answer: "2"
+    },
+    {
+        number: 96,
+        question: "How do you declare an array of pointers to integers?",
+        options: ["int *arr[10];", "int arr*[10];", "int *arr(10);", "int arr[10*];"],
+        answer: "int *arr[10];"
+    },
+    {
+        number: 97,
+        question: "What is the correct way to call a function in C?",
+        options: ["function_name();", "call function_name();", "function_name{};", "invoke function_name();"],
+        answer: "function_name();"
+    },
+    {
+        number: 98,
+        question: "How do you declare a function that returns a pointer to an integer?",
+        options: ["int *function_name();", "int function_name *();", "int * function_name();", "function_name *int();"],
+        answer: "int *function_name();"
+    },
+    {
+        number: 99,
+        question: "Which of the following is used to dynamically allocate memory for an array?",
+        options: ["malloc", "calloc", "realloc", "free"],
+        answer: "malloc"
+    },
+    {
+        number: 100,
+        question: "How do you define a function that takes a variable number of arguments?",
+        options: ["Using ellipsis (...)", "Using an array", "Using a linked list", "Using a pointer"],
+        answer: "Using ellipsis (...)"
+    }
+]
+
+       
+        const formContainer = document.getElementById('questions-container');
+        const scoreContainer = document.getElementById('score');
+        let timerInterval;
+
+        function loadQuestions() {
+            questions.forEach((q) => {
+                const fieldset = document.createElement('fieldset');
+                fieldset.innerHTML = `
+                    <legend>Question ${q.number}</legend>
+                    <p>${q.question}</p>
+                    ${q.options.map((opt, index) => `
+                        <label>
+                            <input type="radio" name="q${q.number}" value="${opt}" required>
+                            ${opt}
+                        </label>
+                    `).join('')}
+                `;
+                formContainer.appendChild(fieldset);
+            });
+        }
+
+        function startTimer(duration) {
+            let timer = duration, minutes, seconds;
+            timerInterval = setInterval(() => {
+                minutes = Math.floor(timer / 60);
+                seconds = timer % 60;
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+                document.getElementById('timer').textContent = `Time left: ${minutes}:${seconds}`;
+                if (--timer < 0) {
+                    clearInterval(timerInterval);
+                    document.getElementById('timer').textContent = 'Time is up!';
+                    submitQuiz();
+                }
+            }, 1000);
+        }
+
+        function submitQuiz() {
+            clearInterval(timerInterval);
+            const form = document.getElementById('quiz-form');
+            let score = 0;
+
+            questions.forEach((q) => {
+                const selectedOption = form.querySelector(`input[name="q${q.number}"]:checked`);
+                if (selectedOption && selectedOption.value === q.answer) {
+                    score++;
+                }
+            }); 
+
+            // Display the score
+            scoreContainer.textContent = `Your score: ${score} out of ${questions.length}`;
+        }
+
+        // Prevent right-click functionality
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Initialize questions and timer
+        document.addEventListener('DOMContentLoaded', () => {
+            loadQuestions();
+            startTimer(100 * 60); // 100 minutes in seconds
+        });
+    </script>
+</body>
+</html>

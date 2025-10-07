@@ -1,0 +1,492 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Flutter course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Flutter
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to Flutter</h3>
+        <a href="Introduction to Flutter.html">Introduction to Flutter</a>
+        <ul>
+            <li><a href="What is Flutter.html">What is Flutter?</a></li>
+            <li><a href="Flutter Setup.html">Setting up Flutter Environment</a></li>
+            <li><a href="Dart Basics.html">Dart Basics</a></li>
+        </ul>
+    
+        <h3>Flutter Widgets</h3>
+        <a href="Flutter Widgets.html">Flutter Widgets</a>
+        <ul>
+            <li><a href="Stateless Widgets.html">Stateless Widgets</a></li>
+            <li><a href="Stateful Widgets.html">Stateful Widgets</a></li>
+            <li><a href="Common Widgets.html">Common Widgets (Text, Button, Image)</a></li>
+        </ul>
+    
+        <h3>Flutter Layouts</h3>
+        <a href="Flutter Layouts.html">Flutter Layouts</a>
+        <ul>
+            <li><a href="Column and Row.html">Column and Row</a></li>
+            <li><a href="Stack and Positioned.html">Stack and Positioned</a></li>
+            <li><a href="GridView.html">GridView and ListView</a></li>
+        </ul>
+    
+        <h3>Navigation and Routing</h3>
+        <a href="Flutter Navigation.html">Navigation and Routing</a>
+        <ul>
+            <li><a href="Navigating Between Screens.html">Navigating Between Screens</a></li>
+            <li><a href="Passing Data.html">Passing Data Between Screens</a></li>
+            <li><a href="Named Routes.html">Named Routes</a></li>
+        </ul>
+    
+        <h3>State Management</h3>
+        <a href="Flutter State Management.html">State Management</a>
+        <ul>
+            <li><a href="setState.html">setState</a></li>
+            <li><a href="Provider.html">Provider Package</a></li>
+            <li><a href="BLoC Pattern.html">BLoC Pattern</a></li>
+        </ul>
+    
+        <h3>Networking</h3>
+        <a href="Flutter Networking.html">Networking</a>
+        <ul>
+            <li><a href="HTTP Requests.html">Making HTTP Requests</a></li>
+            <li><a href="Working with APIs.html">Working with APIs</a></li>
+            <li><a href="Handling JSON.html">Handling JSON Data</a></li>
+        </ul>
+    
+        <h3>Local Database</h3>
+        <a href="Flutter Database.html">Local Database</a>
+        <ul>
+            <li><a href="Using SQLite.html">Using SQLite</a></li>
+            <li><a href="Using Hive.html">Using Hive</a></li>
+        </ul>
+    
+        <h3>Animations</h3>
+        <a href="Flutter Animations.html">Animations</a>
+        <ul>
+            <li><a href="Implicit Animations.html">Implicit Animations</a></li>
+            <li><a href="Explicit Animations.html">Explicit Animations</a></li>
+        </ul>
+    
+        <h3>Testing</h3>
+        <a href="Flutter Testing.html">Testing</a>
+        <ul>
+            <li><a href="Unit Testing.html">Unit Testing</a></li>
+            <li><a href="Widget Testing.html">Widget Testing</a></li>
+        </ul>
+    
+        <h3>Publishing Flutter Apps</h3>
+        <a href="Publishing Flutter App.html">Publishing Flutter Apps</a>
+        <ul>
+            <li><a href="For Android.html">Publishing for Android</a></li>
+            <li><a href="For iOS.html">Publishing for iOS</a></li>
+        </ul>
+    </div>
+    
+    
+        </div>
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "For Android.html";
+    }
+    function goNext() {
+        window.location.href = "#";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+
+
+<div class="div1">Publishing Flutter App for iOS</div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Introduction</h2>
+<p>Publishing a Flutter app on iOS requires setting up Xcode, configuring your app for release, creating an Apple Developer account, and submitting your app to the App Store. This guide walks through the necessary steps to successfully release your Flutter app for iOS.</p>
+
+<h3>Step 1: Update the App Version and Build Number</h3>
+<p>Before building your app for release, ensure that your app’s version and build number are correctly configured in <code>pubspec.yaml</code>. The version and build number should follow the format <code>version: x.y.z+build</code>:</p>
+
+<pre><code>version: 1.0.0+1</code></pre>
+
+<p>In iOS, this version information is reflected in Xcode. Open the <code>ios/Runner.xcworkspace</code> file in Xcode and ensure that the version and build number are correct in the <strong>General</strong> tab for your project target.</p>
+
+<h3>Step 2: Set Up an Apple Developer Account</h3>
+<p>To publish apps on the App Store, you need to register as an Apple Developer. Follow these steps:</p>
+<ol>
+    <li>Go to the <a href="https://developer.apple.com">Apple Developer website</a> and sign in with your Apple ID.</li>
+    <li>Enroll in the Apple Developer Program, which costs an annual fee.</li>
+    <li>Once enrolled, you can create App Store Connect accounts and publish apps.</li>
+</ol>
+
+<h3>Step 3: Configure App Icons</h3>
+<p>Configure the app icon by providing the appropriate sizes for iOS. Icons must be placed in the <code>ios/Runner/Assets.xcassets/AppIcon.appiconset</code> folder. You can generate iOS app icons using tools like <a href="https://appicon.co">appicon.co</a>.</p>
+
+<h3>Step 4: Set Up the Launch Screen</h3>
+<p>iOS apps require a launch screen, which is displayed while the app loads. You can configure this in the <code>LaunchScreen.storyboard</code> located in the <code>ios/Runner</code> folder. You may customize the storyboard to show a static image or branding of your app.</p>
+
+<h3>Step 5: Create an App Store Connect Listing</h3>
+<p>App Store Connect is the interface for managing your app on the App Store. Follow these steps to create a new app listing:</p>
+<ol>
+    <li>Go to <a href="https://appstoreconnect.apple.com">App Store Connect</a> and log in with your developer account.</li>
+    <li>Click <strong>My Apps</strong> and then the <strong>+ (Plus)</strong> button to create a new app.</li>
+    <li>Fill in the app details such as the app name, primary language, bundle ID (configured in Xcode), and SKU.</li>
+    <li>Select the appropriate pricing and availability options for your app.</li>
+</ol>
+
+<h3>Step 6: Configure Signing and Capabilities</h3>
+<p>Open your project in Xcode (<code>ios/Runner.xcworkspace</code>) and navigate to the <strong>Signing & Capabilities</strong> tab for your app target. Here you will set up code signing, which is required to distribute the app:</p>
+<ul>
+    <li>Ensure the correct team (your developer account) is selected under the <strong>Team</strong> dropdown.</li>
+    <li>Ensure that <strong>Automatically manage signing</strong> is checked. This will create and use a development certificate, a distribution certificate, and a provisioning profile as needed.</li>
+</ul>
+
+<h3>Step 7: Build the iOS Release Version</h3>
+<p>To build a release version of your app, run the following command in your terminal:</p>
+
+<pre><code>flutter build ios --release</code></pre>
+
+<p>This command will create a release build and generate the necessary files for submission to the App Store.</p>
+
+<h3>Step 8: Archive the App in Xcode</h3>
+<p>Once the release build is complete, follow these steps to create an archive of your app:</p>
+<ol>
+    <li>Open your project in Xcode.</li>
+    <li>Choose the <strong>Runner</strong> target and set the <strong>Build Configuration</strong> to <strong>Release</strong>.</li>
+    <li>Select <strong>Product</strong> &gt; <strong>Archive</strong>. Xcode will bundle your app into an archive file that is ready for distribution.</li>
+</ol>
+
+<h3>Step 9: Upload Your App to App Store Connect</h3>
+<p>After the archive is created, Xcode will open the Organizer window. Follow these steps to upload your app:</p>
+<ol>
+    <li>Select your app archive from the list and click <strong>Distribute App</strong>.</li>
+    <li>Choose <strong>App Store Connect</strong> as the method of distribution.</li>
+    <li>Select <strong>Upload</strong> to send the app to App Store Connect.</li>
+</ol>
+
+<h3>Step 10: Submit for Review</h3>
+<p>Once your app is uploaded, go back to App Store Connect and complete the following steps:</p>
+<ol>
+    <li>Fill in all necessary app information such as the description, screenshots, and keywords.</li>
+    <li>Navigate to the <strong>Pricing and Availability</strong> section to set the pricing of your app.</li>
+    <li>Submit your app for review by the Apple team. This process can take several days.</li>
+</ol>
+
+<h3>Step 11: Handle App Review Feedback</h3>
+<p>If your app is approved, it will be available on the App Store. If it's rejected, you'll receive feedback on what needs to be fixed. Address the issues, rebuild your app, and resubmit it for review.</p>
+
+<h3>Step 12: Monitor App Analytics</h3>
+<p>After your app is published, you can monitor its performance through App Store Connect. This includes download statistics, user ratings, and crash reports. Use these insights to improve your app with future updates.</p>
+
+<h2>Conclusion</h2>
+<p>Publishing a Flutter app for iOS requires setting up your Apple Developer account, configuring your app in Xcode, and following Apple's guidelines for app submission. By following this guide, you can successfully release your Flutter app to the iOS App Store.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+</body>
+</html>

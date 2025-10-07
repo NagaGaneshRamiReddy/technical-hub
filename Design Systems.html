@@ -1,0 +1,471 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> UI/UX Design Course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                UI/UX Design
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to UI/UX Design</h3>
+        <a href="Introduction to UI-UX Design.html">Introduction to UI/UX Design</a>
+        <ul>
+            <li><a href="What is UI UX.html">What is UI/UX Design?</a></li>
+            <li><a href="importance of UI UX Design.html">Importance of UI/UX</a></li>
+            <li><a href="Difference Between UI and UX.html">Difference Between UI and UX</a></li>
+        </ul>
+    
+        <h3>Research and Discovery</h3>
+        <a href="Research.html">Research</a>
+        <ul>
+            <li><a href="User Research.html">User Research</a></li>
+            <li><a href="Market Research.html">Market Research</a></li>
+            <li><a href="Competitive Analysis.html">Competitive Analysis</a></li>
+        </ul>
+    
+        <h3>Design Fundamentals</h3>
+        <a href="Design Fundamentals.html">Design Fundamentals</a>
+        <ul>
+            <li><a href="Principles of Design.html">Principles of Design</a></li>
+            <li><a href="Color Theory.html">Color Theory</a></li>
+            <li><a href="Typography.html">Typography</a></li>
+            <li><a href="Layout and Composition.html">Layout and Composition</a></li>
+        </ul>
+    
+        <h3>Wireframing and Prototyping</h3>
+        <a href="Wireframing and Prototyping.html">Wireframing and Prototyping</a>
+        <ul>
+            <li><a href="Wireframing Basics.html">Wireframing Basics</a></li>
+            <li><a href="Prototyping Tools.html">Prototyping Tools</a></li>
+            <li><a href="Low-Fidelity Prototypes.html">Low-Fidelity Prototypes</a></li>
+            <li><a href="High-Fidelity Prototypes.html">High-Fidelity Prototypes</a></li>
+        </ul>
+    
+        <h3>User Interface (UI) Design</h3>
+        <a href="User Interface (UI) Design.html">User Interface (UI) Design</a>
+        <ul>
+            <li><a href="UI Design Patterns.html">UI Design Patterns</a></li>
+            <li><a href="Responsive Design.html">Responsive Design</a></li>
+            <li><a href="Design Systems.html">Design Systems</a></li>
+            <li><a href="Mobile UI Design.html">Mobile UI Design</a></li>
+        </ul>
+    
+        <h3>User Experience (UX) Design</h3>
+        <a href="User Experience (UX) Design.html">User Experience (UX) Design</a>
+        <ul>
+            <li><a href="Information Architecture.html">Information Architecture</a></li>
+            <li><a href="Interaction Design.html">Interaction Design</a></li>
+            <li><a href="Usability Testing.html">Usability Testing</a></li>
+            <li><a href="User Flows and Journey Mapping.html">User Flows and Journey Mapping</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics design.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Design for Accessibility.html">Design for Accessibility</a></li>
+            <li><a href="Design Thinking.html">Design Thinking</a></li>
+            <li><a href="UI UX Design Trends.html">UI/UX Design Trends</a></li>
+            <li><a href="Portfolio Building.html">Portfolio Building</a></li>
+            <li><a href="Career Development.html">Career Development</a></li>
+        </ul>
+    </div>
+    
+   
+   
+    
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Responsive Design.html";
+    }
+    function goNext() {
+        window.location.href = "Mobile UI Design.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Design Systems </div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>Introduction to Design Systems</h2>
+        <p><strong>Design Systems</strong> are comprehensive frameworks that include a collection of reusable components, design patterns, and guidelines for creating consistent and cohesive user interfaces. They help teams streamline the design and development process, ensuring that products are visually appealing and functionally robust.</p>
+
+        <h3>What is a Design System?</h3>
+        <p>A design system is a centralized repository of design elements, components, and standards that guide the development of user interfaces. It includes documentation, guidelines, and assets to ensure consistency and efficiency across products and platforms.</p>
+
+        <h4>Key Components of a Design System</h4>
+        <ul>
+            <li><strong>Design Principles:</strong> Core values and guidelines that shape the visual and interactive aspects of a product.</li>
+            <li><strong>Component Library:</strong> A collection of reusable UI components, such as buttons, forms, and navigation elements, with standardized styles and behaviors.</li>
+            <li><strong>Style Guide:</strong> Detailed documentation of design patterns, typography, color palettes, and spacing rules that maintain visual consistency.</li>
+            <li><strong>Design Tokens:</strong> A set of variables representing design values (e.g., colors, font sizes) that can be used across different platforms and technologies.</li>
+            <li><strong>Guidelines:</strong> Instructions on how to use components and patterns, including best practices and do's and don'ts.</li>
+        </ul>
+
+        <h3>Benefits of Design Systems</h3>
+        <ul>
+            <li><strong>Consistency:</strong> Ensures a uniform look and feel across different products and platforms, enhancing user experience and brand identity.</li>
+            <li><strong>Efficiency:</strong> Streamlines the design and development process by providing reusable components and standardized practices, reducing the need for redundant work.</li>
+            <li><strong>Collaboration:</strong> Facilitates better communication and collaboration between design and development teams by providing a common set of tools and guidelines.</li>
+            <li><strong>Scalability:</strong> Supports the growth and evolution of products by allowing teams to maintain consistency as new features and components are added.</li>
+        </ul>
+
+        <h3>Design System Examples</h3>
+        <h4>1. Material Design</h4>
+        <p>Developed by Google, Material Design is a widely used design system that provides guidelines for creating visually appealing and user-friendly interfaces. It includes principles, components, and tools for designing across different platforms.</p>
+
+        <h4>2. Salesforce Lightning Design System</h4>
+        <p>The Salesforce Lightning Design System offers a set of design patterns, components, and guidelines for building Salesforce applications. It helps ensure a consistent experience across Salesforce products and custom applications.</p>
+
+        <h4>3. IBM Design Language</h4>
+        <p>The IBM Design Language is a design system that includes guidelines, components, and resources for creating cohesive and accessible user interfaces for IBM products and services.</p>
+
+        <h3>Best Practices for Implementing a Design System</h3>
+        <ul>
+            <li><strong>Start Small:</strong> Begin with a core set of components and guidelines, and gradually expand as needs evolve.</li>
+            <li><strong>Ensure Flexibility:</strong> Design systems should be adaptable to accommodate changes and new requirements without disrupting existing components.</li>
+            <li><strong>Involve Stakeholders:</strong> Collaborate with design, development, and product teams to ensure the design system meets their needs and integrates seamlessly into workflows.</li>
+            <li><strong>Document Thoroughly:</strong> Provide clear and comprehensive documentation to support users of the design system and ensure consistent application of guidelines.</li>
+            <li><strong>Maintain and Evolve:</strong> Regularly update the design system to reflect new insights, trends, and technologies, and ensure it remains relevant and effective.</li>
+        </ul>
+
+        <h3>Free Resources for Learning About Design Systems</h3>
+        <div class="resources">
+            <ul>
+                <li><strong><a href="https://material.io/design">Material Design</a>:</strong> Google’s comprehensive design system with guidelines, components, and tools.</li>
+                <li><strong><a href="https://www.lightningdesignsystem.com/">Salesforce Lightning Design System</a>:</strong> Design patterns and resources for building Salesforce applications.</li>
+                <li><strong><a href="https://www.ibm.com/design/language">IBM Design Language</a>:</strong> Guidelines and resources for creating consistent and accessible interfaces.</li>
+                <li><strong><a href="https://uxdesign.cc/a-guide-to-design-systems-7a66b5d8de47">UX Design: A Guide to Design Systems</a>:</strong> An overview of design systems, their components, and best practices.</li>
+                <li><strong><a href="https://www.smashingmagazine.com/2019/06/guide-design-systems/">Smashing Magazine: The Ultimate Guide to Design Systems</a>:</strong> In-depth guide on implementing and maintaining design systems.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Design systems are vital tools for creating consistent, efficient, and scalable user interfaces. By providing a structured framework of components, guidelines, and resources, design systems enhance collaboration and streamline the design and development process. Leveraging best practices and free resources can help teams successfully implement and maintain effective design systems.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>   </div>
+</body>
+</html>

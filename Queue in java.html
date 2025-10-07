@@ -1,0 +1,358 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Java Language Roadmap</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> Java Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="golabs()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Java Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "java_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Java_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+  
+
+        </script>
+      
+      
+       
+      
+
+    <script>
+        function toggleAnswer(button) {
+            const questionItem = button.closest('.question-item');
+            const allQuestionItems = document.querySelectorAll('.question-item');
+
+            // Close all open quiz containers
+            allQuestionItems.forEach(item => {
+                if (item !== questionItem) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Toggle the clicked question's quiz container
+            questionItem.classList.toggle('active');
+        }
+
+        function calculateScore(quizContainer, topicNumber) {
+            const options = quizContainer.querySelectorAll("input[type='radio']");
+            let score = 0;
+            options.forEach(option => {
+                if (option.checked && option.value === "1") {
+                    score += 1;
+                }
+            });
+
+            // Display score
+            const scoreCard = quizContainer.querySelector(".score-card");
+            scoreCard.style.display = "block";
+            scoreCard.classList.add(score === 5 ? 'correct' : 'incorrect');
+            scoreCard.innerHTML = `You scored ${score} out of 5 for Topic ${topicNumber}!`;
+        }
+    </script>
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-java" style="font-size: 60px;padding-left: 16px;  color: #e27f05;"></i>
+            <h2 class="jk">Java Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        <a href="javaRoadmaps.html" target="_blank"><b class="b12">Java Roadmap</b></a>
+        <ul>
+            <a href="Introduction to Java.html" target="_blank">Introduction to Java</a>
+            <li><a href="History of Java.html" target="_blank">History of Java</a></li>
+            <li><a href="Setting up Java Environment java.html" target="_blank">Setting up Java Environment</a></li>
+            <li><a href="Hello World Program java.html" target="_blank">Hello World Program</a></li>
+            <li><a href="JVM, JRE, and JDK in java.html" target="_blank">JVM, JRE, and JDK</a></li>
+        </ul>
+    
+        <h3>Basic Java Syntax</h3>
+        <a href="Basic Java Syntax java.html" target="_blank">Basic Java Syntax</a>
+        <ul>
+            <li><a href="variables and Data Types java.html" target="_blank">Variables and Data Types</a></li>
+            <li><a href="Operators in java.html" target="_blank">Operators</a></li>
+            <li><a href="Control Statements in java.html" target="_blank">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements in java.html" target="_blank">If-else Statements</a></li>
+                <li><a href="Switch Statement in java.html" target="_blank">Switch Statement</a></li>
+                <li><a href="Loops in java.html" target="_blank">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop in java.html" target="_blank">For Loop</a></li>
+                    <li><a href="While Loop in java.html" target="_blank">While Loop</a></li>
+                    <li><a href="Do-While Loop in java.html" target="_blank">Do-While Loop</a></li>
+                </ul>
+            </ul>
+        </ul>
+    
+        <h3>Arrays</h3>
+        <a href="Arrays in java.html" target="_blank">Arrays</a>
+        <ul>
+            <li><a href="Introduction to Arrays in java.html" target="_blank">Introduction to Arrays</a></li>
+            <li><a href="Single-Dimensional Arrays in java.html" target="_blank">Single-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays in java.html" target="_blank">Multi-Dimensional Arrays</a></li>
+            <li><a href="Array Operations in java.html" target="_blank">Array Operations</a></li>
+            <li><a href="ArrayList and Other Collections in java.html" target="_blank">ArrayList and Other Collections</a></li>
+        </ul>
+    
+        <h3>Strings</h3>
+        <a href="Strings in java.html" target="_blank">Strings</a>
+        <ul>
+            <li><a href="String Basics in java.html" target="_blank">String Basics</a></li>
+            <li><a href="String Methods in java.html" target="_blank">String Methods</a></li>
+            <li><a href="String Manipulation in java.html" target="_blank">String Manipulation</a></li>
+            <li><a href="String Formatting in java.html" target="_blank">String Formatting</a></li>
+            <li><a href="StringBuilder and StringBuffer in java.html" target="_blank">StringBuilder and StringBuffer</a></li>
+        </ul>
+    
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming in java.html" target="_blank">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects in java.html" target="_blank">Classes and Objects</a></li>
+            <li><a href="Constructors in java.html" target="_blank">Constructors</a></li>
+            <li><a href="Inheritance in java.html" target="_blank">Inheritance</a></li>
+            <li><a href="Polymorphism in java.html" target="_blank">Polymorphism</a></li>
+            <li><a href="Abstraction in java.html" target="_blank">Abstraction</a></li>
+            <li><a href="Encapsulation in java.html" target="_blank">Encapsulation</a></li>
+            <li><a href="Interfaces in java.html" target="_blank">Interfaces</a></li>
+            <li><a href="Packages in java.html" target="_blank">Packages</a></li>
+            <li><a href="Nested Classes in java.html" target="_blank">Nested Classes</a></li>
+            <li><a href="Enums in java.html" target="_blank">Enums</a></li>
+        </ul>
+    
+        <h3>Advanced Java Concepts</h3>
+        <a href="Advanced Java Concepts in java.html" target="_blank">Advanced Java Concepts</a>
+        <ul>
+            <li><a href="Exception Handling in java.html" target="_blank">Exception Handling</a></li>
+            <li><a href="File I-O in java.html" target="_blank">File I/O</a></li>
+            <li><a href="Error Handling and Debugging in java.html" target="_blank">Error Handling and Debugging</a></li>
+            <li><a href="Collections Framework in java.html" target="_blank">Collections Framework</a></li>
+            <ul>
+                <li><a href="List in java.html" target="_blank">List</a></li>
+                <li><a href="Set in java.html" target="_blank">Set</a></li>
+                <li><a href="Map in java.html" target="_blank">Map</a></li>
+                <li><a href="Queue in java.html" target="_blank">Queue</a></li>
+            </ul>
+            <li><a href="Generics in java.html" target="_blank">Generics</a></li>
+            <li><a href="Multithreading and Concurrency in java.html" target="_blank">Multithreading and Concurrency</a></li>
+            <li><a href="Networking in java.html" target="_blank">Networking</a></li>
+            <li><a href="JDBC in java.html" target="_blank">JDBC</a></li>
+            <li><a href="Java Reflection in java.html" target="_blank">Java Reflection</a></li>
+            <li><a href="Java Annotations in java.html" target="_blank">Java Annotations</a></li>
+        </ul>
+    </div>
+    
+        
+   
+   
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "java_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Java_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Map in java.html";
+    }
+    function goNext() {
+        window.location.href = "Generics in java.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-java" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">Java Tutorial</h2>
+<div class="div1">Queue Interface in Java</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+      
+        <h2>Introduction to the Queue Interface</h2>
+        <p>The <code>Queue</code> interface in Java is a part of the Java Collections Framework and is used to hold elements prior to processing. It provides a way to manage elements in a sequence and supports various operations for element insertion, removal, and inspection. Queues are commonly used in scenarios such as task scheduling and buffering.</p>
+
+        <h2>Characteristics of Queues</h2>
+        <ul>
+            <li><strong>FIFO Order:</strong> Most implementations of the <code>Queue</code> interface use a First-In-First-Out (FIFO) order, meaning the element added first is removed first. However, some implementations may have different ordering policies.</li>
+            <li><strong>Element Insertion:</strong> Elements can be added to the queue using methods such as <code>offer()</code> or <code>add()</code>.</li>
+            <li><strong>Element Removal:</strong> Elements are removed from the queue using methods like <code>poll()</code> or <code>remove()</code>. The methods <code>poll()</code> and <code>remove()</code> differ in that <code>poll()</code> returns <code>null</code> if the queue is empty, while <code>remove()</code> throws an exception.</li>
+            <li><strong>Element Inspection:</strong> Methods like <code>peek()</code> or <code>element()</code> are used to inspect the element at the front of the queue without removing it.</li>
+        </ul>
+
+        <h2>Common Implementations</h2>
+        <p>Several classes implement the <code>Queue</code> interface, each with different characteristics:</p>
+        <ul>
+            <li><strong><code>LinkedList</code></strong>: Implements the <code>Queue</code> interface and provides a doubly-linked list. It supports both FIFO and LIFO (Last-In-First-Out) operations, making it versatile for different use cases.</li>
+            <li><strong><code>PriorityQueue</code></strong>: Implements the <code>Queue</code> interface with a priority-based ordering. Elements are ordered based on their natural ordering or a specified comparator, not necessarily in FIFO order.</li>
+            <li><strong><code>ArrayDeque</code></strong>: Implements the <code>Deque</code> interface, which extends <code>Queue</code>, providing a resizable array implementation. It supports fast insertion and removal at both ends.</li>
+        </ul>
+
+        <h2>Common Operations</h2>
+        <p>Here are some common operations you can perform with queues:</p>
+        <ul>
+            <li><strong>Adding Elements:</strong> Use <code>offer()</code> or <code>add()</code> to insert elements into the queue.</li>
+            <li><strong>Removing Elements:</strong> Use <code>poll()</code> or <code>remove()</code> to remove and retrieve the front element from the queue.</li>
+            <li><strong>Inspecting Elements:</strong> Use <code>peek()</code> or <code>element()</code> to view the front element without removing it.</li>
+            <li><strong>Checking if Empty:</strong> Use <code>isEmpty()</code> to check if the queue has no elements.</li>
+        </ul>
+
+        <h2>Example: Working with Queues</h2>
+        <p>Here’s an example demonstrating common operations with a <code>LinkedList</code> as a queue:</p>
+        <pre><code>import java.util.LinkedList;
+import java.util.Queue;
+
+public class QueueExample {
+    public static void main(String[] args) {
+        // Create a Queue using LinkedList
+        Queue<String> queue = new LinkedList<>();
+
+        // Add elements
+        queue.offer("First");
+        queue.offer("Second");
+        queue.offer("Third");
+
+        // Retrieve and remove the front element
+        String first = queue.poll(); // "First"
+        System.out.println("Removed: " + first);
+
+        // Inspect the front element
+        String next = queue.peek(); // "Second"
+        System.out.println("Next element: " + next);
+
+        // Print all remaining elements
+        System.out.println("Remaining elements in queue:");
+        for (String element : queue) {
+            System.out.println(element);
+        }
+    }
+}
+</code></pre>
+
+        <h2>Summary</h2>
+        <p>The <code>Queue</code> interface in Java provides a way to manage a sequence of elements with operations for adding, removing, and inspecting elements. Understanding how to use different implementations such as <code>LinkedList</code>, <code>PriorityQueue</code>, and <code>ArrayDeque</code> helps in choosing the right data structure for managing sequences in Java applications.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+              </div>
+</body>
+</html>

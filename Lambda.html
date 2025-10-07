@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title> Amazon Web Services (AWS)</title>
+</head>
+<body class="body">
+
+   
+    
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> AWS Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> AWS Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-aws" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">AWS Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="awsRoadmaps.html" target="_blank"><b class="b12">AWS Roadmap</b></a>
+        <ul>
+            
+        <a href="Introduction to aws.html">Introduction to AWS</a>
+            <li><a href="overview of aws.html">Overview of AWS</a></li>
+            <li><a href="Global Infrastructure.html">Global Infrastructure</a></li>
+            <li><a href="Key Services and Use Cases.html">Key Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>AWS Foundations</h3>
+        <a href="AWS Foundations.html">AWS Foundations</a>
+        <ul>
+            <li><a href="AWS Management Console.html">AWS Management Console</a></li>
+            <li><a href="AWS CLI.html">AWS CLI</a></li>
+            <li><a href="IAM (Identity and Access Management).html">IAM (Identity and Access Management)</a></li>
+            <li><a href="AWS Billing and Pricing.html">AWS Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core AWS Services</h3>
+        <a href="Core AWS Services.html">Core AWS Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services.html">Compute Services</a>
+                <ul>
+                    <li><a href="EC2 (Elastic Compute Cloud).html">EC2 (Elastic Compute Cloud)</a></li>
+                    <li><a href="Lambda.html">Lambda</a></li>
+                    <li><a href="ECS (Elastic Container Service) .html">ECS (Elastic Container Service)</a></li>
+                    <li><a href="EKS (Elastic Kubernetes Service).html">EKS (Elastic Kubernetes Service)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services.html">Storage Services</a>
+                <ul>
+                    <li><a href="S3 (Simple Storage Service).html">S3 (Simple Storage Service)</a></li>
+                    <li><a href="EBS (Elastic Block Store).html">EBS (Elastic Block Store)</a></li>
+                    <li><a href="EFS (Elastic File System).html">EFS (Elastic File System)</a></li>
+                    <li><a href="Glacier.html">Glacier</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services.html">Database Services</a>
+                <ul>
+                    <li><a href="RDS (Relational Database Service).html">RDS (Relational Database Service)</a></li>
+                    <li><a href="DynamoDB.html">DynamoDB</a></li>
+                    <li><a href="Redshift.html">Redshift</a></li>
+                    <li><a href="Aurora.html">Aurora</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud).html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Route 53.html">Route 53</a></li>
+                    <li><a href="CloudFront.html">CloudFront</a></li>
+                    <li><a href="Direct Connect.html">Direct Connect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced AWS Services</h3>
+        <a href="Advanced AWS Services.html">Advanced AWS Services</a>
+        <ul>
+            <li>
+                <a href="Machine Learning Services.html">Machine Learning Services</a>
+                <ul>
+                    <li><a href="SageMaker .html">SageMaker</a></li>
+                    <li><a href="Rekognition.html">Rekognition</a></li>
+                    <li><a href="Comprehend.html">Comprehend</a></li>
+                    <li><a href="Lex.html">Lex</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services.html">Analytics Services</a>
+                <ul>
+                    <li><a href="Athena.html">Athena</a></li>
+                    <li><a href="EMR (Elastic MapReduce).html">EMR (Elastic MapReduce)</a></li>
+                    <li><a href="Kinesis.html">Kinesis</a></li>
+                    <li><a href="QuickSight.html">QuickSight</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services.html">Security Services</a>
+                <ul>
+                    <li><a href="Shield.html">Shield</a></li>
+                    <li><a href="WAF (Web Application Firewall) .html">WAF (Web Application Firewall)</a></li>
+                    <li><a href="GuardDuty.html">GuardDuty</a></li>
+                    <li><a href="Macie.html">Macie</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on AWS</h3>
+        <a href="DevOps on AWS.html">DevOps on AWS</a>
+        <ul>
+            <li><a href="Infrastructure as Code (IaC) .html">Infrastructure as Code (IaC)</a></li>
+            <li>
+                <a href="CI-CD Pipeline.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="CodeCommit.html">CodeCommit</a></li>
+                    <li><a href="CodeBuild.html">CodeBuild</a></li>
+                    <li><a href="CodeDeploy.html">CodeDeploy</a></li>
+                    <li><a href="CodePipeline.html">CodePipeline</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="CloudWatch.html">CloudWatch</a></li>
+                    <li><a href="CloudTrail.html">CloudTrail</a></li>
+                    <li><a href="X-Ray.html">X-Ray</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="AWS Migration Hub.html">AWS Migration Hub</a></li>
+            <li><a href="Server Migration Service.html">Server Migration Service</a></li>
+            <li><a href="Database Migration Service.html">Database Migration Service</a></li>
+            <li><a href="Snowball.html">Snowball</a></li>
+        </ul>
+    </div>
+    
+    
+
+   
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "AWS_interviews.html";
+}
+function goprojects() {
+    window.location.href = "AWS_projeets.html";
+}
+function golabs() {
+    window.location.href = "AWS_labs.html";
+}
+function goquizpro() {
+    window.location.href = "AWS_quiz.html";
+}
+    function goPrevious() {
+        window.location.href = "EC2 (Elastic Compute Cloud).html";
+    }
+    function goNext() {
+        window.location.href = "ECS (Elastic Container Service).html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-aws" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">AWS Tutorial</h2>
+<div class="div1">AWS Lambda</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>What is AWS Lambda ?</h2>
+            <p><strong>AWS Lambda</strong> is a service that lets you run code without needing to manage servers. Imagine you write a piece of code and only pay for the time it runs—no server maintenance required. Lambda handles the infrastructure for you, so you can focus on coding.</p>
+            <div id="languageSelector" style="margin-top: 20px; display: none;">
+                <label for="language">Select Language:</label>
+                <select id="language" onchange="changeVideo()">
+                    <option value="english">English</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+    
+        
+            <div id="videoContainer" style="display: none; margin-top: 20px;">
+                <iframe id="youtubeVideo" width="560" height="315" src="" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div> <script>
+                // Define YouTube video links for each language
+                const videos = {
+                    english: 'https://www.youtube.com/embed/eOBq__h4OJ4?si=N1Jd9zWcmOg1-cjJ',  // Add the actual English video link here
+                    telugu: 'https://www.youtube.com/embed/',  // Replace with actual Telugu video link
+                    hindi: 'https://www.youtube.com/embed/'  // Replace with actual Hindi video link
+                };
+            
+            
+                function govideo() {
+                    // Show the language selector
+                    document.getElementById('languageSelector').style.display = 'block';
+                    
+                    // Show the video container
+                    document.getElementById('videoContainer').style.display = 'block';
+                    
+                    // Scroll to the video container
+                    window.scrollTo(0, document.getElementById('videoContainer').offsetTop);
+                    
+                    // Set default video (English)
+                    changeVideo();
+                }
+            
+                // Function to change video based on selected language
+                function changeVideo() {
+                    const selectedLanguage = document.getElementById('language').value;
+                    const videoUrl = videos[selectedLanguage];
+                    
+                    // Change the video source
+                    document.getElementById('youtubeVideo').src = videoUrl;
+                }
+            </script>
+           
+            <h2>Why You'll Love AWS Lambda</h2>
+            <ul>
+                <li><strong>No Server Management</strong>: Forget about provisioning or maintaining servers. Lambda takes care of that for you.</li>
+                <li><strong>Trigger-Based Execution</strong>: Run your code automatically in response to events like file uploads, database changes, or HTTP requests.</li>
+                <li><strong>Automatic Scaling</strong>: Lambda scales automatically based on the number of requests. It adjusts to your needs without any extra effort from you.</li>
+                <li><strong>Supports Many Languages</strong>: Whether you prefer Python, Node.js, Java, or C#, Lambda has you covered. Plus, you can package your own dependencies.</li>
+                <li><strong>Seamless Integration</strong>: Easily connect with other AWS services like S3 for storage, DynamoDB for databases, and SNS for notifications.</li>
+                <li><strong>Cost-Effective</strong>: You pay only for the compute time you use. There’s no charge for idle time, so you save money.</li>
+            </ul>
+
+            <h2>Getting Started with AWS Lambda</h2>
+            <div class="example">
+                <p>Here’s how to create and run a Lambda function:</p>
+                <ol>
+                    <li><strong>Log Into AWS</strong>: Start by signing into the AWS Management Console and go to the Lambda service.</li>
+                    <li><strong>Create a Function</strong>: Click "Create function" and choose whether to start from scratch, use a blueprint, or deploy from a container image.</li>
+                    <li><strong>Set Up Your Function</strong>: Give your function a name, select a runtime (like Node.js or Python), and set basic options like memory and timeout.</li>
+                    <li><strong>Write Your Code</strong>: Enter your code directly in the inline editor or upload your code package. Set up what your function should do when triggered.</li>
+                    <li><strong>Configure Triggers</strong>: Set up what will trigger your function, such as a new file in S3 or an API Gateway request.</li>
+                    <li><strong>Test It Out</strong>: Create test events to make sure your function works as expected before going live.</li>
+                    <li><strong>Deploy and Monitor</strong>: Deploy your function and keep an eye on it using AWS CloudWatch to check its performance and logs.</li>
+                </ol>
+            </div>
+
+            <div class="resources">
+                <h3>Explore More</h3>
+                <ul>
+                    <li><a href="https://aws.amazon.com/lambda/" target="_blank">AWS Lambda Overview</a></li>
+                    <li><a href="https://docs.aws.amazon.com/lambda/" target="_blank">AWS Lambda Documentation</a></li>
+                    <li><a href="https://aws.amazon.com/getting-started/lambda/" target="_blank">Getting Started with AWS Lambda</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>AWS Lambda is a fantastic service that allows you to run code in response to events without worrying about servers. It’s scalable, flexible, and cost-effective, making it a great choice for developing and running cloud-based applications.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div> </div>
+    </div>
+</body>
+</html>

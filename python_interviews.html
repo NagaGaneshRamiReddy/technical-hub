@@ -1,0 +1,2123 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interviews.css">
+</head>
+    <title>Python Interview Questions</title>
+   
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+             <i class="fab fa-html5 icon"></i>
+             
+
+        </div>
+    </header>
+    <br><br><br> <script src="script.js"></script>
+    <div class="container">
+        
+        <h1>Top Python Interviews Questions</h1>
+        <ol class="question-list">
+
+        <ol class="question-list">
+            <li class="question-item">
+    <div class="question">1. What is Python, and what are its benefits?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Python is a high-level, interpreted programming language known for its simplicity and readability. Benefits include:
+                <ul>
+                    <li>Easy to learn and use due to its clear syntax.</li>
+                    <li>Extensive standard libraries and frameworks (e.g., Django, Flask, Pandas).</li>
+                    <li>Strong community support.</li>
+                    <li>Cross-platform compatibility.</li>
+                    <li>Versatile applications: web development, data analysis, machine learning, automation, etc.</li>
+                </ul>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Python is a high-level, interpreted language known for its readability and versatility.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    
+<li class="question-item">
+    <div class="question">2. How does Python differ from other programming languages?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Python is dynamically typed and interpreted, which differs from statically typed languages like Java. It emphasizes readability and allows for rapid development. Unlike C or C++, it handles memory management automatically, and unlike JavaScript, it has a more extensive standard library and supports multiple programming paradigms (procedural, object-oriented, functional).</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Python is dynamically typed and emphasizes readability, unlike statically typed languages.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    
+<li class="question-item">
+    <div class="question">3. What are Python's built-in data types?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Python has several built-in data types:
+                <ul>
+                    <li><b>Numeric Types:</b> int, float, complex</li>
+                    <li><b>Sequence Types:</b> str (string), list, tuple</li>
+                    <li><b>Mapping Type:</b> dict (dictionary)</li>
+                    <li><b>Set Types:</b> set, frozenset</li>
+                    <li><b>Boolean Type:</b> bool</li>
+                    <li><b>Binary Types:</b> bytes, bytearray, memoryview</li>
+                </ul>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Built-in data types include numeric types, sequences, mapping, sets, booleans, and binary types.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    
+<li class="question-item">
+    <div class="question">4. What is the difference between a list and a tuple in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Lists are mutable (can be changed) and defined with square brackets [], while tuples are immutable (cannot be changed) and defined with parentheses (). This means that once a tuple is created, it cannot be altered.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Lists are mutable and defined with []; tuples are immutable and defined with ().')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">5. How do you create a dictionary in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a dictionary using curly braces {} or the dict() constructor. Example:
+                <pre>
+                my_dict = {'name': 'Alice', 'age': 30}
+                my_dict2 = dict(name='Bob', age=25)
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Dictionaries can be created with curly braces or the dict() constructor.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">6. Explain the difference between shallow copy and deep copy.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A shallow copy creates a new object but inserts references into it to the objects found in the original. A deep copy creates a new object and recursively copies all objects found in the original. This means that changes to nested objects in a shallow copy will reflect in the original, but not in a deep copy. Example:
+                <pre>
+                import copy
+                original = [[1, 2, 3], [4, 5, 6]]
+                shallow = copy.copy(original)
+                deep = copy.deepcopy(original)
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Shallow copy references original objects; deep copy creates independent copies.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item">
+    <div class="question">7. What are functions in Python? How do you define one?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Functions are reusable pieces of code that perform a specific task. They are defined using the def keyword, followed by the function name and parentheses. Example:
+                <pre>
+                def greet(name):
+                    return f"Hello, {name}!"
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Functions are defined with def; they perform specific tasks and can be reused.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">8. What is the purpose of the self parameter in a method?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> In instance methods, self refers to the instance calling the method. It allows access to the attributes and methods of the class in Python, differentiating between instance variables and method parameters.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'self refers to the instance calling the method, allowing access to instance attributes.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">9. Explain the concept of mutable and immutable types.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Mutable types can be changed after their creation (e.g., lists, dictionaries), while immutable types cannot be changed (e.g., strings, tuples). For example, you can modify a list but not a string:
+                <pre>
+                my_list = [1, 2, 3]
+                my_list[0] = 4  # Mutable
+                my_string = "hello"
+                # my_string[0] = "H"  # Immutable, will raise an error
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Mutable types can be changed; immutable types cannot be modified.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">10. What are *args and **kwargs in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> *args allows you to pass a variable number of positional arguments to a function, while **kwargs allows you to pass keyword arguments. Example:
+                <pre>
+                def func(*args, **kwargs):
+                    print(args)  # Tuple of positional arguments
+                    print(kwargs)  # Dictionary of keyword arguments
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, '*args and **kwargs allow for flexible argument passing in functions.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <li class="question-item"><div class="question">11. How do you handle exceptions in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Exceptions in Python are handled using try, except, finally, and else blocks. You can catch specific exceptions or a general exception. Example:
+                <pre>
+                try:
+                    result = 10 / 0
+                except ZeroDivisionError:
+                    print("Division by zero!")
+                finally:
+                    print("This will always execute.")
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Exceptions are handled with try, except, and finally blocks in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">12. What is the difference between == and is?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> == checks for value equality (whether two objects have the same value), while is checks for identity (whether two references point to the same object in memory). Example:
+                <pre>
+                a = [1, 2, 3]
+                b = a
+                c = a[:]
+                print(a == c)  # True (same content)
+                print(a is b)  # True (same object)
+                print(a is c)  # False (different objects)
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, '== checks value equality; is checks object identity in memory.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">13. How do you read and write files in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Files can be read and written using the built-in open() function, specifying the mode ('r' for reading, 'w' for writing). Example:
+                <pre>
+                with open('file.txt', 'w') as f:
+                    f.write("Hello, world!")
+                with open('file.txt', 'r') as f:
+                    content = f.read()
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use open() with modes r or w for reading and writing files in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">14. What are list comprehensions and give an example?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> List comprehensions provide a concise way to create lists. They consist of brackets containing an expression followed by a for clause. Example:
+                <pre>
+                squares = [x**2 for x in range(10)]
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'List comprehensions allow for concise list creation using an expression and for clause.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">15. What is the purpose of the with statement in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The with statement is used for resource management, ensuring proper acquisition and release of resources. It's commonly used with file operations to automatically close files. Example:
+                <pre>
+                with open('file.txt', 'r') as f:
+                    data = f.read()  # File is automatically closed after this block
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The with statement manages resources, ensuring proper acquisition and release, commonly with files.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">16. Explain how the map(), filter(), and reduce() functions work.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b>
+                <ul>
+                    <li><b>map(function, iterable):</b> Applies the function to every item in the iterable.</li>
+                    <li><b>filter(function, iterable):</b> Filters items in the iterable based on the function, returning only those for which the function returns True.</li>
+                    <li><b>reduce(function, iterable):</b> Applies the function cumulatively to the items in the iterable, reducing it to a single value (requires from functools import reduce).</li>
+                </ul>
+                Example:
+                <pre>
+                from functools import reduce
+
+                nums = [1, 2, 3, 4]
+                squares = list(map(lambda x: x**2, nums))  # [1, 4, 9, 16]
+                evens = list(filter(lambda x: x % 2 == 0, nums))  # [2, 4]
+                total = reduce(lambda x, y: x + y, nums)  # 10
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'map applies a function; filter returns items that match a condition; reduce combines items to a single value.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">17. What is a lambda function in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A lambda function is an anonymous function defined using the lambda keyword. It can take any number of arguments but can only have one expression. Example:
+                <pre>
+                add = lambda x, y: x + y
+                print(add(2, 3))  # 5
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A lambda function is an anonymous function defined with lambda, allowing single expressions.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">18. How do you reverse a list in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can reverse a list using the reverse() method or slicing. Example:
+                <pre>
+                my_list = [1, 2, 3, 4]
+                my_list.reverse()  # In-place reversal
+                # or
+                reversed_list = my_list[::-1]  # Slicing
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use reverse() or slicing to reverse a list in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">19. Explain the use of break, continue, and pass statements.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b>
+                <ul>
+                    <li><b>break:</b> Terminates the loop prematurely.</li>
+                    <li><b>continue:</b> Skips the current iteration and continues with the next.</li>
+                    <li><b>pass:</b> A null operation that serves as a placeholder in code blocks.</li>
+                </ul>
+                Example:
+                <pre>
+                for i in range(5):
+                    if i == 2:
+                        continue  # Skip 2
+                    print(i)  # Prints 0, 1, 3, 4
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'break terminates a loop; continue skips to the next iteration; pass is a placeholder statement.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">20. How can you generate random numbers in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The random module provides functions to generate random numbers. Example:
+                <pre>
+                import random
+                random_integer = random.randint(1, 10)  # Random integer between 1 and 10
+                random_float = random.random()  # Random float between 0.0 and 1.0
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use the random module to generate random numbers, such as randint() and random().')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+
+<li><li class="question-item">
+    <div class="question">21. What are Python decorators, and how do they work?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Decorators are functions that modify the behavior of other functions or methods. They are applied using the <code>@decorator_name</code> syntax before the function definition. Example:
+                <pre>
+                def my_decorator(func):
+                    def wrapper():
+                        print("Something is happening before the function is called.")
+                        func()
+                        print("Something is happening after the function is called.")
+                    return wrapper
+
+                @my_decorator
+                def say_hello():
+                    print("Hello!")
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Decorators modify function behavior using @syntax and return a wrapper function.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">22. Explain the concept of generators and how they differ from functions.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Generators are special functions that return an iterator and yield values using the <code>yield</code> keyword, allowing them to produce values on the fly. Unlike regular functions, which return a single value, generators can produce a sequence of values over time, which is memory-efficient.
+                <pre>
+                def countdown(n):
+                    while n > 0:
+                        yield n
+                        n -= 1
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Generators yield values over time using yield, unlike functions that return a single value.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">23. What is the Global Interpreter Lock (GIL) in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The GIL is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecode at once. This can be a limitation for CPU-bound multi-threaded programs, as only one thread can execute at a time. However, I/O-bound threads can benefit from concurrency.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The GIL prevents multiple threads from executing bytecode simultaneously, limiting CPU-bound tasks.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">24. How can you improve the performance of a Python program?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Performance can be improved by:
+                <ul>
+                    <li>Using built-in functions and libraries that are implemented in C (e.g., NumPy).</li>
+                    <li>Optimizing algorithms and data structures.</li>
+                    <li>Avoiding global variables and using local variables instead.</li>
+                    <li>Using generators instead of lists for large datasets.</li>
+                    <li>Employing concurrency with threading or multiprocessing for I/O-bound tasks.</li>
+                </ul>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Performance can be improved by optimizing algorithms, using built-in functions, and employing concurrency.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">25. What is the difference between threading and multiprocessing in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Threading allows for concurrent execution of code by using multiple threads within a single process, suitable for I/O-bound tasks. Multiprocessing, on the other hand, creates separate processes with their own memory space, useful for CPU-bound tasks. Multiprocessing bypasses the GIL, enabling true parallelism.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Threading is concurrent in a single process; multiprocessing creates separate processes for parallelism.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">26. How do you create a class in Python? Provide an example.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Classes are created using the <code>class</code> keyword. Example:
+                <pre>
+                class Dog:
+                    def __init__(self, name):
+                        self.name = name
+                    
+                    def bark(self):
+                        return f"{self.name} says Woof!"
+                
+                my_dog = Dog("Buddy")
+                print(my_dog.bark())  # "Buddy says Woof!"
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Classes are created with class keyword; example Dog class with __init__ and bark method.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">27. What is inheritance, and how is it implemented in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Inheritance allows a class to inherit attributes and methods from another class. The new class is called a derived (or child) class, while the original is the base (or parent) class. Example:
+                <pre>
+                class Animal:
+                    def speak(self):
+                        return "Animal speaks"
+
+                class Dog(Animal):
+                    def bark(self):
+                        return "Woof!"
+
+                my_dog = Dog()
+                print(my_dog.speak())  # "Animal speaks"
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Inheritance allows a class to inherit attributes and methods from another class.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">28. What is polymorphism in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Polymorphism allows methods to do different things based on the object it is acting upon, typically through method overriding. For example:
+                <pre>
+                class Cat(Animal):
+                    def speak(self):
+                        return "Meow!"
+
+                def animal_sound(animal):
+                    print(animal.speak())
+
+                animal_sound(Dog())  # "Animal speaks"
+                animal_sound(Cat())  # "Meow!"
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Polymorphism allows methods to behave differently based on the object type, typically through overriding.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">29. Explain the concept of encapsulation.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Encapsulation is the bundling of data and methods that operate on the data within a single unit (class) and restricting access to some components. This is achieved by using private (<code>__</code>) and protected (<code>_</code>) attributes. Example:
+                <pre>
+                class BankAccount:
+                    def __init__(self):
+                        self.__balance = 0  # Private attribute
+                    
+                    def deposit(self, amount):
+                        self.__balance += amount
+                    
+                    def get_balance(self):
+                        return self.__balance
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Encapsulation bundles data and methods within a class and restricts access using private and protected attributes.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">30. What are Python modules, and how do you create one?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A module is a file containing Python code (functions, classes, variables) that can be imported into other Python scripts. To create a module, simply save a <code>.py</code> file with your code. Example:
+                <ul>
+                    <li>Save as <code>mymodule.py</code>:
+                        <pre>
+                        def greet():
+                            return "Hello from the module!"
+                        </pre>
+                    </li>
+                    <li>Importing the module:
+                        <pre>
+                        import mymodule
+                        print(mymodule.greet())  # "Hello from the module!"
+                        </pre>
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Modules are files with Python code, imported into scripts using the import statement.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">31. How do you import a module in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Modules can be imported using the <code>import</code> statement. You can import the entire module or specific functions/classes. Example:
+                <pre>
+                import math
+                from mymodule import greet
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Modules are imported using import statement; you can import the whole module or specific components.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">32. What is the difference between a module and a package?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A module is a single file (a <code>.py</code> file), while a package is a collection of related modules organized in a directory containing an <code>__init__.py</code> file. Packages allow for a hierarchical organization of modules.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A module is a single .py file; a package is a collection of related modules in a directory with an __init__.py file.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li>
+    <div class="question">33. Explain the concept of virtual environments in Python.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Virtual environments are isolated Python environments that allow you to manage dependencies for different projects without conflicts. Each environment can have its own libraries and versions. You can create a virtual environment using <code>venv</code>:
+                <pre>
+                python -m venv myenv
+                source myenv/bin/activate  # On Windows use: myenv\Scripts\activate
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Virtual environments isolate dependencies for projects; created with venv and activated for use.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">34. What is the purpose of the __init__ method in classes?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>__init__</code> method is a special method called a constructor, which initializes the object’s attributes when an instance of the class is created. It is automatically called when an object is instantiated.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The __init__ method initializes attributes of a class when an object is created; it acts as a constructor.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">35. What are Python iterators, and how do they work?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Iterators are objects that implement the iterator protocol, consisting of <code>__iter__()</code> and <code>__next__()</code> methods. They allow for traversing a container (like lists, tuples) without exposing the underlying structure. Example:
+                <pre>
+                my_list = [1, 2, 3]
+                iterator = iter(my_list)
+                print(next(iterator))  # 1
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Iterators implement __iter__ and __next__ methods, allowing traversal of containers without exposing structure.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">36. How do you implement a linked list in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A linked list can be implemented using a class for the node. Each node contains data and a reference to the next node. Example:
+                <pre>
+                class Node:
+                    def __init__(self, data):
+                        self.data = data
+                        self.next = None
+
+                class LinkedList:
+                    def __init__(self):
+                        self.head = None
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A linked list uses a class for nodes, each containing data and a reference to the next node.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">37. What is the difference between a function and a method?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A function is a standalone block of code that performs a task, while a method is a function that is associated with an object (i.e., defined within a class). Methods can access and modify object state.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A function is standalone; a method is a function associated with an object or class.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">38. Explain how to create a Python virtual environment.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a virtual environment using the <code>venv</code> module. Example:
+                <pre>
+                python -m venv myenv  # Create the environment
+                source myenv/bin/activate  # Activate the environment (Linux/Mac)
+                myenv\Scripts\activate  # Activate (Windows)
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Create a virtual environment with venv; use source or Scripts\activate to activate it.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">39. How do you handle files in binary mode?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> When opening files in binary mode, use <code>'rb'</code> for reading or <code>'wb'</code> for writing. This is useful for non-text files. Example:
+                <pre>
+                with open('file.bin', 'wb') as f:
+                    f.write(b'Binary data')
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use rb for reading and wb for writing to handle files in binary mode.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">40. What is the purpose of the enumerate() function?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> <code>enumerate()</code> adds a counter to an iterable and returns it as an enumerate object, which can be converted to a list or looped over. It’s useful for obtaining the index and value when iterating. Example:
+                <pre>
+                my_list = ['a', 'b', 'c']
+                for index, value in enumerate(my_list):
+                    print(index, value)  # Prints (0, 'a'), (1, 'b'), (2, 'c')
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'enumerate() adds a counter to an iterable, useful for obtaining index and value when iterating.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+<li><li class="question-item">
+    <div class="question">41. What is the difference between a Python list and a NumPy array?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Lists are built-in Python data structures that can hold mixed data types and are less efficient for numerical operations. NumPy arrays are part of the NumPy library, designed for numerical computations, allowing for fast and efficient array operations, broadcasting, and mathematical functions. They are homogeneous, meaning all elements must be of the same type.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Lists can hold mixed types; NumPy arrays are efficient for numerical operations with homogeneous types.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">42. How do you optimize memory usage in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Memory usage can be optimized by:
+                <ul>
+                    <li>Using generators instead of lists to save memory for large datasets.</li>
+                    <li>Utilizing data structures from the <code>collections</code> module, like <code>deque</code> for queues.</li>
+                    <li>Using <code>__slots__</code> in classes to limit memory usage by preventing the creation of a default <code>__dict__</code>.</li>
+                    <li>Profiling memory usage with modules like <code>memory_profiler</code> to identify bottlenecks.</li>
+                </ul>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use generators, collections.deque, __slots__, and memory_profiler to optimize memory usage.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">43. What is context management in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Context management provides a way to allocate and release resources precisely when you want to. This is typically done using the <code>with</code> statement, which ensures that resources are properly cleaned up, such as closing files or releasing locks. Example:
+                <pre>
+                with open('file.txt', 'r') as file:
+                    data = file.read()  # Automatically closes the file after block
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use the with statement to manage resources automatically in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">44. Explain the use of the property decorator.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>property</code> decorator allows you to define methods in a class that can be accessed like attributes. This is useful for encapsulation, allowing you to control access to an attribute. Example:
+                <pre>
+                class Circle:
+                    def __init__(self, radius):
+                        self._radius = radius
+                    
+                    @property
+                    def area(self):
+                        return 3.14 * (self._radius ** 2)
+                
+                c = Circle(5)
+                print(c.area)  # Accessing area as an attribute
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The property decorator allows methods to be accessed as attributes, providing encapsulation.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">45. What are metaclasses in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Metaclasses are classes of a class that define how a class behaves. A class is an instance of a metaclass. You can use metaclasses to customize class creation. Example:
+                <pre>
+                class Meta(type):
+                    def __new__(cls, name, bases, attrs):
+                        attrs['new_attr'] = 42  # Add new attribute
+                        return super().__new__(cls, name, bases, attrs)
+
+                class MyClass(metaclass=Meta):
+                    pass
+                
+                print(MyClass.new_attr)  # 42
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Metaclasses define how classes behave; they can customize class creation.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">46. How do you perform unit testing in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Unit testing is done using the <code>unittest</code> module. You can create test cases by subclassing <code>unittest.TestCase</code> and define test methods that start with <code>test_</code>. Use assertions to check for expected outcomes. Example:
+                <pre>
+                import unittest
+
+                def add(x, y):
+                    return x + y
+
+                class TestMath(unittest.TestCase):
+                    def test_add(self):
+                        self.assertEqual(add(1, 2), 3)
+
+                if __name__ == '__main__':
+                    unittest.main()
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use the unittest module to create test cases and check outcomes with assertions.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">47. What is the purpose of the assert statement?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>assert</code> statement is used for debugging purposes. It tests a condition, and if it evaluates to <code>False</code>, it raises an <code>AssertionError</code>. It is commonly used to check for conditions that must be true at a specific point in code. Example:
+                <pre>
+                x = 5
+                assert x > 0, "x should be positive"
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The assert statement tests a condition and raises AssertionError if false.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">48. Explain the concept of lazy loading in Python.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Lazy loading is a design pattern that postpones the initialization of an object until the point at which it is needed. This can improve performance and resource management. For example, you might delay loading a large dataset until a specific function that requires it is called.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Lazy loading delays object initialization until needed, improving performance.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">49. What are the common data structures used in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Common data structures include:
+                <ul>
+                    <li><b>Lists:</b> Ordered, mutable collections of items.</li>
+                    <li><b>Tuples:</b> Ordered, immutable collections.</li>
+                    <li><b>Dictionaries:</b> Unordered collections of key-value pairs.</li>
+                    <li><b>Sets:</b> Unordered collections of unique items.</li>
+                </ul>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Common structures are lists, tuples, dictionaries, and sets.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">50. How do you handle exceptions in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Exceptions are handled using the <code>try</code> and <code>except</code> blocks. You can catch and handle exceptions to prevent the program from crashing. Example:
+                <pre>
+                try:
+                    result = 10 / 0
+                except ZeroDivisionError:
+                    print("Division by zero is not allowed.")
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use try and except blocks to handle exceptions in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">51. What is the difference between deep copy and shallow copy?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A shallow copy creates a new object but inserts references into it to the objects found in the original. A deep copy creates a new object and recursively adds copies of nested objects found in the original. You can use the <code>copy</code> module:
+                <pre>
+                import copy
+
+                original = [[1, 2, 3], [4, 5, 6]]
+                shallow = copy.copy(original)
+                deep = copy.deepcopy(original)
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Shallow copy creates references; deep copy creates independent copies of nested objects.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">52. What is the purpose of the __init__ method?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>__init__</code> method is the constructor in Python classes. It is called when an object is created from a class, allowing the class to initialize its attributes and perform any setup necessary. Example:
+                <pre>
+                class Dog:
+                    def __init__(self, name):
+                        self.name = name
+                
+                my_dog = Dog("Buddy")
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The __init__ method initializes an object\'s attributes upon creation.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">53. What are list comprehensions?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> List comprehensions provide a concise way to create lists. They consist of brackets containing an expression followed by a <code>for</code> clause and optionally <code>if</code> statements. Example:
+                <pre>
+                squares = [x ** 2 for x in range(10)]
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'List comprehensions create lists in a concise way using expressions and loops.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">54. How do you create a virtual environment in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a virtual environment using the <code>venv</code> module. Run the following command in your terminal:
+                <pre>
+                python -m venv myenv
+                </pre>
+                To activate it, use:
+                <pre>
+                # On Windows:
+                myenv\Scripts\activate
+                # On Unix or MacOS:
+                source myenv/bin/activate
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use python -m venv myenv to create a virtual environment and activate it with the appropriate command.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">55. What is a decorator in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A decorator is a function that takes another function as an argument and extends or alters its behavior without permanently modifying it. You can use the <code>@decorator_name</code> syntax to apply it. Example:
+                <pre>
+                def decorator(func):
+                    def wrapper():
+                        print("Something is happening before the function is called.")
+                        func()
+                        print("Something is happening after the function is called.")
+                    return wrapper
+
+                @decorator
+                def say_hello():
+                    print("Hello!")
+
+                say_hello()
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Decorators are functions that modify the behavior of another function.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">56. What is the purpose of the pass statement?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>pass</code> statement is a null operation; it is used when a statement is syntactically required but you do not want any command or code to execute. It is often used in function definitions, loops, or conditionals as a placeholder. Example:
+                <pre>
+                if True:
+                    pass  # TODO: Implement later
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The pass statement is a placeholder for future code or to satisfy syntax requirements.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">57. Explain the difference between Python 2 and Python 3.</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Key differences include:
+                <ul>
+                    <li><b>Print Function:</b> In Python 2, print is a statement; in Python 3, it is a function.</li>
+                    <li><b>Integer Division:</b> Python 2 performs floor division with <code>/</code>; Python 3 performs true division.</li>
+                    <li><b>Unicode:</b> Strings are ASCII by default in Python 2, whereas Python 3 uses Unicode by default.</li>
+                </ul>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Key differences include print function, integer division, and Unicode string handling.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">58. How do you perform file I/O in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can perform file I/O using the built-in <code>open()</code> function. You can read, write, or append to files. Example:
+                <pre>
+                # Writing to a file
+                with open('file.txt', 'w') as f:
+                    f.write("Hello, World!")
+
+                # Reading from a file
+                with open('file.txt', 'r') as f:
+                    content = f.read()
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use open() to perform file I/O; with statement ensures proper resource management.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">59. What is the purpose of the global keyword?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>global</code> keyword is used to declare a variable inside a function as a global variable, meaning it can be accessed and modified outside the function. Example:
+                <pre>
+                x = 10
+
+                def modify_global():
+                    global x
+                    x = 20
+
+                modify_global()
+                print(x)  # Output: 20
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The global keyword allows a function to modify a variable defined outside its scope.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">60. What is a lambda function in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A lambda function is an anonymous function defined with the <code>lambda</code> keyword. It can take any number of arguments but can only have one expression. Example:
+                <pre>
+                add = lambda x, y: x + y
+                print(add(2, 3))  # Output: 5
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A lambda function is a small anonymous function defined using the lambda keyword.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">61. What is the purpose of the return statement in a function?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>return</code> statement is used to exit a function and send a value back to the caller. If no value is specified, <code>None</code> is returned. Example:
+                <pre>
+                def square(x):
+                    return x ** 2
+
+                result = square(4)
+                print(result)  # Output: 16
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The return statement exits a function and returns a value to the caller.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">62. How do you import modules in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can import modules using the <code>import</code> statement. You can import an entire module or specific functions. Example:
+                <pre>
+                import math
+                print(math.sqrt(16))  # Output: 4.0
+
+                from math import sqrt
+                print(sqrt(16))  # Output: 4.0
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use import statement to import entire modules or specific functions.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">63. What are the built-in data types in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The built-in data types in Python include:
+                <ul>
+                    <li><b>Integers:</b> Whole numbers.</li>
+                    <li><b>Floats:</b> Floating-point numbers.</li>
+                    <li><b>Strings:</b> Sequences of characters.</li>
+                    <li><b>Booleans:</b> <code>True</code> or <code>False</code> values.</li>
+                    <li><b>Lists:</b> Ordered, mutable collections of items.</li>
+                    <li><b>Tuples:</b> Ordered, immutable collections.</li>
+                    <li><b>Dictionaries:</b> Unordered collections of key-value pairs.</li>
+                    <li><b>Sets:</b> Unordered collections of unique items.</li>
+                </ul>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Built-in types include integers, floats, strings, booleans, lists, tuples, dictionaries, and sets.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">64. What is the purpose of the break statement?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>break</code> statement is used to exit a loop prematurely. When executed, the loop stops and control is transferred to the statement following the loop. Example:
+                <pre>
+                for i in range(5):
+                    if i == 3:
+                        break
+                    print(i)  # Output: 0, 1, 2
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The break statement exits a loop when a condition is met.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">65. How do you create a class in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a class using the <code>class</code> keyword followed by the class name. Example:
+                <pre>
+                class Dog:
+                    def bark(self):
+                        print("Woof!")
+
+                my_dog = Dog()
+                my_dog.bark()  # Output: Woof!
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use the class keyword to create a class, defining methods as needed.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">66. What is the self parameter in class methods?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>self</code> parameter is a reference to the current instance of the class. It is used to access variables and methods associated with the instance. Example:
+                <pre>
+                class Dog:
+                    def __init__(self, name):
+                        self.name = name
+                    
+                    def bark(self):
+                        print(f"{self.name} says Woof!")
+
+                my_dog = Dog("Buddy")
+                my_dog.bark()  # Output: Buddy says Woof!
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The self parameter refers to the current instance of the class.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">67. What is the difference between instance and class variables?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Instance variables are specific to an instance of a class, defined in the constructor using <code>self</code>. Class variables are shared across all instances and are defined within the class but outside any methods. Example:
+                <pre>
+                class Dog:
+                    species = "Canine"  # Class variable
+
+                    def __init__(self, name):
+                        self.name = name  # Instance variable
+
+                my_dog = Dog("Buddy")
+                print(my_dog.species)  # Output: Canine
+                print(my_dog.name)     # Output: Buddy
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Instance variables are unique to each instance; class variables are shared among all instances.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">68. How do you define a method in a class?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You define a method in a class by using the <code>def</code> keyword, just like a regular function, with the first parameter usually being <code>self</code>. Example:
+                <pre>
+                class Dog:
+                    def bark(self):
+                        print("Woof!")
+
+                my_dog = Dog()
+                my_dog.bark()  # Output: Woof!
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Define a method using def keyword with self as the first parameter.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">69. What is method overriding in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The overridden method in the subclass has the same name, parameters, and return type. Example:
+                <pre>
+                class Animal:
+                    def speak(self):
+                        print("Animal speaks")
+
+                class Dog(Animal):
+                    def speak(self):
+                        print("Woof!")
+
+                my_dog = Dog()
+                my_dog.speak()  # Output: Woof!
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Method overriding allows a subclass to provide a specific implementation of a superclass method.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">70. What is inheritance in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Inheritance is a feature of object-oriented programming where a class (subclass) can inherit attributes and methods from another class (superclass). This promotes code reuse and logical structure. Example:
+                <pre>
+                class Animal:
+                    def speak(self):
+                        print("Animal speaks")
+
+                class Dog(Animal):
+                    def bark(self):
+                        print("Woof!")
+
+                my_dog = Dog()
+                my_dog.speak()  # Output: Animal speaks
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Inheritance allows a subclass to inherit attributes and methods from a superclass.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">71. What are modules and packages in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A module is a single file containing Python code (functions, classes, variables). A package is a collection of modules organized in a directory hierarchy, allowing for better structure and organization of code. Example of importing a module:
+                <pre>
+                import my_module
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Modules are single files of code; packages are collections of modules in a directory.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">72. How do you handle command-line arguments in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can handle command-line arguments using the <code>sys</code> module, specifically <code>sys.argv</code>. It provides a list of command-line arguments passed to a Python script. Example:
+                <pre>
+                import sys
+
+                print("Arguments:", sys.argv)
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use sys.argv to access command-line arguments in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">73. What is the purpose of the input function?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>input()</code> function is used to read a line of input from the user. It returns the input as a string. Example:
+                <pre>
+                name = input("Enter your name: ")
+                print(f"Hello, {name}!")
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The input function reads user input and returns it as a string.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">74. How do you create a dictionary in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a dictionary using curly braces or the <code>dict()</code> function. Example:
+                <pre>
+                my_dict = {"name": "Alice", "age": 25}
+                my_dict = dict(name="Alice", age=25)
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use curly braces or dict() to create a dictionary.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">75. What are the built-in functions available in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Some built-in functions in Python include:
+                <ul>
+                    <li><code>print()</code> - Outputs to the console.</li>
+                    <li><code>len()</code> - Returns the length of an object.</li>
+                    <li><code>type()</code> - Returns the type of an object.</li>
+                    <li><code>str()</code> - Converts an object to a string.</li>
+                    <li><code>int()</code> - Converts an object to an integer.</li>
+                    <li><code>float()</code> - Converts an object to a float.</li>
+                    <li><code>list()</code> - Converts an object to a list.</li>
+                    <li><code>dict()</code> - Converts an object to a dictionary.</li>
+                </ul>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Built-in functions include print(), len(), type(), str(), int(), float(), list(), dict().')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">76. What is the difference between deep copy and shallow copy in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A shallow copy creates a new object but inserts references into it to the objects found in the original. A deep copy creates a new object and recursively copies all objects found in the original. Example:
+                <pre>
+                import copy
+
+                original = [1, 2, [3, 4]]
+                shallow_copied = copy.copy(original)
+                deep_copied = copy.deepcopy(original)
+
+                original[2][0] = 'Changed'
+                print(shallow_copied)  # Output: [1, 2, ['Changed', 4]]
+                print(deep_copied)      # Output: [1, 2, [3, 4]]
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Shallow copy copies references; deep copy creates new objects recursively.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">77. How do you handle exceptions in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You handle exceptions in Python using <code>try</code>, <code>except</code>, and optionally <code>finally</code> blocks. Example:
+                <pre>
+                try:
+                    result = 10 / 0
+                except ZeroDivisionError:
+                    print("Cannot divide by zero!")
+                finally:
+                    print("This will always execute.")
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use try and except to handle exceptions; finally executes regardless of exceptions.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">78. What is a virtual environment in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A virtual environment is a self-contained directory that contains a Python installation for a particular version of Python, plus additional packages. It allows you to manage dependencies for different projects separately. Example of creating a virtual environment:
+                <pre>
+                python -m venv myenv
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A virtual environment isolates dependencies for different projects.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">79. How do you install packages using pip?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can install packages using <code>pip</code> by running the command in the terminal. Example:
+                <pre>
+                pip install package_name
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use pip install package_name to install packages.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">80. What is the purpose of the with statement?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>with</code> statement is used to wrap the execution of a block of code within methods defined by a context manager. It ensures proper acquisition and release of resources, such as files. Example:
+                <pre>
+                with open('file.txt', 'r') as f:
+                    content = f.read()
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The with statement manages resource acquisition and release in a clean manner.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">81. What is the purpose of the assert statement?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>assert</code> statement is used for debugging purposes. It tests a condition and raises an AssertionError if the condition is false. Example:
+                <pre>
+                assert 1 + 1 == 2  # This will not raise an error
+                assert 1 + 1 == 3  # This will raise an AssertionError
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The assert statement is used for debugging; it raises an error if the condition is false.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">82. How do you create a set in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a set using curly braces or the <code>set()</code> function. Example:
+                <pre>
+                my_set = {1, 2, 3}
+                my_set = set([1, 2, 3])
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use curly braces or set() to create a set.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">83. What is list comprehension in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> List comprehension is a concise way to create lists using a single line of code. It consists of brackets containing an expression followed by a for clause. Example:
+                <pre>
+                squares = [x ** 2 for x in range(10)]
+                print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'List comprehension allows for creating lists in a concise way.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">84. What is the difference between a tuple and a list in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The main differences between a tuple and a list are:
+                <ul>
+                    <li><b>Mutability:</b> Lists are mutable (can be changed), while tuples are immutable (cannot be changed).</li>
+                    <li><b>Syntax:</b> Lists use square brackets <code>[]</code>, while tuples use parentheses <code>()</code>.</li>
+                </ul>
+                Example:
+                <pre>
+                my_list = [1, 2, 3]  # List
+                my_tuple = (1, 2, 3)  # Tuple
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Lists are mutable; tuples are immutable.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">85. What are *args and **kwargs in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> In Python, <code>*args</code> and <code>**kwargs</code> are used to pass a variable number of arguments to a function. <code>*args</code> allows you to pass a non-keyworded variable-length argument list, while <code>**kwargs</code> allows you to pass keyworded variable-length arguments. Example:
+                <pre>
+                def func(*args, **kwargs):
+                    print("args:", args)
+                    print("kwargs:", kwargs)
+
+                func(1, 2, a=3, b=4)
+                # Output:
+                # args: (1, 2)
+                # kwargs: {'a': 3, 'b': 4}
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, '*args handles non-keyworded arguments; **kwargs handles keyworded arguments.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">86. What is the purpose of the pass statement in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>pass</code> statement is a null operation; it is a placeholder that is syntactically required but doesn't perform any action. It is commonly used in functions or classes that haven't been implemented yet. Example:
+                <pre>
+                def my_function():
+                    pass  # Function implementation will go here later
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The pass statement is a placeholder that does nothing.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">87. How do you remove duplicates from a list in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can remove duplicates from a list by converting it to a set, which automatically removes duplicates, and then converting it back to a list. Example:
+                <pre>
+                my_list = [1, 2, 2, 3, 4, 4, 5]
+                my_list = list(set(my_list))
+                print(my_list)  # Output: [1, 2, 3, 4, 5]
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Convert the list to a set and back to remove duplicates.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">88. How do you create a countdown timer in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a countdown timer using the <code>time</code> module. Example:
+                <pre>
+                import time
+
+                def countdown(n):
+                    while n > 0:
+                        print(n)
+                        n -= 1
+                        time.sleep(1)
+                    print("Time's up!")
+
+                countdown(5)
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use the time module and a loop to create a countdown timer.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">89. How do you create a simple HTTP server in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a simple HTTP server using the <code>http.server</code> module. Example:
+                <pre>
+                import http.server
+                import socketserver
+
+                PORT = 8000
+
+                Handler = http.server.SimpleHTTPRequestHandler
+
+                with socketserver.TCPServer(("", PORT), Handler) as httpd:
+                    print("Serving at port", PORT)
+                    httpd.serve_forever()
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use the http.server module to create a simple HTTP server.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">90. How do you read a file in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can read a file using the <code>open()</code> function along with the <code>read()</code> method. Example:
+                <pre>
+                with open('file.txt', 'r') as f:
+                    content = f.read()
+                print(content)
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use open() with read() to read a file in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">91. How do you write to a file in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can write to a file using the <code>open()</code> function with the 'w' mode. Example:
+                <pre>
+                with open('file.txt', 'w') as f:
+                    f.write("Hello, World!")
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use open() with write mode to write to a file in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">92. How do you delete a file in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can delete a file using the <code>os.remove()</code> function. Example:
+                <pre>
+                import os
+
+                os.remove('file.txt')
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use os.remove() to delete a file in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">93. How do you check if a file exists in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can check if a file exists using the <code>os.path.exists()</code> function. Example:
+                <pre>
+                import os
+
+                if os.path.exists('file.txt'):
+                    print("File exists.")
+                else:
+                    print("File does not exist.")
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use os.path.exists() to check if a file exists.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">94. How do you create a class in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a class in Python using the <code>class</code> keyword. Example:
+                <pre>
+                class MyClass:
+                    def __init__(self, value):
+                        self.value = value
+
+                    def display(self):
+                        print(self.value)
+
+                obj = MyClass(10)
+                obj.display()  # Output: 10
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Use class keyword to create a class in Python.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">95. What is inheritance in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Inheritance is a feature in object-oriented programming where a class (child) inherits attributes and methods from another class (parent). Example:
+                <pre>
+                class Parent:
+                    def show(self):
+                        print("Parent class")
+
+                class Child(Parent):
+                    def display(self):
+                        print("Child class")
+
+                obj = Child()
+                obj.show()  # Output: Parent class
+                obj.display()  # Output: Child class
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Inheritance allows a child class to inherit methods and attributes from a parent class.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">96. What is polymorphism in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Polymorphism is the ability of different classes to be treated as instances of the same class through a common interface. It allows methods to do different things based on the object it is acting upon. Example:
+                <pre>
+                class Dog:
+                    def sound(self):
+                        return "Woof!"
+
+                class Cat:
+                    def sound(self):
+                        return "Meow!"
+
+                def animal_sound(animal):
+                    print(animal.sound())
+
+                dog = Dog()
+                cat = Cat()
+                animal_sound(dog)  # Output: Woof!
+                animal_sound(cat)  # Output: Meow!
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Polymorphism allows methods to act differently based on the object.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">97. What is encapsulation in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Encapsulation is the bundling of data (attributes) and methods that operate on that data into a single unit, or class. It restricts direct access to some of the object’s components and can prevent the accidental modification of data. Example:
+                <pre>
+                class MyClass:
+                    def __init__(self):
+                        self.__private_var = 42  # Private variable
+
+                    def get_private_var(self):
+                        return self.__private_var  # Accessing private variable
+
+                obj = MyClass()
+                print(obj.get_private_var())  # Output: 42
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Encapsulation bundles data and methods into a class and restricts access to data.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">98. What is the purpose of the __init__ method?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The <code>__init__</code> method is a special method in Python classes. It is called a constructor and is used to initialize the object's state when an object is created. Example:
+                <pre>
+                class MyClass:
+                    def __init__(self, value):
+                        self.value = value
+
+                obj = MyClass(10)
+                print(obj.value)  # Output: 10
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'The __init__ method initializes an object\'s state upon creation.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">99. How do you create a module in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> You can create a module in Python by simply creating a new Python file (with a .py extension) and defining functions, classes, or variables in that file. You can then import the module in other Python scripts. Example:
+                <pre>
+                # In my_module.py
+                def my_function():
+                    return "Hello from my_module!"
+
+                # In another file
+                import my_module
+                print(my_module.my_function())  # Output: Hello from my_module!
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Create a .py file with functions or classes to make a module.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li><li class="question-item">
+    <div class="question">100. What are decorators in Python?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> Decorators are functions that modify the behavior of another function. They are often used to add functionality before or after the execution of the wrapped function without permanently modifying it. Example:
+                <pre>
+                def my_decorator(func):
+                    def wrapper():
+                        print("Something is happening before the function is called.")
+                        func()
+                        print("Something is happening after the function is called.")
+                    return wrapper
+
+                @my_decorator
+                def say_hello():
+                    print("Hello!")
+
+                say_hello()
+                # Output:
+                # Something is happening before the function is called.
+                # Hello!
+                # Something is happening after the function is called.
+                </pre>
+            </p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Decorators modify function behavior without changing the function itself.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+</li>
+
+
+
+

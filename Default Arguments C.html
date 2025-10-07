@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Arguments in C++</title>
+    <link rel="stylesheet" href="aws.css">
+</head>
+<body>
+    <header>
+        <h1 class="h1">Default Arguments in C++</h1>
+    </header>
+
+    <div class="container">
+        <h2>Introduction</h2>
+        <p>In C++, default arguments allow you to specify default values for function parameters. This means you can call a function without providing all of the arguments, and the function will use the default values for any missing arguments. Default arguments make functions more flexible and simplify code when certain parameters have common default values.</p>
+
+        <h2>How Default Arguments Work</h2>
+        <p>When you declare a function with default arguments, you provide default values for some or all of the parameters. If a caller omits arguments in a function call, the default values are used. Default arguments must be specified in the function declaration and can be used only from right to left.</p>
+
+        <h2>Syntax</h2>
+        <p>To specify default arguments, assign default values to the parameters in the function declaration:</p>
+        <pre><code>return_type function_name(parameter1_type param1 = default_value1, parameter2_type param2 = default_value2, ...);</code></pre>
+
+        <h2>Example</h2>
+        <p>Here’s an example that demonstrates how to use default arguments:</p>
+        <pre><code>#include &lt;iostream&gt;
+
+// Function declaration with default arguments
+void greet(std::string name, std::string greeting = "Hello");
+
+int main() {
+    greet("Alice"); // Uses default greeting
+    greet("Bob", "Hi"); // Uses provided greeting
+    return 0;
+}
+
+// Function definition
+void greet(std::string name, std::string greeting) {
+    std::cout << greeting << ", " << name << "!" << std::endl;
+}
+</code></pre>
+
+        <p>In this example:</p>
+        <ul>
+            <li><code>void greet(std::string name, std::string greeting = "Hello");</code> - The <code>greet</code> function has a default argument for the <code>greeting</code> parameter.</li>
+            <li>When <code>greet("Alice")</code> is called, the default value <code>"Hello"</code> is used for the <code>greeting</code> parameter.</li>
+            <li>When <code>greet("Bob", "Hi")</code> is called, the provided value <code>"Hi"</code> is used instead of the default.</li>
+        </ul>
+
+        <h2>Rules for Using Default Arguments</h2>
+        <ul>
+            <li><strong>Rightmost Parameters:</strong> Default arguments can only be provided for parameters from the rightmost side. Once you provide a default value for a parameter, all parameters to its right must also have default values.</li>
+            <li><strong>Declaration and Definition:</strong> Default values should be provided in the function declaration. They are not required in the function definition if the declaration already includes them.</li>
+        </ul>
+
+        <h2>Common Issues and Troubleshooting</h2>
+        <p>If you encounter issues with default arguments:</p>
+        <ul>
+            <li><strong>Incorrect Default Argument Placement:</strong> Ensure default arguments are only used from the rightmost parameters. The compiler will raise errors if default arguments are not placed correctly.</li>
+            <li><strong>Function Overloading Conflicts:</strong> Be cautious when overloading functions with default arguments, as it may lead to ambiguities in function calls. Make sure function calls are unambiguous.</li>
+        </ul>
+
+        <h2>Free Resources for Learning C++</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://www.learncpp.com/">LearnCpp.com</a> - Detailed tutorials on C++ including default arguments.</li>
+                <li><a href="https://cplusplus.com/doc/tutorial/functions/">CPlusPlus.com</a> - Guide on functions with default arguments and other features.</li>
+                <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">Codecademy</a> - Interactive lessons for practicing C++ programming, including default arguments.</li>
+                <li><a href="https://www.geeksforgeeks.org/c-plus-plus/">GeeksforGeeks</a> - Tutorials and examples on C++ functions and default arguments.</li>
+                <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-c-plus-plus">HackerRank</a> - Coding challenges to practice C++ concepts including default arguments.</li>
+                <li><a href="https://www.tutorialspoint.com/cplusplus/index.htm">TutorialsPoint</a> - Guides and examples for learning C++ programming, including default arguments.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Default arguments in C++ simplify function calls by allowing you to omit certain arguments. They make functions more versatile and can reduce code duplication. Understanding how to use default arguments correctly will help you write cleaner and more efficient code. Explore the provided resources to deepen your knowledge of default arguments and other C++ features.</p>
+    </div>
+</body>
+</html>

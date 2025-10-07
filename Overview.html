@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Bootstrap</title>
+
+</head>
+<body class="body">
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML/CSS Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Bootstrap Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+      
+    
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+    
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-bootstrap" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">Bootstrap Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Bootstrap.html" target="_blank"><b class="b12">Bootstrap Roadmap</b></a>
+        <ul>
+            <a href="Introduction_to_Bootstrap.html" target="_blank">Bootstrap Introduction</a>
+    
+            <li><a href="Getting_Started.html" target="_blank">Getting Started</a></li>
+            <li><a href="Installation.html" target="_blank">Installation</a></li>
+            <li><a href="Bootstrap_Grid_System.html" target="_blank">Bootstrap Grid System</a></li>
+        </ul>
+    
+        <h3> Components</h3>
+        <a href="Bootstrap_Components.html" target="_blank">Bootstrap Components</a>
+        <ul>
+            <li><a href="Alerts.html" target="_blank">Alerts</a></li>
+            <li><a href="Buttons.html" target="_blank">Buttons</a></li>
+            <li><a href="Cards.html" target="_blank">Cards</a></li>
+            <li><a href="Forms.html" target="_blank">Forms</a></li>
+            <li><a href="Modals.html" target="_blank">Modals</a></li>
+            <li><a href="Navigation.html" target="_blank">Navigation</a></li>
+        </ul>
+    
+        <h3>Bootstrap Utilities</h3>
+        <a href="Bootstrap_Utilities.html" target="_blank">Bootstrap Utilities</a>
+        <ul>
+            <li><a href="Spacing.html" target="_blank">Spacing</a></li>
+            <li><a href="Colors.html" target="_blank">Colors</a></li>
+            <li><a href="Borders.html" target="_blank">Borders</a></li>
+            <li><a href="Display.html" target="_blank">Display</a></li>
+        </ul>
+    
+        <h3>Bootstrap JavaScript</h3>
+        <a href="Bootstrap_JavaScript.html" target="_blank">Bootstrap JavaScript</a>
+        <ul>
+            <li><a href="Overview.html" target="_blank">Overview</a></li>
+            <li><a href="Using_JavaScript.html" target="_blank">Using Bootstrap with JavaScript</a></li>
+            <li><a href="Customizing_Bootstrap.html" target="_blank">Customizing Bootstrap</a></li>
+        </ul>
+    
+        <h3>Responsive Design</h3>
+        <a href="Responsive_Design.html" target="_blank">Responsive Design</a>
+        <ul>
+            <li><a href="Media_Queries.html" target="_blank">Media Queries</a></li>
+            <li><a href="Responsive_Utilities.html" target="_blank">Responsive Utilities</a></li>
+        </ul>
+    
+        <h3>Bootstrap Themes</h3>
+        <a href="Bootstrap_Themes.html" target="_blank">Bootstrap Themes</a>
+        <ul>
+            <li><a href="Creating_Themes.html" target="_blank">Creating Themes</a></li>
+            <li><a href="Using_Themes.html" target="_blank">Using Themes</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Bootstrap_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Bootstrap_quiz.html";
+}
+function goproject() {
+    window.location.href = "Bootstrap_projects.html";
+}
+function gocomp() {
+        window.location.href = "html-css_Compiler.html";
+    }
+      
+    function goPrevious() {
+        window.location.href = "Bootstrap_JavaScript.html";
+    }
+    function goNext() {
+        window.location.href = "Using_JavaScript.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-bootstrap"  style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk"> Bootstrap Tutorial</h2>
+<div class="div1">Overview of HTML and Bootstrap</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+<br><br>
+<h2>Introduction to HTML</h2>
+<p>HTML, or Hypertext Markup Language, is the standard language for creating web pages. It provides the basic structure of a webpage, which can then be enhanced with CSS and JavaScript.</p>
+
+<h3>Key Features of HTML</h3>
+<ul>
+    <li><strong>Structure:</strong> HTML elements are the building blocks of web pages.</li>
+    <li><strong>Links:</strong> HTML allows you to create hyperlinks to other pages.</li>
+    <li><strong>Images:</strong> HTML can embed images into webpages.</li>
+</ul>
+
+<h2>Introduction to Bootstrap</h2>
+<p>Bootstrap is a powerful front-end framework for developing responsive and mobile-first websites. It provides pre-designed components and utilities that help in building modern web applications quickly.</p>
+
+<h3>Key Features of Bootstrap</h3>
+<ul>
+    <li><strong>Responsive Grid System:</strong> Bootstrap uses a grid system to create responsive layouts.</li>
+    <li><strong>Predefined Components:</strong> It includes buttons, modals, cards, alerts, and more.</li>
+    <li><strong>Utility Classes:</strong> Bootstrap offers a variety of utility classes for spacing, colors, borders, and more.</li>
+</ul>
+
+<h2>Comparison of HTML and Bootstrap</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>HTML</th>
+            <th>Bootstrap</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Purpose</td>
+            <td>Structure web content</td>
+            <td>Design responsive layouts</td>
+        </tr>
+        <tr>
+            <td>Flexibility</td>
+            <td>Basic formatting</td>
+            <td>Predefined styles and components</td>
+        </tr>
+        <tr>
+            <td>Learning Curve</td>
+            <td>Easy to learn</td>
+            <td>Moderate; requires understanding of classes and components</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Resources</h2>
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools: HTML Tutorial</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs: HTML</a></li>
+        <li><a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank">Bootstrap Documentation</a></li>
+    </ul>
+</div>
+
+<h2>Conclusion</h2>
+<p>Understanding HTML and Bootstrap is essential for modern web development. While HTML provides the structure of web pages, Bootstrap enhances the user experience with its responsive design features.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

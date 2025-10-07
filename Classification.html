@@ -1,0 +1,405 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Logical Reasoning</title>
+    
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+            Logical Reasoning
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <h3> Verbal</h3>
+        <a href="Number Series.html">Number Series</a>
+        <a href="Letter Series.html">Letter Series</a>
+        <a href="Analogies.html">Analogies</a>
+        <a href="Cause & Effect.html">Cause & Effect</a>
+        <a href="Verbal Classification.html">Verbal Classification</a>
+        <a href="Blood Relations.html">Blood Relations</a>
+        <a href="Logical Sequence of Words.html">Logical Sequence of Words</a>
+        <a href="Direction Sense Test.html">Direction Sense Test</a>
+        <a href="Logical Venn Diagram.html">Logical Venn Diagram</a>
+        <a href="Verification of the Truth of the Statement.html">Verification of the Truth of the Statement</a>
+        <a href="Data Sufficiency.html">Data Sufficiency</a>
+        <a href="Coding Decoding.html">Coding Decoding</a>
+        <a href="Assertion and Reason.html">Assertion and Reason</a>
+        <a href="Essential Part.html">Essential Part</a>
+        <a href="Analyzing Arguments.html">Analyzing Arguments</a>
+        <a href="Logical Problems.html">Logical Problems</a>
+        <a href="Course of Action.html">Course of Action</a>
+        <a href="Matching Definition.html">Matching Definition</a>
+        <a href="Syllogism.html">Syllogism</a>
+        <a href="Statement and Assumptions.html">Statement and Assumptions</a>
+
+        <h3> Non-verbal</h3>
+        <a href="Image Series.html">Image Series</a>
+        <a href="Construction of Shapes.html">Construction of Shapes</a>
+        <a href="Classification.html">Classification</a>
+        <a href="Picture Analogies.html">Picture Analogies</a>
+        <a href="Rule Detection.html">Rule Detection</a>
+    </div>
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Construction of Shapes.html";
+    }
+    function goNext() {
+        window.location.href = "Picture Analogies.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Classification</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+            <h2>Understanding Classification</h2>
+            <p><strong>Classification</strong> is a logical reasoning process that involves grouping items based on their common characteristics or categories. It helps in organizing information and identifying relationships among different elements. Classification problems test your ability to categorize items accurately and logically.</p>
+
+            <h3>Key Concepts in Classification</h3>
+
+            <h4>1. Categories and Subcategories</h4>
+            <p>In classification, items are grouped into categories based on shared attributes. Each category may have subcategories that further refine the classification. Understanding these hierarchies helps in accurately categorizing items.</p>
+
+            <h4>2. Common Attributes</h4>
+            <p>Items within the same category share common attributes or characteristics. Identifying these common attributes is crucial for grouping items correctly. For example, in a category of animals, "mammals" might be a category with attributes like "warm-blooded" and "have hair or fur."</p>
+
+            <h4>3. Logical Grouping</h4>
+            <p>Logical grouping involves analyzing the properties of items and determining the most logical way to classify them. It requires attention to detail and an understanding of the relationships between different categories.</p>
+
+            <h3>Steps to Solve Classification Problems</h3>
+
+            <h4>1. Identify Key Characteristics</h4>
+            <p>Begin by analyzing the items to be classified and noting their key characteristics. Determine which attributes are most relevant for classification.</p>
+
+            <h4>2. Determine Categories</h4>
+            <p>Based on the identified characteristics, decide on appropriate categories and subcategories. Ensure that each item fits logically into the chosen category.</p>
+
+            <h4>3. Group Items</h4>
+            <p>Place each item into its corresponding category. Double-check to ensure that each item fits the criteria for the chosen category and that no item is misclassified.</p>
+
+            <h3>Examples</h3>
+            <div class="example">
+                <strong>Example 1:</strong><br>
+                <img src="classification-example1.png" alt="Classification Example 1" style="width: 100%; max-width: 400px;">
+                <p>In this example, items such as "apple," "banana," and "carrot" need to be classified into categories like "Fruits" and "Vegetables." The process involves identifying the common attributes of each item.</p>
+
+                <strong>Example 2:</strong><br>
+                <img src="classification-example2.png" alt="Classification Example 2" style="width: 100%; max-width: 400px;">
+                <p>This example shows a set of animals that need to be classified into categories such as "Mammals," "Birds," and "Reptiles." Understanding the attributes of each animal helps in correct classification.</p>
+            </div>
+
+            <h3>Practice Resources</h3>
+            <div class="resources">
+                <p>Improve your classification skills with these practice resources:</p>
+                <ul>
+                    <li><a href="https://www.mathsisfun.com/data/classification.html" target="_blank">Math is Fun: Classification</a></li>
+                    <li><a href="https://www.khanacademy.org/math/statistics-probability/data-distributions-a1" target="_blank">Khan Academy: Data Classification</a></li>
+                    <li><a href="https://www.cuemath.com/learn/classification/" target="_blank">Cuemath: Classification Practice</a></li>
+                </ul>
+            </div>
+
+            <h3>Summary</h3>
+            <p>Classification is a vital skill in logical reasoning that helps in organizing and categorizing items based on shared characteristics. By practicing classification, you enhance your ability to categorize information logically and systematically. Use the provided resources to further develop your skills and understanding of classification.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>  </div>
+    </div>
+</body>
+</html>

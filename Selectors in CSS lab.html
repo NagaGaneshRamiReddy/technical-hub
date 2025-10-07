@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lab: Selectors in CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            height: 50px; 
+            top: 0; 
+            left: 0; 
+            z-index: 1000; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .container {
+            width: 90%; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 34px;
+            color: white;
+            flex-grow: 1; 
+        }
+
+        nav {
+            margin-left: auto; 
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 20px; 
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .output1 {
+            background-color: white;
+        }
+
+        .task-details, .editor-section {
+            background: #fff;
+            padding: 20px;
+            gap: 20px;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            color: #003366;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 48%;
+            transition: background-color 0.3s;
+        }
+
+        .dark-mode .task-details, .dark-mode .editor-section {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .task-details {
+            margin-right: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            font-family: monospace;
+            font-size: 16px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .submit-btn {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .marks-display {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e0ffe0;
+            border: 1px solid green;
+            display: none;
+        }
+
+        .hp {
+            color: #007bff;
+        }
+
+        .hr {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-code"></i> CSS Lab: Selectors
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <h1 class="hp">Web Development Lab: Task - CSS Selectors</h1>
+
+    <div class="container">
+        <!-- Task: CSS Selectors -->
+        <div class="task-details">
+            <h2>Task: Apply Different Types of CSS Selectors (50 Marks)</h2>
+            <hr class="hr">
+            <p>In this task, you will learn how to apply CSS using different types of selectors:</p>
+            <ul>
+                <li>**Element selectors** (e.g., h1, p)</li>
+                <li>**Class selectors** (e.g., .classname)</li>
+                <li>**ID selectors** (e.g., #idname)</li>
+                <li>**Group selectors** (e.g., h1, h2, h3)</li>
+                <li>**Pseudo-class selectors** (e.g., :hover, :first-child)</li>
+                <li>**Attribute selectors** (e.g., [type="text"])</li>
+            </ul>
+
+            <h3>Instructions</h3>
+            <p>Use a single HTML document and apply various CSS selectors to style it. Your document should include:</p>
+            <ul>
+                <li>At least two **element selectors**</li>
+                <li>At least two **class selectors**</li>
+                <li>At least two **ID selectors**</li>
+                <li>At least one **group selector**</li>
+                <li>At least two **pseudo-class selectors** (e.g., hover)</li>
+                <li>At least one **attribute selector** (e.g., [type="text"])</li>
+            </ul>
+            
+            <h3>Example Output</h3>
+            <p>Your webpage should look like this:</p>
+
+            <h1>This is an Element Selector (h1)</h1>
+            <p class="info">This paragraph uses a Class Selector (class="info").</p>
+            <p id="special">This paragraph uses an ID Selector (id="special").</p>
+            <button class="btn">This button uses both Class and Pseudo-class (hover) Selectors</button>
+            <input type="text" placeholder="This input uses an Attribute Selector">
+        </div>
+
+        <!-- Editor and Controls -->
+        <div class="editor-section">
+            <h2>HTML & CSS Code Editor</h2>
+            <textarea id="htmlCode" placeholder="Write your HTML and CSS code here..."></textarea>
+            <button class="submit-btn" onclick="runCode()">Run Code</button>
+            <iframe class="output1" id="output"></iframe>
+            <button class="submit-btn" onclick="checkTask()">Submit Task</button>
+            <div class="marks-display" id="taskMarks"></div>
+        </div>
+    </div>
+
+    <script>
+        // Function to display the user's HTML and CSS in the iframe
+        function runCode() {
+            const code = document.getElementById("htmlCode").value;
+            const iframe = document.getElementById("output");
+            iframe.srcdoc = code;
+        }
+
+        // Function to check Task: CSS Selectors
+        function checkTask() {
+            const code = document.getElementById("htmlCode").value;
+            let taskMarks = 0;
+
+            // Check for element selectors (e.g., h1, p)
+            if (/h1\s*{[^}]+}/.test(code) && /p\s*{[^}]+}/.test(code)) {
+                taskMarks += 10;
+            }
+
+            // Check for class selectors (e.g., .classname)
+            if (/\.[a-zA-Z0-9_-]+\s*{[^}]+}/.test(code)) {
+                taskMarks += 10;
+            }
+
+            // Check for ID selectors (e.g., #idname)
+            if (/#\w+\s*{[^}]+}/.test(code)) {
+                taskMarks += 10;
+            }
+
+            // Check for group selectors (e.g., h1, h2)
+            if (/h[1-6],\s*h[1-6]\s*{[^}]+}/.test(code)) {
+                taskMarks += 5;
+            }
+
+            // Check for pseudo-class selectors (e.g., :hover)
+            if (/:hover\s*{[^}]+}/.test(code)) {
+                taskMarks += 5;
+            }
+
+            // Check for attribute selectors (e.g., [type="text"])
+            if (/\[type="text"\]\s*{[^}]+}/.test(code)) {
+                taskMarks += 10;
+            }
+
+            // Display the result
+            const taskDisplay = document.getElementById("taskMarks");
+            taskDisplay.innerHTML = `Task Marks: ${taskMarks} / 50`;
+            taskDisplay.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

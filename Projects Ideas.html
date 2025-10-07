@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    margin: 20px 20px 30px;
+    font-size: 2rem;
+    color: #333;
+    animation: fadeIn 1s ease;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    animation: fadeInUp 0.5s ease-in-out;
+    opacity: 0;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.grid-item.show {
+    opacity: 1;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    background-color: #e0e0e0;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: left;
+    animation: slideUp 0.5s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    float: right;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+    <h1>Project Showcase</h1>
+    <div class="grid-container">
+        <!-- Grid items will be dynamically added by JavaScript -->
+    </div>
+
+    <!-- Modal for displaying project details -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="projectTitle">Project Title</h2>
+            <p id="projectDescription">Project Description</p>
+            <h3>Tips and Guides</h3>
+            <ul id="projectTips">
+                <!-- Tips dynamically added -->
+            </ul>
+        </div>
+    </div>
+
+    <script>// Data for projects
+        const projects = [
+            {
+                title: "Project 1: Calculator",
+                description: "Build a simple calculator using HTML, CSS, and JavaScript.",
+                tips: [
+                    "Use input fields to accept numbers.",
+                    "Use buttons for operations like +, -, *, /.",
+                    "Use JavaScript for calculations."
+                ]
+            },
+            {
+                title: "Project 2: To-Do List",
+                description: "Create a to-do list app where users can add, remove, and mark tasks as completed.",
+                tips: [
+                    "Use an array to store tasks.",
+                    "Dynamically update the DOM for task addition/removal.",
+                    "Style completed tasks differently."
+                ]
+            },
+            // Add more projects as needed
+        ];
+        
+        // Function to generate grid items
+        function createGrid() {
+            const gridContainer = document.querySelector('.grid-container');
+        
+            projects.forEach((project, index) => {
+                const gridItem = document.createElement('div');
+                gridItem.className = 'grid-item';
+                gridItem.textContent = project.title;
+        
+                // Delay the animation of each grid item
+                setTimeout(() => gridItem.classList.add('show'), index * 100);
+        
+                // Add click event to open modal
+                gridItem.addEventListener('click', () => openModal(index));
+                gridContainer.appendChild(gridItem);
+            });
+        }
+        
+        // Function to open modal with project details
+        function openModal(index) {
+            const modal = document.getElementById('projectModal');
+            const project = projects[index];
+        
+            document.getElementById('projectTitle').textContent = project.title;
+            document.getElementById('projectDescription').textContent = project.description;
+        
+            const tipsList = document.getElementById('projectTips');
+            tipsList.innerHTML = ""; // Clear previous tips
+            project.tips.forEach(tip => {
+                const li = document.createElement('li');
+                li.textContent = tip;
+                tipsList.appendChild(li);
+            });
+        
+            modal.style.display = "flex";
+        }
+        
+        // Function to close modal
+        function closeModal() {
+            document.getElementById('projectModal').style.display = "none";
+        }
+        
+        // Add event listener to close button
+        document.querySelector('.close-btn').addEventListener('click', closeModal);
+        
+        // Initialize grid
+        createGrid();
+        </script>
+</body>
+</html>

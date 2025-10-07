@@ -1,0 +1,513 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Flutter course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Flutter
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to Flutter</h3>
+        <a href="Introduction to Flutter.html">Introduction to Flutter</a>
+        <ul>
+            <li><a href="What is Flutter.html">What is Flutter?</a></li>
+            <li><a href="Flutter Setup.html">Setting up Flutter Environment</a></li>
+            <li><a href="Dart Basics.html">Dart Basics</a></li>
+        </ul>
+    
+        <h3>Flutter Widgets</h3>
+        <a href="Flutter Widgets.html">Flutter Widgets</a>
+        <ul>
+            <li><a href="Stateless Widgets.html">Stateless Widgets</a></li>
+            <li><a href="Stateful Widgets.html">Stateful Widgets</a></li>
+            <li><a href="Common Widgets.html">Common Widgets (Text, Button, Image)</a></li>
+        </ul>
+    
+        <h3>Flutter Layouts</h3>
+        <a href="Flutter Layouts.html">Flutter Layouts</a>
+        <ul>
+            <li><a href="Column and Row.html">Column and Row</a></li>
+            <li><a href="Stack and Positioned.html">Stack and Positioned</a></li>
+            <li><a href="GridView.html">GridView and ListView</a></li>
+        </ul>
+    
+        <h3>Navigation and Routing</h3>
+        <a href="Flutter Navigation.html">Navigation and Routing</a>
+        <ul>
+            <li><a href="Navigating Between Screens.html">Navigating Between Screens</a></li>
+            <li><a href="Passing Data.html">Passing Data Between Screens</a></li>
+            <li><a href="Named Routes.html">Named Routes</a></li>
+        </ul>
+    
+        <h3>State Management</h3>
+        <a href="Flutter State Management.html">State Management</a>
+        <ul>
+            <li><a href="setState.html">setState</a></li>
+            <li><a href="Provider.html">Provider Package</a></li>
+            <li><a href="BLoC Pattern.html">BLoC Pattern</a></li>
+        </ul>
+    
+        <h3>Networking</h3>
+        <a href="Flutter Networking.html">Networking</a>
+        <ul>
+            <li><a href="HTTP Requests.html">Making HTTP Requests</a></li>
+            <li><a href="Working with APIs.html">Working with APIs</a></li>
+            <li><a href="Handling JSON.html">Handling JSON Data</a></li>
+        </ul>
+    
+        <h3>Local Database</h3>
+        <a href="Flutter Database.html">Local Database</a>
+        <ul>
+            <li><a href="Using SQLite.html">Using SQLite</a></li>
+            <li><a href="Using Hive.html">Using Hive</a></li>
+        </ul>
+    
+        <h3>Animations</h3>
+        <a href="Flutter Animations.html">Animations</a>
+        <ul>
+            <li><a href="Implicit Animations.html">Implicit Animations</a></li>
+            <li><a href="Explicit Animations.html">Explicit Animations</a></li>
+        </ul>
+    
+        <h3>Testing</h3>
+        <a href="Flutter Testing.html">Testing</a>
+        <ul>
+            <li><a href="Unit Testing.html">Unit Testing</a></li>
+            <li><a href="Widget Testing.html">Widget Testing</a></li>
+        </ul>
+    
+        <h3>Publishing Flutter Apps</h3>
+        <a href="Publishing Flutter App.html">Publishing Flutter Apps</a>
+        <ul>
+            <li><a href="For Android.html">Publishing for Android</a></li>
+            <li><a href="For iOS.html">Publishing for iOS</a></li>
+        </ul>
+    </div>
+    
+    
+        </div>
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Stateless Widgets.html";
+    }
+    function goNext() {
+        window.location.href = "Common Widgets.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+
+<div class="div1">Stateful Widgets</div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>What are Stateful Widgets?</h2>
+<p>In Flutter, <strong>Stateful Widgets</strong> are widgets that can change over time, based on user interactions or dynamic data. Unlike stateless widgets, stateful widgets maintain their state, which can be updated and modified, triggering the UI to re-render with the updated state.</p>
+
+<h2>Understanding Stateful Widgets</h2>
+<p>Stateful widgets are ideal for interactive applications that need to respond to user input, such as buttons, form fields, or animations. The state of these widgets can change as a result of events like tapping a button, entering text, or retrieving new data from an API.</p>
+
+<h3>Key Characteristics of Stateful Widgets</h3>
+<ul>
+    <li><strong>Mutable State:</strong> Stateful widgets maintain internal state that can be updated, allowing the UI to change dynamically.</li>
+    <li><strong>Reactivity:</strong> When the state of a stateful widget changes, Flutter automatically re-renders the widget to reflect the new state.</li>
+    <li><strong>Complex UI Interactions:</strong> Stateful widgets are often used for components that involve user input, such as forms, lists, or animations.</li>
+</ul>
+
+<h2>Creating a Stateful Widget</h2>
+<p>To create a stateful widget in Flutter, extend the <strong>StatefulWidget</strong> class and its associated <strong>State</strong> class. The <strong>State</strong> class contains the mutable state of the widget and the <strong>build()</strong> method, which returns the widget tree that defines the UI layout.</p>
+
+<h3>Example of a Stateful Widget</h3>
+<pre><code>import 'package:flutter/material.dart';
+
+class MyStatefulWidget extends StatefulWidget {
+  @override
+  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+}
+
+class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Stateful Widget Example'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'You have pressed the button this many times:',
+            ),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+void main() => runApp(MaterialApp(
+  home: MyStatefulWidget(),
+));</code></pre>
+
+<p>In this example, the <strong>MyStatefulWidget</strong> class extends <strong>StatefulWidget</strong>, and its associated state is managed in the <strong>_MyStatefulWidgetState</strong> class. The <strong>_incrementCounter()</strong> method updates the state using <strong>setState()</strong>, which re-renders the UI with the updated counter value.</p>
+
+<h2>When to Use Stateful Widgets?</h2>
+<p>You should use stateful widgets when your application needs to respond to changes, such as user interactions or data updates. Common scenarios include:</p>
+<ul>
+    <li>Handling user input like button clicks, form submissions, or text fields.</li>
+    <li>Displaying real-time data, such as a news feed or stock prices.</li>
+    <li>Managing animations that depend on user interaction or time.</li>
+</ul>
+
+<h2>Advantages of Stateful Widgets</h2>
+<ul>
+    <li><strong>Interactivity:</strong> Stateful widgets are essential for creating dynamic and interactive applications.</li>
+    <li><strong>Reusability:</strong> The state management approach of stateful widgets allows for efficient reuse of components while maintaining state.</li>
+    <li><strong>Flexibility:</strong> Stateful widgets can handle complex user interactions and UI updates in real time.</li>
+</ul>
+
+<h2>Limitations of Stateful Widgets</h2>
+<p>While stateful widgets provide flexibility, they also come with some limitations. Since they manage internal state, they can become less efficient compared to stateless widgets. Frequent updates or complex state logic can affect performance.</p>
+<p>For managing more complex states across multiple widgets or app-wide, you might consider using state management solutions like <strong>Provider</strong>, <strong>Bloc</strong>, or <strong>Riverpod</strong>.</p>
+
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://flutter.dev/docs/development/ui/interactive" target="_blank">Handling User Interaction in Flutter</a></li>
+        <li><a href="https://flutter.dev/docs/development/data-and-backend/state-mgmt" target="_blank">Flutter State Management Overview</a></li>
+        <li><a href="https://flutter.dev/docs/cookbook/forms/retrieve-input" target="_blank">Retrieve User Input in Flutter</a></li>
+    </ul>
+</div>
+
+<h2>Summary</h2>
+<p><strong>Stateful Widgets</strong> are crucial for building interactive applications in Flutter. They allow developers to manage state changes efficiently, enabling dynamic UI updates in response to user interactions or real-time data. While they are powerful, they should be used appropriately, with consideration given to performance and complexity.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+
+
+
+</body>
+</html>

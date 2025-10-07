@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Python Language Roadmap</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> Python Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Python Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function goproject() {
+    window.location.href = "python_Projects.html";
+}
+function gointerviewpro() {
+    window.location.href = "python_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Python_quiz.html";
+}
+function gocomp() {
+    window.location.href = "Java Compiler.html";
+}
+  
+
+        </script>
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-python" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">Python Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="pythonRoadmps.html" target="_blank"><b class="b12">python Roadmap</b></a>
+        <ul>
+             <a href="Introduction to Python.html">Introduction to Python</a>
+            <li><a href="History of Python.html">History of Python</a></li>
+            <li><a href="Setting up Python Environment.html">Setting up Python Environment</a></li>
+            <li><a href="Hello World Program python.html">Hello World Program</a></li>
+        </ul>
+        
+        <h3>Basic Python Syntax</h3>
+        <a href="Basic Python Syntax.html">Basic Python Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types python.html">Variables and Data Types</a></li>
+            <li><a href="Operators in python.html">Operators</a></li>
+            <li><a href="Control Statements in python.html">Control Statements</a></li>
+            <ul>
+                <li><a href="if-else statements in Python.html">If-else Statements</a></li>
+                <li><a href="Elif Statement in python.html">Elif Statement</a></li>
+                <li><a href="Loops in python.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop in python.html">For Loop</a></li>
+                    <li><a href="While Loop in python.html">While Loop</a></li>
+                    <li><a href="Break and Continue python.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+        
+        <h3>Strings</h3>
+        <a href="Strings in python.html">Strings</a>
+        <ul>
+            <li><a href="String Basics in python.html">String Basics</a></li>
+            <li><a href="String Operations in python.html">String Operations</a></li>
+            <li><a href="String Formatting in python.html">String Formatting</a></li>
+        </ul>
+        
+        <h3>Arrays</h3>
+        <a href="Arrays in python.html">Arrays</a>
+        <ul>
+            <li><a href="List Basics in python.html">List Basics</a></li>
+            <li><a href="Array Operations in python.html">Array Operations</a></li>
+            <li><a href="List Comprehensions in python.html">List Comprehensions</a></li>
+        </ul>
+        
+        
+        
+        <h3>Functions in Python</h3>
+        <a href="Functions in Python.html">Functions in Python</a>
+        <ul>
+            <li><a href="Function Basics in python.html">Function Basics</a></li>
+            <li><a href="Function Arguments in python.html">Function Arguments</a></li>
+            <li><a href="Lambda Functions in python.html">Lambda Functions</a></li>
+            <li><a href="Recursion in python.html">Recursion</a></li>
+            <li><a href="Built-in Functions in python.html">Built-in Functions</a></li>
+        </ul>
+        
+        <h3>Object-Oriented Programming</h3>
+        <a href="Object-Oriented Programming in python.html">Object-Oriented Programming</a>
+        <ul>
+            <li><a href="Classes and Objects in python.html">Classes and Objects</a></li>
+            <li><a href="Constructors in python.html">Constructors</a></li>
+            <li><a href="Inheritance in python.html">Inheritance</a></li>
+            <li><a href="Polymorphism in python.html">Polymorphism</a></li>
+            <li><a href="Abstraction in python.html">Abstraction</a></li>
+            <li><a href="Encapsulation in python.html">Encapsulation</a></li>
+            <li><a href="Magic Methods in python.html">Magic Methods</a></li>
+            <li><a href="Static Methods.html">Class and Static Methods</a></li>
+        </ul>
+        
+        <h3>Advanced Python Concepts</h3>
+        <a href="Advanced Python Concepts in python.html">Advanced Python Concepts</a>
+        <ul>
+            <li><a href="Exception Handling in python.html">Exception Handling</a></li>
+            <li><a href="File I-O in python.html">File I/O</a></li>
+            <li><a href="Modules and Packages in python.html">Modules and Packages</a></li>
+            <li><a href="Decorators in python.html">Decorators</a></li>
+            <li><a href="Generators in python.html">Generators</a></li>
+            <li><a href="Comprehensions in python.html">Comprehensions</a></li>
+            <li><a href="Context Managers in python.html">Context Managers</a></li>
+            <li><a href="Regular Expressions in python.html">Regular Expressions</a></li>
+        </ul>
+        
+        <h3>Data Handling and Libraries</h3>
+        <a href="Data Handling and Libraries.html">Data Handling and Libraries</a>
+        <ul>
+            <li><a href="NumPy in python.html">NumPy</a></li>
+            <li><a href="Pandas in python.html">Pandas</a></li>
+            <li><a href="Matplotlib in python.html">Matplotlib</a></li>
+            <li><a href="Seaborn in python.html">Seaborn</a></li>
+            <li><a href="Scikit-learn in python.html">Scikit-learn</a></li>
+            <li><a href="TensorFlow in python.html">TensorFlow</a></li>
+        </ul>
+        
+        <h3>Web Development</h3>
+        <a href="Web Development in python.html">Web Development</a>
+        <ul>
+            <li><a href="Flask in python.html">Flask</a></li>
+            <li><a href="Django in python.html">Django</a></li>
+            <li><a href="FastAPI in python.html">FastAPI</a></li>
+        </ul>
+        
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics in python.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Asyncio in python.html">Asyncio</a></li>
+            <li><a href="Multithreading and Multiprocessing in python.html">Multithreading and Multiprocessing</a></li>
+            <li><a href="Web Scraping with BeautifulSoup in python.html">Web Scraping with BeautifulSoup</a></li>
+            <li><a href="APIs and RESTful Services in python.html">APIs and RESTful Services</a></li>
+            <li><a href="Data Science with Python.html">Data Science with Python</a></li>
+            <li><a href="Machine Learning with Python.html">Machine Learning with Python</a></li>
+            <li><a href="Deep Learning with Python.html">Deep Learning with Python</a></li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    <script>
+        
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "python_interviews.html";
+}
+function gocomp() {
+    window.location.href = "Python Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Static Methods.html";
+    }
+    function goNext() {
+        window.location.href = "Exception Handling in python.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-python" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">Python Tutorial</h2>
+<div class="div1">Advanced Python Concepts</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Advanced Python Concepts</h2>
+        <p>Python is a powerful and versatile language with many advanced features that go beyond basic syntax and functions. Understanding these advanced concepts can help you write more efficient, readable, and idiomatic Python code. This guide covers four key advanced concepts:</p>
+        <ul>
+            <li><strong>Generators</strong></li>
+            <li><strong>Decorators</strong></li>
+            <li><strong>Context Managers</strong></li>
+            <li><strong>Metaclasses</strong></li>
+        </ul>
+
+        <h2>Generators</h2>
+        <p>Generators are a type of iterable that allows you to iterate over data without storing it in memory. They are defined using functions with the <code>yield</code> keyword instead of <code>return</code>. Generators provide a way to create iterators with minimal memory overhead.</p>
+        <pre><code># Generator function
+def count_up_to(max):
+    count = 1
+    while count <= max:
+        yield count
+        count += 1
+
+# Using the generator
+for number in count_up_to(5):
+    print(number)
+</code></pre>
+
+        <h2>Decorators</h2>
+        <p>Decorators are a way to modify or extend the behavior of functions or methods without changing their code. They are applied using the <code>@decorator_name</code> syntax. Decorators are often used for logging, access control, and modifying input/output.</p>
+        <pre><code># Decorator function
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+# Applying the decorator
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+</code></pre>
+
+        <h2>Context Managers</h2>
+        <p>Context managers allow you to manage resources efficiently by defining a code block that needs to be set up and cleaned up. The <code>with</code> statement is used to work with context managers, ensuring that resources are properly released after use.</p>
+        <pre><code># Using a context manager for file operations
+with open('example.txt', 'w') as file:
+    file.write('Hello, world!')
+
+# Custom context manager
+class MyContextManager:
+    def __enter__(self):
+        print("Entering the context")
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Exiting the context")
+
+with MyContextManager() as manager:
+    print("Inside the context")
+</code></pre>
+
+        <h2>Metaclasses</h2>
+        <p>Metaclasses are a way to define the behavior of classes themselves. A metaclass is a class of a class that defines how a class behaves. Metaclasses can be used to modify class creation and to enforce certain patterns or constraints on classes.</p>
+        <pre><code># Define a metaclass
+class Meta(type):
+    def __new__(cls, name, bases, dct):
+        print(f"Creating class {name}")
+        return super().__new__(cls, name, bases, dct)
+
+# Define a class using the metaclass
+class MyClass(metaclass=Meta):
+    pass
+
+# Creating an instance of the class
+obj = MyClass()
+</code></pre>
+
+        <h2>Key Points about Advanced Python Concepts</h2>
+        <ul>
+            <li><strong>Generators:</strong> Efficient for handling large data sets and lazy evaluation.</li>
+            <li><strong>Decorators:</strong> Provide a clean way to extend or modify function behavior.</li>
+            <li><strong>Context Managers:</strong> Simplify resource management with automatic setup and teardown.</li>
+            <li><strong>Metaclasses:</strong> Offer advanced control over class creation and behavior.</li>
+        </ul>
+
+       
+        
+
+        <h2>Summary</h2>
+        <p>Advanced Python concepts like generators, decorators, context managers, and metaclasses provide powerful tools for writing efficient and expressive Python code. Mastering these concepts can help you handle complex tasks with elegance and precision.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>  </div>
+</body>
+</html>

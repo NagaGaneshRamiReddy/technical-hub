@@ -1,0 +1,718 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeLearners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>TreeLearners.com</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family:  sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cdf1f5;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section-top-margin {
+            margin-top: 50px;
+        }
+        h2 {
+            font-size: 100px;
+            color:green;
+            text-align: left;
+            margin-bottom: 40px;
+            margin-bottom: 20px;
+            position: relative;
+            border-bottom: 10px;
+            padding-bottom: 10px;
+        }
+       
+        .p1{
+          color:rgb(3, 97, 3);
+          font-size: 30px;
+          background-color: rgb(244, 240, 240);
+          border-radius: 10px;
+          border: 3px solid green;
+          text-align: center;
+          width: 500px;
+        }
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 400px;
+        }
+         .box-container1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+         }
+        .box {
+            background-color: #2f2e2e;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(240, 238, 238, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-10px);
+        }
+        .box a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 20px;
+        }
+        .box p {
+            margin: 10px 0 0;
+            font-size: 1.1em;
+            color: #ccc;
+        }
+       
+        
+    </style>
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            
+            <div class="text">
+  <span class="letter T">T</span>ree<span class="letter L">L</span>earners
+</div>
+
+        </div>
+    
+        <div class="btn">
+            <a href="#tutorials" class="unique-btn">Tutorials</a>
+            <a href="#login" class="unique-btn">Login</a>
+            <a href="#signup" class="unique-btn">Signup</a>
+        </div>
+    </header>
+    
+
+    <!-- Scrollable Navigation -->
+    <div class="nav-container">
+        <div class="arrow" id="prev-arrow">&#9664;</div>
+        <nav id="nav">
+            <a href="HTML Roadmaps.html">HTML</a>
+            <a href="CSS Roadmaps.html">CSS</a>
+            <a href="Bootstrap.html">Bootstrap</a>
+            <a href="croadmap.html">C</a>
+            <a href="#">C++</a>
+            <a href="javaRoadmaps.html">Java</a>
+            <a href="pythonRoadmps.html">Python</a>
+            <a href="php Roadmaps.html">PHP</a>
+            <a href="Rust.html">Rust</a>
+            <a href="SQLRoadmaps.html">SQL</a>
+            <a href="dsaRoadmaps.html">DSA</a>
+            <a href="awsRoadmaps.html">AWS</a>
+            <a href="azureRoadmaps.html">Azure</a>
+            <a href="Google cloudRoadmaps.html">Google Cloud</a>
+            <a href="salesforceRoadmaps.html">Salesforce</a>
+        </nav>
+        <div class="arrow" id="next-arrow">&#9654;</div>
+    </div>
+    <script>
+        const nav = document.getElementById('nav');
+        const prevArrow = document.getElementById('prev-arrow');
+        const nextArrow = document.getElementById('next-arrow');
+
+        prevArrow.addEventListener('click', () => {
+            nav.scrollBy({ left: -100, behavior: 'smooth' });
+        });
+
+        nextArrow.addEventListener('click', () => {
+            nav.scrollBy({ left: 100, behavior: 'smooth' });
+        });
+    </script>
+    <!-- Content Section -->
+   
+    
+    
+
+    <style> 
+       /* Global Styles */
+       body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: white;
+    }
+
+    /* Header Section */
+
+    header {
+ background-color: rgb(0, 0, 0); 
+padding: 10px 20px;
+box-shadow: 0 4px 8px rgba(255, 253, 253, 0.1);
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+border-bottom: 4px solid rgb(11, 74, 7);
+z-index: 1000;
+}
+
+
+.nav-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Button Container */
+.btn-container {
+display: flex;
+justify-content: flex-end; /* Align buttons to the right */
+gap: 20px; /* Space between buttons */
+padding: 10px 20px;
+}
+
+/* Unique Buttons */
+.unique-btn {
+padding: 12px 24px;
+font-size: 16px;
+font-weight: bold;
+color: white;
+background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient background */
+border: none;
+border-radius: 50px; /* Unique pill shape */
+cursor: pointer;
+position: relative;
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+z-index: 1;
+}
+
+/* Button Hover Effects */
+.unique-btn:hover {
+transform: scale(1.1); 
+box-shadow: 0 4px 20px rgba(38, 198, 218, 0.5); 
+}
+
+
+
+
+
+
+/* Gradient Border Effect */
+.unique-btn:after {
+content: '';
+position: absolute;
+top: -2px;
+left: -2px;
+right: -2px;
+bottom: -2px;
+border-radius: 50px;
+background: linear-gradient(90deg, #ff512f, #dd2476); /* Outer gradient border */
+z-index: -1;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+
+/* Show Gradient Border on Hover */
+.unique-btn:hover:after {
+opacity: 1;
+}
+
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .tree {
+        width: 60px;
+        height: 80px;
+        position: relative;
+    }
+
+    .tree .trunk {
+        width: 20px;
+        height: 30px;
+        background-color: #8d6e63;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+    }
+
+    .tree .leaves {
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 60px solid #005305;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        animation: leaf-bounce 2s infinite;
+    }
+
+   
+
+
+.text {
+font-family: 'Arial', sans-serif;
+font-size: 50px;
+color: #e7eaea; 
+display: inline-block;
+text-align: center;
+}
+
+
+.letter.T {
+font-weight: bold;
+color: #f7b706; 
+font-size: 54px;
+text-transform: uppercase;
+animation: bounceT 1.2s ease-out, glowT 1.5s ease-in-out infinite alternate;
+transition: transform 0.3s ease;
+}
+
+.letter.L {
+font-weight: bold;
+color: #058007; 
+font-size: 54px;
+text-transform: uppercase;
+animation: bounceL 1.2s ease-out, glowL 1.5s ease-in-out infinite alternate;
+transition: transform 0.3s ease;
+}
+
+.letter.T:hover, .letter.L:hover {
+text-decoration: underline;
+transform: scale(1.1); 
+transition: text-decoration 0.3s ease, transform 0.2s ease;
+}
+
+@keyframes bounceT {
+0% {
+transform: translateY(0);
+}
+30% {
+transform: translateY(-15px);
+}
+50% {
+transform: translateY(0);
+}
+70% {
+transform: translateY(-8px);
+}
+100% {
+transform: translateY(0);
+}
+}
+
+@keyframes bounceL {
+0% {
+transform: translateY(0);
+}
+30% {
+transform: translateY(-15px);
+}
+50% {
+transform: translateY(0);
+}
+70% {
+transform: translateY(-8px);
+}
+100% {
+transform: translateY(0);
+}
+}
+
+
+@keyframes bounceL {
+0% {
+transform: translateY(0);
+}
+30% {
+transform: translateY(-10px);
+}
+50% {
+transform: translateY(0);
+}
+70% {
+transform: translateY(-5px);
+}
+100% {
+transform: translateY(0);
+}
+}
+
+
+    .nav-container {
+        display: flex;
+        align-items: center;
+        background-color: #05630b;
+        position: absolute;
+        
+        margin-top: 20px;
+        top: 80px; 
+        left: 0;
+        right: 0;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .arrow {
+        color: #c87704;
+        font-size: 40px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .arrow:hover {
+
+        color: rgb(3, 123, 31);
+    }
+
+    nav {
+        display: flex;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        flex: 1;
+    }
+
+    nav a {
+        color: #ffffff;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        flex-shrink: 0;
+        white-space: nowrap;
+        background-size: 400% 400%;
+        animation: colorChange 6s infinite;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #2df509;
+border-radius: 20%;
+        color: black;
+        transform: scale(1.1);
+    }
+
+    @keyframes colorChange {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+   
+
+   
+      .sliding-background {
+        display: flex;
+        width: 200%;
+    border-bottom: 5px solid rgb(251, 251, 251);
+        animation: slide 20s linear infinite;
+    }
+    
+</style>
+
+
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search..." onkeyup="showSuggestions()">
+        <button onclick="searchCourse()">Search</button>
+        <div id="suggestionsContainer" class="suggestions-container"></div>
+    </div>
+</div>
+
+<script>
+    const courses = [
+        { name: "CSS", url: "CSS Roadmaps.html" },
+        { name: "SQL", url: "SQLRoadmaps.html" },
+        { name: "Google Flutter", url: "googleFlutterRoadmaps.html" },
+        { name: "Data Structure and Algorithms", url: "dsaRoadmaps.html" },
+        { name: "C Programming Language", url: "croadmap.html" },
+        { name: "C++ Programming Language", url: "c++Roadmaps.html" },
+        { name: "Java Programming Language", url: "javaRoadmaps.html" },
+        { name: "Python Programming Language", url: "pythonRoadmps.html" },
+        { name: "Artificial Intelligence", url: "AIroadmap.html" },
+        { name: "Cyber Security", url: "cybersecurityRoadmaps.html" },
+        { name: "UI/UX Design", url: "UiUXRoadmaps.html" },
+        { name: "Prompt Engineering", url: "promptengineeringRoadmaps.html" },
+        { name: "AWS", url: "awsRoadmaps.html" },
+        { name: "Azure", url: "azureRoadmaps.html" },
+        { name: "Google Cloud", url: "GoogleCloudRoadmaps.html" },
+        { name: "Salesforce", url: "salesforceRoadmaps.html" }
+    ];
+
+    function showSuggestions() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const suggestionsContainer = document.getElementById('suggestionsContainer');
+        suggestionsContainer.innerHTML = '';
+
+        if (input) {
+            const suggestions = courses.filter(course => course.name.toLowerCase().includes(input));
+            suggestions.forEach(course => {
+                const div = document.createElement('div');
+                div.className = 'suggestion';
+                div.textContent = course.name;
+                div.onclick = () => {
+                    document.getElementById('searchInput').value = course.name;
+                    searchCourse();
+                };
+                suggestionsContainer.appendChild(div);
+            });
+        }
+    }
+
+    function searchCourse() {
+        const query = document.getElementById('searchInput').value.trim().toLowerCase();
+        const course = courses.find(c => c.name.toLowerCase() === query);
+        if (course) {
+            window.location.href = course.url;
+        } else {
+            alert("Course not found. Please try again.");
+        }
+    }
+
+    document.addEventListener('click', function (e) {
+        if (!document.querySelector('.search-container').contains(e.target)) {
+            document.getElementById('suggestionsContainer').innerHTML = '';
+        }
+    });
+</script>
+
+<style>
+   
+
+    .search-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .search-container input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        color: #005305;
+        border: 2px solid #66bb6a;
+        border-radius: 20px 0 0 20px;
+        outline: none;
+        font-size: 16px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+    }
+
+    .search-container input[type="text"]:focus {
+        border-color: #2e7d32;
+        box-shadow: 0 0 10px rgba(46, 125, 50, 0.5);
+    }
+
+    .search-container button {
+        background-color: #2e7d32;
+        color: #ffffff;
+        border: none;
+        height: 45px;
+        padding: 10px 20px;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+    }
+
+    .search-container button:hover {
+        background-color: #66bb6a;
+    }
+
+    .suggestions-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        font-size: 16px;
+        background: rgb(0, 0, 0);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        border-top: none;
+        max-height: 150px;
+        overflow-y: auto;
+        z-index: 10;
+    }
+
+    .suggestion {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .suggestion:hover {
+        background-color: #047318;
+        color: white;
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+</style>
+
+<div class="container">
+    <section class="section-top-margin">
+       
+       
+        <div class="box-container">
+            
+            <div class="box">
+                <a href="croadmap.html" target="_blank">
+                  <div style="font-size: 70px; font-weight: bold; color: #04aaf8;">C</div>
+                    <p>C Language</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="Cpp_Roadmap.html" style="text-decoration: none;" target="_blank">
+                    <div style="font-size: 70px; font-weight: bold; color: #08b3c9;">C++</div>
+                    <p>C++ Language</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="javaRoadmaps.html" target="_blank">
+                    <i class="fab fa-java" style="font-size: 70px; color: #fa900f;"></i>
+                    <p>Java</p> 
+                </a>
+            </div>
+            <div class="box">
+                <a href="pythonRoadmps.html" target="_blank">
+                    <i class="fab fa-python" style="font-size: 70px; color: #3776AB;"></i>
+                    <p>Python</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="Rust.html" target="_blank">
+                    <i class="fab fa-rust" style="font-size: 70px; color: #4a07f2;"></i>
+                    <p>Rust</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="SQLRoadmaps.html" target="_blank">
+                    <i class="fas fa-database" style="font-size: 70px; color: #0a7ce6;"></i>
+                    <p>SQL</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="php Roadmaps.html" target="_blank">
+                    <i class="fab fa-php" style="font-size: 70px; color: #f4aa0a;"></i>
+                    <p>PHP</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="dsaRoadmaps.html" target="_blank">
+                    <i class="fas fa-project-diagram" style="font-size: 60px; color: #a893fc;"></i>
+                    <p>DSA</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section><br><br><br>
+        
+        <h2 class="p1">
+            <i class="fas fa-globe"></i> Web Technologies
+          </h2>
+        <div class="box-container1">
+            <div class="box">
+                <a href="HTML Roadmaps.html" target="_blank">
+                    <i class="fab fa-html5" style="font-size: 70px; color: #E34F26;"></i>
+                    <p>HTML</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="CSS Roadmaps.html" target="_blank">
+                    <i class="fab fa-css3-alt" style="font-size: 70px; color: #1572B6;"></i>
+                    <p>CSS</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="Bootstrap.html" target="_blank">
+                    <i class="fab fa-bootstrap" style="font-size: 70px; color: #7952B3;"></i>
+                    <p>Bootstrap</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="Bootstrap.html" target="_blank">
+                    <i class="fab fa-js" style="font-size: 70px; color: #7d6f09;"></i>
+                    <p>JavaScript</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section><br><br><br>
+        
+        <h2 class="p1">
+            <i class="fas fa-cloud"></i> Cloud Technologies
+          </h2>
+        <div class="box-container1">
+            <div class="box">
+                <a href="awsRoadmaps.html" target="_blank">
+                    <i class="fab fa-aws" style="font-size: 70px; color: #FF9900;"></i>
+                    <p>AWS</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="azureRoadmaps.html" target="_blank">
+                    <i class="fab fa-microsoft" style="font-size: 70px; color: #0078D4;"></i>
+                    <p>Azure</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="Google cloudRoadmaps.html" target="_blank">
+                    <i class="fab fa-google" style="font-size: 70px; color: #ffc412;"></i>
+                    <p>Google Cloud</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="salesforceRoadmaps.html" target="_blank">
+                    <i class="fab fa-salesforce" style="font-size: 70px; color: #00A1E0;"></i>
+                    <p>Salesforce</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
+
+
+        
+    

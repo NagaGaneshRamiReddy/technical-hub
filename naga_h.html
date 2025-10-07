@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #9ff4a9, #037427);
+            padding: 20px;
+            color: #fff;
+        }
+       
+        
+header {
+    background-color: #050605;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.tree {
+    width: 50px;
+    height: 80px;
+    position: relative;
+}
+
+.tree .trunk {
+    width: 15px;
+    height: 30px;
+    background-color: #8d6e63;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.tree .leaves {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 40px solid #005305;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation: leaf-bounce 2s infinite;
+}
+
+@keyframes leaf-bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+.text {
+    font-size: 36px;
+    font-weight: bold;
+    animation: text-color-change 4s infinite, text-size-change 4s infinite;
+}
+
+@keyframes text-color-change {
+    0%, 100% {
+        color: #2e7d32;
+    }
+    50% {
+        color: #66bb6a;
+    }
+}
+
+@keyframes text-size-change {
+    0%, 100% {
+        font-size: 36px;
+    }
+    50% {
+        font-size: 42px;
+    }
+}
+.h1{
+    margin-top: 70px;
+}
+.icon {
+    font-size: 50px;
+    color: #E34C26;
+    transition: transform 0.3s ease, color 0.3s ease;
+    animation: icon-bounce 2s infinite ease-in-out;
+}
+
+
+.icon:hover {
+    color: #ff7050;
+    transform: scale(1.1) rotate(10deg);
+}
+
+
+@keyframes icon-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: #f1faee;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease;
+        }
+
+       
+
+        /* Right Sidebar Styling */
+        .sidebar {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 200px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .sidebar button {
+            background-color: #28A745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar button:hover {
+            background-color: #218838;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            margin-top: 50px;
+            margin-left: 40px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #ffb60ac6;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Ensure spacing between the content and sidebar */
+      
+        .question-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .question-item {
+            background: #ffffff;
+            border-radius: 8px;
+            border: 3px solid rgb(10, 82, 99);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .question-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .question {
+            font-weight: bold;
+            color: #02041a;
+            margin-right: 80px;
+            font-size: 1.2rem;
+        }
+
+        .view-answer-btn {
+            position: absolute;
+            right: 10px;
+            top: 1rem;
+            background-color: #0f7a05;
+            color: #fff;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .view-answer-btn:hover {
+            background-color: #357ABD;
+            transform: translateY(-2px);
+        }
+
+        .quiz-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.5s ease;
+        }
+
+        .question-item.active .quiz-container {
+            max-height: 800px;
+            padding: 1rem;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .submit-btn {
+            background-color: #28A745;
+            color: #fff;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        .score-card {
+            display: none;
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .score-card.correct {
+            background-color: #D4EDDA;
+            color: #155724;
+        }
+
+        .score-card.incorrect {
+            background-color: #F8D7DA;
+            color: #721C24;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+       
+        
+.quiz-container p {
+    font-size: 1.2rem; 
+    color: #000; 
+    margin-bottom: 10px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    color: rgb(117, 117, 244);
+    margin-bottom: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.options label:hover {
+    color: #004e12; 
+    
+}
+
+
+
+.options input[type="radio"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #28A745; 
+    
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.options input[type="radio"]:hover {
+    transform: scale(1.1);
+    
+}
+
+
+
+.quiz-container .question {
+    padding: 5px;
+    font-size: 1.3rem; 
+    
+    color: #FFD700; 
+    
+}
+h1 {
+text-align: center;
+font-size: 2rem;
+color: #ffb60ac6;
+margin-bottom: 1.5rem;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+}
+
+
+
+    </style>
+    <script>
+        function toggleAnswer(button) {
+            const questionItem = button.closest('.question-item');
+            const allQuestionItems = document.querySelectorAll('.question-item');
+
+            // Close all open quiz containers
+            allQuestionItems.forEach(item => {
+                if (item !== questionItem) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Toggle the clicked question's quiz container
+            questionItem.classList.toggle('active');
+        }
+
+        function calculateScore(quizContainer, topicNumber) {
+            const options = quizContainer.querySelectorAll("input[type='radio']");
+            let score = 0;
+            options.forEach(option => {
+                if (option.checked && option.value === "1") {
+                    score += 1;
+                }
+            });
+
+            // Display score
+            const scoreCard = quizContainer.querySelector(".score-card");
+            scoreCard.style.display = "block";
+            scoreCard.classList.add(score === 5 ? 'correct' : 'incorrect');
+            scoreCard.innerHTML = `You scored ${score} out of 5 for Topic ${topicNumber}!`;
+        }
+    </script>
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="container">
+            
+           
+            <ol class="question-list">
+                    <li class="question-item">
+                        <div class="question">1. Introduction to Java Programming Language</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                        <div class="quiz-container">
+                            <p>1. Who is known as the father of the Java programming language?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q1" value="1">James Gosling</label></li>
+                                <li><label><input type="radio" name="q1" value="0">Dennis Ritchie</label></li>
+                                <li><label><input type="radio" name="q1" value="0">Bjarne Stroustrup</label></li>
+                            </ul>
+                    
+                            <p>2. In which year was the Java programming language released?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q2" value="0">1990</label></li>
+                                <li><label><input type="radio" name="q2" value="1">1995</label></li>
+                                <li><label><input type="radio" name="q2" value="0">2000</label></li>
+                            </ul>
+                    
+                            <p>3. Which of the following file extensions is typically used for Java programs?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q3" value="1">.java</label></li>
+                                <li><label><input type="radio" name="q3" value="0">.class</label></li>
+                                <li><label><input type="radio" name="q3" value="0">.py</label></li>
+                            </ul>
+                    
+                            <p>4. What is the name of the tool used to compile Java code?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q4" value="1">javac</label></li>
+                                <li><label><input type="radio" name="q4" value="0">java</label></li>
+                                <li><label><input type="radio" name="q4" value="0">javadoc</label></li>
+                            </ul>
+                    
+                            <p>5. Which keyword is used to define a class in Java?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q5" value="1">class</label></li>
+                                <li><label><input type="radio" name="q5" value="0">Class</label></li>
+                                <li><label><input type="radio" name="q5" value="0">object</label></li>
+                            </ul>
+                    
+                            <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                            <div class="score-card"></div>
+                        </div>
+                    </li>
+                    
+                    <li class="question-item">
+                        <div class="question">2. History of Java</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                        <div class="quiz-container">
+                            <p>1. Which company originally developed Java?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q6" value="1">Sun Microsystems</label></li>
+                                <li><label><input type="radio" name="q6" value="0">Microsoft</label></li>
+                                <li><label><input type="radio" name="q6" value="0">Google</label></li>
+                            </ul>
+                    
+                            <p>2. What was Java originally called?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q7" value="1">Oak</label></li>
+                                <li><label><input type="radio" name="q7" value="0">Maple</label></li>
+                                <li><label><input type="radio" name="q7" value="0">Pine</label></li>
+                            </ul>
+                    
+                            <p>3. Which programming paradigm does Java follow?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q8" value="1">Object-Oriented</label></li>
+                                <li><label><input type="radio" name="q8" value="0">Procedural</label></li>
+                                <li><label><input type="radio" name="q8" value="0">Functional</label></li>
+                            </ul>
+                    
+                            <p>4. Which of the following is a Java feature?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q9" value="1">Platform Independent</label></li>
+                                <li><label><input type="radio" name="q9" value="0">Platform Dependent</label></li>
+                                <li><label><input type="radio" name="q9" value="0">Single-Threaded</label></li>
+                            </ul>
+                    
+                            <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                            <div class="score-card"></div>
+                        </div>
+                    </li>
+                    <li class="question-item">
+                        <div class="question">3. JVM, JRE, and JDK</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                        <div class="quiz-container">
+                            <p>1. What does JRE stand for?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q1" value="1">Java Runtime Environment</label></li>
+                                <li><label><input type="radio" name="q1" value="0">Java Resource Editor</label></li>
+                                <li><label><input type="radio" name="q1" value="0">Java Runtime Executor</label></li>
+                            </ul>
+                    
+                            <p>2. What is the primary role of JDK?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q2" value="1">To develop Java applications</label></li>
+                                <li><label><input type="radio" name="q2" value="0">To execute Java programs</label></li>
+                                <li><label><input type="radio" name="q2" value="0">To debug Java applications</label></li>
+                            </ul>
+                    
+                            <p>3. JVM converts Java bytecode into:</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q3" value="1">Machine code</label></li>
+                                <li><label><input type="radio" name="q3" value="0">Assembly code</label></li>
+                                <li><label><input type="radio" name="q3" value="0">Source code</label></li>
+                            </ul>
+                    
+                            <p>4. Which part of JDK includes tools like javac?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q4" value="1">Development Tools</label></li>
+                                <li><label><input type="radio" name="q4" value="0">Java Libraries</label></li>
+                                <li><label><input type="radio" name="q4" value="0">JRE</label></li>
+                            </ul>
+                    
+                            <p>5. Can JRE alone compile Java programs?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q5" value="1">No</label></li>
+                                <li><label><input type="radio" name="q5" value="0">Yes</label></li>
+                                <li><label><input type="radio" name="q5" value="0">Only for small programs</label></li>
+                            </ul>
+                    
+                            <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                            <div class="score-card"></div>
+                        </div>
+                    </li>
+                    <li class="question-item">
+                        <div class="question">4. Variables and Data Types</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                        <div class="quiz-container">
+                            <p>1. Which data type is used to store true/false values in Java?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q1" value="1">boolean</label></li>
+                                <li><label><input type="radio" name="q1" value="0">int</label></li>
+                                <li><label><input type="radio" name="q1" value="0">char</label></li>
+                            </ul>
+                    
+                            <p>2. What is the range of the byte data type?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q2" value="1">-128 to 127</label></li>
+                                <li><label><input type="radio" name="q2" value="0">0 to 255</label></li>
+                                <li><label><input type="radio" name="q2" value="0">-32768 to 32767</label></li>
+                            </ul>
+                    
+                            <p>3. Which keyword is used to declare constants in Java?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q3" value="1">final</label></li>
+                                <li><label><input type="radio" name="q3" value="0">const</label></li>
+                                <li><label><input type="radio" name="q3" value="0">static</label></li>
+                            </ul>
+                    
+                            <p>4. What is the default value of a float variable in Java?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q4" value="1">0.0</label></li>
+                                <li><label><input type="radio" name="q4" value="0">null</label></li>
+                                <li><label><input type="radio" name="q4" value="0">0</label></li>
+                            </ul>
+                    
+                            <p>5. What is the size of an int in Java?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q5" value="1">4 bytes</label></li>
+                                <li><label><input type="radio" name="q5" value="0">2 bytes</label></li>
+                                <li><label><input type="radio" name="q5" value="0">8 bytes</label></li>
+                            </ul>
+                    
+                            <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                            <div class="score-card"></div>
+                        </div>
+                    </li><li class="question-item">
+                        <div class="question">5. Operators in Java</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                        <div class="quiz-container">
+                            <p>1. Which of the following is a relational operator in Java?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q1" value="1">==</label></li>
+                                <li><label><input type="radio" name="q1" value="0">=</label></li>
+                                <li><label><input type="radio" name="q1" value="0">+</label></li>
+                            </ul>
+                    
+                            <p>2. What is the output of the expression 10 % 3 ?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q2" value="1">1</label></li>
+                                <li><label><input type="radio" name="q2" value="0">0</label></li>
+                                <li><label><input type="radio" name="q2" value="0">3</label></li>
+                            </ul>
+                    
+                            <p>3. Which operator is used to concatenate strings in Java?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q3" value="1">+</label></li>
+                                <li><label><input type="radio" name="q3" value="0">&</label></li>
+                                <li><label><input type="radio" name="q3" value="0">|</label></li>
+                            </ul>
+                    
+                            <p>4. What is the result of the following code snippet? 
+                            
+                               int a = 5, b = 10;
+                               System.out.println(a > b ? a : b);
+                            
+                            </p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q4" value="1">10</label></li>
+                                <li><label><input type="radio" name="q4" value="0">5</label></li>
+                                <li><label><input type="radio" name="q4" value="0">0</label></li>
+                            </ul>
+                    
+                            <p>5. Which operator is used to perform bitwise AND in Java?</p>
+                            <ul class="options">
+                                <li><label><input type="radio" name="q5" value="1">&</label></li>
+                                <li><label><input type="radio" name="q5" value="0">|</label></li>
+                                <li><label><input type="radio" name="q5" value="0">^</label></li>
+                            </ul>
+                    
+                            <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                            <div class="score-card"></div>
+                        </div>
+                    </li>
+        </div>
+    </div>
+
+    <!-- Right Sidebar with Interview and Video Buttons -->
+    <div class="sidebar">
+        <h2>Resources</h2>
+        java technical roles test 
+        java video
+        
+    </div>
+</body>
+</html>

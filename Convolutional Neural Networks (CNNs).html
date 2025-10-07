@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>AI Course Roadmap</title>
+   
+    
+
+
+</head>
+<body class="body">
+
+
+
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-brain"style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">AI Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        
+        <ul><a href="Introduction to AI.html">Introduction to AI</a>
+            <li><a href="History of AI.html">History of AI</a></li>
+            <li><a href="AI vs. Machine Learning vs. Deep Learning.html">AI vs. Machine Learning vs. Deep Learning</a></li>
+            <li><a href="Applications of AI.html">Applications of AI</a></li>
+            <li>
+                <a href="Basic Concepts.html">Basic Concepts</a>
+                <ul>
+                    <li><a href="Supervised Learning.html">Supervised Learning</a></li>
+                    <li><a href="Unsupervised Learning.html">Unsupervised Learning</a></li>
+                    <li><a href="Reinforcement Learning.html">Reinforcement Learning</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Mathematics for AI</h3>
+        <a href="Mathematics for AI.html">Mathematics for AI</a>
+        <ul>
+            <li><a href="Linear Algebra.html">Linear Algebra</a></li>
+            <li><a href="Calculus.html">Calculus</a></li>
+            <li><a href="Probability and Statistics.html">Probability and Statistics</a></li>
+            <li><a href="Optimization.html">Optimization</a></li>
+        </ul>
+    
+        <h3>Machine Learning</h3>
+        <a href="Machine Learning.html">Machine Learning</a>
+        <ul>
+            <li><a href="Regression.html">Regression</a></li>
+            <li><a href="Classification al.html">Classification</a></li>
+            <li><a href="Clustering.html">Clustering</a></li>
+            <li><a href="Dimensionality Reduction.html">Dimensionality Reduction</a></li>
+            <li><a href="Model Evaluation and Validation.html">Model Evaluation and Validation</a></li>
+        </ul>
+    
+        <h3>Deep Learning</h3>
+        <a href="Deep Learning.html">Deep Learning</a>
+        <ul>
+            <li><a href="Neural Networks.html">Neural Networks</a></li>
+            <li><a href="Convolutional Neural Networks (CNNs).html">Convolutional Neural Networks (CNNs)</a></li>
+            <li><a href="Recurrent Neural Networks (RNNs).html">Recurrent Neural Networks (RNNs)</a></li>
+            <li><a href="Generative Adversarial Networks (GANs).html">Generative Adversarial Networks (GANs)</a></li>
+            <li><a href="Transformers.html">Transformers</a></li>
+        </ul>
+    
+        <h3>Natural Language Processing (NLP)</h3>
+        <a href="Natural Language Processing (NLP).html">Natural Language Processing (NLP)</a>
+        <ul>
+            <li><a href="Text Preprocessing.html">Text Preprocessing</a></li>
+            <li><a href="Word Embeddings.html">Word Embeddings</a></li>
+            <li><a href="Sequence Modeling.html">Sequence Modeling</a></li>
+            <li><a href="Attention Mechanisms.html">Attention Mechanisms</a></li>
+            <li><a href="Language Models.html">Language Models</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Reinforcement Learning in AI.html">Reinforcement Learning</a></li>
+            <li><a href="Meta-Learning.html">Meta-Learning</a></li>
+            <li><a href="AI Ethics.html">AI Ethics</a></li>
+            <li><a href="AI in Production.html">AI in Production</a></li>
+            <li><a href="AI Research.html">AI Research</a></li>
+        </ul>
+    </div>
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+   
+        <button class="openbtn labs" onclick="golabs()">
+           
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn">
+            <i class="fas fa-question-circle"></i> AI Quiz
+        </button>
+    </div>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "";
+}
+    function goPrevious() {
+        window.location.href = "Neural Networks.html";
+    }
+    function goNext() {
+        window.location.href = "Recurrent Neural Networks (RNNs).html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Introduction to Convolutional Neural Networks</div>
+    
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>What are Convolutional Neural Networks (CNNs)?</h2>
+        <p>Convolutional Neural Networks (CNNs) are a specialized type of neural network designed to process and analyze visual data. They are particularly effective for tasks involving images, such as image classification, object detection, and image segmentation. CNNs use convolutional layers to automatically and adaptively learn spatial hierarchies of features from input images.</p>
+        
+        <h2>How CNNs Work</h2>
+        <ul>
+            <li><strong>Convolutional Layer</strong>: The core component of CNNs, responsible for applying convolutional filters (kernels) to the input image. These filters detect features such as edges, textures, and patterns by sliding over the image and performing element-wise multiplication followed by summation.</li>
+            <li><strong>Activation Function</strong>: After applying convolutions, an activation function, such as ReLU (Rectified Linear Unit), is used to introduce non-linearity into the network. This helps the network to learn complex patterns and features.</li>
+            <li><strong>Pooling Layer</strong>: Also known as subsampling or downsampling, this layer reduces the spatial dimensions of the feature maps while retaining important information. Common pooling methods include max pooling and average pooling.</li>
+            <li><strong>Fully Connected Layer</strong>: After passing through several convolutional and pooling layers, the high-level features are flattened and passed through fully connected layers. These layers produce the final output, such as class scores or regression values.</li>
+            <li><strong>Flattening</strong>: The process of converting the 2D feature maps into a 1D vector before feeding them into the fully connected layers.</li>
+        </ul>
+        
+        <h2>Types of Layers in CNNs</h2>
+        <ul>
+            <li><strong>Convolutional Layers</strong>: Apply multiple filters to extract features from the input image. The number of filters and their size affect the type of features extracted.</li>
+            <li><strong>Activation Layers</strong>: Apply activation functions like ReLU to introduce non-linearity and enable the network to learn more complex functions.</li>
+            <li><strong>Pooling Layers</strong>: Reduce the spatial size of feature maps, helping to decrease computational complexity and avoid overfitting.</li>
+            <li><strong>Fully Connected Layers</strong>: Connect all neurons in one layer to every neuron in the next layer, used for final classification or regression tasks.</li>
+        </ul>
+        
+        <h2>Applications of CNNs</h2>
+        <ul>
+            <li><strong>Image Classification</strong>: Identifying and categorizing objects within an image, such as classifying images of animals or vehicles.</li>
+            <li><strong>Object Detection</strong>: Locating and identifying objects within an image, providing bounding boxes around detected objects.</li>
+            <li><strong>Image Segmentation</strong>: Dividing an image into segments or regions, often used for tasks like medical image analysis and scene understanding.</li>
+            <li><strong>Face Recognition</strong>: Identifying and verifying individuals based on facial features, used in security and authentication systems.</li>
+            <li><strong>Style Transfer</strong>: Modifying an image to adopt the style of another image, used in artistic applications and content creation.</li>
+        </ul>
+        
+        <h2>Getting Started with CNNs</h2>
+        <ul>
+            <li><strong>Learn the Basics</strong>: Understand the fundamental concepts of CNNs through online courses and tutorials.</li>
+            <li><strong>Explore Frameworks</strong>: Use deep learning frameworks such as TensorFlow, Keras, and PyTorch to build and experiment with CNN models.</li>
+            <li><strong>Work on Projects</strong>: Apply CNNs to real-world datasets and problems, such as image classification and object detection, to gain practical experience.</li>
+            <li><strong>Read Research Papers</strong>: Stay updated with the latest advancements in CNNs by reading research papers and articles in the field.</li>
+        </ul>
+        
+        <div class="example">
+            <h2>Example Use Case: Image Classification</h2>
+            <ul>
+                <li><strong>Data Collection</strong>: Gather a dataset of labeled images, such as photos of different types of animals.</li>
+                <li><strong>Data Preprocessing</strong>: Resize, normalize, and augment images to prepare them for training.</li>
+                <li><strong>Model Building</strong>: Construct a CNN model with convolutional layers, activation functions, pooling layers, and fully connected layers.</li>
+                <li><strong>Training</strong>: Train the CNN on the dataset, using techniques such as data augmentation and regularization to improve performance.</li>
+                <li><strong>Evaluation</strong>: Assess the model’s accuracy on a separate validation set and fine-tune as needed to achieve better results.</li>
+            </ul>
+        </div>
+
+        <div class="resources">
+            <h2>Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Platforms like Coursera and Udacity offer courses on CNNs and deep learning, such as the Deep Learning Specialization by Andrew Ng.</li>
+                <li><strong>Books</strong>: "Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville provides an in-depth understanding of CNNs and other deep learning techniques.</li>
+                <li><strong>Framework Documentation</strong>: Explore documentation and tutorials for TensorFlow, Keras, and PyTorch to build and train CNN models.</li>
+                <li><strong>Research Papers</strong>: Read influential papers on CNN architectures, such as AlexNet, VGGNet, and ResNet, to understand their design and improvements.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Convolutional Neural Networks (CNNs) are powerful tools for processing and analyzing visual data. By leveraging convolutional layers, pooling layers, and fully connected layers, CNNs can automatically learn and extract features from images. Their versatility and effectiveness make them essential for tasks such as image classification, object detection, and image segmentation. Gaining hands-on experience with CNNs and staying informed about the latest research will help you harness their full potential in various applications.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>  </div>
+</body>
+</html>

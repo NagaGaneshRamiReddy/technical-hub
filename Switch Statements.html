@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>PHP course</title>
+   
+   
+   
+</head>
+<body class="body">
+
+   
+    
+    
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> PHP Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> PHP Quiz
+            </button>
+        </div></div>
+    </header>
+    
+      
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-php" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">PHP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+   
+    
+        <a href="php Roadmaps.html" target="_blank"><b class="b12">PHP Roadmap</b></a>
+        
+        <ul>
+            <a href="Introduction to PHP.html">Introduction to PHP</a>
+            <li><a href="What is PHP.html">What is PHP?</a></li>
+            <li><a href="Setting up PHP environment.html">Setting up PHP environment</a></li>
+            <li><a href="Basic PHP Syntax.html">Basic PHP Syntax</a></li>
+        </ul>
+    
+        <h3>PHP Variables</h3>
+        <a href="PHP Variables.html">PHP Variables</a>
+        <ul>
+            <li><a href="Data Types.html">Data Types</a></li>
+            <li><a href="PHP Constants.html">PHP Constants</a></li>
+            <li><a href="String Manipulation.html">String Manipulation</a></li>
+        </ul>
+    
+        <h3>Control Structures</h3>
+        <a href="Control Structures in PHP.html">Control Structures in PHP</a>
+        <ul>
+            <li><a href="If Else Statements.html">If Else Statements</a></li>
+            <li><a href="Switch Statements.html">Switch Statements</a></li>
+            <li><a href="Loops in PHP.html">Loops in PHP</a></li>
+        </ul>
+    
+        <h3>Functions</h3>
+        <a href="Functions in PHP.html">Functions in PHP</a>
+        <ul>
+            <li><a href="Creating Functions.html">Creating Functions</a></li>
+            <li><a href="Function Parameters.html">Function Parameters</a></li>
+            <li><a href="Returning Values.html">Returning Values</a></li>
+        </ul>
+    
+        <h3>Arrays</h3>
+        <a href="PHP Arrays.html">PHP Arrays</a>
+        <ul>
+            <li><a href="Indexed Arrays.html">Indexed Arrays</a></li>
+            <li><a href="Associative Arrays.html">Associative Arrays</a></li>
+            <li><a href="Multidimensional Arrays.html">Multidimensional Arrays</a></li>
+        </ul>
+    
+        <h3>Object-Oriented PHP</h3>
+        <a href="Object Oriented PHP.html">Object Oriented PHP</a>
+        <ul>
+            <li><a href="Classes and Objects.html">Classes and Objects</a></li>
+            <li><a href="Inheritance in PHP.html">Inheritance in PHP</a></li>
+            <li><a href="Polymorphism.html">Polymorphism</a></li>
+            <li><a href="PHP Interfaces and Traits.html">Interfaces and Traits</a></li>
+        </ul>
+    
+        <h3>Form Handling</h3>
+        <a href="PHP Forms Handling.html">PHP Forms Handling</a>
+        <ul>
+            <li><a href="GET and POST Methods.html">GET and POST Methods</a></li>
+            <li><a href="Form Validation.html">Form Validation</a></li>
+            <li><a href="Form Security.html">Form Security</a></li>
+        </ul>
+    
+        <h3>Sessions & Cookies</h3>
+        <a href="PHP Sessions and Cookies.html">Sessions and Cookies</a>
+        <ul>
+            <li><a href="Session Management.html">Session Management</a></li>
+            <li><a href="Working with Cookies.html">Working with Cookies</a></li>
+        </ul>
+    
+        <h3>PHP & MySQL</h3>
+        <a href="PHP and MySQL.html">PHP and MySQL</a>
+        <ul>
+            <li><a href="Connecting to a Database.html">Connecting to a Database</a></li>
+            <li><a href="CRUD Operations.html">CRUD Operations</a></li>
+            <li><a href="Prepared Statements.html">Prepared Statements</a></li>
+            <li><a href="MySQLi and PDO.html">MySQLi and PDO</a></li>
+        </ul>
+    
+        <h3>File Handling</h3>
+        <a href="File Handling in PHP.html">File Handling in PHP</a>
+        <ul>
+            <li><a href="Reading Files.html">Reading Files</a></li>
+            <li><a href="Writing Files.html">Writing Files</a></li>
+            <li><a href="File Uploads.html">File Uploads</a></li>
+        </ul>
+    
+        <h3>Error Handling</h3>
+        <a href="PHP Error Handling.html">Error Handling</a>
+        <ul>
+            <li><a href="Try Catch Blocks.html">Try Catch Blocks</a></li>
+            <li><a href="Error Logging.html">Error Logging</a></li>
+        </ul>
+    
+        <h3>Advanced PHP Topics</h3>
+        <a href="Advanced PHP Topics.html">Advanced PHP Topics</a>
+        <ul>
+            <li><a href="PHP Regular Expressions.html">PHP Regular Expressions</a></li>
+            <li><a href="Handling JSON Data.html">Handling JSON Data</a></li>
+            <li><a href="PHP RESTful APIs.html">PHP RESTful APIs</a></li>
+        </ul>
+    
+        <h3>PHP Deployment</h3>
+        <a href="PHP Deployment.html">PHP Deployment</a>
+        <ul>
+            <li><a href="Deploying on Shared Hosting.html">Deploying on Shared Hosting</a></li>
+            <li><a href="Deploying on Cloud Platforms.html">Deploying on Cloud Platforms</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "PHP_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "PHP_quiz.html";
+}
+function goprojects() {
+    window.location.href = "PHP_projects.html";
+}
+function gocomp() {
+    window.location.href = "Php Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "If Else Statements.html";
+    }
+    function goNext() {
+        window.location.href = "Loops in PHP.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-php" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">PHP Tutorial</h2>
+            
+       
+            
+    <div class="div1">PHP Switch Statements</div></div>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+
+    <h2>Overview</h2>
+    <p>The <strong>switch</strong> statement in PHP is used to perform different actions based on the value of a variable or expression. It is an alternative to using multiple <strong>if-else</strong> statements when comparing a single variable to different values.</p>
+
+    <h2>Syntax</h2>
+    <p>The <strong>switch</strong> statement works by evaluating a variable and executing the matching case block:</p>
+    <pre>
+    switch (variable) {
+        case value1:
+            // Code to execute if variable equals value1
+            break;
+        case value2:
+            // Code to execute if variable equals value2
+            break;
+        default:
+            // Code to execute if no case matches
+    }
+    </pre>
+
+    <h2>Example</h2>
+    <p>Here's a basic example of a switch statement in PHP:</p>
+    <pre>
+    $day = "Wednesday";
+
+    switch ($day) {
+        case "Monday":
+            echo "Start of the work week!";
+            break;
+        case "Wednesday":
+            echo "It's the middle of the week.";
+            break;
+        case "Friday":
+            echo "The weekend is almost here!";
+            break;
+        default:
+            echo "Just another day!";
+    }
+    // Outputs: It's the middle of the week.
+    </pre>
+
+    <h2>The break Statement</h2>
+    <p>The <strong>break</strong> statement is crucial in a <strong>switch</strong> block. It prevents the code from "falling through" and executing subsequent cases. Without a break, all the cases after the matching one would also execute:</p>
+    <pre>
+    $fruit = "Apple";
+
+    switch ($fruit) {
+        case "Banana":
+            echo "You selected Banana.";
+        case "Apple":
+            echo "You selected Apple.";
+        case "Orange":
+            echo "You selected Orange.";
+    }
+    // Outputs: You selected Apple. You selected Orange.
+    </pre>
+    <p>In this case, since there's no <strong>break</strong>, the code continues to execute all cases after "Apple". Always use <strong>break</strong> to avoid this behavior.</p>
+
+    <h2>The default Case</h2>
+    <p>The <strong>default</strong> case in a switch statement acts like the <strong>else</strong> in an <strong>if-else</strong> statement. It is executed if no matching case is found:</p>
+    <pre>
+    $color = "Purple";
+
+    switch ($color) {
+        case "Red":
+            echo "The color is Red.";
+            break;
+        case "Blue":
+            echo "The color is Blue.";
+            break;
+        default:
+            echo "Color not found.";
+    }
+    // Outputs: Color not found.
+    </pre>
+
+    <h2>Multiple Cases</h2>
+    <p>You can group cases together if they share the same block of code:</p>
+    <pre>
+    $day = "Saturday";
+
+    switch ($day) {
+        case "Saturday":
+        case "Sunday":
+            echo "It's the weekend!";
+            break;
+        case "Monday":
+        case "Tuesday":
+        case "Wednesday":
+        case "Thursday":
+        case "Friday":
+            echo "It's a weekday.";
+            break;
+    }
+    // Outputs: It's the weekend!
+    </pre>
+
+    <h2>Switch vs If-Else</h2>
+    <p>While both <strong>if-else</strong> and <strong>switch</strong> can be used to achieve the same result, <strong>switch</strong> is generally more efficient when you have many conditions based on a single variable or expression.</p>
+
+    <h2>Limitations of Switch</h2>
+    <p>The <strong>switch</strong> statement in PHP can only evaluate values for equality. If you need to perform more complex comparisons (e.g., greater than, less than, or logical operators), you should use <strong>if-else</strong> instead.</p>
+
+    <div class="resources">
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.php.net/manual/en/control-structures.switch.php" target="_blank">PHP Manual: Switch Statements</a></li>
+            <li><a href="https://www.w3schools.com/php/php_switch.asp" target="_blank">W3Schools PHP Switch Tutorial</a></li>
+            <li><a href="https://www.tutorialspoint.com/php/php_switch_statement.htm" target="_blank">TutorialsPoint PHP Switch Statement</a></li>
+        </ul>
+    </div>
+
+    <h2>Summary</h2>
+    <p>The <strong>switch</strong> statement provides a clean and efficient way to execute code based on different values of a variable or expression. It can be a powerful tool when used in the right context, especially when working with multiple conditions.</p>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+</body>
+</html>

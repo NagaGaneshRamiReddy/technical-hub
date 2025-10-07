@@ -1,0 +1,468 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Aptitude</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Aptitude
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Number Systems.html";
+    }
+    function goNext() {
+        window.location.href = "Basics of Probability.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Probability</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  
+            <h2>Introduction to Probability</h2>
+            <p>Probability is a branch of mathematics that deals with the likelihood of different outcomes occurring. It quantifies how likely an event is to happen, expressed as a number between 0 and 1 or as a percentage. Understanding probability helps in making predictions and decisions based on uncertain events.</p>
+
+            <h2>What is Probability?</h2>
+            <p>Probability measures the chance of an event happening. It is calculated by dividing the number of favorable outcomes by the total number of possible outcomes.</p>
+
+            <div class="formula">
+                <strong>Formula to Calculate Probability:</strong><br>
+                Probability (P) = Number of Favorable Outcomes / Total Number of Possible Outcomes
+            </div>
+
+            <p><strong>Favorable Outcomes:</strong> The outcomes that satisfy the condition of the event.<br>
+            <strong>Total Number of Possible Outcomes:</strong> The total number of outcomes in the sample space.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                Suppose you roll a fair six-sided die. To find the probability of rolling a 3:
+                <br><br>
+                Number of Favorable Outcomes = 1 (rolling a 3)<br>
+                Total Number of Possible Outcomes = 6 (since the die has six sides)<br><br>
+                Probability = 1 / 6 ≈ 0.167 (or 16.7%)
+            </div>
+
+            <h2>Types of Probability</h2>
+            <ul>
+                <li><strong>Theoretical Probability:</strong> Based on the possible outcomes in a perfect world. For example, the probability of flipping a coin and getting heads is 1/2.</li>
+                <li><strong>Experimental Probability:</strong> Based on the outcomes of an actual experiment. It is calculated by dividing the number of times an event occurs by the total number of trials.</li>
+                <li><strong>Conditional Probability:</strong> The probability of an event occurring given that another event has already occurred. It is calculated using the formula P(A|B) = P(A ∩ B) / P(B).</li>
+                <li><strong>Joint Probability:</strong> The probability of two events happening simultaneously. For example, the probability of drawing a red card and an ace from a deck of cards.</li>
+            </ul>
+
+            <h2>How to Calculate Probability</h2>
+            <ul>
+                <li><strong>Identify the Event:</strong> Determine what event you want to find the probability for.</li>
+                <li><strong>Count the Favorable Outcomes:</strong> Count how many outcomes are favorable to the event.</li>
+                <li><strong>Count the Total Outcomes:</strong> Count the total number of possible outcomes in the sample space.</li>
+                <li><strong>Apply the Formula:</strong> Use the formula Probability = Number of Favorable Outcomes / Total Number of Possible Outcomes to find the probability.</li>
+            </ul>
+
+            <h2>Why is Probability Important?</h2>
+            <ul>
+                <li><strong>Decision Making:</strong> Helps in making informed decisions by assessing the likelihood of different outcomes.</li>
+                <li><strong>Risk Management:</strong> Assists in evaluating risks and planning for uncertain events in various fields, including finance and insurance.</li>
+                <li><strong>Statistical Analysis:</strong> Forms the basis for many statistical methods and analyses used in research and data interpretation.</li>
+                <li><strong>Everyday Life:</strong> Helps in understanding and predicting everyday events, such as weather forecasts and game strategies.</li>
+            </ul>
+
+            <h2>Real-Life Example</h2>
+            <p>Consider a bag containing 3 red balls and 2 green balls:</p>
+
+            <div class="example">
+                <strong>Scenario:</strong><br>
+                - If you randomly pick one ball from the bag, what is the probability of picking a red ball?<br><br>
+                Number of Favorable Outcomes = 3 (red balls)<br>
+                Total Number of Possible Outcomes = 5 (total balls)<br><br>
+                Probability = 3 / 5 = 0.6 (or 60%)
+            </div>
+
+            <h2>Practice Tests</h2>
+            <div class="resources">
+                <p>Test your understanding of probability with these free practice resources:</p>
+                <ul>
+                    
+                    <li><a href="https://www.ixl.com/math/grade-6/probability" target="_blank">IXL: Probability Practice</a></li>
+                    <li><a href="https://www.khanacademy.org/math/statistics-probability/probability-library" target="_blank">Khan Academy: Probability Tutorial</a></li>
+                    <li><a href="https://www.cuemath.com/learn/math-probability/" target="_blank">Cuemath: Probability Practice</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Probability is a key concept in mathematics used to measure the likelihood of various events. By understanding how to calculate and interpret probability, you can make better decisions, assess risks, and understand the world around you more effectively. Mastering probability provides valuable insights for both everyday life and professional applications.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                    </div>
+    </div>
+</body>
+</html>

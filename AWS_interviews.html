@@ -1,0 +1,1875 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interviews.css">
+    <title>AWS Interview Questions</title>
+   
+    
+    
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+             <i class="fab fa-html5 icon"></i>
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    <div class="container">
+        
+        <h1>Top AWS Interviews Questions</h1>
+        <ol class="question-list">
+            <li class="question-item">
+                <div class="question">1. What is AWS, and what does it offer?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        AWS, or Amazon Web Services, is a cloud computing platform developed by Amazon. It provides a broad range of services that help businesses access computing power, storage, and networking capabilities. Additionally, AWS includes advanced services like machine learning and analytics, making it easier for organizations to grow and innovate without the burden of managing physical infrastructure.
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS, or Amazon Web Services, is a cloud computing platform developed by Amazon. It provides a broad range of services that help businesses access computing power, storage, and networking capabilities. Additionally, AWS includes advanced services like machine learning and analytics, making it easier for organizations to grow and innovate without the burden of managing physical infrastructure.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+            
+            <li class="question-item">
+                <div class="question">2. What are the core services offered by AWS?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        AWS provides a variety of core services that cater to different needs. Here are a few key ones:
+                        <ul>
+                            <li><strong>Compute:</strong> Services like Amazon EC2 allow you to run scalable virtual servers.</li>
+                            <li><strong>Storage:</strong> Amazon S3 offers scalable object storage, while Amazon EBS provides block storage for EC2 instances.</li>
+                            <li><strong>Databases:</strong> Managed database services such as Amazon RDS and DynamoDB make data management easier.</li>
+                            <li><strong>Networking:</strong> Amazon VPC lets you create isolated networks, and Route 53 offers scalable DNS services.</li>
+                            <li><strong>Analytics:</strong> Tools like Amazon Redshift and Amazon Athena help with data analysis and querying.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS provides a variety of core services that cater to different needs, including compute services like EC2, storage options like S3, managed databases like RDS and DynamoDB, networking capabilities like VPC and Route 53, and analytics tools like Redshift and Athena.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">3. What is EC2?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Amazon EC2, or Elastic Compute Cloud, is a web service that allows you to rent virtual servers to run applications. You can choose different instance types based on your workload needs. Some key features include:
+                        <ul>
+                            <li><strong>Auto Scaling:</strong> This feature automatically adjusts the number of instances based on traffic, so you only use what you need.</li>
+                            <li><strong>Elastic Load Balancing:</strong> This helps distribute incoming traffic across multiple instances for better performance.</li>
+                            <li><strong>Pay-as-you-go pricing:</strong> You only pay for what you use, making it cost-effective.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon EC2, or Elastic Compute Cloud, is a web service that allows you to rent virtual servers to run applications. It includes features like Auto Scaling, Elastic Load Balancing, and a pay-as-you-go pricing model.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">4. What is S3?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Amazon S3, or Simple Storage Service, is a scalable object storage service that allows you to store and retrieve any amount of data. It’s popular for backup, archiving, and data lakes. Here are some important features:
+                        <ul>
+                            <li><strong>Scalability:</strong> S3 automatically scales to meet your storage needs.</li>
+                            <li><strong>Durability:</strong> It offers 99.999999999% durability, meaning your data is very safe.</li>
+                            <li><strong>Security:</strong> With features like encryption and access controls, S3 helps keep your data secure.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon S3, or Simple Storage Service, is a scalable object storage service that allows you to store and retrieve any amount of data. It features high durability, scalability, and security measures like encryption.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">5. What is a VPC?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        A Virtual Private Cloud (VPC) is your own isolated section of the AWS cloud. It allows you to launch AWS resources in a defined network topology. Here are some of its features:
+                        <ul>
+                            <li><strong>Subnets:</strong> You can create both public and private subnets for better security.</li>
+                            <li><strong>Route Tables:</strong> These help control the traffic flow within your VPC.</li>
+                            <li><strong>Network Gateways:</strong> They provide connectivity to the internet and other networks.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'A Virtual Private Cloud (VPC) is your own isolated section of the AWS cloud, where you can define your network topology, create subnets, manage route tables, and connect to the internet.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">6. What are Security Groups in AWS?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Security Groups act like virtual firewalls for your AWS resources, such as EC2 instances. Here are the key points:
+                        <ul>
+                            <li><strong>Stateful:</strong> If you allow an incoming request, the response is automatically permitted.</li>
+                            <li><strong>Rules:</strong> You can create rules based on IP protocols, ports, and addresses.</li>
+                            <li><strong>Dynamic:</strong> You can change security group settings at any time, and the changes take effect immediately.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Security Groups act like virtual firewalls that control inbound and outbound traffic for AWS resources. They are stateful, allow dynamic rule changes, and can be customized based on protocols and IP addresses.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">7. What is IAM?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        AWS Identity and Access Management (IAM) is a service that helps you manage access to AWS resources securely. It enables you to:
+                        <ul>
+                            <li><strong>Create Users and Groups:</strong> Assign specific permissions to users or groups.</li>
+                            <li><strong>Roles:</strong> Define permissions that can be assumed by users or applications.</li>
+                            <li><strong>Policies:</strong> Use JSON-based policies to specify what resources users can access and what actions they can perform.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Identity and Access Management (IAM) helps you manage access to AWS resources securely. It allows you to create users and groups, define roles, and use policies to set permissions.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">8. What is the difference between EC2 and Lambda?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        The main difference between EC2 and Lambda is how they manage compute resources:
+                        <ul>
+                            <li><strong>EC2:</strong> You get virtual servers and must manage the infrastructure yourself. It’s great for applications that need consistent performance and control.</li>
+                            <li><strong>Lambda:</strong> This is a serverless compute service where you run code in response to events. It automatically scales up or down based on the number of requests, so you don't worry about managing servers.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'The main difference between EC2 and Lambda is that EC2 provides virtual servers that you manage, while Lambda is a serverless service that executes code automatically in response to events without server management.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">9. What is RDS?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        Amazon RDS, or Relational Database Service, simplifies the setup and management of relational databases in the cloud. It supports several popular database engines like MySQL and PostgreSQL. Here are some notable features:
+                        <ul>
+                            <li><strong>Automated Backups:</strong> RDS automatically backs up your database and allows for point-in-time recovery.</li>
+                            <li><strong>Multi-AZ Deployments:</strong> This feature enhances availability and failover support.</li>
+                            <li><strong>Scaling:</strong> You can easily scale your database instance based on demand.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon RDS simplifies the management of relational databases in the cloud. It offers automated backups, multi-AZ deployments for availability, and easy scalability for your database instances.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+            <li class="question-item">
+                <div class="question">10. What is DynamoDB?</div>
+                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                <div class="answer-container">
+                    <div class="answer">
+                        DynamoDB is a fully managed NoSQL database service that provides fast and consistent performance with seamless scalability. It’s perfect for applications needing quick access to data. Some of its key features include:
+                        <ul>
+                            <li><strong>Key-Value and Document Data Models:</strong> It supports both data structures for flexibility.</li>
+                            <li><strong>Automatic Scaling:</strong> DynamoDB adjusts its throughput automatically to handle varying workloads.</li>
+                            <li><strong>Global Tables:</strong> This feature enables multi-region replication for global applications.</li>
+                        </ul>
+                    </div>
+                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                    <button class="check-answer-btn" onclick="checkAnswer(this, 'DynamoDB is a fully managed NoSQL database service that provides fast performance and seamless scalability. It supports key-value and document data models, automatic scaling, and global tables for distributed applications.')">Check Answer</button>
+                    <div class="feedback"></div>
+                </div>
+            </li>
+        
+                <li class="question-item">
+                    <div class="question">11. What is AWS CloudFormation?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            AWS CloudFormation is a service that allows you to define and provision AWS infrastructure as code using templates written in JSON or YAML. Key benefits include:
+                            <ul>
+                                <li><strong>Infrastructure as Code:</strong> Automates the creation and management of AWS resources, reducing manual intervention.</li>
+                                <li><strong>Version Control:</strong> Templates can be versioned and reused, making it easier to maintain and deploy infrastructure.</li>
+                                <li><strong>Stack Management:</strong> Users can manage related resources as a single unit, known as a stack.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS CloudFormation is a service that allows you to define and provision AWS infrastructure as code using templates written in JSON or YAML, offering benefits like infrastructure automation, version control, and stack management.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+            
+                <li class="question-item">
+                    <div class="question">12. What is Elastic Beanstalk?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            AWS Elastic Beanstalk is a Platform as a Service (PaaS) that simplifies the deployment, management, and scaling of web applications. Key features include:
+                            <ul>
+                                <li><strong>Automatic Scaling:</strong> Automatically adjusts the number of instances based on traffic.</li>
+                                <li><strong>Environment Management:</strong> Provides monitoring, version control, and health checks for applications.</li>
+                                <li><strong>Multiple Language Support:</strong> Supports various programming languages and frameworks, including Java, .NET, Node.js, PHP, and Python.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Elastic Beanstalk is a PaaS that simplifies deploying and managing web applications with features like automatic scaling, environment management, and support for multiple programming languages.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+            
+                <li class="question-item">
+                    <div class="question">13. What is CloudFront?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            Amazon CloudFront is a content delivery network (CDN) that accelerates the delivery of static and dynamic web content. Key benefits include:
+                            <ul>
+                                <li><strong>Global Reach:</strong> Distributes content through a network of edge locations worldwide.</li>
+                                <li><strong>Low Latency:</strong> Caches content at edge locations to deliver it closer to users.</li>
+                                <li><strong>Security:</strong> Integrates with AWS Shield for DDoS protection and AWS WAF for application layer security.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon CloudFront is a CDN that accelerates content delivery through edge locations, providing global reach, low latency, and security features like DDoS protection.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+            
+                <li class="question-item">
+                    <div class="question">14. What is Route 53?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            Amazon Route 53 is a scalable Domain Name System (DNS) web service designed to provide high availability and low latency. Key features include:
+                            <ul>
+                                <li><strong>Domain Registration:</strong> Allows users to register new domain names.</li>
+                                <li><strong>DNS Routing:</strong> Supports various routing policies, including latency-based routing, geo-routing, and weighted routing.</li>
+                                <li><strong>Health Checks:</strong> Monitors the health of resources and routes traffic only to healthy endpoints.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Route 53 is a scalable DNS web service that offers domain registration, various DNS routing policies, and health checks for routing traffic to healthy endpoints.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+            
+                <li class="question-item">
+                    <div class="question">15. What are the different types of S3 storage classes?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            Amazon S3 offers several storage classes to optimize costs based on access patterns:
+                            <ul>
+                                <li><strong>S3 Standard:</strong> General-purpose storage for frequently accessed data.</li>
+                                <li><strong>S3 Intelligent-Tiering:</strong> Automatically moves data between two access tiers based on changing access patterns.</li>
+                                <li><strong>S3 Standard-IA (Infrequent Access):</strong> Low-cost storage for infrequently accessed data.</li>
+                                <li><strong>S3 One Zone-IA:</strong> Lower-cost option for infrequently accessed data that doesn’t require multiple availability zones.</li>
+                                <li><strong>S3 Glacier and S3 Glacier Deep Archive:</strong> Low-cost storage for archiving data with retrieval times ranging from minutes to hours.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon S3 provides various storage classes like S3 Standard for frequent access, S3 Intelligent-Tiering for automatic tiering, and S3 Glacier for low-cost archiving.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+            
+                <li class="question-item">
+                    <div class="question">16. What is the purpose of Elastic Load Balancing (ELB)?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses. Key benefits include:
+                            <ul>
+                                <li><strong>High Availability:</strong> Increases fault tolerance by routing traffic to healthy instances.</li>
+                                <li><strong>Automatic Scaling:</strong> Works with Auto Scaling to adjust the number of instances based on traffic.</li>
+                                <li><strong>Secure:</strong> Supports SSL termination to secure incoming traffic.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'Elastic Load Balancing distributes incoming traffic across multiple targets, enhancing availability, supporting automatic scaling, and securing traffic through SSL termination.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+            
+                <li class="question-item">
+                    <div class="question">17. What is a subnet?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            A subnet is a range of IP addresses within a VPC. Subnets can be classified as:
+                            <ul>
+                                <li><strong>Public Subnet:</strong> Accessible from the internet, allowing resources to communicate with external clients.</li>
+                                <li><strong>Private Subnet:</strong> Not directly accessible from the internet, used for databases and backend services.</li>
+                                <li><strong>Routing:</strong> Subnets are associated with route tables to control the flow of traffic.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'A subnet is a range of IP addresses within a VPC, classified into public subnets for internet access and private subnets for backend services, with routing managed by route tables.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+            
+                <li class="question-item">
+                    <div class="question">18. What is the AWS Free Tier?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            The AWS Free Tier allows users to access a limited quantity of AWS services for free for a certain period, usually 12 months after signing up. Key components include:
+                            <ul>
+                                <li><strong>Free Usage:</strong> Includes services like Amazon EC2, Amazon S3, and Amazon RDS, with specific limits on usage.</li>
+                                <li><strong>No Commitment:</strong> Users can explore AWS services without upfront costs.</li>
+                                <li><strong>Learning Opportunity:</strong> Ideal for developers, startups, and students to learn and build applications.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'The AWS Free Tier provides limited access to AWS services for free for 12 months, allowing users to explore without upfront costs and ideal for learning and development.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+            
+                <li class="question-item">
+                    <div class="question">19. What is AWS Lambda?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            AWS Lambda is a serverless compute service that allows you to run code in response to events without provisioning or managing servers. Key features include:
+                            <ul>
+                                <li><strong>Event-Driven:</strong> Automatically triggers functions in response to events from AWS services or external sources.</li>
+                                <li><strong>Scalability:</strong> Automatically scales to handle the number of requests.</li>
+                                <li><strong>Pay-per-Use:</strong> Users pay only for the compute time consumed by the code.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Lambda is a serverless compute service that runs code in response to events without server management, offering event-driven execution, automatic scalability, and pay-per-use pricing.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+            
+                <li class="question-item">
+                    <div class="question">20. What is the AWS Management Console?</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                    <div class="answer-container">
+                        <div class="answer">
+                            The AWS Management Console is a web-based interface that allows users to manage AWS services and resources. Key features include:
+                            <ul>
+                                <li><strong>User-Friendly:</strong> Provides a graphical interface for navigating and configuring services.</li>
+                                <li><strong>Resource Management:</strong> Enables monitoring, billing, and management of AWS resources.</li>
+                                <li><strong>Dashboard:</strong> Users can view service status, usage metrics, and billing information.</li>
+                            </ul>
+                        </div>
+                        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                        <button class="check-answer-btn" onclick="checkAnswer(this, 'The AWS Management Console is a web interface for managing AWS services, offering user-friendly navigation, resource management, and a dashboard for monitoring and billing.')">Check Answer</button>
+                        <div class="feedback"></div>
+                    </div>
+                </li>
+                
+                    <li class="question-item">
+                        <div class="question">21. What is Amazon CloudWatch?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon CloudWatch is a monitoring and observability service that provides data and insights for AWS resources and applications. Key features include:
+                                <ul>
+                                    <li><strong>Metrics Collection:</strong> Monitors resources such as EC2 instances, RDS databases, and application performance.</li>
+                                    <li><strong>Alarms:</strong> Users can set alarms based on specific thresholds to receive notifications.</li>
+                                    <li><strong>Logs:</strong> Collects and analyzes log data to troubleshoot issues.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon CloudWatch is a monitoring service for AWS resources and applications, providing metrics collection, alarms, and log analysis capabilities.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">22. What is a key pair in AWS?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                A key pair consists of a public key and a private key used to securely connect to EC2 instances. Key points include:
+                                <ul>
+                                    <li><strong>Public Key:</strong> Stored by AWS and associated with the EC2 instance.</li>
+                                    <li><strong>Private Key:</strong> Downloaded by the user and kept secure; it is required to access the instance via SSH.</li>
+                                    <li><strong>Security:</strong> Ensures secure access without using passwords.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'A key pair in AWS consists of a public key stored by AWS and a private key downloaded by the user for secure SSH access to EC2 instances.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">23. What is AWS Auto Scaling?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                AWS Auto Scaling automatically adjusts the number of EC2 instances in response to traffic patterns. Key features include:
+                                <ul>
+                                    <li><strong>Dynamic Scaling:</strong> Automatically increases or decreases the number of instances based on demand.</li>
+                                    <li><strong>Predictive Scaling:</strong> Uses machine learning to anticipate future traffic and scale accordingly.</li>
+                                    <li><strong>Resource Optimization:</strong> Ensures that applications remain responsive while minimizing costs.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Auto Scaling automatically adjusts the number of EC2 instances based on traffic, offering dynamic and predictive scaling for resource optimization.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">24. What is Amazon Elastic File System (EFS)?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon EFS is a fully managed file storage service that provides scalable and elastic file storage for use with AWS services and on-premises resources. Key features include:
+                                <ul>
+                                    <li><strong>NFS Support:</strong> Compatible with the Network File System (NFS) protocol, allowing easy integration with applications.</li>
+                                    <li><strong>Scalability:</strong> Automatically scales as files are added or removed.</li>
+                                    <li><strong>Performance:</strong> Offers low-latency access and high throughput for applications.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon EFS is a fully managed, scalable file storage service that supports NFS and provides low-latency access and automatic scalability.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">25. What is AWS CodeDeploy?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                AWS CodeDeploy is a service that automates code deployments to any instance, including Amazon EC2, Lambda, or on-premises servers. Key benefits include:
+                                <ul>
+                                    <li><strong>Consistent Deployments:</strong> Ensures that applications are deployed in a consistent and predictable manner.</li>
+                                    <li><strong>Rollback Capabilities:</strong> Allows users to quickly roll back to previous versions in case of deployment failures.</li>
+                                    <li><strong>Integration:</strong> Works seamlessly with AWS services such as CodeCommit and CodePipeline.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS CodeDeploy automates code deployments to various instances, ensuring consistency, rollback capabilities, and seamless integration with other AWS services.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">26. What is Amazon SQS?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables decoupling and scaling of microservices and distributed systems. Key features include:
+                                <ul>
+                                    <li><strong>Message Queues:</strong> Allows messages to be sent between components of applications without direct dependencies.</li>
+                                    <li><strong>Scalability:</strong> Automatically scales based on the volume of messages.</li>
+                                    <li><strong>FIFO Queues:</strong> Supports First-In-First-Out (FIFO) queues to ensure order and exactly-once processing.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon SQS is a managed message queuing service that allows for decoupled communication between components, supporting scalability and FIFO queues.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">27. What is Amazon SNS?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon Simple Notification Service (SNS) is a fully managed messaging service that allows for the pub/sub messaging paradigm. Key features include:
+                                <ul>
+                                    <li><strong>Notifications:</strong> Sends messages or alerts to multiple subscribers via SMS, email, or HTTP endpoints.</li>
+                                    <li><strong>Topic-Based:</strong> Users can create topics to which subscribers can publish and receive notifications.</li>
+                                    <li><strong>Integration:</strong> Works with other AWS services and can trigger AWS Lambda functions.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon SNS is a managed messaging service enabling pub/sub messaging, allowing notifications via SMS, email, and HTTP, with topic-based subscriptions.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">28. What is Amazon RDS Multi-AZ?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon RDS Multi-AZ (Availability Zone) deployments provide high availability and failover support for database instances. Key features include:
+                                <ul>
+                                    <li><strong>Standby Instance:</strong> Automatically creates a standby replica in a different Availability Zone.</li>
+                                    <li><strong>Automatic Failover:</strong> In the event of a failure, RDS automatically switches to the standby instance with minimal downtime.</li>
+                                    <li><strong>Backup:</strong> Backups occur on the standby instance, minimizing impact on performance.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon RDS Multi-AZ provides high availability and failover support with standby replicas, automatic failover, and backups on standby instances.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">29. What is Amazon ElastiCache?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon ElastiCache is a fully managed in-memory data store that enhances the performance of applications by providing sub-millisecond response times. It supports two open-source in-memory caching engines: Redis and Memcached. Key benefits include:
+                                <ul>
+                                    <li><strong>Performance:</strong> Reduces latency by caching frequently accessed data.</li>
+                                    <li><strong>Scalability:</strong> Automatically scales to meet demand.</li>
+                                    <li><strong>High Availability:</strong> Offers replication and backup capabilities for resilience.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon ElastiCache is a managed in-memory data store providing high performance and scalability, supporting Redis and Memcached for caching frequently accessed data.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">30. What is AWS Lambda@Edge?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                AWS Lambda@Edge allows users to run Lambda functions at AWS CloudFront edge locations. Key features include:
+                                <ul>
+                                    <li><strong>Low Latency:</strong> Executes code closer to users, reducing latency.</li>
+                                    <li><strong>Custom Responses:</strong> Allows customization of content returned to users based on requests.</li>
+                                    <li><strong>Event-Driven:</strong> Can trigger functions based on CloudFront events such as viewer requests or origin responses.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Lambda@Edge allows execution of Lambda functions at CloudFront edge locations for low latency, customized responses, and event-driven processing.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">31. What is Amazon Kinesis?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon Kinesis is a platform for streaming data on AWS, enabling real-time processing of streaming data. Key components include:
+                                <ul>
+                                    <li><strong>Kinesis Data Streams:</strong> Captures and processes real-time data streams.</li>
+                                    <li><strong>Kinesis Data Firehose:</strong> Delivers streaming data to destinations like S3, Redshift, or Elasticsearch.</li>
+                                    <li><strong>Kinesis Data Analytics:</strong> Analyzes streaming data using standard SQL queries.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Kinesis is a streaming data platform for AWS, enabling real-time data processing through components like Kinesis Data Streams and Data Analytics.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">32. What is AWS CloudTrail?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                AWS CloudTrail is a service that enables governance, compliance, and operational and risk auditing of AWS accounts. Key features include:
+                                <ul>
+                                    <li><strong>Event Logging:</strong> Records AWS API calls and activity across the account.</li>
+                                    <li><strong>Security Analysis:</strong> Helps identify unauthorized access or changes to resources.</li>
+                                    <li><strong>Data Integrity:</strong> Provides visibility into resource changes and user actions.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS CloudTrail records AWS API calls for governance, compliance, and auditing, providing event logging and security analysis capabilities.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">33. What is AWS Config?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Key features include:
+                                <ul>
+                                    <li><strong>Configuration Tracking:</strong> Continuously monitors resource configurations and changes.</li>
+                                    <li><strong>Compliance Checks:</strong> Allows users to define rules to ensure compliance with best practices.</li>
+                                    <li><strong>Change History:</strong> Provides a detailed history of resource configurations for auditing.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Config assesses and audits AWS resource configurations, providing tracking, compliance checks, and change history for auditing.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">34. What is Amazon Inspector?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Key features include:
+                                <ul>
+                                    <li><strong>Automated Assessments:</strong> Runs security assessments against applications to identify vulnerabilities.</li>
+                                    <li><strong>Security Findings:</strong> Provides detailed findings and recommendations for remediation.</li>
+                                    <li><strong>Integration:</strong> Works with other AWS services like AWS Lambda for automated responses.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Inspector is an automated service for security assessments, identifying vulnerabilities and providing findings for remediation.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">35. What is Amazon QuickSight?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon QuickSight is a cloud-powered business analytics service that allows users to create visualizations, perform ad-hoc analysis, and get business insights from data. Key features include:
+                                <ul>
+                                    <li><strong>Data Sources:</strong> Connects to various AWS data sources, including S3, RDS, and Redshift.</li>
+                                    <li><strong>Interactive Dashboards:</strong> Users can create interactive dashboards with rich visualizations.</li>
+                                    <li><strong>SPICE Engine:</strong> An in-memory engine that enables fast performance for large datasets.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon QuickSight is a cloud business analytics service for creating visualizations and dashboards, connecting to various AWS data sources for insights.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">36. What is Amazon CloudWatch Logs?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon CloudWatch Logs enables users to monitor, store, and access log files from Amazon EC2 instances, AWS CloudTrail, and other sources. Key features include:
+                                <ul>
+                                    <li><strong>Log Storage:</strong> Collects and stores log data for real-time monitoring and analysis.</li>
+                                    <li><strong>Log Insights:</strong> Provides powerful search and query capabilities to analyze log data.</li>
+                                    <li><strong>Alarms and Notifications:</strong> Allows users to set alarms based on log data metrics.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon CloudWatch Logs allows monitoring and storage of log files, providing insights and alarms for log data metrics.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">37. What is AWS Systems Manager?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                AWS Systems Manager provides visibility and control of AWS resources. It allows you to automate management tasks, apply security patches, and manage configurations. Key features include:
+                                <ul>
+                                    <li><strong>Unified Interface:</strong> Centralizes management of AWS resources through a single interface.</li>
+                                    <li><strong>Automation:</strong> Automates operational tasks such as instance provisioning and patching.</li>
+                                    <li><strong>Compliance and Security:</strong> Provides insights into resource configurations and compliance.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Systems Manager centralizes AWS resource management, automating tasks, applying patches, and ensuring compliance.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">38. What is AWS CodePipeline?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                AWS CodePipeline is a continuous integration and continuous delivery (CI/CD) service that automates the build, test, and deployment phases of your release process. Key features include:
+                                <ul>
+                                    <li><strong>Workflow Automation:</strong> Integrates with AWS services and third-party tools to automate the software release process.</li>
+                                    <li><strong>Version Control Integration:</strong> Supports GitHub, AWS CodeCommit, and other version control systems.</li>
+                                    <li><strong>Visual Interface:</strong> Provides a visual representation of the pipeline for easier monitoring.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS CodePipeline automates the CI/CD process for software, integrating with AWS services and providing a visual representation of the release pipeline.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">39. What is Amazon Aurora?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon Aurora is a MySQL- and PostgreSQL-compatible relational database service that offers high performance, scalability, and availability. Key features include:
+                                <ul>
+                                    <li><strong>High Performance:</strong> Provides up to five times the performance of standard MySQL databases.</li>
+                                    <li><strong>Multi-Region Replication:</strong> Supports cross-region replication for disaster recovery.</li>
+                                    <li><strong>Automatic Backups:</strong> Continuously backs up data to S3 and enables point-in-time recovery.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Aurora is a relational database service compatible with MySQL and PostgreSQL, offering high performance, scalability, and automatic backups.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                    <li class="question-item">
+                        <div class="question">40. What is Amazon Redshift?</div>
+                        <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                        <div class="answer-container">
+                            <div class="answer">
+                                Amazon Redshift is a fully managed, petabyte-scale data warehouse service designed for analytic workloads. Key features include:
+                                <ul>
+                                    <li><strong>Scalability:</strong> Allows users to scale the data warehouse up or down based on needs.</li>
+                                    <li><strong>Columnar Storage:</strong> Uses columnar storage and data compression to improve query performance.</li>
+                                    <li><strong>Integration with BI Tools:</strong> Easily integrates with business intelligence tools for data analysis.</li>
+                                </ul>
+                            </div>
+                            <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                            <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Redshift is a managed data warehouse service for analytics, offering scalability, columnar storage, and integration with BI tools.')">Check Answer</button>
+                            <div class="feedback"></div>
+                        </div>
+                    </li>
+                
+                        <li class="question-item">
+                            <div class="question">41. What is AWS X-Ray?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS X-Ray is a service that helps developers analyze and debug distributed applications, such as those built using microservices. Key features include:
+                                    <ul>
+                                        <li><strong>Request Tracing:</strong> Tracks requests as they travel through the application, helping identify performance bottlenecks.</li>
+                                        <li><strong>Visualization:</strong> Provides service maps that visualize the relationships between different application components.</li>
+                                        <li><strong>Error Analysis:</strong> Offers insights into errors and latency issues for improved debugging.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS X-Ray helps analyze and debug distributed applications, tracking requests and visualizing relationships between components.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">42. What is AWS Artifact?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Artifact is a central resource for compliance-related information and documentation. It provides:
+                                    <ul>
+                                        <li><strong>Reports:</strong> Access to compliance reports and certifications, such as SOC 1, SOC 2, and ISO.</li>
+                                        <li><strong>Agreements:</strong> Users can manage and view agreements related to their use of AWS services.</li>
+                                        <li><strong>Audit Support:</strong> Facilitates compliance audits by providing relevant documentation.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Artifact is a resource for compliance information, offering reports, agreements, and audit support.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">43. What is the AWS Shared Responsibility Model?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    The AWS Shared Responsibility Model outlines the responsibilities of AWS and its customers regarding security and compliance. Key aspects include:
+                                    <ul>
+                                        <li><strong>AWS Responsibility:</strong> AWS manages security <strong>of</strong> the cloud, including infrastructure, hardware, and software.</li>
+                                        <li><strong>Customer Responsibility:</strong> Customers manage security <strong>in</strong> the cloud, including data protection, access control, and application security.</li>
+                                        <li><strong>Collaboration:</strong> Both parties work together to ensure secure cloud environments.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'The AWS Shared Responsibility Model defines the division of security responsibilities between AWS and its customers.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">44. What is AWS CloudTrail?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS CloudTrail is a service that enables governance, compliance, and operational and risk auditing of AWS accounts. Key features include:
+                                    <ul>
+                                        <li><strong>Event Logging:</strong> Records AWS API calls for account activity tracking.</li>
+                                        <li><strong>Security Analysis:</strong> Helps in identifying unauthorized access or changes to resources.</li>
+                                        <li><strong>Data Integrity:</strong> Provides visibility into resource changes and user actions.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS CloudTrail enables governance and auditing by logging API calls and tracking account activity.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">45. What is Amazon Elastic Kubernetes Service (EKS)?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon EKS is a managed service that simplifies running Kubernetes on AWS. Key features include:
+                                    <ul>
+                                        <li><strong>High Availability:</strong> Automatically manages the availability and scalability of the Kubernetes control plane.</li>
+                                        <li><strong>Integration with AWS Services:</strong> Integrates with other AWS services like IAM, CloudWatch, and VPC.</li>
+                                        <li><strong>Security:</strong> Provides built-in security features such as IAM roles for service accounts.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon EKS is a managed Kubernetes service that provides high availability and integrates with AWS services.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">46. What is Amazon ECS?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Elastic Container Service (ECS) is a fully managed container orchestration service that allows users to run and scale Docker containers on AWS. Key features include:
+                                    <ul>
+                                        <li><strong>Easy Management:</strong> Simplifies the deployment and management of containerized applications.</li>
+                                        <li><strong>Integration:</strong> Works seamlessly with other AWS services like ELB and IAM.</li>
+                                        <li><strong>Task Definitions:</strong> Users define how containers should run using task definitions.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon ECS is a managed container orchestration service for running and scaling Docker containers on AWS.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">47. What is AWS Organizations?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Organizations is a service that allows you to manage multiple AWS accounts centrally. Key features include:
+                                    <ul>
+                                        <li><strong>Account Management:</strong> Create and manage multiple accounts within a single organization.</li>
+                                        <li><strong>Policy Management:</strong> Apply service control policies (SCPs) to manage permissions across accounts.</li>
+                                        <li><strong>Consolidated Billing:</strong> Simplifies billing by consolidating costs across multiple accounts.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Organizations allows central management of multiple AWS accounts, including account and policy management.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">48. What is AWS WAF?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Web Application Firewall (WAF) is a service that protects web applications from common web exploits. Key features include:
+                                    <ul>
+                                        <li><strong>Traffic Filtering:</strong> Allows users to create rules to filter incoming traffic based on IP addresses, HTTP headers, and more.</li>
+                                        <li><strong>Integration with CloudFront:</strong> Works seamlessly with Amazon CloudFront for content delivery.</li>
+                                        <li><strong>Protection Against DDoS Attacks:</strong> Helps mitigate attacks targeting web applications.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS WAF protects web applications from exploits by filtering incoming traffic and integrates with CloudFront.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">49. What is AWS Shield?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Shield is a managed DDoS protection service that safeguards applications running on AWS. Key features include:
+                                    <ul>
+                                        <li><strong>Automatic Protection:</strong> Provides protection against common DDoS attacks.</li>
+                                        <li><strong>Shield Advanced:</strong> Offers additional features like advanced attack detection and DDoS cost protection.</li>
+                                        <li><strong>Integration with AWS Services:</strong> Works with AWS services like CloudFront and Route 53.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Shield offers managed DDoS protection for AWS applications, with advanced features for threat detection.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">50. What is AWS Config?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Key features include:
+                                    <ul>
+                                        <li><strong>Configuration Tracking:</strong> Continuously monitors resource configurations and changes.</li>
+                                        <li><strong>Compliance Checks:</strong> Allows users to define rules to ensure compliance with best practices.</li>
+                                        <li><strong>Change History:</strong> Provides a detailed history of resource configurations for auditing.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Config monitors and evaluates AWS resource configurations for compliance and auditing purposes.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">51. What is AWS CloudFormation Stack?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    A stack is a collection of AWS resources that you create and manage as a single unit using AWS CloudFormation. Key points include:
+                                    <ul>
+                                        <li><strong>Resource Management:</strong> Users can create, update, or delete all resources in a stack as a single operation.</li>
+                                        <li><strong>Template-Based:</strong> Stacks are defined by CloudFormation templates written in JSON or YAML.</li>
+                                        <li><strong>Nested Stacks:</strong> Users can create stacks that reference other stacks for better organization.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'A CloudFormation Stack is a collection of AWS resources managed as a single unit, defined by templates.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">52. What is Amazon SageMaker?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon SageMaker is a fully managed service that provides tools for building, training, and deploying machine learning models. Key features include:
+                                    <ul>
+                                        <li><strong>Integrated Development Environment (IDE):</strong> Provides Jupyter notebooks for data exploration and model building.</li>
+                                        <li><strong>Training and Tuning:</strong> Offers built-in algorithms and automatic model tuning capabilities.</li>
+                                        <li><strong>Deployment Options:</strong> Simplifies the deployment of models to production.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon SageMaker is a managed service for building, training, and deploying machine learning models.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">53. What is Amazon Macie?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Macie is a data security and privacy service that uses machine learning to discover, classify, and protect sensitive data stored in Amazon S3. Key features include:
+                                    <ul>
+                                        <li><strong>Data Classification:</strong> Automatically identifies and categorizes sensitive data, such as PII (Personally Identifiable Information).</li>
+                                        <li><strong>Security Alerts:</strong> Provides alerts for potential security risks related to data exposure.</li>
+                                        <li><strong>Integration with AWS Services:</strong> Works with AWS CloudTrail and AWS Lambda for incident response.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Macie uses machine learning to classify and protect sensitive data in Amazon S3.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">54. What is AWS Budgets?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Budgets allows you to set custom cost and usage budgets for your AWS resources. Key features include:
+                                    <ul>
+                                        <li><strong>Cost Management:</strong> Helps you monitor and control AWS spending against budgeted amounts.</li>
+                                        <li><strong>Alerts and Notifications:</strong> Sends alerts when your usage exceeds or is forecasted to exceed your budget.</li>
+                                        <li><strong>Tracking Multiple Budgets:</strong> Supports tracking multiple budgets for various cost categories.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Budgets enables users to set and track custom cost and usage budgets for AWS resources.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">55. What is AWS AppSync?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS AppSync is a fully managed service that makes it easy to develop GraphQL APIs by handling the heavy lifting of securely connecting to data sources. Key features include:
+                                    <ul>
+                                        <li><strong>Real-time Data Sync:</strong> Supports real-time updates for applications.</li>
+                                        <li><strong>Offline Capabilities:</strong> Allows applications to work offline and sync data when connected.</li>
+                                        <li><strong>Integration with AWS Services:</strong> Easily connects to AWS data sources like DynamoDB, Lambda, and Elasticsearch.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS AppSync simplifies GraphQL API development with real-time sync and offline capabilities.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">56. What is Amazon Comprehend?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. Key features include:
+                                    <ul>
+                                        <li><strong>Entity Recognition:</strong> Identifies key entities such as people, places, and organizations in text.</li>
+                                        <li><strong>Sentiment Analysis:</strong> Determines the sentiment of the text (positive, negative, neutral).</li>
+                                        <li><strong>Topic Modeling:</strong> Groups documents by topics for easier analysis.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Comprehend is an NLP service that finds insights in text through entity recognition and sentiment analysis.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">57. What is Amazon Rekognition?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Rekognition is a service that makes it easy to add image and video analysis to applications using deep learning. Key features include:
+                                    <ul>
+                                        <li><strong>Face Recognition:</strong> Identifies and verifies individuals in images and videos.</li>
+                                        <li><strong>Object and Scene Detection:</strong> Recognizes thousands of objects and scenes in images.</li>
+                                        <li><strong>Real-time Analysis:</strong> Supports real-time analysis of streaming video for security and monitoring applications.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Rekognition enables image and video analysis using deep learning techniques.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">58. What is Amazon Lex?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Lex is a service for building conversational interfaces into any application using voice and text. Key features include:
+                                    <ul>
+                                        <li><strong>Natural Language Understanding (NLU):</strong> Understands user input in natural language.</li>
+                                        <li><strong>Integration with AWS Services:</strong> Easily integrates with AWS Lambda for backend processing.</li>
+                                        <li><strong>Multi-Platform Support:</strong> Can be deployed on platforms like Facebook Messenger and Slack.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Lex builds conversational interfaces using NLU and integrates with AWS services.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">59. What is AWS Data Pipeline?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Data Pipeline is a web service that helps you process and move data between different AWS compute and storage services. Key features include:
+                                    <ul>
+                                        <li><strong>Data Movement:</strong> Enables periodic data transfer between AWS services and on-premises data sources.</li>
+                                        <li><strong>Scheduling:</strong> Allows users to schedule and manage data workflows.</li>
+                                        <li><strong>Error Handling:</strong> Provides error handling and retries for failed tasks.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Data Pipeline enables data processing and movement across AWS services with scheduling and error handling.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">60. What is Amazon Elastic Transcoder?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Elastic Transcoder is a service that makes it easy to convert media files from their source format into versions that will playback on devices like smartphones, tablets, and PCs. Key features include:
+                                    <ul>
+                                        <li><strong>Easy Setup:</strong> Users can quickly create transcoding pipelines.</li>
+                                        <li><strong>Custom Presets:</strong> Supports custom presets for different output formats.</li>
+                                        <li><strong>Integration with S3:</strong> Automatically stores output files in Amazon S3.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Elastic Transcoder converts media files for playback on various devices, supporting custom presets and S3 integration.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                        <li class="question-item">
+                            <div class="question">61. What is AWS Step Functions?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Step Functions is a serverless orchestration service that allows you to coordinate multiple AWS services into serverless workflows. Key features include:
+                                    <ul>
+                                        <li><strong>Visual Workflows:</strong> Users can design workflows visually to represent processes.</li>
+                                        <li><strong>Error Handling:</strong> Automatically retries failed tasks and provides error handling.</li>
+                                        <li><strong>Integration with AWS Services:</strong> Seamlessly integrates with services like Lambda, ECS, and DynamoDB.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Step Functions coordinates multiple AWS services into serverless workflows with visual design and error handling.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">62. What is Amazon Kinesis Data Firehose?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Kinesis Data Firehose is a fully managed service that delivers real-time streaming data to destinations such as Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service. Key features include:
+                                    <ul>
+                                        <li><strong>Data Transformation:</strong> Supports transformation of data before it is loaded into destinations.</li>
+                                        <li><strong>Buffering:</strong> Automatically buffers incoming streaming data and manages the delivery process.</li>
+                                        <li><strong>Scaling:</strong> Automatically scales to match the throughput of incoming data.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Kinesis Data Firehose delivers real-time streaming data to destinations with transformation and automatic scaling.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">63. What is Amazon OpenSearch Service?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon OpenSearch Service is a managed service that simplifies running OpenSearch (formerly known as Amazon Elasticsearch Service). Key features include:
+                                    <ul>
+                                        <li><strong>Search and Analytics:</strong> Enables real-time search and analytics capabilities for large datasets.</li>
+                                        <li><strong>Scalability:</strong> Automatically scales based on demand.</li>
+                                        <li><strong>Security Features:</strong> Includes built-in security features such as encryption and access control.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon OpenSearch Service simplifies running OpenSearch with real-time search and analytics, scalability, and security features.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">64. What is Amazon Chime?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Chime is a communications service that lets you meet, chat, and place business calls inside and outside your organization. Key features include:
+                                    <ul>
+                                        <li><strong>Video Conferencing:</strong> Supports HD video conferencing for virtual meetings.</li>
+                                        <li><strong>Screen Sharing:</strong> Allows users to share screens for presentations and collaborations.</li>
+                                        <li><strong>Integration with AWS Services:</strong> Integrates with AWS services for enhanced functionalities.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Chime enables communication with HD video conferencing, screen sharing, and integration with AWS services.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">65. What is Amazon Elastic Block Store (EBS)?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon EBS is a block storage service designed for use with Amazon EC2. Key features include:
+                                    <ul>
+                                        <li><strong>Persistent Storage:</strong> Provides durable and high-performance block storage for EC2 instances.</li>
+                                        <li><strong>Snapshots:</strong> Supports point-in-time snapshots for backup and recovery.</li>
+                                        <li><strong>Scalability:</strong> Allows users to scale storage based on application needs.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon EBS offers persistent block storage for EC2 with snapshots and scalability options.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">66. What is Amazon Route 53?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Route 53 is a scalable Domain Name System (DNS) web service designed to provide highly available and reliable DNS routing. Key features include:
+                                    <ul>
+                                        <li><strong>Domain Registration:</strong> Allows users to register domain names and manage DNS records.</li>
+                                        <li><strong>Traffic Management:</strong> Provides traffic routing policies for directing user requests to applications.</li>
+                                        <li><strong>Health Checks:</strong> Monitors the health of resources to route traffic accordingly.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Route 53 is a DNS web service for domain registration, traffic management, and health checks.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">67. What is AWS Service Catalog?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Service Catalog enables organizations to create and manage catalogs of IT services that are approved for use on AWS. Key features include:
+                                    <ul>
+                                        <li><strong>Portfolio Management:</strong> Users can create portfolios to manage multiple products.</li>
+                                        <li><strong>Access Control:</strong> Provides fine-grained access control for different user roles.</li>
+                                        <li><strong>Provisioning:</strong> Automates the provisioning of services and resources.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Service Catalog helps manage approved IT service catalogs with portfolio management and access control.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">68. What is Amazon CloudFront?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency. Key features include:
+                                    <ul>
+                                        <li><strong>Global Network:</strong> Uses a network of edge locations to cache and deliver content closer to users.</li>
+                                        <li><strong>Security:</strong> Integrates with AWS Shield and AWS WAF for enhanced security.</li>
+                                        <li><strong>Customizable:</strong> Offers customizable caching and content delivery options.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon CloudFront is a CDN for fast content delivery globally with security and customization options.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">69. What is AWS Fargate?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Fargate is a serverless compute engine for containers that works with both Amazon ECS and Amazon EKS. Key features include:
+                                    <ul>
+                                        <li><strong>Serverless Containers:</strong> Users don’t need to manage servers; Fargate automatically provisions and scales compute resources.</li>
+                                        <li><strong>Flexible Scaling:</strong> Scales up or down based on application requirements.</li>
+                                        <li><strong>Integration:</strong> Works seamlessly with ECS and EKS for container orchestration.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Fargate is a serverless engine for container orchestration with ECS and EKS, offering flexible scaling.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">70. What is AWS IQ?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS IQ is a platform that connects AWS customers with AWS certified freelancers for project-based work. Key features include:
+                                    <ul>
+                                        <li><strong>Expertise on Demand:</strong> Allows users to find and hire AWS experts for specific projects.</li>
+                                        <li><strong>Secure Payments:</strong> Provides a secure payment platform for transactions.</li>
+                                        <li><strong>Quality Assurance:</strong> Ensures freelancers are AWS certified for reliability.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS IQ connects customers with certified freelancers for project work, ensuring expertise and secure payments.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">71. What is Amazon Athena?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Key features include:
+                                    <ul>
+                                        <li><strong>Serverless:</strong> No infrastructure management is required; users only pay for the queries they run.</li>
+                                        <li><strong>Integration with S3:</strong> Directly queries data stored in S3 without the need for data movement.</li>
+                                        <li><strong>Quick Insights:</strong> Provides fast query performance for data analysis.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Athena allows SQL querying of data in S3 with a serverless model and fast performance.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">72. What is Amazon EBS Snapshots?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon EBS Snapshots are point-in-time backups of EBS volumes stored in Amazon S3. Key features include:
+                                    <ul>
+                                        <li><strong>Incremental Backups:</strong> Only changes made since the last snapshot are saved, reducing storage costs.</li>
+                                        <li><strong>Restoration:</strong> Allows users to restore EBS volumes from snapshots quickly.</li>
+                                        <li><strong>Cross-Region Copying:</strong> Supports copying snapshots to other AWS regions for disaster recovery.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon EBS Snapshots are incremental backups of EBS volumes in S3, enabling quick restoration and cross-region copying.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">73. What is AWS Outposts?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Outposts is a fully managed service that extends AWS infrastructure, services, APIs, and tools to virtually any customer data center. Key features include:
+                                    <ul>
+                                        <li><strong>Local Compute and Storage:</strong> Allows users to run AWS services on-premises for low-latency applications.</li>
+                                        <li><strong>Consistent Hybrid Experience:</strong> Provides a consistent experience between on-premises and cloud resources.</li>
+                                        <li><strong>Integration:</strong> Supports services like Amazon EC2, EBS, and RDS.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Outposts extends AWS services to on-premises environments, offering a consistent hybrid experience and local resources.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">74. What is Amazon Elastic Container Registry (ECR)?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Elastic Container Registry (ECR) is a fully managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images. Key features include:
+                                    <ul>
+                                        <li><strong>Integrated with ECS and EKS:</strong> Seamlessly integrates with Amazon ECS and EKS for container orchestration.</li>
+                                        <li><strong>Scalability:</strong> Automatically scales to meet the demands of container deployments.</li>
+                                        <li><strong>Security:</strong> Provides encryption at rest and in transit for container images.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon ECR is a managed Docker container registry integrated with ECS and EKS, providing scalability and security.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">75. What is AWS Snowball?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Snowball is a data transport solution that helps securely transfer large amounts of data into and out of AWS. Key features include:
+                                    <ul>
+                                        <li><strong>Physical Appliance:</strong> Uses a secure physical device to transfer data, bypassing internet bandwidth limitations.</li>
+                                        <li><strong>Data Encryption:</strong> Ensures that all data is encrypted during transit.</li>
+                                        <li><strong>Integration with AWS Services:</strong> Supports data transfer to services like S3 and Glacier.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Snowball is a physical data transport solution for transferring large data securely to and from AWS.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">76. What is Amazon Timestream?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Timestream is a fully managed time series database service designed for IoT and operational applications. Key features include:
+                                    <ul>
+                                        <li><strong>Time Series Data Management:</strong> Efficiently stores and queries time series data.</li>
+                                        <li><strong>Built-in Analytics:</strong> Provides built-in analytics functions for time series data.</li>
+                                        <li><strong>Scalability:</strong> Automatically scales to accommodate changing workloads.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Timestream is a managed time series database for IoT and operational data with built-in analytics and scalability.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">77. What is AWS CloudTrail Lake?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS CloudTrail Lake is a feature of AWS CloudTrail that allows users to analyze and query CloudTrail event data. Key features include:
+                                    <ul>
+                                        <li><strong>Data Lake for Event Data:</strong> Centralizes CloudTrail logs for easier analysis.</li>
+                                        <li><strong>SQL Queries:</strong> Allows users to run SQL queries on CloudTrail event data.</li>
+                                        <li><strong>Compliance and Security:</strong> Helps organizations meet compliance and security needs through event analysis.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS CloudTrail Lake is a feature for analyzing CloudTrail event data with SQL queries for compliance and security.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">78. What is AWS Control Tower?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    AWS Control Tower is a service that provides a simple way to set up and govern a secure, multi-account AWS environment based on AWS best practices. Key features include:
+                                    <ul>
+                                        <li><strong>Landing Zone Setup:</strong> Automates the setup of an AWS multi-account environment.</li>
+                                        <li><strong>Governance:</strong> Provides pre-packaged guardrails for governance and compliance.</li>
+                                        <li><strong>Dashboard:</strong> Offers a dashboard for visibility into accounts and compliance status.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Control Tower simplifies the setup and governance of multi-account AWS environments with automated landing zones and dashboards.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">79. What is Amazon S3 Glacier?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon S3 Glacier is a low-cost cloud storage service for data archiving and long-term backup. Key features include:
+                                    <ul>
+                                        <li><strong>Cost-Effective Storage:</strong> Provides low-cost storage for infrequently accessed data.</li>
+                                        <li><strong>Flexible Retrieval Options:</strong> Supports multiple retrieval options ranging from minutes to hours.</li>
+                                        <li><strong>Data Encryption:</strong> Ensures data is encrypted both in transit and at rest.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon S3 Glacier offers low-cost storage for archiving data with flexible retrieval options and strong encryption.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                        <li class="question-item">
+                            <div class="question">80. What is Amazon Connect?</div>
+                            <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                            <div class="answer-container">
+                                <div class="answer">
+                                    Amazon Connect is a cloud-based contact center service that makes it easy for businesses to deliver better customer service at lower cost. Key features include:
+                                    <ul>
+                                        <li><strong>Easy Setup:</strong> Users can set up a contact center in minutes.</li>
+                                        <li><strong>Omni-channel Support:</strong> Supports voice, chat, and task management.</li>
+                                        <li><strong>AI Integration:</strong> Integrates with AI services like Amazon Lex for natural language interactions.</li>
+                                    </ul>
+                                </div>
+                                <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Connect is a cloud contact center service enabling quick setup, omni-channel support, and AI integration for customer service.')">Check Answer</button>
+                                <div class="feedback"></div>
+                            </div>
+                        </li>
+                    
+                            <li class="question-item">
+                                <div class="question">81. What is AWS Well-Architected Tool?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        The AWS Well-Architected Tool helps you review the state of your workloads and compare them against AWS architectural best practices. Key features include:
+                                        <ul>
+                                            <li><strong>Frameworks:</strong> Provides access to the Well-Architected Framework pillars.</li>
+                                            <li><strong>Workload Reviews:</strong> Users can perform workload reviews and receive best practice recommendations.</li>
+                                            <li><strong>Improvement Plans:</strong> Helps create actionable improvement plans based on assessments.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'The AWS Well-Architected Tool reviews workloads against AWS best practices with frameworks and improvement plans.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">82. What is Amazon MQ?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon MQ is a managed message broker service for Apache ActiveMQ that makes it easy to set up and operate message brokers in the cloud. Key features include:
+                                        <ul>
+                                            <li><strong>Fully Managed:</strong> Automates tasks like patching and monitoring.</li>
+                                            <li><strong>Supports Multiple Protocols:</strong> Supports protocols like JMS, NMS, and MQTT.</li>
+                                            <li><strong>Scalability:</strong> Easily scales to meet changing application demands.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon MQ is a managed message broker for Apache ActiveMQ with support for multiple protocols and scalability.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">83. What is AWS CodePipeline?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        AWS CodePipeline is a continuous integration and continuous delivery (CI/CD) service for fast and reliable application updates. Key features include:
+                                        <ul>
+                                            <li><strong>Automated Workflow:</strong> Models and automates the steps required to release software.</li>
+                                            <li><strong>Integration with AWS Services:</strong> Works with services like CodeBuild, CodeDeploy, and Lambda.</li>
+                                            <li><strong>Custom Actions:</strong> Users can define custom actions in the pipeline.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS CodePipeline automates CI/CD workflows for faster application updates, integrating with other AWS services.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">84. What is AWS Systems Manager?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        AWS Systems Manager is a unified interface for managing AWS resources. Key features include:
+                                        <ul>
+                                            <li><strong>Operational Data Management:</strong> Aggregates data from multiple AWS services into a single view.</li>
+                                            <li><strong>Automation:</strong> Automates tasks such as instance management and patching.</li>
+                                            <li><strong>Parameter Store:</strong> Provides a centralized store to manage configuration data and secrets.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Systems Manager provides a unified interface for managing AWS resources and automating operations.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">85. What is AWS App Runner?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        AWS App Runner is a fully managed service that makes it easy to quickly deploy containerized web applications and APIs at scale. Key features include:
+                                        <ul>
+                                            <li><strong>No Infrastructure Management:</strong> Users do not need to manage servers or infrastructure.</li>
+                                            <li><strong>Automatic Scaling:</strong> Automatically scales applications based on incoming traffic.</li>
+                                            <li><strong>Integration with CI/CD:</strong> Easily integrates with code repositories for continuous deployment.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS App Runner enables quick deployment of containerized applications with automatic scaling and CI/CD integration.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">86. What is Amazon Elastic File System (EFS)?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon Elastic File System (EFS) is a fully managed file storage service that provides scalable file storage for use with Amazon EC2. Key features include:
+                                        <ul>
+                                            <li><strong>Scalability:</strong> Automatically scales up or down as files are added or removed.</li>
+                                            <li><strong>File System Access:</strong> Provides file system access across multiple EC2 instances.</li>
+                                            <li><strong>Performance Modes:</strong> Offers different performance modes to suit application needs.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon EFS is a scalable file storage service for EC2, providing file system access and different performance modes.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">87. What is AWS Glue?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy to prepare data for analytics. Key features include:
+                                        <ul>
+                                            <li><strong>Data Catalog:</strong> Automatically catalogs data from various sources for easy discovery.</li>
+                                            <li><strong>Job Scheduling:</strong> Allows users to schedule ETL jobs to run on a defined schedule.</li>
+                                            <li><strong>Serverless:</strong> No infrastructure management is required; users pay only for the resources consumed.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Glue is a serverless ETL service that automates data preparation with a data catalog and job scheduling.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">88. What is Amazon QuickSight?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon QuickSight is a cloud-powered business intelligence (BI) service that makes it easy to deliver insights to everyone in your organization. Key features include:
+                                        <ul>
+                                            <li><strong>Interactive Dashboards:</strong> Users can create interactive dashboards and visualizations.</li>
+                                            <li><strong>ML Insights:</strong> Provides machine learning insights to identify trends and patterns.</li>
+                                            <li><strong>Pay-as-You-Go Pricing:</strong> Flexible pricing model based on usage.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon QuickSight is a cloud BI service offering interactive dashboards and machine learning insights with pay-as-you-go pricing.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">89. What is Amazon Kinesis Data Analytics?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon Kinesis Data Analytics is a service that enables users to process and analyze streaming data in real time. Key features include:
+                                        <ul>
+                                            <li><strong>SQL Queries:</strong> Allows users to run SQL queries on streaming data.</li>
+                                            <li><strong>Real-time Insights:</strong> Provides real-time insights from streaming data sources.</li>
+                                            <li><strong>Integration with Kinesis:</strong> Works seamlessly with Amazon Kinesis Data Streams and Kinesis Data Firehose.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Kinesis Data Analytics processes streaming data in real time, allowing SQL queries and seamless integration with Kinesis services.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">90. What is AWS Cloud9?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        AWS Cloud9 is a cloud-based integrated development environment (IDE) that enables developers to write, run, and debug code with just a browser. Key features include:
+                                        <ul>
+                                            <li><strong>Collaborative Development:</strong> Allows multiple users to collaborate in real time.</li>
+                                            <li><strong>Preconfigured Environments:</strong> Provides preconfigured environments with necessary tools and libraries.</li>
+                                            <li><strong>Terminal Access:</strong> Includes a built-in terminal for AWS CLI commands.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Cloud9 is a cloud IDE for code development with collaborative features and terminal access for AWS CLI.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">91. What is Amazon Simple Notification Service (SNS)?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon SNS is a fully managed messaging service for both application-to-application and application-to-person communication. Key features include:
+                                        <ul>
+                                            <li><strong>Pub/Sub Messaging:</strong> Supports publish-subscribe messaging patterns.</li>
+                                            <li><strong>Multiple Protocols:</strong> Delivers messages via SMS, email, and HTTP endpoints.</li>
+                                            <li><strong>Scalability:</strong> Automatically scales to handle any volume of messages.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon SNS is a messaging service for app communication, supporting pub/sub patterns and multiple delivery protocols.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">92. What is AWS CodeCommit?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        AWS CodeCommit is a fully managed source control service that makes it easy for teams to host secure and scalable Git repositories. Key features include:
+                                        <ul>
+                                            <li><strong>Secure Repositories:</strong> Provides encryption for data at rest and in transit.</li>
+                                            <li><strong>Integration with CI/CD:</strong> Works seamlessly with other AWS services for CI/CD workflows.</li>
+                                            <li><strong>Scalability:</strong> Automatically scales to handle the size of repositories and the number of requests.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS CodeCommit is a managed Git service for hosting secure repositories with CI/CD integration and scalability.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">93. What is Amazon RDS Proxy?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon RDS Proxy is a fully managed, highly available database proxy that makes applications more scalable, more resilient to database failures, and more secure. Key features include:
+                                        <ul>
+                                            <li><strong>Connection Pooling:</strong> Manages connections to RDS databases for improved scalability.</li>
+                                            <li><strong>Failover Handling:</strong> Automatically detects database failures and reroutes connections.</li>
+                                            <li><strong>Integration with IAM:</strong> Supports IAM for enhanced security.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon RDS Proxy is a managed database proxy enhancing scalability, failover handling, and security with IAM integration.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">94. What is Amazon Transcribe?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon Transcribe is an automatic speech recognition (ASR) service that makes it easy to add speech-to-text capability to applications. Key features include:
+                                        <ul>
+                                            <li><strong>Real-time Transcription:</strong> Supports real-time transcription of audio streams.</li>
+                                            <li><strong>Custom Vocabulary:</strong> Allows users to create custom vocabulary for specific terms.</li>
+                                            <li><strong>Speaker Identification:</strong> Identifies and differentiates between multiple speakers.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Transcribe is an ASR service for converting speech to text in real time, with custom vocabulary and speaker identification.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">95. What is Amazon Elastic Inference?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon Elastic Inference is a service that lets you attach low-cost GPU-powered inference acceleration to Amazon EC2 instances. Key features include:
+                                        <ul>
+                                            <li><strong>Cost Savings:</strong> Reduces the cost of running deep learning inference.</li>
+                                            <li><strong>Flexible Scaling:</strong> Allows users to attach and detach GPUs based on requirements.</li>
+                                            <li><strong>Support for Popular Frameworks:</strong> Works with TensorFlow, MXNet, and PyTorch.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Elastic Inference provides low-cost GPU acceleration for EC2 instances, supporting flexible scaling and popular frameworks.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">96. What is AWS DataSync?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        AWS DataSync is a data transfer service that automates moving data between on-premises storage and AWS storage services. Key features include:
+                                        <ul>
+                                            <li><strong>Fast Transfer:</strong> Accelerates the transfer of large amounts of data to AWS.</li>
+                                            <li><strong>Automated Scheduling:</strong> Allows users to automate data transfer on a schedule.</li>
+                                            <li><strong>Encryption:</strong> Ensures data is encrypted in transit and at rest.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS DataSync automates data transfer between on-premises storage and AWS, ensuring fast transfer and encryption.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">97. What is Amazon Managed Blockchain?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon Managed Blockchain is a fully managed service that makes it easy to create and manage scalable blockchain networks. Key features include:
+                                        <ul>
+                                            <li><strong>Multiple Frameworks:</strong> Supports popular frameworks like Hyperledger Fabric and Ethereum.</li>
+                                            <li><strong>Automatic Scaling:</strong> Automatically scales the infrastructure to support network demands.</li>
+                                            <li><strong>Governance and Security:</strong> Provides built-in governance features for managing access and permissions.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon Managed Blockchain is a service for creating and managing blockchain networks with support for multiple frameworks and automatic scaling.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">98. What is AWS Transfer Family?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        AWS Transfer Family is a fully managed service that enables the transfer of files into and out of AWS storage services using SFTP, FTPS, and FTP. Key features include:
+                                        <ul>
+                                            <li><strong>Integration with S3:</strong> Directly transfers files to and from Amazon S3.</li>
+                                            <li><strong>Security:</strong> Provides encryption for data in transit and at rest.</li>
+                                            <li><strong>User Management:</strong> Supports user management through AWS Identity and Access Management (IAM).</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Transfer Family is a service for file transfers using SFTP, FTPS, and FTP, integrated with S3 and IAM for security.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">99. What is Amazon WorkSpaces?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        Amazon WorkSpaces is a fully managed, secure Desktop-as-a-Service (DaaS) solution that helps you provision Windows or Linux desktops for your users. Key features include:
+                                        <ul>
+                                            <li><strong>Flexibility:</strong> Users can access their desktops from any device.</li>
+                                            <li><strong>Scalability:</strong> Easily scales to meet the needs of your organization.</li>
+                                            <li><strong>Cost-Effective:</strong> Offers pay-as-you-go pricing to optimize costs.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'Amazon WorkSpaces is a managed DaaS solution for provisioning secure Windows or Linux desktops with flexibility and scalability.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        
+                            <li class="question-item">
+                                <div class="question">100. What is AWS Global Accelerator?</div>
+                                <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+                                <div class="answer-container">
+                                    <div class="answer">
+                                        AWS Global Accelerator is a networking service that improves the availability and performance of your applications with global users. Key features include:
+                                        <ul>
+                                            <li><strong>Static IP Addresses:</strong> Provides two static IP addresses that act as a fixed entry point for applications.</li>
+                                            <li><strong>Traffic Management:</strong> Directs user traffic to optimal endpoints based on health and performance.</li>
+                                            <li><strong>Improved Performance:</strong> Reduces latency by routing traffic over the AWS global network.</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+                                    <button class="check-answer-btn" onclick="checkAnswer(this, 'AWS Global Accelerator is a networking service that enhances application availability and performance globally, with static IPs and traffic management.')">Check Answer</button>
+                                    <div class="feedback"></div>
+                                </div>
+                            </li>
+                        </ol>
+                        
+                       
+                        
+            
+</div>
+<script src="script.js"></script>
+<script>
+    function toggleAnswer(button) {
+        const questionItem = button.closest('.question-item');
+        const answerContainers = document.querySelectorAll('.answer-container');
+
+        answerContainers.forEach(container => {
+            if (container !== questionItem.querySelector('.answer-container')) {
+                container.parentElement.classList.remove('active');
+            }
+        });
+
+        
+        questionItem.classList.toggle('active');
+    }
+
+    function checkAnswer(button, correctAnswer) {
+        const userAnswer = button.previousElementSibling.value.trim().toLowerCase();
+        const correctAnswerText = correctAnswer.toLowerCase();
+        const feedback = button.nextElementSibling;
+        const answerContainer = button.closest('.answer-container');
+        const answer = answerContainer.querySelector('.answer');
+
+        answer.style.display = "block"; 
+
+
+        if (userAnswer.includes("html stands for hypertext markup language") && userAnswer.includes("structure content on the web")) {
+            feedback.textContent = "Your answer is almost correct! Check the full answer for any additional points.";
+            feedback.className = "feedback correct";
+        } else {
+            feedback.textContent = "Please check the correct answer and try again.";
+            feedback.className = "feedback incorrect";
+        }
+
+        feedback.style.display = "block"; 
+    }
+</script>        
+
+
+
+

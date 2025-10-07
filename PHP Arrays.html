@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>PHP course</title>
+   
+   
+   
+</head>
+<body class="body">
+
+   
+    
+    
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> PHP Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> PHP Quiz
+            </button>
+        </div></div>
+    </header>
+    
+      
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-php" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">PHP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+   
+    
+        <a href="php Roadmaps.html" target="_blank"><b class="b12">PHP Roadmap</b></a>
+        
+        <ul>
+            <a href="Introduction to PHP.html">Introduction to PHP</a>
+            <li><a href="What is PHP.html">What is PHP?</a></li>
+            <li><a href="Setting up PHP environment.html">Setting up PHP environment</a></li>
+            <li><a href="Basic PHP Syntax.html">Basic PHP Syntax</a></li>
+        </ul>
+    
+        <h3>PHP Variables</h3>
+        <a href="PHP Variables.html">PHP Variables</a>
+        <ul>
+            <li><a href="Data Types.html">Data Types</a></li>
+            <li><a href="PHP Constants.html">PHP Constants</a></li>
+            <li><a href="String Manipulation.html">String Manipulation</a></li>
+        </ul>
+    
+        <h3>Control Structures</h3>
+        <a href="Control Structures in PHP.html">Control Structures in PHP</a>
+        <ul>
+            <li><a href="If Else Statements.html">If Else Statements</a></li>
+            <li><a href="Switch Statements.html">Switch Statements</a></li>
+            <li><a href="Loops in PHP.html">Loops in PHP</a></li>
+        </ul>
+    
+        <h3>Functions</h3>
+        <a href="Functions in PHP.html">Functions in PHP</a>
+        <ul>
+            <li><a href="Creating Functions.html">Creating Functions</a></li>
+            <li><a href="Function Parameters.html">Function Parameters</a></li>
+            <li><a href="Returning Values.html">Returning Values</a></li>
+        </ul>
+    
+        <h3>Arrays</h3>
+        <a href="PHP Arrays.html">PHP Arrays</a>
+        <ul>
+            <li><a href="Indexed Arrays.html">Indexed Arrays</a></li>
+            <li><a href="Associative Arrays.html">Associative Arrays</a></li>
+            <li><a href="Multidimensional Arrays.html">Multidimensional Arrays</a></li>
+        </ul>
+    
+        <h3>Object-Oriented PHP</h3>
+        <a href="Object Oriented PHP.html">Object Oriented PHP</a>
+        <ul>
+            <li><a href="Classes and Objects.html">Classes and Objects</a></li>
+            <li><a href="Inheritance in PHP.html">Inheritance in PHP</a></li>
+            <li><a href="Polymorphism.html">Polymorphism</a></li>
+            <li><a href="PHP Interfaces and Traits.html">Interfaces and Traits</a></li>
+        </ul>
+    
+        <h3>Form Handling</h3>
+        <a href="PHP Forms Handling.html">PHP Forms Handling</a>
+        <ul>
+            <li><a href="GET and POST Methods.html">GET and POST Methods</a></li>
+            <li><a href="Form Validation.html">Form Validation</a></li>
+            <li><a href="Form Security.html">Form Security</a></li>
+        </ul>
+    
+        <h3>Sessions & Cookies</h3>
+        <a href="PHP Sessions and Cookies.html">Sessions and Cookies</a>
+        <ul>
+            <li><a href="Session Management.html">Session Management</a></li>
+            <li><a href="Working with Cookies.html">Working with Cookies</a></li>
+        </ul>
+    
+        <h3>PHP & MySQL</h3>
+        <a href="PHP and MySQL.html">PHP and MySQL</a>
+        <ul>
+            <li><a href="Connecting to a Database.html">Connecting to a Database</a></li>
+            <li><a href="CRUD Operations.html">CRUD Operations</a></li>
+            <li><a href="Prepared Statements.html">Prepared Statements</a></li>
+            <li><a href="MySQLi and PDO.html">MySQLi and PDO</a></li>
+        </ul>
+    
+        <h3>File Handling</h3>
+        <a href="File Handling in PHP.html">File Handling in PHP</a>
+        <ul>
+            <li><a href="Reading Files.html">Reading Files</a></li>
+            <li><a href="Writing Files.html">Writing Files</a></li>
+            <li><a href="File Uploads.html">File Uploads</a></li>
+        </ul>
+    
+        <h3>Error Handling</h3>
+        <a href="PHP Error Handling.html">Error Handling</a>
+        <ul>
+            <li><a href="Try Catch Blocks.html">Try Catch Blocks</a></li>
+            <li><a href="Error Logging.html">Error Logging</a></li>
+        </ul>
+    
+        <h3>Advanced PHP Topics</h3>
+        <a href="Advanced PHP Topics.html">Advanced PHP Topics</a>
+        <ul>
+            <li><a href="PHP Regular Expressions.html">PHP Regular Expressions</a></li>
+            <li><a href="Handling JSON Data.html">Handling JSON Data</a></li>
+            <li><a href="PHP RESTful APIs.html">PHP RESTful APIs</a></li>
+        </ul>
+    
+        <h3>PHP Deployment</h3>
+        <a href="PHP Deployment.html">PHP Deployment</a>
+        <ul>
+            <li><a href="Deploying on Shared Hosting.html">Deploying on Shared Hosting</a></li>
+            <li><a href="Deploying on Cloud Platforms.html">Deploying on Cloud Platforms</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "PHP_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "PHP_quiz.html";
+}
+function goprojects() {
+    window.location.href = "PHP_projects.html";
+}
+function gocomp() {
+    window.location.href = "Php Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Loops in PHP.html";
+    }
+    function goNext() {
+        window.location.href = "Indexed Arrays.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+
+ 
+            <div class="top-box1">
+                <i class="fab fa-php" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">PHP Tutorial</h2>
+            
+    <div class="div1">PHP Arrays</div></div>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+
+    <h2>Overview</h2>
+    <p>Arrays in PHP are data structures that allow you to store multiple values in a single variable. They are incredibly versatile and widely used to manage collections of data efficiently.</p>
+
+    <h2>Types of Arrays in PHP</h2>
+    <p>PHP supports three types of arrays:</p>
+    <ul>
+        <li><strong>Indexed Arrays:</strong> Arrays with a numeric index.</li>
+        <li><strong>Associative Arrays:</strong> Arrays where keys are named instead of being numeric.</li>
+        <li><strong>Multidimensional Arrays:</strong> Arrays that contain other arrays as elements.</li>
+    </ul>
+
+    <h2>Indexed Arrays</h2>
+    <p>In indexed arrays, the index is automatically assigned, starting from 0.</p>
+    <pre>
+    $fruits = array("Apple", "Banana", "Cherry");
+    echo $fruits[0]; // Outputs: Apple
+    </pre>
+
+    <h3>Adding Elements to Indexed Arrays</h3>
+    <pre>
+    $fruits[] = "Orange"; // Adds a new element to the array
+    </pre>
+
+    <h2>Associative Arrays</h2>
+    <p>Associative arrays use named keys that you assign to each value, making it easier to retrieve data by name.</p>
+    <pre>
+    $person = array("name" => "John", "age" => 30, "profession" => "Developer");
+    echo $person["name"]; // Outputs: John
+    </pre>
+
+    <h2>Multidimensional Arrays</h2>
+    <p>Multidimensional arrays allow arrays to contain other arrays. This is useful for representing more complex data.</p>
+    <pre>
+    $matrix = array(
+        array(1, 2, 3),
+        array(4, 5, 6),
+        array(7, 8, 9)
+    );
+    echo $matrix[1][2]; // Outputs: 6
+    </pre>
+
+    <h2>Common Array Functions</h2>
+    <p>PHP provides many built-in functions for working with arrays. Here are some commonly used ones:</p>
+
+    <h3>count()</h3>
+    <p>Returns the number of elements in an array.</p>
+    <pre>
+    echo count($fruits); // Outputs: 4
+    </pre>
+
+    <h3>array_merge()</h3>
+    <p>Merges one or more arrays into one.</p>
+    <pre>
+    $arr1 = array("a" => "red", "b" => "green");
+    $arr2 = array("c" => "blue", "d" => "yellow");
+    $result = array_merge($arr1, $arr2);
+    print_r($result);
+    // Outputs: Array ( [a] => red [b] => green [c] => blue [d] => yellow )
+    </pre>
+
+    <h3>array_push()</h3>
+    <p>Adds one or more elements to the end of an array.</p>
+    <pre>
+    array_push($fruits, "Grape", "Mango");
+    print_r($fruits);
+    // Outputs: Array ( [0] => Apple [1] => Banana [2] => Cherry [3] => Orange [4] => Grape [5] => Mango )
+    </pre>
+
+    <h3>array_pop()</h3>
+    <p>Removes and returns the last element of an array.</p>
+    <pre>
+    $lastFruit = array_pop($fruits);
+    echo $lastFruit; // Outputs: Mango
+    </pre>
+
+    <h3>array_key_exists()</h3>
+    <p>Checks if a specified key exists in an array.</p>
+    <pre>
+    if (array_key_exists("name", $person)) {
+        echo "The name key exists!";
+    }
+    </pre>
+
+    <h2>Looping Through Arrays</h2>
+    <p>You can loop through arrays using a <strong>foreach</strong> loop:</p>
+    <pre>
+    foreach($fruits as $fruit) {
+        echo $fruit . " ";
+    }
+    // Outputs: Apple Banana Cherry Orange 
+    </pre>
+
+    <p>In associative arrays, you can loop through both keys and values:</p>
+    <pre>
+    foreach($person as $key => $value) {
+        echo $key . ": " . $value . "&lt;br&gt;";
+    }
+    // Outputs: 
+    // name: John
+    // age: 30
+    // profession: Developer
+    </pre>
+
+    <div class="resources">
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.php.net/manual/en/language.types.array.php" target="_blank">PHP Manual: Arrays</a></li>
+            <li><a href="https://www.w3schools.com/php/php_arrays.asp" target="_blank">W3Schools PHP Arrays Tutorial</a></li>
+            <li><a href="https://www.tutorialspoint.com/php/php_arrays.htm" target="_blank">TutorialsPoint PHP Arrays</a></li>
+        </ul>
+    </div>
+
+    <h2>Summary</h2>
+    <p>Arrays in PHP are essential for managing collections of data. Whether you're working with indexed, associative, or multidimensional arrays, understanding how to use arrays and their associated functions can significantly enhance the efficiency of your code.</p>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+</body>
+</html>

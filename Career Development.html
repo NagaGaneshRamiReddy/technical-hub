@@ -1,0 +1,489 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> UI/UX Design Course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                UI/UX Design
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to UI/UX Design</h3>
+        <a href="Introduction to UI-UX Design.html">Introduction to UI/UX Design</a>
+        <ul>
+            <li><a href="What is UI UX.html">What is UI/UX Design?</a></li>
+            <li><a href="importance of UI UX Design.html">Importance of UI/UX</a></li>
+            <li><a href="Difference Between UI and UX.html">Difference Between UI and UX</a></li>
+        </ul>
+    
+        <h3>Research and Discovery</h3>
+        <a href="Research.html">Research</a>
+        <ul>
+            <li><a href="User Research.html">User Research</a></li>
+            <li><a href="Market Research.html">Market Research</a></li>
+            <li><a href="Competitive Analysis.html">Competitive Analysis</a></li>
+        </ul>
+    
+        <h3>Design Fundamentals</h3>
+        <a href="Design Fundamentals.html">Design Fundamentals</a>
+        <ul>
+            <li><a href="Principles of Design.html">Principles of Design</a></li>
+            <li><a href="Color Theory.html">Color Theory</a></li>
+            <li><a href="Typography.html">Typography</a></li>
+            <li><a href="Layout and Composition.html">Layout and Composition</a></li>
+        </ul>
+    
+        <h3>Wireframing and Prototyping</h3>
+        <a href="Wireframing and Prototyping.html">Wireframing and Prototyping</a>
+        <ul>
+            <li><a href="Wireframing Basics.html">Wireframing Basics</a></li>
+            <li><a href="Prototyping Tools.html">Prototyping Tools</a></li>
+            <li><a href="Low-Fidelity Prototypes.html">Low-Fidelity Prototypes</a></li>
+            <li><a href="High-Fidelity Prototypes.html">High-Fidelity Prototypes</a></li>
+        </ul>
+    
+        <h3>User Interface (UI) Design</h3>
+        <a href="User Interface (UI) Design.html">User Interface (UI) Design</a>
+        <ul>
+            <li><a href="UI Design Patterns.html">UI Design Patterns</a></li>
+            <li><a href="Responsive Design.html">Responsive Design</a></li>
+            <li><a href="Design Systems.html">Design Systems</a></li>
+            <li><a href="Mobile UI Design.html">Mobile UI Design</a></li>
+        </ul>
+    
+        <h3>User Experience (UX) Design</h3>
+        <a href="User Experience (UX) Design.html">User Experience (UX) Design</a>
+        <ul>
+            <li><a href="Information Architecture.html">Information Architecture</a></li>
+            <li><a href="Interaction Design.html">Interaction Design</a></li>
+            <li><a href="Usability Testing.html">Usability Testing</a></li>
+            <li><a href="User Flows and Journey Mapping.html">User Flows and Journey Mapping</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics design.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Design for Accessibility.html">Design for Accessibility</a></li>
+            <li><a href="Design Thinking.html">Design Thinking</a></li>
+            <li><a href="UI UX Design Trends.html">UI/UX Design Trends</a></li>
+            <li><a href="Portfolio Building.html">Portfolio Building</a></li>
+            <li><a href="Career Development.html">Career Development</a></li>
+        </ul>
+    </div>
+    
+   
+   
+    
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Portfolio Building.html";
+    }
+    function goNext() {
+        window.location.href = "#";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1"> Career Development</div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Introduction to Career Development</h2>
+        <p><strong>Career Development</strong> is the continuous process of managing your career to achieve personal and professional growth. It involves setting career goals, acquiring new skills, and navigating opportunities to advance in your chosen field.</p>
+
+        <h3>Importance of Career Development</h3>
+        <p>Effective career development helps you stay competitive in your field, achieve job satisfaction, and reach your long-term career objectives.</p>
+
+        <h4>Benefits of Career Development</h4>
+        <ul>
+            <li><strong>Personal Growth:</strong> Encourages self-improvement and personal satisfaction through continuous learning.</li>
+            <li><strong>Professional Advancement:</strong> Enhances skills and knowledge, leading to better job opportunities and promotions.</li>
+            <li><strong>Increased Job Satisfaction:</strong> Helps align your work with your interests and values, leading to a more fulfilling career.</li>
+            <li><strong>Networking Opportunities:</strong> Provides chances to connect with professionals and expand your professional network.</li>
+        </ul>
+
+        <h3>Key Components of Career Development</h3>
+        <p>Career development encompasses several key components that work together to guide your career growth:</p>
+
+        <h4>1. Self-Assessment</h4>
+        <p>Understanding your skills, interests, values, and personality is crucial for setting realistic career goals and making informed decisions.</p>
+        <ul>
+            <li><strong>Tools:</strong> Career assessments, personality tests, and self-reflection exercises.</li>
+            <li><strong>Purpose:</strong> To identify your strengths, weaknesses, and career preferences.</li>
+        </ul>
+
+        <h4>2. Goal Setting</h4>
+        <p>Setting clear and achievable career goals helps you stay focused and motivated. Goals can be short-term or long-term and should be aligned with your career aspirations.</p>
+        <ul>
+            <li><strong>Types:</strong> SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound).</li>
+            <li><strong>Purpose:</strong> To create a roadmap for your career and track your progress.</li>
+        </ul>
+
+        <h4>3. Skill Development</h4>
+        <p>Continuously improving your skills through education, training, and experience is vital for career advancement and staying relevant in your field.</p>
+        <ul>
+            <li><strong>Methods:</strong> Online courses, workshops, certifications, and on-the-job learning.</li>
+            <li><strong>Purpose:</strong> To enhance your capabilities and adapt to changing industry demands.</li>
+        </ul>
+
+        <h4>4. Networking</h4>
+        <p>Building and maintaining professional relationships can provide valuable opportunities for career growth, mentorship, and job referrals.</p>
+        <ul>
+            <li><strong>Strategies:</strong> Attending industry events, joining professional organizations, and engaging on social media.</li>
+            <li><strong>Purpose:</strong> To connect with industry peers and expand your professional network.</li>
+        </ul>
+
+        <h4>5. Career Planning</h4>
+        <p>Developing a strategic career plan involves mapping out your career path, exploring different opportunities, and making informed decisions about your professional future.</p>
+        <ul>
+            <li><strong>Components:</strong> Career research, job market analysis, and career path mapping.</li>
+            <li><strong>Purpose:</strong> To guide your career decisions and achieve your long-term objectives.</li>
+        </ul>
+
+        <h3>Best Practices for Career Development</h3>
+        <ul>
+            <li><strong>Stay Informed:</strong> Keep up with industry trends and developments to remain competitive.</li>
+            <li><strong>Seek Feedback:</strong> Regularly seek feedback from peers and mentors to improve and grow.</li>
+            <li><strong>Be Flexible:</strong> Adapt to changes and be open to new opportunities and challenges.</li>
+            <li><strong>Maintain a Positive Attitude:</strong> Approach your career development with enthusiasm and resilience.</li>
+            <li><strong>Track Your Progress:</strong> Regularly review and adjust your career goals and plans as needed.</li>
+        </ul>
+
+        <h3>Free Resources for Career Development</h3>
+        <div class="resources">
+            <ul>
+                <li><strong><a href="https://www.coursera.org/">Coursera</a>:</strong> Offers a wide range of online courses and certifications to enhance your skills.</li>
+                <li><strong><a href="https://www.linkedin.com/learning/">LinkedIn Learning</a>:</strong> Provides professional development courses and tutorials for career growth.</li>
+                <li><strong><a href="https://www.edx.org/">edX</a>:</strong> Free online courses from top universities and institutions for skill enhancement.</li>
+                <li><strong><a href="https://www.mypath.com/">MyPath</a>:</strong> Career planning and development resources to help you chart your professional journey.</li>
+                <li><strong><a href="https://www.indeed.com/career-advice">Indeed Career Advice</a>:</strong> Offers articles and tips on various aspects of career development and job searching.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Career development is a continuous process of managing and advancing your career through self-assessment, goal setting, skill development, networking, and career planning. By utilizing best practices and leveraging free resources, you can effectively enhance your career prospects and achieve your professional goals.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Google Cloud Course</title>
+    
+    
+</head>
+<body class="body">
+
+  
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> GCP Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> GCP Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            
+            
+            <i class="fab fa-google" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> GCP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="Google cloudRoadmaps.html" target="_blank"><b class="b12">GCP Roadmap</b></a>
+    
+        <ul><a href="Introduction to Google Cloud.html">Introduction to Google Cloud</a>
+            <li><a href="Overview of Google Cloud.html">Overview of Google Cloud</a></li>
+            <li><a href="Global Infrastructure Google Cloud.html">Global Infrastructure</a></li>
+            <li><a href="Core Services and Use Cases Google Cloud.html">Core Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>Google Cloud Foundations</h3>
+        <a href="Google Cloud Foundations.html">Google Cloud Foundations</a>
+        <ul>
+            <li><a href="Google Cloud Console.html">Google Cloud Console</a></li>
+            <li><a href="Cloud Shell and Cloud SDK.html">Cloud Shell and Cloud SDK</a></li>
+            <li><a href="Identity and Access Management (IAM).html">Identity and Access Management (IAM)</a></li>
+            <li><a href="Billing and Pricing in Google Cloud.html">Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core Google Cloud Services</h3>
+        <a href="Core Google Cloud Services.html">Core Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services Google cloud.html">Compute Services</a>
+                <ul>
+                    <li><a href="Compute Engine.html">Compute Engine</a></li>
+                    <li><a href="App Engine.html">App Engine</a></li>
+                    <li><a href="Kubernetes Engine (GKE).html">Kubernetes Engine (GKE)</a></li>
+                    <li><a href="Cloud Functions.html">Cloud Functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services in Google cloud.html">Storage Services</a>
+                <ul>
+                    <li><a href="Cloud Storage.html">Cloud Storage</a></li>
+                    <li><a href="Persistent Disk.html">Persistent Disk</a></li>
+                    <li><a href="Filestore.html">Filestore</a></li>
+                    <li><a href="Cloud SQL.html">Cloud SQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services in Google cloud.html">Database Services</a>
+                <ul>
+                    <li><a href="Cloud Firestore.html">Cloud Firestore</a></li>
+                    <li><a href="Bigtable.html">Bigtable</a></li>
+                    <li><a href="Cloud Spanner.html">Cloud Spanner</a></li>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services Google Cloud.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud) google cloud.html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Cloud Load Balancing.html">Cloud Load Balancing</a></li>
+                    <li><a href="Cloud CDN.html">Cloud CDN</a></li>
+                    <li><a href="Cloud Interconnect.html">Cloud Interconnect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Google Cloud Services</h3>
+        <a href="Advanced Google Cloud Services.html">Advanced Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="AI and Machine Learning Google Cloud.html">AI and Machine Learning</a>
+                <ul>
+                    <li><a href="AI Platform.html">AI Platform</a></li>
+                    <li><a href="AutoML.html">AutoML</a></li>
+                    <li><a href="Vision AI.html">Vision AI</a></li>
+                    <li><a href="Dialogflow.html">Dialogflow</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services Google.html">Analytics Services</a>
+                <ul>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                    <li><a href="Dataflow.html">Dataflow</a></li>
+                    <li><a href="pub sub.html">Pub/Sub</a></li>
+                    <li><a href="Dataproc.html">Dataproc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services Google.html">Security Services</a>
+                <ul>
+                    <li><a href="Cloud IAM.html">Cloud IAM</a></li>
+                    <li><a href="Cloud Armor.html">Cloud Armor</a></li>
+                    <li><a href="Security Command Center.html">Security Command Center</a></li>
+                    <li><a href="Cloud Key Management Service (KMS).html">Cloud Key Management Service (KMS)</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on Google Cloud</h3>
+        <a href="DevOps on Google Cloud.html">DevOps on Google Cloud</a>
+        <ul>
+            <li>
+                <a href="Infrastructure as Code (IaC) Google.html">Infrastructure as Code (IaC)</a>
+                <ul>
+                    <li><a href="Deployment Manager.html">Deployment Manager</a></li>
+                    <li><a href="Terraform on Google Cloud.html">Terraform on Google Cloud</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="CI-CD Pipeline google.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Cloud Build.html">Cloud Build</a></li>
+                    <li><a href="Container Registry.html">Container Registry</a></li>
+                    <li><a href="Artifact Registry.html">Artifact Registry</a></li>
+                    <li><a href="Cloud Source Repositories.html">Cloud Source Repositories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Google.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Cloud Monitoring.html">Cloud Monitoring</a></li>
+                    <li><a href="Cloud Logging.html">Cloud Logging</a></li>
+                    <li><a href="Cloud Trace.html">Cloud Trace</a></li>
+                    <li><a href="Cloud Debugger.html">Cloud Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer Google.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="Migrate for Compute Engine.html">Migrate for Compute Engine</a></li>
+            <li><a href="Database Migration Service Google.html">Database Migration Service</a></li>
+            <li><a href="Transfer Appliance.html">Transfer Appliance</a></li>
+            <li><a href="Storage Transfer Service.html">Storage Transfer Service</a></li>
+        </ul>
+    
+    </div>
+    
+   
+   
+   
+    
+
+    
+    
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "GCP_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "GCP_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "GCP_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "GCP_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "Google Cloud Console.html";
+    }
+    function goNext() {
+        window.location.href = "Identity and Access Management (IAM).html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-google" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">GCP Tutorial</h2>
+<div class="div1">Google Cloud Shell </div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Overview</h2>
+        <p>Google Cloud Shell is a browser-based command-line interface (CLI) that provides you with a temporary virtual machine to manage your Google Cloud resources. It comes pre-installed with essential development tools and is integrated with the Google Cloud Console for seamless access to your Google Cloud projects.</p>
+
+        <h2>Main Features</h2>
+        <ul>
+            <li><strong>Pre-Installed Tools:</strong> Comes with essential tools like gcloud, Git, Docker, and Kubernetes command-line tools pre-installed. <br><em>Use Case:</em> Quickly start working without needing to set up your local development environment.</li>
+            <li><strong>Browser-Based Access:</strong> Access Cloud Shell from any web browser without needing to configure your local machine. <br><em>Use Case:</em> Conveniently manage your Google Cloud resources from anywhere.</li>
+            <li><strong>Persistent Storage:</strong> Provides a 5 GB persistent home directory where you can store scripts, configuration files, and more. <br><em>Use Case:</em> Keep your important files and configurations available between sessions.</li>
+            <li><strong>Integrated with Google Cloud Console:</strong> Seamlessly integrates with the Google Cloud Console for direct access to your cloud resources. <br><em>Use Case:</em> Run commands and manage resources directly from your browser without switching contexts.</li>
+            <li><strong>Secure Environment:</strong> Uses Google’s infrastructure to provide a secure environment for running commands and scripts. <br><em>Use Case:</em> Safely manage and deploy your cloud resources without compromising security.</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://cloud.google.com/shell">Google Cloud Shell Documentation</a> - Official documentation and guides on using Cloud Shell.</li>
+                <li><a href="https://cloud.google.com/blog/topics/developers-practitioners/5-tips-for-getting-the-most-out-of-cloud-shell">5 Tips for Getting the Most Out of Cloud Shell</a> - Blog post with practical tips for using Cloud Shell effectively.</li>
+                <li><a href="https://www.youtube.com/watch?v=8wM2Ek9Q0A4">YouTube Tutorial</a> - Video walkthrough on using Cloud Shell for Google Cloud management.</li>
+            </ul>
+        </div>
+
+        <h2>How to Access Cloud Shell</h2>
+        <div class="resources">
+            <ol>
+                <li><a href="https://console.cloud.google.com/">Open Google Cloud Console</a> - Navigate to the Cloud Console.</li>
+                <li><a href="https://console.cloud.google.com/cloudshell/terminal">Launch Cloud Shell</a> - Click on the Cloud Shell icon in the top-right corner of the console to start your session.</li>
+                <li>Start Using Cloud Shell - Use the command-line interface to manage your Google Cloud resources and perform development tasks.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Overview</h2>
+        <p>The Google Cloud SDK (Software Development Kit) is a set of tools for managing and interacting with Google Cloud services from your local machine. It includes the gcloud CLI, which allows you to perform various Google Cloud tasks, such as managing resources, deploying applications, and configuring settings.</p>
+
+        <h2>Main Features</h2>
+        <ul>
+            <li><strong>gcloud CLI:</strong> The primary command-line tool for interacting with Google Cloud services. <br><em>Use Case:</em> Perform tasks like deploying applications, managing resources, and configuring settings directly from the terminal.</li>
+            <li><strong>Installation on Multiple Platforms:</strong> Available for Windows, macOS, and Linux. <br><em>Use Case:</em> Install and use the SDK on various operating systems to manage your Google Cloud resources.</li>
+            <li><strong>Integrated Tools:</strong> Includes additional tools like gsutil for Cloud Storage and bq for BigQuery. <br><em>Use Case:</em> Manage specific Google Cloud services and perform tasks like data transfer and querying.</li>
+            <li><strong>Command Autocompletion:</strong> Provides command-line autocompletion for faster and more accurate command entry. <br><em>Use Case:</em> Improve productivity and reduce errors when using the CLI.</li>
+            <li><strong>Configurable Settings:</strong> Allows you to configure settings such as default project and region. <br><em>Use Case:</em> Customize the SDK to fit your specific project and environment needs.</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="https://cloud.google.com/sdk/docs">Google Cloud SDK Documentation</a> - Official guides and installation instructions for the SDK.</li>
+                <li><a href="https://cloud.google.com/blog/topics/developers-practitioners/announcing-cloud-sdk-logs-preview">Announcing Cloud SDK Logs Preview</a> - Blog post on new features and updates for the SDK.</li>
+                <li><a href="https://www.youtube.com/watch?v=6D2oI4vA9Jw">YouTube Tutorial</a> - Video guide on installing and using Google Cloud SDK.</li>
+            </ul>
+        </div>
+
+        <h2>How to Install Google Cloud SDK</h2>
+        <div class="resources">
+            <ol>
+                <li><a href="https://cloud.google.com/sdk/docs/install">Download Google Cloud SDK</a> - Follow the instructions to download and install the SDK for your operating system.</li>
+                <li><a href="https://cloud.google.com/sdk/docs/quickstarts">Quickstart Guide</a> - Run the setup commands and initialize the SDK for your environment.</li>
+                <li>Start Using the SDK - Use the gcloud CLI and other included tools to manage your Google Cloud resources.</li>
+            </ol>
+        </div>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>
+

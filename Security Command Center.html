@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Google Cloud Course</title>
+    
+    
+</head>
+<body class="body">
+
+  
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> GCP Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> GCP Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            
+            
+            <i class="fab fa-google" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> GCP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="Google cloudRoadmaps.html" target="_blank"><b class="b12">GCP Roadmap</b></a>
+    
+        <ul><a href="Introduction to Google Cloud.html">Introduction to Google Cloud</a>
+            <li><a href="Overview of Google Cloud.html">Overview of Google Cloud</a></li>
+            <li><a href="Global Infrastructure Google Cloud.html">Global Infrastructure</a></li>
+            <li><a href="Core Services and Use Cases Google Cloud.html">Core Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>Google Cloud Foundations</h3>
+        <a href="Google Cloud Foundations.html">Google Cloud Foundations</a>
+        <ul>
+            <li><a href="Google Cloud Console.html">Google Cloud Console</a></li>
+            <li><a href="Cloud Shell and Cloud SDK.html">Cloud Shell and Cloud SDK</a></li>
+            <li><a href="Identity and Access Management (IAM).html">Identity and Access Management (IAM)</a></li>
+            <li><a href="Billing and Pricing in Google Cloud.html">Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core Google Cloud Services</h3>
+        <a href="Core Google Cloud Services.html">Core Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services Google cloud.html">Compute Services</a>
+                <ul>
+                    <li><a href="Compute Engine.html">Compute Engine</a></li>
+                    <li><a href="App Engine.html">App Engine</a></li>
+                    <li><a href="Kubernetes Engine (GKE).html">Kubernetes Engine (GKE)</a></li>
+                    <li><a href="Cloud Functions.html">Cloud Functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services in Google cloud.html">Storage Services</a>
+                <ul>
+                    <li><a href="Cloud Storage.html">Cloud Storage</a></li>
+                    <li><a href="Persistent Disk.html">Persistent Disk</a></li>
+                    <li><a href="Filestore.html">Filestore</a></li>
+                    <li><a href="Cloud SQL.html">Cloud SQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services in Google cloud.html">Database Services</a>
+                <ul>
+                    <li><a href="Cloud Firestore.html">Cloud Firestore</a></li>
+                    <li><a href="Bigtable.html">Bigtable</a></li>
+                    <li><a href="Cloud Spanner.html">Cloud Spanner</a></li>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services Google Cloud.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud) google cloud.html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Cloud Load Balancing.html">Cloud Load Balancing</a></li>
+                    <li><a href="Cloud CDN.html">Cloud CDN</a></li>
+                    <li><a href="Cloud Interconnect.html">Cloud Interconnect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Google Cloud Services</h3>
+        <a href="Advanced Google Cloud Services.html">Advanced Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="AI and Machine Learning Google Cloud.html">AI and Machine Learning</a>
+                <ul>
+                    <li><a href="AI Platform.html">AI Platform</a></li>
+                    <li><a href="AutoML.html">AutoML</a></li>
+                    <li><a href="Vision AI.html">Vision AI</a></li>
+                    <li><a href="Dialogflow.html">Dialogflow</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services Google.html">Analytics Services</a>
+                <ul>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                    <li><a href="Dataflow.html">Dataflow</a></li>
+                    <li><a href="pub sub.html">Pub/Sub</a></li>
+                    <li><a href="Dataproc.html">Dataproc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services Google.html">Security Services</a>
+                <ul>
+                    <li><a href="Cloud IAM.html">Cloud IAM</a></li>
+                    <li><a href="Cloud Armor.html">Cloud Armor</a></li>
+                    <li><a href="Security Command Center.html">Security Command Center</a></li>
+                    <li><a href="Cloud Key Management Service (KMS).html">Cloud Key Management Service (KMS)</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on Google Cloud</h3>
+        <a href="DevOps on Google Cloud.html">DevOps on Google Cloud</a>
+        <ul>
+            <li>
+                <a href="Infrastructure as Code (IaC) Google.html">Infrastructure as Code (IaC)</a>
+                <ul>
+                    <li><a href="Deployment Manager.html">Deployment Manager</a></li>
+                    <li><a href="Terraform on Google Cloud.html">Terraform on Google Cloud</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="CI-CD Pipeline google.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Cloud Build.html">Cloud Build</a></li>
+                    <li><a href="Container Registry.html">Container Registry</a></li>
+                    <li><a href="Artifact Registry.html">Artifact Registry</a></li>
+                    <li><a href="Cloud Source Repositories.html">Cloud Source Repositories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Google.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Cloud Monitoring.html">Cloud Monitoring</a></li>
+                    <li><a href="Cloud Logging.html">Cloud Logging</a></li>
+                    <li><a href="Cloud Trace.html">Cloud Trace</a></li>
+                    <li><a href="Cloud Debugger.html">Cloud Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer Google.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="Migrate for Compute Engine.html">Migrate for Compute Engine</a></li>
+            <li><a href="Database Migration Service Google.html">Database Migration Service</a></li>
+            <li><a href="Transfer Appliance.html">Transfer Appliance</a></li>
+            <li><a href="Storage Transfer Service.html">Storage Transfer Service</a></li>
+        </ul>
+    
+    </div>
+    
+   
+   
+   
+    
+
+    
+    
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "GCP_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "GCP_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "GCP_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "GCP_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "Cloud Armor.html";
+    }
+    function goNext() {
+        window.location.href = "Cloud Key Management Service (KMS).html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-google" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">GCP Tutorial</h2>
+<div class="div1">Google Cloud Security Command Center (SCC)</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Introduction to Google Cloud Security Command Center</h2>
+        <p>Google Cloud Security Command Center (SCC) is a comprehensive security management and data risk platform that helps you gain visibility into and control over your Google Cloud environment. It provides tools for detecting and responding to security threats, managing vulnerabilities, and ensuring compliance across your cloud resources.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Centralized Security Dashboard:</strong> Provides a unified view of security and risk data across your Google Cloud environment, making it easier to monitor and respond to potential threats.</li>
+            <li><strong>Asset Inventory:</strong> Automatically discovers and inventories your cloud resources, helping you understand what assets you have and where they are located.</li>
+            <li><strong>Security Health Analytics:</strong> Analyzes security configurations and practices to identify potential weaknesses and recommend best practices for improving your security posture.</li>
+            <li><strong>Threat Detection:</strong> Uses machine learning and threat intelligence to detect and alert you to potential security threats, including unauthorized access, suspicious activity, and anomalies.</li>
+            <li><strong>Vulnerability Management:</strong> Identifies and prioritizes vulnerabilities in your cloud environment, providing actionable insights to address them before they can be exploited.</li>
+            <li><strong>Compliance Monitoring:</strong> Helps ensure compliance with industry standards and regulations by continuously monitoring your environment and reporting on compliance status.</li>
+            <li><strong>Integration with Google Cloud Services:</strong> Seamlessly integrates with other Google Cloud services, such as Cloud Logging, Cloud Monitoring, and Cloud IAM, to provide comprehensive security management.</li>
+        </ul>
+
+        <h2>How Security Command Center Works</h2>
+        <p>Google Cloud Security Command Center collects and aggregates security data from across your Google Cloud environment. It uses this data to generate insights, alerts, and reports that help you identify potential risks and respond effectively. The platform leverages advanced analytics, machine learning, and threat intelligence to provide actionable security information and recommendations.</p>
+
+        <h2>Use Cases</h2>
+        <ul>
+            <li><strong>Incident Response:</strong> Quickly detect and respond to security incidents by monitoring real-time alerts and analyzing security data.</li>
+            <li><strong>Risk Management:</strong> Identify and mitigate risks by assessing vulnerabilities and reviewing security configurations.</li>
+            <li><strong>Compliance Management:</strong> Ensure adherence to regulatory requirements and internal policies by continuously monitoring compliance status.</li>
+            <li><strong>Security Posture Improvement:</strong> Enhance your overall security posture by implementing best practices and addressing identified weaknesses.</li>
+        </ul>
+
+        <h2>Free Resources for Practice</h2>
+        <ul>
+            <li><a href="https://cloud.google.com/security-command-center/docs">Google Cloud Security Command Center Documentation</a> - Detailed guides and tutorials on setting up and using SCC.</li>
+            <li><a href="https://www.qwiklabs.com/">Qwiklabs</a> - Hands-on labs for practical experience with Google Cloud security services.</li>
+            <li><a href="https://cloud.google.com/training">Google Cloud Training</a> - Free courses and labs on security and other Google Cloud services.</li>
+            <li><a href="https://www.coursera.org/learn/google-cloud-security">Coursera Cloud Security Course</a> - Course on security best practices including Google Cloud Security Command Center.</li>
+            <li><a href="https://www.youtube.com/user/googlecloudplatform">YouTube Tutorials</a> - Video tutorials and webinars on Google Cloud Security Command Center and related topics.</li>
+        </ul>
+
+        <h2>Getting Started with Security Command Center</h2>
+        <ol>
+            <li><a href="https://cloud.google.com/security-command-center/docs/quickstart">Quickstart Guide</a> - Learn how to set up and configure Security Command Center for your Google Cloud environment.</li>
+            <li><a href="https://cloud.google.com/security-command-center/docs/overview">Overview of Security Command Center</a> - Understand the core features and capabilities of SCC.</li>
+            <li><a href="https://cloud.google.com/security-command-center/docs/integrations">Integrations</a> - Explore how to integrate SCC with other Google Cloud services for enhanced security management.</li>
+        </ol>
+
+        <h2>Summary</h2>
+        <p>Google Cloud Security Command Center is an essential tool for managing and securing your Google Cloud environment. It provides a centralized platform for monitoring security threats, managing vulnerabilities, and ensuring compliance. By leveraging SCC's features and integrating it with other Google Cloud services, you can maintain a strong security posture and protect your cloud resources effectively.</p>
+
+        <h2>Conclusion</h2>
+        <p>Implementing Google Cloud Security Command Center helps you gain comprehensive visibility and control over your cloud security landscape. Its advanced analytics, threat detection, and compliance monitoring capabilities make it a valuable asset for any organization looking to enhance its cloud security. Utilize the provided resources to deepen your understanding and effectively use SCC to safeguard your Google Cloud environment.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Bootstrap</title>
+
+</head>
+<body class="body">
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML/CSS Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Bootstrap Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+      
+    
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+    
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-bootstrap" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">Bootstrap Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Bootstrap.html" target="_blank"><b class="b12">Bootstrap Roadmap</b></a>
+        <ul>
+            <a href="Introduction_to_Bootstrap.html" target="_blank">Bootstrap Introduction</a>
+    
+            <li><a href="Getting_Started.html" target="_blank">Getting Started</a></li>
+            <li><a href="Installation.html" target="_blank">Installation</a></li>
+            <li><a href="Bootstrap_Grid_System.html" target="_blank">Bootstrap Grid System</a></li>
+        </ul>
+    
+        <h3> Components</h3>
+        <a href="Bootstrap_Components.html" target="_blank">Bootstrap Components</a>
+        <ul>
+            <li><a href="Alerts.html" target="_blank">Alerts</a></li>
+            <li><a href="Buttons.html" target="_blank">Buttons</a></li>
+            <li><a href="Cards.html" target="_blank">Cards</a></li>
+            <li><a href="Forms.html" target="_blank">Forms</a></li>
+            <li><a href="Modals.html" target="_blank">Modals</a></li>
+            <li><a href="Navigation.html" target="_blank">Navigation</a></li>
+        </ul>
+    
+        <h3>Bootstrap Utilities</h3>
+        <a href="Bootstrap_Utilities.html" target="_blank">Bootstrap Utilities</a>
+        <ul>
+            <li><a href="Spacing.html" target="_blank">Spacing</a></li>
+            <li><a href="Colors.html" target="_blank">Colors</a></li>
+            <li><a href="Borders.html" target="_blank">Borders</a></li>
+            <li><a href="Display.html" target="_blank">Display</a></li>
+        </ul>
+    
+        <h3>Bootstrap JavaScript</h3>
+        <a href="Bootstrap_JavaScript.html" target="_blank">Bootstrap JavaScript</a>
+        <ul>
+            <li><a href="Overview.html" target="_blank">Overview</a></li>
+            <li><a href="Using_JavaScript.html" target="_blank">Using Bootstrap with JavaScript</a></li>
+            <li><a href="Customizing_Bootstrap.html" target="_blank">Customizing Bootstrap</a></li>
+        </ul>
+    
+        <h3>Responsive Design</h3>
+        <a href="Responsive_Design.html" target="_blank">Responsive Design</a>
+        <ul>
+            <li><a href="Media_Queries.html" target="_blank">Media Queries</a></li>
+            <li><a href="Responsive_Utilities.html" target="_blank">Responsive Utilities</a></li>
+        </ul>
+    
+        <h3>Bootstrap Themes</h3>
+        <a href="Bootstrap_Themes.html" target="_blank">Bootstrap Themes</a>
+        <ul>
+            <li><a href="Creating_Themes.html" target="_blank">Creating Themes</a></li>
+            <li><a href="Using_Themes.html" target="_blank">Using Themes</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Bootstrap_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Bootstrap_quiz.html";
+}
+function goproject() {
+    window.location.href = "Bootstrap_projects.html";
+}
+function gocomp() {
+        window.location.href = "html-css_Compiler.html";
+    }
+      
+    function goPrevious() {
+        window.location.href = "Colors.html";
+    }
+    function goNext() {
+        window.location.href = "Display.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-bootstrap"  style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk"> Bootstrap Tutorial</h2>
+<div class="div1">Bootstrap Border Utilities</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+<br><br>
+<h2>Introduction to Bootstrap Borders</h2>
+<p>Bootstrap provides various utility classes for adding borders to elements, which can enhance the visual layout of your web applications.</p>
+
+<h2>Basic Border Utility</h2>
+<p>You can easily add borders to elements using Bootstrap's border utility classes:</p>
+
+<div class="example">
+    <pre><code>&lt;div class="border"&gt;This div has a default border.&lt;/div&gt;</code></pre>
+</div>
+
+<h3>Expected Output:</h3>
+<div class="output">
+    <div class="border" style="padding: 10px;">This div has a default border.</div>
+</div>
+
+<h2>Border Color Utilities</h2>
+<p>Change the color of borders using Bootstrap's color utility classes:</p>
+
+<div class="example">
+    <pre><code>&lt;div class="border border-primary"&gt;This div has a primary border color.&lt;/div&gt;
+&lt;div class="border border-success"&gt;This div has a success border color.&lt;/div&gt;</code></pre>
+</div>
+
+<h3>Expected Output:</h3>
+<div class="output">
+    <div class="border border-primary" style="padding: 10px;">This div has a primary border color.</div>
+    <div class="border border-success" style="padding: 10px;">This div has a success border color.</div>
+</div>
+
+<h2>Rounded Borders</h2>
+<p>Bootstrap allows you to easily create rounded borders:</p>
+
+<div class="example">
+    <pre><code>&lt;div class="border rounded"&gt;This div has rounded borders.&lt;/div&gt;</code></pre>
+</div>
+
+<h3>Expected Output:</h3>
+<div class="output">
+    <div class="border rounded" style="padding: 10px;">This div has rounded borders.</div>
+</div>
+
+<h2>Border Styles</h2>
+<p>You can apply different border styles using utility classes:</p>
+
+<div class="example">
+    <pre><code>&lt;div class="border border-top"&gt;This div has a top border only.&lt;/div&gt;
+&lt;div class="border border-left"&gt;This div has a left border only.&lt;/div&gt;</code></pre>
+</div>
+
+<h3>Expected Output:</h3>
+<div class="output">
+    <div class="border border-top" style="padding: 10px;">This div has a top border only.</div>
+    <div class="border border-left" style="padding: 10px;">This div has a left border only.</div>
+</div>
+
+<h2>Resources</h2>
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/4.5/utilities/borders/" target="_blank">Bootstrap Border Utilities Documentation</a></li>
+    </ul>
+</div>
+
+<h2>Summary</h2>
+<p>Bootstrap's border utilities make it easy to apply borders with various colors, styles, and rounded corners to enhance your web application's design.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

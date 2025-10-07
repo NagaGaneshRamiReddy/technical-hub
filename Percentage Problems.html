@@ -1,0 +1,500 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Aptitude</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Aptitude
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Percentage Increase and Decrease.html";
+    }
+    function goNext() {
+        window.location.href = "Simple and Compound Interest.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Percentage</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  
+            <h2>Percentage Problems</h2>
+            <p>Percentage problems are commonly encountered in various real-life situations, from shopping discounts to calculating tax and interest rates. Understanding how to solve these problems is essential for managing finances and making informed decisions.</p>
+
+            <h3>1. Calculating Percentage of a Number</h3>
+            <p>To find a specific percentage of a number, you multiply the number by the percentage and divide by 100.</p>
+
+            <div class="formula">
+                <strong>Formula:</strong><br>
+                Percentage of a Number = (Number × Percentage) / 100
+            </div>
+
+            <p><strong>Example:</strong><br>
+            If you want to find 15% of ₹800, you calculate:
+            <br><br>
+            Percentage of a Number = (₹800 × 15) / 100 = ₹120.<br>
+            Therefore, 15% of ₹800 is ₹120.</p>
+
+            <h3>2. Finding the Whole from a Percentage</h3>
+            <p>To find the whole amount when you know a percentage of it, divide the known amount by the percentage and then multiply by 100.</p>
+
+            <div class="formula">
+                <strong>Formula:</strong><br>
+                Whole Amount = (Part / Percentage) × 100
+            </div>
+
+            <p><strong>Example:</strong><br>
+            If ₹250 is 20% of an amount, to find the whole amount:
+            <br><br>
+            Whole Amount = (₹250 / 20) × 100 = ₹1,250.<br>
+            Therefore, ₹250 is 20% of ₹1,250.</p>
+
+            <h3>3. Calculating Percentage Increase</h3>
+            <p>To find out how much a value has increased in percentage terms, use the increase amount and divide it by the original value, then multiply by 100.</p>
+
+            <div class="formula">
+                <strong>Formula:</strong><br>
+                Percentage Increase = [(New Value - Original Value) / Original Value] × 100%
+            </div>
+
+            <p><strong>Example:</strong><br>
+            If the price of a book increased from ₹500 to ₹600:
+            <br><br>
+            Increase = ₹600 - ₹500 = ₹100.<br>
+            Percentage Increase = (₹100 / ₹500) × 100% = 20%.<br>
+            Therefore, the percentage increase in the price of the book is 20%.</p>
+
+            <h3>4. Calculating Percentage Decrease</h3>
+            <p>To determine how much a value has decreased in percentage terms, use the decrease amount and divide it by the original value, then multiply by 100.</p>
+
+            <div class="formula">
+                <strong>Formula:</strong><br>
+                Percentage Decrease = [(Original Value - New Value) / Original Value] × 100%
+            </div>
+
+            <p><strong>Example:</strong><br>
+            If the price of a phone decreased from ₹15,000 to ₹12,000:
+            <br><br>
+            Decrease = ₹15,000 - ₹12,000 = ₹3,000.<br>
+            Percentage Decrease = (₹3,000 / ₹15,000) × 100% = 20%.<br>
+            Therefore, the percentage decrease in the price of the phone is 20%.</p>
+
+            <h3>5. Calculating Discounted Price</h3>
+            <p>To find the price after a discount is applied, subtract the discount amount from the marked price.</p>
+
+            <div class="formula">
+                <strong>Formula:</strong><br>
+                Discounted Price = Marked Price - Discount Amount
+            </div>
+
+            <p><strong>Example:</strong><br>
+            If a shirt is marked at ₹1,200 and a discount of 25% is applied:
+            <br><br>
+            Discount Amount = (₹1,200 × 25) / 100 = ₹300.<br>
+            Discounted Price = ₹1,200 - ₹300 = ₹900.<br>
+            Therefore, after a 25% discount, the shirt costs ₹900.</p>
+
+            <h2>Steps to Solve Percentage Problems</h2>
+            <ul>
+                <li><strong>Identify the Key Values:</strong> Determine the original amount, percentage, and any changes or discounts.</li>
+                <li><strong>Choose the Correct Formula:</strong> Depending on the problem, use the appropriate formula for percentage calculations.</li>
+                <li><strong>Perform the Calculation:</strong> Substitute the values into the formula and solve for the result.</li>
+                <li><strong>Interpret the Result:</strong> Make sure the result makes sense in the context of the problem.</li>
+            </ul>
+
+            <h2>Real-Life Applications</h2>
+            <p>Percentage calculations are widely used in everyday life:</p>
+            <ul>
+                <li><strong>Shopping:</strong> Calculating discounts and understanding sale prices.</li>
+                <li><strong>Finance:</strong> Determining interest rates and investment growth.</li>
+                <li><strong>Budgeting:</strong> Tracking expenses and savings.</li>
+            </ul>
+
+            <h2>Practice Resources</h2>
+            <div class="resources">
+                <p>Enhance your skills with these practice resources:</p>
+                <ul>
+                    <li><a href="https://www.khanacademy.org/math/arithmetic/x2f8bb115bf4c3406:percent" target="_blank">Khan Academy: Percentage Problems</a></li>
+                    <li><a href="https://www.mathsisfun.com/percentage.html" target="_blank">Math is Fun: Percentage Problems</a></li>
+                    <li><a href="https://www.cuemath.com/learn/percentages/" target="_blank">Cuemath: Percentage Practice</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Percentage problems involve calculating parts of a whole, increases, decreases, and discounts. By using the appropriate formulas, you can solve these problems efficiently and apply them to real-life situations such as shopping, finance, and budgeting.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                   </div>
+    </div>
+</body>
+</html>

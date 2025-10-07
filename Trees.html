@@ -1,0 +1,821 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+    function goPrevious() {
+        window.location.href = "Advanced Data Structures.html";
+    }
+    function goNext() {
+        window.location.href = "Binary Trees.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1">Trees</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>Trees are hierarchical data structures that consist of nodes connected by edges. Each node contains a value and links to child nodes. Trees are widely used for representing hierarchical data, implementing efficient searching and sorting algorithms, and organizing information in a way that allows for quick access and manipulation.</p>
+
+        <h2>1. Binary Tree</h2>
+        <p>A binary tree is a tree data structure where each node has at most two children, referred to as the left child and the right child. Binary trees are used in various applications, including expression parsing and binary search.</p>
+
+        <h3>Implementation Examples</h3>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt>
+
+class TreeNode {
+public:
+    int value;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode(int v) : value(v), left(nullptr), right(nullptr) {}
+};
+
+class BinaryTree {
+    TreeNode* root;
+
+    void inorder(TreeNode* node) {
+        if (node) {
+            inorder(node->left);
+            std::cout &lt;&lt; node->value &lt;&lt; " ";
+            inorder(node->right);
+        }
+    }
+
+public:
+    BinaryTree() : root(nullptr) {}
+
+    void insert(int value) {
+        TreeNode* newNode = new TreeNode(value);
+        if (!root) {
+            root = newNode;
+            return;
+        }
+        TreeNode* current = root;
+        TreeNode* parent = nullptr;
+        while (true) {
+            parent = current;
+            if (value < current->value) {
+                current = current->left;
+                if (!current) {
+                    parent->left = newNode;
+                    return;
+                }
+            } else {
+                current = current->right;
+                if (!current) {
+                    parent->right = newNode;
+                    return;
+                }
+            }
+        }
+    }
+
+    void inorder() {
+        inorder(root);
+        std::cout &lt;&lt; std::endl;
+    }
+};
+
+int main() {
+    BinaryTree tree;
+    tree.insert(10);
+    tree.insert(20);
+    tree.insert(5);
+    tree.inorder();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+class BinaryTree:
+    def __init__(self):
+        self.root = None
+
+    def insert(self, value):
+        new_node = TreeNode(value)
+        if not self.root:
+            self.root = new_node
+            return
+        current = self.root
+        parent = None
+        while True:
+            parent = current
+            if value < current.value:
+                current = current.left
+                if not current:
+                    parent.left = new_node
+                    return
+            else:
+                current = current.right
+                if not current:
+                    parent.right = new_node
+                    return
+
+    def inorder(self, node):
+        if node:
+            self.inorder(node.left)
+            print(node.value, end=" ")
+            self.inorder(node.right)
+
+    def display(self):
+        self.inorder(self.root)
+        print()
+
+# Example usage
+tree = BinaryTree()
+tree.insert(10)
+tree.insert(20)
+tree.insert(5)
+tree.display()
+</code>
+        </pre>
+
+        <h2>2. Binary Search Tree (BST)</h2>
+        <p>A Binary Search Tree is a binary tree with the additional property that for each node, all elements in the left subtree are smaller, and all elements in the right subtree are larger. This property allows for efficient searching, insertion, and deletion operations.</p>
+
+        <h3>Implementation Examples</h3>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+
+class BSTNode {
+public:
+    int key;
+    BSTNode* left;
+    BSTNode* right;
+    BSTNode(int k) : key(k), left(nullptr), right(nullptr) {}
+};
+
+class BST {
+    BSTNode* root;
+
+    BSTNode* insert(BSTNode* node, int key) {
+        if (!node) return new BSTNode(key);
+        if (key < node->key) node->left = insert(node->left, key);
+        else node->right = insert(node->right, key);
+        return node;
+    }
+
+    void inorder(BSTNode* node) {
+        if (node) {
+            inorder(node->left);
+            std::cout &lt;&lt; node->key &lt;&lt; " ";
+            inorder(node->right);
+        }
+    }
+
+public:
+    BST() : root(nullptr) {}
+
+    void insert(int key) {
+        root = insert(root, key);
+    }
+
+    void inorder() {
+        inorder(root);
+        std::cout &lt;&lt; std::endl;
+    }
+};
+
+int main() {
+    BST tree;
+    tree.insert(10);
+    tree.insert(20);
+    tree.insert(5);
+    tree.inorder();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class BSTNode:
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+        self.right = None
+
+class BST:
+    def __init__(self):
+        self.root = None
+
+    def insert(self, key):
+        if not self.root:
+            self.root = BSTNode(key)
+        else:
+            self._insert(self.root, key)
+
+    def _insert(self, node, key):
+        if key < node.key:
+            if node.left:
+                self._insert(node.left, key)
+            else:
+                node.left = BSTNode(key)
+        else:
+            if node.right:
+                self._insert(node.right, key)
+            else:
+                node.right = BSTNode(key)
+
+    def inorder(self, node):
+        if node:
+            self.inorder(node.left)
+            print(node.key, end=" ")
+            self.inorder(node.right)
+
+    def display(self):
+        self.inorder(self.root)
+        print()
+
+# Example usage
+tree = BST()
+tree.insert(10)
+tree.insert(20)
+tree.insert(5)
+tree.display()
+</code>
+        </pre>
+
+        <h2>3. Red-Black Tree</h2>
+        <p>A Red-Black Tree is a balanced binary search tree with an additional property of color assignment (red or black) for each node, which helps maintain balance during insertions and deletions. This ensures that the tree remains approximately balanced, leading to O(log n) time complexity for all major operations.</p>
+
+        <h3>Implementation Examples</h3>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+
+enum Color { RED, BLACK };
+
+class RBNode {
+public:
+    int key;
+    RBNode* left;
+    RBNode* right;
+    RBNode* parent;
+    Color color;
+    RBNode(int k) : key(k), left(nullptr), right(nullptr), parent(nullptr), color(RED) {}
+};
+
+class RedBlackTree {
+    RBNode* root;
+
+    void rotateLeft(RBNode* x) {
+        // Implement left rotation
+    }
+
+    void rotateRight(RBNode* y) {
+        // Implement right rotation
+    }
+
+    void fixInsert(RBNode* node) {
+        // Fix violations of Red-Black Tree properties
+    }
+
+    void inorder(RBNode* node) {
+        if (node) {
+            inorder(node->left);
+            std::cout &lt;&lt; node->key &lt;&lt; " ";
+            inorder(node->right);
+        }
+    }
+
+public:
+    RedBlackTree() : root(nullptr) {}
+
+    void insert(int key) {
+        RBNode* newNode = new RBNode(key);
+        // Insert node and fix violations
+    }
+
+    void inorder() {
+        inorder(root);
+        std::cout &lt;&lt; std::endl;
+    }
+};
+
+int main() {
+    RedBlackTree tree;
+    tree.insert(10);
+    tree.insert(20);
+    tree.insert(5);
+    tree.inorder();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class RBNode:
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+        self.right = None
+        self.parent = None
+        self.color = 'RED'
+
+class RedBlackTree:
+    def __init__(self):
+        self.root = None
+
+    def insert(self, key):
+        new_node = RBNode(key)
+        # Insert node and fix violations
+
+    def inorder(self, node):
+        if node:
+            self.inorder(node.left)
+            print(node.key, end=" ")
+            self.inorder(node.right)
+
+    def display(self):
+        self.inorder(self.root)
+        print()
+
+# Example usage
+tree = RedBlackTree()
+tree.insert(10)
+tree.insert(20)
+tree.insert(5)
+tree.display()
+</code>
+        </pre>
+
+        <h2>4. AVL Tree</h2>
+        <p>An AVL Tree is a self-balancing binary search tree where the heights of the two child subtrees of any node differ by no more than one. This ensures that the tree remains balanced, which provides O(log n) time complexity for insertion, deletion, and search operations.</p>
+
+        <h3>Implementation Examples</h3>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+
+class AVLNode {
+public:
+    int key;
+    AVLNode* left;
+    AVLNode* right;
+    int height;
+    AVLNode(int k) : key(k), left(nullptr), right(nullptr), height(1) {}
+};
+
+class AVLTree {
+    AVLNode* root;
+
+    int height(AVLNode* node) {
+        return node ? node->height : 0;
+    }
+
+    int balanceFactor(AVLNode* node) {
+        return height(node->left) - height(node->right);
+    }
+
+    void updateHeight(AVLNode* node) {
+        node->height = 1 + std::max(height(node->left), height(node->right));
+    }
+
+    AVLNode* rotateRight(AVLNode* y) {
+        AVLNode* x = y->left;
+        y->left = x->right;
+        x->right = y;
+        updateHeight(y);
+        updateHeight(x);
+        return x;
+    }
+
+    AVLNode* rotateLeft(AVLNode* x) {
+        AVLNode* y = x->right;
+        x->right = y->left;
+        y->left = x;
+        updateHeight(x);
+        updateHeight(y);
+        return y;
+    }
+
+    AVLNode* insert(AVLNode* node, int key) {
+        if (!node) return new AVLNode(key);
+        if (key < node->key) node->left = insert(node->left, key);
+        else if (key > node->key) node->right = insert(node->right, key);
+        else return node;
+
+        updateHeight(node);
+        int balance = balanceFactor(node);
+
+        if (balance > 1 && key < node->left->key) return rotateRight(node);
+        if (balance < -1 && key > node->right->key) return rotateLeft(node);
+        if (balance > 1 && key > node->left->key) {
+            node->left = rotateLeft(node->left);
+            return rotateRight(node);
+        }
+        if (balance < -1 && key < node->right->key) {
+            node->right = rotateRight(node->right);
+            return rotateLeft(node);
+        }
+
+        return node;
+    }
+
+    void inorder(AVLNode* node) {
+        if (node) {
+            inorder(node->left);
+            std::cout &lt;&lt; node->key &lt;&lt; " ";
+            inorder(node->right);
+        }
+    }
+
+public:
+    AVLTree() : root(nullptr) {}
+
+    void insert(int key) {
+        root = insert(root, key);
+    }
+
+    void inorder() {
+        inorder(root);
+        std::cout &lt;&lt; std::endl;
+    }
+};
+
+int main() {
+    AVLTree tree;
+    tree.insert(10);
+    tree.insert(20);
+    tree.insert(5);
+    tree.inorder();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class AVLNode:
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+        self.right = None
+        self.height = 1
+
+class AVLTree:
+    def __init__(self):
+        self.root = None
+
+    def height(self, node):
+        return node.height if node else 0
+
+    def balanceFactor(self, node):
+        return self.height(node.left) - self.height(node.right)
+
+    def updateHeight(self, node):
+        node.height = 1 + max(self.height(node.left), self.height(node.right))
+
+    def rotateRight(self, y):
+        x = y.left
+        y.left = x.right
+        x.right = y
+        self.updateHeight(y)
+        self.updateHeight(x)
+        return x
+
+    def rotateLeft(self, x):
+        y = x.right
+        x.right = y.left
+        y.left = x
+        self.updateHeight(x)
+        self.updateHeight(y)
+        return y
+
+    def insert(self, key):
+        self.root = self._insert(self.root, key)
+
+    def _insert(self, node, key):
+        if not node:
+            return AVLNode(key)
+        if key < node.key:
+            node.left = self._insert(node.left, key)
+        elif key > node.key:
+            node.right = self._insert(node.right, key)
+        else:
+            return node
+
+        self.updateHeight(node)
+        balance = self.balanceFactor(node)
+
+        if balance > 1 and key < node.left.key:
+            return self.rotateRight(node)
+        if balance < -1 and key > node.right.key:
+            return self.rotateLeft(node)
+        if balance > 1 and key > node.left.key:
+            node.left = self.rotateLeft(node.left)
+            return self.rotateRight(node)
+        if balance < -1 and key < node.right.key:
+            node.right = self.rotateRight(node.right)
+            return self.rotateLeft(node)
+
+        return node
+
+    def inorder(self, node):
+        if node:
+            self.inorder(node.left)
+            print(node.key, end=" ")
+            self.inorder(node.right)
+
+    def display(self):
+        self.inorder(self.root)
+        print()
+
+# Example usage
+tree = AVLTree()
+tree.insert(10)
+tree.insert(20)
+tree.insert(5)
+tree.display()
+</code>
+        </pre>
+
+        
+        
+        <h2>Summary</h2>
+        <p>Trees are fundamental data structures that provide efficient ways to organize and manipulate hierarchical data. Various types of trees such as Binary Trees, Binary Search Trees, Red-Black Trees, and AVL Trees offer different trade-offs in terms of balance, efficiency, and complexity. Understanding these structures and their implementations is essential for optimizing algorithms and solving complex problems in computer science.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

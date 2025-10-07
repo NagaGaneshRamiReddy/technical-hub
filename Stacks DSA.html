@@ -1,0 +1,963 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Circular Linked List.html";
+    }
+    function goNext() {
+        window.location.href = "Queues.html";
+    }
+        </script><br><br><br><br><br><br>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1"> Stack</div>
+</div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+        <h2>What is a Stack ?</h2>
+        <p>A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. It allows operations at one end, called the top of the stack. Elements can be added (pushed) and removed (popped) from this end only.</p>
+      
+        
+            
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Stack Animation</title>
+            <style>
+                .container-1 {
+                    margin: 20px;
+    
+                }
+        
+                .stack {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 20px 0;
+                    position: relative;
+                    height: 300px;
+                    width: 120px; 
+                }
+        
+                .node {
+                    width: 80px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid #007bff;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                    position: absolute;
+                    font-size: 20px;
+                    transition: transform 0.3s ease, background-color 0.3s ease, top 0.5s ease, left 0.5s ease;
+                }
+        
+                .node:hover {
+                    transform: scale(1.1);
+                    background-color: #e7f0ff;
+                }
+        
+                .node.active {
+                    border-color: #28a745;
+                    background-color: #d4edda;
+                }
+        
+                .arrow {
+                    width: 40px;
+                    height: 40px;
+                    border-top: 2px solid #007bff;
+                    border-right: 2px solid #007bff;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+        
+                .arrow.active {
+                    opacity: 1;
+                }
+        
+                .description {
+                    background-color: #ffffff;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin: 20px auto;
+                    max-width: 800px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+                }
+        
+                .description h2 {
+                    font-size: 24px;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+        
+                .description p {
+                    font-size: 18px;
+                    color: #555;
+                    line-height: 1.6;
+                }
+        
+                .description ul {
+                    list-style-type: disc;
+                    padding-left: 20px;
+                }
+        
+                .description li {
+                    margin-bottom: 10px;
+                }
+        
+                @media (max-width: 600px) {
+                    .description {
+                        padding: 15px;
+                    }
+        
+                    .description h2 {
+                        font-size: 20px;
+                    }
+        
+                    .description p {
+                        font-size: 16px;
+                    }
+                }
+        
+                button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    background-color: #11ff00;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+        
+                button:hover {
+                    background-color: #0056b3;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container-1">
+                <h1>Stack Animation</h1>
+                <div class="stack">
+                    <!-- Nodes positioned in a vertical stack layout -->
+                    <div class="node" id="node1" style="top: 20px;">1</div>
+                    <div class="node" id="node2" style="top: 80px;">2</div>
+                    <div class="node" id="node3" style="top: 140px;">3</div>
+                    <div class="node" id="node4" style="top: 200px;">4</div>
+                    <!-- Arrows between nodes -->
+                    <div class="arrow" id="arrow1" style="top: 60px; left: 50%; transform: translateX(-50%) rotate(45deg);"></div>
+                    <div class="arrow" id="arrow2" style="top: 120px; left: 50%; transform: translateX(-50%) rotate(45deg);"></div>
+                    <div class="arrow" id="arrow3" style="top: 180px; left: 50%; transform: translateX(-50%) rotate(45deg);"></div>
+                </div>
+                <button onclick="pushNode()">Push</button>
+                <button onclick="popNode()">Pop</button>
+                <div class="description">
+                    <p><strong>Stack Explanation:</strong></p>
+                    <p>A stack is a data structure that follows the Last In, First Out (LIFO) principle. The operations are:</p>
+                    <ul>
+                        <li><strong>Push:</strong> Adds an item to the top of the stack.</li>
+                        <li><strong>Pop:</strong> Removes the item from the top of the stack.</li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                let nodeCount = 4; // Starting number of nodes
+        
+                function pushNode() {
+                    nodeCount++;
+                    const stack = document.querySelector('.stack');
+                    const newNode = document.createElement('div');
+                    newNode.classList.add('node');
+                    newNode.style.top = `${20 + (nodeCount - 1) * 60}px`;
+                    newNode.innerText = nodeCount;
+                    stack.appendChild(newNode);
+        
+                    // Slide new node into place
+                    newNode.style.top = `${20 + (nodeCount - 1) * 60}px`;
+                    setTimeout(() => {
+                        newNode.classList.add('active');
+                    }, 10); // Small delay to trigger the animation
+                }
+        
+                function popNode() {
+                    const stack = document.querySelector('.stack');
+                    const nodes = document.querySelectorAll('.node');
+                    if (nodes.length === 0) return;
+        
+                    const lastNode = nodes[nodes.length - 1];
+                    // Slide node out to the right before removing
+                    lastNode.style.left = '120px'; // Move out to the right
+                    lastNode.classList.remove('active');
+                    setTimeout(() => {
+                        lastNode.remove();
+                        nodeCount--;
+                        // Adjust positions of remaining nodes
+                        adjustNodes();
+                    }, 500); // Delay matches the sliding effect duration
+                }
+        
+                function adjustNodes() {
+                    const nodes = document.querySelectorAll('.node');
+                    nodes.forEach((node, index) => {
+                        node.style.top = `${20 + index * 60}px`;
+                        node.style.left = '0'; // Reset position after adjustment
+                    });
+                }
+            </script>
+        </body>
+        </html>
+        
+    
+        
+        <h2>Common Stack Operations</h2>
+        <ul>
+            <li><strong>Push:</strong> Add an element to the top of the stack.</li>
+            <li><strong>Pop:</strong> Remove and return the top element from the stack.</li>
+            <li><strong>Peek (or Top):</strong> Return the top element without removing it.</li>
+            <li><strong>IsEmpty:</strong> Check if the stack is empty.</li>
+        </ul>
+
+        <h2>Common Stack Implementations</h2>
+        <ul>
+            <li><strong>Array-Based Implementation:</strong> Uses an array to store stack elements.</li>
+            <li><strong>Linked List-Based Implementation:</strong> Uses a linked list to manage stack elements dynamically.</li>
+        </ul>
+
+        <!-- Problem 1 -->
+        <h3>1. Implement a Stack Using an Array</h3>
+        <p><strong>Description:</strong> Implement a stack using an array with basic stack operations.</p>
+
+        <h4>C</h4>
+        <pre>
+<code>
+#include &lt;stdio.h>
+#include &lt;stdlib.h>
+
+#define MAX 100
+
+struct Stack {
+    int top;
+    int arr[MAX];
+};
+
+void initStack(struct Stack* s) {
+    s->top = -1;
+}
+
+int isEmpty(struct Stack* s) {
+    return s->top == -1;
+}
+
+int isFull(struct Stack* s) {
+    return s->top == MAX - 1;
+}
+
+void push(struct Stack* s, int value) {
+    if (isFull(s)) {
+        printf("Stack overflow\n");
+        return;
+    }
+    s->arr[++(s->top)] = value;
+}
+
+int pop(struct Stack* s) {
+    if (isEmpty(s)) {
+        printf("Stack underflow\n");
+        return -1;
+    }
+    return s->arr[(s->top)--];
+}
+
+int peek(struct Stack* s) {
+    if (isEmpty(s)) {
+        printf("Stack is empty\n");
+        return -1;
+    }
+    return s->arr[s->top];
+}
+
+int main() {
+    struct Stack s;
+    initStack(&s);
+    push(&s, 10);
+    push(&s, 20);
+    push(&s, 30);
+    printf("Top element: %d\n", peek(&s));
+    printf("Popped element: %d\n", pop(&s));
+    printf("Top element after pop: %d\n", peek(&s));
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+
+#define MAX 100
+
+class Stack {
+    int top;
+    int arr[MAX];
+public:
+    Stack() : top(-1) {}
+    bool isEmpty() { return top == -1; }
+    bool isFull() { return top == MAX - 1; }
+    void push(int value) {
+        if (isFull()) {
+            std::cout &lt;&lt; "Stack overflow" &lt;&lt; std::endl;
+            return;
+        }
+        arr[++top] = value;
+    }
+    int pop() {
+        if (isEmpty()) {
+            std::cout &lt;&lt; "Stack underflow" &lt;&lt; std::endl;
+            return -1;
+        }
+        return arr[top--];
+    }
+    int peek() {
+        if (isEmpty()) {
+            std::cout &lt;&lt; "Stack is empty" &lt;&lt; std::endl;
+            return -1;
+        }
+        return arr[top];
+    }
+};
+
+int main() {
+    Stack s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    std::cout &lt;&lt; "Top element: " &lt;&lt; s.peek() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Popped element: " &lt;&lt; s.pop() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Top element after pop: " &lt;&lt; s.peek() &lt;&lt; std::endl;
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Java</h4>
+        <pre>
+<code>
+class Stack {
+    private int top;
+    private int[] arr;
+    private static final int MAX = 100;
+
+    public Stack() {
+        top = -1;
+        arr = new int[MAX];
+    }
+
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    public boolean isFull() {
+        return top == MAX - 1;
+    }
+
+    public void push(int value) {
+        if (isFull()) {
+            System.out.println("Stack overflow");
+            return;
+        }
+        arr[++top] = value;
+    }
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack underflow");
+            return -1;
+        }
+        return arr[top--];
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        return arr[top];
+    }
+
+    public static void main(String[] args) {
+        Stack s = new Stack();
+        s.push(10);
+        s.push(20);
+        s.push(30);
+        System.out.println("Top element: " + s.peek());
+        System.out.println("Popped element: " + s.pop());
+        System.out.println("Top element after pop: " + s.peek());
+    }
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class Stack:
+    def __init__(self, capacity):
+        self.top = -1
+        self.capacity = capacity
+        self.arr = [None] * capacity
+
+    def is_empty(self):
+        return self.top == -1
+
+    def is_full(self):
+        return self.top == self.capacity - 1
+
+    def push(self, value):
+        if self.is_full():
+            print("Stack overflow")
+            return
+        self.top += 1
+        self.arr[self.top] = value
+
+    def pop(self):
+        if self.is_empty():
+            print("Stack underflow")
+            return -1
+        value = self.arr[self.top]
+        self.top -= 1
+        return value
+
+    def peek(self):
+        if self.is_empty():
+            print("Stack is empty")
+            return -1
+        return self.arr[self.top]
+
+s = Stack(100)
+s.push(10)
+s.push(20)
+s.push(30)
+print("Top element:", s.peek())
+print("Popped element:", s.pop())
+print("Top element after pop:", s.peek())
+</code>
+        </pre>
+
+        <!-- Problem 2 -->
+        <h3>2. Implement a Stack Using a Linked List</h3>
+        <p><strong>Description:</strong> Implement a stack using a linked list with basic stack operations.</p>
+
+        <h4>C</h4>
+        <pre>
+<code>
+#include &lt;stdio.h>
+#include &lt;stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+struct Stack {
+    struct Node* top;
+};
+
+void initStack(struct Stack* s) {
+    s->top = NULL;
+}
+
+int isEmpty(struct Stack* s) {
+    return s->top == NULL;
+}
+
+void push(struct Stack* s, int value) {
+    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+    new_node->data = value;
+    new_node->next = s->top;
+    s->top = new_node;
+}
+
+int pop(struct Stack* s) {
+    if (isEmpty(s)) {
+        printf("Stack underflow\n");
+        return -1;
+    }
+    struct Node* temp = s->top;
+    int value = temp->data;
+    s->top = temp->next;
+    free(temp);
+    return value;
+}
+
+int peek(struct Stack* s) {
+    if (isEmpty(s)) {
+        printf("Stack is empty\n");
+        return -1;
+    }
+    return s->top->data;
+}
+
+int main() {
+    struct Stack s;
+    initStack(&s);
+    push(&s, 10);
+    push(&s, 20);
+    push(&s, 30);
+    printf("Top element: %d\n", peek(&s));
+    printf("Popped element: %d\n", pop(&s));
+    printf("Top element after pop:
+
+ %d\n", peek(&s));
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt>
+
+class Node {
+public:
+    int data;
+    Node* next;
+    Node(int data) : data(data), next(nullptr) {}
+};
+
+class Stack {
+    Node* top;
+public:
+    Stack() : top(nullptr) {}
+    bool isEmpty() { return top == nullptr; }
+    void push(int value) {
+        Node* new_node = new Node(value);
+        new_node->next = top;
+        top = new_node;
+    }
+    int pop() {
+        if (isEmpty()) {
+            std::cout &lt;&lt; "Stack underflow" &lt;&lt; std::endl;
+            return -1;
+        }
+        Node* temp = top;
+        int value = temp->data;
+        top = top->next;
+        delete temp;
+        return value;
+    }
+    int peek() {
+        if (isEmpty()) {
+            std::cout &lt;&lt; "Stack is empty" &lt;&lt; std::endl;
+            return -1;
+        }
+        return top->data;
+    }
+};
+
+int main() {
+    Stack s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    std::cout &lt;&lt; "Top element: " &lt;&lt; s.peek() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Popped element: " &lt;&lt; s.pop() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Top element after pop: " &lt;&lt; s.peek() &lt;&lt; std::endl;
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Java</h4>
+        <pre>
+<code>
+class Node {
+    int data;
+    Node next;
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class Stack {
+    private Node top;
+
+    public Stack() {
+        top = null;
+    }
+
+    public boolean isEmpty() {
+        return top == null;
+    }
+
+    public void push(int value) {
+        Node new_node = new Node(value);
+        new_node.next = top;
+        top = new_node;
+    }
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack underflow");
+            return -1;
+        }
+        int value = top.data;
+        top = top.next;
+        return value;
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        return top.data;
+    }
+
+    public static void main(String[] args) {
+        Stack s = new Stack();
+        s.push(10);
+        s.push(20);
+        s.push(30);
+        System.out.println("Top element: " + s.peek());
+        System.out.println("Popped element: " + s.pop());
+        System.out.println("Top element after pop: " + s.peek());
+    }
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class Stack:
+    def __init__(self):
+        self.top = None
+
+    def is_empty(self):
+        return self.top is None
+
+    def push(self, value):
+        new_node = Node(value)
+        new_node.next = self.top
+        self.top = new_node
+
+    def pop(self):
+        if self.is_empty():
+            print("Stack underflow")
+            return -1
+        value = self.top.data
+        self.top = self.top.next
+        return value
+
+    def peek(self):
+        if self.is_empty():
+            print("Stack is empty")
+            return -1
+        return self.top.data
+
+s = Stack()
+s.push(10)
+s.push(20)
+s.push(30)
+print("Top element:", s.peek())
+print("Popped element:", s.pop())
+print("Top element after pop:", s.peek())
+</code>
+        </pre>
+
+        <h2>Common Real-World Problems Using Stacks</h2>
+        <ul>
+            <li><strong>Expression Evaluation:</strong> Stacks are used to evaluate expressions and handle operator precedence in compilers and calculators.</li>
+            <li><strong>Backtracking:</strong> Stacks help in implementing algorithms for backtracking problems such as maze solving or puzzles.</li>
+            <li><strong>Undo Operations:</strong> Many applications use stacks to keep track of previous states for undo functionality.</li>
+            <li><strong>Function Call Management:</strong> The call stack manages function calls, local variables, and return addresses in programming languages.</li>
+        </ul>
+
+        <h2>Learning Resources</h2>
+        <ul>
+            <li><strong>Books:</strong> "Data Structures and Algorithm Analysis in C" by Mark Allen Weiss, "Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein.</li>
+            <li><strong>Online Courses:</strong> Platforms like Coursera, Udemy, and edX offer courses on data structures and algorithms with practical examples.</li>
+            <li><strong>Interactive Tools:</strong> Use online compilers and IDEs to practice stack implementations and solve problems.</li>
+        </ul>
+
+        <h2>Summary</h2>
+        <p>Stacks are fundamental data structures with a wide range of applications. They provide efficient operations for managing data in a Last In, First Out manner. Understanding stack operations and their implementations is crucial for solving complex problems and optimizing algorithms in computer science.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>
+
+

@@ -1,0 +1,368 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cyber Security Course 
+        </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #023554;
+            overflow-y: auto;
+            background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        header {
+            width: 100%;
+            background-color:green;
+            color: white;
+           
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+       
+        
+
+        .roadmap-container {
+            text-align: center;
+            margin-top: 60px; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .tree {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+        }
+
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 2px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 2px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 2px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+
+        .tree ul ul::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 2px solid #ccc;
+            width: 0;
+            height: 20px;
+        }
+
+        .stage {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.5s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .stage.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.10s ease, transform 0.3s ease; 
+        }
+
+        a:hover {
+            color: #000000; 
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="container">
+            <h1 class="">
+                <i class="fas fa-tree"></i>
+                TreeLearners
+            </h1>
+        </div>
+    </header><br><br><br>
+    <div class="roadmap-container"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        <br><br><br>
+        
+        
+        <h1 class="h1">Cyber Security Course </h1>
+        <div class="tree">
+            <ul>
+                <li>
+                    <div class="stage"><a href="Introduction to Cyber Security.html"style="text-decoration: none;" target="_blank">Introduction to Cyber Security</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="What is Cyber Security.html"style="text-decoration: none;" target="_blank">What is Cyber Security?</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="History of Cyber Security.html"style="text-decoration: none;" target="_blank">History of Cyber Security</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Importance of Cyber Security.html"style="text-decoration: none;" target="_blank">Importance of Cyber Security</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Types of Cyber Threats.html"style="text-decoration: none;" target="_blank">Types of Cyber Threats</div>
+                            <ul>
+                                <li>
+                                    <div class="stage"><a href="Malware.html"style="text-decoration: none;" target="_blank">Malware</div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Phishing.html"style="text-decoration: none;" target="_blank">Phishing</div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Ransomware.html"style="text-decoration: none;" target="_blank">Ransomware</div>
+                                </li>
+                                <li>
+                                    <div class="stage"><a href="Social Engineering.html"style="text-decoration: none;" target="_blank">Social Engineering</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Network Security.html"style="text-decoration: none;" target="_blank">Network Security</div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Introduction to Networks.html"style="text-decoration: none;" target="_blank">Introduction to Networks</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Network Protocols.html"style="text-decoration: none;" target="_blank">Network Protocols</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Firewalls.html"style="text-decoration: none;" target="_blank">Firewalls</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Intrusion Detection Systems (IDS).html"style="text-decoration: none;" target="_blank">Intrusion Detection Systems (IDS)</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Virtual Private Networks (VPN).html"style="text-decoration: none;" target="_blank">Virtual Private Networks (VPN)</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Cryptography.html"style="text-decoration: none;" target="_blank">Cryptography</div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Introduction to Cryptography.html"style="text-decoration: none;" target="_blank">Introduction to Cryptography</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Symmetric Encryption.html"style="text-decoration: none;" target="_blank">Symmetric Encryption</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Asymmetric Encryption.html"style="text-decoration: none;" target="_blank">Asymmetric Encryption</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Hash Functions.html"style="text-decoration: none;" target="_blank">Hash Functions</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Digital Signatures.html"style="text-decoration: none;" target="_blank">Digital Signatures</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Public Key Infrastructure (PKI).html"style="text-decoration: none;" target="_blank">Public Key Infrastructure (PKI)</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Application Security.html"style="text-decoration: none;" target="_blank">Application Security</div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Secure Coding Practices.html"style="text-decoration: none;" target="_blank">Secure Coding Practices</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Web Application Security.html"style="text-decoration: none;" target="_blank">Web Application Security</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Mobile Application Security.html"style="text-decoration: none;" target="_blank">Mobile Application Security</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Database Security.html"style="text-decoration: none;" target="_blank">Database Security</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Security Testing.html"style="text-decoration: none;" target="_blank">Security Testing</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Endpoint Security.html"style="text-decoration: none;" target="_blank">Endpoint Security</div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Antivirus and Anti-Malware.html"style="text-decoration: none;" target="_blank">Antivirus and Anti-Malware</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Endpoint Detection and Response (EDR).html"style="text-decoration: none;" target="_blank">Endpoint Detection and Response (EDR)</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Patch Management.html"style="text-decoration: none;" target="_blank">Patch Management</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Device Encryption.html"style="text-decoration: none;" target="_blank">Device Encryption</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Mobile Device Security.html"style="text-decoration: none;" target="_blank">Mobile Device Security</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Incident Response and Management.html"style="text-decoration: none;" target="_blank">Incident Response and Management</div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Incident Response Planning.html"style="text-decoration: none;" target="_blank">Incident Response Planning</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Incident Detection and Analysis.html"style="text-decoration: none;" target="_blank">Incident Detection and Analysis</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Containment, Eradication, and Recovery.html"style="text-decoration: none;" target="_blank">Containment, Eradication, and Recovery</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Post-Incident Activities.html"style="text-decoration: none;" target="_blank">Post-Incident Activities</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Forensics.html"style="text-decoration: none;" target="_blank">Forensics</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Advanced Topics Cyber Security.html"style="text-decoration: none;" target="_blank">Advanced Topics</div>
+                    <ul>
+                        <li>
+                            <div class="stage"><a href="Penetration Testing.html"style="text-decoration: none;" target="_blank">Penetration Testing</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Ethical Hacking.html"style="text-decoration: none;" target="_blank">Ethical Hacking</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Cyber Threat Intelligence.html"style="text-decoration: none;" target="_blank">Cyber Threat Intelligence</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="Cloud Security.html"style="text-decoration: none;" target="_blank">Cloud Security</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="IoT Security.html"style="text-decoration: none;" target="_blank">IoT Security</div>
+                        </li>
+                        <li>
+                            <div class="stage"><a href="AI in Cyber Security.html"style="text-decoration: none;" target="_blank">AI in Cyber Security</div>
+                            <br><br><br><br><br><br><br><br>
+        
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+    
+
+document.addEventListener('DOMContentLoaded', () => {
+    const stages = document.querySelectorAll('.stage');
+    let delay = 0;
+
+    stages.forEach((stage, index) => {
+        setTimeout(() => {
+            stage.classList.add('visible');
+        }, delay);
+        delay += 300; 
+    });
+});
+
+    </script>
+</body>
+</html>

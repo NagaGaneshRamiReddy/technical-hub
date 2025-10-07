@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>HTML</title>
+    
+</head>
+<body class="body">
+ 
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> HTML Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+
+      
+
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+
+
+    
+
+
+
+
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-html5"  style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">HTML Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    
+        
+        <a href="HTML Roadmaps.html" target="_blank"><b class="b12">HTML Roadmap</b></a>
+        <ul> <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+        
+             <a href="Introduction_to_HTML.html" target="_blank">HTML Introduction</a>
+            <li><a href="What_is_HTML.html" target="_blank">What is HTML?</a></li>
+            <li><a href="HTML_Installation.html" target="_blank">Installation</a></li>
+            <li><a href="First_HTML_Page.html" target="_blank">First HTML Page</a></li>
+        </ul>
+    
+        <h3>HTML Basics</h3>
+        <a href="HTML_Basics.html" target="_blank">HTML Basics</a>
+        <ul>
+            <li><a href="HTML_Tags.html" target="_blank">HTML Tags</a></li>
+            <li><a href="HTML_Attributes.html" target="_blank">HTML Attributes</a></li>
+            <li><a href="HTML_Elements.html" target="_blank">HTML Elements</a></li>
+        </ul>
+    
+        <h3>HTML Text Formatting</h3>
+        <a href="HTML_Text_Formatting.html" target="_blank">HTML Text Formatting</a>
+        <ul>
+            <li><a href="Headings.html" target="_blank">Headings</a></li>
+            <li><a href="Paragraphs.html" target="_blank">Paragraphs</a></li>
+            <li><a href="Text_Styles.html" target="_blank">Text Styles</a></li>
+        </ul>
+    
+        <h3>HTML Lists</h3>
+        <a href="HTML_Lists.html" target="_blank">HTML Lists</a>
+        <ul>
+            <li><a href="Ordered_Lists.html" target="_blank">Ordered Lists</a></li>
+            <li><a href="Unordered_Lists.html" target="_blank">Unordered Lists</a></li>
+            <li><a href="Nested_Lists.html" target="_blank">Nested Lists</a></li>
+        </ul>
+    
+        <h3>HTML Forms</h3>
+        <a href="HTML_Forms.html" target="_blank">HTML Forms</a>
+        <ul>
+            <li><a href="Form_Elements.html" target="_blank">Form Elements</a></li>
+            <li><a href="Form_Validation.html" target="_blank">Form Validation</a></li>
+            <li><a href="Input_Types.html" target="_blank">Input Types</a></li>
+        </ul>
+    
+        <h3>HTML Media</h3>
+        <a href="HTML_Media.html" target="_blank">HTML Media</a>
+        <ul>
+            <li><a href="Images.html" target="_blank">Images</a></li>
+            <li><a href="Audio.html" target="_blank">Audio</a></li>
+            <li><a href="Video.html" target="_blank">Video</a></li>
+        </ul>
+    
+        <h3>HTML Tables</h3>
+        <a href="HTML_Tables.html" target="_blank">HTML Tables</a>
+        <ul>
+            <li><a href="Basic_Tables.html" target="_blank">Basic Tables</a></li>
+            <li><a href="Table_Headers.html" target="_blank">Table Headers</a></li>
+            <li><a href="Table_Spanning.html" target="_blank">Table Spanning</a></li>
+        </ul>
+    
+        <h3>HTML Semantics</h3>
+        <a href="HTML_Semantics.html" target="_blank">HTML Semantics</a>
+        <ul>
+            <li><a href="Div_vs_Semantic_Tags.html" target="_blank">Div vs Semantic Tags</a></li>
+            <li><a href="Semantic_Elements.html" target="_blank">Semantic Elements</a></li>
+        </ul>
+    </div>
+    
+    
+    
+  
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "HTML_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "HTML_quize.html";
+}
+function goproject() {
+    window.location.href = "HTML_projects.html";
+}
+function gocomp() {
+    window.location.href = "html_compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "HTML_Tags.html";
+    }
+    function goNext() {
+        window.location.href = "HTML_Elements.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-html5" style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk">HTML Tutorial</h2>
+    <div class="div1">HTML Attributes</div></div>
+    
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+    <h2>Overview</h2>
+    <p>HTML attributes provide additional information about HTML elements. They are always specified in the opening tag and come in name/value pairs like <code>name="value"</code>.</p>
+    <div id="languageSelector" style="margin-top: 20px; display: none;">
+        <label for="language">Select Language:</label>
+        <select id="language" onchange="changeVideo()">
+            <option value="english">English</option>
+            <option value="telugu">Telugu</option>
+            <option value="hindi">Hindi</option>
+        </select>
+    </div>
+
+
+    <div id="videoContainer" style="display: none; margin-top: 20px;">
+        <iframe id="youtubeVideo" width="560" height="315" src="" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        </div>
+        <script>
+    
+            const videos = {
+                english: 'https://www.youtube.com/embed/Ba1RLs0TgCo?si=5GYtUfNTS5-Z8zcz',  
+                
+                telugu: 'https://www.youtube.com/embed/',  
+                
+                hindi: 'https://www.youtube.com/embed/'  
+                
+            };
+        
+        
+            function govideo() {
+                
+                document.getElementById('languageSelector').style.display = 'block';
+                
+        
+                document.getElementById('videoContainer').style.display = 'block';
+                
+        
+                window.scrollTo(0, document.getElementById('videoContainer').offsetTop);
+                
+    
+                changeVideo();
+            }
+        
+            
+            function changeVideo() {
+                const selectedLanguage = document.getElementById('language').value;
+                const videoUrl = videos[selectedLanguage];
+                
+        
+                document.getElementById('youtubeVideo').src = videoUrl;
+            }
+        </script>
+    <h2>Common HTML Attributes</h2>
+
+    <h3>1. id Attribute</h3>
+    <p>The <code>id</code> attribute specifies a unique identifier for an HTML element:</p>
+    <pre>
+&lt;div id="uniqueId"&gt;This is a unique div&lt;/div&gt;
+    </pre>
+
+    <h3>2. class Attribute</h3>
+    <p>The <code>class</code> attribute specifies one or more class names for an HTML element, allowing for CSS styling:</p>
+    <pre>
+&lt;div class="container"&gt;This is a styled div&lt;/div&gt;
+    </pre>
+
+    <h3>3. style Attribute</h3>
+    <p>The <code>style</code> attribute allows you to add inline CSS styles to an HTML element:</p>
+    <pre>
+&lt;p style="color: blue; font-size: 20px;"&gt;This is a styled paragraph.&lt;/p&gt;
+    </pre>
+
+    <h3>4. href Attribute</h3>
+    <p>The <code>href</code> attribute specifies the URL of a link:</p>
+    <pre>
+&lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;
+    </pre>
+
+    <h3>5. src Attribute</h3>
+    <p>The <code>src</code> attribute specifies the path to an image or other media:</p>
+    <pre>
+&lt;img src="image.jpg" alt="Description"&gt;
+    </pre>
+
+    <h3>6. alt Attribute</h3>
+    <p>The <code>alt</code> attribute provides alternative text for images:</p>
+    <pre>
+&lt;img src="image.jpg" alt="A beautiful scenery"&gt;
+    </pre>
+
+    <h3>7. title Attribute</h3>
+    <p>The <code>title</code> attribute provides additional information about an element, typically displayed as a tooltip:</p>
+    <pre>
+&lt;a href="#" title="More information"&gt;Hover over me&lt;/a&gt;
+    </pre>
+
+    <h2>Global Attributes</h2>
+    <p>Global attributes can be applied to any HTML element:</p>
+    
+    <ul>
+        <li>
+            <code>class</code>: The <code>class</code> attribute is used to assign one or more class names to an HTML element. These classes are typically utilized for CSS styling and can also be targeted by JavaScript for manipulation or event handling.
+            <br><strong>Example:</strong> 
+            <pre>&lt;div class="container highlight"&gt;This div is styled with two classes.&lt;/div&gt;</pre>
+            <strong>Use Case:</strong> Helps to apply the same styles to multiple elements without repeating CSS rules.
+        </li>
+        <li>
+            <code>id</code>: The <code>id</code> attribute provides a unique identifier for an HTML element. An <code>id</code> should be unique within a page, ensuring that no two elements share the same identifier.
+            <br><strong>Example:</strong> 
+            <pre>&lt;h1 id="main-title"&gt;Welcome to My Website&lt;/h1&gt;</pre>
+            <strong>Use Case:</strong> Useful for linking to specific sections of a page or for styling and JavaScript targeting.
+        </li>
+        <li>
+            <code>style</code>: The <code>style</code> attribute allows you to apply inline CSS styles directly to an HTML element. While convenient for quick styling, it is generally recommended to use external CSS for maintainability.
+            <br><strong>Example:</strong> 
+            <pre>&lt;p style="color: red; font-size: 20px;"&gt;This text is red and 20 pixels in size.&lt;/p&gt;</pre>
+            <strong>Use Case:</strong> Useful for making quick styling changes or overriding external CSS temporarily.
+        </li>
+        <li>
+            <code>title</code>: The <code>title</code> attribute offers additional information about an element. A tooltip containing the title text appears when a user hovers over the element.
+            <br><strong>Example:</strong> 
+            <pre>&lt;a href="#" title="Click here for more information"&gt;Learn more&lt;/a&gt;</pre>
+            <strong>Use Case:</strong> Enhances user experience by providing extra context without cluttering the interface.
+        </li>
+        <li>
+            <code>data-* </code> (custom data attributes): Custom data attributes allow you to store extra information on HTML elements without using additional properties. They begin with the prefix <code>data-</code> and can be accessed in JavaScript.
+            <br><strong>Example:</strong> 
+            <pre>&lt;div data-user-id="12345" data-role="admin"&gt;User Info&lt;/div&gt;</pre>
+            <strong>Use Case:</strong> Useful for storing additional information that can be dynamically accessed through JavaScript, especially in single-page applications or interactive web pages.
+        </li>
+    </ul>
+    
+    <h2>Example of Custom Data Attribute</h2>
+    <pre>
+&lt;div data-user-id="12345"&gt;User Info&lt;/div&gt;
+    </pre>
+
+    <div class="resources">
+        <h2>Useful Links</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/tags/default.asp" target="_blank">W3Schools HTML Tags</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">MDN Web Docs: HTML Attributes</a></li>
+            <li><a href="https://www.html.com/attributes/" target="_blank">HTML.com: HTML Attributes</a></li>
+        </ul>
+    </div>
+
+    <h2>Summary</h2>
+    <p>HTML attributes enhance the functionality of HTML elements, allowing you to control their behavior and appearance. Understanding how to use attributes effectively is crucial for web development.</p>
+
+   
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+    
+
+</body>
+</html>

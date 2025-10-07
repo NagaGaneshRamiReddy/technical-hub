@@ -1,0 +1,1163 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>C Quiz</title>
+    <link rel="stylesheet" href="interviews.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+</head>
+  
+ 
+
+<body class="body">
+
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> C Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "C_interviews.html";
+}
+function goquizpro() {
+window.location.href = "C_quiz.html";
+}
+function gocomp() {
+window.location.href = "C Compiler.html";
+}
+
+function goproject() {
+window.location.href = "C_project.html";
+}
+
+
+
+    </script>
+
+
+
+
+
+  
+   
+  
+
+<script>
+    function toggleAnswer(button) {
+        const questionItem = button.closest('.question-item');
+        const allQuestionItems = document.querySelectorAll('.question-item');
+
+        // Close all open quiz containers
+        allQuestionItems.forEach(item => {
+            if (item !== questionItem) {
+                item.classList.remove('active');
+            }
+        });
+
+        // Toggle the clicked question's quiz container
+        questionItem.classList.toggle('active');
+    }
+
+    function calculateScore(quizContainer, topicNumber) {
+        const options = quizContainer.querySelectorAll("input[type='radio']");
+        let score = 0;
+        options.forEach(option => {
+            if (option.checked && option.value === "1") {
+                score += 1;
+            }
+        });
+
+        // Display score
+        const scoreCard = quizContainer.querySelector(".score-card");
+        scoreCard.style.display = "block";
+        scoreCard.classList.add(score === 5 ? 'correct' : 'incorrect');
+        scoreCard.innerHTML = `You scored ${score} out of 5 for Topic ${topicNumber}!`;
+    }
+</script>
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+<br><br><br>
+  
+
+<br><br><br>
+<div class="container">
+    <script src="script.js"></script>
+    
+    <h1> <i class="fab fa-c" style="font-size: 50px;padding-left: 16px;  color: #07fe45;"></i> Top  Interviews Questions</h1>
+    <ol class="question-list">
+
+   
+        
+            <ol class="question-list">
+                <!-- Previous Topics Here -->
+            
+                <!-- Topic 10: Introduction to C Programming Language -->
+                <li class="question-item">
+                    <div class="question">1. Introduction to C Programming Language</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Who is known as the father of the C programming language?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q1" value="1">Dennis Ritchie</label></li>
+                            <li><label><input type="radio" name="q1" value="0">Bjarne Stroustrup</label></li>
+                            <li><label><input type="radio" name="q1" value="0">James Gosling</label></li>
+                        </ul>
+                        
+                        <p>2. In which year was the C programming language developed?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q2" value="0">1983</label></li>
+                            <li><label><input type="radio" name="q2" value="1">1972</label></li>
+                            <li><label><input type="radio" name="q2" value="0">1995</label></li>
+                        </ul>
+                        
+                        <p>3. Which of the following file extensions is typically used for C programs?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q3" value="1">.c</label></li>
+                            <li><label><input type="radio" name="q3" value="0">.cpp</label></li>
+                            <li><label><input type="radio" name="q3" value="0">.java</label></li>
+                        </ul>
+                        
+                        <p>4. Which of these symbols is used to begin a multi-line comment in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q4" value="1">/*</label></li>
+                            <li><label><input type="radio" name="q4" value="0">//</label></li>
+                            <li><label><input type="radio" name="q4" value="0">#</label></li>
+                        </ul>
+                        
+                        <p>5. What is the standard library header for input and output functions in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q5" value="1">stdio.h</label></li>
+                            <li><label><input type="radio" name="q5" value="0">stdlib.h</label></li>
+                            <li><label><input type="radio" name="q5" value="0">string.h</label></li>
+                        </ul>
+                        
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 1)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">2. History of C</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. In which company was the C programming language developed?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q6" value="1">Bell Labs</label></li>
+                            <li><label><input type="radio" name="q6" value="0">Microsoft</label></li>
+                            <li><label><input type="radio" name="q6" value="0">Apple</label></li>
+                        </ul>
+                
+                        <p>2. Who developed the C programming language?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q7" value="1">Dennis Ritchie</label></li>
+                            <li><label><input type="radio" name="q7" value="0">Ken Thompson</label></li>
+                            <li><label><input type="radio" name="q7" value="0">Brian Kernighan</label></li>
+                        </ul>
+                
+                        <p>3. In which decade was C developed?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q8" value="1">1970s</label></li>
+                            <li><label><input type="radio" name="q8" value="0">1980s</label></li>
+                            <li><label><input type="radio" name="q8" value="0">1990s</label></li>
+                        </ul>
+                
+                        <p>4. Which programming language influenced the development of C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q9" value="1">B</label></li>
+                            <li><label><input type="radio" name="q9" value="0">Java</label></li>
+                            <li><label><input type="radio" name="q9" value="0">Python</label></li>
+                        </ul>
+                
+                        <p>5. What was one of the primary uses of C when it was first developed?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q10" value="1">Operating System Development</label></li>
+                            <li><label><input type="radio" name="q10" value="0">Web Development</label></li>
+                            <li><label><input type="radio" name="q10" value="0">Mobile App Development</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 2)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">3. Setting up C Environment</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Which software is commonly used to compile C programs?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q11" value="1">GCC</label></li>
+                            <li><label><input type="radio" name="q11" value="0">Python</label></li>
+                            <li><label><input type="radio" name="q11" value="0">Node.js</label></li>
+                        </ul>
+                
+                        <p>2. What does IDE stand for in programming?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q12" value="1">Integrated Development Environment</label></li>
+                            <li><label><input type="radio" name="q12" value="0">Internet Development Editor</label></li>
+                            <li><label><input type="radio" name="q12" value="0">Interface Design Environment</label></li>
+                        </ul>
+                
+                        <p>3. Which of these is a popular IDE for C programming?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q13" value="1">Code::Blocks</label></li>
+                            <li><label><input type="radio" name="q13" value="0">Atom</label></li>
+                            <li><label><input type="radio" name="q13" value="0">Sublime Text</label></li>
+                        </ul>
+                
+                        <p>4. Which command is used to compile a C program using GCC?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q14" value="1">gcc filename.c</label></li>
+                            <li><label><input type="radio" name="q14" value="0">run filename.c</label></li>
+                            <li><label><input type="radio" name="q14" value="0">execute filename.c</label></li>
+                        </ul>
+                
+                        <p>5. On which operating system can you set up a C programming environment?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q15" value="1">Windows, macOS, and Linux</label></li>
+                            <li><label><input type="radio" name="q15" value="0">Windows only</label></li>
+                            <li><label><input type="radio" name="q15" value="0">Linux only</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 3)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">4. Hello World Program</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. What function is commonly used to display output in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q16" value="1">printf()</label></li>
+                            <li><label><input type="radio" name="q16" value="0">print()</label></li>
+                            <li><label><input type="radio" name="q16" value="0">console.log()</label></li>
+                        </ul>
+                
+                        <p>2. Which header file is required to use printf() in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q17" value="1">stdio.h</label></li>
+                            <li><label><input type="radio" name="q17" value="0">stdlib.h</label></li>
+                            <li><label><input type="radio" name="q17" value="0">string.h</label></li>
+                        </ul>
+                
+                        <p>3. What is the correct syntax to print "Hello World" in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q18" value="1">printf("Hello World");</label></li>
+                            <li><label><input type="radio" name="q18" value="0">print("Hello World");</label></li>
+                            <li><label><input type="radio" name="q18" value="0">console.log("Hello World");</label></li>
+                        </ul>
+                
+                        <p>4. What does the main() function represent in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q19" value="1">Entry point of the program</label></li>
+                            <li><label><input type="radio" name="q19" value="0">Output of the program</label></li>
+                            <li><label><input type="radio" name="q19" value="0">Loop function</label></li>
+                        </ul>
+                
+                        <p>5. Which of these statements is correct about the Hello World program in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q20" value="1">It starts with main()</label></li>
+                            <li><label><input type="radio" name="q20" value="0">It starts with include</label></li>
+                            <li><label><input type="radio" name="q20" value="0">It requires a class</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 4)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">5. Basic C Syntax</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. What symbol is used to terminate a statement in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q21" value="1">;</label></li>
+                            <li><label><input type="radio" name="q21" value="0">.</label></li>
+                            <li><label><input type="radio" name="q21" value="0">:</label></li>
+                        </ul>
+                
+                        <p>2. Which of the following is a valid variable declaration in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q22" value="1">int num;</label></li>
+                            <li><label><input type="radio" name="q22" value="0">int 1num;</label></li>
+                            <li><label><input type="radio" name="q22" value="0">float#value;</label></li>
+                        </ul>
+                
+                        <p>3. What is the correct syntax for including a header file?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q23" value="1">#include <stdio.h></label></li>
+                            <li><label><input type="radio" name="q23" value="0">include <stdio.h></label></li>
+                            <li><label><input type="radio" name="q23" value="0">#include "stdio.h"</label></li>
+                        </ul>
+                
+                        <p>4. Which of the following is NOT a valid data type in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q24" value="0">int</label></li>
+                            <li><label><input type="radio" name="q24" value="1">string</label></li>
+                            <li><label><input type="radio" name="q24" value="0">float</label></li>
+                        </ul>
+                
+                        <p>5. What keyword is used to define a constant in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q25" value="1">const</label></li>
+                            <li><label><input type="radio" name="q25" value="0">static</label></li>
+                            <li><label><input type="radio" name="q25" value="0">define</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 5)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">6. Variables and Data Types</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Which data type is used to store whole numbers in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q26" value="1">int</label></li>
+                            <li><label><input type="radio" name="q26" value="0">char</label></li>
+                            <li><label><input type="radio" name="q26" value="0">float</label></li>
+                        </ul>
+                
+                        <p>2. What is the size of an int data type in C (on most systems)?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q27" value="1">4 bytes</label></li>
+                            <li><label><input type="radio" name="q27" value="0">2 bytes</label></li>
+                            <li><label><input type="radio" name="q27" value="0">1 byte</label></li>
+                        </ul>
+                
+                        <p>3. What data type would you use to store a single character?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q28" value="1">char</label></li>
+                            <li><label><input type="radio" name="q28" value="0">string</label></li>
+                            <li><label><input type="radio" name="q28" value="0">int</label></li>
+                        </ul>
+                
+                        <p>4. Which of these is a floating-point data type in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q29" value="0">int</label></li>
+                            <li><label><input type="radio" name="q29" value="1">float</label></li>
+                            <li><label><input type="radio" name="q29" value="0">char</label></li>
+                        </ul>
+                
+                        <p>5. Which of the following is a correct variable assignment in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q30" value="1">num = 5;</label></li>
+                            <li><label><input type="radio" name="q30" value="0">5 = num;</label></li>
+                            <li><label><input type="radio" name="q30" value="0">num := 5;</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 6)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">7. Operators</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Which operator is used to add two numbers in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q31" value="1">+</label></li>
+                            <li><label><input type="radio" name="q31" value="0">-</label></li>
+                            <li><label><input type="radio" name="q31" value="0">*</label></li>
+                        </ul>
+                
+                        <p>2. What is the result of the expression 10 % 3?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q32" value="1">1</label></li>
+                            <li><label><input type="radio" name="q32" value="0">3</label></li>
+                            <li><label><input type="radio" name="q32" value="0">0</label></li>
+                        </ul>
+                
+                        <p>3. Which operator is used for logical AND in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q33" value="1">&amp;&amp;</label></li>
+                            <li><label><input type="radio" name="q33" value="0">||</label></li>
+                            <li><label><input type="radio" name="q33" value="0">!</label></li>
+                        </ul>
+                
+                        <p>4. What does the operator ++ do to a variable?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q34" value="1">Increases its value by 1</label></li>
+                            <li><label><input type="radio" name="q34" value="0">Decreases its value by 1</label></li>
+                            <li><label><input type="radio" name="q34" value="0">Sets it to zero</label></li>
+                        </ul>
+                
+                        <p>5. Which operator is used to compare two values for equality?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q35" value="1">==</label></li>
+                            <li><label><input type="radio" name="q35" value="0">=</label></li>
+                            <li><label><input type="radio" name="q35" value="0">!=</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 7)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">8. Control Statements</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. What is the primary purpose of control statements in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q36" value="1">To control the flow of execution</label></li>
+                            <li><label><input type="radio" name="q36" value="0">To declare variables</label></li>
+                            <li><label><input type="radio" name="q36" value="0">To define functions</label></li>
+                        </ul>
+                
+                        <p>2. Which control statement is used to execute a block of code based on a condition?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q37" value="1">If-else</label></li>
+                            <li><label><input type="radio" name="q37" value="0">Switch</label></li>
+                            <li><label><input type="radio" name="q37" value="0">For</label></li>
+                        </ul>
+                
+                        <p>3. What does the switch statement evaluate?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q38" value="0">A boolean expression</label></li>
+                            <li><label><input type="radio" name="q38" value="1">An integer or character expression</label></li>
+                            <li><label><input type="radio" name="q38" value="0">A floating-point expression</label></li>
+                        </ul>
+                
+                        <p>4. Which loop guarantees that the block of code will execute at least once?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q39" value="0">For loop</label></li>
+                            <li><label><input type="radio" name="q39" value="0">While loop</label></li>
+                            <li><label><input type="radio" name="q39" value="1">Do-while loop</label></li>
+                        </ul>
+                
+                        <p>5. What does the break statement do in a loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q40" value="1">Exits the loop immediately</label></li>
+                            <li><label><input type="radio" name="q40" value="0">Continues to the next iteration</label></li>
+                            <li><label><input type="radio" name="q40" value="0">Pauses the loop</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 8)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">9. If-Else Statements</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. What keyword is used to introduce an else block in C?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q41" value="1">else</label></li>
+                            <li><label><input type="radio" name="q41" value="0">elseif</label></li>
+                            <li><label><input type="radio" name="q41" value="0">else if</label></li>
+                        </ul>
+                
+                        <p>2. How many conditions can be checked using if-else statements?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q42" value="0">Only one</label></li>
+                            <li><label><input type="radio" name="q42" value="1">Multiple</label></li>
+                            <li><label><input type="radio" name="q42" value="0">None</label></li>
+                        </ul>
+                
+                        <p>3. What is the output of the following code: <code>int a = 10; if(a > 5) printf("Hello"); else printf("World");</code>?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q43" value="1">Hello</label></li>
+                            <li><label><input type="radio" name="q43" value="0">World</label></li>
+                            <li><label><input type="radio" name="q43" value="0">Nothing</label></li>
+                        </ul>
+                
+                        <p>4. Which of these correctly represents an if-else statement?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q44" value="0">if (x > 0) then x = 0;</label></li>
+                            <li><label><input type="radio" name="q44" value="1">if (x > 0) x = 0;</label></li>
+                            <li><label><input type="radio" name="q44" value="0">if x > 0: x = 0;</label></li>
+                        </ul>
+                
+                        <p>5. What will happen if no else block is provided?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q45" value="1">The program continues without any action</label></li>
+                            <li><label><input type="radio" name="q45" value="0">An error will occur</label></li>
+                            <li><label><input type="radio" name="q45" value="0">The program will stop</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 9)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+
+                
+                <li class="question-item">
+                    <div class="question">10. Switch Statement</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. What is the purpose of the switch statement?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q46" value="1">To select one of many code blocks to execute</label></li>
+                            <li><label><input type="radio" name="q46" value="0">To iterate over a sequence</label></li>
+                            <li><label><input type="radio" name="q46" value="0">To create functions</label></li>
+                        </ul>
+                
+                        <p>2. Which keyword is used to terminate a case in a switch statement?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q47" value="1">break</label></li>
+                            <li><label><input type="radio" name="q47" value="0">exit</label></li>
+                            <li><label><input type="radio" name="q47" value="0">return</label></li>
+                        </ul>
+                
+                        <p>3. Can a switch statement evaluate expressions other than integers?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q48" value="1">Yes, it can evaluate characters and enumerated types</label></li>
+                            <li><label><input type="radio" name="q48" value="0">No, only integers</label></li>
+                            <li><label><input type="radio" name="q48" value="0">Yes, it can evaluate floats</label></li>
+                        </ul>
+                
+                        <p>4. What happens if no break statement is present in a case?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q49" value="1">The program continues executing the next case</label></li>
+                            <li><label><input type="radio" name="q49" value="0">The program will stop</label></li>
+                            <li><label><input type="radio" name="q49" value="0">An error will occur</label></li>
+                        </ul>
+                
+                        <p>5. Which of the following is the correct syntax for a switch statement?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q50" value="1">switch(expression) { case value: ... }</label></li>
+                            <li><label><input type="radio" name="q50" value="0">switch: (expression) { case value; ... }</label></li>
+                            <li><label><input type="radio" name="q50" value="0">switch(expression) case value: ... </label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 10)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">11. Loops</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. Which loop checks the condition before executing the loop body?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q51" value="1">For loop</label></li>
+                            <li><label><input type="radio" name="q51" value="0">Do-while loop</label></li>
+                            <li><label><input type="radio" name="q51" value="0">Infinite loop</label></li>
+                        </ul>
+                
+                        <p>2. How many times will the following loop execute? <code>for(int i = 0; i < 5; i++) {}</code></p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q52" value="0">4</label></li>
+                            <li><label><input type="radio" name="q52" value="1">5</label></li>
+                            <li><label><input type="radio" name="q52" value="0">6</label></li>
+                        </ul>
+                
+                        <p>3. What is the primary difference between a while loop and a do-while loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q53" value="1">A do-while loop executes at least once</label></li>
+                            <li><label><input type="radio" name="q53" value="0">A while loop executes at least once</label></li>
+                            <li><label><input type="radio" name="q53" value="0">There is no difference</label></li>
+                        </ul>
+                
+                        <p>4. What is the effect of the continue statement in a loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q54" value="1">It skips the current iteration</label></li>
+                            <li><label><input type="radio" name="q54" value="0">It exits the loop</label></li>
+                            <li><label><input type="radio" name="q54" value="0">It pauses the loop</label></li>
+                        </ul>
+                
+                        <p>5. Which of these is the correct syntax for a while loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q55" value="1">while(condition) { ... }</label></li>
+                            <li><label><input type="radio" name="q55" value="0">while: (condition) { ... }</label></li>
+                            <li><label><input type="radio" name="q55" value="0">while (condition) then { ... }</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 11)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">12. For Loop</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. What is the initialization part of a for loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q56" value="1">Setting the loop counter</label></li>
+                            <li><label><input type="radio" name="q56" value="0">Defining the condition</label></li>
+                            <li><label><input type="radio" name="q56" value="0">Incrementing the counter</label></li>
+                        </ul>
+                
+                        <p>2. Which of the following correctly represents a for loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q57" value="0">for (i = 0; i < 5; i++)</label></li>
+                            <li><label><input type="radio" name="q57" value="1">for (int i = 0; i < 5; i++) {}</label></li>
+                            <li><label><input type="radio" name="q57" value="0">for int (i = 0; i < 5; i++) {}</label></li>
+                        </ul>
+                
+                        <p>3. How many times will the following loop execute? <code>for(int i = 0; i <= 3; i++) {}</code></p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q58" value="0">3</label></li>
+                            <li><label><input type="radio" name="q58" value="1">4</label></li>
+                            <li><label><input type="radio" name="q58" value="0">5</label></li>
+                        </ul>
+                
+                        <p>4. What is the purpose of the update expression in a for loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q59" value="1">To change the loop counter</label></li>
+                            <li><label><input type="radio" name="q59" value="0">To initialize the loop</label></li>
+                            <li><label><input type="radio" name="q59" value="0">To evaluate the condition</label></li>
+                        </ul>
+                
+                        <p>5. Can a for loop be used to create an infinite loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q60" value="1">Yes, by omitting the condition</label></li>
+                            <li><label><input type="radio" name="q60" value="0">No, it is impossible</label></li>
+                            <li><label><input type="radio" name="q60" value="0">Yes, by setting a constant condition</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 12)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">13. While Loop</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. What condition must be true for a while loop to execute?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q61" value="1">The loop condition</label></li>
+                            <li><label><input type="radio" name="q61" value="0">The loop counter</label></li>
+                            <li><label><input type="radio" name="q61" value="0">The loop body</label></li>
+                        </ul>
+                
+                        <p>2. What happens if the condition in a while loop is initially false?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q62" value="1">The loop body will not execute</label></li>
+                            <li><label><input type="radio" name="q62" value="0">The loop will execute once</label></li>
+                            <li><label><input type="radio" name="q62" value="0">An error will occur</label></li>
+                        </ul>
+                
+                        <p>3. Which of the following is the correct syntax for a while loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q63" value="0">while: (condition) {}</label></li>
+                            <li><label><input type="radio" name="q63" value="1">while(condition) {}</label></li>
+                            <li><label><input type="radio" name="q63" value="0">while condition {}</label></li>
+                        </ul>
+                
+                        <p>4. How can an infinite loop be created using a while loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q64" value="1">By using a condition that is always true</label></li>
+                            <li><label><input type="radio" name="q64" value="0">By using a condition that is never true</label></li>
+                            <li><label><input type="radio" name="q64" value="0">By incrementing the counter</label></li>
+                        </ul>
+                
+                        <p>5. Which of these statements is true about while loops?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q65" value="0">They cannot contain nested loops</label></li>
+                            <li><label><input type="radio" name="q65" value="1">They can contain nested loops</label></li>
+                            <li><label><input type="radio" name="q65" value="0">They must have a return statement</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 13)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">14. Do-While Loop</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. How does a do-while loop differ from a while loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q66" value="1">It executes the loop body at least once</label></li>
+                            <li><label><input type="radio" name="q66" value="0">It cannot be used for conditional execution</label></li>
+                            <li><label><input type="radio" name="q66" value="0">It must have an increment statement</label></li>
+                        </ul>
+                
+                        <p>2. What is the correct syntax for a do-while loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q67" value="1">do { ... } while(condition);</label></li>
+                            <li><label><input type="radio" name="q67" value="0">do while(condition) { ... };</label></li>
+                            <li><label><input type="radio" name="q67" value="0">do { ... } until(condition);</label></li>
+                        </ul>
+                
+                        <p>3. Which of the following statements about do-while loops is true?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q68" value="0">They do not need a condition</label></li>
+                            <li><label><input type="radio" name="q68" value="0">They can be nested within each other</label></li>
+                            <li><label><input type="radio" name="q68" value="1">They always execute at least once</label></li>
+                        </ul>
+                
+                        <p>4. What happens if the condition in a do-while loop is false after the first iteration?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q69" value="0">The loop will execute again</label></li>
+                            <li><label><input type="radio" name="q69" value="1">The loop will terminate</label></li>
+                            <li><label><input type="radio" name="q69" value="0">An error will occur</label></li>
+                        </ul>
+                
+                        <p>5. Can a do-while loop be used to create an infinite loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q70" value="1">Yes, if the condition is always true</label></li>
+                            <li><label><input type="radio" name="q70" value="0">No, it is impossible</label></li>
+                            <li><label><input type="radio" name="q70" value="0">Yes, by using a return statement</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 14)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+                <li class="question-item">
+                    <div class="question">15. Break and Continue</div>
+                    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+                    <div class="quiz-container">
+                        <p>1. What does the break statement do in loops?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q71" value="1">Exits the loop</label></li>
+                            <li><label><input type="radio" name="q71" value="0">Skips the current iteration</label></li>
+                            <li><label><input type="radio" name="q71" value="0">Restarts the loop</label></li>
+                        </ul>
+                
+                        <p>2. Which statement is used to skip the current iteration in a loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q72" value="0">break</label></li>
+                            <li><label><input type="radio" name="q72" value="1">continue</label></li>
+                            <li><label><input type="radio" name="q72" value="0">exit</label></li>
+                        </ul>
+                
+                        <p>3. Where can the break statement be used?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q73" value="1">In loops and switch statements</label></li>
+                            <li><label><input type="radio" name="q73" value="0">Only in loops</label></li>
+                            <li><label><input type="radio" name="q73" value="0">Only in switch statements</label></li>
+                        </ul>
+                
+                        <p>4. What happens when a continue statement is executed in a loop?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q74" value="0">The loop exits</label></li>
+                            <li><label><input type="radio" name="q74" value="1">The next iteration starts immediately</label></li>
+                            <li><label><input type="radio" name="q74" value="0">The loop is paused</label></li>
+                        </ul>
+                
+                        <p>5. Can break and continue statements be nested within each other?</p>
+                        <ul class="options">
+                            <li><label><input type="radio" name="q75" value="0">No, they cannot be nested</label></li>
+                            <li><label><input type="radio" name="q75" value="0">Only break can be nested</label></li>
+                            <li><label><input type="radio" name="q75" value="1">Yes, they can be used within nested loops</label></li>
+                        </ul>
+                
+                        <button class="submit-btn" onclick="calculateScore(this.parentElement, 15)">Submit</button>
+                        <div class="score-card"></div>
+                    </div>
+                </li>
+<!-- Arrays in C -->
+<li class="question-item">
+    <div class="question">16. Arrays in C</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+    <div class="quiz-container">
+        <p>1. What is the index of the first element in a one-dimensional array?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q1" value="1">0</label></li>
+            <li><label><input type="radio" name="q1" value="0">1</label></li>
+            <li><label><input type="radio" name="q1" value="0">-1</label></li>
+        </ul>
+
+        <p>2. How do you declare a two-dimensional array in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q2" value="1">int arr[3][4];</label></li>
+            <li><label><input type="radio" name="q2" value="0">int arr[3,4];</label></li>
+            <li><label><input type="radio" name="q2" value="0">int arr(3)(4);</label></li>
+        </ul>
+
+        <p>3. Which of the following is true about multi-dimensional arrays?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q3" value="0">They can only have two dimensions</label></li>
+            <li><label><input type="radio" name="q3" value="1">They can have any number of dimensions</label></li>
+            <li><label><input type="radio" name="q3" value="0">They can only be declared as static arrays</label></li>
+        </ul>
+
+        <p>4. How can you pass an array to a function in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q4" value="1">By passing the array name</label></li>
+            <li><label><input type="radio" name="q4" value="0">By passing the array size</label></li>
+            <li><label><input type="radio" name="q4" value="0">By passing each element individually</label></li>
+        </ul>
+
+        <p>5. What will happen if you try to access an out-of-bounds index in an array?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q5" value="1">It may cause undefined behavior</label></li>
+            <li><label><input type="radio" name="q5" value="0">It will return zero</label></li>
+            <li><label><input type="radio" name="q5" value="0">It will always return an error</label></li>
+        </ul>
+
+        <button class="submit-btn" onclick="calculateScore(this.parentElement, 16)">Submit</button>
+        <div class="score-card"></div>
+    </div>
+</li>
+
+<!-- Strings in C -->
+<li class="question-item">
+    <div class="question">17. Strings in C</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+    <div class="quiz-container">
+        <p>1. How are strings represented in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q6" value="1">As an array of characters</label></li>
+            <li><label><input type="radio" name="q6" value="0">As a linked list</label></li>
+            <li><label><input type="radio" name="q6" value="0">As a single character</label></li>
+        </ul>
+
+        <p>2. Which function is used to get the length of a string in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q7" value="1">strlen()</label></li>
+            <li><label><input type="radio" name="q7" value="0">strlength()</label></li>
+            <li><label><input type="radio" name="q7" value="0">length()</label></li>
+        </ul>
+
+        <p>3. How do you copy a string in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q8" value="1">Using strcpy()</label></li>
+            <li><label><input type="radio" name="q8" value="0">Using copystr()</label></li>
+            <li><label><input type="radio" name="q8" value="0">Using paste()</label></li>
+        </ul>
+
+        <p>4. What character is used to terminate a string in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q9" value="1">'\0'</label></li>
+            <li><label><input type="radio" name="q9" value="0">'\n'</label></li>
+            <li><label><input type="radio" name="q9" value="0">'\t'</label></li>
+        </ul>
+
+        <p>5. Which function concatenates two strings in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q10" value="1">strcat()</label></li>
+            <li><label><input type="radio" name="q10" value="0">concat()</label></li>
+            <li><label><input type="radio" name="q10" value="0">append()</label></li>
+        </ul>
+
+        <button class="submit-btn" onclick="calculateScore(this.parentElement, 17)">Submit</button>
+        <div class="score-card"></div>
+    </div>
+</li>
+<li class="question-item">
+    <div class="question">18. Pointers in C</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+    <div class="quiz-container">
+        <p>1. What is a pointer in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q1" value="1">A variable that stores the address of another variable.</label></li>
+            <li><label><input type="radio" name="q1" value="0">A variable that stores a value.</label></li>
+            <li><label><input type="radio" name="q1" value="0">A constant value in memory.</label></li>
+        </ul>
+
+        <p>2. Which operator is used to get the address of a variable?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q2" value="1">&</label></li>
+            <li><label><input type="radio" name="q2" value="0">*</label></li>
+            <li><label><input type="radio" name="q2" value="0">#</label></li>
+        </ul>
+
+        <p>3. What will the expression <code>ptr++</code> do if <code>ptr</code> is a pointer to an integer?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q3" value="1">Increase the pointer to point to the next integer in memory.</label></li>
+            <li><label><input type="radio" name="q3" value="0">Increase the value of the integer pointed to by <code>ptr</code>.</label></li>
+            <li><label><input type="radio" name="q3" value="0">Decrease the pointer to point to the previous integer in memory.</label></li>
+        </ul>
+
+        <p>4. How do you declare a pointer to an integer in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q4" value="1">int *ptr;</label></li>
+            <li><label><input type="radio" name="q4" value="0">int ptr;</label></li>
+            <li><label><input type="radio" name="q4" value="0">ptr int;</label></li>
+        </ul>
+
+        <p>5. Which of the following statements correctly passes a pointer to a function?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q5" value="0">function(&var);</label></li>
+            <li><label><input type="radio" name="q5" value="1">function(var_ptr);</label></li>
+            <li><label><input type="radio" name="q5" value="0">function(var);</label></li>
+        </ul>
+
+        <button class="submit-btn" onclick="calculateScore(this.parentElement, 18)">Submit</button>
+        <div class="score-card"></div>
+    </div>
+</li>
+<li class="question-item">
+    <div class="question">19. Functions in C</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+    <div class="quiz-container">
+        <p>1. What is a function in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q6" value="1">A block of code that performs a specific task.</label></li>
+            <li><label><input type="radio" name="q6" value="0">A data structure for storing variables.</label></li>
+            <li><label><input type="radio" name="q6" value="0">A type of loop in C.</label></li>
+        </ul>
+
+        <p>2. How do you define a function that takes two integers and returns their sum?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q7" value="0">int sum(int a, int b) { return a - b; }</label></li>
+            <li><label><input type="radio" name="q7" value="1">int sum(int a, int b) { return a + b; }</label></li>
+            <li><label><input type="radio" name="q7" value="0">void sum(int a, int b) { return a + b; }</label></li>
+        </ul>
+
+        <p>3. What is recursion in programming?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q8" value="0">A loop that runs infinitely.</label></li>
+            <li><label><input type="radio" name="q8" value="0">A function that calls itself.</label></li>
+            <li><label><input type="radio" name="q8" value="1">A method for breaking down a problem into smaller subproblems.</label></li>
+        </ul>
+
+        <p>4. Which of the following is a library function in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q9" value="0">main()</label></li>
+            <li><label><input type="radio" name="q9" value="0">printf()</label></li>
+            <li><label><input type="radio" name="q9" value="1">strcpy()</label></li>
+        </ul>
+
+        <p>5. What is the return type of a function that does not return any value?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q10" value="1">void</label></li>
+            <li><label><input type="radio" name="q10" value="0">int</label></li>
+            <li><label><input type="radio" name="q10" value="0">char</label></li>
+        </ul>
+
+        <button class="submit-btn" onclick="calculateScore(this.parentElement, 19)">Submit</button>
+        <div class="score-card"></div>
+    </div>
+</li>
+<li class="question-item">
+    <div class="question">20. Structures and Unions</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+    <div class="quiz-container">
+        <p>1. What is a structure in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q1" value="1">A user-defined data type that groups related variables.</label></li>
+            <li><label><input type="radio" name="q1" value="0">A built-in data type for integers.</label></li>
+            <li><label><input type="radio" name="q1" value="0">A method for looping through data.</label></li>
+        </ul>
+
+        <p>2. How do you define a structure named <code>Student</code> with members <code>name</code> and <code>age</code>?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q2" value="1">struct Student { char name[50]; int age; };</label></li>
+            <li><label><input type="radio" name="q2" value="0">struct Student { int age; char name; };</label></li>
+            <li><label><input type="radio" name="q2" value="0">Student { char name[50]; int age; };</label></li>
+        </ul>
+
+        <p>3. How can you access the member <code>age</code> of a structure variable <code>student</code>?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q3" value="0">student.age;</label></li>
+            <li><label><input type="radio" name="q3" value="1">student->age;</label></li>
+            <li><label><input type="radio" name="q3" value="0">age.student;</label></li>
+        </ul>
+
+        <p>4. What is a union in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q4" value="1">A user-defined data type that can store different data types in the same memory location.</label></li>
+            <li><label><input type="radio" name="q4" value="0">A type of loop for data structures.</label></li>
+            <li><label><input type="radio" name="q4" value="0">A structure that can hold only integers.</label></li>
+        </ul>
+
+        <p>5. Which of the following correctly defines a nested structure?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q5" value="1">struct Course { char name[50]; struct Student student; };</label></li>
+            <li><label><input type="radio" name="q5" value="0">struct Course { struct Student student; };</label></li>
+            <li><label><input type="radio" name="q5" value="0">Course { char name[50]; int age; };</label></li>
+        </ul>
+
+        <button class="submit-btn" onclick="calculateScore(this.parentElement, 20)">Submit</button>
+        <div class="score-card"></div>
+    </div>
+</li>
+<li class="question-item">
+    <div class="question">21. File Handling in C</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+    <div class="quiz-container">
+        <p>1. Which function is used to open a file in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q6" value="1">fopen()</label></li>
+            <li><label><input type="radio" name="q6" value="0">open()</label></li>
+            <li><label><input type="radio" name="q6" value="0">read()</label></li>
+        </ul>
+
+        <p>2. What is the purpose of the <code>FILE</code> pointer in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q7" value="0">To declare variables.</label></li>
+            <li><label><input type="radio" name="q7" value="1">To handle files for reading and writing operations.</label></li>
+            <li><label><input type="radio" name="q7" value="0">To store integer values.</label></li>
+        </ul>
+
+        <p>3. How can you write data to a file in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q8" value="0">write(file_pointer, data);</label></li>
+            <li><label><input type="radio" name="q8" value="1">fprintf(file_pointer, "data");</label></li>
+            <li><label><input type="radio" name="q8" value="0">put(file_pointer, data);</label></li>
+        </ul>
+
+        <p>4. Which function is used to read data from a file?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q9" value="0">read(file_pointer);</label></li>
+            <li><label><input type="radio" name="q9" value="0">fscanf(file_pointer, "format");</label></li>
+            <li><label><input type="radio" name="q9" value="1">fgets(buffer, size, file_pointer);</label></li>
+        </ul>
+
+        <p>5. What does the <code>fclose()</code> function do?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q10" value="0">Closes the program.</label></li>
+            <li><label><input type="radio" name="q10" value="1">Closes the file associated with a file pointer.</label></li>
+            <li><label><input type="radio" name="q10" value="0">Opens a new file.</label></li>
+        </ul>
+
+        <button class="submit-btn" onclick="calculateScore(this.parentElement, 21)">Submit</button>
+        <div class="score-card"></div>
+    </div>
+</li>
+<li class="question-item">
+    <div class="question">22. Structures and Unions</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+    <div class="quiz-container">
+        <p>1. What is a structure in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q1" value="1">A user-defined data type that groups related variables.</label></li>
+            <li><label><input type="radio" name="q1" value="0">A built-in data type for integers.</label></li>
+            <li><label><input type="radio" name="q1" value="0">A method for looping through data.</label></li>
+        </ul>
+
+        <p>2. How do you define a structure named <code>Student</code> with members <code>name</code> and <code>age</code>?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q2" value="1">struct Student { char name[50]; int age; };</label></li>
+            <li><label><input type="radio" name="q2" value="0">struct Student { int age; char name; };</label></li>
+            <li><label><input type="radio" name="q2" value="0">Student { char name[50]; int age; };</label></li>
+        </ul>
+
+        <p>3. How can you access the member <code>age</code> of a structure variable <code>student</code>?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q3" value="0">student.age;</label></li>
+            <li><label><input type="radio" name="q3" value="1">student->age;</label></li>
+            <li><label><input type="radio" name="q3" value="0">age.student;</label></li>
+        </ul>
+
+        <p>4. What is a union in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q4" value="1">A user-defined data type that can store different data types in the same memory location.</label></li>
+            <li><label><input type="radio" name="q4" value="0">A type of loop for data structures.</label></li>
+            <li><label><input type="radio" name="q4" value="0">A structure that can hold only integers.</label></li>
+        </ul>
+
+        <p>5. Which of the following correctly defines a nested structure?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q5" value="1">struct Course { char name[50]; struct Student student; };</label></li>
+            <li><label><input type="radio" name="q5" value="0">struct Course { struct Student student; };</label></li>
+            <li><label><input type="radio" name="q5" value="0">Course { char name[50]; int age; };</label></li>
+        </ul>
+
+        <button class="submit-btn" onclick="calculateScore(this.parentElement, 22)">Submit</button>
+        <div class="score-card"></div>
+    </div>
+</li>
+<li class="question-item">
+    <div class="question">23. Advanced C Concepts</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">Start quiz</button>
+    <div class="quiz-container">
+        <p>1. What is the purpose of preprocessor directives in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q6" value="1">To modify the source code before compilation.</label></li>
+            <li><label><input type="radio" name="q6" value="0">To handle runtime errors.</label></li>
+            <li><label><input type="radio" name="q6" value="0">To manage memory allocation.</label></li>
+        </ul>
+
+        <p>2. Which operator is used to perform bitwise AND in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q7" value="1">&</label></li>
+            <li><label><input type="radio" name="q7" value="0">|</label></li>
+            <li><label><input type="radio" name="q7" value="0">^</label></li>
+        </ul>
+
+        <p>3. How can command line arguments be accessed in a C program?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q8" value="0">Using the <code>args</code> variable.</label></li>
+            <li><label><input type="radio" name="q8" value="1">Through the parameters <code>int argc, char *argv[]</code> in the main function.</label></li>
+            <li><label><input type="radio" name="q8" value="0">Using the <code>getarg()</code> function.</label></li>
+        </ul>
+
+        <p>4. Which of the following is used for error handling in C?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q9" value="0">try-catch blocks</label></li>
+            <li><label><input type="radio" name="q9" value="1">Return values and errno variable</label></li>
+            <li><label><input type="radio" name="q9" value="0">throw statement</label></li>
+        </ul>
+
+        <p>5. Which preprocessor directive is used to include standard input-output header file?</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q10" value="0">#include <input.h></label></li>
+            <li><label><input type="radio" name="q10" value="0">#include <stdio.io></label></li>
+            <li><label><input type="radio" name="q10" value="1">#include <stdio.h></label></li>
+        </ul>
+
+        <button class="submit-btn" onclick="calculateScore(this.parentElement, 23)">Submit</button>
+        <div class="score-card"></div>
+    </div>
+</li>
+                                                                                                                                                                                    
+            </ol>
+            

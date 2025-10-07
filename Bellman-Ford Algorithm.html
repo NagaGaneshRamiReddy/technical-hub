@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+    function goPrevious() {
+        window.location.href = "Floyd-Warshall Algorithm.html";
+    }
+    function goNext() {
+        window.location.href = "A Algorithm.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1">Bellman-Ford Algorithm</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>The Bellman-Ford Algorithm is a single-source shortest path algorithm that can handle graphs with negative weight edges. Unlike Dijkstra's Algorithm, which only works with non-negative weights, Bellman-Ford can detect negative weight cycles in a graph, making it useful for various applications in graph theory and optimization problems.</p>
+
+        <h2>How It Works</h2>
+        <p>The Bellman-Ford Algorithm works by iteratively relaxing all edges of the graph. It updates the shortest path estimate for each vertex by considering the weights of the edges. This process is repeated for a number of iterations equal to the number of vertices minus one. After these iterations, a final check is performed to detect any negative weight cycles.</p>
+        <ol>
+            <li><strong>Initialize:</strong> Set the distance to the source node as 0 and all other distances to infinity.</li>
+            <li><strong>Relax Edges:</strong> Iterate over all edges and update the distance to the destination node if a shorter path is found.</li>
+            <li><strong>Check for Negative Cycles:</strong> Perform one more iteration to check if any distance can be further reduced. If yes, a negative weight cycle exists.</li>
+        </ol>
+
+        <h2>Implementation in C++</h2>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+struct Edge {
+    int src, dest, weight;
+};
+
+void bellmanFord(int V, int E, std::vector<Edge>& edges, int start) {
+    std::vector<int> distance(V, INT_MAX);
+    distance[start] = 0;
+
+    for (int i = 1; i &lt; V; ++i) {
+        for (const auto& edge : edges) {
+            if (distance[edge.src] != INT_MAX && distance[edge.src] + edge.weight &lt; distance[edge.dest]) {
+                distance[edge.dest] = distance[edge.src] + edge.weight;
+            }
+        }
+    }
+
+    for (const auto& edge : edges) {
+        if (distance[edge.src] != INT_MAX && distance[edge.src] + edge.weight &lt; distance[edge.dest]) {
+            std::cout &lt;&lt; "Graph contains negative weight cycle\n";
+            return;
+        }
+    }
+
+    std::cout &lt;&lt; "Vertex Distance from Source\n";
+    for (int i = 0; i &lt; V; ++i) {
+        std::cout &lt;&lt; i &lt;&lt; " \t\t " &lt;&lt; (distance[i] == INT_MAX ? "INF" : std::to_string(distance[i])) &lt;&lt; '\n';
+    }
+}
+
+int main() {
+    int V = 5; // Number of vertices
+    int E = 8; // Number of edges
+    std::vector<Edge> edges = {
+        {0, 1, -1}, {0, 2, 4},
+        {1, 2, 3}, {1, 3, 2}, {1, 4, 2},
+        {3, 2, 5}, {3, 1, 1},
+        {4, 3, -3}
+    };
+
+    bellmanFord(V, E, edges, 0);
+
+    return 0;
+}
+</code>
+        </pre>
+
+        <h2>Implementation in Python</h2>
+        <pre>
+<code>
+class Edge:
+    def __init__(self, src, dest, weight):
+        self.src = src
+        self.dest = dest
+        self.weight = weight
+
+def bellman_ford(vertices, edges, start):
+    distance = [float('inf')] * vertices
+    distance[start] = 0
+
+    for _ in range(vertices - 1):
+        for edge in edges:
+            if distance[edge.src] != float('inf') and distance[edge.src] + edge.weight &lt; distance[edge.dest]:
+                distance[edge.dest] = distance[edge.src] + edge.weight
+
+    for edge in edges:
+        if distance[edge.src] != float('inf') and distance[edge.src] + edge.weight &lt; distance[edge.dest]:
+            print("Graph contains negative weight cycle")
+            return
+
+    print("Vertex Distance from Source")
+    for i in range(vertices):
+        print(f"{i} \t\t {distance[i] if distance[i] != float('inf') else 'INF'}")
+
+# Example usage
+vertices = 5
+edges = [
+    Edge(0, 1, -1), Edge(0, 2, 4),
+    Edge(1, 2, 3), Edge(1, 3, 2), Edge(1, 4, 2),
+    Edge(3, 2, 5), Edge(3, 1, 1),
+    Edge(4, 3, -3)
+]
+
+bellman_ford(vertices, edges, 0)
+</code>
+        </pre>
+
+        <h2>Implementation in Java</h2>
+        <pre>
+<code>
+import java.util.*;
+
+class Edge {
+    int src, dest, weight;
+
+    Edge(int src, int dest, int weight) {
+        this.src = src;
+        this.dest = dest;
+        this.weight = weight;
+    }
+}
+
+public class BellmanFord {
+    static void bellmanFord(int V, int E, List<Edge> edges, int start) {
+        int[] distance = new int[V];
+        Arrays.fill(distance, Integer.MAX_VALUE);
+        distance[start] = 0;
+
+        for (int i = 1; i &lt; V; ++i) {
+            for (Edge edge : edges) {
+                if (distance[edge.src] != Integer.MAX_VALUE && distance[edge.src] + edge.weight &lt; distance[edge.dest]) {
+                    distance[edge.dest] = distance[edge.src] + edge.weight;
+                }
+            }
+        }
+
+        for (Edge edge : edges) {
+            if (distance[edge.src] != Integer.MAX_VALUE && distance[edge.src] + edge.weight &lt; distance[edge.dest]) {
+                System.out.println("Graph contains negative weight cycle");
+                return;
+            }
+        }
+
+        System.out.println("Vertex Distance from Source");
+        for (int i = 0; i &lt; V; ++i) {
+            System.out.println(i + " \t\t " + (distance[i] == Integer.MAX_VALUE ? "INF" : distance[i]));
+        }
+    }
+
+    public static void main(String[] args) {
+        int V = 5; // Number of vertices
+        int E = 8; // Number of edges
+        List<Edge> edges = Arrays.asList(
+            new Edge(0, 1, -1), new Edge(0, 2, 4),
+            new Edge(1, 2, 3), new Edge(1, 3, 2), new Edge(1, 4, 2),
+            new Edge(3, 2, 5), new Edge(3, 1, 1),
+            new Edge(4, 3, -3)
+        );
+
+        bellmanFord(V, E, edges, 0);
+    }
+}
+</code>
+        </pre>
+
+      
+        
+
+        <h2>Summary</h2>
+        <p>The Bellman-Ford Algorithm is an essential tool in graph theory for finding the shortest paths from a single source vertex to all other vertices in a graph, even when negative weight edges are present. Its ability to detect negative weight cycles makes it a valuable algorithm for various optimization and network problems. While it may not be as efficient as some other algorithms for graphs with non-negative weights, its flexibility and correctness in handling negative weights make it indispensable for a wide range of applications.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

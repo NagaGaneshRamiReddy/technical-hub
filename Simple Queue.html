@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Queues.html";
+    }
+    function goNext() {
+        window.location.href = "Circular Queue.html";
+    }
+        </script><br><br><br><br><br><br>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1">Simple Queue</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>What is a Simple Queue ?</h2>
+        <p>A simple queue is a linear data structure that follows the First In, First Out (FIFO) principle. In this queue, the first element added to the queue will be the first one to be removed. This is akin to people lining up at a checkout counter: the first person in line is the first to be served.</p>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Simple Queue Animation</title>
+            <style>
+                .container-1 {
+                    margin: 20px;
+                }
+        
+                .queue {
+                    display: flex;
+                    align-items: center;
+                    margin: 20px 0;
+                    position: relative;
+                    height: 100px; /* Height for queue layout */
+                    width: 600px; /* Width for queue layout */
+                    overflow: hidden; /* Hide overflow for sliding effect */
+                }
+        
+                .node {
+                    width: 80px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid #007bff;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                    font-size: 20px;
+                    transition: transform 0.3s ease, background-color 0.3s ease, left 0.5s ease;
+                }
+        
+                .node:hover {
+                    transform: scale(1.1);
+                    background-color: #e7f0ff;
+                }
+        
+                .node.active {
+                    border-color: #28a745;
+                    background-color: #d4edda;
+                }
+        
+                .description {
+                    background-color: #ffffff;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin: 20px auto;
+                    max-width: 800px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+                }
+        
+                .description h2 {
+                    font-size: 24px;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+        
+                .description p {
+                    font-size: 18px;
+                    color: #555;
+                    line-height: 1.6;
+                }
+        
+                .description ul {
+                    list-style-type: disc;
+                    padding-left: 20px;
+                }
+        
+                .description li {
+                    margin-bottom: 10px;
+                }
+        
+                @media (max-width: 600px) {
+                    .description {
+                        padding: 15px;
+                    }
+        
+                    .description h2 {
+                        font-size: 20px;
+                    }
+        
+                    .description p {
+                        font-size: 16px;
+                    }
+                }
+        
+                button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    background-color: #11ff00;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                    margin-right: 10px;
+                }
+        
+                button:hover {
+                    background-color: #0056b3;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container-1">
+                <h1>Simple Queue Animation</h1>
+                <div class="queue" id="queue">
+                    <!-- Nodes positioned in a horizontal queue layout -->
+                    <div class="node" id="node1" style="left: 20px;">1</div>
+                    <div class="node" id="node2" style="left: 120px;">2</div>
+                    <div class="node" id="node3" style="left: 220px;">3</div>
+                    <div class="node" id="node4" style="left: 320px;">4</div>
+                </div>
+                <button onclick="enqueue()">Enqueue</button>
+                <button onclick="dequeue()">Dequeue</button>
+                <div class="description">
+                    <p><strong>Queue Explanation:</strong></p>
+                    <p>A queue is a data structure that follows the First In, First Out (FIFO) principle. The operations are:</p>
+                    <ul>
+                        <li><strong>Enqueue:</strong> Adds an item to the end of the queue.</li>
+                        <li><strong>Dequeue:</strong> Removes the item from the front of the queue.</li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                let nodeCount = 4; // Starting number of nodes
+        
+                function enqueue() {
+                    nodeCount++;
+                    const queue = document.getElementById('queue');
+                    const newNode = document.createElement('div');
+                    newNode.classList.add('node');
+                    newNode.style.left = `${600}px`; // Start off-screen
+                    newNode.innerText = nodeCount;
+                    queue.appendChild(newNode);
+        
+                    // Slide new node into place
+                    setTimeout(() => {
+                        newNode.style.left = `${20 + (nodeCount - 1) * 100}px`;
+                        newNode.classList.add('active');
+                    }, 10); // Small delay to trigger the animation
+                }
+        
+                function dequeue() {
+                    const queue = document.getElementById('queue');
+                    const nodes = document.querySelectorAll('.node');
+                    if (nodes.length === 0) return;
+        
+                    const firstNode = nodes[0];
+                    // Slide node out of view
+                    firstNode.style.left = '-100px'; // Move out to the left
+                    firstNode.classList.remove('active');
+                    setTimeout(() => {
+                        firstNode.remove();
+                        nodeCount--;
+                        // Adjust positions of remaining nodes
+                        adjustNodes();
+                    }, 500); // Delay matches the sliding effect duration
+                }
+        
+                function adjustNodes() {
+                    const nodes = document.querySelectorAll('.node');
+                    nodes.forEach((node, index) => {
+                        node.style.left = `${20 + index * 100}px`;
+                    });
+                }
+            </script>
+        </body>
+        </html>
+        
+        <h2>Basic Operations on Simple Queues</h2>
+        <ul>
+            <li><strong>Enqueue:</strong> Adds an element to the end of the queue.</li>
+            <li><strong>Dequeue:</strong> Removes an element from the front of the queue.</li>
+            <li><strong>Peek/Front:</strong> Retrieves the element at the front of the queue without removing it.</li>
+            <li><strong>IsEmpty:</strong> Checks if the queue is empty.</li>
+            <li><strong>Size:</strong> Returns the number of elements in the queue.</li>
+        </ul>
+
+        <!-- Problem 1 -->
+        <h3>1. Implementing a Simple Queue</h3>
+        <p><strong>Description:</strong> Implement a simple queue with basic operations such as enqueue, dequeue, peek, and check if the queue is empty. This implementation will help you understand the core principles of managing a FIFO data structure.</p>
+
+        <h4>C</h4>
+        <pre>
+<code>
+#include &lt;stdio.h>
+#include &lt;stdlib.h>
+
+#define MAX 100
+
+typedef struct {
+    int front, rear, size;
+    int array[MAX];
+} Queue;
+
+void initQueue(Queue* q) {
+    q->front = 0;
+    q->rear = -1;
+    q->size = 0;
+}
+
+int isEmpty(Queue* q) {
+    return q->size == 0;
+}
+
+int isFull(Queue* q) {
+    return q->size == MAX;
+}
+
+void enqueue(Queue* q, int value) {
+    if (isFull(q)) {
+        printf("Queue is full\n");
+        return;
+    }
+    q->rear = (q->rear + 1) % MAX;
+    q->array[q->rear] = value;
+    q->size++;
+}
+
+int dequeue(Queue* q) {
+    if (isEmpty(q)) {
+        printf("Queue is empty\n");
+        return -1;
+    }
+    int value = q->array[q->front];
+    q->front = (q->front + 1) % MAX;
+    q->size--;
+    return value;
+}
+
+int peek(Queue* q) {
+    if (isEmpty(q)) {
+        printf("Queue is empty\n");
+        return -1;
+    }
+    return q->array[q->front];
+}
+
+int main() {
+    Queue q;
+    initQueue(&q);
+    enqueue(&q, 10);
+    enqueue(&q, 20);
+    printf("Front element: %d\n", peek(&q));
+    printf("Dequeued: %d\n", dequeue(&q));
+    printf("Front element: %d\n", peek(&q));
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt>
+#include &lt;deque&gt>
+
+class SimpleQueue {
+    std::deque<int> queue;
+public:
+    void enqueue(int value) {
+        queue.push_back(value);
+    }
+
+    int dequeue() {
+        if (queue.empty()) {
+            std::cerr &lt;&lt; "Queue is empty" &lt;&lt; std::endl;
+            return -1;
+        }
+        int value = queue.front();
+        queue.pop_front();
+        return value;
+    }
+
+    int peek() {
+        if (queue.empty()) {
+            std::cerr &lt;&lt; "Queue is empty" &lt;&lt; std::endl;
+            return -1;
+        }
+        return queue.front();
+    }
+
+    bool isEmpty() {
+        return queue.empty();
+    }
+};
+
+int main() {
+    SimpleQueue q;
+    q.enqueue(10);
+    q.enqueue(20);
+    std::cout &lt;&lt; "Front element: " &lt;&lt; q.peek() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Dequeued: " &lt;&lt; q.dequeue() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Front element: " &lt;&lt; q.peek() &lt;&lt; std::endl;
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Java</h4>
+        <pre>
+<code>
+import java.util.LinkedList;
+import java.util.Queue;
+
+class SimpleQueue {
+    private Queue<Integer> queue;
+
+    SimpleQueue() {
+        queue = new LinkedList<>();
+    }
+
+    void enqueue(int value) {
+        queue.add(value);
+    }
+
+    int dequeue() {
+        if (queue.isEmpty()) {
+            System.out.println("Queue is empty");
+            return -1;
+        }
+        return queue.poll();
+    }
+
+    int peek() {
+        if (queue.isEmpty()) {
+            System.out.println("Queue is empty");
+            return -1;
+        }
+        return queue.peek();
+    }
+
+    boolean isEmpty() {
+        return queue.isEmpty();
+    }
+
+    public static void main(String[] args) {
+        SimpleQueue q = new SimpleQueue();
+        q.enqueue(10);
+        q.enqueue(20);
+        System.out.println("Front element: " + q.peek());
+        System.out.println("Dequeued: " + q.dequeue());
+        System.out.println("Front element: " + q.peek());
+    }
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+from collections import deque
+
+class SimpleQueue:
+    def __init__(self):
+        self.queue = deque()
+
+    def enqueue(self, value):
+        self.queue.append(value)
+
+    def dequeue(self):
+        if not self.queue:
+            print("Queue is empty")
+            return -1
+        return self.queue.popleft()
+
+    def peek(self):
+        if not self.queue:
+            print("Queue is empty")
+            return -1
+        return self.queue[0]
+
+    def is_empty(self):
+        return len(self.queue) == 0
+
+# Example usage
+q = SimpleQueue()
+q.enqueue(10)
+q.enqueue(20)
+print("Front element:", q.peek())
+print("Dequeued:", q.dequeue())
+print("Front element:", q.peek())
+</code>
+        </pre>
+
+        <h2>Free Resources to Learn More</h2>
+        <ul>
+            <li><strong>GeeksforGeeks - Queue Data Structure:</strong> <a href="https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/" target="_blank">GeeksforGeeks Queue Data Structure</a> - In-depth articles and tutorials on queues.</li>
+            <li><strong>Coursera - Data Structures and Algorithm Specialization:</strong> <a href="https://www.coursera.org/specializations/data-structures-algorithms" target="_blank">Coursera Data Structures and Algorithms</a> - Free courses covering a range of data structures, including queues.</li>
+            <li><strong>MIT OpenCourseWare - Introduction to Algorithms:</strong> <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/" target="_blank">MIT OpenCourseWare</a> - Lecture notes and assignments on algorithms and data structures.</li>
+            <li><strong>YouTube - Queue Data Structure Tutorial:</strong> <a href="https://www.youtube.com/results?search_query=queue+data+structure+tutorial" target="_blank">YouTube Queue Tutorials</a> - Various video tutorials on implementing and understanding queues.</li>
+            <li><strong>FreeCodeCamp - Data Structures and Algorithms:</strong> <a href="https://www.freecodecamp.org/learn/data-structures-and-algorithms/" target="_blank">FreeCodeCamp Data Structures and Algorithms</a> - Interactive lessons on various data structures, including queues.</li>
+        </ul>
+
+        <h2>Summary</h2>
+        <p>Simple queues are fundamental data structures that manage elements in a FIFO manner, making them useful for various applications such as task scheduling, managing resources, and handling requests. Mastery of simple queues is essential for efficient problem-solving in algorithmic and data structure challenges.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div></div>
+</body>
+</html>

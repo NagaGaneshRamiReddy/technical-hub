@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>AI Course Roadmap</title>
+   
+    
+
+
+</head>
+<body class="body">
+
+
+
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-brain"style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">AI Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        
+        <ul><a href="Introduction to AI.html">Introduction to AI</a>
+            <li><a href="History of AI.html">History of AI</a></li>
+            <li><a href="AI vs. Machine Learning vs. Deep Learning.html">AI vs. Machine Learning vs. Deep Learning</a></li>
+            <li><a href="Applications of AI.html">Applications of AI</a></li>
+            <li>
+                <a href="Basic Concepts.html">Basic Concepts</a>
+                <ul>
+                    <li><a href="Supervised Learning.html">Supervised Learning</a></li>
+                    <li><a href="Unsupervised Learning.html">Unsupervised Learning</a></li>
+                    <li><a href="Reinforcement Learning.html">Reinforcement Learning</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Mathematics for AI</h3>
+        <a href="Mathematics for AI.html">Mathematics for AI</a>
+        <ul>
+            <li><a href="Linear Algebra.html">Linear Algebra</a></li>
+            <li><a href="Calculus.html">Calculus</a></li>
+            <li><a href="Probability and Statistics.html">Probability and Statistics</a></li>
+            <li><a href="Optimization.html">Optimization</a></li>
+        </ul>
+    
+        <h3>Machine Learning</h3>
+        <a href="Machine Learning.html">Machine Learning</a>
+        <ul>
+            <li><a href="Regression.html">Regression</a></li>
+            <li><a href="Classification al.html">Classification</a></li>
+            <li><a href="Clustering.html">Clustering</a></li>
+            <li><a href="Dimensionality Reduction.html">Dimensionality Reduction</a></li>
+            <li><a href="Model Evaluation and Validation.html">Model Evaluation and Validation</a></li>
+        </ul>
+    
+        <h3>Deep Learning</h3>
+        <a href="Deep Learning.html">Deep Learning</a>
+        <ul>
+            <li><a href="Neural Networks.html">Neural Networks</a></li>
+            <li><a href="Convolutional Neural Networks (CNNs).html">Convolutional Neural Networks (CNNs)</a></li>
+            <li><a href="Recurrent Neural Networks (RNNs).html">Recurrent Neural Networks (RNNs)</a></li>
+            <li><a href="Generative Adversarial Networks (GANs).html">Generative Adversarial Networks (GANs)</a></li>
+            <li><a href="Transformers.html">Transformers</a></li>
+        </ul>
+    
+        <h3>Natural Language Processing (NLP)</h3>
+        <a href="Natural Language Processing (NLP).html">Natural Language Processing (NLP)</a>
+        <ul>
+            <li><a href="Text Preprocessing.html">Text Preprocessing</a></li>
+            <li><a href="Word Embeddings.html">Word Embeddings</a></li>
+            <li><a href="Sequence Modeling.html">Sequence Modeling</a></li>
+            <li><a href="Attention Mechanisms.html">Attention Mechanisms</a></li>
+            <li><a href="Language Models.html">Language Models</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Reinforcement Learning in AI.html">Reinforcement Learning</a></li>
+            <li><a href="Meta-Learning.html">Meta-Learning</a></li>
+            <li><a href="AI Ethics.html">AI Ethics</a></li>
+            <li><a href="AI in Production.html">AI in Production</a></li>
+            <li><a href="AI Research.html">AI Research</a></li>
+        </ul>
+    </div>
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+   
+        <button class="openbtn labs" onclick="golabs()">
+           
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn">
+            <i class="fas fa-question-circle"></i> AI Quiz
+        </button>
+    </div>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "";
+}
+    function goPrevious() {
+        window.location.href = "Text Preprocessing.html";
+    }
+    function goNext() {
+        window.location.href = "Sequence Modeling.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Introduction to Word Embeddings</div>
+   
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>What are Word Embeddings?</h2>
+        <p>Word embeddings are a type of word representation that allows words to be represented as vectors in a continuous vector space. These embeddings capture semantic relationships between words, enabling machine learning models to understand and process text data more effectively. Unlike traditional one-hot encoding, which represents words as sparse vectors, word embeddings provide dense and meaningful representations.</p>
+        
+        <h2>Key Concepts</h2>
+        <ul>
+            <li><strong>Dense Representation</strong>: Word embeddings represent words as dense vectors with real numbers, which capture various semantic properties of words.</li>
+            <li><strong>Semantic Similarity</strong>: Words with similar meanings are mapped to nearby points in the vector space. For example, "king" and "queen" would be close to each other.</li>
+            <li><strong>Dimensionality</strong>: Embeddings typically reduce the dimensionality of text data compared to one-hot encoding, making them more efficient for machine learning models.</li>
+            <li><strong>Contextual Information</strong>: Advanced embeddings can capture context-dependent meanings of words, providing more accurate representations.</li>
+        </ul>
+        
+        <h2>Popular Word Embedding Models</h2>
+        <ul>
+            <li><strong>Word2Vec</strong>: Developed by Google, Word2Vec learns word representations using either Continuous Bag of Words (CBOW) or Skip-Gram models. It captures semantic relationships by training on large corpora of text.</li>
+            <li><strong>GloVe (Global Vectors for Word Representation)</strong>: Developed by Stanford, GloVe generates word embeddings by factorizing the word co-occurrence matrix, capturing global statistical information about word pairs.</li>
+            <li><strong>FastText</strong>: An extension of Word2Vec by Facebook, FastText improves word embeddings by considering subword information, allowing it to generate embeddings for out-of-vocabulary words.</li>
+            <li><strong>BERT (Bidirectional Encoder Representations from Transformers)</strong>: A transformer-based model by Google that generates contextualized word embeddings, capturing different meanings of a word based on its context in a sentence.</li>
+        </ul>
+
+        <h2>How Word Embeddings Work</h2>
+        <ul>
+            <li><strong>Training</strong>: Embeddings are trained on large text corpora, learning to represent words in a vector space based on their context and usage.</li>
+            <li><strong>Vector Space</strong>: Words are mapped to vectors in a multi-dimensional space, where similar words have similar vectors.</li>
+            <li><strong>Applications</strong>: Word embeddings are used in various NLP tasks such as text classification, sentiment analysis, and machine translation.</li>
+        </ul>
+        
+        <h2>Example Use Case: Text Classification</h2>
+        <ul>
+            <li><strong>Data Preparation</strong>: Collect and preprocess text data.</li>
+            <li><strong>Generate Embeddings</strong>: Use a word embedding model to convert words into vectors.</li>
+            <li><strong>Feature Extraction</strong>: Aggregate word vectors to form feature vectors for text documents.</li>
+            <li><strong>Train Model</strong>: Use machine learning models, such as logistic regression or neural networks, to classify text based on the word embeddings.</li>
+            <li><strong>Evaluate Model</strong>: Assess the model’s performance using metrics like accuracy and F1 score.</li>
+        </ul>
+
+        <div class="resources">
+            <h2>Learning Resources</h2>
+            <ul>
+                <li><strong>Online Tutorials</strong>: Platforms like Coursera and edX offer courses on word embeddings and NLP.</li>
+                <li><strong>Books</strong>: "Deep Learning for Natural Language Processing" by Palash Goyal, Sumit Pandey, and Karan Jain covers word embeddings in detail.</li>
+                <li><strong>Libraries</strong>: Explore libraries like Gensim and Hugging Face Transformers for implementing word embeddings.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Word embeddings are a powerful technique for representing words as dense vectors in a continuous vector space. They capture semantic relationships and contextual information, making them essential for various NLP applications. By leveraging word embeddings, machine learning models can better understand and process text data, leading to more accurate and meaningful results.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

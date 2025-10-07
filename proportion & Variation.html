@@ -1,0 +1,489 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Aptitude</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Aptitude
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href ="Understanding Irrational Numbers.html";
+    }
+    function goNext() {
+        window.location.href = "Ratio and Proportion.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Proportion & variation</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  
+            <h2>Introduction</h2>
+            <p>Proportion and variation are fundamental concepts in mathematics that describe relationships between quantities. They are essential for solving problems involving ratios, scaling, and comparative analysis.</p>
+
+            <h2>Proportion</h2>
+            <p><strong>Proportion</strong> refers to the equality of two ratios. It is a statement that two ratios or fractions are equal. If two ratios are equal, they are said to be in proportion.</p>
+
+            <div class="formula">
+                <strong>Formula for Proportion:</strong><br>
+                a/b = c/d or a:b = c:d
+            </div>
+
+            <p><strong>Where:</strong><br>
+            <strong>a and b:</strong> First ratio.<br>
+            <strong>c and d:</strong> Second ratio.<br>
+            If a/b = c/d, then a, b, c, and d are said to be in proportion.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                Consider the ratios 2/3 and 4/6. To check if they are in proportion:
+                <br><br>
+                2/3 = 4/6 (since 2 × 6 = 3 × 4)<br>
+                Therefore, the ratios 2:3 and 4:6 are in proportion.
+            </div>
+
+            <h2>Variation</h2>
+            <p><strong>Variation</strong> describes how one quantity changes in relation to another. There are two main types of variation: direct variation and inverse variation.</p>
+
+            <h3>Direct Variation</h3>
+            <p>In direct variation, one quantity increases or decreases in direct proportion to another quantity. If one quantity doubles, the other quantity also doubles.</p>
+
+            <div class="formula">
+                <strong>Formula for Direct Variation:</strong><br>
+                y = kx
+            </div>
+
+            <p><strong>Where:</strong><br>
+            <strong>y:</strong> Dependent variable.<br>
+            <strong>x:</strong> Independent variable.<br>
+            <strong>k:</strong> Constant of variation.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                If y varies directly with x, and k = 3, then y = 3x. If x = 4, then y = 3 × 4 = 12.
+            </div>
+
+            <h3>Inverse Variation</h3>
+            <p>In inverse variation, one quantity increases while the other decreases, such that their product is constant. If one quantity doubles, the other quantity halves.</p>
+
+            <div class="formula">
+                <strong>Formula for Inverse Variation:</strong><br>
+                y = k/x
+            </div>
+
+            <p><strong>Where:</strong><br>
+            <strong>y:</strong> Dependent variable.<br>
+            <strong>x:</strong> Independent variable.<br>
+            <strong>k:</strong> Constant of variation.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                If y varies inversely with x, and k = 10, then y = 10/x. If x = 2, then y = 10/2 = 5.
+            </div>
+
+            <h2>How to Solve Proportions and Variations</h2>
+            <ul>
+                <li><strong>Identify the Ratios:</strong> Determine the ratios to be compared in a proportion.</li>
+                <li><strong>Set Up the Equation:</strong> For proportions, set up the equation a/b = c/d and solve for the unknowns.</li>
+                <li><strong>Determine the Type of Variation:</strong> Identify whether the problem involves direct or inverse variation.</li>
+                <li><strong>Apply the Formula:</strong> Use the appropriate formula (y = kx for direct variation or y = k/x for inverse variation) to solve the problem.</li>
+            </ul>
+
+            <h2>Real-Life Applications</h2>
+            <p>Understanding proportion and variation is crucial in many real-life scenarios:</p>
+            <ul>
+                <li><strong>Cooking:</strong> Adjusting recipes based on the number of servings requires understanding proportions.</li>
+                <li><strong>Finance:</strong> Calculating interest rates and investment returns often involves proportions and variation.</li>
+                <li><strong>Construction:</strong> Scaling measurements and materials in construction projects relies on proportion and variation concepts.</li>
+            </ul>
+
+            <h2>Practice Resources</h2>
+            <div class="resources">
+                <p>Enhance your understanding of proportion and variation with these practice resources:</p>
+                <ul>
+                    
+                    <li><a href="https://www.ixl.com/math/algebra-1/proportions" target="_blank">IXL: Proportions Practice</a></li>
+                    <li><a href="https://www.khanacademy.org/math/algebra/x2f8bb115bf4c3406:ratios-rates/x2f8bb115bf4c3406:proportions/v/proportions" target="_blank">Khan Academy: Proportions Tutorial</a></li>
+                    <li><a href="https://www.cuemath.com/learn/proportions/" target="_blank">Cuemath: Proportions Practice</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Proportion and variation are essential concepts in mathematics that describe the relationships between quantities. Proportions involve the equality of two ratios, while variation describes how one quantity changes in relation to another. Mastery of these concepts is crucial for solving a wide range of practical and theoretical problems.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  </div>
+    </div>
+</body>
+</html>

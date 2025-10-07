@@ -1,0 +1,1021 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+            
+    function goPrevious() {
+        window.location.href = "Arrays DSA.html";
+    }
+    function goNext() {
+        window.location.href = "Singly Linked List DSA.html";
+    }
+        </script><br><br><br><br><br><br>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1">Linked List</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+
+        <h2>What is a Linked List ?</h2>
+        <p>A linked list is a linear data structure where elements are stored in nodes. Each node contains a value and a reference (or link) to the next node in the sequence. Unlike arrays, linked lists do not require contiguous memory allocation, making them more flexible for dynamic data manipulation.</p>
+
+        <style>   .container-1 {
+            margin: 20px;
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .node {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #007bff;
+            border-radius: 30px;
+            background-color: #ffffff;
+            position: relative;
+            font-size: 20px;
+            margin: 0 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .node:hover {
+            transform: scale(1.1);
+            background-color: #e7f0ff;
+        }
+
+        .arrow {
+            width: 40px;
+            height: 40px;
+            border-top: 2px solid #007bff;
+            border-right: 2px solid #007bff;
+            transform: rotate(45deg);
+            position: relative;
+            margin: 0 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .arrow.active {
+            opacity: 1;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-15px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .node.active {
+            animation: bounce 0.6s;
+            border-color: #28a745;
+            background-color: #d4edda;
+        }
+
+        .null-pointer {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #007bff;
+            border-radius: 30px;
+            background-color: #ffffff;
+            font-size: 18px;
+            color: #777;
+            margin: 0 20px;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .null-pointer.active {
+            border-color: #28a745;
+            background-color: #d4edda;
+        }
+
+        .description {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .description h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .description p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .description ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .description li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .description {
+                padding: 15px;
+            }
+
+            .description h2 {
+                font-size: 20px;
+            }
+
+            .description p {
+                font-size: 16px;
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #11ff00;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <h1>Linked List Animation</h1>
+        <div class="list">
+            <div class="node" id="node1">1</div>
+            <div class="arrow" id="arrow1"></div>
+            <div class="node" id="node2">2</div>
+            <div class="arrow" id="arrow2"></div>
+            <div class="node" id="node3">3</div>
+            <div class="arrow" id="arrow3"></div>
+            <div class="node" id="node4">4</div>
+            <div class="arrow" id="arrow4"></div>
+            <div class="null-pointer" id="nullPointer">NULL</div>
+        </div>
+        <button onclick="animateList()">Animate</button>
+        <div class="description">
+            <p><strong>Linked List Explanation:</strong></p>
+            <p>A linked list is a sequence of nodes where each node points to the next. In this animation:</p>
+            <ul>
+                <li><strong>Node 1</strong> points to <strong>Node 2</strong></li>
+                <li><strong>Node 2</strong> points to <strong>Node 3</strong></li>
+                <li><strong>Node 3</strong> points to <strong>Node 4</strong></li>
+                <li><strong>Node 4</strong> points to <strong>NULL</strong></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function animateList() {
+            const arrows = document.querySelectorAll('.arrow');
+            const nodes = document.querySelectorAll('.node');
+            const nullPointer = document.getElementById('nullPointer');
+            let index = 0;
+            
+            function showArrow() {
+                if (index > 0) {
+                    arrows[index - 1].classList.remove('active');
+                    nodes[index - 1].classList.remove('active');
+                }
+                if (index < arrows.length) {
+                    arrows[index].classList.add('active');
+                    nodes[index].classList.add('active');
+                    index++;
+                    setTimeout(showArrow, 1000); // Adjust timing if needed
+                } else {
+                    nullPointer.classList.add('active');
+                }
+            }
+
+            showArrow();
+        }
+    </script>
+   
+   
+    <style>
+        
+        
+
+        .tree {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+        }
+
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 2px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 2px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 2px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+
+        .tree ul ul::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 2px solid #ccc;
+            width: 0;
+            height: 20px;
+        }
+
+        .stage {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.5s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .stage.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        a {
+            text-decoration: none;
+            transition: color 0.10s ease, transform 0.3s ease; 
+        }
+
+        a:hover {
+            color: #000000; 
+            transform: scale(1.1);
+        }
+
+        .h11 {
+            color: red; 
+        }
+    </style>
+</head>
+<body>
+    <div class="tree">
+        <h1 class="h11">Types of Linked Lists</h1>
+        <ul>
+            <li>
+                <div class="stage">Linked Lists</div>
+                <ul>
+                    <li>
+                        <div class="stage">Singly Linked List</div>
+                        <ul>
+                            <li>
+                                <div class="stage">Simple Structure</div>
+                            </li>
+                            <li>
+                                <div class="stage">Traversal in One Direction</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage">Doubly Linked List</div>
+                        <ul>
+                            <li>
+                                <div class="stage">Bidirectional Traversal</div>
+                            </li>
+                            <li>
+                                <div class="stage">Two Pointers per Node</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage">Circular Linked List</div>
+                        <ul>
+                            <li>
+                                <div class="stage">Last Node Points to First</div>
+                            </li>
+                            <li>
+                                <div class="stage">Traversal Back to Start</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage">Doubly Circular Linked List</div>
+                        <ul>
+                            <li>
+                                <div class="stage">Bidirectional and Circular</div>
+                            </li>
+                            <li>
+                                <div class="stage">Efficient Traversal in Both Directions</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // JavaScript for animating the visibility of nodes
+        document.addEventListener('DOMContentLoaded', () => {
+            const stages = document.querySelectorAll('.stage');
+            let index = 0;
+            
+            function showNextStage() {
+                if (index < stages.length) {
+                    stages[index].classList.add('visible');
+                    index++;
+                    setTimeout(showNextStage, 500); // Adjust timing as needed
+                }
+            }
+            
+            showNextStage();
+        });
+    </script>
+
+
+        <ul>
+            <li><strong>Singly Linked List:</strong> Each node points to the next node, and the last node points to null.</li>
+            <li><strong>Doubly Linked List:</strong> Each node points to both the next and previous nodes, allowing traversal in both directions.</li>
+            <li><strong>Circular Linked List:</strong> The last node points back to the first node, forming a circle.</li>
+        </ul>
+
+        <h2>Common Linked List Operations</h2>
+        <ul>
+            <li>Insertion</li>
+            <li>Deletion</li>
+            <li>Traversal</li>
+            <li>Searching</li>
+            <li>Reversing</li>
+        </ul>
+
+        <!-- Problem 1 -->
+        <h3>1. Insert a Node at the Beginning</h3>
+        <p><strong>Description:</strong> Add a new node at the beginning of a linked list.</p>
+
+        <h4>C</h4>
+        <pre>
+<code>
+#include &lt;stdio.h>
+#include &lt;stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+void insertAtBeginning(struct Node** head_ref, int new_data) {
+    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+    new_node->data = new_data;
+    new_node->next = (*head_ref);
+    (*head_ref) = new_node;
+}
+
+void printList(struct Node* n) {
+    while (n != NULL) {
+        printf("%d -> ", n->data);
+        n = n->next;
+    }
+    printf("NULL\n");
+}
+
+int main() {
+    struct Node* head = NULL;
+    insertAtBeginning(&head, 1);
+    insertAtBeginning(&head, 2);
+    insertAtBeginning(&head, 3);
+    printList(head);
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+
+class Node {
+public:
+    int data;
+    Node* next;
+    Node(int d) : data(d), next(nullptr) {}
+};
+
+void insertAtBeginning(Node*& head, int new_data) {
+    Node* new_node = new Node(new_data);
+    new_node->next = head;
+    head = new_node;
+}
+
+void printList(Node* n) {
+    while (n != nullptr) {
+        std::cout &lt;&lt; n->data &lt;&lt; " -> ";
+        n = n->next;
+    }
+    std::cout &lt;&lt; "NULL" &lt;&lt; std::endl;
+}
+
+int main() {
+    Node* head = nullptr;
+    insertAtBeginning(head, 1);
+    insertAtBeginning(head, 2);
+    insertAtBeginning(head, 3);
+    printList(head);
+    return 0;
+}
+</code>
+        </pre>
+
+        <h4>Java</h4>
+        <pre>
+<code>
+class Node {
+    int data;
+    Node next;
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+public class Main {
+    static void insertAtBeginning(Node head, int new_data) {
+        Node new_node = new Node(new_data);
+        new_node.next = head;
+        head = new_node;
+    }
+
+    static void printList(Node n) {
+        while (n != null) {
+            System.out.print(n.data + " -> ");
+            n = n.next;
+        }
+        System.out.println("NULL");
+    }
+
+    public static void main(String[] args) {
+        Node head = new Node(1);
+        insertAtBeginning(head, 2);
+        insertAtBeginning(head, 3);
+        printList(head);
+    }
+}
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+def insert_at_beginning(head, new_data):
+    new_node = Node(new_data)
+    new_node.next = head
+    head = new_node
+    return head
+
+def print_list(node):
+    while node:
+        print(node.data, end=" -> ")
+        node = node.next
+    print("NULL")
+
+head = None
+head = insert_at_beginning(head, 1)
+head = insert_at_beginning(head, 2)
+head = insert_at_beginning(head, 3)
+print_list(head)
+</code>
+        </pre>
+        <h1>Linked List Problems</h1>
+        <style>
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        select:focus {
+            background-color: #e0e0e0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        option {
+            padding: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    
+    <div id="problems-list">
+        <h2>LeetCode</h2>
+        <div class="difficulty" id="leetcode">
+            <h3>Easy</h3>
+            <select id="leetcode-easy">
+                <option value="">Select an Easy Problem</option>
+            </select>
+            <h3>Medium</h3>
+            <select id="leetcode-medium">
+                <option value="">Select a Medium Problem</option>
+            </select>
+            <h3>Hard</h3>
+            <select id="leetcode-hard">
+                <option value="">Select a Hard Problem</option>
+            </select>
+        </div>
+
+        <h2>GeeksforGeeks</h2>
+        <div class="difficulty" id="geeksforgeeks">
+            <h3>Easy</h3>
+            <select id="geeksforgeeks-easy">
+                <option value="">Select an Easy Problem</option>
+            </select>
+            <h3>Medium</h3>
+            <select id="geeksforgeeks-medium">
+                <option value="">Select a Medium Problem</option>
+            </select>
+            <h3>Hard</h3>
+            <select id="geeksforgeeks-hard">
+                <option value="">Select a Hard Problem</option>
+            </select>
+        </div>
+
+        <h2>CodeChef</h2>
+        <div class="difficulty" id="codechef">
+            <h3>Easy</h3>
+            <select id="codechef-easy">
+                <option value="">Select an Easy Problem</option>
+            </select>
+            <h3>Medium</h3>
+            <select id="codechef-medium">
+                <option value="">Select a Medium Problem</option>
+            </select>
+            <h3>Hard</h3>
+            <select id="codechef-hard">
+                <option value="">Select a Hard Problem</option>
+            </select>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const problems = {
+                leetcode: {
+                    easy: [
+                        { name: 'Reverse Linked List', url: 'https://leetcode.com/problems/reverse-linked-list/' },
+                        { name: 'Merge Two Sorted Lists', url: 'https://leetcode.com/problems/merge-two-sorted-lists/' },
+                        { name: 'Linked List Cycle', url: 'https://leetcode.com/problems/linked-list-cycle/' },
+                        { name: 'Remove Duplicates from Sorted List', url: 'https://leetcode.com/problems/remove-duplicates-from-sorted-list/' },
+                        { name: 'Intersection of Two Linked Lists', url: 'https://leetcode.com/problems/intersection-of-two-linked-lists/' }
+                    ],
+                    medium: [
+                        { name: 'Add Two Numbers', url: 'https://leetcode.com/problems/add-two-numbers/' },
+                        { name: 'Swap Nodes in Pairs', url: 'https://leetcode.com/problems/swap-nodes-in-pairs/' },
+                        { name: 'Rotate List', url: 'https://leetcode.com/problems/rotate-list/' },
+                        { name: 'Copy List with Random Pointer', url: 'https://leetcode.com/problems/copy-list-with-random-pointer/' },
+                        { name: 'Rearrange a Linked List', url: 'https://leetcode.com/problems/rearrange-a-linked-list/' }
+                    ],
+                    hard: [
+                        { name: 'Merge k Sorted Lists', url: 'https://leetcode.com/problems/merge-k-sorted-lists/' },
+                        { name: 'Scramble Linked List', url: 'https://leetcode.com/problems/scramble-linked-list/' },
+                        { name: 'Reverse Nodes in k-Group', url: 'https://leetcode.com/problems/reverse-nodes-in-k-group/' },
+                        { name: 'Linked List in Binary Tree', url: 'https://leetcode.com/problems/linked-list-in-binary-tree/' },
+                        { name: 'Palindrome Linked List', url: 'https://leetcode.com/problems/palindrome-linked-list/' }
+                    ]
+                },
+                geeksforgeeks: {
+                    easy: [
+                        { name: 'Reverse a Linked List', url: 'https://www.geeksforgeeks.org/reverse-a-linked-list/' },
+                        { name: 'Detect Loop in Linked List', url: 'https://www.geeksforgeeks.org/detect-loop-in-linked-list/' },
+                        { name: 'Delete a Node in Linked List', url: 'https://www.geeksforgeeks.org/delete-a-node-in-a-linked-list/' },
+                        { name: 'Find the Length of a Linked List', url: 'https://www.geeksforgeeks.org/find-length-of-a-linked-list/' },
+                        { name: 'Merge Two Sorted Linked Lists', url: 'https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/' }
+                    ],
+                    medium: [
+                        { name: 'Add Two Numbers Represented by Linked Lists', url: 'https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/' },
+                        { name: 'Flatten a Multilevel Doubly Linked List', url: 'https://www.geeksforgeeks.org/flatten-a-multilevel-doubly-linked-list/' },
+                        { name: 'Remove N-th Node from End of List', url: 'https://www.geeksforgeeks.org/remove-n-th-node-from-end-of-list/' },
+                        { name: 'Rotate a Linked List', url: 'https://www.geeksforgeeks.org/rotate-a-linked-list/' },
+                        { name: 'Sort a Linked List of 0s, 1s, and 2s', url: 'https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-and-2s/' }
+                    ],
+                    hard: [
+                        { name: 'Intersection Point in Y Shaped Linked Lists', url: 'https://www.geeksforgeeks.org/intersection-point-in-y-shaped-linked-lists/' },
+                        { name: 'Reverse Nodes in k-Group', url: 'https://www.geeksforgeeks.org/reverse-nodes-in-k-group/' },
+                        { name: 'Linked List to Binary Search Tree', url: 'https://www.geeksforgeeks.org/linked-list-to-binary-search-tree/' },
+                        { name: 'Flatten a Binary Tree to a Linked List', url: 'https://www.geeksforgeeks.org/flatten-a-binary-tree-to-a-linked-list/' },
+                        { name: 'Swap Nodes in Pairs', url: 'https://www.geeksforgeeks.org/swap-nodes-in-pairs/' }
+                    ]
+                },
+                codechef: {
+                    easy: [
+                        { name: 'Linked List Operations', url: 'https://www.codechef.com/problems/LL_OPS' },
+                        { name: 'Reverse the Linked List', url: 'https://www.codechef.com/problems/REVERSE_LL' },
+                        { name: 'Detect Loop in Linked List', url: 'https://www.codechef.com/problems/LOOP_DETECT' },
+                        { name: 'Merge Two Linked Lists', url: 'https://www.codechef.com/problems/MERGE_LL' },
+                        { name: 'Remove Duplicates from Linked List', url: 'https://www.codechef.com/problems/REMOVE_DUPLICATES_LL' }
+                    ],
+                    medium: [
+                        { name: 'Add Two Numbers Represented by Linked Lists', url: 'https://www.codechef.com/problems/ADD_LL' },
+                        { name: 'Find Middle of Linked List', url: 'https://www.codechef.com/problems/FIND_MIDDLE_LL' },
+                        { name: 'Rotate Linked List', url: 'https://www.codechef.com/problems/ROTATE_LL' },
+                        { name: 'Sort Linked List of 0s, 1s, and 2s', url: 'https://www.codechef.com/problems/SORT_LL' },
+                        { name: 'Intersection Point of Two Linked Lists', url: 'https://www.codechef.com/problems/INTERSECT_LL' }
+                    ],
+                    hard: [
+                        { name: 'Linked List Palindrome', url: 'https://www.codechef.com/problems/LL_PALINDROME' },
+                        { name: 'Merge k Sorted Linked Lists', url: 'https://www.codechef.com/problems/MERGE_K_LL' },
+                        { name: 'Flatten a Multilevel Doubly Linked List', url: 'https://www.codechef.com/problems/FLATTEN_LL' },
+                        { name: 'Reverse Nodes in k-Group', url: 'https://www.codechef.com/problems/REVERSE_K_LL' },
+                        { name: 'Linked List Cycle Detection', url: 'https://www.codechef.com/problems/CYCLE_DETECT_LL' }
+                    ]
+                }
+            };
+
+            function populateSelect(platform) {
+                const platformDiv = document.getElementById(platform);
+                for (const [difficulty, problemsList] of Object.entries(problems[platform])) {
+                    const select = platformDiv.querySelector(`#${platform}-${difficulty}`);
+                    problemsList.forEach(problem => {
+                        const option = document.createElement('option');
+                        option.value = problem.url;
+                        option.textContent = problem.name;
+                        select.appendChild(option);
+                    });
+
+                    // Add event listener to open the link when a problem is selected
+                    select.addEventListener('change', (event) => {
+                        const url = event.target.value;
+                        if (url) {
+                            window.open(url, '_blank');
+                        }
+                    });
+                }
+            }
+
+            populateSelect('leetcode');
+            populateSelect('geeksforgeeks');
+            populateSelect('codechef');
+        });
+    </script>
+        
+
+        <h2>Common Real-World Problems Using Linked Lists</h2>
+        <ul>
+            <li><strong>Implementing a Queue:</strong> Linked lists can be used to implement a queue where elements are added at one end and removed from the other.</li>
+            <li><strong>Implementing a Stack:</strong> A stack can be implemented using a linked list where elements are added and removed from the same end.</li>
+            <li><strong>Memory Management:</strong> Linked lists are useful for dynamic memory allocation and deallocation in systems where memory size may vary.</li>
+            <li><strong>Undo Operations:</strong> Doubly linked lists can be used to keep track of changes for undo operations in applications.</li>
+        </ul>
+
+        <h2>Learning Resources</h2>
+        <ul>
+            <li><strong>Books:</strong> "Data Structures and Algorithm Analysis in C" by Mark Allen Weiss, "Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein.</li>
+            <li><strong>Online Courses:</strong> Platforms like Coursera, Udemy, and edX offer courses on data structures and algorithms with practical examples.</li>
+            <li><strong>Interactive Tools:</strong> Use online compilers and IDEs to practice linked list implementations and solve problems.</li>
+        </ul>
+
+        <h2>Summary</h2>
+        <p>Linked lists are fundamental data structures used in various applications where dynamic memory allocation and efficient insertion and deletion are required. Understanding linked lists and their operations is essential for solving complex problems and designing efficient algorithms in computer science.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>
+
+

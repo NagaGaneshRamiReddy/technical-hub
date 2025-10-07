@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>AI Course Roadmap</title>
+   
+    
+
+
+</head>
+<body class="body">
+
+
+
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-brain"style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">AI Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        
+        <ul><a href="Introduction to AI.html">Introduction to AI</a>
+            <li><a href="History of AI.html">History of AI</a></li>
+            <li><a href="AI vs. Machine Learning vs. Deep Learning.html">AI vs. Machine Learning vs. Deep Learning</a></li>
+            <li><a href="Applications of AI.html">Applications of AI</a></li>
+            <li>
+                <a href="Basic Concepts.html">Basic Concepts</a>
+                <ul>
+                    <li><a href="Supervised Learning.html">Supervised Learning</a></li>
+                    <li><a href="Unsupervised Learning.html">Unsupervised Learning</a></li>
+                    <li><a href="Reinforcement Learning.html">Reinforcement Learning</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Mathematics for AI</h3>
+        <a href="Mathematics for AI.html">Mathematics for AI</a>
+        <ul>
+            <li><a href="Linear Algebra.html">Linear Algebra</a></li>
+            <li><a href="Calculus.html">Calculus</a></li>
+            <li><a href="Probability and Statistics.html">Probability and Statistics</a></li>
+            <li><a href="Optimization.html">Optimization</a></li>
+        </ul>
+    
+        <h3>Machine Learning</h3>
+        <a href="Machine Learning.html">Machine Learning</a>
+        <ul>
+            <li><a href="Regression.html">Regression</a></li>
+            <li><a href="Classification.html">Classification</a></li>
+            <li><a href="Clustering.html">Clustering</a></li>
+            <li><a href="Dimensionality Reduction.html">Dimensionality Reduction</a></li>
+            <li><a href="Model Evaluation and Validation.html">Model Evaluation and Validation</a></li>
+        </ul>
+    
+        <h3>Deep Learning</h3>
+        <a href="Deep Learning.html">Deep Learning</a>
+        <ul>
+            <li><a href="Neural Networks.html">Neural Networks</a></li>
+            <li><a href="Convolutional Neural Networks (CNNs).html">Convolutional Neural Networks (CNNs)</a></li>
+            <li><a href="Recurrent Neural Networks (RNNs).html">Recurrent Neural Networks (RNNs)</a></li>
+            <li><a href="Generative Adversarial Networks (GANs).html">Generative Adversarial Networks (GANs)</a></li>
+            <li><a href="Transformers.html">Transformers</a></li>
+        </ul>
+    
+        <h3>Natural Language Processing (NLP)</h3>
+        <a href="Natural Language Processing (NLP).html">Natural Language Processing (NLP)</a>
+        <ul>
+            <li><a href="Text Preprocessing.html">Text Preprocessing</a></li>
+            <li><a href="Word Embeddings.html">Word Embeddings</a></li>
+            <li><a href="Sequence Modeling.html">Sequence Modeling</a></li>
+            <li><a href="Attention Mechanisms.html">Attention Mechanisms</a></li>
+            <li><a href="Language Models.html">Language Models</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Reinforcement Learning in AI.html">Reinforcement Learning</a></li>
+            <li><a href="Meta-Learning.html">Meta-Learning</a></li>
+            <li><a href="AI Ethics.html">AI Ethics</a></li>
+            <li><a href="AI in Production.html">AI in Production</a></li>
+            <li><a href="AI Research.html">AI Research</a></li>
+        </ul>
+    </div>
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+   
+        <button class="openbtn labs" onclick="golabs()">
+           
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn">
+            <i class="fas fa-question-circle"></i> AI Quiz
+        </button>
+    </div>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "";
+}
+    function goPrevious() {
+        window.location.href = "Basic Concepts.html";
+    }
+    function goNext() {
+        window.location.href = "Unsupervised Learning.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Introduction to Supervised Learning</div>
+   
+    
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> <h2>What is Supervised Learning?</h2>
+        <p>Supervised Learning is a type of machine learning where the model is trained on labeled data. The goal is to learn a mapping from inputs to outputs based on this training data so that the model can make predictions or decisions when given new, unseen data.</p>
+        
+        <h2>How Supervised Learning Works</h2>
+        <ul>
+            <li><strong>Data Collection</strong>: Gather a dataset consisting of input-output pairs. Each input is associated with a corresponding output (label).</li>
+            <li><strong>Training</strong>: Use the dataset to train the model. The model learns by adjusting its parameters to minimize the difference between its predictions and the actual labels in the training data.</li>
+            <li><strong>Evaluation</strong>: Test the trained model on a separate set of data (validation or test set) to evaluate its performance. Metrics such as accuracy, precision, recall, and F1 score are commonly used for evaluation.</li>
+            <li><strong>Prediction</strong>: Apply the trained model to new, unseen data to make predictions or classify inputs.</li>
+        </ul>
+        
+        <h2>Types of Supervised Learning</h2>
+        <ul>
+            <li><strong>Classification</strong>: Predicts discrete labels or categories. Examples include spam detection in emails or image classification (e.g., identifying objects in photos).</li>
+            <li><strong>Regression</strong>: Predicts continuous values. Examples include predicting house prices based on features like location and size or forecasting stock prices.</li>
+        </ul>
+
+        <h2>Common Algorithms</h2>
+        <ul>
+            <li><strong>Linear Regression</strong>: A regression algorithm that models the relationship between the dependent variable and one or more independent variables using a linear equation.</li>
+            <li><strong>Logistic Regression</strong>: A classification algorithm used to predict binary outcomes (e.g., yes/no, spam/ham). It estimates probabilities using a logistic function.</li>
+            <li><strong>Decision Trees</strong>: A model that uses a tree-like graph of decisions and their possible consequences. It's used for both classification and regression tasks.</li>
+            <li><strong>Support Vector Machines (SVM)</strong>: A classification algorithm that finds the optimal hyperplane to separate different classes in the feature space.</li>
+            <li><strong>k-Nearest Neighbors (k-NN)</strong>: A classification or regression algorithm that assigns a class or value based on the majority vote or average of the nearest neighbors in the feature space.</li>
+        </ul>
+
+        <h2>Applications of Supervised Learning</h2>
+        <ul>
+            <li><strong>Healthcare</strong>: Predicting disease outcomes based on patient data, classifying medical images, and recommending personalized treatments.</li>
+            <li><strong>Finance</strong>: Credit scoring, fraud detection, and predicting stock market trends.</li>
+            <li><strong>Marketing</strong>: Customer segmentation, sentiment analysis, and targeted advertising based on user behavior.</li>
+            <li><strong>Retail</strong>: Demand forecasting, product recommendation systems, and inventory management.</li>
+        </ul>
+
+        <h2>Challenges and Considerations</h2>
+        <ul>
+            <li><strong>Data Quality</strong>: High-quality, labeled data is crucial for effective training. Poor quality data can lead to inaccurate models.</li>
+            <li><strong>Overfitting</strong>: A model that performs well on training data but poorly on new data may be overfitting. Techniques like cross-validation and regularization can help mitigate this.</li>
+            <li><strong>Feature Selection</strong>: Choosing the right features for the model is essential for performance. Irrelevant or redundant features can negatively impact model accuracy.</li>
+        </ul>
+
+        <h2>Getting Started with Supervised Learning</h2>
+        <ul>
+            <li><strong>Understand the Basics</strong>: Learn fundamental concepts through online courses, tutorials, or textbooks.</li>
+            <li><strong>Work on Projects</strong>: Apply supervised learning algorithms to real-world datasets to gain hands-on experience.</li>
+            <li><strong>Experiment with Algorithms</strong>: Explore different algorithms and their parameters to understand their strengths and weaknesses.</li>
+            <li><strong>Evaluate and Improve</strong>: Use evaluation metrics to assess model performance and iterate on your approach to improve accuracy.</li>
+        </ul>
+
+        <div class="example">
+            <h2>Example Use Case: Email Spam Detection</h2>
+            <ul>
+                <li><strong>Data Collection</strong>: Collect a dataset of emails labeled as "spam" or "not spam."</li>
+                <li><strong>Feature Extraction</strong>: Extract features such as the frequency of certain words or phrases.</li>
+                <li><strong>Model Training</strong>: Train a classification model, such as a decision tree or logistic regression, on the labeled email dataset.</li>
+                <li><strong>Evaluation</strong>: Assess the model's performance using metrics like accuracy and precision on a test set of emails.</li>
+                <li><strong>Deployment</strong>: Implement the model to filter incoming emails and classify them as spam or not spam.</li>
+            </ul>
+        </div>
+
+        <div class="resources">
+            <h2>Learning Resources</h2>
+            <ul>
+                <li><strong>Online Courses</strong>: Platforms like Coursera and Udacity offer courses on supervised learning and machine learning.</li>
+                <li><strong>Books</strong>: "Pattern Recognition and Machine Learning" by Christopher Bishop is a comprehensive resource on machine learning techniques.</li>
+                <li><strong>Datasets</strong>: Explore datasets on platforms like Kaggle to practice and apply supervised learning algorithms.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Supervised Learning is a powerful approach in machine learning where models are trained on labeled data to make predictions or decisions. Understanding the different types of supervised learning, common algorithms, and their applications can help you leverage this technique effectively in various domains.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

@@ -1,0 +1,1406 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interviews.css">
+
+    <title>Top Salesforce Interview Questions</title>
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+             <i class="fab fa-html5 icon"></i>
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    <div class="container">
+        
+        <h1>Top Salesforce Interview Questions</h1>
+    <ol class="question-list">
+      <li class="question-item">
+   <div class="question">1. What is Salesforce and what are its main products?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Salesforce is a cloud-based CRM (Customer Relationship Management) platform designed to help businesses manage customer relationships, streamline processes, and increase profitability. The main Salesforce products include:
+           <ul>
+               <li><strong>Sales Cloud</strong>: For sales process management, from lead tracking to closing deals.</li>
+               <li><strong>Service Cloud</strong>: For managing customer support and case resolution.</li>
+               <li><strong>Marketing Cloud</strong>: For personalized marketing and customer journeys.</li>
+               <li><strong>Commerce Cloud</strong>: Supports e-commerce activities.</li>
+               <li><strong>Community Cloud</strong>: Allows businesses to build branded communities.</li>
+               <li><strong>AppExchange</strong>: A marketplace for third-party applications that integrate with Salesforce.</li>
+               <li><strong>Platform/Force.com</strong>: A PaaS for creating custom apps.</li>
+           </ul>
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce is a cloud-based CRM with main products such as Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud, Community Cloud, AppExchange, and Platform/Force.com.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">2. Explain the difference between Salesforce.com and Force.com.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Salesforce.com refers to Salesforce’s CRM product suite, which includes Sales, Service, Marketing, and other Clouds. <strong>Force.com</strong> is the underlying platform (PaaS) that allows developers to build and deploy custom applications that work within the Salesforce ecosystem, focusing on development tools and services.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce.com is Salesforce’s CRM suite, and Force.com is the PaaS for building custom apps.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">3. What is Salesforce CRM, and how does it help businesses?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Salesforce CRM is a tool that helps businesses manage interactions with current and potential customers. It enables companies to improve customer service, personalize marketing, close sales, and monitor performance through organized, data-driven workflows and insights.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce CRM helps businesses manage customer interactions and improve service, marketing, and sales.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">4. Describe the multi-tenant architecture of Salesforce.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Salesforce’s <strong>multi-tenant architecture</strong> allows multiple organizations (tenants) to share the same infrastructure and resources while securely separating each organization's data. This setup allows for cost efficiency, automatic upgrades, and consistent performance for all users.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Multi-tenant architecture allows shared resources across organizations with secure data separation.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">5. Explain the difference between Salesforce Classic and Lightning.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Salesforce Classic is the older user interface of Salesforce, while <strong>Salesforce Lightning</strong> is the modernized UI with a more intuitive design and optimized user experience. Lightning also brings advanced development frameworks, allowing for more dynamic, interactive applications.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce Classic is the older UI, while Lightning is the modern UI with advanced features.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+<li class="question-item">
+   <div class="question">6. What is an App in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           In Salesforce, an <strong>App</strong> is a collection of items, such as tabs, reports, and dashboards, organized to provide a specific set of functionalities. Apps can be standard (built-in) or custom (tailored to business requirements) and enable streamlined access to specific objects and records.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'An App in Salesforce is a collection of tabs, reports, and dashboards organized for specific functionality.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">7. What are Standard and Custom Objects in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Standard Objects</strong> are built-in Salesforce objects like Account, Contact, and Opportunity. <strong>Custom Objects</strong> are user-created objects designed to store data unique to a business, enabling custom functionality and specific workflows that standard objects may not support.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Standard Objects are pre-built in Salesforce, while Custom Objects are user-created to store unique business data.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">8. Explain the difference between a Lookup and Master-Detail relationship.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Lookup relationship</strong> links two objects, allowing related data but maintaining separate ownership and security. In contrast, a <strong>Master-Detail relationship</strong> links two objects in a tightly bound connection, with the child record’s lifecycle and permissions dependent on the parent record.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'A Lookup relationship links two objects with separate ownership, while Master-Detail links objects with dependent ownership.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">9. What are Record Types in Salesforce, and how are they used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Record Types</strong> allow different business processes, picklist values, and page layouts for the same object, depending on the user role or process type. For example, Sales and Support teams can use different record types to see layouts relevant to their tasks.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Record Types allow for different business processes and layouts on the same object based on user roles.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">10. How does the Salesforce security model work (Profiles,<br> Permission Sets, Sharing Rules)?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Salesforce’s security model includes various layers to control access:
+           <ul>
+               <li><strong>Profiles</strong>: Define baseline permissions (read, edit, delete) and field-level security for users.</li>
+               <li><strong>Permission Sets</strong>: Allow additional permissions on top of profiles.</li>
+               <li><strong>Sharing Rules</strong>: Grant record-level access based on record ownership or criteria.</li>
+           </ul>
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'The Salesforce security model uses Profiles, Permission Sets, and Sharing Rules to control access.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">11. What is a Schema Builder in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           The <strong>Schema Builder</strong> is a graphical tool within Salesforce that provides a visual representation of objects and their relationships. It allows for the creation and modification of custom fields and relationships, facilitating easy, no-code schema customization.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Schema Builder is a graphical tool in Salesforce for viewing and modifying objects and relationships.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">12. How do different types of fields work in Salesforce (Formula, Roll-Up Summary, etc.)?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Different field types serve various purposes:
+           <ul>
+               <li><strong>Formula Fields</strong>: Automatically calculate values based on other fields.</li>
+               <li><strong>Roll-Up Summary Fields</strong>: Aggregate child records’ data, such as summing amounts on related records.</li>
+               <li><strong>Picklists, Checkbox, Currency</strong>: Allow standardized values for fields, improving data accuracy and reporting.</li>
+           </ul>
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Formula, Roll-Up Summary, and Picklists are examples of different field types in Salesforce for calculations and data consistency.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">13. What are Relationships in Salesforce, and how many types are there?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Relationships link Salesforce objects to one another, defining how data is interconnected. Main types include:
+           <ul>
+               <li><strong>Lookup Relationship</strong>: Loose association, independent of the related record’s lifecycle.</li>
+               <li><strong>Master-Detail Relationship</strong>: Dependent relationship with the child record tied to the parent.</li>
+               <li><strong>Junction Object (Many-to-Many)</strong>: Created using two master-detail relationships to link two objects.</li>
+           </ul>
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Relationships in Salesforce connect objects with Lookup, Master-Detail, and Many-to-Many options.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">14. Describe the difference between External ID and Unique ID.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           An <strong>External ID</strong> is a field marked to store an identifier from an external system for easy data import. <strong>Unique IDs</strong> ensure that each record in Salesforce has a distinct identifier, which helps avoid duplicate records.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'An External ID is used for identifying records from external systems, while Unique ID is internal to Salesforce for preventing duplicates.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">15. How can you use the Data Import Wizard vs. Data Loader in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Data Import Wizard</strong> is an in-browser tool for importing smaller data sets and supports only standard and custom objects. <strong>Data Loader</strong> is a more robust, standalone application that handles large data volumes, supports additional objects, and offers more options for data operations (like export and delete).
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Data Import Wizard is a simple in-browser tool, while Data Loader is a standalone app for bulk operations.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">16. What are Junction Objects, and how are they used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Junction Objects</strong> enable many-to-many relationships between two objects. They are created with two master-detail relationships on a third object, such as connecting Students and Courses with a Course Enrollment junction object.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Junction Objects enable many-to-many relationships through two master-detail relationships.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">17. Explain the difference between an Object and a Record in Salesforce.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           An <strong>Object</strong> is a database table that stores data about a specific type of item (e.g., Account or Contact). A <strong>Record</strong> is a single instance of that object, such as a particular customer in the Account object.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'An Object is a database table, while a Record is an instance of data in that table.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">18. What is a Hierarchical Relationship?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Hierarchical Relationship</strong> is a unique type of lookup relationship available only on the User object. It allows users to define a reporting structure within an organization.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'A Hierarchical Relationship is a special lookup for user hierarchy within an organization.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">19. How do you create Many-to-Many relationships in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Many-to-Many relationships are created using a <strong>Junction Object</strong>. This object has two master-detail relationships linking the two objects you want to connect, allowing records from each object to be associated with multiple records from the other.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Many-to-Many relationships are created using a Junction Object with two master-detail relationships.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">20. How do you track field history in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Field history tracking can be enabled on specific fields, allowing Salesforce to automatically log changes in a history related list on records. You can track up to 20 fields per object for standard objects and 50 for custom objects.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Field history tracking in Salesforce logs changes on enabled fields, tracking up to 20 fields for standard objects.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+<li class="question-item">
+   <div class="question">21. What is OWD (Organization-Wide Default) and how is it configured?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           OWD (Organization-Wide Default) sets the baseline record-level access for each object within an organization, establishing the default level of access users have to records they don’t own. OWDs can be set to Private, Public Read Only, Public Read/Write, or Controlled by Parent, depending on the needs. OWDs are configured in the <strong>Sharing Settings</strong> under <strong>Setup</strong>.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'OWD sets the baseline record access within an organization, configured in Sharing Settings under Setup.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">22. What is Role Hierarchy, and how does it work?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Role Hierarchy in Salesforce is a data access model that allows users to have access to records owned by people below them in the hierarchy. It allows for record visibility across an organization, ensuring that users in higher roles can view or manage records owned by lower roles.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Role Hierarchy allows users to access records of lower-level roles.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">23. Explain the difference between Profiles and Roles.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Profiles</strong> control a user’s permissions, such as which apps, tabs, and objects they can access and what actions they can perform on records (read, edit, delete). <strong>Roles</strong>, on the other hand, define a user’s place in the Role Hierarchy and primarily influence record access, determining which records users can view or edit based on data ownership.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Profiles control permissions, while Roles define access hierarchy.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">24. What are Permission Sets, and when would you use them?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Permission Sets</strong> extend user permissions without altering their Profile. They’re useful for granting specific permissions to individual users or user groups who need additional access to objects, fields, or applications without creating new profiles.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Permission Sets extend user permissions without altering their profile.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">25. How do you restrict data access using Sharing Rules?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Sharing Rules</strong> provide additional access to records for users or groups beyond what’s defined by OWD. They grant access based on record ownership or specific criteria (e.g., all records where Account Status = “Active”). This is particularly useful for collaborative tasks across different departments.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Sharing Rules add data access based on ownership or criteria for collaborative work.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">26. What is a Public Group?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Public Group</strong> is a collection of users, roles, or other public groups. It’s used in sharing rules, folder access, and approval processes to provide access to data or functionality for a specified group of people.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'A Public Group is a collection of users, roles, or groups used to set data access.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">27. Explain the purpose of the “View All” and “Modify All” permissions.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           “<strong>View All</strong>” and “<strong>Modify All</strong>” are permissions that override standard sharing settings, giving users access to view or edit all records within a specific object. This is typically used for system administrators or for those who need full access for specific business processes.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'View All and Modify All provide complete access to records, typically for admins.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">28. What is Field-Level Security, and how is it configured?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Field-Level Security</strong> restricts user access to specific fields within an object, enabling administrators to hide sensitive information. It’s configured within <strong>Profiles</strong> and <strong>Permission Sets</strong> by setting fields as visible or read-only based on user role.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Field-Level Security controls field visibility and is set within Profiles and Permission Sets.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">29. How would you use Login IP Ranges and Login Hours?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Login IP Ranges</strong> restrict access to Salesforce from specified IP addresses, while <strong>Login Hours</strong> limit access during certain hours. These features are configured in Profiles to enhance security by ensuring users can only log in from trusted networks and during permitted times.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Login IP Ranges restrict access to specific IPs, while Login Hours set allowed login times.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">30. What are Apex Sharing Rules?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Apex Sharing Rules</strong> allow developers to create programmatic sharing settings for custom business logic. They are used in Apex code to explicitly define sharing rules for records, offering a customized approach beyond standard Sharing Rules.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Apex Sharing Rules use code to define custom sharing settings beyond standard rules.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">31. What are Workflow Rules, and what actions can they perform?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Workflow Rules</strong> automate standard internal procedures in Salesforce, triggering actions like email alerts, field updates, tasks, or outbound messages. They’re set up with criteria-based logic to execute these actions automatically when conditions are met.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Workflow Rules automate processes like emails, field updates, and tasks.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">32. Describe the differences between Workflow, Process Builder, and Flow.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Workflow is limited to four types of actions (alerts, tasks, field updates, and messages), whereas <strong>Process Builder</strong> is more powerful, handling multiple criteria, actions, and sequences in a single process. <strong>Flow</strong> is the most advanced, enabling complex, multi-step workflows and screens for user interaction.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Workflow is basic automation, Process Builder adds conditions, and Flow is the most powerful tool.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+<li class="question-item">
+   <div class="question">33. How does the Process Builder differ from Workflow?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Process Builder</strong> offers more flexibility, allowing multiple conditions and actions in a single process, whereas <strong>Workflow</strong> is limited to simpler, one-condition/one-action automation.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Process Builder offers more flexibility with multiple conditions, unlike Workflow, which is one-condition automation.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">34. What are Approval Processes in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Approval Processes</strong> are multi-step workflows that automatically route records to designated approvers based on criteria. They are often used for request-based business processes, like budget or time-off requests.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Approval Processes are workflows that route records to approvers, used for requests like budget approvals.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">35. Explain the concept of Time-Dependent Workflow Actions.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Time-Dependent Workflow Actions execute automatically after a set time delay. For example, an email reminder could be sent 7 days before an event, based on specified conditions.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Time-Dependent Workflow Actions execute actions automatically after a time delay.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">36. What is an Escalation Rule?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Escalation Rules</strong> automatically reassign or escalate cases when they meet certain criteria (e.g., unresolved cases after 24 hours). They’re essential in maintaining service-level agreements (SLAs).
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Escalation Rules automatically reassign or escalate cases based on criteria.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">37. How would you create an Automated Approval Process?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Automated Approval Processes involve defining entry criteria, assigning approval steps, specifying actions (approve/reject), and establishing conditions for notifications. This can be set up in <strong>Setup &gt; Approval Processes</strong>.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Approval Processes require criteria, approval steps, and conditions for notifications.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">38. What are Quick Actions, and how are they used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Quick Actions</strong> allow users to perform tasks quickly, like creating a record, sending an email, or updating fields. They are added to pages or layouts to streamline routine actions.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Quick Actions let users perform tasks quickly, like creating records or updating fields.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">39. How does Lightning Flow work, and what are its main use cases?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Lightning Flow</strong> provides automation with Flow Builder, allowing users to create complex, multi-step processes. Use cases include guided user experiences, handling multiple conditions, and performing advanced data manipulation.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Lightning Flow uses Flow Builder for multi-step processes like guided experiences and complex logic.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">40. What is Einstein Next Best Action?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Einstein Next Best Action</strong> provides AI-driven recommendations for users, suggesting the best action based on predictive models, historical data, and business rules, which helps in personalized customer interactions.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Einstein Next Best Action provides AI-driven suggestions for optimal actions in customer interactions.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<!-- Salesforce Reports and Dashboards Section -->
+
+<li class="question-item">
+   <div class="question">41. What types of reports can be created in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Salesforce supports Tabular, Summary, Matrix, and Joined Reports, each tailored to different analysis types (e.g., simple lists, grouped data, pivot tables, and complex report combinations).
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce reports include Tabular, Summary, Matrix, and Joined Reports for various data views.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">42. How do Report Types work in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Report Types</strong> define the data relationships available for reports. <strong>Standard Report Types</strong> are provided by Salesforce, while <strong>Custom Report Types</strong> allow for more granular control of related data inclusion.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Report Types define data relationships; Standard and Custom Types allow flexibility in data selection.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">43. What are Custom Report Types, and how do they differ from Standard Report Types?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Custom Report Types</strong> let users specify object relationships and choose which fields appear in reports, offering more customization compared to predefined <strong>Standard Report Types</strong>.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Custom Report Types let users customize object relationships and report fields.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">44. Explain how dashboards work in Salesforce.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Dashboards</strong> visualize report data in components (like charts and tables). They offer real-time insights into metrics and KPIs, showing a comprehensive view of business performance.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Dashboards visualize data, offering insights and showing key metrics for business performance.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">45. How would you create a Dynamic Dashboard?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Dynamic Dashboard</strong> shows data based on the viewing user’s access, created by enabling “View Dashboard As” settings in <strong>Dashboard Properties</strong>.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Dynamic Dashboards show data based on the viewing user’s access, using “View Dashboard As” settings.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">46. What are Report Filters and how are they used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Report Filters</strong> narrow down report data based on specific criteria, allowing users to focus on the most relevant records.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Report Filters narrow down report data by criteria to focus on relevant records.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">47. How does Conditional Highlighting work in reports?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Conditional Highlighting</strong> visually emphasizes key metrics in Summary and Matrix reports, like highlighting high sales figures, helping in quick data analysis.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Conditional Highlighting emphasizes key metrics visually in reports for quick analysis.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">48. Explain the purpose of Joined Reports.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Joined Reports</strong> allow combining multiple reports into a single view, useful for comparing different data sets side-by-side.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Joined Reports combine multiple reports for side-by-side data comparison.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">49. What is the difference between Summary and Matrix reports?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Summary Reports</strong> group data by rows, while <strong>Matrix Reports</strong> group data by both rows and columns, offering a pivot table layout.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Summary Reports group data by rows, while Matrix Reports use both rows and columns.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">50. How would you set up a Reporting Snapshot?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Reporting Snapshot</strong> captures and stores report data at scheduled intervals. It’s set up in <strong>Setup &gt; Reporting Snapshots</strong> to monitor changes over time.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'A Reporting Snapshot captures report data at intervals, set up in Reporting Snapshots.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+<li class="question-item">
+   <div class="question">51. What is Apex in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Apex</strong> is Salesforce’s proprietary programming language similar to Java. It’s used to add business logic, handle complex automation, and interact with Salesforce’s database through server-side programming.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Apex is Salesforce’s programming language for complex automation and database interactions.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">52. What are Apex Triggers, and how are they used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Apex Triggers</strong> are pieces of code that execute before or after specific events on a Salesforce record, like insert, update, delete, or undelete. Triggers are often used for tasks like validating data, logging changes, or initiating other automated actions.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Apex Triggers run before or after events on records to validate data, log changes, or automate actions.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">53. Explain the concept of Trigger Context Variables.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Trigger Context Variables</strong> are variables in Apex that store data about the trigger event, such as <strong>Trigger.new</strong> (new records), <strong>Trigger.old</strong> (old records), <strong>Trigger.isInsert</strong>, and <strong>Trigger.isUpdate</strong>. These help developers know which records are affected and the nature of the change.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Trigger Context Variables in Apex store data about trigger events, such as Trigger.new and Trigger.old.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">54. What are Governor Limits in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Governor Limits</strong> are Salesforce’s way of ensuring efficient resource usage in a shared environment. They impose limits on the number of DML operations, queries, CPU time, etc., to prevent one user from overconsuming resources.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Governor Limits ensure efficient resource use by setting limits on operations like DML, queries, and CPU time.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">55. Describe the difference between a Trigger and a Workflow.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Trigger</strong> allows for more complex, custom logic and can execute before or after record changes, while <strong>Workflow</strong> offers simple, predefined actions like field updates or email alerts triggered by record criteria.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Triggers allow complex logic before or after record changes, while Workflows provide predefined actions.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">56. Explain the purpose of the @future annotation in Apex.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           The <strong>@future</strong> annotation in Apex is used to run methods asynchronously, allowing time-consuming tasks like callouts to external systems or batch processing to be performed without delaying the main execution.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, '@future is used to run methods asynchronously for tasks like callouts or batch processing.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">57. What is Batch Apex and when is it used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Batch Apex</strong> is used to process large data sets asynchronously by breaking them into smaller chunks, which helps bypass governor limits and efficiently handle thousands of records at once. It's ideal for large data processing.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Batch Apex processes large data sets asynchronously in chunks, helping with governor limits.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">58. Explain the difference between Synchronous and Asynchronous Apex.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Synchronous Apex</strong> processes tasks immediately, but it’s limited by governor limits, while <strong>Asynchronous Apex</strong> (using @future, Batch Apex, Queueable Apex) can handle more resource-intensive tasks in the background.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Synchronous Apex runs tasks immediately with governor limits; Asynchronous Apex handles intensive tasks in the background.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">59. What is a Visualforce page, and how is it used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Visualforce</strong> is a markup language in Salesforce for creating custom user interfaces. It’s used for building pages that interact with the backend and are more customizable than standard pages, especially in classic Salesforce.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Visualforce is a markup language for custom user interfaces in Salesforce, useful for backend interactions.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">60. Describe the purpose of Custom Controllers and Controller Extensions.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Custom Controllers</strong> are Apex classes associated with Visualforce pages, managing the page’s behavior. <strong>Controller Extensions</strong> enhance existing controllers by adding additional functionality or overriding specific methods.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Custom Controllers manage Visualforce page behavior; Controller Extensions enhance existing controllers.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">61. What is Salesforce Lightning?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Salesforce Lightning</strong> is a component-based framework for developing dynamic web applications for mobile and desktop. It includes the Lightning Experience UI and Lightning components for building modern applications.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce Lightning is a component framework for web applications, including Lightning Experience and components.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+<li class="question-item">
+   <div class="question">61. What is Salesforce Lightning?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Salesforce Lightning</strong> is a component-based framework for developing dynamic web applications for mobile and desktop. It includes the Lightning Experience UI and Lightning components for building modern applications.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce Lightning is a component-based framework for developing dynamic web applications.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">62. Explain the difference between Aura and Lightning Web Components (LWC).</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Aura Components</strong> are Salesforce’s original component model, using proprietary code, while <strong>Lightning Web Components (LWC)</strong> are based on web standards, allowing faster, lighter, and more efficient development using standard JavaScript.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Aura Components use proprietary code; LWC is based on web standards for faster development.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">63. What is the Lightning App Builder?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Lightning App Builder</strong> is a point-and-click tool for creating customized Lightning pages using components. It’s useful for designing home pages, record pages, and app pages tailored to specific business needs.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Lightning App Builder is a tool for creating customized Lightning pages using components.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">64. How does the Lightning Design System (SLDS) work?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>SLDS</strong> provides a library of styling guidelines, components, and resources that ensure consistency across the Salesforce UI, helping developers and admins build interfaces that look and feel like native Salesforce elements.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'SLDS provides styling guidelines and resources for consistent UI across Salesforce.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">65. Explain Lightning Data Service (LDS).</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>LDS</strong> is a service that provides seamless access to Salesforce data in Lightning components without the need for Apex code. It handles caching and data refresh, making it efficient for CRUD operations on Salesforce records.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'LDS provides seamless access to Salesforce data in Lightning components without Apex code.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">66. How would you implement navigation between components in LWC?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Navigation in <strong>LWC</strong> is implemented using the <code>lightning/navigation</code> module, which allows developers to navigate to records, pages, or external links programmatically within the Lightning Experience.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Navigation in LWC is done using the lightning/navigation module for programmatic navigation.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">67. What is an Event in Lightning, and how is it handled?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Events</strong> in Lightning are mechanisms for communication between components. In Aura, events are categorized as application or component events, while in LWC, standard DOM events are used, which can be dispatched and listened to for inter-component communication.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Events in Lightning allow communication between components, using different models in Aura and LWC.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">68. Explain the difference between Lightning Record Page and App Page.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Lightning Record Page</strong> is designed for viewing and editing records of a specific object, whereas an <strong>App Page</strong> serves as a homepage or dashboard for the entire app, often aggregating information from multiple objects.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Lightning Record Page is for specific object records; App Page is a dashboard for the app.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">69. What are @track, @api, and @wire decorators in LWC?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>@track</strong> makes fields reactive, updating the UI when they change; <strong>@api</strong> exposes properties and methods for parent-to-child communication; and <strong>@wire</strong> connects components to Salesforce data for automatic data refresh.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, '@track makes fields reactive, @api allows parent-child communication, @wire connects to Salesforce data.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">70. How would you debug an LWC component?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Debugging in LWC</strong> involves using browser developer tools, <code>console.log</code> statements, and the <strong>Lightning Debug Mode</strong> in Salesforce for better error tracing and faster load times for JavaScript changes.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Debugging LWC uses developer tools, console.log, and Lightning Debug Mode for error tracing.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">71. What is the purpose of REST and SOAP APIs in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>REST API</strong> and <strong>SOAP API</strong> allow for integrating Salesforce with other systems by enabling data exchange. REST API is lightweight and ideal for mobile and web applications, while SOAP API offers a more robust, structured approach, suitable for enterprise applications.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'REST API is lightweight; SOAP API is more robust and suitable for enterprise applications.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">72. How does OAuth 2.0 work in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>OAuth 2.0</strong> is an authorization protocol allowing external applications to securely access Salesforce data on behalf of a user without sharing passwords. It’s widely used for granting permissions via tokens.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'OAuth 2.0 allows secure data access for external applications without sharing passwords.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">73. Explain the concept of External Services in Salesforce.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>External Services</strong> simplify integrations by connecting to external REST-based services. It allows Salesforce to call external APIs using declarative tools by importing service definitions directly.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'External Services connect to external REST services, allowing API calls using declarative tools.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">74. What is a Connected App, and why is it used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Connected App</strong> is a framework that lets an external application connect with Salesforce through APIs. It enables secure integration, managing permissions, and providing user authentication.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Connected Apps enable secure integration between external applications and Salesforce through APIs.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">75. How does the Salesforce API Limit work?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Salesforce API Limits</strong> govern the number of API calls allowed within a 24-hour period. Limits vary based on the organization’s edition, license, and configuration, ensuring fair use of resources.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'API Limits determine the number of calls allowed in 24 hours, varying by edition and license.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">76. What are Named Credentials, and how are they used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Named Credentials</strong> store authentication details (URL, credentials) for external services, making callouts secure and simplifying authentication by centralizing connection details.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Named Credentials store authentication details for secure callouts to external services.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">77. Explain the purpose of Outbound Messaging.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Outbound Messaging</strong> is a declarative feature that sends SOAP messages to external systems based on workflow rules or approval processes. It’s used for real-time notifications to external systems when Salesforce data changes.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Outbound Messaging sends SOAP messages to external systems for real-time notifications based on workflows.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">78. How do you use Apex Callouts?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Apex Callouts</strong> are used in Apex code to make HTTP requests (REST or SOAP) to external systems. This requires <code>@future</code> or <code>Continuation</code> methods for asynchronous processing when handling data-intensive responses.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Apex Callouts make HTTP requests to external systems, requiring @future or Continuation methods for async processing.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">79. What is Salesforce Connect, and how does it work?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Salesforce Connect</strong> enables real-time data access from external systems without storing it in Salesforce, via <strong>External Objects</strong>. It’s useful for connecting large datasets directly, avoiding data duplication.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce Connect allows real-time access to external data via External Objects without storing it in Salesforce.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">80. How would you handle API callouts from Flow?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           API callouts from Flow are managed using <strong>External Services</strong> or <strong>Apex Invocable Methods</strong>, which enable Flow to interact with external systems, making it more versatile for real-time integrations.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'API callouts from Flow use External Services or Apex Invocable Methods for external system interaction.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+<li class="question-item">
+   <div class="question">81. What is the Salesforce Data Loader, and when would you use it?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           The <strong>Salesforce Data Loader</strong> is a client application for bulk data import and export in Salesforce. It’s often used to handle large data volumes for tasks like inserting, updating, deleting, or exporting records when changes are too large for Salesforce’s native tools.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce Data Loader is used for bulk data import and export, handling large volumes of records.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">82. Describe the difference between Insert and Upsert operations.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Insert</strong> adds new records to Salesforce, while <strong>Upsert</strong> is a combination of “update” and “insert” that either updates existing records or inserts new ones based on whether matching records are found.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Insert adds new records, while Upsert updates existing or inserts new records based on matches.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">83. What are Validation Rules, and how are they used?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Validation Rules</strong> are logic-based rules used to ensure data quality by enforcing specific criteria when users enter data. If the data doesn’t meet these criteria, an error message appears, stopping the save operation.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Validation Rules enforce criteria on data entry, showing errors if conditions aren’t met.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">84. Explain the purpose of Duplicate Management.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Duplicate Management</strong> prevents and manages duplicate records using matching rules and duplicate rules. It can be configured to alert users, block duplicate entries, or allow duplicates but flag them.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Duplicate Management uses rules to prevent duplicates, alerting or blocking as needed.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">85. How would you handle Data Export and Data Backup?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           Salesforce offers tools like the <strong>Data Export Service</strong> for regular, automated exports and <strong>Data Loader</strong> for one-time exports. For backups, third-party solutions or Salesforce’s backup services are used to securely store data off-platform.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Data Export Service automates exports; Data Loader handles one-time exports; third-party tools are for backups.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">86. What is a Roll-Up Summary Field?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Roll-Up Summary Field</strong> calculates aggregate values (like SUM, COUNT, MIN, or MAX) from related records on a parent record. It’s only available for <strong>Master-Detail relationships</strong> and is used to summarize related data.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Roll-Up Summary Fields aggregate values from related records, only available in Master-Detail relationships.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">87. How do you handle large data volumes in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           For <strong>large data volumes</strong>, techniques like selective SOQL queries, indexing, batch processing, archiving, and careful use of sharing rules and triggers help manage data efficiently and prevent performance issues.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Handle large data volumes with selective queries, indexing, batch processing, and archiving.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">88. What are Archiving and Data Retention policies?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Archiving and Data Retention</strong> policies define how long data is kept active and when it’s archived or deleted. Salesforce automatically archives older records like activities after a set period, but custom policies may be set based on business needs.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Archiving and Data Retention policies dictate how long data remains active before archiving or deletion.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">89. What are data skew and ownership skew in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Data Skew</strong> occurs when a large number of child records are linked to a single parent, causing performance issues. <strong>Ownership Skew</strong> is when a single user owns many records, which can impact sharing and visibility.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Data Skew links many child records to one parent; Ownership Skew involves a single user owning many records.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">90. How would you perform data deduplication?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Data Deduplication</strong> can be handled using tools like duplicate rules, matching rules, the Data Import Wizard, third-party tools, and manual cleanup strategies to ensure clean, unique records.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Data Deduplication is done using duplicate and matching rules, tools, and manual strategies to ensure unique records.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+---
+
+<li class="question-item">
+   <div class="question">91. Explain the different deployment methods in Salesforce (Change Sets, Ant Migration, etc.).</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Change Sets</strong> allow configuration transfer between related Salesforce orgs. <strong>Ant Migration Tool</strong> and <strong>Salesforce CLI</strong> are used for more control, especially for moving metadata across environments programmatically. Salesforce DX is suited for version-controlled and complex environments.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Change Sets transfer configs between related orgs; Ant and Salesforce CLI offer control over metadata deployment.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">92. What is Salesforce DX, and why is it useful?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Salesforce DX</strong> is a development model that encourages version control, modular app development, and continuous integration. It allows developers to collaborate, test, and release changes efficiently.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Salesforce DX promotes version control, modular development, and efficient collaboration among developers.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">93. How does the Sandbox environment work in Salesforce?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Sandboxes</strong> are isolated environments that mirror production data and settings, allowing testing and development without affecting live data. Types include Developer, Partial Copy, and Full Copy, each serving different levels of data requirements.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Sandboxes are isolated environments for testing, with types like Developer, Partial Copy, and Full Copy for different data needs.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">94. Explain the purpose of Source Control in Salesforce development.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Source Control</strong> tracks code changes, manages versions, and enables collaboration. By storing code in repositories (e.g., Git), teams can revert to previous versions, track changes, and enable continuous deployment practices.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Source Control manages code changes, versions, and collaboration, often using Git for repositories.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">95. What is a Managed Package vs. an Unmanaged Package?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           A <strong>Managed Package</strong> is a distribution of app components that can be updated and is protected, often used for commercial solutions. An <strong>Unmanaged Package</strong> is open and editable but lacks the ability to update automatically, typically used for internal distribution.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Managed Packages are updatable and protected for commercial use; Unmanaged Packages are editable but lack automatic updates.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">96. Describe Continuous Integration (CI) and Continuous Delivery (CD)<br> in Salesforce.</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>CI/CD</strong> in Salesforce automates code integration, testing, and deployment processes. CI ensures that changes are consistently tested, while CD automates moving those changes to production or staging environments.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'CI/CD automates integration, testing, and deployment processes in Salesforce for efficiency.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">97. How would you roll back a deployment if there is an issue?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           To <strong>roll back a deployment</strong>, restore from a previous version in source control, redeploy the last stable version, or use backup data to revert. Salesforce itself does not have an automatic rollback, so planning and backups are critical.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Roll back a deployment by restoring from source control or backup data; Salesforce doesn’t have automatic rollback.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">98. What are the various Sandbox types, and when would you use each?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Developer Sandboxes</strong> are used for testing code/configs, <strong>Developer Pro</strong> for slightly larger data sets, <strong>Partial Copy</strong> for testing with partial production data, and <strong>Full Sandboxes</strong> for full-scale testing and training with complete production data.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Sandbox types include Developer for code testing, Partial Copy for some production data, and Full for complete data tests.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">99. What are Post-Deployment Steps?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           <strong>Post-Deployment Steps</strong> include actions taken after deployment, such as verifying data integrity, running tests, assigning permissions, activating flows, updating custom settings, and checking integrations to ensure everything functions as expected.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Post-Deployment Steps verify data, run tests, assign permissions, and ensure functionality of integrations and flows.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+<li class="question-item">
+   <div class="question">100. How does Metadata API work for deployment?</div>
+   <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+   <div class="answer-container">
+       <div class="answer">
+           The <strong>Metadata API</strong> is used to retrieve, deploy, create, update, or delete metadata components. It enables automated and version-controlled deployments between Salesforce environments, often via tools like Ant or Salesforce CLI.
+       </div>
+       <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+       <button class="check-answer-btn" onclick="checkAnswer(this, 'Metadata API manages deployment of metadata components between Salesforce environments, supporting automation and version control.')">Check Answer</button>
+       <div class="feedback"></div>
+   </div>
+</li>
+
+
+
+<script>
+   function toggleAnswer(button) {
+       const questionItem = button.closest('.question-item');
+       const answerContainers = document.querySelectorAll('.answer-container');
+
+       
+       answerContainers.forEach(container => {
+           if (container !== questionItem.querySelector('.answer-container')) {
+               container.parentElement.classList.remove('active');
+           }
+       });
+
+      
+       questionItem.classList.toggle('active');
+   }
+
+   function checkAnswer(button, correctAnswer) {
+       const userAnswer = button.previousElementSibling.value.trim().toLowerCase();
+       const correctAnswerText = correctAnswer.toLowerCase();
+       const feedback = button.nextElementSibling;
+       const answerContainer = button.closest('.answer-container');
+       const answer = answerContainer.querySelector('.answer');
+
+   
+       answer.style.display = "block"; 
+
+       
+       if (userAnswer.includes("html stands for hypertext markup language") && userAnswer.includes("structure content on the web")) {
+           feedback.textContent = "Your answer is almost correct! Check the full answer for any additional points.";
+           feedback.className = "feedback correct";
+       } else {
+           feedback.textContent = "Please check the correct answer and try again.";
+           feedback.className = "feedback incorrect";
+       }
+
+       feedback.style.display = "block"; 
+   }
+</script>
+

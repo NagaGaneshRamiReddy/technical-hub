@@ -1,0 +1,500 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Aptitude</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Aptitude
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href ="Efficiency and Time.html";
+    }
+    function goNext() {
+        window.location.href = "Pipes and Cisterns Problems.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Pipes and Cisterns</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  
+            <h2>Introduction to Pipes and Cisterns</h2>
+            <p>Pipes and cisterns are concepts used to solve problems related to filling and emptying tanks or containers. These problems typically involve calculating the time required to fill or empty a tank given the rate at which water flows through pipes or drains. Understanding these concepts is essential for efficient management of water resources and infrastructure.</p>
+
+            <h2>Basic Concepts</h2>
+            <p>In pipes and cisterns problems, you often need to determine how long it will take to fill or empty a cistern given the rates of multiple pipes (inlets and outlets) working together or separately.</p>
+
+            <h2>Formulas</h2>
+
+            <h3>1. Filling a Cistern</h3>
+            <p>To calculate the time required to fill a cistern with one or more pipes:</p>
+            <div class="formula">
+                <strong>Formula to Calculate Time to Fill a Cistern:</strong><br>
+                Time = Volume of Cistern / (Rate of Inlet Pipe)
+            </div>
+
+            <p><strong>Volume of Cistern:</strong> The total capacity of the cistern.<br>
+            <strong>Rate of Inlet Pipe:</strong> The rate at which the pipe fills the cistern (e.g., liters per hour).</p>
+
+            <h3>2. Emptying a Cistern</h3>
+            <p>To calculate the time required to empty a cistern with one or more pipes:</p>
+            <div class="formula">
+                <strong>Formula to Calculate Time to Empty a Cistern:</strong><br>
+                Time = Volume of Cistern / (Rate of Outlet Pipe)
+            </div>
+
+            <p><strong>Volume of Cistern:</strong> The total capacity of the cistern.<br>
+            <strong>Rate of Outlet Pipe:</strong> The rate at which the pipe empties the cistern (e.g., liters per hour).</p>
+
+            <h3>3. Mixed Problems</h3>
+            <p>When multiple pipes are involved, both filling and emptying simultaneously, the effective rate is calculated as:</p>
+            <div class="formula">
+                <strong>Effective Rate = Rate of Inlet Pipe - Rate of Outlet Pipe</strong><br>
+                <strong>Time to Fill/Empty = Volume of Cistern / Effective Rate</strong>
+            </div>
+
+            <p><strong>Rate of Inlet Pipe:</strong> The rate at which the cistern is filled.<br>
+            <strong>Rate of Outlet Pipe:</strong> The rate at which the cistern is emptied.</p>
+
+            <h2>Examples</h2>
+
+            <div class="example">
+                <strong>Example 1:</strong><br>
+                If a cistern has a capacity of 1000 liters and a single pipe fills it at a rate of 200 liters per hour, the time required to fill the cistern is:<br>
+                Time = 1000 liters / 200 liters per hour = 5 hours<br>
+                Therefore, it will take 5 hours to fill the cistern.
+            </div>
+
+            <div class="example">
+                <strong>Example 2:</strong><br>
+                If a cistern with a capacity of 1200 liters has a pipe that can empty it at a rate of 300 liters per hour, the time required to empty the cistern is:<br>
+                Time = 1200 liters / 300 liters per hour = 4 hours<br>
+                Therefore, it will take 4 hours to empty the cistern.
+            </div>
+
+            <div class="example">
+                <strong>Example 3:</strong><br>
+                A cistern has a capacity of 1500 liters. Pipe A can fill it in 6 hours, and Pipe B can empty it in 10 hours. If both pipes are open together, the time to fill the cistern is:<br>
+                Effective Rate = (1/6 - 1/10) cisterns per hour = (5 - 3) / 30 = 2 / 30 = 1 / 15 cisterns per hour<br>
+                Time = 1 / Effective Rate = 15 hours<br>
+                Therefore, it will take 15 hours to fill the cistern with both pipes open.
+            </div>
+
+            <h2>How to Solve Pipes and Cisterns Problems</h2>
+            <ul>
+                <li><strong>Determine the Capacity:</strong> Find out the total capacity of the cistern.</li>
+                <li><strong>Identify Rates:</strong> Determine the filling and emptying rates of the pipes.</li>
+                <li><strong>Apply Formulas:</strong> Use the formulas for filling, emptying, or mixed problems based on the given rates.</li>
+                <li><strong>Calculate Time:</strong> Compute the time required using the formulas and effective rates.</li>
+            </ul>
+
+            <h2>Why are Pipes and Cisterns Important?</h2>
+            <ul>
+                <li><strong>Water Management:</strong> Helps in planning and managing water resources efficiently.</li>
+                <li><strong>Infrastructure Planning:</strong> Useful for designing and optimizing systems for water storage and distribution.</li>
+                <li><strong>Efficiency Improvement:</strong> Ensures effective use of resources and reduces wastage in water-related tasks.</li>
+            </ul>
+
+            <h2>Real-Life Example</h2>
+            <p>Consider a water tank at a residential building:</p>
+
+            <div class="example">
+                <strong>Scenario:</strong><br>
+                - A water tank needs to be filled by 3 different pipes with different flow rates.<br>
+                - Pipe A fills at 100 liters per hour, Pipe B at 150 liters per hour, and Pipe C at 200 liters per hour.<br>
+                - If Pipe A is open for 4 hours, Pipe B for 3 hours, and Pipe C for 2 hours, how much water is added to the tank?<br><br>
+                Water Added = (100 liters/hour × 4 hours) + (150 liters/hour × 3 hours) + (200 liters/hour × 2 hours)<br>
+                Water Added = 400 liters + 450 liters + 400 liters = 1250 liters<br><br>
+                Therefore, a total of 1250 liters of water is added to the tank.
+            </div>
+
+            <h2>Practice Tests</h2>
+            <div class="resources">
+                <p>Test your understanding of pipes and cisterns with these free practice resources:</p>
+                <ul>
+                    
+                    <li><a href="https://www.ixl.com/math/algebra-2/pipes-and-cisterns" target="_blank">IXL: Pipes and Cisterns Practice</a></li>
+                    <li><a href="https://www.khanacademy.org/math/algebra/x2f8bb115bf4c3406:ratios-rates/x2f8bb115bf4c3406:rates/v/pipes-and-cisterns" target="_blank">Khan Academy: Pipes and Cisterns Tutorial</a></li>
+                    <li><a href="https://www.cuemath.com/learn/math-pipes-and-cisterns/" target="_blank">Cuemath: Pipes and Cisterns Practice</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Pipes and cisterns problems involve understanding how to manage and calculate the time required to fill or empty containers based on the rates of different pipes. Mastering these concepts aids in efficient water management and infrastructure planning.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                    </div>
+    </div>
+</body>
+</html>

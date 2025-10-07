@@ -1,0 +1,440 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Verbal Reasoning</title>
+    
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+            Verbal Reasoning
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <h3 class="h3"> Verbal Reasoning</h3>
+        
+        <a href="Spotting Errors.html">Spotting Errors</a>
+               
+<a href="Antonyms.html">Antonyms</a>
+              
+<a href="Synonyms.html">Synonyms</a>
+                
+<a href="Spellings.html">Spellings</a>
+                
+<a href="Selecting Words.html">Selecting Words</a>
+               
+<a href="Sentence Formation.html">Sentence Formation</a>
+                
+<a href="Ordering of Sentences.html">Ordering of Words</a>
+                
+<a href="Sentence Correction.html">Sentence Correction</a>
+                
+<a href="Ordering of Sentences.html">Ordering of Sentences</a>
+                
+<a href="Paragraph Formation.html">Paragraph Formation</a>
+               
+<a href="Closet Test.html">Closet Test</a>
+               
+<a href="Comprehension.html">Comprehension</a>
+                
+<a href="One Word Substitutes.html">One Word Substitutes</a>
+              
+<a href="Idioms and Phrases.html">Idioms and Phrases</a>
+               
+<a href="Change of Voice.html">Change of Voice</a>
+                
+<a href="Change of Speech.html">Change of Speech</a>
+               
+<a href="Verbal Analogies.html">Verbal Analogies</a>
+                
+<a href="Articles.html">Articles</a>
+                
+<a href="Prepositions.html">Prepositions</a>
+                
+<a href="Adjectives.html">Adjectives</a>
+              
+
+    </div>
+   
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+    
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+    
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+    
+       
+        function goHome() {
+    window.location.href = "index.html";
+    }
+    function goPrevious() {
+        window.location.href = "Prepositions.html";
+    }
+    function goNext() {
+        window.location.href = "#";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">Adjectives</div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Understanding Adjectives</h2>
+            <p><strong>Adjectives</strong> are words that describe or modify nouns or pronouns. They provide additional information about the noun or pronoun, such as its size, color, quantity, or quality. Adjectives help to make sentences more descriptive and precise.</p>
+
+            <h3>Key Concepts</h3>
+
+            <h4>1. Definition</h4>
+            <p>An <strong>adjective</strong> is a word that describes or limits a noun or pronoun in a sentence. It provides details about the noun or pronoun, helping to convey a clearer meaning. For example, in the sentence "The tall building," the adjective "tall" describes the noun "building."</p>
+
+            <h4>2. Types of Adjectives</h4>
+            <p><strong>Descriptive Adjectives:</strong> Describe qualities or characteristics. Examples: beautiful, old, large.<br>
+            <strong>Quantitative Adjectives:</strong> Indicate quantity or amount. Examples: some, few, many.<br>
+            <strong>Demonstrative Adjectives:</strong> Point out specific items. Examples: this, that, these, those.<br>
+            <strong>Possessive Adjectives:</strong> Show ownership. Examples: my, your, his, her.<br>
+            <strong>Interrogative Adjectives:</strong> Used to ask questions about nouns. Examples: which, what, whose.</p>
+
+            <h3>Usage Rules</h3>
+
+            <h4>1. Placement in Sentences</h4>
+            <p>Adjectives usually come before the noun they modify. For example, "a green apple" where "green" describes the noun "apple." Adjectives can also come after the verb in sentences with linking verbs, such as "The apple is green."</p>
+
+            <h4>2. Comparatives and Superlatives</h4>
+            <p>Adjectives can show comparisons between two or more things using comparative and superlative forms. For example:<br>
+            <strong>Comparative:</strong> "taller" (e.g., "She is taller than her sister.")<br>
+            <strong>Superlative:</strong> "tallest" (e.g., "She is the tallest in her class.")</p>
+
+            <h4>3. Order of Adjectives</h4>
+            <p>When using multiple adjectives to describe a noun, follow a specific order: quantity, quality, size, age, shape, color, origin, material, and purpose. For example, "a lovely little old round red French wooden table."</p>
+
+            <h3>Examples</h3>
+            <div class="example">
+                <strong>Example 1:</strong><br>
+                <p><strong>Sentence:</strong> "The quick brown fox jumps over the lazy dog."<br>
+                <strong>Explanation:</strong> Adjectives "quick" and "brown" describe the noun "fox," while "lazy" describes the noun "dog."</p>
+
+                <strong>Example 2:</strong><br>
+                <p><strong>Sentence:</strong> "She bought three beautiful paintings."<br>
+                <strong>Explanation:</strong> The adjective "three" indicates quantity, and "beautiful" describes the quality of the paintings.</p>
+
+                <strong>Example 3:</strong><br>
+                <p><strong>Sentence:</strong> "The ancient Egyptian artifacts were displayed in the museum."<br>
+                <strong>Explanation:</strong> Adjectives "ancient" and "Egyptian" describe the noun "artifacts."</p>
+            </div>
+
+            <h3>Common Pitfalls</h3>
+
+            <h4>1. Misusing Adjectives</h4>
+            <p><strong>Misusing adjectives</strong> can lead to unclear or incorrect descriptions. Ensure that adjectives accurately describe the nouns or pronouns they modify.</p>
+
+            <h4>2. Adjective vs. Adverb</h4>
+            <p>Adjectives describe nouns or pronouns, while adverbs modify verbs, adjectives, or other adverbs. For example, "She sings beautifully" (adverb modifying the verb "sings") versus "She has a beautiful voice" (adjective describing the noun "voice").</p>
+
+            <h4>3. Redundancy</h4>
+            <p><strong>Redundant adjectives</strong> can clutter sentences. Avoid using multiple adjectives that convey the same meaning. For example, "The big, large house" can be simplified to "The large house."</p>
+
+            <h3>Practice Resources</h3>
+            <div class="resources">
+                <p>Improve your understanding of adjectives with these practice resources:</p>
+                <ul>
+                    <li><a href="https://www.englishgrammar.org/adjectives/" target="_blank">English Grammar: Adjectives</a></li>
+                    <li><a href="https://www.grammar-monster.com/lessons/adjectives.htm" target="_blank">Grammar Monster: Adjectives</a></li>
+                    <li><a href="https://www.perfect-english-grammar.com/adjectives.html" target="_blank">Perfect English Grammar: Adjectives Practice</a></li>
+                </ul>
+            </div>
+
+            <h3>Summary</h3>
+            <p>Adjectives are vital for providing detailed descriptions and enhancing communication. Mastery of adjectives improves clarity and precision in writing and speaking.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div></div>
+    </div>
+</body>
+</html>

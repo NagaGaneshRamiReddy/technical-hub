@@ -1,0 +1,467 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title> UI/UX Design Course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                UI/UX Design
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Introduction to UI/UX Design</h3>
+        <a href="Introduction to UI-UX Design.html">Introduction to UI/UX Design</a>
+        <ul>
+            <li><a href="What is UI UX.html">What is UI/UX Design?</a></li>
+            <li><a href="importance of UI UX Design.html">Importance of UI/UX</a></li>
+            <li><a href="Difference Between UI and UX.html">Difference Between UI and UX</a></li>
+        </ul>
+    
+        <h3>Research and Discovery</h3>
+        <a href="Research.html">Research</a>
+        <ul>
+            <li><a href="User Research.html">User Research</a></li>
+            <li><a href="Market Research.html">Market Research</a></li>
+            <li><a href="Competitive Analysis.html">Competitive Analysis</a></li>
+        </ul>
+    
+        <h3>Design Fundamentals</h3>
+        <a href="Design Fundamentals.html">Design Fundamentals</a>
+        <ul>
+            <li><a href="Principles of Design.html">Principles of Design</a></li>
+            <li><a href="Color Theory.html">Color Theory</a></li>
+            <li><a href="Typography.html">Typography</a></li>
+            <li><a href="Layout and Composition.html">Layout and Composition</a></li>
+        </ul>
+    
+        <h3>Wireframing and Prototyping</h3>
+        <a href="Wireframing and Prototyping.html">Wireframing and Prototyping</a>
+        <ul>
+            <li><a href="Wireframing Basics.html">Wireframing Basics</a></li>
+            <li><a href="Prototyping Tools.html">Prototyping Tools</a></li>
+            <li><a href="Low-Fidelity Prototypes.html">Low-Fidelity Prototypes</a></li>
+            <li><a href="High-Fidelity Prototypes.html">High-Fidelity Prototypes</a></li>
+        </ul>
+    
+        <h3>User Interface (UI) Design</h3>
+        <a href="User Interface (UI) Design.html">User Interface (UI) Design</a>
+        <ul>
+            <li><a href="UI Design Patterns.html">UI Design Patterns</a></li>
+            <li><a href="Responsive Design.html">Responsive Design</a></li>
+            <li><a href="Design Systems.html">Design Systems</a></li>
+            <li><a href="Mobile UI Design.html">Mobile UI Design</a></li>
+        </ul>
+    
+        <h3>User Experience (UX) Design</h3>
+        <a href="User Experience (UX) Design.html">User Experience (UX) Design</a>
+        <ul>
+            <li><a href="Information Architecture.html">Information Architecture</a></li>
+            <li><a href="Interaction Design.html">Interaction Design</a></li>
+            <li><a href="Usability Testing.html">Usability Testing</a></li>
+            <li><a href="User Flows and Journey Mapping.html">User Flows and Journey Mapping</a></li>
+        </ul>
+    
+        <h3>Advanced Topics</h3>
+        <a href="Advanced Topics design.html">Advanced Topics</a>
+        <ul>
+            <li><a href="Design for Accessibility.html">Design for Accessibility</a></li>
+            <li><a href="Design Thinking.html">Design Thinking</a></li>
+            <li><a href="UI UX Design Trends.html">UI/UX Design Trends</a></li>
+            <li><a href="Portfolio Building.html">Portfolio Building</a></li>
+            <li><a href="Career Development.html">Career Development</a></li>
+        </ul>
+    </div>
+    
+   
+   
+    
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Low-Fidelity Prototypes.html";
+    }
+    function goNext() {
+        window.location.href = "User Interface (UI) Design.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+<div class="div1">High-Fidelity Prototypes </div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div> <h2>Introduction to High-Fidelity Prototypes</h2>
+        <p><strong>High-fidelity prototypes</strong> are detailed, interactive representations of a design that closely resemble the final product. They include realistic design elements, interactions, and content, providing a near-complete simulation of the user experience.</p>
+
+        <h3>What Are High-Fidelity Prototypes?</h3>
+        <p>High-fidelity prototypes are polished and interactive models that closely mirror the final product in terms of design, functionality, and content. They are used to validate design decisions, test user interactions, and gather feedback with a high degree of accuracy.</p>
+
+        <h4>Key Characteristics of High-Fidelity Prototypes</h4>
+        <ul>
+            <li><strong>Detail:</strong> Includes detailed design elements such as color, typography, and imagery.</li>
+            <li><strong>Interactivity:</strong> Simulates user interactions with realistic transitions and animations.</li>
+            <li><strong>Realistic Content:</strong> Uses real or near-real content to provide an accurate representation of the final product.</li>
+            <li><strong>Advanced Tools:</strong> Created using advanced prototyping tools that support high-fidelity features.</li>
+        </ul>
+
+        <h3>Types of High-Fidelity Prototypes</h3>
+        <ul>
+            <li><strong>Clickable Prototypes:</strong> Interactive models that allow users to click through and experience the flow of the product.</li>
+            <li><strong>Animated Prototypes:</strong> Includes animations and transitions to demonstrate dynamic interactions.</li>
+            <li><strong>Responsive Prototypes:</strong> Shows how the product adapts to different screen sizes and orientations.</li>
+        </ul>
+
+        <h3>Benefits of High-Fidelity Prototypes</h3>
+        <ul>
+            <li><strong>Realistic User Experience:</strong> Provides a true-to-life simulation of the final product, making it easier to assess usability and design.</li>
+            <li><strong>Detailed Feedback:</strong> Allows stakeholders and users to provide feedback on a design that closely resembles the final product.</li>
+            <li><strong>Validation:</strong> Helps in validating design decisions and interactions before full-scale development.</li>
+            <li><strong>Stakeholder Engagement:</strong> Enhances communication and understanding with stakeholders through a tangible and interactive model.</li>
+        </ul>
+
+        <h3>Creating High-Fidelity Prototypes</h3>
+        <ul>
+            <li><strong>Start with a Detailed Design:</strong> Ensure that the visual design, interactions, and content are well-defined before creating the prototype.</li>
+            <li><strong>Select Appropriate Tools:</strong> Use advanced prototyping tools like Figma, Adobe XD, or InVision that support high-fidelity features.</li>
+            <li><strong>Incorporate Real Content:</strong> Use real or realistic content to ensure the prototype accurately represents the final product.</li>
+            <li><strong>Test Interactions:</strong> Include interactive elements and animations to simulate user interactions and gather feedback.</li>
+            <li><strong>Iterate Based on Feedback:</strong> Refine the prototype based on user and stakeholder feedback to improve the design.</li>
+        </ul>
+
+        <h2>Free Resources for Learning High-Fidelity Prototyping</h2>
+        <div class="resources">
+            <ul>
+                <li><strong><a href="https://www.smashingmagazine.com/2020/04/high-fidelity-prototyping/">Smashing Magazine: High-Fidelity Prototyping</a>:</strong> Insights and techniques for creating high-fidelity prototypes.</li>
+                <li><strong><a href="https://www.interaction-design.org/literature/topics/high-fidelity-prototyping">Interaction Design Foundation: High-Fidelity Prototyping</a>:</strong> Articles and resources on high-fidelity prototyping methods and tools.</li>
+                <li><strong><a href="https://uxdesign.cc/high-fidelity-prototypes-the-ultimate-guide-8c6d22b12c4b">UX Design: High-Fidelity Prototypes</a>:</strong> Comprehensive guide to high-fidelity prototypes with practical tips and examples.</li>
+                <li><strong><a href="https://www.toptal.com/designers/ux/high-fidelity-prototypes">Toptal: High-Fidelity Prototypes</a>:</strong> A guide to creating and using high-fidelity prototypes in the design process.</li>
+                <li><strong><a href="https://www.freecodecamp.org/news/high-fidelity-prototypes-guide/">FreeCodeCamp: High-Fidelity Prototypes Guide</a>:</strong> An introduction to high-fidelity prototyping with practical examples and resources.</li>
+            </ul>
+        </div>
+
+        <h2>Summary</h2>
+        <p>High-fidelity prototypes are essential for simulating the final user experience and validating design decisions. By providing a detailed and interactive representation of the product, they allow for thorough user testing and feedback. Utilizing free resources can enhance your skills in creating effective high-fidelity prototypes and ensure a more refined and user-centered design process.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

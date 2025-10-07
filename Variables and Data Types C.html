@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>C Language Roadmap</title>
+    
+    
+</head>
+<body class="body">
+
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> C Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "C_interviews.html";
+}
+function goquizpro() {
+window.location.href = "C_quiz.html";
+}
+function gocomp() {
+window.location.href = "Java Compiler.html";
+}
+
+function goproject() {
+window.location.href = "C_project.html";
+}
+
+
+
+    </script>
+  
+  
+   
+  
+
+
+
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+        
+   
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box"><br><br>
+            <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0d80fb;"></i><br>
+            <h2 class="jk"> Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="Croadmap.html" target="_blank"><b class="b12">C Roadmap</b></a>
+        <ul>
+            <li> <a href="Introduction to C.html">Introduction to C</a></li>
+            <li><a href="History of C.html">History of C</a></li>
+            <li><a href="Setting up C Environment.html">Setting up C Environment</a></li>
+            <li><a href="Hello World Program C.html">Hello World Program</a></li>
+        </ul>
+
+        <h3>Basic C Syntax</h3>
+        <a href="Basic C Syntax.html">Basic C Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types C.html">Variables and Data Types</a></li>
+            <li><a href="Operators C.html">Operators</a></li>
+            <li><a href="Control Statements C.html">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements C.html">If-else Statements</a></li>
+                <li><a href="Switch Statement C.html">Switch Statement</a></li>
+                <li><a href="Loops C.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop C.html">For Loop</a></li>
+                    <li><a href="While Loop C.html">While Loop</a></li>
+                    <li><a href="Do-While Loop C.html">Do-While Loop</a></li>
+                    <li><a href="Break and Continue C.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+
+       
+        
+
+        <h3>Arrays in C</h3>
+        <a href="Arrays in C.html">Arrays in C</a>
+        <ul>
+            <li><a href="One-Dimensional Arrays C.html">One-Dimensional Arrays</a></li>
+            <li><a href="Two-Dimensional Arrays C.html">Two-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays C.html">Multi-Dimensional Arrays</a></li>
+            <li><a href="Arrays and Functions C.html">Arrays and Functions</a></li>
+        </ul>
+
+        <h3>Strings in C</h3>
+        <a href="Strings in C.html">Strings in C</a>
+        <ul>
+            <li><a href="String Basics c.html">String Basics</a></li>
+            <li><a href="String Functions C.html">String Functions</a></li>
+            <li><a href="String Manipulation C.html">String Manipulation</a></li>
+        </ul>
+        <h3>Pointers in C</h3>
+        <a href="Pointers in C.html">Pointers in C</a>
+        <ul>
+            <li><a href="Pointer Basics C.html">Pointer Basics</a></li>
+            <li><a href="Pointer Arithmetic C.html">Pointer Arithmetic</a></li>
+            <li><a href="Pointers and Arrays C.html">Pointers and Arrays</a></li>
+            <li><a href="Pointers and Functions C.html">Pointers and Functions</a></li>
+            <li><a href="Pointers and Structures C.html">Pointers and Structures</a></li>
+        </ul>
+        <h3>Functions in C</h3>
+        <a href="Function C.html">Functions in C</a>
+        <ul>
+            <li><a href="Function Basics C.html">Function Basics</a></li>
+            <li><a href="Function Arguments C.html">Function Arguments</a></li>
+            <li><a href="Recursion C.html">Recursion</a></li>
+            <li><a href="Library Functions C.html">Library Functions</a></li>
+        </ul>
+
+        <h3>Structures and Unions</h3>
+        <a href="Structures and Unions C.html">Structures and Unions</a>
+        <ul>
+            <li><a href="Defining Structures C.html">Defining Structures</a></li>
+            <li><a href="Accessing Structure Members C.html">Accessing Structure Members</a></li>
+            <li><a href="Nested structures.html">Nested Structures</a></li>
+            <li><a href="Unions C.html">Unions</a></li>
+        </ul>
+
+        <h3>File Handling in C</h3>
+        <a href="File Handling in C.html">File Handling in C</a>
+        <ul>
+            <li><a href="File Operations C.html">File Operations</a></li>
+            <li><a href="File Pointers C.html">File Pointers</a></li>
+            <li><a href="Reading and Writing Files C.html">Reading and Writing Files</a></li>
+            <li><a href="Binary Files C.html">Binary Files</a></li>
+        </ul>
+
+        <h3>Dynamic Memory Allocation</h3>
+        <a href="Dynamic Memory Allocation C.html">Dynamic Memory Allocation</a>
+        <ul>
+            <li><a href="malloc, calloc, realloc, free C.html">malloc, calloc, realloc, free</a></li>
+            <li><a href="Memory Leaks C.html">Memory Leaks</a></li>
+            <li><a href="Memory Management Techniques C.html">Memory Management Techniques</a></li>
+        </ul>
+
+        <h3>Advanced C Concepts</h3>
+        <a href="Advanced C Concepts.html">Advanced C Concepts</a>
+        <ul>
+            <li><a href="Preprocessor Directives C.html">Preprocessor Directives</a></li>
+            <li><a href="Bitwise Operators C.html">Bitwise Operators</a></li>
+            <li><a href="Command Line Arguments C.html">Command Line Arguments</a></li>
+            <li><a href="Error Handling C.html">Error Handling</a></li>
+            <li><a href="C programming Test.html">Course Test</a></li>
+        </ul>
+    </div>
+
+ 
+       
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "c_interviews.html";
+}
+function goquiz() {
+    window.location.href = "c_quiz.html";
+}
+function gocomp() {
+    window.location.href = "C Compiler.html";
+}
+    function goPrevious() {
+        window.location.href = "Basic C Syntax.html";
+    }
+    function goNext() {
+        window.location.href = "Operators C.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                
+                <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0dfb49;"></i><br>
+                <h2 class="jk"> Tutorial</h2>
+<div class="div1">Variables and Data Types in C</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        
+<h2>Introduction to Variables in C</h2>
+<p>
+    In C programming, variables are used to store data that your program will work with. A variable is simply a name given to a memory location in which data is stored. It is important to declare variables before using them, and they must have a specific data type. The data type defines what kind of data the variable will hold, such as integers, floating-point numbers, or characters. In C, the value of a variable can change during the execution of a program. Understanding how to declare and use variables correctly is crucial for effective programming in C.
+</p>
+
+<h2>Declaring Variables in C</h2>
+<p>
+    To declare a variable in C, you need to specify the data type followed by the variable's name. For example, to declare an integer variable, you would write:
+</p>
+<pre>
+int age;
+</pre>
+<p>
+    In this example, <code>int</code> is the data type, and <code>age</code> is the variable's name. You can also assign a value to a variable during declaration:
+</p>
+<pre>
+int age = 25;
+</pre>
+<p>
+    This declares an integer variable named <code>age</code> and initializes it with the value <code>25</code>.
+</p>
+
+<h2>Data Types in C</h2>
+<p>
+    In C, there are several data types that determine the type of data a variable can hold. These data types can be categorized into primary (basic) data types and derived data types. Let’s go through each one in detail:
+</p>
+
+<h3>1. Integer Data Types</h3>
+<p>
+    The <code>int</code> data type is used to store whole numbers (integers) without any decimal points. In C, you can use <code>int</code> to declare variables that will store values such as 5, 100, or -42. Depending on the system, the size of an <code>int</code> can vary (usually 4 bytes). There are also variations of <code>int</code>:
+    <ul>
+        <li><strong>short int</strong>: Used to store smaller integers.</li>
+        <li><strong>long int</strong>: Used to store larger integers.</li>
+        <li><strong>unsigned int</strong>: Used to store only positive integers (no negative values).</li>
+    </ul>
+</p>
+
+<h3>2. Floating-Point Data Types</h3>
+<p>
+    The <code>float</code> and <code>double</code> data types are used to store decimal numbers (floating-point numbers). They are commonly used when more precision is needed, such as for measurements or calculations involving decimals. The <code>float</code> type is used for smaller decimal numbers, while <code>double</code> is used for larger decimal numbers.
+    <ul>
+        <li><strong>float</strong>: Stores single-precision floating-point numbers (usually 4 bytes).</li>
+        <li><strong>double</strong>: Stores double-precision floating-point numbers (usually 8 bytes).</li>
+    </ul>
+</p>
+
+<h3>3. Character Data Type</h3>
+<p>
+    The <code>char</code> data type is used to store individual characters such as letters or symbols. A <code>char</code> variable can hold a single character (e.g., 'A', 'b', or '1'). In C, characters are enclosed in single quotes, while strings (sequences of characters) are enclosed in double quotes. A <code>char</code> typically takes 1 byte of memory.
+</p>
+
+<h3>4. Void Data Type</h3>
+<p>
+    The <code>void</code> data type represents an empty value or a function that does not return any value. It is commonly used as the return type of functions that do not return anything. For example:
+</p>
+<pre>
+void myFunction() {
+// Function code here
+}
+</pre>
+
+<h3>5. Boolean Data Type (C99)</h3>
+<p>
+    While C does not have a built-in <code>bool</code> data type in the standard library, C99 introduced the <code>_Bool</code> data type to represent boolean values (true or false). The <code>stdbool.h</code> library also defines <code>bool</code> as an alias for <code>_Bool</code>, so you can use <code>true</code> and <code>false</code> directly in your programs.
+</p>
+
+<h2>Example Program: Using Different Data Types in C</h2>
+<p>
+    Below is a simple C program that demonstrates how to use different data types:
+</p>
+<pre><code>
+#include&lt;stdio.h&gt;
+
+int main() {
+// Declaring variables of different data types
+int age = 20;               // Integer data type
+float height = 5.9;         // Float data type
+double salary = 55000.50;   // Double data type
+char grade = 'A';           // Char data type
+
+// Displaying the values of the variables
+printf("Age: %d\n", age);
+printf("Height: %.2f\n", height);
+printf("Salary: %.2lf\n", salary);
+printf("Grade: %c\n", grade);
+
+return 0;
+}
+</code></pre>
+<h3>Output of the Program</h3>
+<div class="output"><pre>
+When you run the above C program, the output will be:
+Age: 20
+Height: 5.90
+Salary: 55000.50
+Grade: A
+</pre></div>
+<p>
+    As you can see from the output:
+    <ul>
+        <li><code>age</code> displays the integer value 20.</li>
+        <li><code>height</code> displays the floating-point value 5.9, formatted to two decimal places.</li>
+        <li><code>salary</code> displays the double value 55000.50, formatted to two decimal places.</li>
+        <li><code>grade</code> displays the character 'A'.</li>
+    </ul>
+</p>
+
+<h2>Summary of C Data Types</h2>
+<p>
+    Here is a summary of the most common data types in C:
+    <ul>
+        <li><strong>int</strong>: Used for whole numbers.</li>
+        <li><strong>float</strong>: Used for decimal numbers with single precision.</li>
+        <li><strong>double</strong>: Used for decimal numbers with double precision.</li>
+        <li><strong>char</strong>: Used for storing single characters.</li>
+        <li><strong>void</strong>: Used for functions that do not return a value.</li>
+        <li><strong>_Bool</strong> (or <strong>bool</strong> in C99): Used for boolean values (true or false).</li>
+    </ul>
+</p>
+
+<h2>Conclusion</h2>
+<p>
+    Understanding variables and data types is a fundamental concept in C programming. This knowledge forms the foundation for writing effective programs. By mastering how to declare and use variables and understanding the data types available in C, you will be able to write more efficient and powerful programs.
+</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+    </div>
+</body>
+</html>

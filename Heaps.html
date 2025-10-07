@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Red-Black Trees.html";
+    }
+    function goNext() {
+        window.location.href = "Min Heap.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1"> Heap</div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>A Heap is a specialized binary tree-based data structure that satisfies the heap property. It is commonly used to implement priority queues and is integral to several algorithms such as heap sort. Heaps are classified into two main types: Max-Heaps and Min-Heaps, each with its own unique properties and use cases.</p>
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heap Visualization</title>
+    <style>
+        /* CSS goes here */
+        .container {
+            margin: 20px;
+            text-align: center;
+        }
+        .heap-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 100%;
+            position: relative;
+            border: 2px dashed #ff5722;
+            background-color: #fff;
+            overflow: hidden; /* Ensure nodes do not overflow container */
+        }
+        .heap {
+            position: relative;
+            width: auto;
+            height: 100%;
+        }
+        .heap-node {
+            position: absolute;
+            background-color: #3cff22;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #ffffff;
+            transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.5s ease;
+            opacity: 0;
+        }
+        .heap-node.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .heap-node:hover {
+            transform: scale(1.2);
+            background-color: #ffe0b2;
+        }
+        .heap-node.highlight {
+            background-color: #ffcc00;
+            transform: scale(1.5);
+        }
+        .heap-line {
+            position: absolute;
+            background-color: #ff5722;
+            height: 2px;
+            transform-origin: 0 0;
+            transition: width 0.5s ease, transform 0.5s ease;
+        }
+        .description {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .description h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .description p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .description ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .description li {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            .description {
+                padding: 15px;
+            }
+            .description h2 {
+                font-size: 20px;
+            }
+            .description p {
+                font-size: 16px;
+            }
+        }
+        button, input[type="number"], select {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button {
+            background-color: #00ff08;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="number"], select {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Heap Visualization</h1>
+        <div class="heap-container">
+            <div class="heap" id="heap"></div>
+        </div>
+        <button onclick="addHeapNode()">Add Node to Heap</button>
+        <button onclick="removeHeapNode()">Remove Node from Heap</button>
+        <div class="description">
+            <p><strong>Heap Explanation:</strong></p>
+            <p>A heap is a specialized tree-based data structure that satisfies the heap property. Key operations include:</p>
+            <ul>
+                <li><strong>Insertion:</strong> Adding a new element while maintaining the heap property.</li>
+                <li><strong>Heapify:</strong> Re-adjusting the heap to maintain its structure after insertion or deletion.</li>
+                <li><strong>Extraction:</strong> Removing the root element (the maximum for max-heaps or minimum for min-heaps) and re-adjusting the heap.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // JavaScript goes here
+        const heapContainer = document.getElementById('heap');
+        let heap = [];
+        
+        function createHeapNode(value, x, y, className = 'heap-node') {
+            const node = document.createElement('div');
+            node.className = className;
+            node.textContent = value;
+            node.style.left = `${x}px`;
+            node.style.top = `${y}px`;
+            setTimeout(() => node.classList.add('show'), 10);
+            return node;
+        }
+
+        function drawHeapLine(x1, y1, x2, y2) {
+            const line = document.createElement('div');
+            line.className = 'heap-line';
+            const length = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+            const angle = Math.atan2(y2 - y1, x2 - x1) * (180 / Math.PI);
+            line.style.width = '0';
+            line.style.transform = `rotate(${angle}deg)`;
+            line.style.left = `${x1}px`;
+            line.style.top = `${y1}px`;
+            setTimeout(() => line.style.width = `${length}px`, 10);
+            return line;
+        }
+
+        function createHeapVisualization() {
+            heapContainer.innerHTML = '';
+            const height = 80;
+            const width = 100;
+            const levelWidth = 150;
+            
+            function drawHeapNode(index, x, y) {
+                if (index >= heap.length) return;
+                const node = createHeapNode(heap[index], x, y);
+                heapContainer.appendChild(node);
+                const leftIndex = 2 * index + 1;
+                const rightIndex = 2 * index + 2;
+                if (leftIndex < heap.length) {
+                    const leftX = x - levelWidth / Math.pow(2, Math.floor(Math.log2(index + 1)));
+                    const leftY = y + height;
+                    const line = drawHeapLine(x + 20, y + 20, leftX + 20, leftY);
+                    heapContainer.appendChild(line);
+                    drawHeapNode(leftIndex, leftX, leftY);
+                }
+                if (rightIndex < heap.length) {
+                    const rightX = x + levelWidth / Math.pow(2, Math.floor(Math.log2(index + 1)));
+                    const rightY = y + height;
+                    const line = drawHeapLine(x + 20, y + 20, rightX + 20, rightY);
+                    heapContainer.appendChild(line);
+                    drawHeapNode(rightIndex, rightX, rightY);
+                }
+            }
+            
+            drawHeapNode(0, heapContainer.clientWidth / 2, 50);
+        }
+
+        function addHeapNode() {
+            const newValue = heap.length + 1;
+            heap.push(newValue);
+            heapifyUp(heap.length - 1);
+            createHeapVisualization();
+        }
+
+        function removeHeapNode() {
+            if (heap.length === 0) return;
+            const lastElement = heap.pop();
+            if (heap.length > 0) {
+                heap[0] = lastElement;
+                heapifyDown(0);
+            }
+            createHeapVisualization();
+        }
+
+        function heapifyUp(index) {
+            let parentIndex = Math.floor((index - 1) / 2);
+            while (index > 0 && heap[index] > heap[parentIndex]) {
+                [heap[index], heap[parentIndex]] = [heap[parentIndex], heap[index]];
+                index = parentIndex;
+                parentIndex = Math.floor((index - 1) / 2);
+            }
+        }
+
+        function heapifyDown(index) {
+            const length = heap.length;
+            const value = heap[index];
+            let largest = index;
+            const left = 2 * index + 1;
+            const right = 2 * index + 2;
+            
+            if (left < length && heap[left] > heap[largest]) largest = left;
+            if (right < length && heap[right] > heap[largest]) largest = right;
+            
+            if (largest !== index) {
+                [heap[index], heap[largest]] = [heap[largest], heap[index]];
+                heapifyDown(largest);
+            }
+        }
+
+        createHeapVisualization();
+    </script>
+</body>
+</html>
+
+        <h2>Types of Heaps</h2>
+        <ul>
+            <li><strong>Max-Heap:</strong> In a max-heap, the key value of each node is greater than or equal to the key values of its children. The largest key is at the root. This property makes max-heaps useful for implementing priority queues where the highest priority element is removed first.</li>
+            <li><strong>Min-Heap:</strong> In a min-heap, the key value of each node is less than or equal to the key values of its children. The smallest key is at the root. Min-heaps are used when the lowest priority element should be removed first.</li>
+        </ul>
+
+        <h2>Basic Operations</h2>
+        <ul>
+            <li><strong>Insertion:</strong> Adding a new element to the heap while maintaining the heap property. Involves placing the element at the end and then "bubbling up" to restore heap order.</li>
+            <li><strong>Deletion:</strong> Removing the root element (which is either the maximum or minimum, depending on the heap type) and then restoring the heap property by "bubbling down" the replacement element.</li>
+            <li><strong>Peek:</strong> Retrieving the root element without removing it. In a max-heap, this is the maximum element, while in a min-heap, it is the minimum element.</li>
+            <li><strong>Heapify:</strong> Converting an arbitrary array into a heap. This can be done efficiently using the "heapify" process.</li>
+        </ul>
+
+        <h2>Implementation Examples</h2>
+
+        <h3>1. Max-Heap in C++</h3>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+class MaxHeap {
+    std::vector<int> heap;
+
+    void heapify(int i) {
+        int largest = i;
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+
+        if (left < heap.size() && heap[left] > heap[largest]) {
+            largest = left;
+        }
+
+        if (right < heap.size() && heap[right] > heap[largest]) {
+            largest = right;
+        }
+
+        if (largest != i) {
+            std::swap(heap[i], heap[largest]);
+            heapify(largest);
+        }
+    }
+
+public:
+    void insert(int key) {
+        heap.push_back(key);
+        int i = heap.size() - 1;
+
+        while (i != 0 && heap[(i - 1) / 2] < heap[i]) {
+            std::swap(heap[i], heap[(i - 1) / 2]);
+            i = (i - 1) / 2;
+        }
+    }
+
+    int extractMax() {
+        if (heap.size() == 0) return -1;
+        if (heap.size() == 1) {
+            int root = heap[0];
+            heap.pop_back();
+            return root;
+        }
+
+        int root = heap[0];
+        heap[0] = heap.back();
+        heap.pop_back();
+        heapify(0);
+
+        return root;
+    }
+
+    void printHeap() {
+        for (int val : heap) {
+            std::cout &lt;&lt; val &lt;&lt; " ";
+        }
+        std::cout &lt;&lt; std::endl;
+    }
+};
+
+int main() {
+    MaxHeap mh;
+    mh.insert(10);
+    mh.insert(20);
+    mh.insert(15);
+    mh.printHeap();
+    std::cout &lt;&lt; "Extracted Max: " &lt;&lt; mh.extractMax() &lt;&lt; std::endl;
+    mh.printHeap();
+    return 0;
+}
+</code>
+        </pre>
+
+        <h3>2. Min-Heap in Python</h3>
+        <pre>
+<code>
+import heapq
+
+class MinHeap:
+    def __init__(self):
+        self.heap = []
+
+    def insert(self, key):
+        heapq.heappush(self.heap, key)
+
+    def extract_min(self):
+        if not self.heap:
+            return None
+        return heapq.heappop(self.heap)
+
+    def peek(self):
+        if not self.heap:
+            return None
+        return self.heap[0]
+
+    def print_heap(self):
+        print(self.heap)
+
+# Example usage
+mh = MinHeap()
+mh.insert(10)
+mh.insert(20)
+mh.insert(15)
+mh.print_heap()
+print("Extracted Min:", mh.extract_min())
+mh.print_heap()
+</code>
+        </pre>
+
+       
+        
+
+        <h2>Summary</h2>
+        <p>Heaps are versatile data structures that provide efficient ways to manage a collection of elements based on their priority. Max-Heaps and Min-Heaps are crucial for various applications, including priority queues and efficient sorting algorithms like heap sort. Understanding how to implement and use heaps can greatly enhance your ability to solve complex computational problems.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

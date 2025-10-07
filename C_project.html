@@ -1,0 +1,1305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>C Projects Showcase</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+ 
+ 
+</head>
+<body class="body">
+ 
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #042b3e;
+    color: #000000;
+    font-size: 2.2rem; /* Increased from 'large' */
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.5rem; /* Increased for better readability */
+}
+
+.nav-buttons button {
+    font-size: 19px; /* Larger button text */
+    padding: 14px 24px; /* Adjusted padding for proportion */
+}
+
+.project {
+    font-size: 19px; /* Larger text for project sections */
+}
+
+.project h2 {
+    font-size: 2rem; /* Increased heading size */
+    color: #2c3e50;
+}
+
+.project p {
+    font-size: 19px; /* Increased paragraph text size */
+    margin-bottom: 20px; /* Extra spacing for better readability */
+}
+
+.code-btn {
+    font-size: 19px; /* Larger button text for code block */
+}
+
+.code-block {
+    font-size: 19px; /* Larger font size for code display */
+}
+
+.tips {
+    font-size: 19px; /* Increased text size for tips */
+}
+
+
+
+
+
+
+header p {
+    margin: 10px 0 0;
+    font-size: 2.2rem;
+}
+
+.nav-buttons {
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 100px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.nav-buttons button {
+    background: #025f20;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.nav-buttons button:hover {
+    background: #018820;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.nav-buttons button:active {
+    animation: clickPop 0.2s ease-in-out;
+}
+
+.project {
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 115, 161);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    display: none; /* Hide sections by default */
+}
+
+.project.show {
+    display: block; /* Visible when activated */
+    animation: slideDown 1s ease-in-out;
+}
+
+.project h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.code-btn {
+    background: #4ca1af;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.code-btn:hover {
+    background: #2c3e50;
+}
+
+.code-block {
+    display: none;
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+.tips {
+    margin-top: 15px;
+    padding: 10px;
+    background: #e7f3fe;
+    border-left: 5px solid #4ca1af;
+    border-radius: 5px;
+    animation: bounce 1s infinite alternate;
+}
+
+
+
+/* Keyframes */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes clickPop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+  </style>  
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> C Quiz
+        </button>
+    </div></div>
+</header>
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "c_interviews.html";
+}
+function goquizpro() {
+window.location.href = "c_quiz.html";
+}
+function goproject() {
+window.location.href = "C_project.html";
+}
+
+function gocomp() {
+window.location.href = "C Compiler.html";
+}
+</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box"><br><br>
+            <i class="fab fa-c" style="font-size: 80px;padding-left: 16px;  color: #0d80fb;"></i><br>
+            <h2 class="jk"> Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="Croadmap.html" target="_blank"><b class="b12">C Roadmap</b></a>
+        <ul>
+            <li> <a href="Introduction to C.html">Introduction to C</a></li>
+            <li><a href="History of C.html">History of C</a></li>
+            <li><a href="Setting up C Environment.html">Setting up C Environment</a></li>
+            <li><a href="Hello World Program C.html">Hello World Program</a></li>
+        </ul>
+
+        <h3>Basic C Syntax</h3>
+        <a href="Basic C Syntax.html">Basic C Syntax</a>
+        <ul>
+            <li><a href="Variables and Data Types C.html">Variables and Data Types</a></li>
+            <li><a href="Operators C.html">Operators</a></li>
+            <li><a href="Control Statements C.html">Control Statements</a></li>
+            <ul>
+                <li><a href="If-else Statements C.html">If-else Statements</a></li>
+                <li><a href="Switch Statement C.html">Switch Statement</a></li>
+                <li><a href="Loops C.html">Loops</a></li>
+                <ul>
+                    <li><a href="For Loop C.html">For Loop</a></li>
+                    <li><a href="While Loop C.html">While Loop</a></li>
+                    <li><a href="Do-While Loop C.html">Do-While Loop</a></li>
+                    <li><a href="Break and Continue C.html">Break and Continue</a></li>
+                </ul>
+            </ul>
+        </ul>
+
+       
+        
+
+        <h3>Arrays in C</h3>
+        <a href="Arrays in C.html">Arrays in C</a>
+        <ul>
+            <li><a href="One-Dimensional Arrays C.html">One-Dimensional Arrays</a></li>
+            <li><a href="Two-Dimensional Arrays C.html">Two-Dimensional Arrays</a></li>
+            <li><a href="Multi-Dimensional Arrays C.html">Multi-Dimensional Arrays</a></li>
+            <li><a href="Arrays and Functions C.html">Arrays and Functions</a></li>
+        </ul>
+
+        <h3>Strings in C</h3>
+        <a href="Strings in C.html">Strings in C</a>
+        <ul>
+            <li><a href="String Basics c.html">String Basics</a></li>
+            <li><a href="String Functions C.html">String Functions</a></li>
+            <li><a href="String Manipulation C.html">String Manipulation</a></li>
+        </ul>
+        <h3>Pointers in C</h3>
+        <a href="Pointers in C.html">Pointers in C</a>
+        <ul>
+            <li><a href="Pointer Basics C.html">Pointer Basics</a></li>
+            <li><a href="Pointer Arithmetic C.html">Pointer Arithmetic</a></li>
+            <li><a href="Pointers and Arrays C.html">Pointers and Arrays</a></li>
+            <li><a href="Pointers and Functions C.html">Pointers and Functions</a></li>
+            <li><a href="Pointers and Structures C.html">Pointers and Structures</a></li>
+        </ul>
+        <h3>Functions in C</h3>
+        <a href="Function C.html">Functions in C</a>
+        <ul>
+            <li><a href="Function Basics C.html">Function Basics</a></li>
+            <li><a href="Function Arguments C.html">Function Arguments</a></li>
+            <li><a href="Recursion C.html">Recursion</a></li>
+            <li><a href="Library Functions C.html">Library Functions</a></li>
+        </ul>
+
+        <h3>Structures and Unions</h3>
+        <a href="Structures and Unions C.html">Structures and Unions</a>
+        <ul>
+            <li><a href="Defining Structures C.html">Defining Structures</a></li>
+            <li><a href="Accessing Structure Members C.html">Accessing Structure Members</a></li>
+            <li><a href="Nested structures.html">Nested Structures</a></li>
+            <li><a href="Unions C.html">Unions</a></li>
+        </ul>
+
+        <h3>File Handling in C</h3>
+        <a href="File Handling in C.html">File Handling in C</a>
+        <ul>
+            <li><a href="File Operations C.html">File Operations</a></li>
+            <li><a href="File Pointers C.html">File Pointers</a></li>
+            <li><a href="Reading and Writing Files C.html">Reading and Writing Files</a></li>
+            <li><a href="Binary Files C.html">Binary Files</a></li>
+        </ul>
+
+        <h3>Dynamic Memory Allocation</h3>
+        <a href="Dynamic Memory Allocation C.html">Dynamic Memory Allocation</a>
+        <ul>
+            <li><a href="malloc, calloc, realloc, free C.html">malloc, calloc, realloc, free</a></li>
+            <li><a href="Memory Leaks C.html">Memory Leaks</a></li>
+            <li><a href="Memory Management Techniques C.html">Memory Management Techniques</a></li>
+        </ul>
+
+        <h3>Advanced C Concepts</h3>
+        <a href="Advanced C Concepts.html">Advanced C Concepts</a>
+        <ul>
+            <li><a href="Preprocessor Directives C.html">Preprocessor Directives</a></li>
+            <li><a href="Bitwise Operators C.html">Bitwise Operators</a></li>
+            <li><a href="Command Line Arguments C.html">Command Line Arguments</a></li>
+            <li><a href="Error Handling C.html">Error Handling</a></li>
+            <li><a href="C programming Test.html">Course Test</a></li>
+        </ul>
+    </div>
+
+ 
+    
+    <div class="nav-buttons">
+        <button onclick="openProject('Beginner-projects')">Beginner Projects</button>
+        <button onclick="openProject('Intermediate-projects')">Intermediate Projects</button>
+        <button onclick="openProject('Advanced-projects')">Advanced Projects</button>
+        <button onclick="openProject('mini-projects')">Mini Projects</button>
+        <button onclick="openProject('major-projects')">Major Projects</button>
+        <button onclick="openProject('fun-projects')">Fun/Creative Projects</button>
+    </div>
+
+    <main>
+        <!-- Beginner Projects Section -->
+       
+
+    <section id="Beginner-projects" class="project">
+        <h2>Beginner Projects</h2>
+        <p>Perfect for beginners, these projects are designed to help you learn while coding. Each project comes with a detailed explanation and C code examples to get you started!</p>
+
+        <!-- Calculator Project -->
+        <div class="project-item">
+            <h3>Calculator</h3>
+            <p>The calculator project is a fundamental programming exercise that allows you to perform basic arithmetic operations like addition, subtraction, multiplication, and division. It serves as an excellent introduction to the use of variables, conditional statements, and user input in C programming.</p>
+            <p>This project uses a <code>switch</code> statement to determine which operation to execute based on the user-provided operator (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>). Input validation is an essential part of the program, especially for division. Attempting to divide by zero is mathematically undefined and results in an error. This is handled gracefully in the code, making it a valuable lesson in defensive programming.</p>
+            <button class="code-btn" onclick="toggleCode('calculator-code')">View Code</button>
+            <p class="tip">Tip: Remember to handle invalid input, like dividing by zero!</p>
+            <pre id="calculator-code" class="code-block">
+#include &lt;stdio.h&gt;
+
+int main() {
+    double num1, num2, result;
+    char operator;
+
+    printf("Enter first number: ");
+    scanf("%lf", &num1);
+
+    printf("Enter an operator (+, -, *, /): ");
+    scanf(" %c", &operator);
+
+    printf("Enter second number: ");
+    scanf("%lf", &num2);
+
+    switch (operator) {
+        case '+': result = num1 + num2; break;
+        case '-': result = num1 - num2; break;
+        case '*': result = num1 * num2; break;
+        case '/': 
+            if (num2 != 0)
+                result = num1 / num2; 
+            else {
+                printf("Error! Division by zero.\n");
+                return 1;
+            }
+            break;
+        default:
+            printf("Invalid operator!\n");
+            return 1;
+    }
+
+    printf("Result: %.2lf\n", result);
+    return 0;
+}
+            </pre>
+        </div>
+
+        <!-- Number Guessing Game Project -->
+        <div class="project-item">
+            <h3>Number Guessing Game</h3>
+            <p>The number guessing game is an interactive and engaging project that introduces you to the concepts of loops, conditionals, and random number generation. The program generates a random number between 1 and 100 using the <code>rand()</code> function, seeded by <code>srand(time(0))</code> to ensure randomness every time the program runs.</p>
+            <p>The user inputs guesses, and the program provides feedback such as "Too high!" or "Too low!" until the correct number is guessed. It also keeps track of the number of attempts, offering a fun way to learn about <code>do-while</code> loops. Enhancing the game can include adding difficulty levels or limiting the number of attempts.</p>
+            <button class="code-btn" onclick="toggleCode('guessing-game-code')">View Code</button>
+            <p class="tip">Tip: Use <code>srand(time(0));</code> to seed the random number generator.</p>
+            <pre id="guessing-game-code" class="code-block">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+int main() {
+    int number, guess, attempts = 0;
+    srand(time(0));
+
+    number = rand() % 100 + 1;
+
+    printf("Guess the number between 1 and 100: ");
+
+    do {
+        scanf("%d", &guess);
+        attempts++;
+
+        if (guess < number) {
+            printf("Too low! Try again: ");
+        } else if (guess > number) {
+            printf("Too high! Try again: ");
+        } else {
+            printf("Correct! You guessed the number in %d attempts.\n", attempts);
+        }
+    } while (guess != number);
+
+    return 0;
+}
+    </div></section>
+        
+      
+        
+        
+        <script>
+            // Function to toggle code view
+            function toggleCode(codeId) {
+                const codeBlock = document.getElementById(codeId);
+                codeBlock.style.display = (codeBlock.style.display === 'none' || codeBlock.style.display === '') ? 'block' : 'none';
+            }
+        
+            // Add fade-in animation to each project item
+            document.addEventListener("DOMContentLoaded", () => {
+                const projectItems = document.querySelectorAll('.project-item');
+                projectItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('fade-in');
+                    }, 300 * index);
+                });
+            });
+        </script>
+       
+       
+
+        <!-- Other Sections -->
+      
+        <section id="Intermediate-projects" class="project">
+            <h2>Intermediate Projects</h2>
+            <p>These projects are perfect for developers looking to challenge themselves and gain hands-on experience with more complex logic and functionality.</p>
+        
+            <!-- Library Management System -->
+            <div class="project-item">
+                <h3>Library Management System</h3>
+                <p>A system to manage library books, including issuing and returning books.</p>
+                <button class="code-btn" onclick="toggleCode('library-code')">View Code</button>
+                <p class="tip">Tip: Use arrays or file storage to maintain the database of books.</p>
+                <pre id="library-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        #include &lt;string.h&gt;
+        
+        #define MAX_BOOKS 100
+        
+        typedef struct {
+            char title[50];
+            char author[50];
+            int available;
+        } Book;
+        
+        Book library[MAX_BOOKS];
+        int totalBooks = 0;
+        
+        void addBook() {
+            if (totalBooks >= MAX_BOOKS) {
+                printf("Library is full!\n");
+                return;
+            }
+            printf("Enter book title: ");
+            scanf(" %[^\n]", library[totalBooks].title);
+            printf("Enter author: ");
+            scanf(" %[^\n]", library[totalBooks].author);
+            library[totalBooks].available = 1;
+            totalBooks++;
+            printf("Book added successfully!\n");
+        }
+        
+        void issueBook() {
+            char title[50];
+            printf("Enter book title to issue: ");
+            scanf(" %[^\n]", title);
+            for (int i = 0; i < totalBooks; i++) {
+                if (strcmp(library[i].title, title) == 0 && library[i].available) {
+                    library[i].available = 0;
+                    printf("Book issued successfully!\n");
+                    return;
+                }
+            }
+            printf("Book not available or not found!\n");
+        }
+        
+        void returnBook() {
+            char title[50];
+            printf("Enter book title to return: ");
+            scanf(" %[^\n]", title);
+            for (int i = 0; i < totalBooks; i++) {
+                if (strcmp(library[i].title, title) == 0 && !library[i].available) {
+                    library[i].available = 1;
+                    printf("Book returned successfully!\n");
+                    return;
+                }
+            }
+            printf("Book not found!\n");
+        }
+        
+        void viewBooks() {
+            printf("Library Books:\n");
+            for (int i = 0; i < totalBooks; i++) {
+                printf("Title: %s, Author: %s, Available: %s\n", library[i].title, library[i].author, library[i].available ? "Yes" : "No");
+            }
+        }
+        
+        int main() {
+            int choice;
+            do {
+                printf("\nLibrary Management System\n");
+                printf("1. Add Book\n2. Issue Book\n3. Return Book\n4. View Books\n5. Exit\n");
+                printf("Enter your choice: ");
+                scanf("%d", &choice);
+        
+                switch (choice) {
+                    case 1: addBook(); break;
+                    case 2: issueBook(); break;
+                    case 3: returnBook(); break;
+                    case 4: viewBooks(); break;
+                    case 5: printf("Exiting...\n"); break;
+                    default: printf("Invalid choice!\n");
+                }
+            } while (choice != 5);
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Tic-Tac-Toe Game -->
+            <div class="project-item">
+                <h3>Tic-Tac-Toe Game</h3>
+                <p>A two-player game of Tic-Tac-Toe.</p>
+                <button class="code-btn" onclick="toggleCode('tictactoe-code')">View Code</button>
+                <p class="tip">Tip: Use a 3x3 array to represent the game board.</p>
+                <pre id="tictactoe-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        
+        char board[3][3];
+        int currentPlayer;
+        
+        void initBoard() {
+            for (int i = 0; i < 3; i++)
+                for (int j = 0; j < 3; j++)
+                    board[i][j] = ' ';
+        }
+        
+        void displayBoard() {
+            printf("\n");
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    printf(" %c ", board[i][j]);
+                    if (j < 2) printf("|");
+                }
+                if (i < 2) printf("\n---|---|---\n");
+            }
+            printf("\n");
+        }
+        
+        int checkWin() {
+            for (int i = 0; i < 3; i++) {
+                if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ')
+                    return 1;
+                if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != ' ')
+                    return 1;
+            }
+            if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != ' ')
+                return 1;
+            if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ')
+                return 1;
+            return 0;
+        }
+        
+        int checkDraw() {
+            for (int i = 0; i < 3; i++)
+                for (int j = 0; j < 3; j++)
+                    if (board[i][j] == ' ')
+                        return 0;
+            return 1;
+        }
+        
+        void playGame() {
+            int row, col;
+            char mark = (currentPlayer == 1) ? 'X' : 'O';
+        
+            printf("Player %d (%c), enter row and column (1-3): ", currentPlayer, mark);
+            scanf("%d %d", &row, &col);
+            row--; col--;
+        
+            if (row >= 0 && row < 3 && col >= 0 && col < 3 && board[row][col] == ' ') {
+                board[row][col] = mark;
+                if (checkWin()) {
+                    displayBoard();
+                    printf("Player %d wins!\n", currentPlayer);
+                    return;
+                }
+                if (checkDraw()) {
+                    displayBoard();
+                    printf("It's a draw!\n");
+                    return;
+                }
+                currentPlayer = (currentPlayer == 1) ? 2 : 1;
+            } else {
+                printf("Invalid move. Try again.\n");
+            }
+            displayBoard();
+            playGame();
+        }
+        
+        int main() {
+            printf("Tic-Tac-Toe Game\n");
+            initBoard();
+            currentPlayer = 1;
+            displayBoard();
+            playGame();
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Sorting Algorithm Visualizer -->
+            <div class="project-item">
+                <h3>Sorting Algorithm Visualizer</h3>
+                <p>Visualize sorting algorithms like Bubble Sort and Quick Sort in the console.</p>
+                <button class="code-btn" onclick="toggleCode('sorting-visualizer-code')">View Code</button>
+                <p class="tip">Tip: Use a delay function to simulate the sorting process visually.</p>
+                <pre id="sorting-visualizer-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        
+        void displayArray(int arr[], int size) {
+            for (int i = 0; i < size; i++) {
+                printf("%d ", arr[i]);
+            }
+            printf("\n");
+        }
+        
+        void bubbleSort(int arr[], int size) {
+            for (int i = 0; i < size - 1; i++) {
+                for (int j = 0; j < size - i - 1; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        int temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                        displayArray(arr, size);
+                    }
+                }
+            }
+        }
+        
+        int main() {
+            int arr[] = {5, 3, 8, 6, 2};
+            int size = sizeof(arr) / sizeof(arr[0]);
+        
+            printf("Original Array:\n");
+            displayArray(arr, size);
+        
+            printf("\nBubble Sort Visualization:\n");
+            bubbleSort(arr, size);
+        
+            printf("\nSorted Array:\n");
+            displayArray(arr, size);
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Additional Projects -->
+            <!-- You can include the Memory Game, Encryption and Decryption Tool, Quiz Game, and Basic Text Editor in a similar format -->
+        </section>
+        
+        
+        <section id="Advanced-projects" class="project">
+            <h2>Advanced Projects</h2>
+            <p>Take your programming skills to the next level with these challenging and rewarding projects.</p>
+        
+            <!-- Mini Shell -->
+            <div class="project-item">
+                <h3>Mini Shell</h3>
+                <p>Implement a command-line shell that executes basic terminal commands like ls, cd, or echo.</p>
+                <button class="code-btn" onclick="toggleCode('mini-shell-code')">View Code</button>
+                <p class="tip">Tip: Use the fork() and exec() system calls for process management.</p>
+                <pre id="mini-shell-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        #include &lt;stdlib.h&gt;
+        #include &lt;unistd.h&gt;
+        #include &lt;string.h&gt;
+        
+        #define MAX_INPUT 1024
+        #define MAX_ARGS 64
+        
+        void executeCommand(char *input) {
+            char *args[MAX_ARGS];
+            char *token = strtok(input, " ");
+            int i = 0;
+        
+            while (token != NULL && i < MAX_ARGS - 1) {
+                args[i++] = token;
+                token = strtok(NULL, " ");
+            }
+            args[i] = NULL;
+        
+            if (fork() == 0) {
+                execvp(args[0], args);
+                perror("Error");
+                exit(EXIT_FAILURE);
+            } else {
+                wait(NULL);
+            }
+        }
+        
+        int main() {
+            char input[MAX_INPUT];
+        
+            while (1) {
+                printf("mini-shell> ");
+                fgets(input, MAX_INPUT, stdin);
+                input[strcspn(input, "\n")] = 0; // Remove trailing newline
+        
+                if (strcmp(input, "exit") == 0) break;
+                executeCommand(input);
+            }
+        
+            printf("Exiting shell...\n");
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Compiler Design -->
+            <div class="project-item">
+                <h3>Compiler Design</h3>
+                <p>Build a mini compiler that parses and evaluates arithmetic expressions.</p>
+                <button class="code-btn" onclick="toggleCode('compiler-design-code')">View Code</button>
+                <p class="tip">Tip: Use recursive descent parsing for evaluating arithmetic expressions.</p>
+                <pre id="compiler-design-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        #include &lt;ctype.h&gt;
+        
+        char *expr;
+        int parseExpression();
+        
+        int parseNumber() {
+            int num = 0;
+            while (isdigit(*expr)) {
+                num = num * 10 + (*expr - '0');
+                expr++;
+            }
+            return num;
+        }
+        
+        int parseFactor() {
+            if (*expr == '(') {
+                expr++;
+                int result = parseExpression();
+                if (*expr == ')') expr++;
+                return result;
+            } else {
+                return parseNumber();
+            }
+        }
+        
+        int parseTerm() {
+            int result = parseFactor();
+            while (*expr == '*' || *expr == '/') {
+                char op = *expr++;
+                if (op == '*')
+                    result *= parseFactor();
+                else
+                    result /= parseFactor();
+            }
+            return result;
+        }
+        
+        int parseExpression() {
+            int result = parseTerm();
+            while (*expr == '+' || *expr == '-') {
+                char op = *expr++;
+                if (op == '+')
+                    result += parseTerm();
+                else
+                    result -= parseTerm();
+            }
+            return result;
+        }
+        
+        int main() {
+            char input[100];
+            printf("Enter expression: ");
+            scanf("%s", input);
+            expr = input;
+            int result = parseExpression();
+            printf("Result: %d\n", result);
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Chat Application -->
+            <div class="project-item">
+                <h3>Chat Application</h3>
+                <p>Create a simple chat application using socket programming to send and receive messages.</p>
+                <button class="code-btn" onclick="toggleCode('chat-application-code')">View Code</button>
+                <p class="tip">Tip: Use separate threads for sending and receiving messages simultaneously.</p>
+                <pre id="chat-application-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        #include &lt;stdlib.h&gt;
+        #include &lt;string.h&gt;
+        #include &lt;unistd.h&gt;
+        #include &lt;arpa/inet.h&gt;
+        #include &lt;pthread.h&gt;
+        
+        #define PORT 8080
+        #define MAXLINE 1024
+        
+        void *sendMessage(void *sock) {
+            int sockfd = *(int *)sock;
+            char buffer[MAXLINE];
+        
+            while (1) {
+                fgets(buffer, MAXLINE, stdin);
+                send(sockfd, buffer, strlen(buffer), 0);
+            }
+            return NULL;
+        }
+        
+        void *receiveMessage(void *sock) {
+            int sockfd = *(int *)sock;
+            char buffer[MAXLINE];
+            while (1) {
+                int n = recv(sockfd, buffer, MAXLINE, 0);
+                buffer[n] = '\0';
+                printf("Server: %s\n", buffer);
+            }
+            return NULL;
+        }
+        
+        int main() {
+            int sockfd;
+            struct sockaddr_in servaddr;
+            pthread_t sendThread, recvThread;
+        
+            sockfd = socket(AF_INET, SOCK_STREAM, 0);
+            servaddr.sin_family = AF_INET;
+            servaddr.sin_port = htons(PORT);
+            inet_pton(AF_INET, "127.0.0.1", &servaddr.sin_addr);
+        
+            connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr));
+            printf("Connected to the server.\n");
+        
+            pthread_create(&sendThread, NULL, sendMessage, &sockfd);
+            pthread_create(&recvThread, NULL, receiveMessage, &sockfd);
+        
+            pthread_join(sendThread, NULL);
+            pthread_join(recvThread, NULL);
+            close(sockfd);
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Snake Game -->
+            <div class="project-item">
+                <h3>Snake Game</h3>
+                <p>Develop the classic Snake game in a console-based interface.</p>
+                <button class="code-btn" onclick="toggleCode('snake-game-code')">View Code</button>
+                <p class="tip">Tip: Use arrays to store the snake's position and update its movement dynamically.</p>
+                <pre id="snake-game-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        #include &lt;stdlib.h&gt;
+        #include &lt;unistd.h&gt;
+        #include &lt;termios.h&gt;
+        
+        #define WIDTH 20
+        #define HEIGHT 20
+        
+        int x, y, fruitX, fruitY, gameOver, score;
+        int tailX[100], tailY[100], nTail;
+        enum Direction { STOP = 0, LEFT, RIGHT, UP, DOWN };
+        enum Direction dir;
+        
+        void setup() {
+            gameOver = 0;
+            dir = STOP;
+            x = WIDTH / 2;
+            y = HEIGHT / 2;
+            fruitX = rand() % WIDTH;
+            fruitY = rand() % HEIGHT;
+            score = 0;
+        }
+        
+        // Add movement functions and gameplay logic here...
+        // For brevity, full Snake Game source code is omitted.
+        
+        int main() {
+            setup();
+            while (!gameOver) {
+                // Update game and render snake
+            }
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Additional Projects -->
+            <!-- Add other advanced projects such as Parking Management System, Maze Solver, etc., following the same structure. -->
+        </section>
+        
+        
+        <section id="fun-projects" class="project">
+            <h2>Fun/Creative Projects</h2>
+            <p>Explore your creativity and have fun building these projects!</p>
+        
+            <!-- 2048 Game -->
+            <div class="project-item">
+                <h3>2048 Game</h3>
+                <p>Recreate the addictive 2048 puzzle game. Use arrow keys to merge tiles and achieve the 2048 tile!</p>
+                <button class="code-btn" onclick="toggleCode('2048-game-code')">View Code</button>
+                <p class="tip">Tip: Use a 2D array to represent the grid and implement swipe logic for merging numbers.</p>
+                <pre id="2048-game-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        #include &lt;stdlib.h&gt;
+        #include &lt;time.h&gt;
+        
+        #define SIZE 4
+        
+        int grid[SIZE][SIZE];
+        
+        void initializeGrid() {
+            for (int i = 0; i < SIZE; i++) {
+                for (int j = 0; j < SIZE; j++) {
+                    grid[i][j] = 0;
+                }
+            }
+            // Add two initial tiles
+            addRandomTile();
+            addRandomTile();
+        }
+        
+        void addRandomTile() {
+            int emptyCells[SIZE * SIZE][2], count = 0;
+        
+            for (int i = 0; i < SIZE; i++) {
+                for (int j = 0; j < SIZE; j++) {
+                    if (grid[i][j] == 0) {
+                        emptyCells[count][0] = i;
+                        emptyCells[count][1] = j;
+                        count++;
+                    }
+                }
+            }
+        
+            if (count > 0) {
+                int idx = rand() % count;
+                grid[emptyCells[idx][0]][emptyCells[idx][1]] = (rand() % 2 + 1) * 2; // Add 2 or 4
+            }
+        }
+        
+        void displayGrid() {
+            for (int i = 0; i < SIZE; i++) {
+                for (int j = 0; j < SIZE; j++) {
+                    printf("%4d", grid[i][j]);
+                }
+                printf("\n");
+            }
+        }
+        
+        // Add swipe and game logic...
+        
+        int main() {
+            srand(time(NULL));
+            initializeGrid();
+            while (1) {
+                displayGrid();
+                // Handle user input and update grid...
+            }
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Digital Clock -->
+            <div class="project-item">
+                <h3>Digital Clock</h3>
+                <p>Create a real-time digital clock using system time functions.</p>
+                <button class="code-btn" onclick="toggleCode('digital-clock-code')">View Code</button>
+                <p class="tip">Tip: Use time.h for fetching the current time and `sleep` for updating the display every second.</p>
+                <pre id="digital-clock-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        #include &lt;time.h&gt;
+        #include &lt;unistd.h&gt;
+        
+        int main() {
+            while (1) {
+                time_t rawTime = time(NULL);
+                struct tm *currentTime = localtime(&rawTime);
+        
+                printf("\r%02d:%02d:%02d", currentTime->tm_hour, currentTime->tm_min, currentTime->tm_sec);
+                fflush(stdout);
+        
+                sleep(1);
+            }
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Sudoku Solver -->
+            <div class="project-item">
+                <h3>Sudoku Solver</h3>
+                <p>Develop a program that takes a Sudoku puzzle as input and solves it using backtracking.</p>
+                <button class="code-btn" onclick="toggleCode('sudoku-solver-code')">View Code</button>
+                <p class="tip">Tip: Use recursion for backtracking to try all possible values for each cell.</p>
+                <pre id="sudoku-solver-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        
+        #define N 9
+        
+        int isSafe(int grid[N][N], int row, int col, int num) {
+            for (int x = 0; x < N; x++) {
+                if (grid[row][x] == num || grid[x][col] == num) return 0;
+            }
+        
+            int startRow = row - row % 3, startCol = col - col % 3;
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    if (grid[i + startRow][j + startCol] == num) return 0;
+                }
+            }
+        
+            return 1;
+        }
+        
+        int solveSudoku(int grid[N][N]) {
+            for (int row = 0; row < N; row++) {
+                for (int col = 0; col < N; col++) {
+                    if (grid[row][col] == 0) {
+                        for (int num = 1; num <= 9; num++) {
+                            if (isSafe(grid, row, col, num)) {
+                                grid[row][col] = num;
+                                if (solveSudoku(grid)) return 1;
+                                grid[row][col] = 0;
+                            }
+                        }
+                        return 0;
+                    }
+                }
+            }
+            return 1;
+        }
+        
+        // Add code for taking input and displaying the solved puzzle...
+        
+        int main() {
+            int grid[N][N] = {
+                {5, 3, 0, 0, 7, 0, 0, 0, 0},
+                {6, 0, 0, 1, 9, 5, 0, 0, 0},
+                // Add the rest of the puzzle...
+            };
+        
+            if (solveSudoku(grid)) {
+                printf("Solved Sudoku:\n");
+                // Display solved grid...
+            } else {
+                printf("No solution exists!\n");
+            }
+        
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Typing Speed Test -->
+            <div class="project-item">
+                <h3>Typing Speed Test</h3>
+                <p>Measure typing speed and accuracy with a timer and pre-defined sentences.</p>
+                <button class="code-btn" onclick="toggleCode('typing-speed-code')">View Code</button>
+                <p class="tip">Tip: Use time.h to calculate the time taken to type a sentence.</p>
+                <pre id="typing-speed-code" class="code-block">
+        #include &lt;stdio.h&gt;
+        #include &lt;string.h&gt;
+        #include &lt;time.h&gt;
+        
+        int main() {
+            char sentence[] = "The quick brown fox jumps over the lazy dog.";
+            char input[100];
+            time_t start, end;
+        
+            printf("Type the following sentence as fast as you can:\n%s\n", sentence);
+        
+            time(&start);
+            fgets(input, sizeof(input), stdin);
+            time(&end);
+        
+            double elapsed = difftime(end, start);
+            int correct = strcmp(sentence, input) == 0;
+        
+            printf("Time taken: %.2lf seconds\n", elapsed);
+            if (correct) {
+                printf("Perfect typing!\n");
+            } else {
+                printf("There were mistakes in your typing.\n");
+            }
+        
+            return 0;
+        }
+                </pre>
+            </div>
+        
+            <!-- Music Player -->
+            <div class="project-item">
+                <h3>Music Player</h3>
+                <p>Play WAV audio files in a console-based application.</p>
+                <button class="code-btn" onclick="toggleCode('music-player-code')">View Code</button>
+                <p class="tip">Tip: Use libraries like SDL2 for handling audio playback in a simple way.</p>
+                <pre id="music-player-code" class="code-block">
+        #include &lt;SDL2/SDL.h&gt;
+        #include &lt;stdio.h&gt;
+        
+        void playMusic(const char *filePath) {
+            if (SDL_Init(SDL_INIT_AUDIO) < 0) {
+                printf("Error initializing SDL: %s\n", SDL_GetError());
+                return;
+            }
+        
+            if (SDL_LoadWAV(filePath, &spec, &audioBuffer, &audioLength) == NULL) {
+                printf("Error loading WAV file: %s\n", SDL_GetError());
+                SDL_Quit();
+                return;
+            }
+        
+            SDL_AudioDeviceID device = SDL_OpenAudioDevice(NULL, 0, &spec, NULL, 0);
+            SDL_QueueAudio(device, audioBuffer, audioLength);
+            SDL_PauseAudioDevice(device, 0);
+        
+            SDL_Delay((audioLength / spec.freq) * 1000); // Wait for the audio to finish
+        
+            SDL_CloseAudioDevice(device);
+            SDL_FreeWAV(audioBuffer);
+            SDL_Quit();
+        }
+        
+        int main() {
+            playMusic("example.wav");
+            return 0;
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="mini-projects" class="project">
+            <h2>Mini Projects</h2>
+            <p>Explore small, beginner-friendly projects that are great for understanding core concepts of C programming.</p>
+        </section>
+
+        <!-- Major Projects Section -->
+        <section id="major-projects" class="project">
+            <h2>Major Projects</h2>
+            <p>These projects are comprehensive and cover advanced topics, making them suitable for experienced programmers.</p>
+        </section>
+    </main>
+
+    <script>
+        // Function to open a specific project section and hide others
+        function openProject(sectionId) {
+            // Hide all sections first
+            const allSections = document.querySelectorAll('.project');
+            allSections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        // Toggle the code display
+        function toggleCode(codeId) {
+            const codeBlock = document.getElementById(codeId);
+            if (codeBlock.style.display === 'block') {
+                codeBlock.style.display = 'none';
+            } else {
+                codeBlock.style.display = 'block';
+            }
+        }
+
+        // Show the first section by default when the page loads
+        window.onload = () => {
+            openProject('Beginner-projects');
+        };
+    </script>
+
+   
+
+</body>
+</html>

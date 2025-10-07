@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Google Cloud Course</title>
+    
+    
+</head>
+<body class="body">
+
+  
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> GCP Labs
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> GCP Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            
+            
+            <i class="fab fa-google" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> GCP Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="Google cloudRoadmaps.html" target="_blank"><b class="b12">GCP Roadmap</b></a>
+    
+        <ul><a href="Introduction to Google Cloud.html">Introduction to Google Cloud</a>
+            <li><a href="Overview of Google Cloud.html">Overview of Google Cloud</a></li>
+            <li><a href="Global Infrastructure Google Cloud.html">Global Infrastructure</a></li>
+            <li><a href="Core Services and Use Cases Google Cloud.html">Core Services and Use Cases</a></li>
+        </ul>
+    
+        <h3>Google Cloud Foundations</h3>
+        <a href="Google Cloud Foundations.html">Google Cloud Foundations</a>
+        <ul>
+            <li><a href="Google Cloud Console.html">Google Cloud Console</a></li>
+            <li><a href="Cloud Shell and Cloud SDK.html">Cloud Shell and Cloud SDK</a></li>
+            <li><a href="Identity and Access Management (IAM).html">Identity and Access Management (IAM)</a></li>
+            <li><a href="Billing and Pricing in Google Cloud.html">Billing and Pricing</a></li>
+        </ul>
+    
+        <h3>Core Google Cloud Services</h3>
+        <a href="Core Google Cloud Services.html">Core Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="Compute Services Google cloud.html">Compute Services</a>
+                <ul>
+                    <li><a href="Compute Engine.html">Compute Engine</a></li>
+                    <li><a href="App Engine.html">App Engine</a></li>
+                    <li><a href="Kubernetes Engine (GKE).html">Kubernetes Engine (GKE)</a></li>
+                    <li><a href="Cloud Functions.html">Cloud Functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Storage Services in Google cloud.html">Storage Services</a>
+                <ul>
+                    <li><a href="Cloud Storage.html">Cloud Storage</a></li>
+                    <li><a href="Persistent Disk.html">Persistent Disk</a></li>
+                    <li><a href="Filestore.html">Filestore</a></li>
+                    <li><a href="Cloud SQL.html">Cloud SQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Database Services in Google cloud.html">Database Services</a>
+                <ul>
+                    <li><a href="Cloud Firestore.html">Cloud Firestore</a></li>
+                    <li><a href="Bigtable.html">Bigtable</a></li>
+                    <li><a href="Cloud Spanner.html">Cloud Spanner</a></li>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Networking Services Google Cloud.html">Networking Services</a>
+                <ul>
+                    <li><a href="VPC (Virtual Private Cloud) google cloud.html">VPC (Virtual Private Cloud)</a></li>
+                    <li><a href="Cloud Load Balancing.html">Cloud Load Balancing</a></li>
+                    <li><a href="Cloud CDN.html">Cloud CDN</a></li>
+                    <li><a href="Cloud Interconnect.html">Cloud Interconnect</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Google Cloud Services</h3>
+        <a href="Advanced Google Cloud Services.html">Advanced Google Cloud Services</a>
+        <ul>
+            <li>
+                <a href="AI and Machine Learning Google Cloud.html">AI and Machine Learning</a>
+                <ul>
+                    <li><a href="AI Platform.html">AI Platform</a></li>
+                    <li><a href="AutoML.html">AutoML</a></li>
+                    <li><a href="Vision AI.html">Vision AI</a></li>
+                    <li><a href="Dialogflow.html">Dialogflow</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Analytics Services Google.html">Analytics Services</a>
+                <ul>
+                    <li><a href="BigQuery.html">BigQuery</a></li>
+                    <li><a href="Dataflow.html">Dataflow</a></li>
+                    <li><a href="pub sub.html">Pub/Sub</a></li>
+                    <li><a href="Dataproc.html">Dataproc</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Security Services Google.html">Security Services</a>
+                <ul>
+                    <li><a href="Cloud IAM.html">Cloud IAM</a></li>
+                    <li><a href="Cloud Armor.html">Cloud Armor</a></li>
+                    <li><a href="Security Command Center.html">Security Command Center</a></li>
+                    <li><a href="Cloud Key Management Service (KMS).html">Cloud Key Management Service (KMS)</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>DevOps on Google Cloud</h3>
+        <a href="DevOps on Google Cloud.html">DevOps on Google Cloud</a>
+        <ul>
+            <li>
+                <a href="Infrastructure as Code (IaC) Google.html">Infrastructure as Code (IaC)</a>
+                <ul>
+                    <li><a href="Deployment Manager.html">Deployment Manager</a></li>
+                    <li><a href="Terraform on Google Cloud.html">Terraform on Google Cloud</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="CI-CD Pipeline google.html">CI/CD Pipeline</a>
+                <ul>
+                    <li><a href="Cloud Build.html">Cloud Build</a></li>
+                    <li><a href="Container Registry.html">Container Registry</a></li>
+                    <li><a href="Artifact Registry.html">Artifact Registry</a></li>
+                    <li><a href="Cloud Source Repositories.html">Cloud Source Repositories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Monitoring and Logging Google.html">Monitoring and Logging</a>
+                <ul>
+                    <li><a href="Cloud Monitoring.html">Cloud Monitoring</a></li>
+                    <li><a href="Cloud Logging.html">Cloud Logging</a></li>
+                    <li><a href="Cloud Trace.html">Cloud Trace</a></li>
+                    <li><a href="Cloud Debugger.html">Cloud Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Migration and Transfer</h3>
+        <a href="Migration and Transfer Google.html">Migration and Transfer</a>
+        <ul>
+            <li><a href="Migrate for Compute Engine.html">Migrate for Compute Engine</a></li>
+            <li><a href="Database Migration Service Google.html">Database Migration Service</a></li>
+            <li><a href="Transfer Appliance.html">Transfer Appliance</a></li>
+            <li><a href="Storage Transfer Service.html">Storage Transfer Service</a></li>
+        </ul>
+    
+    </div>
+    
+   
+   
+   
+    
+
+    
+    
+    
+        <script>
+    
+            function openNav() {
+                document.getElementById("mySidebar").style.left = "0";
+                document.getElementById("main").classList.add("sidebar-open");
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.left = "-250px";
+                document.getElementById("main").classList.remove("sidebar-open");
+            }
+    
+        
+            function toggleSubtopics(event) {
+                const stage = event.currentTarget;
+                const subtopics = stage.nextElementSibling;
+                subtopics.classList.toggle('show');
+            }
+    
+           
+            function goHome() {
+        window.location.href = "index.html";
+    }
+    function gointerviewpro() {
+        window.location.href = "GCP_interviews.html";
+    }
+    function goquizpro() {
+        window.location.href = "GCP_quiz.html";
+    }
+    function golabs() {
+        window.location.href = "GCP_labs.html";
+    }
+    function goprojects() {
+        window.location.href = "GCP_projects.html";
+    }
+    function goPrevious() {
+        window.location.href = "Cloud Key Management Service (KMS).html";
+    }
+    function goNext() {
+        window.location.href = "Infrastructure as Code (IaC) Google.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-google" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">GCP Tutorial</h2>
+<div class="div1">Google Cloud Core DevOps Practices</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div><h2>Introduction to DevOps on Google Cloud</h2>
+        <p>DevOps on Google Cloud combines development and operations practices to enhance collaboration, automate workflows, and deliver applications faster and more reliably. Google Cloud provides a suite of tools and services designed to support various aspects of DevOps, including continuous integration (CI), continuous delivery (CD), monitoring, and infrastructure management.</p>
+
+        <h2>Core DevOps Practices on Google Cloud</h2>
+        <ul>
+            <li><strong>Continuous Integration (CI):</strong> Automate the process of integrating code changes into a shared repository. Google Cloud offers tools like Cloud Build for building and testing code in an automated manner.</li>
+            <li><strong>Continuous Delivery (CD):</strong> Automate the deployment of applications to production environments. Google Cloud provides services such as Cloud Deploy to streamline and manage the release process.</li>
+            <li><strong>Infrastructure as Code (IaC):</strong> Manage and provision infrastructure using code. Tools like Terraform and Google Cloud Deployment Manager allow you to define and deploy infrastructure resources programmatically.</li>
+            <li><strong>Monitoring and Logging:</strong> Track the performance and health of applications and infrastructure. Google Cloud Monitoring and Logging services help you gain insights into your systems and troubleshoot issues effectively.</li>
+            <li><strong>Automated Testing:</strong> Implement automated testing to ensure code quality and functionality. Google Cloud offers various testing frameworks and integration with third-party tools for automated testing.</li>
+        </ul>
+
+        <h2>Key Tools and Services</h2>
+        <ul>
+            <li><strong>Cloud Build:</strong> A fully managed CI/CD service that automates the build, test, and deployment processes for your applications.</li>
+            <li><strong>Cloud Deploy:</strong> A fully managed CD service that enables you to deploy applications to Google Kubernetes Engine (GKE), Compute Engine, and other environments.</li>
+            <li><strong>Google Kubernetes Engine (GKE):</strong> A managed Kubernetes service that simplifies deploying, managing, and scaling containerized applications.</li>
+            <li><strong>Terraform:</strong> An open-source tool for defining and provisioning infrastructure using a declarative configuration language.</li>
+            <li><strong>Google Cloud Monitoring:</strong> Provides visibility into the performance, availability, and overall health of your applications and infrastructure.</li>
+            <li><strong>Google Cloud Logging:</strong> Collects and analyzes logs from your applications and infrastructure to aid in debugging and monitoring.</li>
+        </ul>
+
+        <h2>Benefits of Using DevOps on Google Cloud</h2>
+        <ul>
+            <li><strong>Increased Efficiency:</strong> Automate repetitive tasks and workflows to speed up development and deployment processes.</li>
+            <li><strong>Improved Collaboration:</strong> Foster collaboration between development and operations teams with integrated tools and practices.</li>
+            <li><strong>Enhanced Reliability:</strong> Ensure consistent and reliable delivery of applications through automated testing and deployment pipelines.</li>
+            <li><strong>Scalability:</strong> Easily scale applications and infrastructure to meet changing demands with Google Cloud’s scalable services.</li>
+            <li><strong>Cost Optimization:</strong> Optimize resource usage and reduce costs by leveraging Google Cloud’s pay-as-you-go pricing model and automated scaling.</li>
+        </ul>
+
+        <h2>Free Resources for Learning and Practice</h2>
+        <ul>
+            <li><a href="https://cloud.google.com/training">Google Cloud Training</a> - Free online courses and resources on DevOps practices and Google Cloud services.</li>
+            <li><a href="https://www.qwiklabs.com/">Qwiklabs</a> - Hands-on labs for practicing DevOps workflows and tools on Google Cloud.</li>
+            <li><a href="https://cloud.google.com/docs">Google Cloud Documentation</a> - Comprehensive guides and tutorials on Google Cloud’s DevOps tools and services.</li>
+            <li><a href="https://www.coursera.org/learn/google-cloud-devops">Coursera DevOps Course</a> - Free course covering DevOps concepts and tools specific to Google Cloud.</li>
+            <li><a href="https://www.youtube.com/user/googlecloudplatform">YouTube Tutorials</a> - Video tutorials and webinars on implementing DevOps practices with Google Cloud.</li>
+        </ul>
+
+        <h2>Getting Started with DevOps on Google Cloud</h2>
+        <ol>
+            <li><a href="https://cloud.google.com/products/devops">Explore Google Cloud DevOps Products</a> - Learn about the different DevOps tools and services available on Google Cloud.</li>
+            <li><a href="https://cloud.google.com/blog/topics/developers-practitioners/devops-on-google-cloud">Read DevOps Blog Posts</a> - Stay updated with the latest DevOps practices and use cases on Google Cloud.</li>
+            <li><a href="https://cloud.google.com/training">Start Learning</a> - Utilize the resources mentioned above to build your DevOps skills and knowledge.</li>
+        </ol>
+
+        <h2>Summary</h2>
+        <p>DevOps on Google Cloud integrates development and operations practices with powerful tools and services to enhance efficiency, collaboration, and reliability. By leveraging services like Cloud Build, Cloud Deploy, and Google Kubernetes Engine, teams can automate workflows, monitor performance, and manage infrastructure effectively. Utilizing the free resources provided can help you get started and excel in implementing DevOps practices on Google Cloud.</p>
+
+        <h2>Conclusion</h2>
+        <p>Implementing DevOps on Google Cloud empowers teams to streamline their development and deployment processes, improve collaboration, and achieve greater operational efficiency. By adopting Google Cloud’s DevOps tools and services, organizations can enhance their ability to deliver high-quality applications and services rapidly and reliably. Explore the provided resources to deepen your understanding and practice DevOps on Google Cloud effectively.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div> </div>
+</body>
+</html>

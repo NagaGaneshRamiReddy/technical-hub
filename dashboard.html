@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Dashboard</title>
+    <link rel="stylesheet" href="unique-dashboard.css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+
+
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+#profile-details {
+    text-align: center;
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 4px solid #4a90e2;
+    margin: 0 auto;
+    display: block;
+    background: #ffffff;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.edit-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="email"],
+.edit-form input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.edit-form button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-form button:hover {
+    background-color: #218838;
+}
+
+.tasks-list .task-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.tasks-list .task-card h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.tasks-list .task-card p {
+    margin: 5px 0;
+}
+
+
+.progress-circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.progress-circle svg {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-circle .circle-bg {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 10;
+}
+
+.progress-circle .circle-progress {
+    fill: none;
+    stroke: #4a90e2;
+    stroke-width: 10;
+    stroke-dasharray: 440; /* This is the circumference of the circle */
+    stroke-dashoffset: 110; /* Adjust this for progress */
+    transition: stroke-dashoffset 0.3s;
+}
+
+.progress-circle text {
+    font-size: 24px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    fill: #4a90e2; /* Text color */
+}
+
+    </style>
+    <header>
+        <div class="container">
+            <h1>My Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#tasks">Tasks</a></li>
+                    <li><a href="#progress">Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="container">
+                <h2>Profile</h2>
+                <div id="profile-details">
+                    <!-- Profile details will be dynamically loaded here -->
+                </div>
+                <button onclick="editProfile()">Edit Profile</button>
+            </div>
+        </section>
+
+        <section id="tasks">
+            <div class="container">
+                <h2>Tasks</h2>
+                <div id="tasks-list">
+                    <!-- List of tasks will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="progress">
+            <div class="container">
+                <h2>Progress</h2>
+                <div id="progress-circle">
+                    <!-- Progress circle will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Dashboard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>// Sample data
+        const profileData = {
+            username: "developer42",
+            email: "developer42@example.com",
+            joined: "January 15, 2022",
+            avatar: "default-avatar.jpg" // Default avatar image
+        };
+        
+        const tasksData = [
+            { id: 1, title: "Complete Algorithm", status: "In Progress" },
+            { id: 2, title: "Finish Project Documentation", status: "Completed" },
+            { id: 3, title: "Submit Code Review", status: "Not Started" }
+        ];
+        
+        const progressData = {
+            completed: 8,
+            total: 20
+        };
+        
+        // Load profile details
+        function loadProfile() {
+            const profileContainer = document.getElementById('profile-details');
+            profileContainer.innerHTML = `
+                <div>
+                    <div class="profile-avatar" style="background-image: url('${profileData.avatar}');"></div>
+                    <p><strong>Username:</strong> ${profileData.username}</p>
+                    <p><strong>Email:</strong> ${profileData.email}</p>
+                    <p><strong>Joined:</strong> ${profileData.joined}</p>
+                    <div class="edit-form" id="edit-profile-form">
+                        <input type="text" id="edit-username" placeholder="Username" value="${profileData.username}">
+                        <input type="email" id="edit-email" placeholder="Email" value="${profileData.email}">
+                        <label for="edit-avatar">
+                            <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M20 15v4h-6v-6h-4v6H4v-4H0v-2h4v-2H0V9h6V7h2v2h8V7h2v2h6v2h-4v2h4v2h-4v2h-2z"/>
+                            </svg> 
+                            Upload Avatar
+                        </label>
+                        <input type="file" id="edit-avatar" accept="image/*" style="display:none;">
+                        <button onclick="saveProfile()">Save Changes</button>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Load tasks list
+        function loadTasks() {
+            const tasksContainer = document.getElementById('tasks-list');
+            tasksContainer.innerHTML = tasksData.map(task => `
+                <div class="task-card">
+                    <h3>${task.title}</h3>
+                    <p><strong>Status:</strong> ${task.status}</p>
+                </div>
+            `).join('');
+        }
+        
+        // Load progress circle
+        function loadProgress() {
+            const progressContainer = document.getElementById('progress-circle');
+            const progressPercent = (progressData.completed / progressData.total) * 100;
+        
+            progressContainer.innerHTML = `
+                <div class="progress-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" class="circle-bg"/>
+                        <circle cx="50" cy="50" r="45" class="circle-progress" style="stroke-dashoffset: ${440 - (progressPercent / 100) * 440};"/>
+                        <text x="50" y="50">${Math.round(progressPercent)}%</text>
+                    </svg>
+                </div>
+            `;
+        }
+        
+        // Edit profile
+        function editProfile() {
+            document.getElementById('edit-profile-form').style.display = 'block';
+        }
+        
+        // Save profile changes
+        function saveProfile() {
+            const username = document.getElementById('edit-username').value;
+            const email = document.getElementById('edit-email').value;
+            const avatar = document.getElementById('edit-avatar').files[0];
+            
+            if (avatar) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    profileData.avatar = event.target.result;
+                    document.querySelector('.profile-avatar').style.backgroundImage = `url('${profileData.avatar}')`;
+                };
+                reader.readAsDataURL(avatar);
+            }
+            
+            profileData.username = username;
+            profileData.email = email;
+            
+            loadProfile(); // Refresh profile
+        }
+        
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProfile();
+            loadTasks();
+            loadProgress();
+        });
+        
+        
+    </script>
+</body>
+</html>

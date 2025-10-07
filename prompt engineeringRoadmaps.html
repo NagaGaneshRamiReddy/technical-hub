@@ -1,0 +1,282 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Prompt Engineering Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #023554;
+            overflow-y: auto;
+            background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        header {
+            width: 100%;
+            background-color:green;
+            color: white;
+           
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        
+        
+
+        .roadmap-container {
+            text-align: center;
+            margin-top: 60px; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .tree {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+        }
+
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 2px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 2px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 2px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+
+        .tree ul ul::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 2px solid #ccc;
+            width: 0;
+            height: 20px;
+        }
+
+        .stage {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.5s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .stage.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.10s ease, transform 0.3s ease; 
+        }
+
+        a:hover {
+            color: #000000; 
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="container">
+            <h1 class="">
+                <i class="fas fa-tree"></i>
+                TreeLearners
+            </h1>
+        </div>
+    </header><br><br>
+       
+    <div class="roadmap-container"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        
+        
+        <br>
+        <br><br><br>
+    
+        <h1 class="h1">Prompt Engineering Course</h1>
+        <div class="tree">
+            <ul>
+                <li>
+                    <div class="stage"><a href="Introduction to Prompt Engineering.html">Introduction to Prompt Engineering</a></div>
+                    <ul>
+                        <li><div class="stage"><a href="What is Prompt Engineering.html">What is Prompt Engineering?</a></div></li>
+                        <li><div class="stage"><a href="History and Evolution.html">History and Evolution</a></div></li>
+                        <li><div class="stage"><a href="Applications Prompt Engineering.html">Applications</a></div></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Basics of Natural Language Processing (NLP).html">Basics of Natural Language Processing (NLP)</a></div>
+                    <ul>
+                        <li><div class="stage"><a href="Introduction to NLP.html">Introduction to NLP</a></div></li>
+                        <li><div class="stage"><a href="Key NLP Concepts.html">Key NLP Concepts</a></div>
+                            <ul>
+                                <li><div class="stage"><a href="Tokenization.html">Tokenization</a></div></li>
+                                <li><div class="stage"><a href="Part-of-Speech Tagging.html">Part-of-Speech Tagging</a></div></li>
+                                <li><div class="stage"><a href="Named Entity Recognition.html">Named Entity Recognition</a></div></li>
+                                <li><div class="stage"><a href="Sentiment Analysis.html">Sentiment Analysis</a></div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Prompt Design Principles.html">Prompt Design Principles</a></div>
+                    <ul>
+                        <li><div class="stage"><a href="Understanding Prompts.html">Understanding Prompts</a></div></li>
+                        <li><div class="stage"><a href="Types of Prompts.html">Types of Prompts</a></div>
+                            <ul>
+                                <li><div class="stage"><a href="Instructional Prompts.html">Instructional Prompts</a></div></li>
+                                <li><div class="stage"><a href="Conversational Prompts.html">Conversational Prompts</a></div></li>
+                                <li><div class="stage"><a href="Exploratory Prompts.html">Exploratory Prompts</a></div></li>
+                            </ul>
+                        </li>
+                        <li><div class="stage"><a href="Crafting Effective Prompts.html">Crafting Effective Prompts</a></div>
+                            <ul>
+                                <li><div class="stage"><a href="Clarity and Specificity.html">Clarity and Specificity</a></div></li>
+                                <li><div class="stage"><a href="Contextual Relevance.html">Contextual Relevance</a></div></li>
+                                <li><div class="stage"><a href="Bias and Fairness1.html">Bias and Fairness</a></div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Advanced Prompt Engineering Techniques.html">Advanced Prompt Engineering Techniques</a></div>
+                    <ul>
+                        <li><div class="stage"><a href="Prompt Tuning.html">Prompt Tuning</a></div></li>
+                        <li><div class="stage"><a href="Few-Shot and Zero-Shot Learning.html">Few-Shot and Zero-Shot Learning</a></div></li>
+                        <li><div class="stage"><a href="Chain-of-Thought Prompting.html">Chain-of-Thought Prompting</a></div></li>
+                        <li><div class="stage"><a href="Meta-Prompting.html">Meta-Prompting</a></div></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Evaluation and Testing of Prompts.html">Evaluation and Testing of Prompts</a></div>
+                    <ul>
+                        <li><div class="stage"><a href="Quantitative Metrics.html">Quantitative Metrics</a></div></li>
+                        <li><div class="stage"><a href="Qualitative Assessment.html">Qualitative Assessment</a></div></li>
+                        <li><div class="stage"><a href="User Feedback.html">User Feedback</a></div></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Ethical Considerations in Prompt Engineering.html">Ethical Considerations in Prompt Engineering</a></div>
+                    <ul>
+                        <li><div class="stage"><a href="Bias and Fairness1.html">Bias and Fairness</a></div></li>
+                        <li><div class="stage"><a href="Transparency.html">Transparency</a></div></li>
+                        <li><div class="stage"><a href="Accountability.html">Accountability</a></div></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="stage"><a href="Case Studies and Applications.html">Case Studies and Applications</a></div>
+                    <ul>
+                        <li><div class="stage"><a href="Customer Service Bots.html">Customer Service Bots</a></div></li>
+                        <li><div class="stage"><a href="Content Generation.html">Content Generation</a></div></li>
+                        <li><div class="stage"><a href="Educational Tools.html">Educational Tools</a></div></li>
+                        <li><div class="stage"><a href="Healthcare Assistants.html">Healthcare Assistants</a></div></li>
+                    </ul>
+                </li>
+              
+                
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const stages = document.querySelectorAll('.stage');
+            let delay = 0;
+
+            stages.forEach((stage) => {
+                setTimeout(() => {
+                    stage.classList.add('visible');
+                }, delay);
+                delay += 300; // delay each stage by 300ms
+            });
+        });
+    </script>
+</body>
+</html>

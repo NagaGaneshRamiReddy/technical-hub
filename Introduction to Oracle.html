@@ -1,0 +1,463 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Oracle course</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Oracle
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <h3>Oracle Course</h3>
+        
+        <a href="Introduction to Oracle.html">Introduction to Oracle Database</a>
+        <ul>
+            <li><a href="History of Oracle.html">History of Oracle</a></li>
+            <li><a href="Oracle Editions.html">Oracle Editions</a></li>
+        </ul>
+    
+        <h3>Oracle Database Architecture</h3>
+        <a href="Oracle Architecture.html">Oracle Database Architecture</a>
+        <ul>
+            <li><a href="Memory Structure.html">Memory Structure</a></li>
+            <li><a href="Process Architecture.html">Process Architecture</a></li>
+        </ul>
+    
+        <h3>SQL Basics</h3>
+        <a href="SQL Basics oracle.html">SQL Basics</a>
+        <ul>
+            <li><a href="DML.html">Data Manipulation Language (DML)</a></li>
+            <li><a href="DDL.html">Data Definition Language (DDL)</a></li>
+            <li><a href="DCL.html">Data Control Language (DCL)</a></li>
+        </ul>
+    
+        <h3>PL/SQL Programming</h3>
+        <a href="PL-SQL.html">PL/SQL Programming</a>
+        <ul>
+            <li><a href="PL-SQL Basics.html">PL/SQL Basics</a></li>
+            <li><a href="Procedures and Functions.html">Procedures and Functions</a></li>
+        </ul>
+    
+        <h3>Data Modeling</h3>
+        <a href="Data Modeling.html">Data Modeling</a>
+        <ul>
+            <li><a href="Entity-Relationship Model.html">Entity-Relationship Model</a></li>
+            <li><a href="Normalization.html">Normalization</a></li>
+        </ul>
+    
+        <h3>Database Security</h3>
+        <a href="Database Security.html">Database Security</a>
+        <ul>
+            <li><a href="User Management.html">User Management</a></li>
+            <li><a href="Roles and Privileges.html">Roles and Privileges</a></li>
+        </ul>
+    
+        <h3>Backup and Recovery</h3>
+        <a href="Backup and Recovery.html">Backup and Recovery</a>
+        <ul>
+            <li><a href="RMAN.html">Recovery Manager (RMAN)</a></li>
+            <li><a href="Data Pump.html">Data Pump</a></li>
+        </ul>
+    
+        <h3>Oracle Networking</h3>
+        <a href="Oracle Networking.html">Oracle Networking</a>
+        <ul>
+            <li><a href="Oracle Net.html">Oracle Net Services</a></li>
+            <li><a href="TNS Configuration.html">TNS Configuration</a></li>
+        </ul>
+    
+        <h3>Performance Tuning</h3>
+        <a href="Performance Tuning.html">Performance Tuning</a>
+        <ul>
+            <li><a href="Query Optimization.html">Query Optimization</a></li>
+            <li><a href="Indexing.html">Indexing</a></li>
+        </ul>
+    
+        <h3>Oracle Cloud Services</h3>
+        <a href="Oracle Cloud.html">Oracle Cloud Services</a>
+        <ul>
+            <li><a href="Oracle Autonomous Database.html">Oracle Autonomous Database</a></li>
+            <li><a href="Cloud Infrastructure.html">Oracle Cloud Infrastructure</a></li>
+        </ul>
+    </div>
+    
+    
+        
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Oracle Roadmaps.html";
+    }
+    function goNext() {
+        window.location.href = "History of Oracle.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+
+    <div class="div1">Introduction to Oracle</div>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+
+    <h2>What is Oracle?</h2>
+    <p><strong>Oracle</strong> is a leading provider of database software, cloud services, and enterprise technology solutions. Founded in 1977, Oracle has grown into one of the largest software companies in the world, specializing in database management systems (DBMS), cloud applications, and middleware software. Oracle's flagship product, Oracle Database, is widely used by businesses across industries to store, manage, and analyze data efficiently.</p>
+
+    <h2>Importance of Oracle in Enterprise IT</h2>
+    <ul>
+        <li><strong>Comprehensive Database Solutions</strong>: Oracle Database offers powerful tools for storing and managing large volumes of structured and unstructured data, making it essential for organizations that rely on data-driven decision-making.</li>
+        <li><strong>Cloud Computing Services</strong>: Oracle Cloud Infrastructure provides scalable cloud solutions, including computing, storage, and networking services, enabling businesses to modernize their IT infrastructure.</li>
+        <li><strong>Enterprise Resource Planning (ERP)</strong>: Oracle offers a comprehensive suite of ERP software that helps organizations manage core business processes, including finance, human resources, supply chain, and more.</li>
+        <li><strong>Data Security and Compliance</strong>: Oracle's security features, including encryption, auditing, and access controls, help organizations protect sensitive data and meet regulatory compliance standards.</li>
+        <li><strong>High Performance and Scalability</strong>: Oracle's database and cloud solutions are designed to handle high workloads, supporting large-scale operations and ensuring high availability and performance.</li>
+    </ul>
+
+    <h2>Key Oracle Products and Solutions</h2>
+    <ul>
+        <li><strong>Oracle Database</strong>: A relational database management system (RDBMS) that supports SQL queries, data warehousing, and advanced analytics. It is available in cloud, on-premise, and hybrid environments.</li>
+        <li><strong>Oracle Cloud Infrastructure (OCI)</strong>: Oracle’s cloud computing platform offers services such as compute, storage, and networking, along with tools for AI, machine learning, and database management.</li>
+        <li><strong>Oracle Fusion Applications</strong>: A suite of cloud-based applications for ERP, human capital management (HCM), supply chain management (SCM), and customer experience (CX) to streamline business processes.</li>
+        <li><strong>Oracle Autonomous Database</strong>: A self-driving, self-securing, and self-repairing database solution that automates many administrative tasks, such as tuning, backups, and patching.</li>
+        <li><strong>Oracle Java</strong>: Oracle’s development tools for building and deploying enterprise applications using the Java programming language.</li>
+    </ul>
+
+    <h2>Best Practices for Implementing Oracle Solutions</h2>
+    <ul>
+        <li><strong>Leverage Cloud Capabilities</strong>: Oracle Cloud Infrastructure (OCI) provides scalable and flexible solutions. Evaluate your business needs and migrate legacy systems to the cloud to improve performance and cost efficiency.</li>
+        <li><strong>Automate with Oracle Autonomous Database</strong>: Utilize Oracle’s autonomous database technology to automate routine tasks such as performance tuning and backups, reducing operational overhead and minimizing human error.</li>
+        <li><strong>Optimize Security Configurations</strong>: Ensure your Oracle deployments are secure by configuring encryption, setting access controls, and enabling auditing for compliance with data protection regulations.</li>
+        <li><strong>Keep Oracle Systems Updated</strong>: Regularly update Oracle software to the latest versions to benefit from new features, performance improvements, and critical security patches.</li>
+        <li><strong>Monitor Performance</strong>: Continuously monitor database and application performance to identify bottlenecks and optimize resource usage, ensuring that your Oracle environment runs smoothly and efficiently.</li>
+        <li><strong>Training and Certification</strong>: Invest in Oracle training for your IT team to maximize the value of Oracle technologies and improve implementation success.</li>
+    </ul>
+
+    <h2>Examples of Oracle Tools and Technologies</h2>
+    <ul>
+        <li><strong>Oracle SQL Developer</strong>: A free development environment for working with Oracle Databases. [More Information](https://www.oracle.com/database/technologies/appdev/sql-developer.html)</li>
+        <li><strong>Oracle Enterprise Manager</strong>: A system management tool for monitoring, managing, and optimizing Oracle environments. [More Information](https://www.oracle.com/enterprise-manager/)</li>
+        <li><strong>Oracle Cloud Infrastructure (OCI)</strong>: Provides cloud computing and storage solutions for enterprises. [More Information](https://www.oracle.com/cloud/)</li>
+        <li><strong>Oracle Java Development Kit (JDK)</strong>: A set of tools for developing and running Java applications. [More Information](https://www.oracle.com/java/technologies/javase-jdk.html)</li>
+        <li><strong>Oracle Fusion Middleware</strong>: A portfolio of software products that enables businesses to develop and run applications across cloud, mobile, and web platforms. [More Information](https://www.oracle.com/middleware/)</li>
+    </ul>
+
+    <div class="resources">
+        <h2>Additional Learning Resources</h2>
+        <ul>
+            <li><strong>Online Courses</strong>: Explore Oracle database and cloud infrastructure courses on platforms like <a href="https://www.udemy.com/" target="_blank">Udemy</a> and <a href="https://www.coursera.org/" target="_blank">Coursera</a>.</li>
+            <li><strong>Books and Guides</strong>: Read "Oracle Database 12c The Complete Reference" by Bob Bryla or "Oracle Cloud Infrastructure for Dummies" by Rohit Rahi for comprehensive knowledge.</li>
+            <li><strong>Certifications</strong>: Earn Oracle certifications such as Oracle Database Administrator (DBA) or Oracle Cloud Infrastructure Architect to validate your skills.</li>
+            <li><strong>Documentation</strong>: Visit Oracle's official documentation for detailed technical guides and best practices. [More Information](https://docs.oracle.com/en/)</li>
+            <li><strong>Oracle Community</strong>: Join Oracle communities like the Oracle Developer Community for discussions, tutorials, and support. [More Information](https://community.oracle.com/)</li>
+        </ul>
+    </div>
+
+    <h2>Summary</h2>
+    <p>Oracle offers a wide range of database, cloud, and enterprise software solutions that are essential for modern businesses. From advanced database management to cloud computing, Oracle helps organizations optimize their IT operations, improve security, and drive innovation. By leveraging Oracle products and following best practices, companies can stay competitive in a data-driven world.</p>
+
+    <div id="main1" class="main1">
+        <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+        <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+    </div>
+
+</body>
+</html>

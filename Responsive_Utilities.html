@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Bootstrap</title>
+
+</head>
+<body class="body">
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="gocomp()">
+                <i class="fas fa-code"></i> HTML/CSS Compiler
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goproject()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Bootstrap Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    
+    
+    
+      
+    
+     <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+    
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+            <i class="fab fa-bootstrap" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk">Bootstrap Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Bootstrap.html" target="_blank"><b class="b12">Bootstrap Roadmap</b></a>
+        <ul>
+            <a href="Introduction_to_Bootstrap.html" target="_blank">Bootstrap Introduction</a>
+    
+            <li><a href="Getting_Started.html" target="_blank">Getting Started</a></li>
+            <li><a href="Installation.html" target="_blank">Installation</a></li>
+            <li><a href="Bootstrap_Grid_System.html" target="_blank">Bootstrap Grid System</a></li>
+        </ul>
+    
+        <h3> Components</h3>
+        <a href="Bootstrap_Components.html" target="_blank">Bootstrap Components</a>
+        <ul>
+            <li><a href="Alerts.html" target="_blank">Alerts</a></li>
+            <li><a href="Buttons.html" target="_blank">Buttons</a></li>
+            <li><a href="Cards.html" target="_blank">Cards</a></li>
+            <li><a href="Forms.html" target="_blank">Forms</a></li>
+            <li><a href="Modals.html" target="_blank">Modals</a></li>
+            <li><a href="Navigation.html" target="_blank">Navigation</a></li>
+        </ul>
+    
+        <h3>Bootstrap Utilities</h3>
+        <a href="Bootstrap_Utilities.html" target="_blank">Bootstrap Utilities</a>
+        <ul>
+            <li><a href="Spacing.html" target="_blank">Spacing</a></li>
+            <li><a href="Colors.html" target="_blank">Colors</a></li>
+            <li><a href="Borders.html" target="_blank">Borders</a></li>
+            <li><a href="Display.html" target="_blank">Display</a></li>
+        </ul>
+    
+        <h3>Bootstrap JavaScript</h3>
+        <a href="Bootstrap_JavaScript.html" target="_blank">Bootstrap JavaScript</a>
+        <ul>
+            <li><a href="Overview.html" target="_blank">Overview</a></li>
+            <li><a href="Using_JavaScript.html" target="_blank">Using Bootstrap with JavaScript</a></li>
+            <li><a href="Customizing_Bootstrap.html" target="_blank">Customizing Bootstrap</a></li>
+        </ul>
+    
+        <h3>Responsive Design</h3>
+        <a href="Responsive_Design.html" target="_blank">Responsive Design</a>
+        <ul>
+            <li><a href="Media_Queries.html" target="_blank">Media Queries</a></li>
+            <li><a href="Responsive_Utilities.html" target="_blank">Responsive Utilities</a></li>
+        </ul>
+    
+        <h3>Bootstrap Themes</h3>
+        <a href="Bootstrap_Themes.html" target="_blank">Bootstrap Themes</a>
+        <ul>
+            <li><a href="Creating_Themes.html" target="_blank">Creating Themes</a></li>
+            <li><a href="Using_Themes.html" target="_blank">Using Themes</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Bootstrap_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "Bootstrap_quiz.html";
+}
+function goproject() {
+    window.location.href = "Bootstrap_projects.html";
+}
+function gocomp() {
+        window.location.href = "html-css_Compiler.html";
+    }
+      
+    function goPrevious() {
+        window.location.href = "Media_Queries.html";
+    }
+    function goNext() {
+        window.location.href = "Bootstrap_Themes.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fab fa-bootstrap"  style="font-size: 70px;padding-left: 16px;  color: #0df418;"></i>
+                <h2 class="jk"> Bootstrap Tutorial</h2>
+<div class="div1">Responsive Utilities</div></div>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<h2>Introduction to Responsive Utilities</h2>
+<p>Bootstrap provides a set of utility classes that can help create responsive designs easily. These utility classes can adjust spacing, display properties, and visibility based on the viewport size.</p>
+
+<h2>Responsive Display Utilities</h2>
+<p>Use display utilities to control the display property of elements based on the viewport size:</p>
+
+<div class="example">
+    <pre><code>&lt;div class="d-none d-md-block"&gt;This text is hidden on small devices and visible on medium and larger devices.&lt;/div&gt;</code></pre>
+</div>
+
+<div class="output">
+    <p>This text is hidden on small devices and visible on medium and larger devices.</p>
+</div>
+
+<h2>Responsive Spacing Utilities</h2>
+<p>Bootstrap offers spacing utilities that allow you to control margin and padding:</p>
+
+<div class="example">
+    <pre><code>&lt;div class="mt-3 mb-5"&gt;This div has a top margin of 3 and bottom margin of 5.&lt;/div&gt;</code></pre>
+</div>
+
+<div class="output">
+    <div class="mt-3 mb-5" style="background-color: lightblue; padding: 10px;">
+        This div has a top margin of 3 and bottom margin of 5.
+    </div>
+</div>
+
+<h2>Responsive Color Utilities</h2>
+<p>Color utility classes can change text or background colors:</p>
+
+<div class="example">
+    <pre><code>&lt;div class="bg-primary text-white"&gt;This div has a primary background and white text.&lt;/div&gt;</code></pre>
+</div>
+
+<div class="output">
+    <div class="bg-primary text-white" style="padding: 10px;">
+        This div has a primary background and white text.
+    </div>
+</div>
+
+<h2>Responsive Visibility Utilities</h2>
+<p>Control the visibility of elements based on screen size:</p>
+
+<div class="example">
+    <pre><code>&lt;div class="d-none d-lg-block"&gt;Visible only on large devices.&lt;/div&gt;</code></pre>
+</div>
+
+<div class="output">
+    <div class="d-none d-lg-block" style="background-color: lightcoral; padding: 10px;">
+        Visible only on large devices.
+    </div>
+</div>
+
+<h2>Resources</h2>
+<div class="resources">
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/4.5/utilities/display/" target="_blank">Bootstrap 4 Display Utilities</a></li>
+        <li><a href="https://getbootstrap.com/docs/4.5/utilities/spacing/" target="_blank">Bootstrap 4 Spacing Utilities</a></li>
+        <li><a href="https://getbootstrap.com/docs/4.5/utilities/colors/" target="_blank">Bootstrap 4 Color Utilities</a></li>
+    </ul>
+</div>
+
+<h2>Conclusion</h2>
+<p>Bootstrap's responsive utilities make it easy to create responsive designs without writing custom CSS. By using these utility classes, you can ensure that your website looks great on all devices.</p>
+
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeLearners</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+            height: 100vh;
+            margin: 0;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        .search-container {
+            margin: 20px;
+            text-align: center;
+            position: relative;
+            margin-top: 150px;
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            padding: 10px;
+            width: 300px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #6aff00;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+
+        .suggestions-container {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 400px;
+            background-color: white;
+            color: #000000;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-height: 150px;
+            max-width: 400px;
+            overflow-y: auto;
+        }
+
+        .suggestion {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        header {
+            background:#4CAF50;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: rgb(0, 255, 247);
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        section .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .grid-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .grid-item h3 {
+            margin-top: 0;
+        }
+
+        .course-button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .course-button:hover {
+            background-color: #0056b3;
+        }
+
+        .streak-score {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            color: #333;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .streak-score.increased {
+            background-color: #d4edda;
+            color: #155724;
+            transform: scale(1.1);
+        }
+
+        .streak-score.decreased {
+            background-color: #f8d7da;
+            color: #721c24;
+            transform: scale(0.9);
+        }
+
+        @keyframes streakUpdate {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .streak-score.animate {
+            animation: streakUpdate 0.6s ease-in-out;
+        }
+
+        footer {
+            background: #065c05;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        footer .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .h2 {
+            color: #f2f2f2;
+            font-size: 40px;
+        }
+
+        .b {
+            color: rgb(1, 0, 0);
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="h1"><b class="b">T</b>ree<b class="b">L</b>earners</h1>
+            <nav>
+                <ul>
+                    <li><a href="#programming-languages">Programming Languages</a></li>
+                    <li><a href="#web-technologies">Web Technologies</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#cloud-technologies">Cloud Technologies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search for a course..." oninput="showSuggestions()">
+        <button onclick="searchCourse()" class="search-button">Search</button>
+        <div id="suggestionsContainer" class="suggestions-container"></div>
+    </div>
+
+    <section id="programming-languages">
+        <div class="container">
+            <h2 class="h2">Programming Languages</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>C</h3>
+                    <p>Learn the fundamentals of C programming language.</p>
+                    <button onclick="openCourse('C', 'https://example.com/c')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-C">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>C++</h3>
+                    <p>Explore object-oriented programming with C++.</p>
+                    <button onclick="openCourse('C++', 'https://example.com/cplusplus')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-C++">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>Java</h3>
+                    <p>Master Java programming for application development.</p>
+                    <button onclick="openCourse('Java', 'https://example.com/java')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-Java">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>Python</h3>
+                    <p>Learn Python for data analysis, automation, and more.</p>
+                    <button onclick="openCourse('Python', 'https://example.com/python')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-Python">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>SQL</h3>
+                    <p>Understand database querying with SQL.</p>
+                    <button onclick="openCourse('SQL', 'https://example.com/sql')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-SQL">Streak: 0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="web-technologies">
+        <div class="container">
+            <h2 class="h2">Web Technologies</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>HTML</h3>
+                    <p>Master the structure and elements of HTML.</p>
+                    <button onclick="openCourse('HTML', 'https://example.com/html')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-HTML">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>CSS</h3>
+                    <p>Explore styling and design with CSS.</p>
+                    <button onclick="openCourse('CSS', 'https://example.com/css')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-CSS">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>JavaScript</h3>
+                    <p>Learn client-side scripting with JavaScript.</p>
+                    <button onclick="openCourse('JavaScript', 'https://example.com/javascript')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-JavaScript">Streak: 0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2 class="h2">Courses</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Prompt Engineering</h3>
+                    <p>Explore prompt engineering concepts.</p>
+                    <button onclick="openCourse('Prompt Engineering', 'https://example.com/prompt-engineering')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-Prompt Engineering">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Learn user interface and user experience design principles.</p>
+                    <button onclick="openCourse('UI/UX Design', 'https://example.com/ui-ux-design')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-UI/UX Design">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>Data Science</h3>
+                    <p>Master data analysis and machine learning techniques.</p>
+                    <button onclick="openCourse('Data Science', 'https://example.com/data-science')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-Data Science">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>AWS</h3>
+                    <p>Learn cloud computing with Amazon Web Services.</p>
+                    <button onclick="openCourse('AWS', 'https://example.com/aws')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-AWS">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>Azure</h3>
+                    <p>Explore Microsoft Azure cloud services.</p>
+                    <button onclick="openCourse('Azure', 'https://example.com/azure')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-Azure">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>Google Cloud</h3>
+                    <p>Master Google Cloud Platform for cloud infrastructure.</p>
+                    <button onclick="openCourse('Google Cloud', 'https://example.com/google-cloud')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-Google Cloud">Streak: 0</div>
+                </div>
+                <div class="grid-item">
+                    <h3>Salesforce</h3>
+                    <p>Understand Salesforce CRM and cloud solutions.</p>
+                    <button onclick="openCourse('Salesforce', 'https://example.com/salesforce')" class="course-button">Open Course</button>
+                    <div class="streak-score" id="streak-Salesforce">Streak: 0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TreeLearners. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const courses = {
+            'C': 'https://example.com/c',
+            'C++': 'https://example.com/cplusplus',
+            'Java': 'https://example.com/java',
+            'Python': 'https://example.com/python',
+            'SQL': 'https://example.com/sql',
+            'HTML': 'https://example.com/html',
+            'CSS': 'https://example.com/css',
+            'JavaScript': 'https://example.com/javascript',
+            'React': 'https://example.com/react',
+            'Vue.js': 'https://example.com/vue',
+            'Prompt Engineering': 'https://example.com/prompt-engineering',
+            'UI/UX Design': 'https://example.com/ui-ux-design',
+            'Data Science': 'https://example.com/data-science',
+            'AWS': 'https://example.com/aws',
+            'Azure': 'https://example.com/azure',
+            'Google Cloud': 'https://example.com/google-cloud',
+            'Salesforce': 'https://example.com/salesforce'
+        };
+
+        const streaks = {};
+
+        // Initialize streaks with default values
+        Object.keys(courses).forEach(course => {
+            streaks[course] = {
+                count: parseInt(localStorage.getItem(`streak-${course}`)) || 0,
+                lastInteraction: localStorage.getItem(`lastInteraction-${course}`) || Date.now()
+            };
+        });
+
+        function updateStreaks() {
+            const now = Date.now();
+            Object.keys(streaks).forEach(course => {
+                const lastInteraction = new Date(parseInt(streaks[course].lastInteraction));
+                const hoursDiff = (now - lastInteraction) / (1000 * 60 * 60);
+                if (hoursDiff > 24) {
+                    streaks[course].count = Math.max(0, streaks[course].count - 1);
+                }
+                // Save updated streak count and last interaction
+                localStorage.setItem(`streak-${course}`, streaks[course].count);
+                localStorage.setItem(`lastInteraction-${course}`, streaks[course].lastInteraction);
+                document.getElementById(`streak-${course}`).textContent = `Streak: ${streaks[course].count}`;
+            });
+        }
+
+        function openCourse(courseName, url) {
+            streaks[courseName].count++;
+            streaks[courseName].lastInteraction = Date.now();
+            localStorage.setItem(`streak-${courseName}`, streaks[courseName].count);
+            localStorage.setItem(`lastInteraction-${courseName}`, streaks[courseName].lastInteraction);
+            updateStreaks(); // Update streaks immediately after opening a course
+            window.location.href = url;
+        }
+
+        // Function to handle search functionality
+        function searchCourse() {
+            const query = document.getElementById('searchInput').value.trim();
+            const url = courses[query];
+            if (url) {
+                openCourse(query, url);
+            } else {
+                alert("Course not found. Please try again.");
+            }
+        }
+
+        // Close suggestions container if clicked outside
+        document.addEventListener('click', function(e) {
+            if (!document.querySelector('.search-container').contains(e.target)) {
+                document.getElementById('suggestionsContainer').innerHTML = '';
+            }
+        });
+
+        // Initial update of streaks and UI
+        updateStreaks();
+        Object.keys(streaks).forEach(courseName => {
+            document.getElementById(`streak-${courseName}`).textContent = `Streak: ${streaks[courseName].count}`;
+        });
+    </script>
+</body>
+</html>

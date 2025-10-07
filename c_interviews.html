@@ -1,0 +1,231 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Java Interview Questions</title>
+    <link rel="stylesheet" href="interviews.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="aws.css">
+</head>
+  
+ 
+
+<body class="body">
+
+<header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+        <button class="openbtn compbtn" onclick="gocomp()">
+            <i class="fas fa-code"></i> C Compiler
+        </button>
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+        <button class="openbtn labs" onclick="goproject()">
+       
+            <i class="fas fa-folder-open"></i> Projects
+        </button>
+        <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+            <i class="fas fa-user-tie"></i> Interview Preparation
+        </button>
+        <button class="openbtn quizbtn" onclick="goquizpro()">
+            <i class="fas fa-question-circle"></i> C Quiz
+        </button>
+    </div></div>
+</header>
+
+
+
+
+
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").classList.add("sidebar-open");
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").classList.remove("sidebar-open");
+    }
+
+
+    function toggleSubtopics(event) {
+        const stage = event.currentTarget;
+        const subtopics = stage.nextElementSibling;
+        subtopics.classList.toggle('show');
+    }
+
+   
+    function goHome() {
+window.location.href = "index.html";
+}
+function gointerviewpro() {
+window.location.href = "C_interviews.html";
+}
+function goquizpro() {
+window.location.href = "C_quiz.html";
+}
+function gocomp() {
+window.location.href = "C Compiler.html";
+}
+
+function goproject() {
+window.location.href = "C_project.html";
+}
+
+
+
+    </script>
+
+
+
+
+
+  
+   
+  
+
+<script>
+    function toggleAnswer(button) {
+        const questionItem = button.closest('.question-item');
+        const allQuestionItems = document.querySelectorAll('.question-item');
+
+        // Close all open quiz containers
+        allQuestionItems.forEach(item => {
+            if (item !== questionItem) {
+                item.classList.remove('active');
+            }
+        });
+
+        // Toggle the clicked question's quiz container
+        questionItem.classList.toggle('active');
+    }
+
+    function calculateScore(quizContainer, topicNumber) {
+        const options = quizContainer.querySelectorAll("input[type='radio']");
+        let score = 0;
+        options.forEach(option => {
+            if (option.checked && option.value === "1") {
+                score += 1;
+            }
+        });
+
+        // Display score
+        const scoreCard = quizContainer.querySelector(".score-card");
+        scoreCard.style.display = "block";
+        scoreCard.classList.add(score === 5 ? 'correct' : 'incorrect');
+        scoreCard.innerHTML = `You scored ${score} out of 5 for Topic ${topicNumber}!`;
+    }
+</script>
+ <header>
+    <div class="logo-container">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+        <div class="text">TreeLearners</div>
+      
+        
+         
+
+    </div>
+</header>
+<br><br><br>
+  
+
+
+<br><br><br>
+<div class="container">
+    <script src="script.js"></script>
+    
+    <h1> <i class="fab fa-c" style="font-size: 100px;padding-left: 16px;  color: #07fe45;"></i> Top  Interviews Questions</h1>
+    <ol class="question-list">
+
+<li class="question-item">
+    <div class="question">1. What is C?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> C is a general-purpose, procedural programming language developed in the early 1970s by Dennis Ritchie at Bell Labs. It is known for its efficiency and control over system resources, making it suitable for system programming and embedded systems.</p>
+            <p><b>Information:</b> C serves as the foundation for many modern programming languages, and its syntax has influenced languages like C++, Java, and Python.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'C is a general-purpose language developed in the 1970s, known for efficiency in system programming and as a foundation for modern languages.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">2. What are the basic data types in C?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> The basic data types in C include:</p>
+            <ul>
+                <li><code>int</code>: Represents integers.</li>
+                <li><code>float</code>: Represents floating-point numbers.</li>
+                <li><code>double</code>: Represents double-precision floating-point numbers.</li>
+                <li><code>char</code>: Represents single characters.</li>
+            </ul>
+            <p><b>Information:</b> C also provides derived types like arrays, pointers, structures, and unions.</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'Basic data types in C are int, float, double, and char, with derived types like arrays and pointers.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">3. What is a variable in C?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b> A variable in C is a named storage location in memory that holds a value, which can be changed during program execution. Each variable has a type that defines the kind of data it can store.</p>
+            <p><b>Information:</b> Variables must be declared before use, specifying their type and name (e.g., <code>int age;</code>).</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'A variable is a named memory location for storing values, declared with a type in C.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+
+<li class="question-item">
+    <div class="question">4. What is the difference between <code>int</code>, <code>float</code>, and <code>double</code>?</div>
+    <button class="view-answer-btn" onclick="toggleAnswer(this)">View Answer</button>
+    <div class="answer-container">
+        <div class="answer">
+            <p><b>Answer:</b></p>
+            <ul>
+                <li><code>int</code>: Typically represents integer values without a decimal point (e.g., 10).</li>
+                <li><code>float</code>: Represents single-precision floating-point numbers, which use less memory than doubles but can be less precise.</li>
+                <li><code>double</code>: Represents double-precision floating-point numbers, providing more precision than <code>float</code>.</li>
+            </ul>
+            <p><b>Information:</b> The sizes of these types can vary depending on the system architecture (commonly <code>int</code> is 4 bytes, <code>float</code> is 4 bytes, and <code>double</code> is 8 bytes).</p>
+        </div>
+        <textarea class="user-answer" placeholder="Type your answer here..."></textarea>
+        <button class="check-answer-btn" onclick="checkAnswer(this, 'int stores integers, float for single precision decimals, and double for double precision decimals.')">Check Answer</button>
+        <div class="feedback"></div>
+    </div>
+</li>
+

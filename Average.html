@@ -1,0 +1,485 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Aptitude</title>
+   
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+                Aptitude
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Comparing Simple and Compound Interest.html";
+    }
+    function goNext() {
+        window.location.href = "Mean, Median, and Mode.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Averages</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                  
+            <h2>Introduction to Averages</h2>
+            <p>An average is a measure that summarizes a set of values by finding a central point. It is commonly used to get an idea of the typical value within a dataset. Understanding averages helps in analyzing data, making comparisons, and drawing conclusions.</p>
+
+            <h2>What is the Mean?</h2>
+            <p>The mean is the most commonly used average, calculated by adding up all the values in a dataset and then dividing by the number of values.</p>
+
+            <div class="formula">
+                <strong>Formula to Calculate the Mean:</strong><br>
+                Mean (μ) = Sum of All Values / Number of Values
+            </div>
+
+            <p><strong>Sum of All Values:</strong> The total of all individual values in the dataset.<br>
+            <strong>Number of Values:</strong> The total count of values in the dataset.</p>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                If you have the following test scores: 85, 90, 78, and 92, to calculate the mean:
+                <br><br>
+                Mean = (85 + 90 + 78 + 92) / 4 = 345 / 4 = 86.25<br>
+                Therefore, the mean score is 86.25.
+            </div>
+
+            <h2>What is the Median?</h2>
+            <p>The median is the middle value in a dataset when the values are arranged in ascending or descending order. If there is an even number of values, the median is the average of the two middle values.</p>
+
+            <div class="formula">
+                <strong>How to Find the Median:</strong><br>
+                - Arrange the values in ascending order.<br>
+                - If the number of values is odd, the median is the middle value.<br>
+                - If the number of values is even, the median is the average of the two middle values.
+            </div>
+
+            <div class="example">
+                <strong>Example 1 (Odd Number of Values):</strong><br>
+                For the values 3, 7, 8, 5, and 12, arrange them: 3, 5, 7, 8, 12.<br>
+                The median is 7 (the middle value).<br><br>
+                <strong>Example 2 (Even Number of Values):</strong><br>
+                For the values 4, 7, 8, and 10, arrange them: 4, 7, 8, 10.<br>
+                The median is (7 + 8) / 2 = 7.5 (the average of the two middle values).
+            </div>
+
+            <h2>What is the Mode?</h2>
+            <p>The mode is the value that appears most frequently in a dataset. A dataset may have one mode, more than one mode, or no mode at all if no value repeats.</p>
+
+            <div class="formula">
+                <strong>How to Find the Mode:</strong><br>
+                - Identify the value(s) that occur most frequently in the dataset.<br>
+                - If multiple values occur with the highest frequency, all are considered modes.<br>
+                - If no value repeats, the dataset has no mode.
+            </div>
+
+            <div class="example">
+                <strong>Example:</strong><br>
+                For the values 2, 4, 4, 6, 8, 8, 8, 10, the mode is 8 (it appears most frequently).
+            </div>
+
+            <h2>When to Use Each Type of Average</h2>
+            <ul>
+                <li><strong>Mean:</strong> Best used for datasets with no extreme values or outliers. Provides a general measure of central tendency.</li>
+                <li><strong>Median:</strong> Useful for datasets with outliers or skewed distributions. It gives a better measure of the central point when data is not symmetrically distributed.</li>
+                <li><strong>Mode:</strong> Helpful for categorical data or to identify the most common value in a dataset.</li>
+            </ul>
+
+            <h2>Real-Life Example</h2>
+            <p>Consider a teacher evaluating student performance:</p>
+
+            <div class="example">
+                <strong>Scenario:</strong><br>
+                A teacher wants to understand the performance of students in a recent exam. The scores are 55, 67, 75, 75, 80, and 85.<br>
+                - The mean score is (55 + 67 + 75 + 75 + 80 + 85) / 6 = 72.83<br>
+                - The median score is (75 + 75) / 2 = 75<br>
+                - The mode is 75 (it appears most frequently)<br>
+                These measures help the teacher assess the overall performance and identify any trends or outliers.
+            </div>
+
+            <h2>Practice Tests</h2>
+            <div class="resources">
+                <p>Test your understanding of averages with these free practice resources:</p>
+                <ul>
+                    
+                    <li><a href="https://www.ixl.com/math/algebra-1/mean-median-mode" target="_blank">IXL: Mean, Median, and Mode Practice</a></li>
+                    <li><a href="https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data" target="_blank">Khan Academy: Mean, Median, and Mode Tutorial</a></li>
+                    <li><a href="https://www.cuemath.com/learn/math-mean-median-mode/" target="_blank">Cuemath: Mean, Median, and Mode Practice</a></li>
+                </ul>
+            </div>
+
+            <h2>Summary</h2>
+            <p>Averages are essential for summarizing data and understanding central tendencies. The mean gives an overall measure, the median represents the middle value, and the mode identifies the most frequent value. Each type of average provides different insights and is useful in various contexts for data analysis and decision-making.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+                    </div>
+    </div>
+</body>
+</html>

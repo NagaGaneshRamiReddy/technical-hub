@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lab: How to Add CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #20232a;
+            color: #61dafb;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background: #61dafb;
+            color: #20232a;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            height: 50px; 
+            top: 0; 
+            left: 0; 
+            z-index: 1000; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .container {
+            width: 90%; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 34px;
+            color: white;
+            flex-grow: 1; 
+        }
+
+        nav {
+            margin-left: auto; 
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 20px; 
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .output1 {
+            background-color: white;
+        }
+
+        .task-details, .editor-section {
+            background: #f6f6f6;
+            padding: 20px;
+            gap: 20px;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            color: #003366;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 48%;
+            transition: background-color 0.3s;
+        }
+
+        .dark-mode .task-details, .dark-mode .editor-section {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .task-details {
+            margin-right: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            font-family: monospace;
+            font-size: 16px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .submit-btn {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .marks-display {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e0ffe0;
+            border: 1px solid green;
+            display: none;
+        }
+
+        .hp {
+            color: lightblue;
+        }
+
+        .hr {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-paint-brush"></i> CSS Lab
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <h1 class="hp">Web Development Lab: Task - How to Add CSS</h1>
+
+    <div class="container">
+        <!-- Task: How to Add CSS -->
+        <div class="task-details">
+            <h2>Task: Add CSS in Three Different Ways (30 Marks)</h2>
+            <hr class="hr">
+            <p>In this task, you need to demonstrate the three ways to add CSS to a webpage:</p>
+            <ul>
+                <li>Using **inline styles**</li>
+                <li>Using **internal styles** (within a &lt;style&gt; block in the &lt;head&gt;)</li>
+                <li>Using **external styles** (linking to an external stylesheet)</li>
+            </ul>
+
+            <h3>Instructions</h3>
+            <p>Create an HTML document that demonstrates all three ways to add CSS. Your document should include the following:</p>
+            <ul>
+                <li>An inline style applied to a single element.</li>
+                <li>Internal styles that style multiple elements on the page.</li>
+                <li>An external stylesheet (create a separate file, and ensure the page links to it).</li>
+            </ul>
+            
+            <h3>Example Output</h3>
+            <p>Your page should look like this:</p>
+
+            <div style="background-color: #20232a; padding: 20px;">
+                <h2 style="color: lightgreen;">This is an inline styled heading</h2>
+                <p>This paragraph is styled using internal CSS.</p>
+                <button>This button is styled via an external CSS file.</button>
+            </div>
+        </div>
+
+        <!-- Editor and Controls -->
+        <div class="editor-section">
+            <h2>HTML & CSS Code Editor</h2>
+            <textarea id="htmlCode" placeholder="Write your HTML and CSS code here..."></textarea>
+            <button class="submit-btn" onclick="runCode()">Run Code</button>
+            <iframe class="output1" id="output"></iframe>
+            <button class="submit-btn" onclick="checkTask()">Submit Task</button>
+            <div class="marks-display" id="taskMarks"></div>
+        </div>
+    </div>
+
+    <script>
+        // Function to display the user's HTML and CSS in the iframe
+        function runCode() {
+            const code = document.getElementById("htmlCode").value;
+            const iframe = document.getElementById("output");
+            iframe.srcdoc = code;
+        }
+
+        // Function to check Task: How to Add CSS
+        function checkTask() {
+            const code = document.getElementById("htmlCode").value;
+            let taskMarks = 0;
+
+            // Check for inline styles
+            if (code.includes('style="')) {
+                taskMarks += 10;
+            }
+
+            // Check for internal styles within a <style> tag
+            if (code.includes('<style>') && code.includes('</style>')) {
+                taskMarks += 10;
+            }
+
+            // Check for external stylesheet linking
+            if (code.includes('<link rel="stylesheet"')) {
+                taskMarks += 10;
+            }
+
+            // Display the result
+            const taskDisplay = document.getElementById("taskMarks");
+            taskDisplay.innerHTML = `Task Marks: ${taskMarks} / 30`;
+            taskDisplay.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

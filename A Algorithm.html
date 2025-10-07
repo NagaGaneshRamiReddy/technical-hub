@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Data Structures and Algorithms (DSA)</title>
+    
+   
+   
+</head>
+<body class="body">
+   
+    
+    
+    
+       
+     
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+    
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
+            <button class="openbtn homebtn" onclick="goHome()">
+                &#8962; Home
+            </button>
+            <button class="openbtn compbtn" onclick="goproblem()">
+                <i class="fas fa-code"></i> DSA problem-solving
+            </button>
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+           
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> DSA Quiz
+            </button>
+        </div></div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    <br><br><br>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+            <i class="fas fa-project-diagram" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk"> DSA Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        
+        
+        
+    
+        <a href="dsaRoadmaps.html" target="_blank"><b class="b12">DSA Roadmap</b></a>
+        <ul>
+            <a href="Introduction to DSA.html">Introduction to DSA</a>
+            <li><a href="Why Study DSA.html">Why Study DSA?</a></li>
+            <li><a href="Mathematical Foundations DSA.html">Mathematical Foundations</a></li>
+            <li><a href="Complexity Analysis.html">Complexity Analysis</a></li>
+        </ul>
+    
+        <h3>Basic Data Structures</h3>
+        <a href="Basic Data Structures.html">Basic Data Structures</a>
+        <ul>
+            <li><a href="Arrays DSA.html">Arrays</a></li>
+            <li>
+                <a href="Linked Lists DSA.html">Linked Lists</a>
+                <ul>
+                    <li><a href="Singly Linked List DSA.html">Singly Linked List</a></li>
+                    <li><a href="Doubly Linked List DSA.html">Doubly Linked List</a></li>
+                    <li><a href="Circular Linked List.html">Circular Linked List</a></li>
+                </ul>
+            </li>
+            <li><a href="Stacks DSA.html">Stacks</a></li>
+            <li>
+                <a href="Queues.html">Queues</a>
+                <ul>
+                    <li><a href="Simple Queue.html">Simple Queue</a></li>
+                    <li><a href="Circular Queue.html">Circular Queue</a></li>
+                    <li><a href="Priority Queue.html">Priority Queue</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Data Structures</h3>
+        <a href="Advanced Data Structures.html">Advanced Data Structures</a>
+        <ul>
+            <li>
+                <a href="Trees.html">Trees</a>
+                <ul>
+                    <li><a href="Binary Trees.html">Binary Trees</a></li>
+                    <li><a href="Binary Search Trees.html">Binary Search Trees</a></li>
+                    <li><a href="AVL Trees.html">AVL Trees</a></li>
+                    <li><a href="Red-Black Trees.html">Red-Black Trees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Heaps.html">Heaps</a>
+                <ul>
+                    <li><a href="Min Heap.html">Min Heap</a></li>
+                    <li><a href="Max Heap.html">Max Heap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Graphs.html">Graphs</a>
+                <ul>
+                    <li><a href="Graph Representation.html">Graph Representation</a></li>
+                    <li>
+                        <a href="Graph Traversal.html">Graph Traversal</a>
+                        <ul>
+                            <li><a href="Depth-First Search (DFS).html">Depth-First Search (DFS)</a></li>
+                            <li><a href="Breadth-First Search (BFS).html">Breadth-First Search (BFS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Shortest Path Algorithms.html">Shortest Path Algorithms</a>
+                        <ul>
+                            <li><a href="Dijkstra's Algorithm.html">Dijkstra's Algorithm</a></li>
+                            <li><a href="Floyd-Warshall Algorithm.html">Floyd-Warshall Algorithm</a></li>
+                            <li><a href="Bellman-Ford Algorithm.html">Bellman-Ford Algorithm</a></li>
+                            <li><a href="A Algorithm.html">A* Algorithm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Hash Tables.html">Hash Tables</a></li>
+        </ul>
+    
+        <h3>Basic Algorithms</h3>
+        <a href="Basic Algorithms.html">Basic Algorithms</a>
+        <ul>
+            <li>
+                <a href="Sorting Algorithms.html">Sorting Algorithms</a>
+                <ul>
+                    <li><a href="Bubble Sort.html">Bubble Sort</a></li>
+                    <li><a href="Selection Sort.html">Selection Sort</a></li>
+                    <li><a href="Insertion Sort.html">Insertion Sort</a></li>
+                    <li><a href="Merge Sort.html">Merge Sort</a></li>
+                    <li><a href="Quick Sort.html">Quick Sort</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Searching Algorithms.html">Searching Algorithms</a>
+                <ul>
+                    <li><a href="Linear Search.html">Linear Search</a></li>
+                    <li><a href="Binary Search.html">Binary Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Advanced Algorithms</h3>
+        <a href="Advanced Algorithms.html">Advanced Algorithms</a>
+        <ul>
+            <li>
+                <a href="Dynamic Programming.html">Dynamic Programming</a>
+                <ul>
+                    <li><a href="Knapsack Problem.html">Knapsack Problem</a></li>
+                    <li><a href="Longest Common Subsequence.html">Longest Common Subsequence</a></li>
+                    <li><a href="Matrix Chain Multiplication.html">Matrix Chain Multiplication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Greedy Algorithms.html">Greedy Algorithms</a>
+                <ul>
+                    <li><a href="Activity Selection.html">Activity Selection</a></li>
+                    <li><a href="Huffman Coding.html">Huffman Coding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Backtracking.html">Backtracking</a>
+                <ul>
+                    <li><a href="N-Queens Problem.html">N-Queens Problem</a></li>
+                    <li><a href="Sudoku Solver.html">Sudoku Solver</a></li>
+                    <li><a href="Graph Coloring.html">Graph Coloring</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+        
+    
+    
+
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+function gointerviewpro() {
+    window.location.href = "DSA_interviews.html";
+}
+function goquizpro() {
+    window.location.href = "DSA_quiz.html";
+}
+function goprojects() {
+    window.location.href = "DSA_projects.html";
+}
+function goproblem() {
+    window.location.href = "DSA_problems.html";
+}
+
+    function goPrevious() {
+        window.location.href = "Bellman-Ford Algorithm.html";
+    }
+    function goNext() {
+        window.location.href = "Hash Tables.html";
+    }
+    
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="top-box1">
+                <i class="fas fa-project-diagram" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                <h2 class="jk">DSA Tutorial</h2>
+            
+<div class="div1"> A* Algorithm </div></div>
+<div id="main1" class="main1">
+    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+</div>
+        <h2>Introduction</h2>
+        <p>The A* Algorithm is a popular and versatile pathfinding algorithm used in computer science and artificial intelligence. It finds the shortest path from a start node to a target node while efficiently navigating through a graph. A* is widely used in applications such as GPS navigation, robotics, and game development due to its optimal performance and flexibility.</p>
+
+        <h2>How It Works</h2>
+        <p>A* combines the advantages of Dijkstra's Algorithm and Greedy Best-First Search. It uses a heuristic function to estimate the cost from the current node to the goal, thus guiding the search towards the most promising paths. The algorithm maintains a priority queue of nodes to explore based on their total estimated cost, which is the sum of the path cost from the start node and the heuristic cost to the goal node.</p>
+        <ol>
+            <li><strong>Initialize:</strong> Create a priority queue and add the start node with a cost of 0. Initialize the cost and heuristic values for all nodes.</li>
+            <li><strong>Explore Nodes:</strong> Extract the node with the lowest estimated cost from the priority queue. If this node is the goal, reconstruct the path and terminate.</li>
+            <li><strong>Update Costs:</strong> For each neighboring node, calculate the new cost and update the priority queue if the new cost is lower than the previously recorded cost.</li>
+            <li><strong>Repeat:</strong> Continue exploring nodes until the goal node is reached or the priority queue is empty.</li>
+        </ol>
+
+        <h2>Implementation in C++</h2>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;queue&gt;
+#include &lt;cmath&gt;
+
+struct Node {
+    int x, y;
+    int cost;
+    int heuristic;
+    int totalCost;
+    Node* parent;
+};
+
+bool operator>(const Node& a, const Node& b) {
+    return a.totalCost &gt; b.totalCost;
+}
+
+int heuristic(int x1, int y1, int x2, int y2) {
+    return std::abs(x1 - x2) + std::abs(y1 - y2); // Manhattan distance
+}
+
+void aStarAlgorithm(std::vector<std::vector<int>>& grid, Node* start, Node* goal) {
+    int rows = grid.size();
+    int cols = grid[0].size();
+    std::priority_queue<Node, std::vector<Node>, std::greater<Node>> openSet;
+    openSet.push(*start);
+
+    std::vector<std::vector<bool>> closedSet(rows, std::vector<bool>(cols, false));
+
+    while (!openSet.empty()) {
+        Node current = openSet.top();
+        openSet.pop();
+
+        if (current.x == goal->x && current.y == goal->y) {
+            // Goal reached, reconstruct path
+            std::cout &lt;&lt; "Path found!\n";
+            return;
+        }
+
+        closedSet[current.x][current.y] = true;
+
+        // Explore neighbors (simplified for demonstration)
+        std::vector<Node> neighbors = {/* Generate neighbors based on the grid */};
+
+        for (Node& neighbor : neighbors) {
+            if (closedSet[neighbor.x][neighbor.y]) continue;
+            neighbor.cost = current.cost + 1; // Assume cost of 1 per step
+            neighbor.heuristic = heuristic(neighbor.x, neighbor.y, goal->x, goal->y);
+            neighbor.totalCost = neighbor.cost + neighbor.heuristic;
+            neighbor.parent = &current;
+            openSet.push(neighbor);
+        }
+    }
+
+    std::cout &lt;&lt; "No path found.\n";
+}
+
+int main() {
+    // Example grid and nodes
+    std::vector<std::vector<int>> grid(10, std::vector<int>(10, 0));
+    Node start = {0, 0, 0, 0, 0, nullptr};
+    Node goal = {9, 9, 0, 0, 0, nullptr};
+    aStarAlgorithm(grid, &start, &goal);
+    return 0;
+}
+</code>
+        </pre>
+
+        <h2>Implementation in Python</h2>
+        <pre>
+<code>
+import heapq
+
+class Node:
+    def __init__(self, x, y, cost, heuristic, parent=None):
+        self.x = x
+        self.y = y
+        self.cost = cost
+        self.heuristic = heuristic
+        self.total_cost = cost + heuristic
+        self.parent = parent
+
+    def __lt__(self, other):
+        return self.total_cost &lt; other.total_cost
+
+def heuristic(x1, y1, x2, y2):
+    return abs(x1 - x2) + abs(y1 - y2)  # Manhattan distance
+
+def a_star_algorithm(grid, start, goal):
+    rows, cols = len(grid), len(grid[0])
+    open_set = []
+    heapq.heappush(open_set, start)
+    closed_set = set()
+
+    while open_set:
+        current = heapq.heappop(open_set)
+
+        if (current.x, current.y) == (goal.x, goal.y):
+            print("Path found!")
+            return
+
+        closed_set.add((current.x, current.y))
+
+        # Explore neighbors (simplified for demonstration)
+        neighbors = []  # Generate neighbors based on the grid
+
+        for neighbor in neighbors:
+            if (neighbor.x, neighbor.y) in closed_set:
+                continue
+            neighbor.cost = current.cost + 1  # Assume cost of 1 per step
+            neighbor.heuristic = heuristic(neighbor.x, neighbor.y, goal.x, goal.y)
+            neighbor.total_cost = neighbor.cost + neighbor.heuristic
+            neighbor.parent = current
+            heapq.heappush(open_set, neighbor)
+
+    print("No path found.")
+
+# Example usage
+grid = [[0]*10 for _ in range(10)]
+start = Node(0, 0, 0, heuristic(0, 0, 9, 9))
+goal = Node(9, 9, 0, 0)
+a_star_algorithm(grid, start, goal)
+</code>
+        </pre>
+
+        <h2>Implementation in Java</h2>
+        <pre>
+<code>
+import java.util.*;
+
+class Node {
+    int x, y, cost, heuristic, totalCost;
+    Node parent;
+
+    Node(int x, int y, int cost, int heuristic, Node parent) {
+        this.x = x;
+        this.y = y;
+        this.cost = cost;
+        this.heuristic = heuristic;
+        this.totalCost = cost + heuristic;
+        this.parent = parent;
+    }
+}
+
+class AStarAlgorithm {
+    private static final int INF = Integer.MAX_VALUE;
+
+    private static int heuristic(int x1, int y1, int x2, int y2) {
+        return Math.abs(x1 - x2) + Math.abs(y1 - y2); // Manhattan distance
+    }
+
+    public static void aStarAlgorithm(int[][] grid, Node start, Node goal) {
+        int rows = grid.length;
+        int cols = grid[0].length;
+        PriorityQueue<Node> openSet = new PriorityQueue<>(Comparator.comparingInt(n -> n.totalCost));
+        openSet.add(start);
+
+        boolean[][] closedSet = new boolean[rows][cols];
+
+        while (!openSet.isEmpty()) {
+            Node current = openSet.poll();
+
+            if (current.x == goal.x && current.y == goal.y) {
+                System.out.println("Path found!");
+                return;
+            }
+
+            closedSet[current.x][current.y] = true;
+
+            // Explore neighbors (simplified for demonstration)
+            List<Node> neighbors = new ArrayList<>(); // Generate neighbors based on the grid
+
+            for (Node neighbor : neighbors) {
+                if (closedSet[neighbor.x][neighbor.y]) continue;
+                neighbor.cost = current.cost + 1; // Assume cost of 1 per step
+                neighbor.heuristic = heuristic(neighbor.x, neighbor.y, goal.x, goal.y);
+                neighbor.totalCost = neighbor.cost + neighbor.heuristic;
+                neighbor.parent = current;
+                openSet.add(neighbor);
+            }
+        }
+
+        System.out.println("No path found.");
+    }
+
+    public static void main(String[] args) {
+        int[][] grid = new int[10][10];
+        Node start = new Node(0, 0, 0, heuristic(0, 0, 9, 9), null);
+        Node goal = new Node(9, 9, 0, 0, null);
+        aStarAlgorithm(grid, start, goal);
+    }
+}
+</code>
+        </pre>
+
+       
+        
+
+        <h2>Summary</h2>
+        <p>The A* Algorithm is a powerful pathfinding and graph traversal technique that combines the benefits of Dijkstra's Algorithm and Greedy Best-First Search. By using a heuristic function to estimate the cost to the goal, A* efficiently finds the shortest path in many practical scenarios. Its applications span from navigation systems to game development and AI, making it a valuable tool for solving complex pathfinding problems. Mastering A* can greatly enhance one's ability to tackle real-world challenges involving spatial and network-based problems.</p>
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>   </div>
+</body>
+</html>

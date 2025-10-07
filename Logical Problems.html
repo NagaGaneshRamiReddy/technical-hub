@@ -1,0 +1,413 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <title>Logical Reasoning</title>
+    
+    <style>
+       
+       
+        .sidebar {
+            height: 100%;
+            width: 250px; 
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #002a0e;
+            overflow-x: hidden;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000; 
+        }
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: rgb(7, 255, 247);
+            color: rgb(0, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #f1f1f1;
+            
+            cursor: pointer;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:rgb(0, 177, 212);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .openbtn:hover {
+            background-color: #0056b3;
+        }
+        .main {
+            transition: margin-left 0.3s ease;
+            padding: 16px;
+        }
+        
+        .main.sidebar-open {
+            margin-left: 250px; 
+        }
+
+    
+        .navigation-buttons {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .navbtn {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .homebtn {
+            background-color: #28a745; 
+        }
+
+        .homebtn:hover {
+            background-color: #218838; 
+        }
+
+        .prevbtn {
+            background-color: #ffc107; 
+        }
+
+        .prevbtn:hover {
+            background-color: #e0a800; 
+        }
+
+        .compbtn {
+            background-color: #dc3545;
+        }
+
+        .compbtn:hover {
+            background-color: #c82333; 
+        }
+        .videobtn{
+            background-color: #ffc107; 
+        }
+        .videobtn:hover {
+            background-color: #e0a800; 
+        }
+
+    
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .subtopics {
+            display: none;
+            padding-left: 20px;
+        }
+        .subtopics.show {
+            display: block;
+        }
+        
+header {
+    background:#4CAF50;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.h3{
+    color: #095d01;
+    font-size: 25px;
+}
+
+header {
+            background: #065c05;
+            color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .h1{
+            font-size: 50px;
+        }
+
+    .main1 {
+        position: relative;
+        padding: 10px;
+        height: 50px; 
+        
+    }
+    
+    .prevbtn1, .nextbtn1 {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#826bec;
+        border: 1px black;
+        cursor: pointer;
+        position: absolute; 
+    }
+    
+    .prevbtn1 {
+        left: 0;  
+    }
+    
+    .nextbtn1 {
+        right: 0; 
+    }
+    
+        </style>
+    
+</head>
+<body class="body">
+   
+    <header>
+        <div class="container">
+            <h1 class="h1">
+                <i class="fas fa-tree"></i>
+            Logical Reasoning
+            </h1>
+            <nav>
+            <ul>
+                    <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+        
+        
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <h3> Verbal</h3>
+        <a href="Number Series.html">Number Series</a>
+        <a href="Letter Series.html">Letter Series</a>
+        <a href="Analogies.html">Analogies</a>
+        <a href="Cause & Effect.html">Cause & Effect</a>
+        <a href="Verbal Classification.html">Verbal Classification</a>
+        <a href="Blood Relations.html">Blood Relations</a>
+        <a href="Logical Sequence of Words.html">Logical Sequence of Words</a>
+        <a href="Direction Sense Test.html">Direction Sense Test</a>
+        <a href="Logical Venn Diagram.html">Logical Venn Diagram</a>
+        <a href="Verification of the Truth of the Statement.html">Verification of the Truth of the Statement</a>
+        <a href="Data Sufficiency.html">Data Sufficiency</a>
+        <a href="Coding Decoding.html">Coding Decoding</a>
+        <a href="Assertion and Reason.html">Assertion and Reason</a>
+        <a href="Essential Part.html">Essential Part</a>
+        <a href="Analyzing Arguments.html">Analyzing Arguments</a>
+        <a href="Logical Problems.html">Logical Problems</a>
+        <a href="Course of Action.html">Course of Action</a>
+        <a href="Matching Definition.html">Matching Definition</a>
+        <a href="Syllogism.html">Syllogism</a>
+        <a href="Statement and Assumptions.html">Statement and Assumptions</a>
+
+        <h3> Non-verbal</h3>
+        <a href="Image Series.html">Image Series</a>
+        <a href="Construction of Shapes.html">Construction of Shapes</a>
+        <a href="Classification.html">Classification</a>
+        <a href="Picture Analogies.html">Picture Analogies</a>
+        <a href="Rule Detection.html">Rule Detection</a>
+    </div>
+    
+    <div id="main" class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn homebtn" onclick="goHome()">
+            &#8962; Home
+        </button>
+       
+        
+        <button class="openbtn videobtn" onclick="govideo()">
+            <i class="fas fa-video"></i> Video
+        </button>
+    </div>
+    <hr class="hr1">
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+    function goPrevious() {
+        window.location.href = "Analyzing Arguments.html";
+    }
+    function goNext() {
+        window.location.href = "Course of Action.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content">
+            <div class="div1">Logical Problems</div>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div>
+            <h2>Understanding Logical Problems</h2>
+            <p><strong>Logical Problems</strong> are puzzles or questions that require reasoning and critical thinking to solve. They often involve deducing conclusions from given premises or conditions, and are designed to test your ability to think logically and systematically.</p>
+
+            <h3>Key Concepts in Logical Problems</h3>
+
+            <h4>1. Deductive Reasoning</h4>
+            <p><strong>Deductive reasoning</strong> involves drawing a specific conclusion based on general premises or statements. It is a form of reasoning where the conclusion logically follows from the premises.</p>
+
+            <h4>2. Inductive Reasoning</h4>
+            <p><strong>Inductive reasoning</strong> involves drawing a general conclusion based on specific observations or examples. It is used to infer general principles from particular instances.</p>
+
+            <h4>3. Logical Operators</h4>
+            <p><strong>Logical operators</strong> are symbols or words used to connect statements or propositions in logical reasoning. Common operators include AND, OR, NOT, and IF-THEN.</p>
+
+            <h4>4. Problem Solving Techniques</h4>
+            <p>Common techniques for solving logical problems include:</p>
+            <ul>
+                <li><strong>Diagramming:</strong> Visualizing the problem using diagrams or charts to understand relationships and constraints.</li>
+                <li><strong>Pattern Recognition:</strong> Identifying patterns or regularities in the given information to predict solutions.</li>
+                <li><strong>Elimination:</strong> Systematically eliminating impossible or unlikely options to narrow down potential solutions.</li>
+                <li><strong>Logical Sequencing:</strong> Arranging information or steps in a logical sequence to reach a solution.</li>
+            </ul>
+
+            <h3>Practice Example</h3>
+            <div class="example">
+                <strong>Example:</strong><br>
+                <p><strong>Problem:</strong> Three friends, A, B, and C, are standing in a line. A is in front of B, and B is in front of C. Who is at the back of the line?</p>
+                <p><strong>Solution:</strong> Since A is in front of B and B is in front of C, it follows that C is at the back of the line.</p>
+            </div>
+
+            <h3>Common Types of Logical Problems</h3>
+
+            <h4>1. Puzzles</h4>
+            <p><strong>Puzzles</strong> are problems that require creative thinking to solve. They often involve lateral thinking and unconventional approaches.</p>
+
+            <h4>2. Sequence Problems</h4>
+            <p><strong>Sequence problems</strong> involve identifying patterns in a sequence of numbers, letters, or shapes and predicting the next item in the sequence.</p>
+
+            <h4>3. Logical Deduction Problems</h4>
+            <p><strong>Logical deduction problems</strong> require drawing conclusions from a set of premises or conditions. They often involve determining the truth value of statements or solving for unknowns.</p>
+
+            <h4>4. Riddles</h4>
+            <p><strong>Riddles</strong> are questions or statements that require ingenuity and insight to solve. They often play with language and logic.</p>
+
+            <h3>Practice Resources</h3>
+            <div class="resources">
+                <p>Enhance your skills in solving logical problems with these practice resources:</p>
+                <ul>
+                    <li><a href="https://www.brainbashers.com/" target="_blank">Brain Bashers: Logic Puzzles</a></li>
+                    <li><a href="https://www.riddles.com/" target="_blank">Riddles.com: Riddles and Brain Teasers</a></li>
+                    <li><a href="https://www.indiabix.com/logical-reasoning/" target="_blank">IndiaBix: Logical Reasoning</a></li>
+                </ul>
+            </div>
+
+            <h3>Summary</h3>
+            <p>Logical problems test your ability to reason and think critically. By understanding key concepts such as deductive and inductive reasoning, logical operators, and problem-solving techniques, you can improve your ability to tackle a variety of logical challenges. Regular practice will enhance your skills and help you solve problems more effectively.</p>
+            <div id="main1" class="main1">
+                <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+            </div> </div>
+    </div>
+</body>
+</html>

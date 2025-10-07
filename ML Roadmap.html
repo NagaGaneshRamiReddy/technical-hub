@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Course Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #023554;
+            overflow-y: auto;
+            background: linear-gradient(45deg, #023554, #004f79, #023554, #004f79);
+            background-size: 400% 400%;
+            animation: waterFlow 10s ease infinite;
+        }
+
+        @keyframes waterFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        header {
+            width: 100%;
+            background-color:green;
+            color: white;
+           
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+       
+        
+
+        .roadmap-container {
+            text-align: center;
+            margin-top: 60px; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .tree {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+        }
+
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 2px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 2px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 2px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+
+        .tree ul ul::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 2px solid #ccc;
+            width: 0;
+            height: 20px;
+        }
+
+        .stage {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.5s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .stage.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .h1 {
+            color: white;
+            font-size: 40px;
+            margin-left: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.10s ease, transform 0.3s ease; 
+        }
+
+        a:hover {
+            color: #000000; 
+            transform: scale(1.1);
+        }
+        .ai{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="container">
+
+            <h1 class="">
+             <a class="ai" href="index.html">   <i class="fas fa-tree"></i>
+                TreeLearners
+            </a></h1>
+        </div>
+    </header><br><br>
+    <div class="roadmap-container">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+    <h1 class="h1">Machine Learning <i class="fas fa-robot"></i></h1>
+    <div class="tree">
+        <ul>
+            <li>
+                <div class="stage"><a href="ML Introduction.html" target="_blank">Introduction to Machine Learning</a></div>
+                <ul>
+                    <li>
+                        <div class="stage"><a href="Supervised Learning.html" target="_blank">Supervised Learning</a></div>
+                        <ul>
+                            <li>
+                                <div class="stage"><a href="Linear Regression.html" target="_blank">Linear Regression</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Logistic Regression.html" target="_blank">Logistic Regression</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Decision Trees.html" target="_blank">Decision Trees</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="SVM.html" target="_blank">Support Vector Machines (SVM)</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage"><a href="Unsupervised Learning.html" target="_blank">Unsupervised Learning</a></div>
+                        <ul>
+                            <li>
+                                <div class="stage"><a href="Clustering.html" target="_blank">Clustering (K-Means, Hierarchical)</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Dimensionality Reduction.html" target="_blank">Dimensionality Reduction</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage"><a href="Neural Networks.html" target="_blank">Neural Networks & Deep Learning</a></div>
+                        <ul>
+                            <li>
+                                <div class="stage"><a href="Feedforward Neural Network.html" target="_blank">Feedforward Networks</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Convolutional Neural Network.html" target="_blank">Convolutional Neural Networks (CNN)</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Recurrent Neural Network.html" target="_blank">Recurrent Neural Networks (RNN)</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage"><a href="Ensemble Learning.html" target="_blank">Ensemble Learning</a></div>
+                        <ul>
+                            <li>
+                                <div class="stage"><a href="Random Forest.html" target="_blank">Random Forest</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Gradient Boosting.html" target="_blank">Gradient Boosting (XGBoost, AdaBoost)</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage"><a href="Reinforcement Learning.html" target="_blank">Reinforcement Learning</a></div>
+                        <ul>
+                            <li>
+                                <div class="stage"><a href="Markov Decision Process.html" target="_blank">Markov Decision Processes</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Q-Learning.html" target="_blank">Q-Learning</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage"><a href="Natural Language Processing.html" target="_blank">Natural Language Processing (NLP)</a></div>
+                        <ul>
+                            <li>
+                                <div class="stage"><a href="Text Processing.html" target="_blank">Text Preprocessing</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Sentiment Analysis.html" target="_blank">Sentiment Analysis</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Word Embeddings.html" target="_blank">Word Embeddings (Word2Vec, GloVe)</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage"><a href="Model Evaluation.html" target="_blank">Model Evaluation & Optimization</a></div>
+                        <ul>
+                            <li>
+                                <div class="stage"><a href="Cross Validation.html" target="_blank">Cross Validation</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Hyperparameter Tuning.html" target="_blank">Hyperparameter Tuning (Grid Search, Random Search)</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Model Selection.html" target="_blank">Model Selection (AIC, BIC)</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="stage"><a href="ML Tools & Libraries.html" target="_blank">ML Tools & Libraries</a></div>
+                        <ul>
+                            <li>
+                                <div class="stage"><a href="TensorFlow.html" target="_blank">TensorFlow</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="PyTorch.html" target="_blank">PyTorch</a></div>
+                            </li>
+                            <li>
+                                <div class="stage"><a href="Scikit-learn.html" target="_blank">Scikit-learn</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const stages = document.querySelectorAll('.stage');
+            let delay = 0;
+
+            stages.forEach((stage, index) => {
+                setTimeout(() => {
+                    stage.classList.add('visible');
+                }, delay);
+                delay += 300;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

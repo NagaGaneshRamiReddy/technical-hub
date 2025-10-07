@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Aptitude</title>
+   
+   
+    <header>
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <button class="openbtn homebtn" onclick="goHome()">&#8962; Home</button>
+            
+            <button class="openbtn videobtn" onclick="govideo()">
+                <i class="fas fa-video"></i> Video
+            </button>
+            
+            <button class="openbtn compbtn" onclick="golabs()">
+                <i class="fas fa-flask"></i> 
+            </button>
+            <button class="openbtn labs" onclick="goprojects()">
+               
+                <i class="fas fa-folder-open"></i> Projects
+            </button>
+            
+            
+            </button>
+            <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                <i class="fas fa-user-tie"></i> Interview Preparation
+            </button>
+            <button class="openbtn quizbtn" onclick="goquizpro()">
+                <i class="fas fa-question-circle"></i> Aptitude Quiz
+            </button>
+        </div>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo-container">
+            <div class="tree">
+                <div class="trunk"></div>
+                <div class="leaves"></div>
+            </div>
+            <div class="text">TreeLearners</div>
+          
+            
+             
+
+        </div>
+    </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <!-- Top Box with Icon and Title -->
+        <div class="top-box">
+           
+           
+            <i class="fas fa-calculator"  style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+            <h2 class="jk" style="font-size: 23.5px;">Aptitude Tutorial</h2>
+        </div>
+    
+        <!-- Close button and sidebar content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <h3>Mathematics</h3>
+        <a href="profit and losses.html">Profit and Loss</a>
+        <a href="Percentage Profit and Loss.html">Percentage Profit and Loss</a>
+        <a href="Discounts and Marked Price.html">Discounts and Marked Price</a>
+        <a href="percentage.html">Percentage</a>
+        <a href="Percentage Increase and Decrease.html">Percentage Increase and Decrease</a>
+        <a href="Percentage Problems.html">Percentage Problems</a>
+
+        <h3>Interest</h3>
+        <a href="Simple and Compound Interest.html">Simple & Compound Interest</a>
+        <a href="Simple Interest.html">Simple Interest</a>
+        <a href="Compound Interest aptitude.html">Compound Interest</a>
+        <a href="Comparing Simple and Compound Interest.html">Comparing Simple and Compound Interest</a>
+
+        <h3>Average</h3>
+        <a href="Average.html">Average</a>
+        <a href="Mean, Median, and Mode.html">Mean, Median, and Mode</a>
+        <a href="Weighted Average.html">Weighted Average</a>
+
+        <h3>Speed & Distance</h3>
+        <a href="Time,Speed & Distance.html">Time, Speed & Distance</a>
+        <a href="Speed and Velocity.html">Speed and Velocity</a>
+        <a href="Time and Distance Problems.html">Time and Distance Problems</a>
+        <a href="Relative Speed.html">Relative Speed</a>
+
+        <h3>Numbers</h3>
+        <a href="Numbers.html">Numbers</a>
+        <a href="Types of Numbers.html">Types of Numbers</a>
+        <a href="Number Systems.html">Number Systems</a>
+
+        <h3>Probability</h3>
+        <a href="Probability.html">Probability</a>
+        <a href="Basics of Probability.html">Basics of Probability</a>
+        <a href="Probability Rules.html">Probability Rules</a>
+        <a href="Permutations & combinations.html">Permutations & Combinations</a>
+        <a href="Permutations.html">Permutations</a>
+        <a href="Combinations.html">Combinations</a>
+
+        <h3>Work & Rate</h3>
+        <a href="Time and Work.html">Time and Work</a>
+        <a href="Work Problems.html">Work Problems</a>
+        <a href="Efficiency and Time.html">Efficiency and Time</a>
+        <a href="Pipes & Cisterns.html">Pipes & Cisterns</a>
+        <a href="Pipes and Cisterns Problems.html">Pipes and Cisterns Problems</a>
+        <a href="Filling and Emptying Rates.html">Filling and Emptying Rates</a>
+
+        <h3>Geometry</h3>
+        <a href="Geometry and mensuration.html">Geometry and Mensuration</a>
+        <a href="Basic Geometry.html">Basic Geometry</a>
+        <a href="Mensuration Formulas.html">Mensuration Formulas</a>
+
+        <h3>Numbers and Ratios</h3>
+        <a href="Rational and Irrational Numbers.html">Rational & Irrational Numbers</a>
+        <a href="Understanding Rational Numbers.html">Understanding Rational Numbers</a>
+        <a href="Understanding Irrational Numbers.html">Understanding Irrational Numbers</a>
+
+        <h3>Data Analysis</h3>
+        <a href="proportion & Variation.html">Proportion & Variation</a>
+        <a href="Ratio and Proportion.html">Ratio and Proportion</a>
+        <a href="Variation Problems.html">Variation Problems</a>
+        <a href="Data Interpretation.html">Data Interpretation</a>
+        <a href="Reading Graphs and Charts.html">Reading Graphs and Charts</a>
+        <a href="Tables and Data Analysis.html">Tables and Data Analysis</a>
+    </div>
+
+    
+  
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+
+
+    function goPrevious() {
+        window.location.href = "Aptitude.html";
+    }
+    function goNext() {
+        window.location.href = "Percentage Profit and Loss.html";
+    }
+</script>
+
+        </script>
+        <div class="container-1">
+            <div class="content">
+                <div class="top-box1">
+                    <i class="fas fa-calculator" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+                    <h2 class="jk">Aptitude Tutorial</h2>
+                <div class="div1">Profit and losses </div></div>
+                <div id="main1" class="main1">
+                    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+                </div>
+                      
+                <h2>Introduction Profit and Loss</h2>
+                <p>Profit and loss are fundamental yet critical concepts in the realms of business and finance. They offer insights into whether you're gaining or losing money. Let's dissect these notions to facilitate a clearer understanding.</p>
+        
+                <h2>Defining Profit</h2>
+                <p>Envision profit as the net gain you retain after accounting for all expenses. It's akin to a reward for conducting business! To calculate your profit, you subtract the cost incurred from the selling price of an item.</p>
+        
+                <div class="formula">
+                    <strong>Profit Calculation:</strong><br>
+                    Profit = Selling Price - Cost Price
+                </div>
+        
+                <p><strong>Selling Price:</strong> The amount at which you sell the item.<br>
+                <strong>Cost Price:</strong> The expense incurred to procure or produce the item.</p>
+        
+                <div class="example">
+                    <strong>Illustration:</strong><br>
+                    Suppose you purchase a book for ₹200 and sell it for ₹300. To determine your profit:
+                    <br><br>
+                    Profit = ₹300 - ₹200 = ₹100<br>
+                    Thus, your profit amounts to ₹100.
+                </div>
+        
+                <h2>Understanding Loss</h2>
+                <p>A loss arises when the expenditure on an item exceeds the revenue generated from its sale. Essentially, it's akin to a financial setback.</p>
+        
+                <div class="formula">
+                    <strong>Loss Calculation:</strong><br>
+                    Loss = Cost Price - Selling Price
+                </div>
+        
+                <p><strong>Selling Price:</strong> The amount at which you sell the item.<br>
+                <strong>Cost Price:</strong> The expense incurred to procure or produce the item.</p>
+        
+                <div class="example">
+                    <strong>Illustration:</strong><br>
+                    Imagine you acquire a toy for ₹150 and sell it for ₹100. To calculate your loss:
+                    <br><br>
+                    Loss = ₹150 - ₹100 = ₹50<br>
+                    Hence, you incur a loss of ₹50.
+                </div>
+        
+                <h2>Determining Profit and Loss</h2>
+                <ul>
+                    <li><strong>Determine the Cost Price:</strong> This represents the amount spent to acquire or produce the item.</li>
+                    <li><strong>Determine the Selling Price:</strong> This is the revenue received from selling the item.</li>
+                    <li><strong>Compute Profit or Loss:</strong>
+                        <ul>
+                            <li>If Selling Price exceeds Cost Price:<br>
+                            Profit = Selling Price - Cost Price</li>
+                            <li>If Selling Price is less than Cost Price:<br>
+                            Loss = Cost Price - Selling Price</li>
+                        </ul>
+                    </li>
+                </ul>
+        
+                <h2>The Significance of Profit and Loss</h2>
+                <ul>
+                    <li><strong>Indicators of Business Health:</strong> Profit suggests favorable performance, while a loss might indicate a need for strategic adjustments.</li>
+                    <li><strong>Informed Decision-Making:</strong> Understanding your profit and loss aids in making prudent choices regarding pricing, budgeting, and investment.</li>
+                    <li><strong>Strategic Planning:</strong> It assists in forecasting future expenditures and investments to maintain financial well-being.</li>
+                </ul>
+        
+                <h2>Practical Illustration</h2>
+                <p>Consider running a lemonade stand:</p>
+        
+                <div class="example">
+                    <strong>Scenario 1:</strong><br>
+                    - You spend ₹50 on lemons, sugar, and cups (Cost Price).<br>
+                    - You sell the lemonade for ₹80 (Selling Price).<br><br>
+                    To calculate your profit:
+                    <br><br>
+                    Profit = ₹80 - ₹50 = ₹30<br>
+                    Consequently, your profit is ₹30.
+                </div>
+        
+                <div class="example">
+                    <strong>Scenario 2:</strong><br>
+                    - If you had spent ₹80 on ingredients and sold the lemonade for ₹50:<br><br>
+                    Loss = ₹80 - ₹50 = ₹30<br>
+                    Therefore, you’d face a loss of ₹30.
+                </div>
+        
+                <h2>Engage in Practice Exercises</h2>
+                <div class="resources">
+                    <p>Explore these resources to further hone your understanding of profit and loss:</p>
+                    <ul>
+                        <li><a href="https://www.ixl.com/math/algebra-2/profit-and-loss" target="_blank">IXL: Practice Profit and Loss</a></li>
+                        <li><a href="https://www.khanacademy.org/math/pre-algebra/x2f8bb115bf4c3406:ratios-rates/x2f8bb115bf4c3406:percent-ratios/v/profit-and-loss" target="_blank">Khan Academy: Profit and Loss Tutorial</a></li>
+                        <li><a href="https://www.cuemath.com/learn/math-profit-and-loss/" target="_blank">Cuemath: Practice Profit and Loss</a></li>
+                    </ul>
+                </div>
+        
+                <h2>Conclusion</h2>
+                <p>Mastering profit and loss is essential for effective financial management. Profit indicates that your earnings exceed your expenditures, while a loss signifies the opposite. Proficiency in these concepts is crucial for sound financial planning and making strategic business decisions.</p>
+                <div id="main1" class="main1">
+                    <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+                    <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+                </div>
+                       </div>
+        </div>
+       
+        
+        
+
+        
+    
+    
+</body>
+</html>
+
+   
+
+

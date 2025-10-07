@@ -1,0 +1,320 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Rust Proagramming Language</title>
+   
+   
+   
+    <head>
+    
+        <body class="body">
+ 
+            <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+            
+                <div id="main" class="main">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                
+                    <button class="openbtn homebtn" onclick="goHome()">
+                        &#8962; Home
+                    </button>
+                    <button class="openbtn compbtn" onclick="gocomp()">
+                        <i class="fas fa-code"></i> Rust Compiler
+                    </button>
+                    <button class="openbtn videobtn" onclick="govideo()">
+                        <i class="fas fa-video"></i> Video
+                    </button>
+                    <button class="openbtn labs" onclick="goprojects()">
+                   
+                        <i class="fas fa-folder-open"></i> Projects
+                    </button>
+                    <button class="openbtn interviewbtn" onclick="gointerviewpro()">
+                        <i class="fas fa-user-tie"></i> Interview Preparation
+                    </button>
+                    <button class="openbtn quizbtn" onclick="goquizpro()">
+                        <i class="fas fa-question-circle"></i> Rust Quiz
+                    </button>
+                </div></div>
+            </header>
+            
+            
+            
+            
+            
+            
+          
+          
+              
+               
+              
+        
+              
+             <header>
+                <div class="logo-container">
+                    <div class="tree">
+                        <div class="trunk"></div>
+                        <div class="leaves"></div>
+                    </div>
+                    <div class="text">TreeLearners</div>
+                  
+                    
+                     
+        
+                </div>
+            </header>
+            <br><br><br>
+            
+            <div id="mySidebar" class="sidebar">
+                <!-- Top Box with Icon and Title -->
+                <div class="top-box">
+                  
+                    <i class="fab fa-rust" style="font-size: 60px;padding-left: 16px; color: #e27f05;"></i>
+                    <h2 class="jk">Rust Tutorial</h2>
+                </div>
+            
+                <!-- Close button and sidebar content -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Rust.html" target="_blank"><b class="b12">Rust Roadmap</b></a>   
+        <ul>
+            <a href="Introduction to Rust.html">Introduction to Rust</a>
+            <li><a href="What is Rust.html">What is Rust?</a></li>
+            <li><a href="Rust Features.html">Rust Features</a></li>
+            <li><a href="Rust Installation.html">Rust Installation</a></li>
+            <li><a href="First Rust Program.html">First Rust Program</a></li>
+            <li>
+               <h3> Control Statements</h3>
+                <ul>
+                    <li><a href="Rust if-else.html">Rust if-else</a></li>
+                    <li><a href="Rust if in a let.html">Rust if in a let</a></li>
+                    <li><a href="Rust Loop.html">Rust Loop</a></li>
+                    <li><a href="Rust While Loop.html">Rust While Loop</a></li>
+                    <li><a href="Rust For Loop.html">Rust For Loop</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Ownership</h3>
+                <ul>
+                    <li><a href="What is Ownership.html">What is Ownership?</a></li>
+                    <li><a href="Rust References & Borrowing.html">References & Borrowing</a></li>
+                    <li><a href="Rust Slices.html">Slices</a></li>
+                    <li><a href="Rust Structs.html">Structs</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Enums</h3>
+                <ul>
+                    <li><a href="What is enum.html">What is Enum?</a></li>
+                    <li><a href="Match Operator.html">Match Operator</a></li>
+                    <li><a href="If Let Operator.html">If Let Operator</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Modules</h3>
+                <ul>
+                    <li><a href="Rust Filesystem.html">Filesystem</a></li>
+                    <li><a href="Controlling visibility with pub.html">Controlling Visibility with pub</a></li>
+                    <li><a href="Rust use Keyword.html">use Keyword</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Collections</h3>
+                <ul>
+                    <li><a href="Rust Vectors.html">Vectors</a></li>
+                    <li><a href="Rust Strings.html">Strings</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Error Handling</h3>
+                <ul>
+                    <li><a href="Unrecoverable Errors.html">Unrecoverable Errors</a></li>
+                    <li><a href="Recoverable Errors.html">Recoverable Errors</a></li>
+                </ul>
+            </li>
+            <li>
+            <h3>Generics & Traits</h3>
+                <ul>
+                    <li><a href="Rust Generics.html">Generics</a></li>
+                    <li><a href="Rust Traits.html">Traits</a></li>
+                    <li><a href="Rust Lifetime.html">Lifetime</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Smart Pointers</h3>
+                <ul>
+                    <li><a href="Smart Pointers.html">Smart Pointers</a></li>
+                    <li><a href="Rust Box.html">Box&lt;T&gt;</a></li>
+                    <li><a href="Rust Deref Trait.html">Deref Trait</a></li>
+                    <li><a href="Rust Drop Trait.html">Drop Trait</a></li>
+                    <li><a href="Rust Rc(T).html">Rc&lt;T&gt;</a></li>
+                    <li><a href="Rust RefCell(T).html">RefCell&lt;T&gt;</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("main").classList.add("sidebar-open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("main").classList.remove("sidebar-open");
+        }
+
+    
+        function toggleSubtopics(event) {
+            const stage = event.currentTarget;
+            const subtopics = stage.nextElementSibling;
+            subtopics.classList.toggle('show');
+        }
+
+       
+        function goHome() {
+    window.location.href = "index.html";
+}
+function gointerviewpro() {
+    window.location.href = "Rust_interviews.html";
+}
+function goprojects() {
+    window.location.href = "Rust_projects.html";
+}
+function goquizpro() {
+    window.location.href = "Rust_quize.html";
+}
+function gocomp() {
+    window.location.href = "Rust Compiler.html";
+}
+   
+    function goPrevious() {
+        window.location.href = "Rust Smart Pointers.html";
+    }
+    function goNext() {
+        window.location.href = "Rust Box.html";
+    }
+        </script>
+        <div class="container-1">
+        <div class="content"> <div class="top-box1">
+            <i class="fab fa-rust" style="font-size: 70px;padding-left: 16px;  color: #07fe45;"></i>
+            <h2 class="jk">Rust Tutorial</h2><div class="div1">Smart Pointers in Rust</div></div>
+
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+        
+        <h2>Understanding Smart Pointers</h2>
+        <p>Smart pointers in Rust are data structures that provide more functionality than regular pointers. They manage memory automatically, ensuring memory safety and preventing common issues such as dangling pointers and memory leaks.</p>
+        
+        <h2>Types of Smart Pointers</h2>
+        <p>Rust has several types of smart pointers, each with unique features:</p>
+        
+        <h3>1. Box</h3>
+        <p><code>Box&lt;T&gt;</code> is used for heap allocation. It allows you to store data on the heap while providing ownership semantics.</p>
+        
+        <div class="example">
+            <pre><code>fn main() {
+            let b = Box::new(5);
+            println!("Boxed value: {}", b);
+        }</code></pre>
+        </div>
+        
+        <h3>2. Rc</h3>
+        <p><code>Rc&lt;T&gt;</code> stands for "Reference Counted". It enables multiple ownership of data by keeping track of the number of references to a value. This is useful for sharing data without copying it.</p>
+        
+        <div class="example">
+            <pre><code>use std::rc::Rc;
+        
+        fn main() {
+            let rc1 = Rc::new(5);
+            let rc2 = Rc::clone(&rc1);
+            
+            println!("Value: {}", rc1);
+            println!("Reference Count: {}", Rc::strong_count(&rc1));
+        }</code></pre>
+        </div>
+        
+        <h3>3. Arc</h3>
+        <p><code>Arc&lt;T&gt;</code> (Atomic Reference Counted) is similar to <code>Rc</code> but is thread-safe. It is designed for concurrent programming where data needs to be shared across threads.</p>
+        
+        <div class="example">
+            <pre><code>use std::sync::Arc;
+        
+        fn main() {
+            let arc1 = Arc::new(5);
+            let arc2 = Arc::clone(&arc1);
+            
+            println!("Value: {}", arc1);
+            println!("Reference Count: {}", Arc::strong_count(&arc1));
+        }</code></pre>
+        </div>
+        
+        <h3>4. RefCell</h3>
+        <p><code>RefCell&lt;T&gt;</code> allows for interior mutability, enabling you to mutate data even if the <code>RefCell</code> itself is immutable. It checks borrow rules at runtime.</p>
+        
+        <div class="example">
+            <pre><code>use std::cell::RefCell;
+        
+        fn main() {
+            let x = RefCell::new(5);
+            *x.borrow_mut() = 10; // Mutable borrow
+            println!("Value: {}", x.borrow());
+        }</code></pre>
+        </div>
+        
+        <h2>Combining Smart Pointers</h2>
+        <p>Smart pointers can be used together to create complex data structures. For example, combining <code>Rc</code> with <code>RefCell</code> allows multiple ownership with mutable access:</p>
+        
+        <div class="example">
+            <pre><code>use std::rc::Rc;
+        use std::cell::RefCell;
+        
+        fn main() {
+            let value = Rc::new(RefCell::new(5));
+            {
+                let mut val = value.borrow_mut();
+                *val += 5;
+            }
+            println!("Updated Value: {}", value.borrow());
+        }</code></pre>
+        </div>
+        
+        
+        
+        <div class="resources">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://doc.rust-lang.org/book/ch15-01-box.html" target="_blank">The Rust Programming Language: Box</a></li>
+                <li><a href="https://doc.rust-lang.org/book/ch15-02-rc.html" target="_blank">The Rust Programming Language: Rc</a></li>
+                <li><a href="https://doc.rust-lang.org/book/ch15-03-arc.html" target="_blank">The Rust Programming Language: Arc</a></li>
+                <li><a href="https://doc.rust-lang.org/book/ch15-04-ref.html" target="_blank">The Rust Programming Language: RefCell</a></li>
+            </ul>
+        </div>
+        <h2>Summary</h2>
+        <p>Smart pointers are a powerful feature in Rust, providing automatic memory management and safety. Understanding <code>Box</code>, <code>Rc</code>, <code>Arc</code>, and <code>RefCell</code> is essential for effective Rust programming.</p>
+       
+        
+        <div id="main1" class="main1">
+            <button class="openbtn prevbtn1" onclick="goPrevious()">&#9664; Previous</button>
+            <button class="openbtn nextbtn1" onclick="goNext()">&#9654; Next</button>
+        </div>
+        
